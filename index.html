@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gokyona | GitHub Projects</title>
   <style>
-    /* --- Global Styles --- */
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,8 +26,6 @@
       font-size: 1.1rem;
       color: #8b949e;
     }
-
-    /* --- Project Section --- */
     section {
       max-width: 900px;
       margin: 2rem auto;
@@ -71,7 +68,20 @@
       margin-right: 0.5rem;
       font-size: 0.85rem;
     }
-
+    .download-button {
+      display: inline-block;
+      background-color: #58a6ff;
+      color: #0d1117;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      transition: background-color 0.2s;
+    }
+    .download-button:hover {
+      background-color: #1f6feb;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -91,7 +101,7 @@
 
 <body>
   <header>
-    <h1>👋 Hi, I'm Gokyona.</h1>
+    <h1>👋 Hi, I'm Gokyona</h1>
     <p>Welcome to my GitHub portfolio — here are my development projects.</p>
   </header>
 
@@ -105,10 +115,20 @@
         </a>
       </h3>
       <p class="project-desc">
-        <strong>BernMiner-xelis</strong> is a C and Go-based Xelis cryptocurrency miner designed
-        for learning and performance experimentation.  
-        It implements XelisHashV2 and supports solo or pool mining via the Stratum protocol.
+        <strong>BernMiner-xelis</strong> is a cryptocurrency miner written in C and Go, designed for CPU mining of Xelis.  
+        The latest version includes the following features:
+        <ul>
+          <li>Supports <strong>XelisHashV2</strong> algorithm</li>
+          <li>Multi-threaded CPU mining</li>
+          <li>Compatible with Windows</li>
+          <li>Ready-to-use executable (.exe) — no compilation needed</li>
+          <li>Connects to Stratum mining pools</li>
+          <li><strong>Totally Free</strong></li>
+        </ul>
       </p>
+      <a class="download-button" href="https://github.com/Gokyona/BernMiner-xelis/releases/download/v1.0.0/BernMiner-xelis.exe" target="_blank">
+        Download BernMiner.exe
+      </a>
       <div class="tags">
         <span>C</span>
         <span>Go</span>
