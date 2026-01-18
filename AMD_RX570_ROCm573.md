@@ -1,4 +1,6 @@
 Complete Guide: AMD RX 570 + Dell OptiPlex 7040 ROCm Setup
+ROCm5.7.3 + Ubuntu 22.04
+
 1. Hardware & BIOS Prerequisites
 Before modifying software, ensure the Dell motherboard is ready.
 
