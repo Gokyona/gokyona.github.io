@@ -238,7 +238,8 @@
             <li><span class="m-icon m-done">✓</span><span>Stage 2b: protocells whose division is driven by their own chemistry (the cell makes its own membrane and divides when it has doubled), with a new life level L3; COMPASS maps it with about <strong>4× fewer simulations</strong>. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage2b_protocell_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 2d: tried screening with cheap, short simulations. An honest partial negative: it helps only at small budgets, so COMPASS on full simulations stays the default. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage2d_multifidelity_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 2e: maps of the conditions for three levels of life (self-maintenance, heredity, coupled protocell). COMPASS beats Sobol at every level; the maps match direct simulation and show an optimal cell size between parasite control and gene loss. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage2e_maps_b70.md" target="_blank" rel="noopener">Results and figures</a></span></li>
-            <li><span class="m-icon m-now">→</span><span>Stage 2f, next: the stage 2 paper.</span></li>
+            <li><span class="m-icon m-done">✓</span><span>Stage 2 paper: dividing protocells mapped with COMPASS (about 8× and 4× fewer simulations; maps of three levels of life). <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/paper/COMPASS_stage2.md" target="_blank" rel="noopener">Read the paper</a></span></li>
+            <li><span class="m-icon m-now">→</span><span>Stage 3, next: the smallest set of conditions sufficient for life (knockout experiments), spatial structure, and Darwinian evolution.</span></li>
           </ul>
           <details class="refs">
             <summary>Background reading: autocatalytic sets (RAF theory)</summary>
@@ -256,6 +257,7 @@
           </details>
           <div class="card-links">
             <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/paper/COMPASS_stage1.md" target="_blank" rel="noopener">Stage 1 paper: COMPASS →</a>
+            <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/paper/COMPASS_stage2.md" target="_blank" rel="noopener">Stage 2 paper: protocells →</a>
             <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Repository →</a>
             <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/results" target="_blank" rel="noopener">All results →</a>
           </div>
@@ -286,6 +288,7 @@
       <div class="section-head"><h2>Research log</h2><p>Newest first. Start times in Toronto time.</p></div>
       <ul class="log">
         <!-- Add new entries at the top. Times are Toronto time (EDT/EST). -->
+        <li><time datetime="2026-10-25T17:25-04:00">2026-10-25<br>17:25 EDT</time><span>Stage 2 paper started and published: models, benchmarks, the multi-fidelity result and the L1–L3 maps; references checked against original sources.</span></li>
         <li><time datetime="2026-10-25T17:11-04:00">2026-10-25<br>17:11 EDT</time><span>Stage 2e (B70 run 17:11–17:21): condition maps for life levels L1–L3; COMPASS more accurate than Sobol at every level; thresholds match direct simulation.</span></li>
         <li><time datetime="2026-10-25T15:45-04:00">2026-10-25<br>15:45 EDT</time><span>Stage 2d started: multi-fidelity COMPASS (cheap short simulations, 7.8× cheaper, agree with full ones on 97% of conditions). B70 runs 15:47–16:19 and 16:26–17:07: helps only at small budgets; COMPASS on full simulations stays the default.</span></li>
         <li><time datetime="2026-10-25T15:10-04:00">2026-10-25<br>15:10 EDT</time><span>Stage 2b started: membrane made inside the cell drives division; new level L3 (coupled protocell) validated; COMPASS benchmark (B70 run 15:17–15:39) shows about 4× fewer simulations.</span></li>
