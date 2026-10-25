@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="v2naLXkp1IKKRVVGEgp3hjFDYtg4ZeqAIkIZOJOIDYQ" />
-  <title>Gokyona | GitHub Projects</title>
+  <title>Gokyona Wahiro</title>
+  <meta name="description" content="Gokyona Wahiro: finance professional in Toronto researching the origin of life and other open questions with AI." />
   <style>
     body {
       margin: 0;
@@ -97,39 +98,112 @@
     footer a:hover {
       text-decoration: underline;
     }
+    .lead {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .about p {
+      color: #b1bac4;
+    }
+    .interests span {
+      display: inline-block;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      border-radius: 20px;
+      padding: 0.25rem 0.75rem;
+      margin: 0 0.5rem 0.5rem 0;
+      font-size: 0.9rem;
+    }
+    .status {
+      display: inline-block;
+      background-color: #9e6a03;
+      color: #fff;
+      border-radius: 20px;
+      padding: 0.15rem 0.7rem;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .project-card ol {
+      color: #b1bac4;
+      padding-left: 1.3rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header { padding: 3rem 1rem 1.5rem; }
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>👋 Hi, I'm Gokyona</h1>
-    <p>Welcome to my GitHub portfolio — here are my development projects.</p>
+    <h1>Gokyona Wahiro</h1>
+    <p class="lead">Finance professional in Toronto, chasing the open questions of science with the help of AI.</p>
   </header>
 
+  <section class="about">
+    <h2>About me</h2>
+    <p>
+      I live in Toronto and work in finance. Outside of work, I am drawn to the questions science has not yet answered:
+      how life began, what the universe is made of, and what time and distance really are.
+    </p>
+    <p>
+      For most of my life these were things I could only read about. With today's AI tools and a couple of home GPUs,
+      I can now design models, write code and run experiments myself. This site is where I share that work, including
+      the results that do not go my way.
+    </p>
+    <div class="interests">
+      <span>Origin of life</span>
+      <span>Matter in the universe</span>
+      <span>Time and distance</span>
+      <span>AI-assisted research</span>
+      <span>GPU computing</span>
+    </div>
+  </section>
+
   <section>
-    <h2>🚀 Featured Project</h2>
+    <h2>Current research</h2>
 
     <div class="project-card">
       <h3 class="project-title">
-        <a href="https://github.com/Gokyona/BernMiner-xelis" target="_blank">
-          BernMiner-xelis
-        </a>
+        <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank">life-origins-traversal</a>
+        <span class="status">In progress</span>
       </h3>
       <p class="project-desc">
-        <strong>BernMiner-xelis</strong> is a cryptocurrency miner written in C and Go, designed for CPU mining of Xelis.  
-        The latest version includes the following features:
-        <ul>
-          <li>Supports <strong>XelisHashV2</strong> algorithm</li>
-          <li>Multi-threaded CPU mining</li>
-          <li>Compatible with Windows</li>
-          <li>Ready-to-use executable (.exe) — no compilation needed</li>
-          <li>Connects to Stratum mining pools</li>
-          <li><strong>Totally Free</strong></li>
-        </ul>
+        Most origin-of-life simulations pick one set of conditions, run for a long time and hope life appears.
+        This project asks a different question: <strong>under which conditions does life emerge, and under which does it never emerge?</strong>
+        Instead of waiting for chance, a computer tests every set of conditions in an ordered, never-repeating sequence
+        and maps the boundary between ordinary chemistry and self-replicating, self-sustaining, compartmentalised chemistry,
+        a "phase diagram of life".
       </p>
-      <a class="download-button" href="https://github.com/Gokyona/BernMiner-xelis/releases/download/v1.0.0/BernMiner-xelis.exe" target="_blank">
-        Download BernMiner.exe
-      </a>
+      <p class="project-desc">Where it stands (October 2026):</p>
+      <ol>
+        <li>A minimal stochastic protocell model with six conditions, including a copying-error threshold, a rare origin event and a control dimension that has no effect.</li>
+        <li>An ordered testing engine: a permanent archive so no condition is simulated twice, Sobol low-discrepancy coverage, monotone inference, sequential testing and boundary refinement.</li>
+        <li>A benchmark against random search with brute-force ground truth, now running on an Intel Arc Pro B70. An early pilot showed the first engine design did <em>not</em> beat random search; the revised design is slightly ahead on the hardest conditions. Full results will be published in the repository.</li>
+      </ol>
+      <a class="download-button" href="https://github.com/Gokyona/life-origins-traversal" target="_blank">View the repository</a>
+      <div class="tags">
+        <span>Python</span>
+        <span>PyTorch</span>
+        <span>Origin of life</span>
+        <span>Artificial chemistry</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Other projects</h2>
+
+    <div class="project-card">
+      <h3 class="project-title">
+        <a href="https://github.com/Gokyona/BernMiner-xelis" target="_blank">BernMiner-xelis</a>
+      </h3>
+      <p class="project-desc">
+        A free, multi-threaded CPU miner for Xelis written in C and Go. Supports the XelisHashV2 algorithm,
+        connects to Stratum pools and ships as a ready-to-use Windows executable.
+      </p>
+      <a class="download-button" href="https://github.com/Gokyona/BernMiner-xelis/releases/download/v1.0.0/BernMiner-xelis.exe" target="_blank">Download BernMiner.exe</a>
       <div class="tags">
         <span>C</span>
         <span>Go</span>
@@ -137,10 +211,25 @@
         <span>Crypto Mining</span>
       </div>
     </div>
+
+    <div class="project-card">
+      <h3 class="project-title">
+        <a href="https://github.com/Gokyona/gokyona.github.io/blob/main/AMD_RX570_ROCm573.md" target="_blank">AMD RX 570 + ROCm 5.7.3 setup guide</a>
+      </h3>
+      <p class="project-desc">
+        Step-by-step notes for running ROCm 5.7.3 on an AMD RX 570 in a Dell OptiPlex 7040 under Ubuntu 22.04,
+        including BIOS settings and the PCIe atomics fix.
+      </p>
+      <div class="tags">
+        <span>ROCm</span>
+        <span>Linux</span>
+        <span>GPU</span>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Gokyona — <a href="https://github.com/Gokyona">View all projects on GitHub</a></p>
+    <p>© 2026 Gokyona Wahiro · Toronto · <a href="https://github.com/Gokyona">GitHub</a></p>
   </footer>
 </body>
 </html>
