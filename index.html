@@ -180,7 +180,8 @@
       <ol>
         <li>A minimal stochastic protocell model with six conditions, including a copying-error threshold, a rare origin event and a control dimension that has no effect.</li>
         <li>An ordered testing engine: a permanent archive so no condition is simulated twice, Sobol low-discrepancy coverage, monotone inference, sequential testing and boundary refinement.</li>
-        <li>First benchmark on an Intel Arc Pro B70 (5 repetitions, 128,000 runs per method): the ordered engine did <em>not</em> beat random search on this test problem. Sobol ordering with one run per condition did best; the boundary-refinement step made things worse. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1_benchmark_b70.md" target="_blank" style="color:#58a6ff">Full results</a>. Next: fix boundary refinement and build a harder benchmark.</li>
+        <li>First benchmark (6 conditions): the ordered engine did <em>not</em> beat random search; its boundary refinement chased regions that are random by nature. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1_benchmark_b70.md" target="_blank" style="color:#58a6ff">Results</a>.</li>
+        <li>Revised engine on a harder 10-condition problem (Intel Arc Pro B70, 5 repetitions): it now beats random and Sobol sampling from 4,000 runs on, by about 1.5 points overall and 8 to 12 points on the hardest conditions. One caveat is being checked next. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1b_benchmark_b70.md" target="_blank" style="color:#58a6ff">Results</a>.</li>
       </ol>
       <a class="download-button" href="https://github.com/Gokyona/life-origins-traversal" target="_blank">View the repository</a>
       <div class="tags">
