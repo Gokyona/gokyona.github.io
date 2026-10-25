@@ -227,7 +227,8 @@
             <li><span class="m-icon m-neg">✗</span><span>Stage 1, 6 conditions: the first engine did <em>not</em> beat random search. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1b, 10 conditions: a revised engine pulled clearly ahead of random and Sobol sampling, with one caveat about the shared map-maker. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1b_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1c, fair re-check: the engine reaches the same accuracy with about <strong>8× fewer simulations</strong> than random or Sobol sampling. The gap is smaller than 1b suggested, and it is reported as such. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1c_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
-            <li><span class="m-icon m-now">→</span><span>Next: refine the engine's late rounds, test it on established origin-of-life models, then a spatial protocell model.</span></li>
+            <li><span class="m-icon m-done">✓</span><span>Stage 1d: engine made 4× faster on the GPU; a softer point-selection rule becomes the default. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1d_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
+            <li><span class="m-icon m-now">→</span><span>Next: test the engine on Kauffman's autocatalytic sets, a classic origin-of-life model with a known threshold, then a spatial protocell model.</span></li>
           </ul>
           <div class="card-links">
             <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Repository →</a>
@@ -260,6 +261,7 @@
       <div class="section-head"><h2>Research log</h2><p>Newest first.</p></div>
       <ul class="log">
         <!-- Add new entries at the top. -->
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1d: engine 4× faster; soft point selection adopted; work on the autocatalytic-set test begins.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c: with a fair map-maker the engine needs about 8× fewer simulations for the same accuracy; stage 1b's gap corrected.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c started: re-checking the stage 1b result with a fairer map-maker.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1b: the revised ordered engine beats random search on a harder 10-condition problem.</span></li>
