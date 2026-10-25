@@ -5,196 +5,273 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="v2naLXkp1IKKRVVGEgp3hjFDYtg4ZeqAIkIZOJOIDYQ" />
   <title>Gokyona Wahiro</title>
-  <meta name="description" content="Gokyona Wahiro: finance professional in Toronto researching the origin of life and other open questions with AI." />
+  <meta name="description" content="Gokyona Wahiro: a banker in Toronto researching the origin of life and other open questions in science, with the help of AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg: #0b0d12;
+      --bg-soft: #11151c;
+      --card: #141a23;
+      --border: #232b38;
+      --text: #e8edf4;
+      --muted: #9aa6b6;
+      --accent: #7cc4ff;
+      --accent-2: #a78bfa;
+      --ok: #34d399;
+      --warn: #fbbf24;
+      --radius: 16px;
+      --max: 1080px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fb;
+        --bg-soft: #eef1f6;
+        --card: #ffffff;
+        --border: #dde3ec;
+        --text: #141922;
+        --muted: #5b6676;
+        --accent: #1d6fd6;
+        --accent-2: #6d4fd8;
+        --ok: #0f9f6e;
+        --warn: #b7791f;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-      line-height: 1.6;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
     }
-    header {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-      background: linear-gradient(180deg, #161b22, #0d1117);
-      border-bottom: 1px solid #30363d;
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+    /* nav */
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      backdrop-filter: blur(10px);
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      border-bottom: 1px solid var(--border);
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
+    nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .brand { font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+    nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
+    nav ul a { color: var(--muted); font-size: 0.95rem; font-weight: 500; }
+    nav ul a:hover { color: var(--text); text-decoration: none; }
+
+    /* hero */
+    .hero { padding: 96px 0 72px; position: relative; overflow: hidden; }
+    .hero::before {
+      content: ""; position: absolute; inset: -40% -10% auto auto; width: 620px; height: 620px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--accent-2) 28%, transparent), transparent 65%);
+      pointer-events: none;
     }
-    header p {
-      font-size: 1.1rem;
-      color: #8b949e;
+    .eyebrow { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); letter-spacing: 0.04em; }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.08; margin: 12px 0 6px; letter-spacing: -0.03em; }
+    .pen-name { color: var(--muted); font-size: 0.9rem; margin: 0 0 22px; }
+    .hero .lead { font-size: clamp(1.1rem, 2.2vw, 1.3rem); color: var(--muted); max-width: 680px; margin: 0; }
+    .hero .cta { margin-top: 30px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 18px; border-radius: 999px; font-weight: 600; font-size: 0.95rem;
+      border: 1px solid var(--border); color: var(--text); background: var(--card);
     }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #06121f; }
+    .btn:hover { text-decoration: none; filter: brightness(1.08); }
+
+    /* sections */
+    section { padding: 64px 0; border-top: 1px solid var(--border); }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+    h2 { font-size: 1.7rem; letter-spacing: -0.02em; margin: 0; }
+    .section-head p { color: var(--muted); margin: 0; }
+
+    /* about */
+    .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; }
+    .about-grid p { color: var(--muted); margin-top: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .chip { border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; font-size: 0.88rem; background: var(--bg-soft); }
+    .timeline { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--border); }
+    .timeline li { position: relative; padding: 0 0 22px 22px; }
+    .timeline li::before {
+      content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%;
+      background: var(--bg); border: 2px solid var(--accent);
     }
-    .project-card {
-      background-color: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
+    .timeline .when { font-family: "JetBrains Mono", monospace; font-size: 0.8rem; color: var(--accent); }
+    .timeline .what { font-weight: 600; }
+    .timeline .where { color: var(--muted); font-size: 0.93rem; }
+
+    /* projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; display: flex; flex-direction: column; gap: 12px;
+      transition: transform 0.2s, border-color 0.2s;
     }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-    .project-title {
-      font-size: 1.5rem;
-      margin: 0 0 0.3rem;
-    }
-    .project-title a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    .project-title a:hover {
-      text-decoration: underline;
-    }
-    .project-desc {
-      color: #b1bac4;
-      margin-bottom: 0.8rem;
-    }
-    .tags span {
-      display: inline-block;
-      background-color: #238636;
-      color: #fff;
-      border-radius: 20px;
-      padding: 0.25rem 0.75rem;
-      margin-right: 0.5rem;
-      font-size: 0.85rem;
-    }
-    .download-button {
-      display: inline-block;
-      background-color: #58a6ff;
-      color: #0d1117;
-      font-weight: bold;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-      transition: background-color 0.2s;
-    }
-    .download-button:hover {
-      background-color: #1f6feb;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #8b949e;
-      border-top: 1px solid #30363d;
-    }
-    footer a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .lead {
-      max-width: 640px;
-      margin: 0 auto;
-    }
-    .about p {
-      color: #b1bac4;
-    }
-    .interests span {
-      display: inline-block;
-      border: 1px solid #30363d;
-      color: #e6edf3;
-      border-radius: 20px;
-      padding: 0.25rem 0.75rem;
-      margin: 0 0.5rem 0.5rem 0;
-      font-size: 0.9rem;
-    }
-    .status {
-      display: inline-block;
-      background-color: #9e6a03;
-      color: #fff;
-      border-radius: 20px;
-      padding: 0.15rem 0.7rem;
-      font-size: 0.8rem;
-      margin-left: 0.5rem;
-      vertical-align: middle;
-    }
-    .project-card ol {
-      color: #b1bac4;
-      padding-left: 1.3rem;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      header { padding: 3rem 1rem 1.5rem; }
+    .card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+    .card.featured { grid-column: 1 / -1; }
+    .card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .card h3 { margin: 0; font-size: 1.3rem; letter-spacing: -0.01em; }
+    .card h3 a { color: var(--text); }
+    .badge { font-size: 0.75rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+    .badge.active { color: var(--ok); border: 1px solid color-mix(in srgb, var(--ok) 55%, transparent); }
+    .badge.planned { color: var(--muted); border: 1px dashed var(--border); }
+    .card p { margin: 0; color: var(--muted); }
+    .card .question { color: var(--text); font-weight: 500; }
+    .milestones { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 10px; }
+    .milestones li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; color: var(--muted); font-size: 0.95rem; }
+    .milestones .m-icon { font-weight: 700; }
+    .m-done { color: var(--ok); }
+    .m-neg { color: var(--warn); }
+    .m-now { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
+    .tags span { font-family: "JetBrains Mono", monospace; font-size: 0.75rem; color: var(--muted); background: var(--bg-soft); padding: 3px 9px; border-radius: 6px; }
+    .card-links { display: flex; gap: 16px; font-weight: 600; font-size: 0.93rem; }
+    .card.placeholder { border-style: dashed; background: transparent; justify-content: center; }
+
+    /* log */
+    .log { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+    .log li { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px 18px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
+    .log time { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); }
+    .log span { color: var(--muted); }
+
+    footer { border-top: 1px solid var(--border); padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      nav ul { gap: 14px; }
+      nav ul li.hide-sm { display: none; }
+      .hero { padding: 64px 0 48px; }
+      .about-grid { grid-template-columns: 1fr; gap: 28px; }
+      .projects { grid-template-columns: 1fr; }
+      .log li { grid-template-columns: 1fr; gap: 4px; }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Gokyona Wahiro</h1>
-    <p class="lead">Finance professional in Toronto, chasing the open questions of science with the help of AI.</p>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="#top">Gokyona Wahiro</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li class="hide-sm"><a href="#log">Log</a></li>
+        <li><a href="https://github.com/Gokyona" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="eyebrow">TORONTO · INDEPENDENT RESEARCH</div>
+      <h1>Gokyona Wahiro</h1>
+      <p class="pen-name">A pen name I use online, not my legal name.</p>
+      <p class="lead">A banker by profession and a scientist by curiosity. I work on open questions such as how life began, what the universe is made of, and what time and distance really are, using AI and home GPUs as my laboratory.</p>
+      <div class="cta">
+        <a class="btn primary" href="#research">See current research</a>
+        <a class="btn" href="https://github.com/Gokyona" target="_blank" rel="noopener">GitHub profile</a>
+      </div>
+    </div>
   </header>
 
-  <section class="about">
-    <h2>About me</h2>
-    <p>
-      I live in Toronto and work in finance. Outside of work, I am drawn to the questions science has not yet answered:
-      how life began, what the universe is made of, and what time and distance really are.
-    </p>
-    <p>
-      For most of my life these were things I could only read about. With today's AI tools and a couple of home GPUs,
-      I can now design models, write code and run experiments myself. This site is where I share that work, including
-      the results that do not go my way.
-    </p>
-    <div class="interests">
-      <span>Origin of life</span>
-      <span>Matter in the universe</span>
-      <span>Time and distance</span>
-      <span>AI-assisted research</span>
-      <span>GPU computing</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Current research</h2>
-
-    <div class="project-card">
-      <h3 class="project-title">
-        <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank">life-origins-traversal</a>
-        <span class="status">In progress</span>
-      </h3>
-      <p class="project-desc">
-        Most origin-of-life simulations pick one set of conditions, run for a long time and hope life appears.
-        This project asks a different question: <strong>under which conditions does life emerge, and under which does it never emerge?</strong>
-        Instead of waiting for chance, a computer tests every set of conditions in an ordered, never-repeating sequence
-        and maps the boundary between ordinary chemistry and self-replicating, self-sustaining, compartmentalised chemistry,
-        a "phase diagram of life".
-      </p>
-      <p class="project-desc">Where it stands (October 2026):</p>
-      <ol>
-        <li>A minimal stochastic protocell model with six conditions, including a copying-error threshold, a rare origin event and a control dimension that has no effect.</li>
-        <li>An ordered testing engine: a permanent archive so no condition is simulated twice, Sobol low-discrepancy coverage, monotone inference, sequential testing and boundary refinement.</li>
-        <li>First benchmark (6 conditions): the ordered engine did <em>not</em> beat random search; its boundary refinement chased regions that are random by nature. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1_benchmark_b70.md" target="_blank" style="color:#58a6ff">Results</a>.</li>
-        <li>Revised engine on a harder 10-condition problem (Intel Arc Pro B70, 5 repetitions): it now beats random and Sobol sampling from 4,000 runs on, by about 1.5 points overall and 8 to 12 points on the hardest conditions. One caveat is being checked next. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1b_benchmark_b70.md" target="_blank" style="color:#58a6ff">Results</a>.</li>
-      </ol>
-      <a class="download-button" href="https://github.com/Gokyona/life-origins-traversal" target="_blank">View the repository</a>
-      <div class="tags">
-        <span>Python</span>
-        <span>PyTorch</span>
-        <span>Origin of life</span>
-        <span>Artificial chemistry</span>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><h2>About</h2></div>
+      <div class="about-grid">
+        <div>
+          <p>I studied international trade and economics, then finance in France and economics in Canada, and have spent more than twenty years working in banking.</p>
+          <p>Physics, chemistry and programming were my first loves as a teenager, and I never stopped studying them on my own. For most of my life the big unanswered questions were things I could only read about. With today's AI tools I can now design models, write code and run real experiments myself, and turn a lifelong interest into actual research.</p>
+          <p>This site is where I publish that work openly, including the results that do not go my way.</p>
+          <div class="chips">
+            <span class="chip">Origin of life</span>
+            <span class="chip">Matter in the universe</span>
+            <span class="chip">Time and distance</span>
+            <span class="chip">AI-assisted research</span>
+            <span class="chip">GPU computing</span>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li><div class="when">EARLY YEARS</div><div class="what">Physics, chemistry and programming</div><div class="where">Self-taught interests that never went away</div></li>
+          <li><div class="when">BACHELOR</div><div class="what">International Trade and Economics</div></li>
+          <li><div class="when">FRANCE</div><div class="what">Master of Science in Financial Management</div></li>
+          <li><div class="when">CANADA</div><div class="what">Master of Economics</div></li>
+          <li><div class="when">20+ YEARS</div><div class="what">Banking</div><div class="where">Toronto</div></li>
+          <li><div class="when">NOW</div><div class="what">Independent research with AI</div><div class="where">Open code and results on GitHub</div></li>
+        </ol>
       </div>
     </div>
   </section>
 
+  <section id="research">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Research</h2>
+        <p>Open projects, published as they progress.</p>
+      </div>
+      <div class="projects">
+        <!-- To add a project: copy one <article class="card"> block. Use class "card featured" for a full-width card. -->
+        <article class="card featured">
+          <div class="card-top">
+            <h3><a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Life Origins Traversal</a></h3>
+            <span class="badge active">Active</span>
+          </div>
+          <p class="question">Under which conditions does life emerge, and under which does it never emerge?</p>
+          <p>Instead of running one long simulation and waiting for chance, a computer tests sets of conditions in an ordered, never-repeating sequence and maps the boundary between ordinary chemistry and self-replicating, self-sustaining chemistry: a "phase diagram of life".</p>
+          <ul class="milestones">
+            <li><span class="m-icon m-done">✓</span><span>Minimal stochastic protocell model and an ordered testing engine (archive, Sobol coverage, sequential testing, boundary refinement).</span></li>
+            <li><span class="m-icon m-neg">✗</span><span>Stage 1, 6 conditions: the first engine did <em>not</em> beat random search. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
+            <li><span class="m-icon m-done">✓</span><span>Stage 1b, 10 conditions: a revised engine pulled clearly ahead of random and Sobol sampling, with one caveat about the shared map-maker. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1b_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
+            <li><span class="m-icon m-now">→</span><span>Stage 1c, in progress: a fair re-check with a map-maker that keeps learning from more data, running on an Intel Arc Pro B70.</span></li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Repository →</a>
+            <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/results" target="_blank" rel="noopener">All results →</a>
+          </div>
+          <div class="tags"><span>Python</span><span>PyTorch</span><span>Origin of life</span><span>Artificial chemistry</span><span>Active learning</span></div>
+        </article>
+
+        <article class="card placeholder">
+          <div class="card-top">
+            <h3>Matter in the universe</h3>
+            <span class="badge planned">Planned</span>
+          </div>
+          <p>Where the elements of life come from, and what we can compute about the matter we cannot see.</p>
+        </article>
+
+        <article class="card placeholder">
+          <div class="card-top">
+            <h3>Time and distance</h3>
+            <span class="badge planned">Planned</span>
+          </div>
+          <p>Questions about the nature of time and space that are still open.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="log">
+    <div class="wrap">
+      <div class="section-head"><h2>Research log</h2><p>Newest first.</p></div>
+      <ul class="log">
+        <!-- Add new entries at the top. -->
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c started: re-checking the stage 1b result with a fairer map-maker.</span></li>
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1b: the revised ordered engine beats random search on a harder 10-condition problem.</span></li>
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1: first benchmark is negative and published as such.</span></li>
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Project launched: Life Origins Traversal.</span></li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
-    <p>© 2026 Gokyona Wahiro · Toronto · <a href="https://github.com/Gokyona">GitHub</a></p>
+    <div class="wrap">
+      <span>© 2026 Gokyona Wahiro · Toronto</span>
+      <span><a href="https://github.com/Gokyona" target="_blank" rel="noopener">github.com/Gokyona</a></span>
+    </div>
   </footer>
 </body>
 </html>
