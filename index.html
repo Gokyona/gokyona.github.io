@@ -131,6 +131,10 @@
     .m-now { color: var(--accent); }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
     .tags span { font-family: "JetBrains Mono", monospace; font-size: 0.75rem; color: var(--muted); background: var(--bg-soft); padding: 3px 9px; border-radius: 6px; }
+    .refs { border-top: 1px solid var(--border); padding-top: 12px; }
+    .refs summary { cursor: pointer; font-weight: 600; font-size: 0.95rem; }
+    .refs p.refs-note { font-size: 0.9rem; margin: 10px 0 6px; }
+    .refs ol { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); font-size: 0.9rem; }
     .card-links { display: flex; gap: 16px; font-weight: 600; font-size: 0.93rem; }
     .card.placeholder { border-style: dashed; background: transparent; justify-content: center; }
 
@@ -228,8 +232,22 @@
             <li><span class="m-icon m-done">✓</span><span>Stage 1b, 10 conditions: a revised engine pulled clearly ahead of random and Sobol sampling, with one caveat about the shared map-maker. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1b_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1c, fair re-check: the engine reaches the same accuracy with about <strong>8× fewer simulations</strong> than random or Sobol sampling. The gap is smaller than 1b suggested, and it is reported as such. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1c_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1d: engine made 4× faster on the GPU; a softer point-selection rule becomes the default. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1d_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
-            <li><span class="m-icon m-now">→</span><span>Next: test the engine on Kauffman's autocatalytic sets, a classic origin-of-life model with a known threshold, then a spatial protocell model.</span></li>
+            <li><span class="m-icon m-now">→</span><span>Stage 1e, in progress: testing the engine on Kauffman's autocatalytic sets (RAF model), a classic origin-of-life model with a known threshold. Our GPU implementation reproduces it: a self-sustaining network appears once each molecule catalyses about 1.1–1.3 reactions. <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/stage1e_raf" target="_blank" rel="noopener">Code</a></span></li>
           </ul>
+          <details class="refs">
+            <summary>Background reading: autocatalytic sets (RAF theory)</summary>
+            <p class="refs-note">The papers behind the stage 1e model, from the original idea to the exact detection algorithm and its known limits.</p>
+            <ol>
+              <li>S. A. Kauffman (1986). Autocatalytic sets of proteins. <em>Journal of Theoretical Biology</em> 119, 1–24. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022519386800479" target="_blank" rel="noopener">Link</a></li>
+              <li>W. Hordijk &amp; M. Steel (2004). Detecting autocatalytic, self-sustaining sets in chemical reaction systems. <em>Journal of Theoretical Biology</em> 227, 451–461. The RAF definition and algorithm we use. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022519303004417" target="_blank" rel="noopener">Link</a> · <a href="https://www.math.canterbury.ac.nz/~m.steel/Non_UC/files/research/autocatalytic-edited.pdf" target="_blank" rel="noopener">PDF</a></li>
+              <li>E. Mossel &amp; M. Steel (2005). Random biochemical networks: the probability of self-sustaining autocatalysis. <em>Journal of Theoretical Biology</em> 233, 327–336. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0022519304004825" target="_blank" rel="noopener">Link</a> · <a href="https://arxiv.org/abs/q-bio/0406044" target="_blank" rel="noopener">arXiv</a></li>
+              <li>W. Hordijk, S. A. Kauffman &amp; M. Steel (2011). Required levels of catalysis for emergence of autocatalytic sets in models of chemical reaction systems. <em>International Journal of Molecular Sciences</em> 12, 3085–3101. The "1–2 reactions per molecule" threshold. <a href="https://www.mdpi.com/1422-0067/12/5/3085/html" target="_blank" rel="noopener">Open access</a></li>
+              <li>V. Vasas, E. Szathmáry &amp; M. Santos (2010). Lack of evolvability in self-sustaining autocatalytic networks constraints metabolism-first scenarios for the origin of life. <em>PNAS</em> 107, 1470–1475. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2824406" target="_blank" rel="noopener">Open access</a></li>
+              <li>V. Vasas, C. Fernando, M. Santos, S. Kauffman &amp; E. Szathmáry (2012). Evolution before genes. <em>Biology Direct</em> 7, 1. <a href="https://doi.org/10.1186/1745-6150-7-1" target="_blank" rel="noopener">Open access</a></li>
+              <li>W. Hordijk &amp; M. Steel (2016). Autocatalytic sets in polymer networks with variable catalysis distributions. <a href="https://arxiv.org/abs/1605.03919" target="_blank" rel="noopener">arXiv</a></li>
+              <li>W. Hordijk &amp; M. Steel (2017). Chasing the tail: the emergence of autocatalytic networks. <em>BioSystems</em> 152, 1–10. A review. <a href="https://www.sciencedirect.com/science/article/abs/pii/S030326471630274X" target="_blank" rel="noopener">Link</a></li>
+            </ol>
+          </details>
           <div class="card-links">
             <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Repository →</a>
             <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/results" target="_blank" rel="noopener">All results →</a>
@@ -261,6 +279,7 @@
       <div class="section-head"><h2>Research log</h2><p>Newest first.</p></div>
       <ul class="log">
         <!-- Add new entries at the top. -->
+        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1e started: the RAF autocatalytic-set model reproduces its known threshold; background papers added.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1d: engine 4× faster; soft point selection adopted; work on the autocatalytic-set test begins.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c: with a fair map-maker the engine needs about 8× fewer simulations for the same accuracy; stage 1b's gap corrected.</span></li>
         <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c started: re-checking the stage 1b result with a fairer map-maker.</span></li>
