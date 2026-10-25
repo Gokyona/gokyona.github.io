@@ -141,7 +141,7 @@
     /* log */
     .log { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
     .log li { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px 18px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
-    .log time { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); }
+    .log time { font-family: "JetBrains Mono", monospace; font-size: 0.85rem; color: var(--accent); line-height: 1.5; }
     .log span { color: var(--muted); }
 
     footer { border-top: 1px solid var(--border); padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; }
@@ -276,16 +276,17 @@
 
   <section id="log">
     <div class="wrap">
-      <div class="section-head"><h2>Research log</h2><p>Newest first.</p></div>
+      <div class="section-head"><h2>Research log</h2><p>Newest first. Start times in Toronto time.</p></div>
       <ul class="log">
-        <!-- Add new entries at the top. -->
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1e started: the RAF autocatalytic-set model reproduces its known threshold; background papers added.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1d: engine 4× faster; soft point selection adopted; work on the autocatalytic-set test begins.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c: with a fair map-maker the engine needs about 8× fewer simulations for the same accuracy; stage 1b's gap corrected.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1c started: re-checking the stage 1b result with a fairer map-maker.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1b: the revised ordered engine beats random search on a harder 10-condition problem.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Stage 1: first benchmark is negative and published as such.</span></li>
-        <li><time datetime="2026-10-25">2026-10-25</time><span>Project launched: Life Origins Traversal.</span></li>
+        <!-- Add new entries at the top. Times are Toronto time (EDT/EST). -->
+        <li><time datetime="2026-10-25T13:00-04:00">2026-10-25<br>13:00 EDT</time><span>Stage 1e started: the RAF autocatalytic-set model was built and reproduces its known threshold; the B70 benchmark has been running since 13:09. Background papers added.</span></li>
+        <li><time datetime="2026-10-25T12:04-04:00">2026-10-25<br>12:04 EDT</time><span>Engine speed-up: training turned out to be limited by GPU task-launch overhead; batched network training makes the engine 4× faster with the same accuracy (check run 12:10–12:20).</span></li>
+        <li><time datetime="2026-10-25T11:49-04:00">2026-10-25<br>11:49 EDT</time><span>Stage 1d started: variants for the engine's late rounds. Paused at 12:04 to optimise; fast re-run 12:17–13:01. Soft point selection adopted.</span></li>
+        <li><time datetime="2026-10-25T09:41-04:00">2026-10-25<br>09:41 EDT</time><span>Stage 1c (B70 run 09:41–11:19): with a fair map-maker the engine needs about 8× fewer simulations for the same accuracy; stage 1b's gap corrected.</span></li>
+        <li><time datetime="2026-10-25T08:22-04:00">2026-10-25<br>08:22 EDT</time><span>Stage 1b (B70 run 08:22–08:46): the revised ordered engine beats random search on a harder 10-condition problem.</span></li>
+        <li><time datetime="2026-10-25T07:25-04:00">2026-10-25<br>07:25 EDT</time><span>Stage 1 (B70 run 07:25–08:03): first benchmark is negative and published as such.</span></li>
+        <li><time datetime="2026-10-25T07:22-04:00">2026-10-25<br>07:22 EDT</time><span>Public repository created on GitHub.</span></li>
+        <li><time datetime="2026-10-25T06:17-04:00">2026-10-25<br>06:17 EDT</time><span>Project started: Life Origins Traversal, the idea of testing conditions in an ordered, never-repeating way.</span></li>
       </ul>
     </div>
   </section>
