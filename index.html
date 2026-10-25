@@ -233,6 +233,7 @@
             <li><span class="m-icon m-done">✓</span><span>Stage 1c, fair re-check: the engine reaches the same accuracy with about <strong>8× fewer simulations</strong> than random or Sobol sampling. The gap is smaller than 1b suggested, and it is reported as such. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1c_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1d: engine made 4× faster on the GPU; a softer point-selection rule becomes the default. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1d_benchmark_b70.md" target="_blank" rel="noopener">Results</a></span></li>
             <li><span class="m-icon m-done">✓</span><span>Stage 1e: on Kauffman's autocatalytic sets (RAF model), a published origin-of-life model with a known threshold, the engine maps the life boundary with about <strong>2× fewer simulations</strong> than Sobol sampling. The saving depends on the problem: about 2× here, 8× on our own model. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/results/stage1e_raf_benchmark_b70.md" target="_blank" rel="noopener">Results</a> · <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/stage1e_raf" target="_blank" rel="noopener">Code</a></span></li>
+            <li><span class="m-icon m-done">✓</span><span>Stage 1 paper: the engine, named <strong>COMPASS</strong>, with all benchmarks and a check against the known threshold for autocatalytic sets: its map recovers the threshold to within 7% on average. <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/paper/COMPASS_stage1.md" target="_blank" rel="noopener">Read</a></span></li>
             <li><span class="m-icon m-now">→</span><span>Next: stage 2, a protocell model with growth and division.</span></li>
           </ul>
           <details class="refs">
@@ -250,6 +251,7 @@
             </ol>
           </details>
           <div class="card-links">
+            <a href="https://github.com/Gokyona/life-origins-traversal/blob/main/paper/COMPASS_stage1.md" target="_blank" rel="noopener">Stage 1 paper: COMPASS →</a>
             <a href="https://github.com/Gokyona/life-origins-traversal" target="_blank" rel="noopener">Repository →</a>
             <a href="https://github.com/Gokyona/life-origins-traversal/tree/main/results" target="_blank" rel="noopener">All results →</a>
           </div>
@@ -280,6 +282,7 @@
       <div class="section-head"><h2>Research log</h2><p>Newest first. Start times in Toronto time.</p></div>
       <ul class="log">
         <!-- Add new entries at the top. Times are Toronto time (EDT/EST). -->
+        <li><time datetime="2026-10-25T14:04-04:00">2026-10-25<br>14:04 EDT</time><span>Stage 1 paper started: COMPASS engine, benchmarks, and a map-vs-theory check on the RAF threshold (B70 analysis 14:06–14:16). References checked against the originals.</span></li>
         <li><time datetime="2026-10-25T13:00-04:00">2026-10-25<br>13:00 EDT</time><span>Stage 1e (B70 run 13:09–13:53): the RAF autocatalytic-set model reproduces its known threshold, and the engine maps it with about 2× fewer simulations than Sobol sampling. Background papers added.</span></li>
         <li><time datetime="2026-10-25T12:04-04:00">2026-10-25<br>12:04 EDT</time><span>Engine speed-up: training turned out to be limited by GPU task-launch overhead; batched network training makes the engine 4× faster with the same accuracy (check run 12:10–12:20).</span></li>
         <li><time datetime="2026-10-25T11:49-04:00">2026-10-25<br>11:49 EDT</time><span>Stage 1d started: variants for the engine's late rounds. Paused at 12:04 to optimise; fast re-run 12:17–13:01. Soft point selection adopted.</span></li>
