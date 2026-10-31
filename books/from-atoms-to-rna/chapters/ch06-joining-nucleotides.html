@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Joining Nucleotides into Chains – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch07-folding-into-shapes.html" rel="next">
+<link href="../chapters/ch05-assembling-nucleotides.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch06-joining-nucleotides.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-phosphodiester" id="toc-sec-phosphodiester" class="nav-link" data-scroll-target="#sec-phosphodiester"><span class="header-section-number">6.1</span> The phosphodiester bond</a>
+  <ul class="collapse">
+  <li><a href="#structure-of-an-rna-chain" id="toc-structure-of-an-rna-chain" class="nav-link" data-scroll-target="#structure-of-an-rna-chain">Structure of an RNA chain</a></li>
+  <li><a href="#and-25-linkages" id="toc-and-25-linkages" class="nav-link" data-scroll-target="#and-25-linkages">3<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> and 2<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> linkages</a></li>
+  </ul></li>
+  <li><a href="#sec-activation" id="toc-sec-activation" class="nav-link" data-scroll-target="#sec-activation"><span class="header-section-number">6.2</span> Activated nucleotides</a>
+  <ul class="collapse">
+  <li><a href="#why-activation-is-needed" id="toc-why-activation-is-needed" class="nav-link" data-scroll-target="#why-activation-is-needed">Why activation is needed</a></li>
+  <li><a href="#phosphorimidazolides" id="toc-phosphorimidazolides" class="nav-link" data-scroll-target="#phosphorimidazolides">Phosphorimidazolides</a></li>
+  <li><a href="#cyclic-phosphates" id="toc-cyclic-phosphates" class="nav-link" data-scroll-target="#cyclic-phosphates">Cyclic phosphates</a></li>
+  </ul></li>
+  <li><a href="#sec-competition" id="toc-sec-competition" class="nav-link" data-scroll-target="#sec-competition"><span class="header-section-number">6.3</span> Polymerisation versus hydrolysis</a>
+  <ul class="collapse">
+  <li><a href="#a-kinetic-competition" id="toc-a-kinetic-competition" class="nav-link" data-scroll-target="#a-kinetic-competition">A kinetic competition</a></li>
+  <li><a href="#ways-to-win-the-competition" id="toc-ways-to-win-the-competition" class="nav-link" data-scroll-target="#ways-to-win-the-competition">Ways to win the competition</a></li>
+  </ul></li>
+  <li><a href="#sec-clay" id="toc-sec-clay" class="nav-link" data-scroll-target="#sec-clay"><span class="header-section-number">6.4</span> Help from surfaces: montmorillonite</a></li>
+  <li><a href="#sec-ice" id="toc-sec-ice" class="nav-link" data-scroll-target="#sec-ice"><span class="header-section-number">6.5</span> Help from ice: eutectic concentration</a></li>
+  <li><a href="#sec-cycles" id="toc-sec-cycles" class="nav-link" data-scroll-target="#sec-cycles"><span class="header-section-number">6.6</span> Help from cycles</a></li>
+  <li><a href="#sec-lengths" id="toc-sec-lengths" class="nav-link" data-scroll-target="#sec-lengths"><span class="header-section-number">6.7</span> Chain length distributions</a>
+  <ul class="collapse">
+  <li><a href="#the-geometric-distribution" id="toc-the-geometric-distribution" class="nav-link" data-scroll-target="#the-geometric-distribution">The geometric distribution</a></li>
+  <li><a href="#why-long-chains-are-rare" id="toc-why-long-chains-are-rare" class="nav-link" data-scroll-target="#why-long-chains-are-rare">Why long chains are rare</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch06" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Describe the phosphodiester bond and the 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction of an RNA chain, and write sequences in the standard notation.</li>
+<li>Explain why the polymerisation of nucleotides in water requires activated monomers, and describe phosphorimidazolides and cyclic phosphates.</li>
+<li>Describe the competition between chain growth and hydrolysis, and explain why it limits chain length in dilute solution.</li>
+<li>Describe how mineral surfaces, ice and wet-dry cycles favour polymerisation, with reference to key experiments.</li>
+<li>Calculate chain length distributions from a probability of extension, and explain why long chains are rare.</li>
+</ol>
+</section>
+<section id="sec-phosphodiester" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-phosphodiester"><span class="header-section-number">6.1</span> The phosphodiester bond</h2>
+<section id="structure-of-an-rna-chain" class="level3">
+<h3 class="anchored" data-anchor-id="structure-of-an-rna-chain">Structure of an RNA chain</h3>
+<p>An RNA molecule is a chain of nucleotides (<a href="ch05-assembling-nucleotides.html#sec-nucleotide-anatomy" class="quarto-xref"><span>Section 5.1</span></a>) joined by <strong>phosphodiester bonds</strong>. Each phosphate group is esterified twice (<a href="ch04-simple-molecules-to-building-blocks.html#sec-phosphate" class="quarto-xref"><span>Section 4.6</span></a>): once to the 3<span class="math inline">\('\)</span>-hydroxy group of one nucleotide and once to the 5<span class="math inline">\('\)</span>-hydroxy group of the next. The alternating sugar and phosphate units form the <strong>backbone</strong> of the chain, and the nucleobases are attached to it as side groups at C1<span class="math inline">\('\)</span> of each ribose (<a href="#fig-dinucleotide" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>). Each phosphodiester carries one negative charge at neutral pH (<a href="ch04-simple-molecules-to-building-blocks.html#sec-phosphate" class="quarto-xref"><span>Section 4.6</span></a>).</p>
+<p>Because the two ends of each nucleotide unit differ, the chain has a direction. One end carries a free 5<span class="math inline">\('\)</span> group (often a phosphate), and the other a free 3<span class="math inline">\('\)</span>-hydroxy group. By convention, sequences are written from the 5<span class="math inline">\('\)</span> end to the 3<span class="math inline">\('\)</span> end, using the one-letter abbreviations of the nucleobases: 5<span class="math inline">\('\)</span>-AGCU-3<span class="math inline">\('\)</span> denotes a chain of four nucleotides in which adenosine carries the free 5<span class="math inline">\('\)</span> end and uridine the free 3<span class="math inline">\('\)</span> end. A short chain is called an <strong>oligonucleotide</strong>, often with the number of units given, as in a 10-mer; a long one a <strong>polynucleotide</strong>.</p>
+</section>
+<section id="and-25-linkages" class="level3">
+<h3 class="anchored" data-anchor-id="and-25-linkages">3<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> and 2<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> linkages</h3>
+<p>Ribose has hydroxy groups on both C2<span class="math inline">\('\)</span> and C3<span class="math inline">\('\)</span>, and a phosphodiester can be formed with either. Natural RNA contains only 3<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> linkages. A non-enzymatic polymerisation, in contrast, can form 2<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> linkages as well, and the proportion of each depends on the conditions and on the activating group. Ferris reviewed evidence that montmorillonite-catalysed oligomerisation shows selectivity in the linkages formed, as well as in sequence and in the handedness of the monomers incorporated <span class="citation" data-cites="ferris2006">(<a href="../references/references.html#ref-ferris2006" role="doc-biblioref">Ferris 2006</a>)</span>. The regiochemistry of the linkage is therefore another dimension of the selectivity problem (<a href="ch04-simple-molecules-to-building-blocks.html#sec-selectivity" class="quarto-xref"><span>Section 4.7</span></a>).</p>
+<p>The 2<span class="math inline">\('\)</span>-hydroxy group also makes RNA more labile than DNA, which lacks it. In basic solution, the 2<span class="math inline">\('\)</span>-oxygen can attack the neighbouring phosphorus atom, breaking the chain by transesterification and leaving a 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate at the end of one fragment (<a href="ch05-assembling-nucleotides.html#sec-phosphorylation" class="quarto-xref"><span>Section 5.4</span></a>) <span class="citation" data-cites="li1999">(<a href="../references/references.html#ref-li1999" role="doc-biblioref">Li and Breaker 1999</a>)</span>. RNA is therefore both formed and broken through the same cyclic intermediate.</p>
+<div id="fig-dinucleotide" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dinucleotide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch06/fig6-1_dinucleotide.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dinucleotide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: A dinucleotide, 5<span class="math inline">\('\)</span>-ApU-3<span class="math inline">\('\)</span>, shown schematically. The phosphodiester bond joins O3<span class="math inline">\('\)</span> of adenosine to O5<span class="math inline">\('\)</span> of uridine; the backbone runs from the free 5<span class="math inline">\('\)</span> end (left) to the free 3<span class="math inline">\('\)</span> end (right). The 2<span class="math inline">\('\)</span>-hydroxy groups, which distinguish RNA from DNA, are shown on each ribose. B denotes a nucleobase.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-activation" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-activation"><span class="header-section-number">6.2</span> Activated nucleotides</h2>
+<section id="why-activation-is-needed" class="level3">
+<h3 class="anchored" data-anchor-id="why-activation-is-needed">Why activation is needed</h3>
+<p>The formation of a phosphodiester bond from a nucleoside monophosphate and the hydroxy group of another nucleotide is a condensation, and in water its equilibrium lies on the side of the separated monomers (<a href="ch04-simple-molecules-to-building-blocks.html#sec-reaction-types" class="quarto-xref"><span>Section 4.2</span></a>, <a href="ch05-assembling-nucleotides.html#sec-wetdry" class="quarto-xref"><span>Section 5.6</span></a>). In living cells the energy is supplied by nucleoside triphosphates, whose phosphoanhydride bonds are broken as each nucleotide is added. In prebiotic chemistry, the monomers must be <strong>activated</strong>: the phosphate must carry a group that is easily displaced, a <strong>leaving group</strong>, so that the attack of a hydroxy group on phosphorus is favourable.</p>
+</section>
+<section id="phosphorimidazolides" class="level3">
+<h3 class="anchored" data-anchor-id="phosphorimidazolides">Phosphorimidazolides</h3>
+<p>The most widely used activated monomers in laboratory studies are <strong>nucleoside 5<span class="math inline">\('\)</span>-phosphorimidazolides</strong>, in which one oxygen of the 5<span class="math inline">\('\)</span>-phosphate is replaced by a nitrogen atom of imidazole or a substituted imidazole such as 2-methylimidazole. Imidazole is a five-membered aromatic ring containing two nitrogen atoms. Imidazole is a good leaving group, so that the 3<span class="math inline">\('\)</span>-hydroxy group of a neighbouring nucleotide can attack the phosphorus and displace it, forming a phosphodiester bond.</p>
+<p>Activated monomers of this kind made possible the study of template-directed synthesis, the copying of a sequence without enzymes. Inoue and Orgel showed that templates containing mainly cytidine direct the synthesis of oligonucleotides from mixtures of activated mononucleotides <span class="citation" data-cites="inoue1983">(<a href="../references/references.html#ref-inoue1983" role="doc-biblioref">Inoue and Orgel 1983</a>)</span>. A nucleotide was incorporated into the products if and only if its complement was present in the template, the reaction had high fidelity, and the products had mean chain lengths of six to ten nucleotides <span class="citation" data-cites="inoue1983">(<a href="../references/references.html#ref-inoue1983" role="doc-biblioref">Inoue and Orgel 1983</a>)</span>. This chemistry is the subject of <a href="ch08-rna-copying-itself.html#sec-nonenzymatic" class="quarto-xref"><span>Section 8.2</span></a>.</p>
+</section>
+<section id="cyclic-phosphates" class="level3">
+<h3 class="anchored" data-anchor-id="cyclic-phosphates">Cyclic phosphates</h3>
+<p>The 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphates of <a href="ch05-assembling-nucleotides.html#sec-phosphorylation" class="quarto-xref"><span>Section 5.4</span></a> are a second type of activated nucleotide. They are formed directly in some prebiotic nucleotide syntheses <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>, and their ring strain supplies the energy for phosphodiester formation.</p>
+<p>The problem with all activated monomers is that the same reactivity that allows them to form phosphodiester bonds also allows water to attack them. Every activated monomer can either join a chain or be hydrolysed back to an inactive nucleoside monophosphate.</p>
+</section>
+</section>
+<section id="sec-competition" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-competition"><span class="header-section-number">6.3</span> Polymerisation versus hydrolysis</h2>
+<section id="a-kinetic-competition" class="level3">
+<h3 class="anchored" data-anchor-id="a-kinetic-competition">A kinetic competition</h3>
+<p>Consider an activated monomer M* in solution together with growing chains. In a short time interval, a given M* can react with the end of a chain (rate constant k<sub>p</sub>, proportional to the concentration of chain ends) or with water (rate constant k<sub>h</sub>). The probability that it joins a chain rather than being hydrolysed is</p>
+<p><span id="eq-p-extend"><span class="math display">\[
+p = \frac{k_{\mathrm{p}}\,[\mathrm{ends}]}{k_{\mathrm{p}}\,[\mathrm{ends}] + k_{\mathrm{h}}}
+\tag{6.1}\]</span></span></p>
+<p>where [ends] is the concentration of chain ends that can accept a monomer. Water is present at about 55 mol L<sup>−1</sup> (<a href="ch04-simple-molecules-to-building-blocks.html#sec-reaction-types" class="quarto-xref"><span>Section 4.2</span></a>), whereas the concentration of chain ends in a dilute prebiotic solution is small. Even if a chain end is much more reactive than a water molecule, hydrolysis can dominate.</p>
+<p>The experimental consequence was stated by Monnard, Kanavarioti and Deamer: in simulations of polymerisation, dilute solutions of activated mononucleotides in the millimolar range hydrolyse extensively, and only trace amounts of dimers and trimers are formed <span class="citation" data-cites="monnard2003">(<a href="../references/references.html#ref-monnard2003" role="doc-biblioref">Monnard, Kanavarioti, and Deamer 2003</a>)</span>. Similarly, Ferris and co-workers found that reactions in solution produce only short oligomers, the longest typically being a 10-mer <span class="citation" data-cites="ferris1996">(<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">Ferris et al. 1996</a>)</span>.</p>
+</section>
+<section id="ways-to-win-the-competition" class="level3">
+<h3 class="anchored" data-anchor-id="ways-to-win-the-competition">Ways to win the competition</h3>
+<p><a href="#eq-p-extend" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> shows two ways to increase p: increase the concentration of chain ends and monomers, or decrease the rate of hydrolysis. The settings discussed in the remainder of this chapter do one or both:</p>
+<ul>
+<li><strong>Mineral surfaces</strong> adsorb monomers and chains, concentrating them in a thin layer and holding them in favourable orientations (<a href="#sec-clay" class="quarto-xref"><span>Section 6.4</span></a>).</li>
+<li><strong>Ice</strong> excludes solutes as it freezes, concentrating them in liquid channels between ice crystals, and the low temperature slows hydrolysis (<a href="#sec-ice" class="quarto-xref"><span>Section 6.5</span></a>).</li>
+<li><strong>Drying</strong> removes water, reducing its activity and concentrating the reactants (<a href="#sec-cycles" class="quarto-xref"><span>Section 6.6</span></a>).</li>
+</ul>
+</section>
+</section>
+<section id="sec-clay" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-clay"><span class="header-section-number">6.4</span> Help from surfaces: montmorillonite</h2>
+<p><strong>Clay minerals</strong> are layered silicates formed by the weathering of rocks in water. <strong>Montmorillonite</strong> is a clay mineral whose layers of aluminium silicate carry a negative charge, balanced by cations held between the layers. Organic molecules, including nucleotides, can enter the spaces between the layers and adsorb on their surfaces. Montmorillonite forms by the alteration of volcanic ash, and clays are expected to have been common on the early Earth wherever rocks were weathered by water.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Ferris, Hill, Liu and Orgel 1996
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most theories of the origin of biological organisation assume that polymers of 30 to 60 monomers are needed to make a genetic system viable, but such polymers had not been formed by condensation in aqueous solution, because hydrolysis competes with polymerisation <span class="citation" data-cites="ferris1996">(<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">Ferris et al. 1996</a>)</span>. Ferris and co-workers studied the oligomerisation of activated monomers, both nucleotides and amino acids, in the presence of minerals: montmorillonite for the nucleotides, and illite and hydroxylapatite for the amino acids <span class="citation" data-cites="ferris1996">(<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">Ferris et al. 1996</a>)</span>.</p>
+<p>In solution, the reactions produced only short oligomers, the longest typically a 10-mer. In the presence of the mineral surfaces, oligomers up to 55 monomers long were formed. The long chains were obtained by successive “feedings” with fresh monomers: the mineral with its adsorbed chains was repeatedly supplied with activated monomer, and polymerisation took place on the surface in a manner akin to the solid-phase synthesis of biopolymers <span class="citation" data-cites="ferris1996">(<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">Ferris et al. 1996</a>)</span>.</p>
+</div>
+</div>
+<p>The experiment showed that chains in the length range thought necessary for a genetic system can be formed without enzymes. It also showed the price: the monomers were activated, and they were supplied repeatedly. The repeated feeding is a laboratory counterpart of a natural setting in which fresh activated monomers arrive continuously, for example from the processes of Chapter 5, while the growing chains remain bound to a mineral.</p>
+</section>
+<section id="sec-ice" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="sec-ice"><span class="header-section-number">6.5</span> Help from ice: eutectic concentration</h2>
+<p>When a dilute aqueous solution is cooled below its freezing point, pure ice crystallises first. The solutes are excluded from the ice and accumulate in the remaining liquid, whose freezing point falls as its concentration rises. At a sufficiently low temperature, the system consists of ice crystals and a network of concentrated liquid channels between them, the <strong>eutectic phase</strong>. The concentration of solutes in these channels can exceed that of the original solution by orders of magnitude (<a href="ch03-feedstock-early-earth.html#sec-settings" class="quarto-xref"><span>Section 3.7</span></a>).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Monnard, Kanavarioti and Deamer 2003
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Monnard, Kanavarioti and Deamer froze dilute solutions of activated mononucleotides together with the metal-ion catalysts Mg(II) and Pb(II), and kept them at −18 °C for periods up to 38 days <span class="citation" data-cites="monnard2003">(<a href="../references/references.html#ref-monnard2003" role="doc-biblioref">Monnard, Kanavarioti, and Deamer 2003</a>)</span>. Under these conditions the monomers were concentrated in eutectic phases within the ice matrix. The hydrolysis of the activated monomers was suppressed at the low temperatures, and polymerisation was enhanced, with yields up to 90 percent <span class="citation" data-cites="monnard2003">(<a href="../references/references.html#ref-monnard2003" role="doc-biblioref">Monnard, Kanavarioti, and Deamer 2003</a>)</span>.</p>
+<p>The products were random RNA analogues with mixed sequences, 5- to 17-mers with traces of longer products, and purine and pyrimidine bases were incorporated at comparable rates and yields <span class="citation" data-cites="monnard2003">(<a href="../references/references.html#ref-monnard2003" role="doc-biblioref">Monnard, Kanavarioti, and Deamer 2003</a>)</span>. The authors suggested that ice deposits on the early Earth could have facilitated the synthesis of short and medium-sized random-sequence RNA analogues <span class="citation" data-cites="monnard2003">(<a href="../references/references.html#ref-monnard2003" role="doc-biblioref">Monnard, Kanavarioti, and Deamer 2003</a>)</span>.</p>
+</div>
+</div>
+<p>Ice thus addresses both terms of <a href="#eq-p-extend" class="quarto-xref">Equation&nbsp;<span>6.1</span></a>: it concentrates the reactants, increasing k<sub>p</sub>[ends], and lowers the temperature, decreasing k<sub>h</sub> (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>). The equal incorporation of purines and pyrimidines is also significant, since a polymerisation that strongly favoured one type of base would produce chains with little diversity of sequence.</p>
+</section>
+<section id="sec-cycles" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-cycles"><span class="header-section-number">6.6</span> Help from cycles</h2>
+<p>The wet-dry cycles of <a href="ch05-assembling-nucleotides.html#sec-wetdry" class="quarto-xref"><span>Section 5.6</span></a> apply to polymerisation as well as to the formation of nucleotides. In the dry phase, the activity of water is low and condensation is favoured; in the wet phase, monomers and chains are redistributed and new material is supplied. Freeze-thaw cycles combine the eutectic concentration of <a href="#sec-ice" class="quarto-xref"><span>Section 6.5</span></a> with periodic mixing, and temperature cycles can separate the strands of double-stranded products, a step needed for copying (<a href="ch08-rna-copying-itself.html#sec-strand-separation" class="quarto-xref"><span>Section 8.3</span></a>). Repeated cycles can accumulate longer chains only if the bonds formed in the favourable phase survive the unfavourable one; in the model of <a href="ch05-assembling-nucleotides.html#eq-wetdry" class="quarto-xref">Equation&nbsp;<span>5.2</span></a>, this requires the hydrolysis fraction h to be small compared with the conversion fraction f.</p>
+<p>Cycles also introduce a form of selection. Chains that are more resistant to hydrolysis, because of their sequence, their folding or their binding to a surface, survive more cycles and so accumulate. This link between chemical stability and persistence is a first step from chemistry towards the selection of sequences discussed in Chapters 7 and 8.</p>
+</section>
+<section id="sec-lengths" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sec-lengths"><span class="header-section-number">6.7</span> Chain length distributions</h2>
+<section id="the-geometric-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="the-geometric-distribution">The geometric distribution</h3>
+<p>Suppose that each time a chain end is offered a monomer, it is extended with probability p and terminated (by hydrolysis of the activated monomer, by blocking of the end, or by any other process) with probability 1 − p, independently of its length. A chain that has reached length n is then extended to n + 1 with probability p.&nbsp;The fraction of chains that reach at least length n is p<sup>n−1</sup>, and the fraction that have exactly length n is</p>
+<p><span id="eq-geometric"><span class="math display">\[
+P(n) = (1-p)\,p^{\,n-1}, \qquad n = 1, 2, 3, \ldots
+\tag{6.2}\]</span></span></p>
+<p>This is the <strong>geometric distribution</strong>. Its mean is</p>
+<p><span id="eq-mean-length"><span class="math display">\[
+\langle n \rangle = \frac{1}{1-p}
+\tag{6.3}\]</span></span></p>
+<p>so that p = 0.5 gives a mean length of 2, p = 0.9 a mean of 10, and p = 0.95 a mean of 20 (<a href="#fig-lengths" class="quarto-xref">Figure&nbsp;<span>6.2</span></a>).</p>
+</section>
+<section id="why-long-chains-are-rare" class="level3">
+<h3 class="anchored" data-anchor-id="why-long-chains-are-rare">Why long chains are rare</h3>
+<p><a href="#eq-geometric" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> decreases exponentially with n.&nbsp;With p = 0.9, the fraction of chains that reach a length of at least 30 is 0.9<sup>29</sup> <span class="math inline">\(\approx\)</span> 0.047, and the fraction that reach 55 is 0.9<sup>54</sup> <span class="math inline">\(\approx\)</span> 0.0034. With p = 0.5, as in a dilute solution where hydrolysis competes on equal terms, the fraction that reach 30 is 0.5<sup>29</sup> <span class="math inline">\(\approx\)</span> 1.9 × 10<sup>−9</sup>. Long chains require p close to 1, and a small change in p near 1 has a large effect on the abundance of long chains. This is why the methods of the preceding sections, which raise p, are decisive, and why repeated feeding, as in the experiment of <span class="citation" data-cites="ferris1996">Ferris et al. (<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">1996</a>)</span>, can extend chains far beyond the length reached in a single exposure to monomer.</p>
+<p>The simple model omits several effects: the rate of extension may depend on chain length and sequence; chains may be broken by hydrolysis of the backbone as well as terminated; and chains may join end to end. More detailed models treat each reaction as a random event occurring at a rate, and follow the populations of chains of each length by stochastic simulation. The qualitative conclusion is the same: without a mechanism that strongly favours extension, the products are dominated by short chains.</p>
+<div id="fig-lengths" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lengths-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch06/fig6-2_lengths.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lengths-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Chain length distributions predicted by the geometric model (<a href="#eq-geometric" class="quarto-xref">Equation&nbsp;<span>6.2</span></a>). (a) Fraction of chains of exactly length n, for probabilities of extension p = 0.5, 0.8, 0.9 and 0.95. (b) Fraction of chains that reach at least length n, on a logarithmic scale; dotted lines mark lengths 30 and 55.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>In RNA, phosphodiester bonds join the 3<span class="math inline">\('\)</span>-hydroxy group of one nucleotide to the 5<span class="math inline">\('\)</span>-hydroxy group of the next; chains have a 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction. Non-enzymatic polymerisation can also form 2<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span> linkages, and the 2<span class="math inline">\('\)</span>-hydroxy group makes RNA susceptible to cleavage.</li>
+<li>Polymerisation in water requires activated monomers, such as nucleoside 5<span class="math inline">\('\)</span>-phosphorimidazolides or 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphates. Templates direct the incorporation of complementary nucleotides with high fidelity.</li>
+<li>Activated monomers are also hydrolysed. In dilute millimolar solutions hydrolysis dominates, and only short oligomers form.</li>
+<li>Montmorillonite with repeated feeding of activated monomers gives oligomers up to 55 units long; ice eutectic phases at −18 °C give 5- to 17-mers in yields up to 90 percent; wet-dry and freeze-thaw cycles combine concentration with mixing.</li>
+<li>If each extension succeeds with probability p, chain lengths follow a geometric distribution with mean 1/(1 − p); long chains require p close to 1.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>Write the sequence of the chain complementary to 5<span class="math inline">\('\)</span>-AGGCU-3<span class="math inline">\('\)</span>, using the base pairs A–U and G–C, in the 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction.</li>
+<li>How many phosphodiester bonds does a linear 20-mer contain? How many negative charges does its backbone carry at neutral pH if both ends carry free hydroxy groups?</li>
+<li>Explain why RNA is more easily cleaved in basic solution than DNA.</li>
+<li>In a phosphorimidazolide, which bond is broken when a phosphodiester bond forms? What is the leaving group?</li>
+<li>Using <a href="#eq-p-extend" class="quarto-xref">Equation&nbsp;<span>6.1</span></a>, calculate p when k<sub>p</sub>[ends] = k<sub>h</sub>, and when k<sub>p</sub>[ends] = 9k<sub>h</sub>. What mean chain lengths do these values give according to <a href="#eq-mean-length" class="quarto-xref">Equation&nbsp;<span>6.3</span></a>?</li>
+<li>Explain why freezing a dilute solution can both concentrate the reactants and slow hydrolysis.</li>
+<li>In the experiment of <span class="citation" data-cites="ferris1996">Ferris et al. (<a href="../references/references.html#ref-ferris1996" role="doc-biblioref">1996</a>)</span>, why were successive “feedings” with monomers needed to obtain chains of 55 units?</li>
+<li>Using <a href="#eq-geometric" class="quarto-xref">Equation&nbsp;<span>6.2</span></a>, calculate the fraction of chains of length at least 10 for p = 0.8 and for p = 0.95.</li>
+<li>Show that the mean of the geometric distribution is 1/(1 − p). (Hint: use <span class="math inline">\(\sum_{n=1}^{\infty} n x^{n-1} = 1/(1-x)^2\)</span> for <span class="math inline">\(|x| &lt; 1\)</span>.)</li>
+<li>Name two effects omitted from the geometric model, and state for each whether including it would increase or decrease the abundance of long chains.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ferris2006" class="csl-entry" role="listitem">
+Ferris, J. P. 2006. <span>“Montmorillonite-Catalysed Formation of <span>RNA</span> Oligomers: The Possible Role of Catalysis in the Origins of Life.”</span> <em>Philosophical Transactions of the Royal Society B</em> 361: 1777–86. <a href="https://doi.org/10.1098/rstb.2006.1903">https://doi.org/10.1098/rstb.2006.1903</a>.
+</div>
+<div id="ref-ferris1996" class="csl-entry" role="listitem">
+Ferris, J. P., A. R. Hill, R. Liu, and L. E. Orgel. 1996. <span>“Synthesis of Long Prebiotic Oligomers on Mineral Surfaces.”</span> <em>Nature</em> 381 (6577): 59–61. <a href="https://doi.org/10.1038/381059a0">https://doi.org/10.1038/381059a0</a>.
+</div>
+<div id="ref-inoue1983" class="csl-entry" role="listitem">
+Inoue, T., and L. E. Orgel. 1983. <span>“A Nonenzymatic <span>RNA</span> Polymerase Model.”</span> <em>Science</em> 219 (4586): 859–62. <a href="https://doi.org/10.1126/science.6186026">https://doi.org/10.1126/science.6186026</a>.
+</div>
+<div id="ref-li1999" class="csl-entry" role="listitem">
+Li, Y., and R. R. Breaker. 1999. <span>“Kinetics of <span>RNA</span> Degradation by Specific Base Catalysis of Transesterification Involving the 2<span class="math inline">\('\)</span>-Hydroxyl Group.”</span> <em>Journal of the American Chemical Society</em> 121: 5364–72. <a href="https://doi.org/10.1021/ja990592p">https://doi.org/10.1021/ja990592p</a>.
+</div>
+<div id="ref-monnard2003" class="csl-entry" role="listitem">
+Monnard, P.-A., A. Kanavarioti, and D. W. Deamer. 2003. <span>“Eutectic Phase Polymerization of Activated Ribonucleotide Mixtures Yields Quasi-Equimolar Incorporation of Purine and Pyrimidine Nucleobases.”</span> <em>Journal of the American Chemical Society</em> 125 (45): 13734–40. <a href="https://doi.org/10.1021/ja036465h">https://doi.org/10.1021/ja036465h</a>.
+</div>
+<div id="ref-powner2009" class="csl-entry" role="listitem">
+Powner, M. W., B. Gerland, and J. D. Sutherland. 2009. <span>“Synthesis of Activated Pyrimidine Ribonucleotides in Prebiotically Plausible Conditions.”</span> <em>Nature</em> 459 (7244): 239–42. <a href="https://doi.org/10.1038/nature08013">https://doi.org/10.1038/nature08013</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch05-assembling-nucleotides.html" class="pagination-link" aria-label="Assembling Nucleotides">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch07-folding-into-shapes.html" class="pagination-link" aria-label="Folding into Shapes">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Assembling Nucleotides – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch06-joining-nucleotides.html" rel="next">
+<link href="../chapters/ch04-simple-molecules-to-building-blocks.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch05-assembling-nucleotides.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-nucleotide-anatomy" id="toc-sec-nucleotide-anatomy" class="nav-link" data-scroll-target="#sec-nucleotide-anatomy"><span class="header-section-number">5.1</span> Anatomy of a nucleotide</a>
+  <ul class="collapse">
+  <li><a href="#nucleosides-and-nucleotides" id="toc-nucleosides-and-nucleotides" class="nav-link" data-scroll-target="#nucleosides-and-nucleotides">Nucleosides and nucleotides</a></li>
+  <li><a href="#configuration-at-c1" id="toc-configuration-at-c1" class="nav-link" data-scroll-target="#configuration-at-c1">Configuration at C1<span class="math inline">\('\)</span></a></li>
+  </ul></li>
+  <li><a href="#sec-glycosidic" id="toc-sec-glycosidic" class="nav-link" data-scroll-target="#sec-glycosidic"><span class="header-section-number">5.2</span> The glycosidic bond</a>
+  <ul class="collapse">
+  <li><a href="#a-condensation-in-water" id="toc-a-condensation-in-water" class="nav-link" data-scroll-target="#a-condensation-in-water">A condensation in water</a></li>
+  <li><a href="#why-the-pyrimidines-fail" id="toc-why-the-pyrimidines-fail" class="nav-link" data-scroll-target="#why-the-pyrimidines-fail">Why the pyrimidines fail</a></li>
+  </ul></li>
+  <li><a href="#sec-pieces" id="toc-sec-pieces" class="nav-link" data-scroll-target="#sec-pieces"><span class="header-section-number">5.3</span> Building the nucleotide in pieces</a>
+  <ul class="collapse">
+  <li><a href="#the-strategy" id="toc-the-strategy" class="nav-link" data-scroll-target="#the-strategy">The strategy</a></li>
+  <li><a href="#routes-to-the-purines" id="toc-routes-to-the-purines" class="nav-link" data-scroll-target="#routes-to-the-purines">Routes to the purines</a></li>
+  </ul></li>
+  <li><a href="#sec-phosphorylation" id="toc-sec-phosphorylation" class="nav-link" data-scroll-target="#sec-phosphorylation"><span class="header-section-number">5.4</span> Phosphorylation of nucleosides</a>
+  <ul class="collapse">
+  <li><a href="#three-hydroxy-groups" id="toc-three-hydroxy-groups" class="nav-link" data-scroll-target="#three-hydroxy-groups">Three hydroxy groups</a></li>
+  <li><a href="#the-23-cyclic-phosphate" id="toc-the-23-cyclic-phosphate" class="nav-link" data-scroll-target="#the-23-cyclic-phosphate">The 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate</a></li>
+  <li><a href="#sources-of-the-phosphate" id="toc-sources-of-the-phosphate" class="nav-link" data-scroll-target="#sources-of-the-phosphate">Sources of the phosphate</a></li>
+  </ul></li>
+  <li><a href="#sec-chirality-copying" id="toc-sec-chirality-copying" class="nav-link" data-scroll-target="#sec-chirality-copying"><span class="header-section-number">5.5</span> Chirality and the copying of nucleotides</a>
+  <ul class="collapse">
+  <li><a href="#d-ribose-in-every-nucleotide" id="toc-d-ribose-in-every-nucleotide" class="nav-link" data-scroll-target="#d-ribose-in-every-nucleotide">D-ribose in every nucleotide</a></li>
+  <li><a href="#enantiomeric-cross-inhibition" id="toc-enantiomeric-cross-inhibition" class="nav-link" data-scroll-target="#enantiomeric-cross-inhibition">Enantiomeric cross-inhibition</a></li>
+  </ul></li>
+  <li><a href="#sec-wetdry" id="toc-sec-wetdry" class="nav-link" data-scroll-target="#sec-wetdry"><span class="header-section-number">5.6</span> Condensation in water and wet-dry cycles</a>
+  <ul class="collapse">
+  <li><a href="#water-as-a-product" id="toc-water-as-a-product" class="nav-link" data-scroll-target="#water-as-a-product">Water as a product</a></li>
+  <li><a href="#wet-dry-cycles" id="toc-wet-dry-cycles" class="nav-link" data-scroll-target="#wet-dry-cycles">Wet-dry cycles</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch05" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Describe the structure of a ribonucleotide, distinguish a nucleoside from a nucleotide, and use the primed numbering of the ribose ring.</li>
+<li>Explain why joining a free nucleobase to free ribose is inefficient for purines and fails for the pyrimidines of RNA.</li>
+<li>Outline the synthesis of activated pyrimidine ribonucleotides by Powner, Gerland and Sutherland, and the routes to purine nucleosides through formamidopyrimidines.</li>
+<li>Explain where and how phosphate is attached to a nucleoside, and why the 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate is an activated form.</li>
+<li>Explain how the chirality of ribose affects the copying of nucleotide chains, and how wet-dry cycles shift condensation equilibria.</li>
+</ol>
+</section>
+<section id="sec-nucleotide-anatomy" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-nucleotide-anatomy"><span class="header-section-number">5.1</span> Anatomy of a nucleotide</h2>
+<section id="nucleosides-and-nucleotides" class="level3">
+<h3 class="anchored" data-anchor-id="nucleosides-and-nucleotides">Nucleosides and nucleotides</h3>
+<p>A <strong>nucleoside</strong> is a nucleobase (<a href="ch04-simple-molecules-to-building-blocks.html#sec-nucleobases" class="quarto-xref"><span>Section 4.5</span></a>) joined to a sugar. In a ribonucleoside, the sugar is D-ribose in its furanose form (<a href="ch04-simple-molecules-to-building-blocks.html#sec-sugars" class="quarto-xref"><span>Section 4.4</span></a>), and the bond joins C1 of the ribose to a ring nitrogen of the base: N9 in the purines and N1 in the pyrimidines. This carbon-nitrogen bond is called the <strong>N-glycosidic bond</strong>. A <strong>nucleotide</strong> is a nucleoside that carries one or more phosphate groups (<a href="ch04-simple-molecules-to-building-blocks.html#sec-phosphate" class="quarto-xref"><span>Section 4.6</span></a>), usually on the hydroxy group at C5 of the ribose. A nucleotide therefore has three parts: a nucleobase, a sugar and a phosphate (<a href="#fig-nucleotide" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>).</p>
+<p>To distinguish the atoms of the sugar from those of the base, the carbon atoms of ribose in a nucleoside are numbered with a prime: C1<span class="math inline">\('\)</span> to C5<span class="math inline">\('\)</span>. The N-glycosidic bond joins C1<span class="math inline">\('\)</span> to the base; the hydroxy groups of ribose are on C2<span class="math inline">\('\)</span>, C3<span class="math inline">\('\)</span> and C5<span class="math inline">\('\)</span>; and the ring oxygen links C1<span class="math inline">\('\)</span> and C4<span class="math inline">\('\)</span>.</p>
+<p>The four ribonucleosides of RNA are <strong>adenosine</strong>, <strong>guanosine</strong>, <strong>cytidine</strong> and <strong>uridine</strong>. The corresponding nucleotides with one phosphate on C5<span class="math inline">\('\)</span> are the nucleoside 5<span class="math inline">\('\)</span>-monophosphates, abbreviated AMP, GMP, CMP and UMP. Their formulas follow from the condensation reactions that join their parts (<a href="#tbl-nucleosides" class="quarto-xref">Table&nbsp;<span>5.1</span></a>). For example, adenine (C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>) and ribose (C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>) combine with the loss of one molecule of water to give adenosine, C<sub>10</sub>H<sub>13</sub>N<sub>5</sub>O<sub>4</sub>; adenosine and phosphoric acid (H<sub>3</sub>PO<sub>4</sub>) combine with the loss of a second molecule of water to give AMP, C<sub>10</sub>H<sub>14</sub>N<sub>5</sub>O<sub>7</sub>P.</p>
+<div id="tbl-nucleosides" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-nucleosides-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.1: The ribonucleosides of RNA and their 5<span class="math inline">\('\)</span>-monophosphates, shown as the neutral (fully protonated) acids. Molar masses are calculated from the abridged standard atomic weights H 1.0080, C 12.011, N 14.007, O 15.999 and P 30.974 <span class="citation" data-cites="ciaaw_abridged">(<a href="../references/references.html#ref-ciaaw_abridged" role="doc-biblioref">CIAAW, n.d.</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-nucleosides-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Base</th>
+<th>Nucleoside</th>
+<th>Formula</th>
+<th>M (g mol<sup>−1</sup>)</th>
+<th>5<span class="math inline">\('\)</span>-Monophosphate</th>
+<th>Formula</th>
+<th>M (g mol<sup>−1</sup>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adenine</td>
+<td>Adenosine</td>
+<td>C<sub>10</sub>H<sub>13</sub>N<sub>5</sub>O<sub>4</sub></td>
+<td>267.25</td>
+<td>AMP</td>
+<td>C<sub>10</sub>H<sub>14</sub>N<sub>5</sub>O<sub>7</sub>P</td>
+<td>347.22</td>
+</tr>
+<tr class="even">
+<td>Guanine</td>
+<td>Guanosine</td>
+<td>C<sub>10</sub>H<sub>13</sub>N<sub>5</sub>O<sub>5</sub></td>
+<td>283.24</td>
+<td>GMP</td>
+<td>C<sub>10</sub>H<sub>14</sub>N<sub>5</sub>O<sub>8</sub>P</td>
+<td>363.22</td>
+</tr>
+<tr class="odd">
+<td>Cytosine</td>
+<td>Cytidine</td>
+<td>C<sub>9</sub>H<sub>13</sub>N<sub>3</sub>O<sub>5</sub></td>
+<td>243.22</td>
+<td>CMP</td>
+<td>C<sub>9</sub>H<sub>14</sub>N<sub>3</sub>O<sub>8</sub>P</td>
+<td>323.20</td>
+</tr>
+<tr class="even">
+<td>Uracil</td>
+<td>Uridine</td>
+<td>C<sub>9</sub>H<sub>12</sub>N<sub>2</sub>O<sub>6</sub></td>
+<td>244.20</td>
+<td>UMP</td>
+<td>C<sub>9</sub>H<sub>13</sub>N<sub>2</sub>O<sub>9</sub>P</td>
+<td>324.18</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="configuration-at-c1" class="level3">
+<h3 class="anchored" data-anchor-id="configuration-at-c1">Configuration at C1<span class="math inline">\('\)</span></h3>
+<p>The formation of the N-glycosidic bond creates a new stereocentre at C1<span class="math inline">\('\)</span>. The base can lie on the same side of the furanose ring as the CH<sub>2</sub>OH group at C4<span class="math inline">\('\)</span>, or on the opposite side. The two forms are called the <span class="math inline">\(\beta\)</span> and <span class="math inline">\(\alpha\)</span> <strong>anomers</strong>, respectively. All the nucleosides of RNA are <span class="math inline">\(\beta\)</span>-D-ribonucleosides: the base is on the same face of the ring as C5<span class="math inline">\('\)</span>. The <span class="math inline">\(\alpha\)</span> anomers are diastereomers of the natural nucleosides, not enantiomers, and have different properties. A prebiotic synthesis must therefore control not only which sugar and which base are joined, but also the configuration of the new bond.</p>
+<div id="fig-nucleotide" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nucleotide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-1_nucleotide.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nucleotide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Anatomy of a ribonucleotide, shown for uridine 5<span class="math inline">\('\)</span>-monophosphate (UMP). The nucleobase (uracil) is joined through N1 to C1<span class="math inline">\('\)</span> of <span class="math inline">\(\beta\)</span>-D-ribofuranose by the N-glycosidic bond; a phosphate group is attached to the oxygen on C5<span class="math inline">\('\)</span>. The base without the phosphate is the nucleoside uridine. Hydrogen atoms on carbon are omitted.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-glycosidic" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-glycosidic"><span class="header-section-number">5.2</span> The glycosidic bond</h2>
+<section id="a-condensation-in-water" class="level3">
+<h3 class="anchored" data-anchor-id="a-condensation-in-water">A condensation in water</h3>
+<p>The N-glycosidic bond is formed by a condensation (<a href="ch04-simple-molecules-to-building-blocks.html#sec-reaction-types" class="quarto-xref"><span>Section 4.2</span></a>): the hydroxy group on C1<span class="math inline">\('\)</span> of ribose and a hydrogen atom on the ring nitrogen of the base are lost as water. Like other condensations, it is disfavoured in water (<a href="ch04-simple-molecules-to-building-blocks.html#eq-K" class="quarto-xref">Equation&nbsp;<span>4.2</span></a>), so that the direct reaction of a base with ribose in dilute solution gives little product. The obvious remedy, the removal of water by drying and heating, was explored in early work.</p>
+<p>Fuller, Sanchez and Orgel reported a synthesis of purine nucleosides from purines and ribose <span class="citation" data-cites="fuller1972">(<a href="../references/references.html#ref-fuller1972" role="doc-biblioref">Fuller, Sanchez, and Orgel 1972</a>)</span>, but this and later attempts showed the reaction to be inefficient. The underlying difficulty was summarised by Powner, Gerland and Sutherland: ribose is difficult to form selectively, and the addition of nucleobases to ribose is inefficient in the case of the purines and does not occur at all in the case of the canonical pyrimidines, cytosine and uracil <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>.</p>
+</section>
+<section id="why-the-pyrimidines-fail" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-pyrimidines-fail">Why the pyrimidines fail</h3>
+<p>The ring nitrogen of a pyrimidine that must form the glycosidic bond, N1, is a poor nucleophile, because its lone pair is delocalised into the adjacent carbonyl group and the ring. The N1–C1<span class="math inline">\('\)</span> bond is therefore not formed in detectable amounts <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>, while ribose itself decomposes over the same period (<a href="ch04-simple-molecules-to-building-blocks.html#sec-sugars" class="quarto-xref"><span>Section 4.4</span></a>). This combination of a slow desired reaction and faster competing reactions is a recurring form of the selectivity problem of <a href="ch04-simple-molecules-to-building-blocks.html#sec-selectivity" class="quarto-xref"><span>Section 4.7</span></a>.</p>
+<p>The failure of the direct route led to two different strategies. The first constructs the glycosidic bond before the nucleobase is complete, so that the nitrogen that forms the bond is part of a more reactive intermediate. This strategy underlies the pyrimidine synthesis of <a href="#sec-pieces" class="quarto-xref"><span>Section 5.3</span></a>. The second modifies the base, as in the purine routes through formamidopyrimidines described in the same section.</p>
+</section>
+</section>
+<section id="sec-pieces" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-pieces"><span class="header-section-number">5.3</span> Building the nucleotide in pieces</h2>
+<section id="the-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="the-strategy">The strategy</h3>
+<p>If the complete base and the complete sugar do not combine, the nucleotide can be assembled from smaller pieces, each containing part of the base and part of the sugar. In this approach, the bond that will become the N-glycosidic bond is formed early, between fragments in which the nitrogen atom is still reactive, and the rings of the base and the sugar are completed afterwards. Anastasi and co-workers showed that precursors of nucleosides can be assembled directly from units of two and three carbon atoms <span class="citation" data-cites="anastasi2006">(<a href="../references/references.html#ref-anastasi2006" role="doc-biblioref">Anastasi et al. 2006</a>)</span>, and this work led to the synthesis of activated pyrimidine ribonucleotides described below.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Powner, Gerland and Sutherland 2009
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Powner, Gerland and Sutherland reported a synthesis of activated pyrimidine ribonucleotides that bypasses both free ribose and the free nucleobases <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>. The starting materials were cyanamide, cyanoacetylene, glycolaldehyde, glyceraldehyde and inorganic phosphate, all regarded as plausible prebiotic feedstock molecules (<a href="ch03-feedstock-early-earth.html#sec-feedstock" class="quarto-xref"><span>Section 3.6</span></a>, <a href="ch04-simple-molecules-to-building-blocks.html#sec-nucleobases" class="quarto-xref"><span>Section 4.5</span></a>).</p>
+<p>The sequence passes through two key intermediates (<a href="#fig-powner" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>). Cyanamide and glycolaldehyde give 2-aminooxazole, a small heterocycle that contains the future C1<span class="math inline">\('\)</span> and C2<span class="math inline">\('\)</span> of the sugar together with the nitrogen and carbon atoms that will become part of the base. Reaction of 2-aminooxazole with glyceraldehyde, which supplies the remaining three carbon atoms of the sugar, gives a pentose amino-oxazoline; the arabinose isomer, arabinose amino-oxazoline, is carried forward. Cyanoacetylene then adds to complete the pyrimidine ring, giving an anhydronucleoside. Finally, phosphate is attached and the anhydronucleoside is converted into the activated pyrimidine nucleotide <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>.</p>
+<p>Phosphate is incorporated only at the last stage, but its presence from the start is essential: it controls three of the earlier reactions by acting as a general acid-base catalyst, a nucleophilic catalyst, a pH buffer and a chemical buffer <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>. The authors concluded that prebiotic syntheses should be studied in mixed chemical systems, in which the reactants for one step can also control others <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>.</p>
+</div>
+</div>
+<p>The 2009 synthesis changed the questions asked about the origin of RNA. It showed that the failure of the direct coupling of base and sugar need not exclude RNA as the first genetic material, and that the stepwise order in which chemists assemble a molecule need not be the order in which it is formed prebiotically. It also left problems: it produces the pyrimidine nucleotides only, it requires the reactants to be added in a specific order, and its starting materials must be supplied in relatively pure form.</p>
+<div id="fig-powner" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-powner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-2_powner.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-powner-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: Simplified outline of the synthesis of activated pyrimidine ribonucleotides by <span class="citation" data-cites="powner2009">Powner, Gerland, and Sutherland (<a href="../references/references.html#ref-powner2009" role="doc-biblioref">2009</a>)</span>. Each box names a starting material or an intermediate; the free sugar ribose and the free nucleobases do not appear. Phosphate is present throughout as a catalyst and buffer and is incorporated in the final step.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="routes-to-the-purines" class="level3">
+<h3 class="anchored" data-anchor-id="routes-to-the-purines">Routes to the purines</h3>
+<p>The purines require a different approach. Becker and co-workers described a high-yielding and strictly regioselective route to purine nucleosides <span class="citation" data-cites="becker2016">(<a href="../references/references.html#ref-becker2016" role="doc-biblioref">Becker et al. 2016</a>)</span>. In this route the purine is not formed first: instead, <strong>formamidopyrimidines</strong>, pyrimidines that carry the atoms of the future five-membered ring in open form, react with the sugar, and the five-membered ring is closed afterwards. The condensation gives the natural N9 nucleosides selectively <span class="citation" data-cites="becker2016">(<a href="../references/references.html#ref-becker2016" role="doc-biblioref">Becker et al. 2016</a>)</span>.</p>
+<p>The same group later reported a synthesis of the pyrimidine nucleosides from small molecules and ribose, driven solely by wet-dry cycles, and compatible with the purine synthesis, so that all four of the canonical bases could form under one set of conditions <span class="citation" data-cites="becker2019">(<a href="../references/references.html#ref-becker2019" role="doc-biblioref">Becker et al. 2019</a>)</span>. A key starting material, hydroxylamine or hydroxylamine disulfonate, can form under plausible conditions in the early atmosphere <span class="citation" data-cites="becker2019">(<a href="../references/references.html#ref-becker2019" role="doc-biblioref">Becker et al. 2019</a>)</span>. In the presence of minerals containing phosphate, the 5<span class="math inline">\('\)</span>-monophosphates and 5<span class="math inline">\('\)</span>-diphosphates of the nucleosides also formed selectively in one-pot reactions <span class="citation" data-cites="becker2019">(<a href="../references/references.html#ref-becker2019" role="doc-biblioref">Becker et al. 2019</a>)</span>.</p>
+<p>These two families of route, the cyanamide chemistry of Sutherland and co-workers and the formamidopyrimidine chemistry of Carell and co-workers, differ in their starting materials and conditions. In their published forms, both involve steps in which the experimenter supplies reagents in a controlled order, and how they could proceed together in one natural setting is an open question.</p>
+</section>
+</section>
+<section id="sec-phosphorylation" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-phosphorylation"><span class="header-section-number">5.4</span> Phosphorylation of nucleosides</h2>
+<section id="three-hydroxy-groups" class="level3">
+<h3 class="anchored" data-anchor-id="three-hydroxy-groups">Three hydroxy groups</h3>
+<p>A ribonucleoside has three hydroxy groups, at C2<span class="math inline">\('\)</span>, C3<span class="math inline">\('\)</span> and C5<span class="math inline">\('\)</span>, any of which can be phosphorylated. In RNA, the phosphate diester joins C3<span class="math inline">\('\)</span> of one nucleotide to C5<span class="math inline">\('\)</span> of the next (<a href="ch04-simple-molecules-to-building-blocks.html#sec-phosphate" class="quarto-xref"><span>Section 4.6</span></a>). A prebiotic phosphorylation that attaches phosphate at random would give a mixture of 2<span class="math inline">\('\)</span>-, 3<span class="math inline">\('\)</span>- and 5<span class="math inline">\('\)</span>-monophosphates and of products with more than one phosphate group. The position of phosphorylation is therefore a further question of selectivity (<a href="ch04-simple-molecules-to-building-blocks.html#sec-selectivity" class="quarto-xref"><span>Section 4.7</span></a>).</p>
+</section>
+<section id="the-23-cyclic-phosphate" class="level3">
+<h3 class="anchored" data-anchor-id="the-23-cyclic-phosphate">The 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate</h3>
+<p>When a phosphate group is attached to C2<span class="math inline">\('\)</span> or C3<span class="math inline">\('\)</span>, it can condense a second time with the neighbouring hydroxy group, forming a five-membered ring that contains C2<span class="math inline">\('\)</span>, C3<span class="math inline">\('\)</span>, two oxygen atoms and the phosphorus atom. The product is the nucleoside <strong>2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate</strong> (<a href="#fig-cyclic" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>). The ring is strained, and its opening releases free energy. The cyclic phosphate is therefore an activated form of the nucleotide, able to transfer its phosphate to the 5<span class="math inline">\('\)</span>-hydroxy group of another nucleotide and so to form a phosphodiester bond without an external source of energy. The activated pyrimidine ribonucleotides of <span class="citation" data-cites="powner2009">Powner, Gerland, and Sutherland (<a href="../references/references.html#ref-powner2009" role="doc-biblioref">2009</a>)</span> are cyclic phosphates of this kind.</p>
+<div id="fig-cyclic" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cyclic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-3_cyclic.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cyclic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: Phosphate groups on a ribonucleoside. The ribose ring of a nucleoside is shown with its three hydroxy-bearing positions. (a) 5<span class="math inline">\('\)</span>-Monophosphate, the form found in RNA chains. (b) 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-Cyclic phosphate, in which one phosphate bridges C2<span class="math inline">\('\)</span> and C3<span class="math inline">\('\)</span> in a five-membered ring; its opening releases free energy and can form a phosphodiester bond. B denotes the nucleobase.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sources-of-the-phosphate" class="level3">
+<h3 class="anchored" data-anchor-id="sources-of-the-phosphate">Sources of the phosphate</h3>
+<p>The approaches to prebiotic phosphorylation introduced in <a href="ch04-simple-molecules-to-building-blocks.html#sec-phosphate" class="quarto-xref"><span>Section 4.6</span></a> apply to nucleosides. Schreibersite attaches phosphate groups to adenosine and uridine in water <span class="citation" data-cites="gull2015">(<a href="../references/references.html#ref-gull2015" role="doc-biblioref">Gull et al. 2015</a>)</span>. Diamidophosphate phosphorylates nucleosides and nucleotides in water or a paste without an additional condensing agent, and under the same conditions forms short chains of nucleotides <span class="citation" data-cites="gibard2018">(<a href="../references/references.html#ref-gibard2018" role="doc-biblioref">Gibard et al. 2018</a>)</span>. In the wet-dry cycle chemistry of <span class="citation" data-cites="becker2019">Becker et al. (<a href="../references/references.html#ref-becker2019" role="doc-biblioref">2019</a>)</span>, phosphate-containing minerals gave 5<span class="math inline">\('\)</span>-mono- and diphosphates selectively. In each case, the conditions that favour phosphorylation are those that reduce the activity of water: drying, pastes, or the use of an activated phosphorus reagent.</p>
+</section>
+</section>
+<section id="sec-chirality-copying" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-chirality-copying"><span class="header-section-number">5.5</span> Chirality and the copying of nucleotides</h2>
+<section id="d-ribose-in-every-nucleotide" class="level3">
+<h3 class="anchored" data-anchor-id="d-ribose-in-every-nucleotide">D-ribose in every nucleotide</h3>
+<p>Each ribonucleotide contains four stereocentres in its sugar, at C1<span class="math inline">\('\)</span>, C2<span class="math inline">\('\)</span>, C3<span class="math inline">\('\)</span> and C4<span class="math inline">\('\)</span>, and all the nucleotides of an RNA molecule have the same configuration at each of them: they are <span class="math inline">\(\beta\)</span>-D-nucleotides. The mirror image of a <span class="math inline">\(\beta\)</span>-D-nucleotide is a <span class="math inline">\(\beta\)</span>-L-nucleotide. Because syntheses from achiral feedstock molecules give racemates (<a href="ch04-simple-molecules-to-building-blocks.html#sec-functional-groups" class="quarto-xref"><span>Section 4.1</span></a>), a prebiotic nucleotide synthesis that begins with achiral or racemic materials will give equal amounts of D and L nucleotides unless an asymmetric influence acts. In the synthesis of <span class="citation" data-cites="powner2009">Powner, Gerland, and Sutherland (<a href="../references/references.html#ref-powner2009" role="doc-biblioref">2009</a>)</span>, for example, glyceraldehyde is the only chiral starting material; if it is racemic, so are the products.</p>
+</section>
+<section id="enantiomeric-cross-inhibition" class="level3">
+<h3 class="anchored" data-anchor-id="enantiomeric-cross-inhibition">Enantiomeric cross-inhibition</h3>
+<p>The importance of homochirality for RNA appears when nucleotides are joined into chains on a template. A <strong>template</strong> is an existing chain whose sequence directs the order in which monomers are joined; template-directed copying is the subject of <a href="ch08-rna-copying-itself.html" class="quarto-xref"><span>Chapter 8</span></a>. Joyce and co-workers studied the template-directed formation of chains of guanosine nucleotides on a template of polycytidylic acid, poly(C), using activated monomers of either one or both handedness <span class="citation" data-cites="joyce1984">(<a href="../references/references.html#ref-joyce1984" role="doc-biblioref">Joyce et al. 1984</a>)</span>. Their results showed chiral selection: when nucleotides of the opposite handedness were present, they were incorporated at the end of a growing chain and blocked further growth <span class="citation" data-cites="joyce1984">(<a href="../references/references.html#ref-joyce1984" role="doc-biblioref">Joyce et al. 1984</a>)</span>. This effect, called <strong>enantiomeric cross-inhibition</strong>, means that copying is inefficient in a racemic mixture of nucleotides.</p>
+<p>Enantiomeric cross-inhibition is both a problem and a possible clue. It shows that a racemic pool of nucleotides is a poor starting point for RNA. But it is also a form of the mutual inhibition between enantiomers in Frank’s model (<a href="ch04-simple-molecules-to-building-blocks.html#sec-selectivity" class="quarto-xref"><span>Section 4.7</span></a>), and so a possible mechanism of amplification once an excess of one enantiomer exists.</p>
+</section>
+</section>
+<section id="sec-wetdry" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="sec-wetdry"><span class="header-section-number">5.6</span> Condensation in water and wet-dry cycles</h2>
+<section id="water-as-a-product" class="level3">
+<h3 class="anchored" data-anchor-id="water-as-a-product">Water as a product</h3>
+<p>Every bond that joins the parts of a nucleotide, and every bond that joins nucleotides into chains, is formed by a condensation that releases water. For a condensation of the form</p>
+<p><span class="math display">\[
+\mathrm{A{-}OH} + \mathrm{H{-}B} \rightleftharpoons \mathrm{A{-}B} + \mathrm{H_2O}
+\]</span></p>
+<p>the equilibrium constant can be written in terms of the activity of water, <span class="math inline">\(a_{\mathrm{w}}\)</span>:</p>
+<p><span id="eq-K-aw"><span class="math display">\[
+K = \frac{[\mathrm{A{-}B}]\, a_{\mathrm{w}}}{[\mathrm{A{-}OH}][\mathrm{H{-}B}]}
+\tag{5.1}\]</span></span></p>
+<p>In dilute solution, <span class="math inline">\(a_{\mathrm{w}}\)</span> is close to 1, and with K small (<a href="ch04-simple-molecules-to-building-blocks.html#sec-reaction-types" class="quarto-xref"><span>Section 4.2</span></a>) the ratio of product to reactants is small. The <strong>activity</strong> of water measures its effective concentration relative to pure water; it is reduced when water evaporates and solutes become concentrated, or when the reaction takes place in a film, a paste or the pores of a mineral. At constant K, a tenfold reduction in <span class="math inline">\(a_{\mathrm{w}}\)</span> increases the equilibrium ratio of product to reactants tenfold. Drying also increases the concentrations of the reactants themselves, which increases the rate of the condensation and, for bimolecular reactions, the fraction of reactants converted.</p>
+</section>
+<section id="wet-dry-cycles" class="level3">
+<h3 class="anchored" data-anchor-id="wet-dry-cycles">Wet-dry cycles</h3>
+<p>A <strong>wet-dry cycle</strong> alternates between a wet phase, in which reactants are dissolved and transported, and a dry phase, in which condensations are favoured. Such cycles occur naturally at the margins of ponds and in hot-spring settings, where water evaporates and is replenished (<a href="ch03-feedstock-early-earth.html#sec-settings" class="quarto-xref"><span>Section 3.7</span></a>) <span class="citation" data-cites="damer2020">(<a href="../references/references.html#ref-damer2020" role="doc-biblioref">Damer and Deamer 2020</a>)</span>. They combine two requirements that cannot be met at the same time: mobility of the reactants, which requires water, and condensation, which requires its removal. The synthesis of nucleosides by <span class="citation" data-cites="becker2019">Becker et al. (<a href="../references/references.html#ref-becker2019" role="doc-biblioref">2019</a>)</span> was driven solely by such cycles.</p>
+<p>A simple model shows how cycling accumulates a product. Suppose that, in each dry phase, a fraction f of the remaining reactant is converted into a condensation product, and that in each wet phase a fraction h of the product is hydrolysed back to the reactant. If x<sub>n</sub> is the fraction of material present as product after n cycles,</p>
+<p><span id="eq-wetdry"><span class="math display">\[
+x_{n+1} = (1-h)\,[\,x_n + f(1 - x_n)\,]
+\tag{5.2}\]</span></span></p>
+<p>which approaches the steady-state value x* = f(1 − h)/(f + h − fh) after many cycles (<a href="#fig-wetdry" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>). With f = 0.2 and h = 0.05, for example, x* = 0.19/0.24 <span class="math inline">\(\approx\)</span> 0.79. The product accumulates to a high fraction even though each dry phase converts only a fifth of the reactant, provided that hydrolysis in the wet phase is slow compared with condensation in the dry phase. If hydrolysis is fast, the steady state is low however many cycles occur. The model is schematic: in real cycles the products also include side products and decomposition products, which accumulate as well.</p>
+<div id="fig-wetdry" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-wetdry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-4_wetdry.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-wetdry-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.4: The accumulation of a condensation product in a simple model of wet-dry cycles (<a href="#eq-wetdry" class="quarto-xref">Equation&nbsp;<span>5.2</span></a>). In each cycle a fraction f = 0.2 of the remaining reactant is converted in the dry phase, and a fraction h of the product is hydrolysed in the wet phase. Curves are shown for h = 0.02, 0.05 and 0.2; dashed lines mark the steady states.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>A nucleoside is a nucleobase joined by an N-glycosidic bond from N9 (purines) or N1 (pyrimidines) to C1<span class="math inline">\('\)</span> of <span class="math inline">\(\beta\)</span>-D-ribofuranose; a nucleotide carries in addition one or more phosphate groups, usually on C5<span class="math inline">\('\)</span>.</li>
+<li>The direct condensation of a free base with free ribose is inefficient for the purines and does not occur for the canonical pyrimidines.</li>
+<li>Powner, Gerland and Sutherland (2009) made activated pyrimidine ribonucleotides from cyanamide, cyanoacetylene, glycolaldehyde, glyceraldehyde and phosphate, through 2-aminooxazole, arabinose amino-oxazoline and an anhydronucleoside, bypassing free ribose and free bases. Carell and co-workers developed routes to purine nucleosides through formamidopyrimidines and a wet-dry cycle synthesis compatible with all four bases.</li>
+<li>Phosphorylation can occur at C2<span class="math inline">\('\)</span>, C3<span class="math inline">\('\)</span> or C5<span class="math inline">\('\)</span>; the 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate is an activated form of the nucleotide.</li>
+<li>Nucleotides of the wrong handedness block template-directed chain growth (enantiomeric cross-inhibition), so copying requires homochiral nucleotides.</li>
+<li>Condensations are favoured when the activity of water is low. Wet-dry cycles combine mobility in the wet phase with condensation in the dry phase, and can accumulate products when hydrolysis is slow.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>Write the equation for the condensation of cytosine with ribose to give cytidine, and verify the formula of cytidine in <a href="#tbl-nucleosides" class="quarto-xref">Table&nbsp;<span>5.1</span></a>.</li>
+<li>Calculate the molar mass of guanosine 5<span class="math inline">\('\)</span>-monophosphate from the abridged standard atomic weights, and compare it with <a href="#tbl-nucleosides" class="quarto-xref">Table&nbsp;<span>5.1</span></a>.</li>
+<li>How many stereocentres does the ribose of a nucleoside contain? How many stereoisomers of adenosine are possible in principle?</li>
+<li>Explain the difference between the <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> anomers of a nucleoside. Are they enantiomers?</li>
+<li>In the synthesis of <span class="citation" data-cites="powner2009">Powner, Gerland, and Sutherland (<a href="../references/references.html#ref-powner2009" role="doc-biblioref">2009</a>)</span>, which starting materials supply the atoms of the sugar, and which supply the atoms of the base?</li>
+<li>Phosphate is incorporated into the nucleotide only in the final step of the 2009 synthesis. Explain why its presence from the start was nevertheless essential.</li>
+<li>Draw the 2<span class="math inline">\('\)</span>-, 3<span class="math inline">\('\)</span>- and 5<span class="math inline">\('\)</span>-monophosphates of uridine, and the 2<span class="math inline">\('\)</span>,3<span class="math inline">\('\)</span>-cyclic phosphate. Which of them is activated, and why?</li>
+<li>Explain, with reference to <a href="#eq-K-aw" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, why a paste or a film of reactants favours phosphorylation more than a dilute solution.</li>
+<li>Explain how enantiomeric cross-inhibition could both hinder and help the origin of homochiral RNA.</li>
+<li>Using <a href="#eq-wetdry" class="quarto-xref">Equation&nbsp;<span>5.2</span></a>, derive the expression for the steady-state fraction x* by setting x<sub>n+1</sub> = x<sub>n</sub>.</li>
+<li>For f = 0.2, calculate x* for h = 0.02 and h = 0.2. How many cycles are needed in each case for x to reach 90 percent of x*, starting from x<sub>0</sub> = 0?</li>
+<li>Name two simplifications of the model of <a href="#eq-wetdry" class="quarto-xref">Equation&nbsp;<span>5.2</span></a>, and explain how each would change the predicted accumulation of product.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-anastasi2006" class="csl-entry" role="listitem">
+Anastasi, C., M. A. Crowe, M. W. Powner, and J. D. Sutherland. 2006. <span>“Direct Assembly of Nucleoside Precursors from Two- and Three-Carbon Units.”</span> <em>Angewandte Chemie International Edition</em> 45 (37): 6176–79. <a href="https://doi.org/10.1002/anie.200601267">https://doi.org/10.1002/anie.200601267</a>.
+</div>
+<div id="ref-becker2019" class="csl-entry" role="listitem">
+Becker, S., J. Feldmann, S. Wiedemann, H. Okamura, C. Schneider, K. Iwan, A. Crisp, M. Rossa, T. Amatov, and T. Carell. 2019. <span>“Unified Prebiotically Plausible Synthesis of Pyrimidine and Purine <span>RNA</span> Ribonucleotides.”</span> <em>Science</em> 366: 76–82. <a href="https://doi.org/10.1126/science.aax2747">https://doi.org/10.1126/science.aax2747</a>.
+</div>
+<div id="ref-becker2016" class="csl-entry" role="listitem">
+Becker, S., I. Thoma, A. Deutsch, T. Gehrke, P. Mayer, H. Zipse, and T. Carell. 2016. <span>“A High-Yielding, Strictly Regioselective Prebiotic Purine Nucleoside Formation Pathway.”</span> <em>Science</em> 352: 833–36. <a href="https://doi.org/10.1126/science.aad2808">https://doi.org/10.1126/science.aad2808</a>.
+</div>
+<div id="ref-ciaaw_abridged" class="csl-entry" role="listitem">
+CIAAW. n.d. <span>“Abridged Standard Atomic Weights 2024.”</span> Commission on Isotopic Abundances and Atomic Weights. <a href="https://www.ciaaw.org/abridged-atomic-weights.htm">https://www.ciaaw.org/abridged-atomic-weights.htm</a>.
+</div>
+<div id="ref-damer2020" class="csl-entry" role="listitem">
+Damer, B., and D. Deamer. 2020. <span>“The Hot Spring Hypothesis for an Origin of Life.”</span> <em>Astrobiology</em> 20 (4): 429–52. <a href="https://doi.org/10.1089/ast.2019.2045">https://doi.org/10.1089/ast.2019.2045</a>.
+</div>
+<div id="ref-fuller1972" class="csl-entry" role="listitem">
+Fuller, W. D., R. A. Sanchez, and L. E. Orgel. 1972. <span>“Studies in Prebiotic Synthesis. <span>VI</span>. <span>Synthesis</span> of Purine Nucleosides.”</span> <em>Journal of Molecular Biology</em> 67 (1): 25–33. <a href="https://doi.org/10.1016/0022-2836(72)90383-X">https://doi.org/10.1016/0022-2836(72)90383-X</a>.
+</div>
+<div id="ref-gibard2018" class="csl-entry" role="listitem">
+Gibard, C., S. Bhowmik, M. Karki, E.-K. Kim, and R. Krishnamurthy. 2018. <span>“Phosphorylation, Oligomerization and Self-Assembly in Water Under Potential Prebiotic Conditions.”</span> <em>Nature Chemistry</em> 10: 212–17. <a href="https://doi.org/10.1038/nchem.2878">https://doi.org/10.1038/nchem.2878</a>.
+</div>
+<div id="ref-gull2015" class="csl-entry" role="listitem">
+Gull, M., M. A. Mojica, F. M. Fernández, D. A. Gaul, T. M. Orlando, C. L. Liotta, and M. A. Pasek. 2015. <span>“Nucleoside Phosphorylation by the Mineral Schreibersite.”</span> <em>Scientific Reports</em> 5: 17198. <a href="https://doi.org/10.1038/srep17198">https://doi.org/10.1038/srep17198</a>.
+</div>
+<div id="ref-joyce1984" class="csl-entry" role="listitem">
+Joyce, G. F., G. M. Visser, C. A. A. van Boeckel, J. H. van Boom, L. E. Orgel, and J. van Westrenen. 1984. <span>“Chiral Selection in Poly(<span>C</span>)-Directed Synthesis of Oligo(<span>G</span>).”</span> <em>Nature</em> 310: 602–4. <a href="https://doi.org/10.1038/310602a0">https://doi.org/10.1038/310602a0</a>.
+</div>
+<div id="ref-powner2009" class="csl-entry" role="listitem">
+Powner, M. W., B. Gerland, and J. D. Sutherland. 2009. <span>“Synthesis of Activated Pyrimidine Ribonucleotides in Prebiotically Plausible Conditions.”</span> <em>Nature</em> 459 (7244): 239–42. <a href="https://doi.org/10.1038/nature08013">https://doi.org/10.1038/nature08013</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="pagination-link" aria-label="From Simple Molecules to Building Blocks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch06-joining-nucleotides.html" class="pagination-link" aria-label="Joining Nucleotides into Chains">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

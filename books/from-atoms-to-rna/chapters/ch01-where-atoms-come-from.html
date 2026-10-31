@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>1&nbsp; Where Atoms Come From – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch02-how-atoms-join.html" rel="next">
+<link href="../index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch01-where-atoms-come-from.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-matter" id="toc-sec-matter" class="nav-link" data-scroll-target="#sec-matter"><span class="header-section-number">1.1</span> Matter, elements and atoms</a>
+  <ul class="collapse">
+  <li><a href="#the-question-of-this-book" id="toc-the-question-of-this-book" class="nav-link" data-scroll-target="#the-question-of-this-book">The question of this book</a></li>
+  <li><a href="#the-atom-and-its-three-particles" id="toc-the-atom-and-its-three-particles" class="nav-link" data-scroll-target="#the-atom-and-its-three-particles">The atom and its three particles</a></li>
+  <li><a href="#atomic-number-and-the-definition-of-an-element" id="toc-atomic-number-and-the-definition-of-an-element" class="nav-link" data-scroll-target="#atomic-number-and-the-definition-of-an-element">Atomic number and the definition of an element</a></li>
+  <li><a href="#mass-number-and-isotopes" id="toc-mass-number-and-isotopes" class="nav-link" data-scroll-target="#mass-number-and-isotopes">Mass number and isotopes</a></li>
+  <li><a href="#stability-of-nuclei" id="toc-stability-of-nuclei" class="nav-link" data-scroll-target="#stability-of-nuclei">Stability of nuclei</a></li>
+  <li><a href="#where-the-elements-come-from" id="toc-where-the-elements-come-from" class="nav-link" data-scroll-target="#where-the-elements-come-from">Where the elements come from</a></li>
+  </ul></li>
+  <li><a href="#sec-bbn" id="toc-sec-bbn" class="nav-link" data-scroll-target="#sec-bbn"><span class="header-section-number">1.2</span> The first three minutes</a>
+  <ul class="collapse">
+  <li><a href="#an-expanding-cooling-universe" id="toc-an-expanding-cooling-universe" class="nav-link" data-scroll-target="#an-expanding-cooling-universe">An expanding, cooling Universe</a></li>
+  <li><a href="#fixing-the-ratio-of-neutrons-to-protons" id="toc-fixing-the-ratio-of-neutrons-to-protons" class="nav-link" data-scroll-target="#fixing-the-ratio-of-neutrons-to-protons">Fixing the ratio of neutrons to protons</a></li>
+  <li><a href="#the-deuterium-bottleneck" id="toc-the-deuterium-bottleneck" class="nav-link" data-scroll-target="#the-deuterium-bottleneck">The deuterium bottleneck</a></li>
+  <li><a href="#from-deuterium-to-helium" id="toc-from-deuterium-to-helium" class="nav-link" data-scroll-target="#from-deuterium-to-helium">From deuterium to helium</a></li>
+  <li><a href="#why-nucleosynthesis-stopped-at-lithium" id="toc-why-nucleosynthesis-stopped-at-lithium" class="nav-link" data-scroll-target="#why-nucleosynthesis-stopped-at-lithium">Why nucleosynthesis stopped at lithium</a></li>
+  <li><a href="#from-nuclei-to-atoms" id="toc-from-nuclei-to-atoms" class="nav-link" data-scroll-target="#from-nuclei-to-atoms">From nuclei to atoms</a></li>
+  <li><a href="#consequence-for-this-book" id="toc-consequence-for-this-book" class="nav-link" data-scroll-target="#consequence-for-this-book">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-stars" id="toc-sec-stars" class="nav-link" data-scroll-target="#sec-stars"><span class="header-section-number">1.3</span> Stars as element factories</a>
+  <ul class="collapse">
+  <li><a href="#why-fusion-releases-energy" id="toc-why-fusion-releases-energy" class="nav-link" data-scroll-target="#why-fusion-releases-energy">Why fusion releases energy</a></li>
+  <li><a href="#hydrogen-burning-the-proton-proton-chain" id="toc-hydrogen-burning-the-proton-proton-chain" class="nav-link" data-scroll-target="#hydrogen-burning-the-proton-proton-chain">Hydrogen burning: the proton-proton chain</a></li>
+  <li><a href="#helium-burning-and-the-beryllium-8-problem" id="toc-helium-burning-and-the-beryllium-8-problem" class="nav-link" data-scroll-target="#helium-burning-and-the-beryllium-8-problem">Helium burning and the beryllium-8 problem</a></li>
+  <li><a href="#the-hoyle-state" id="toc-the-hoyle-state" class="nav-link" data-scroll-target="#the-hoyle-state">The Hoyle state</a></li>
+  <li><a href="#from-carbon-to-oxygen" id="toc-from-carbon-to-oxygen" class="nav-link" data-scroll-target="#from-carbon-to-oxygen">From carbon to oxygen</a></li>
+  <li><a href="#consequence-for-this-book-1" id="toc-consequence-for-this-book-1" class="nav-link" data-scroll-target="#consequence-for-this-book-1">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-massive" id="toc-sec-massive" class="nav-link" data-scroll-target="#sec-massive"><span class="header-section-number">1.4</span> Beyond carbon: nitrogen, massive stars and supernovae</a>
+  <ul class="collapse">
+  <li><a href="#the-cno-cycle-and-the-origin-of-nitrogen" id="toc-the-cno-cycle-and-the-origin-of-nitrogen" class="nav-link" data-scroll-target="#the-cno-cycle-and-the-origin-of-nitrogen">The CNO cycle and the origin of nitrogen</a></li>
+  <li><a href="#burning-stages-in-massive-stars" id="toc-burning-stages-in-massive-stars" class="nav-link" data-scroll-target="#burning-stages-in-massive-stars">Burning stages in massive stars</a></li>
+  <li><a href="#the-end-at-iron-core-collapse" id="toc-the-end-at-iron-core-collapse" class="nav-link" data-scroll-target="#the-end-at-iron-core-collapse">The end at iron: core collapse</a></li>
+  <li><a href="#consequence-for-this-book-2" id="toc-consequence-for-this-book-2" class="nav-link" data-scroll-target="#consequence-for-this-book-2">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-phosphorus" id="toc-sec-phosphorus" class="nav-link" data-scroll-target="#sec-phosphorus"><span class="header-section-number">1.5</span> Phosphorus: the scarce element</a>
+  <ul class="collapse">
+  <li><a href="#one-stable-isotope" id="toc-one-stable-isotope" class="nav-link" data-scroll-target="#one-stable-isotope">One stable isotope</a></li>
+  <li><a href="#measuring-abundances-the-log-epsilon-scale" id="toc-measuring-abundances-the-log-epsilon-scale" class="nav-link" data-scroll-target="#measuring-abundances-the-log-epsilon-scale">Measuring abundances: the log epsilon scale</a></li>
+  <li><a href="#how-scarce-phosphorus-is" id="toc-how-scarce-phosphorus-is" class="nav-link" data-scroll-target="#how-scarce-phosphorus-is">How scarce phosphorus is</a></li>
+  <li><a href="#where-phosphorus-is-made" id="toc-where-phosphorus-is-made" class="nav-link" data-scroll-target="#where-phosphorus-is-made">Where phosphorus is made</a></li>
+  <li><a href="#consequence-for-this-book-3" id="toc-consequence-for-this-book-3" class="nav-link" data-scroll-target="#consequence-for-this-book-3">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-abundances" id="toc-sec-abundances" class="nav-link" data-scroll-target="#sec-abundances"><span class="header-section-number">1.6</span> Cosmic abundances and the elements of life</a>
+  <ul class="collapse">
+  <li><a href="#three-compositions" id="toc-three-compositions" class="nav-link" data-scroll-target="#three-compositions">Three compositions</a></li>
+  <li><a href="#the-earths-upper-crust" id="toc-the-earths-upper-crust" class="nav-link" data-scroll-target="#the-earths-upper-crust">The Earth’s upper crust</a></li>
+  <li><a href="#living-matter" id="toc-living-matter" class="nav-link" data-scroll-target="#living-matter">Living matter</a></li>
+  <li><a href="#comparing-the-three" id="toc-comparing-the-three" class="nav-link" data-scroll-target="#comparing-the-three">Comparing the three</a></li>
+  <li><a href="#consequence-for-this-book-4" id="toc-consequence-for-this-book-4" class="nav-link" data-scroll-target="#consequence-for-this-book-4">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-nebula" id="toc-sec-nebula" class="nav-link" data-scroll-target="#sec-nebula"><span class="header-section-number">1.7</span> From stellar ejecta to the forming Earth</a>
+  <ul class="collapse">
+  <li><a href="#recycling-between-stars-and-gas" id="toc-recycling-between-stars-and-gas" class="nav-link" data-scroll-target="#recycling-between-stars-and-gas">Recycling between stars and gas</a></li>
+  <li><a href="#the-age-of-the-solar-system" id="toc-the-age-of-the-solar-system" class="nav-link" data-scroll-target="#the-age-of-the-solar-system">The age of the solar system</a></li>
+  <li><a href="#the-protoplanetary-disc" id="toc-the-protoplanetary-disc" class="nav-link" data-scroll-target="#the-protoplanetary-disc">The protoplanetary disc</a></li>
+  <li><a href="#radioactive-clues-to-the-birth-environment" id="toc-radioactive-clues-to-the-birth-environment" class="nav-link" data-scroll-target="#radioactive-clues-to-the-birth-environment">Radioactive clues to the birth environment</a></li>
+  <li><a href="#building-the-earth" id="toc-building-the-earth" class="nav-link" data-scroll-target="#building-the-earth">Building the Earth</a></li>
+  <li><a href="#consequence-for-this-book-5" id="toc-consequence-for-this-book-5" class="nav-link" data-scroll-target="#consequence-for-this-book-5">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch01" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Describe the structure of an atom in terms of protons, neutrons and electrons, and define atomic number, mass number and isotope.</li>
+<li>Explain how hydrogen and helium formed in the first minutes after the Big Bang, and how heavier elements, including carbon, nitrogen, oxygen and phosphorus, are produced in stars.</li>
+<li>Compare the abundance of the elements in the Universe with their abundance in RNA, and explain why phosphorus is the scarcest of the five elements RNA requires.</li>
+<li>Outline how material made in stars became part of the solar system, and state the age of the solar system and the time scale of the Earth’s formation.</li>
+</ol>
+</section>
+<section id="sec-matter" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-matter"><span class="header-section-number">1.1</span> Matter, elements and atoms</h2>
+<section id="the-question-of-this-book" class="level3">
+<h3 class="anchored" data-anchor-id="the-question-of-this-book">The question of this book</h3>
+<p>Every molecule of RNA in every living cell is built from atoms of only five elements: hydrogen (H), carbon (C), nitrogen (N), oxygen (O) and phosphorus (P) (<a href="#fig-periodic-rna" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>). This book follows those five elements from their origin to the point at which they are joined into a molecule that can direct the synthesis of copies of itself. The first step is to define precisely what an element and an atom are.</p>
+<div id="fig-periodic-rna" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-periodic-rna-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-1_periodic_table_rna.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-periodic-rna-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: The first 36 elements of the periodic table, arranged by atomic number. The five elements that make up the canonical RNA molecule are highlighted.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-atom-and-its-three-particles" class="level3">
+<h3 class="anchored" data-anchor-id="the-atom-and-its-three-particles">The atom and its three particles</h3>
+<p>An <strong>atom</strong> is the smallest unit of a chemical element. It consists of a small, dense, positively charged <strong>nucleus</strong> surrounded by a much larger region occupied by <strong>electrons</strong> (<a href="#fig-helium-atom" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>).</p>
+<p>The nucleus is made of two kinds of particle. A <strong>proton</strong> carries one positive elementary charge, +e, where e = 1.602 176 634 × 10<sup>−19</sup> coulombs, a value that is exact by definition in the International System of Units <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. A <strong>neutron</strong> carries no charge and has almost the same mass as a proton: 1.6726 × 10<sup>−27</sup> kg for the proton and 1.6749 × 10<sup>−27</sup> kg for the neutron <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. Protons and neutrons are known collectively as <strong>nucleons</strong>. An <strong>electron</strong> carries one negative elementary charge, −e, and has a mass about 1/1836 that of a proton <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. Consequently more than 99.9 percent of the mass of an atom resides in its nucleus.</p>
+<div id="fig-helium-atom" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-helium-atom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-2_helium_atom.png" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-helium-atom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: Schematic of a helium-4 atom. The nucleus contains two protons and two neutrons; two electrons occupy the surrounding region. The diagram is not to scale: if the nucleus were drawn 1 mm across, the atom would be tens of metres across.
+</figcaption>
+</figure>
+</div>
+<p>The size difference between the nucleus and the atom is extreme. An atom has a radius of 1 to 2 × 10<sup>−10</sup> m, whereas a nucleus ranges from about 4 × 10<sup>−15</sup> m across for carbon to about 15 × 10<sup>−15</sup> m for lead <span class="citation" data-cites="britannica_atom">(<a href="../references/references.html#ref-britannica_atom" role="doc-biblioref">Encyclopaedia Britannica, n.d.</a>)</span>. The atom is therefore tens of thousands of times wider than its nucleus. The electrons do not move in fixed orbits, as <a href="#fig-helium-atom" class="quarto-xref">Figure&nbsp;<span>1.2</span></a> might suggest. Quantum mechanics describes each electron by a probability distribution, and the shaded region in the figure represents where an electron is likely to be found. Chapter 2 develops this description, because it is the arrangement of electrons that determines how atoms bond to one another.</p>
+<p>An atom is electrically neutral when it contains equal numbers of protons and electrons. An atom that has gained or lost electrons carries a net charge and is called an <strong>ion</strong>. Ions will be important in later chapters: the phosphate group of RNA, for example, carries negative charge in water, and positively charged magnesium ions play a central role in how RNA folds and reacts.</p>
+</section>
+<section id="atomic-number-and-the-definition-of-an-element" class="level3">
+<h3 class="anchored" data-anchor-id="atomic-number-and-the-definition-of-an-element">Atomic number and the definition of an element</h3>
+<p>The number of protons in a nucleus is the <strong>atomic number</strong>, symbol Z. The atomic number alone determines which element an atom belongs to: every atom with Z = 1 is hydrogen, every atom with Z = 6 is carbon, and every atom with Z = 15 is phosphorus. An <strong>element</strong> is therefore a substance made of atoms that all share the same atomic number. At present 118 elements have been identified and named, the most recent being elements 113, 115, 117 and 118, whose names were approved in 2016 <span class="citation" data-cites="iupac_ptable">(<a href="../references/references.html#ref-iupac_ptable" role="doc-biblioref">International Union of Pure and Applied Chemistry, n.d.</a>)</span>.</p>
+<p>The periodic table (<a href="#fig-periodic-rna" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>) arranges the elements in order of increasing atomic number. Elements in the same column have similar arrangements of their outermost electrons and therefore similar chemical behaviour, a relationship explained in Chapter 2.</p>
+</section>
+<section id="mass-number-and-isotopes" class="level3">
+<h3 class="anchored" data-anchor-id="mass-number-and-isotopes">Mass number and isotopes</h3>
+<p>The total number of nucleons in a nucleus is the <strong>mass number</strong>, symbol A:</p>
+<p><span class="math display">\[
+A = Z + N
+\]</span></p>
+<p>where Z is the number of protons and N is the number of neutrons. Atoms of the same element can contain different numbers of neutrons. Such variants are called <strong>isotopes</strong>. They have the same atomic number, and therefore almost identical chemistry, but different mass numbers.</p>
+<p>An isotope is written with its mass number as a superscript before the element symbol. Hydrogen provides the simplest example (<a href="#fig-h-isotopes" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>). Ordinary hydrogen, <sup>1</sup>H or protium, has a nucleus consisting of a single proton. Deuterium, <sup>2</sup>H, has one proton and one neutron; in the international reference standard for ocean water it accounts for 0.0156 percent of hydrogen atoms <span class="citation" data-cites="ciaaw_h">(<a href="../references/references.html#ref-ciaaw_h" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.c</a>)</span>. Tritium, <sup>3</sup>H, has one proton and two neutrons; it is radioactive, with a half-life of 12.3 years <span class="citation" data-cites="ciaaw_h">(<a href="../references/references.html#ref-ciaaw_h" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.c</a>)</span>, and is therefore present only in trace amounts.</p>
+<div id="fig-h-isotopes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-h-isotopes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-3_hydrogen_isotopes.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-h-isotopes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: The three isotopes of hydrogen. All have atomic number Z = 1 and differ only in the number of neutrons, and therefore in mass number A.
+</figcaption>
+</figure>
+</div>
+<p>Carbon offers a second example that recurs throughout this book. Carbon-12 (six protons, six neutrons) makes up about 99 percent of natural carbon (98.84 to 99.04 percent, depending on the source), and carbon-13 (six protons, seven neutrons) about 1 percent <span class="citation" data-cites="ciaaw_c">(<a href="../references/references.html#ref-ciaaw_c" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.a</a>)</span>. Carbon-14, with eight neutrons, is radioactive, with a half-life of 5,730 years <span class="citation" data-cites="ciaaw_c">(<a href="../references/references.html#ref-ciaaw_c" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.a</a>)</span>. Because living organisms take up carbon-12 slightly more readily than carbon-13, the ratio of the two isotopes in ancient rocks is one of the lines of evidence used to search for the earliest traces of life (<a href="ch03-feedstock-early-earth.html#sec-zircons" class="quarto-xref"><span>Section 3.3</span></a>).</p>
+</section>
+<section id="stability-of-nuclei" class="level3">
+<h3 class="anchored" data-anchor-id="stability-of-nuclei">Stability of nuclei</h3>
+<p>Not every combination of protons and neutrons forms a stable nucleus. Protons repel one another electrically; they are held together, along with neutrons, by the <strong>strong nuclear force</strong>, which is far stronger than the electrical repulsion but acts only over distances comparable to the size of a nucleus. A nucleus with too many or too few neutrons relative to its protons is unstable and transforms, or <strong>decays</strong>, into a different nucleus, emitting radiation in the process. The time required for half of the nuclei in a sample to decay is the <strong>half-life</strong>. Radioactive decay with known half-lives provides the clocks by which the ages of the Earth and its oldest rocks are measured (<a href="ch03-feedstock-early-earth.html#sec-dating" class="quarto-xref"><span>Section 3.1</span></a>).</p>
+</section>
+<section id="where-the-elements-come-from" class="level3">
+<h3 class="anchored" data-anchor-id="where-the-elements-come-from">Where the elements come from</h3>
+<p>The definitions above raise the question that occupies the rest of this chapter. If every element is defined by the number of protons in its nucleus, then making a new element requires changing that number, which requires a nuclear reaction. Ordinary chemistry, which rearranges electrons, cannot do this. The hydrogen in water, the carbon and nitrogen in a nucleobase and the phosphorus in a phosphate group were therefore all produced by nuclear processes, either in the first minutes of the Universe or later inside stars. Sections 1.2 to 1.5 describe those processes in turn.</p>
+</section>
+</section>
+<section id="sec-bbn" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-bbn"><span class="header-section-number">1.2</span> The first three minutes</h2>
+<section id="an-expanding-cooling-universe" class="level3">
+<h3 class="anchored" data-anchor-id="an-expanding-cooling-universe">An expanding, cooling Universe</h3>
+<p>The Universe has been expanding since its beginning about 13.8 billion years ago <span class="citation" data-cites="planck2018">(<a href="../references/references.html#ref-planck2018" role="doc-biblioref">Planck Collaboration, Aghanim, et al. 2020</a>)</span>. The evidence for this comes from two independent observations. First, light from distant galaxies is shifted to longer wavelengths in proportion to their distance, which shows that space between galaxies is stretching. Second, the sky is filled with a nearly uniform microwave radiation, the <strong>cosmic microwave background</strong>, which is the cooled remnant of radiation from a time when the Universe was hot and dense. The model that accounts for both observations, in which the Universe evolved from an extremely hot, dense initial state, is called the <strong>Big Bang</strong> model.</p>
+<p>An expanding gas cools. Extrapolating backwards, the early Universe was hotter the earlier one looks. Temperature determines which particles can exist as separate entities. Above about 10<sup>10</sup> K, collisions are so energetic that any nucleus formed is immediately broken apart again, and matter consists of free protons, neutrons, electrons, photons and neutrinos. The formation of the first nuclei therefore had to wait until the Universe had cooled sufficiently. This process is called <strong>Big Bang nucleosynthesis</strong> (<a href="#fig-bbn-timeline" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>).</p>
+<div id="fig-bbn-timeline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bbn-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-4_bbn_timeline.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bbn-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.4: The main events of the first few hundred thousand years, plotted against the temperature of the Universe. The curve uses the simple approximation T <span class="math inline">\(\approx\)</span> 10<sup>10</sup> K × (t / 1 s)<sup>−1/2</sup>, valid while radiation dominates; times and temperatures are approximate.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="fixing-the-ratio-of-neutrons-to-protons" class="level3">
+<h3 class="anchored" data-anchor-id="fixing-the-ratio-of-neutrons-to-protons">Fixing the ratio of neutrons to protons</h3>
+<p>The outcome of Big Bang nucleosynthesis is controlled by one number: the ratio of neutrons to protons at the moment nuclei begin to form. At temperatures above about 10<sup>10</sup> K (a thermal energy of about 1 MeV), weak nuclear reactions involving neutrinos and electrons convert neutrons into protons and protons into neutrons fast enough to keep the two in balance. Because a neutron is slightly heavier than a proton (by 1.293 MeV, about 0.14 percent of the proton mass <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>), the balance favours protons, and increasingly so as the temperature falls.</p>
+<p>About one second after the beginning, the Universe had cooled to roughly 10<sup>10</sup> K and these conversion reactions became too slow to keep up with the expansion. The neutron-to-proton ratio then stopped adjusting to temperature, or <strong>froze out</strong>, at approximately 1 neutron for every 6 protons <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>. After freeze-out, the only process that changed the ratio was the decay of free neutrons. A free neutron is unstable: it decays into a proton, an electron and an antineutrino, with a mean lifetime of 879.4 ± 0.6 seconds <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>. Neutrons were therefore steadily lost until they were locked inside nuclei, where they are stable.</p>
+</section>
+<section id="the-deuterium-bottleneck" class="level3">
+<h3 class="anchored" data-anchor-id="the-deuterium-bottleneck">The deuterium bottleneck</h3>
+<p>The first step in building any nucleus heavier than hydrogen is the fusion of a proton and a neutron into a deuterium nucleus (a <strong>deuteron</strong>):</p>
+<p><span class="math display">\[
+\mathrm{p} + \mathrm{n} \rightarrow {}^{2}\mathrm{H} + \gamma
+\]</span></p>
+<p>where <span class="math inline">\(\gamma\)</span> denotes a high-energy photon (a gamma ray) that carries away the energy released. The deuteron is only weakly bound, so in the early Universe it was destroyed by energetic photons as fast as it formed. Photons vastly outnumbered nucleons, by about 1.6 billion to one <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>, so even when the average photon energy fell below the deuteron binding energy, enough photons in the high-energy tail of the distribution remained to break deuterons apart. Nucleosynthesis was held up at this first step, a delay known as the <strong>deuterium bottleneck</strong>.</p>
+<p>The bottleneck opened only when the temperature fell to about 10<sup>9</sup> K (a thermal energy of about 0.1 MeV), within the first few minutes <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>. By then neutron decay had reduced the ratio to about 1 neutron for every 7 protons <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>.</p>
+</section>
+<section id="from-deuterium-to-helium" class="level3">
+<h3 class="anchored" data-anchor-id="from-deuterium-to-helium">From deuterium to helium</h3>
+<p>Once deuterons survived, further fusion reactions followed rapidly. Deuterons combined with protons, neutrons and each other to form tritium (<sup>3</sup>H), helium-3 (<sup>3</sup>He) and finally helium-4 (<sup>4</sup>He). Helium-4, with two protons and two neutrons, is an exceptionally tightly bound nucleus. Almost every neutron that existed when the bottleneck opened therefore ended up in helium-4.</p>
+<p>This allows a simple estimate of how much helium the Big Bang produced. Suppose there are n neutrons for every p protons. Each helium-4 nucleus contains 2 neutrons and 2 protons, so if all neutrons end up in helium-4, the mass of helium is the mass of 2n nucleons, out of a total of n + p nucleons. The <strong>helium mass fraction</strong>, symbol Y, is therefore</p>
+<p><span class="math display">\[
+Y = \frac{2n}{n + p} = \frac{2\,(n/p)}{1 + n/p}
+\]</span></p>
+<p>where n/p is the neutron-to-proton ratio. With n/p = 1/7,</p>
+<p><span class="math display">\[
+Y = \frac{2 \times (1/7)}{1 + 1/7} = \frac{2}{8} = 0.25
+\]</span></p>
+<p>About one quarter of the mass of ordinary matter should therefore have emerged from the first few minutes as helium-4, and the remaining three quarters as hydrogen. Measurements of helium in the oldest stars and in gas clouds that have undergone little stellar processing give Y = 0.245 ± 0.003, close to this estimate <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>. This agreement is one of the principal observational supports of the Big Bang model.</p>
+</section>
+<section id="why-nucleosynthesis-stopped-at-lithium" class="level3">
+<h3 class="anchored" data-anchor-id="why-nucleosynthesis-stopped-at-lithium">Why nucleosynthesis stopped at lithium</h3>
+<p>Big Bang nucleosynthesis produced almost nothing heavier than helium. The reason lies in nuclear stability: there is no stable nucleus with mass number 5 or mass number 8. A helium-4 nucleus that captures a proton or a neutron forms a mass-5 nucleus that falls apart almost instantly, and two helium-4 nuclei that fuse form beryllium-8, which also falls apart almost instantly. Only small amounts of lithium-7 (and beryllium-7, which later decays to lithium-7) formed through less direct routes. At the same time, the expansion was lowering the temperature and density, and by about 180 seconds after the beginning the abundances of the light nuclei were essentially fixed <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>.</p>
+<p>The products of Big Bang nucleosynthesis are summarised in <a href="#fig-bbn-abundances" class="quarto-xref">Figure&nbsp;<span>1.5</span></a>. Hydrogen and helium-4 dominate. Deuterium, helium-3 and lithium-7 are present in trace amounts. Carbon, nitrogen, oxygen and phosphorus are absent.</p>
+<div id="fig-bbn-abundances" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bbn-abundances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-5_bbn_abundances.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bbn-abundances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.5: Abundances of the light nuclei produced by Big Bang nucleosynthesis, expressed as number of nuclei relative to hydrogen (logarithmic scale). Values from the Particle Data Group review: deuterium and the predicted lithium-7 as given there, helium-4 converted from the mass fraction Y = 0.245 (He/H = Y / [4(1 − Y)]); the helium-3 bar shows only its order of magnitude <span class="citation" data-cites="pdg_bbn">(<a href="../references/references.html#ref-pdg_bbn" role="doc-biblioref">Fields, Molaro, and Sarkar 2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="from-nuclei-to-atoms" class="level3">
+<h3 class="anchored" data-anchor-id="from-nuclei-to-atoms">From nuclei to atoms</h3>
+<p>The nuclei formed in the first minutes were not yet atoms. The Universe was still hot enough to strip electrons from any nucleus, so matter remained an ionised gas, or <strong>plasma</strong>, of nuclei and free electrons. Only about 380,000 years later, when the temperature had fallen to about 3,000 K, could electrons bind permanently to nuclei to form neutral hydrogen and helium atoms <span class="citation" data-cites="esa_cmb">(<a href="../references/references.html#ref-esa_cmb" role="doc-biblioref">European Space Agency, n.d.</a>)</span>. This event is called <strong>recombination</strong>. Once matter became neutral, photons could travel freely through space; the cosmic microwave background observed today is this released radiation, now cooled to 2.7255 K by the continued expansion <span class="citation" data-cites="fixsen2009">(<a href="../references/references.html#ref-fixsen2009" role="doc-biblioref">Fixsen 2009</a>)</span>.</p>
+</section>
+<section id="consequence-for-this-book" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book">Consequence for this book</h3>
+<p>Of the five elements that make up RNA, the Big Bang supplied only one: hydrogen. Every atom of carbon, nitrogen, oxygen and phosphorus had to be made later, inside stars. The barrier that stopped Big Bang nucleosynthesis, the absence of stable nuclei of mass 5 and 8, is the same barrier that stars must overcome to make carbon. <a href="#sec-stars" class="quarto-xref"><span>Section 1.3</span></a> describes how they do it.</p>
+</section>
+</section>
+<section id="sec-stars" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-stars"><span class="header-section-number">1.3</span> Stars as element factories</h2>
+<section id="why-fusion-releases-energy" class="level3">
+<h3 class="anchored" data-anchor-id="why-fusion-releases-energy">Why fusion releases energy</h3>
+<p>The mass of a nucleus is always slightly less than the total mass of the free protons and neutrons that compose it. The difference, multiplied by the square of the speed of light, is the <strong>binding energy</strong>: the energy that would be required to separate the nucleus completely into its nucleons, and equally the energy released when the nucleus is assembled from them. The relation between mass and energy is Einstein’s</p>
+<p><span class="math display">\[
+E = mc^2
+\]</span></p>
+<p>where E is energy, m is mass and c is the speed of light in vacuum (299 792 458 m s<sup>−1</sup>). In nuclear physics, masses are usually expressed in <strong>atomic mass units</strong> (u), defined as one twelfth of the mass of a carbon-12 atom; one atomic mass unit is equivalent to 931.494 MeV of energy <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>.</p>
+<p>The binding energy of a nucleus with Z protons and N neutrons can be calculated from measured atomic masses:</p>
+<p><span class="math display">\[
+B = \left[ Z\,m(^{1}\mathrm{H}) + N\,m_{\mathrm{n}} - m(\text{atom}) \right] c^2
+\]</span></p>
+<p>where m(<sup>1</sup>H) is the mass of a hydrogen atom, m<sub>n</sub> is the mass of a neutron and m(atom) is the mass of the atom in question. Using the hydrogen atom rather than the bare proton keeps the electron masses balanced on both sides of the equation.</p>
+<p>What matters for the release of energy is the binding energy <em>per nucleon</em>, B/A. A nuclear reaction releases energy when its products have a higher binding energy per nucleon than its reactants. <a href="#fig-binding-energy" class="quarto-xref">Figure&nbsp;<span>1.6</span></a> shows B/A for a selection of nuclei, calculated with the equation above from atomic masses tabulated by the IUPAC Commission on Isotopic Abundances and Atomic Weights <span class="citation" data-cites="ciaaw_h ciaaw_he ciaaw_o ciaaw_fe ciaaw_ni ciaaw_u">(<a href="../references/references.html#ref-ciaaw_h" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.c</a>, <a href="../references/references.html#ref-ciaaw_he" role="doc-biblioref">n.d.b</a>, <a href="../references/references.html#ref-ciaaw_o" role="doc-biblioref">n.d.f</a>, <a href="../references/references.html#ref-ciaaw_fe" role="doc-biblioref">n.d.d</a>, <a href="../references/references.html#ref-ciaaw_ni" role="doc-biblioref">n.d.e</a>, <a href="../references/references.html#ref-ciaaw_u" role="doc-biblioref">n.d.j</a>)</span> and the neutron mass from CODATA 2022 <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. The value rises steeply from deuterium (1.11 MeV) to helium-4 (7.07 MeV), continues to rise more slowly through carbon-12 (7.68 MeV) and oxygen-16 (7.98 MeV), reaches a maximum near iron-56 (8.790 MeV) and nickel-62 (8.795 MeV), and then declines slowly towards the heaviest nuclei, such as uranium-238 (7.57 MeV). Fusing light nuclei into heavier ones therefore releases energy, up to the region of iron and nickel. Beyond that region, fusion consumes energy instead.</p>
+<div id="fig-binding-energy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-binding-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-6_binding_energy.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-binding-energy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.6: Binding energy per nucleon for selected nuclei, calculated from IUPAC atomic masses and the CODATA 2022 neutron mass. The maximum lies near iron-56 and nickel-62. Fusion of nuclei lighter than this region releases energy.
+</figcaption>
+</figure>
+</div>
+<p>The steep rise from hydrogen to helium is the reason why the conversion of hydrogen into helium is the main energy source of stars, and the reason why helium-4, once formed, is so difficult to break apart.</p>
+</section>
+<section id="hydrogen-burning-the-proton-proton-chain" class="level3">
+<h3 class="anchored" data-anchor-id="hydrogen-burning-the-proton-proton-chain">Hydrogen burning: the proton-proton chain</h3>
+<p>A <strong>star</strong> is a self-gravitating ball of gas in which nuclear fusion in the core supplies the energy radiated from the surface. Gravity compresses and heats the core until fusion begins; the energy released then supports the star against further collapse. The fusion of hydrogen into helium is called <strong>hydrogen burning</strong>. The term is conventional: it refers to a nuclear process, not to chemical combustion.</p>
+<p>In stars of the Sun’s mass, hydrogen burning proceeds mainly through the <strong>proton-proton chain</strong> (pp chain), which produces about 99 percent of the Sun’s energy <span class="citation" data-cites="adelberger2011">(<a href="../references/references.html#ref-adelberger2011" role="doc-biblioref">Adelberger et al. 2011</a>)</span>. Its net result is</p>
+<p><span class="math display">\[
+4\,\mathrm{p} \rightarrow {}^{4}\mathrm{He} + 2\mathrm{e}^{+} + 2\nu_{e}
+\]</span></p>
+<p>where p is a proton, e<sup>+</sup> is a <strong>positron</strong> (the antiparticle of the electron, with the same mass and opposite charge) and <span class="math inline">\(\nu_e\)</span> is an electron <strong>neutrino</strong>, an electrically neutral particle of very small mass that interacts only weakly with matter <span class="citation" data-cites="adelberger2011">(<a href="../references/references.html#ref-adelberger2011" role="doc-biblioref">Adelberger et al. 2011</a>)</span>. The most common sequence of steps (<a href="#fig-pp-chain" class="quarto-xref">Figure&nbsp;<span>1.7</span></a>) begins with the fusion of two protons into a deuteron, during which one proton is converted into a neutron. The deuteron then captures a further proton to form helium-3, and two helium-3 nuclei fuse to form helium-4, releasing two protons.</p>
+<div id="fig-pp-chain" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pp-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-7_pp_chain.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pp-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.7: The main branch of the proton-proton chain. Two protons fuse to form a deuteron, a positron and a neutrino; the deuteron captures a proton to form helium-3; two helium-3 nuclei, each produced by the first two steps, fuse into helium-4 and release two protons. The net result is the conversion of four protons into one helium-4 nucleus.
+</figcaption>
+</figure>
+</div>
+<p>The energy released can be calculated from the atomic masses of hydrogen-1 (1.007 825 03 u) and helium-4 (4.002 603 25 u) <span class="citation" data-cites="ciaaw_h ciaaw_he">(<a href="../references/references.html#ref-ciaaw_h" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.c</a>, <a href="../references/references.html#ref-ciaaw_he" role="doc-biblioref">n.d.b</a>)</span>. Four hydrogen atoms have a mass of 4.031 300 13 u; one helium-4 atom has a mass 0.028 696 88 u smaller. Multiplying by 931.494 MeV per atomic mass unit gives an energy release of 26.73 MeV for each helium-4 nucleus formed, which includes the energy from the annihilation of the two positrons with electrons. A small part of this energy is carried away by the neutrinos, which escape from the star. The mass lost is 0.71 percent of the original mass of hydrogen.</p>
+<p>This small fraction, multiplied over the mass of a star, is enough to power it for billions of years. The Sun radiates energy at a rate of 3.828 × 10<sup>26</sup> W <span class="citation" data-cites="iau2015">(<a href="../references/references.html#ref-iau2015" role="doc-biblioref">International Astronomical Union 2015</a>)</span>. Dividing by c<sup>2</sup> shows that it converts about 4.26 × 10<sup>9</sup> kg of mass into energy every second, roughly four million tonnes. The temperature at the centre of the Sun is about 15.5 million K <span class="citation" data-cites="adelberger2011">(<a href="../references/references.html#ref-adelberger2011" role="doc-biblioref">Adelberger et al. 2011</a>)</span>, and the Sun has been burning hydrogen in its core for about 4.6 billion years <span class="citation" data-cites="adelberger2011 nasa_sun">(<a href="../references/references.html#ref-adelberger2011" role="doc-biblioref">Adelberger et al. 2011</a>; <a href="../references/references.html#ref-nasa_sun" role="doc-biblioref">NASA, n.d.</a>)</span>.</p>
+</section>
+<section id="helium-burning-and-the-beryllium-8-problem" class="level3">
+<h3 class="anchored" data-anchor-id="helium-burning-and-the-beryllium-8-problem">Helium burning and the beryllium-8 problem</h3>
+<p>When the hydrogen in a star’s core is exhausted, fusion there stops and the core, now made mostly of helium, contracts under gravity and heats up. Helium nuclei carry two positive charges each, so they repel each other more strongly than protons do, and fusing them requires a higher temperature: near 10<sup>8</sup> K <span class="citation" data-cites="jose2011">(<a href="../references/references.html#ref-jose2011" role="doc-biblioref">José and Iliadis 2011</a>)</span>. At such temperatures <strong>helium burning</strong> begins.</p>
+<p>The obvious first step, the fusion of two helium-4 nuclei, leads to a dead end. The product, beryllium-8, is the unstable mass-8 nucleus already encountered in <a href="#sec-bbn" class="quarto-xref"><span>Section 1.2</span></a>. Its ground state has an energy width of 5.57 eV <span class="citation" data-cites="tilley2004">(<a href="../references/references.html#ref-tilley2004" role="doc-biblioref">Tilley et al. 2004</a>)</span>, which corresponds to a half-life of about 8 × 10<sup>−17</sup> s: it falls apart into two helium-4 nuclei almost as soon as it forms. In a hot, dense stellar core, however, beryllium-8 is formed continuously, so a tiny equilibrium population is always present. If a third helium-4 nucleus strikes a beryllium-8 nucleus during its brief existence, carbon-12 can form. The overall process,</p>
+<p><span class="math display">\[
+3\,{}^{4}\mathrm{He} \rightarrow {}^{12}\mathrm{C} + \gamma
+\]</span></p>
+<p>is called the <strong>triple-alpha process</strong>, because a helium-4 nucleus is also called an alpha particle.</p>
+</section>
+<section id="the-hoyle-state" class="level3">
+<h3 class="anchored" data-anchor-id="the-hoyle-state">The Hoyle state</h3>
+<p>Even with a population of beryllium-8 present, the capture of a third helium-4 nucleus would be far too slow to explain the observed abundance of carbon unless the reaction were greatly enhanced. Such enhancement occurs when the combined energy of the colliding nuclei matches the energy of an <strong>excited state</strong> of the product nucleus, an arrangement of its nucleons with more energy than the lowest-energy arrangement, or <strong>ground state</strong>. Reactions at such a matching energy, called a <strong>resonance</strong>, proceed far faster than reactions at other energies.</p>
+<p>In the early 1950s Fred Hoyle argued that, because carbon is abundant, carbon-12 must possess an excited state just above the combined energy of beryllium-8 and helium-4, and he predicted it at about 7.68 MeV <span class="citation" data-cites="freer2014">(<a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>. In 1953 Dunbar, Pixley, Wenzel and Whaling observed a level at 7.68 ± 0.03 MeV in carbon-12, and in their report thanked Hoyle for pointing out its astrophysical significance <span class="citation" data-cites="dunbar1953">(<a href="../references/references.html#ref-dunbar1953" role="doc-biblioref">Dunbar et al. 1953</a>)</span>. Its properties were confirmed in subsequent measurements <span class="citation" data-cites="freer2014">(<a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>. The state is now known as the <strong>Hoyle state</strong>. It lies at 7.65 MeV above the ground state of carbon-12, 285 keV above the energy of beryllium-8 plus helium-4 (<a href="#fig-hoyle" class="quarto-xref">Figure&nbsp;<span>1.8</span></a>) <span class="citation" data-cites="freer2014">(<a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>.</p>
+<div id="fig-hoyle" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hoyle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-8_hoyle_state.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hoyle-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.8: Energy levels relevant to the triple-alpha process. The Hoyle state of carbon-12 lies 285 keV above the combined energy of beryllium-8 and helium-4, which itself lies 92 keV above three separate helium-4 nuclei. A small fraction of carbon-12 nuclei formed in the Hoyle state decay to the ground state by emitting radiation instead of breaking apart again.
+</figcaption>
+</figure>
+</div>
+<p>Most carbon-12 nuclei formed in the Hoyle state break up again into three helium-4 nuclei. A small fraction instead lose their excess energy by emitting radiation and settle into the stable ground state. That small fraction is the origin of essentially all the carbon in the Universe, including the carbon in every RNA molecule.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: predicting a nuclear state from the existence of carbon
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hoyle’s prediction is a rare example in physics of a property of a nucleus being inferred from an astronomical observation, the abundance of carbon, before it was confirmed in the laboratory. Hoyle predicted a state near 7.68 MeV; Dunbar and colleagues, studying the reaction <sup>14</sup>N(d,<span class="math inline">\(\alpha\)</span>)<sup>12</sup>C with a high-resolution spectrometer, observed a state at that energy <span class="citation" data-cites="dunbar1953 freer2014">(<a href="../references/references.html#ref-dunbar1953" role="doc-biblioref">Dunbar et al. 1953</a>; <a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>. Later work refined the energy to 7.653 ± 0.008 MeV and indicated a spin and parity of 0<sup>+</sup> <span class="citation" data-cites="freer2014">(<a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="from-carbon-to-oxygen" class="level3">
+<h3 class="anchored" data-anchor-id="from-carbon-to-oxygen">From carbon to oxygen</h3>
+<p>Once carbon-12 is present, it can capture a further helium-4 nucleus:</p>
+<p><span class="math display">\[
+{}^{12}\mathrm{C} + {}^{4}\mathrm{He} \rightarrow {}^{16}\mathrm{O} + \gamma
+\]</span></p>
+<p>This reaction converts part of the carbon into oxygen-16 <span class="citation" data-cites="aguirre2017">(<a href="../references/references.html#ref-aguirre2017" role="doc-biblioref">Silva Aguirre 2017</a>)</span>. Unlike the triple-alpha process, it has no resonance that would make it fast enough to destroy most of the carbon as it is made <span class="citation" data-cites="freer2014">(<a href="../references/references.html#ref-freer2014" role="doc-biblioref">Freer and Fynbo 2014</a>)</span>. Helium burning therefore leaves behind a core rich in both carbon and oxygen <span class="citation" data-cites="jose2011">(<a href="../references/references.html#ref-jose2011" role="doc-biblioref">José and Iliadis 2011</a>)</span>.</p>
+</section>
+<section id="consequence-for-this-book-1" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-1">Consequence for this book</h3>
+<p>Stars produce two of the five elements of RNA, carbon and oxygen, through helium burning, and they convert hydrogen into the helium needed to make them. Nitrogen and phosphorus require further processes, described in Sections 1.4 and 1.5.</p>
+</section>
+</section>
+<section id="sec-massive" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-massive"><span class="header-section-number">1.4</span> Beyond carbon: nitrogen, massive stars and supernovae</h2>
+<section id="the-cno-cycle-and-the-origin-of-nitrogen" class="level3">
+<h3 class="anchored" data-anchor-id="the-cno-cycle-and-the-origin-of-nitrogen">The CNO cycle and the origin of nitrogen</h3>
+<p>Once a star contains carbon, nitrogen and oxygen, these nuclei open a second route for hydrogen burning, the <strong>CNO cycle</strong>. In its main branch, a carbon-12 nucleus captures four protons in succession, with two positron emissions along the way, and finally emits a helium-4 nucleus, regenerating carbon-12 <span class="citation" data-cites="johnson2022">(<a href="../references/references.html#ref-johnson2022" role="doc-biblioref">Johnson et al. 2022</a>)</span>:</p>
+<p><span class="math display">\[
+{}^{12}\mathrm{C}(\mathrm{p},\gamma)\,{}^{13}\mathrm{N}(\beta^{+}\nu_e)\,{}^{13}\mathrm{C}(\mathrm{p},\gamma)\,{}^{14}\mathrm{N}(\mathrm{p},\gamma)\,{}^{15}\mathrm{O}(\beta^{+}\nu_e)\,{}^{15}\mathrm{N}(\mathrm{p},\alpha)\,{}^{12}\mathrm{C}
+\]</span></p>
+<p>This compact notation is standard in nuclear astrophysics. In A(b,c)D, nucleus A captures particle b and emits particle c, becoming nucleus D. <span class="math inline">\(\beta^{+}\)</span> denotes <strong>beta-plus decay</strong>, in which a proton inside a nucleus turns into a neutron and a positron and a neutrino are emitted. The cycle is shown in <a href="#fig-cno" class="quarto-xref">Figure&nbsp;<span>1.9</span></a>.</p>
+<div id="fig-cno" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-9_cno_cycle.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.9: The main branch of the CNO cycle. Carbon, nitrogen and oxygen act as catalysts: they are regenerated at the end of each cycle, and the net effect, like that of the proton-proton chain, is to convert four protons into one helium-4 nucleus. The slowest step, proton capture by nitrogen-14, is marked in red.
+</figcaption>
+</figure>
+</div>
+<p>The carbon, nitrogen and oxygen nuclei act as <strong>catalysts</strong>: they are not consumed, and the net result is the same as that of the proton-proton chain, four protons converted into one helium-4 nucleus. The steps, however, proceed at very different rates. The slowest by far is the capture of a proton by nitrogen-14, <sup>14</sup>N(p,<span class="math inline">\(\gamma\)</span>)<sup>15</sup>O. Nuclei therefore pile up at the stage just before this step, and the first-order effect of the cycle is to convert most of the carbon in a stellar core into nitrogen-14 <span class="citation" data-cites="johnson2022">(<a href="../references/references.html#ref-johnson2022" role="doc-biblioref">Johnson et al. 2022</a>)</span>. This is the principal way in which stars make nitrogen.</p>
+<p>The CNO cycle is very sensitive to temperature. In the Sun, with a central temperature of about 15.5 million K, it produces only about 1 percent of the energy <span class="citation" data-cites="adelberger2011">(<a href="../references/references.html#ref-adelberger2011" role="doc-biblioref">Adelberger et al. 2011</a>)</span>. In stars with central temperatures above about 20 million K the CNO cycle dominates <span class="citation" data-cites="ray2009">(<a href="../references/references.html#ref-ray2009" role="doc-biblioref">Ray 2009</a>)</span>, which corresponds to main-sequence stars with initial masses above about 1.3 times that of the Sun <span class="citation" data-cites="johnson2022">(<a href="../references/references.html#ref-johnson2022" role="doc-biblioref">Johnson et al. 2022</a>)</span>. Nitrogen made in this way is later returned to interstellar space, both by massive stars when they explode and by lower-mass stars, which shed their outer layers late in their lives <span class="citation" data-cites="johnson2022">(<a href="../references/references.html#ref-johnson2022" role="doc-biblioref">Johnson et al. 2022</a>)</span>.</p>
+</section>
+<section id="burning-stages-in-massive-stars" class="level3">
+<h3 class="anchored" data-anchor-id="burning-stages-in-massive-stars">Burning stages in massive stars</h3>
+<p>A star with more than about eight times the mass of the Sun (8 ± 1 solar masses, a value that depends to some extent on stellar models) does not stop at helium burning <span class="citation" data-cites="smartt2009">(<a href="../references/references.html#ref-smartt2009" role="doc-biblioref">Smartt 2009</a>)</span>. Each time a fuel is exhausted in the core, the core contracts and heats until the ashes of the previous stage ignite. Carbon burns to neon and magnesium, neon to oxygen and magnesium, oxygen to silicon and sulfur, and finally silicon to iron. <a href="#tbl-burning" class="quarto-xref">Table&nbsp;<span>1.1</span></a> gives typical central temperatures and durations for a star of 20 solar masses, computed with stellar evolution models <span class="citation" data-cites="heger2002">(<a href="../references/references.html#ref-heger2002" role="doc-biblioref">Heger et al. 2002</a>)</span>.</p>
+<div id="tbl-burning" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-burning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Nuclear burning stages in the core of a 20-solar-mass star, from stellar evolution models <span class="citation" data-cites="heger2002">(<a href="../references/references.html#ref-heger2002" role="doc-biblioref">Heger et al. 2002</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-burning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Fuel</th>
+<th>Main products</th>
+<th>Central temperature (10<sup>9</sup> K)</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>Helium</td>
+<td>0.037</td>
+<td>8.1 million years</td>
+</tr>
+<tr class="even">
+<td>Helium</td>
+<td>Oxygen, carbon</td>
+<td>0.19</td>
+<td>1.2 million years</td>
+</tr>
+<tr class="odd">
+<td>Carbon</td>
+<td>Neon, magnesium</td>
+<td>0.87</td>
+<td>980 years</td>
+</tr>
+<tr class="even">
+<td>Neon</td>
+<td>Oxygen, magnesium</td>
+<td>1.6</td>
+<td>0.6 years</td>
+</tr>
+<tr class="odd">
+<td>Oxygen</td>
+<td>Silicon, sulfur</td>
+<td>2.0</td>
+<td>1.3 years</td>
+</tr>
+<tr class="even">
+<td>Silicon</td>
+<td>Iron</td>
+<td>3.3</td>
+<td>0.031 years (about 11 days)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Two features of the table stand out. Each stage requires a higher temperature than the last, because heavier nuclei carry more positive charge and repel each other more strongly. And each stage is shorter than the last, ending with a silicon-burning stage that lasts about eleven days. Because burning continues in shells around the core after it has stopped at the centre, a massive star near the end of its life has a layered structure, with the products of successive burning stages arranged in concentric shells (<a href="#fig-onion" class="quarto-xref">Figure&nbsp;<span>1.10</span></a>).</p>
+<div id="fig-onion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-onion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-10_onion_star.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-onion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.10: Schematic structure of a massive star shortly before core collapse (not to scale). Successive burning stages leave concentric shells, with hydrogen in the outer envelope and iron at the centre. The labels give the main constituent of each shell.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-end-at-iron-core-collapse" class="level3">
+<h3 class="anchored" data-anchor-id="the-end-at-iron-core-collapse">The end at iron: core collapse</h3>
+<p>The sequence stops at iron because of the binding-energy curve (<a href="#fig-binding-energy" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>). Iron-56 and nickel-62 lie at its maximum, so fusing iron-group nuclei into heavier ones does not release energy. Once the core is made of iron, nuclear burning no longer provides the pressure that supports it against gravity <span class="citation" data-cites="smartt2009">(<a href="../references/references.html#ref-smartt2009" role="doc-biblioref">Smartt 2009</a>)</span>. When the iron core grows beyond the <strong>Chandrasekhar mass</strong>, the largest mass that the pressure of its electrons can support, it collapses <span class="citation" data-cites="heger2002">(<a href="../references/references.html#ref-heger2002" role="doc-biblioref">Heger et al. 2002</a>)</span>.</p>
+<p>The collapse of an iron core of about 1.4 solar masses releases an enormous amount of gravitational energy <span class="citation" data-cites="smartt2009">(<a href="../references/references.html#ref-smartt2009" role="doc-biblioref">Smartt 2009</a>)</span>. Most of it, around 3 × 10<sup>46</sup> J (3 × 10<sup>53</sup> erg), is carried away by neutrinos. A small fraction drives an explosion that ejects the outer layers of the star with a kinetic energy of typically about 10<sup>44</sup> J (10<sup>51</sup> erg); the light emitted is usually 1 to 10 percent of this kinetic energy <span class="citation" data-cites="smartt2009">(<a href="../references/references.html#ref-smartt2009" role="doc-biblioref">Smartt 2009</a>)</span>. This event is a <strong>core-collapse supernova</strong>. The ejected material carries the products of all the burning stages, including carbon, oxygen and nitrogen, into interstellar space, where it mixes with the gas from which later generations of stars and planets form.</p>
+</section>
+<section id="consequence-for-this-book-2" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-2">Consequence for this book</h3>
+<p>Three of the five elements of RNA are now accounted for: carbon and oxygen from helium burning, and nitrogen from the CNO cycle. Hydrogen dates from the first minutes of the Universe. The remaining element, phosphorus, is the subject of the next section.</p>
+</section>
+</section>
+<section id="sec-phosphorus" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="sec-phosphorus"><span class="header-section-number">1.5</span> Phosphorus: the scarce element</h2>
+<section id="one-stable-isotope" class="level3">
+<h3 class="anchored" data-anchor-id="one-stable-isotope">One stable isotope</h3>
+<p>Phosphorus has atomic number 15. Of its isotopes, only one is stable: phosphorus-31, with 15 protons and 16 neutrons. An element with a single stable isotope is called <strong>monoisotopic</strong>. Every phosphorus atom in a rock, in sea water or in an RNA molecule is therefore an atom of <sup>31</sup>P, and the standard atomic weight of phosphorus, 30.973 761 998(5), is simply the atomic mass of that isotope <span class="citation" data-cites="ciaaw_p">(<a href="../references/references.html#ref-ciaaw_p" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.g</a>)</span>. Other isotopes, such as <sup>32</sup>P and <sup>33</sup>P, are radioactive; they are made in small amounts by cosmic rays and in nuclear reactors and do not persist <span class="citation" data-cites="ciaaw_p">(<a href="../references/references.html#ref-ciaaw_p" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.g</a>)</span>.</p>
+<p>In RNA, phosphorus occurs in the phosphate groups that link one nucleotide to the next, one phosphorus atom per nucleotide (Chapters 5 and 6). An RNA molecule cannot be built without it.</p>
+</section>
+<section id="measuring-abundances-the-log-epsilon-scale" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-abundances-the-log-epsilon-scale">Measuring abundances: the log epsilon scale</h3>
+<p>The abundance of an element in a star is measured from the strength of the absorption lines that its atoms produce in the star’s spectrum. Astronomers report the result on a logarithmic scale defined relative to hydrogen:</p>
+<p><span class="math display">\[
+\log \varepsilon_{\mathrm{X}} = \log_{10}\!\left(\frac{N_{\mathrm{X}}}{N_{\mathrm{H}}}\right) + 12
+\]</span></p>
+<p>Here <span class="math inline">\(N_{\mathrm{X}}\)</span> is the number of atoms of element X per unit volume and <span class="math inline">\(N_{\mathrm{H}}\)</span> is the number of hydrogen atoms in the same volume. The constant 12 is added so that hydrogen has log <span class="math inline">\(\varepsilon_{\mathrm{H}}\)</span> = 12.00 by definition and all other elements have positive values <span class="citation" data-cites="asplund2009">(<a href="../references/references.html#ref-asplund2009" role="doc-biblioref">Asplund et al. 2009</a>)</span>. A difference of 1 on this scale is a factor of 10 in number. The scale counts atoms, not mass.</p>
+<p><a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a> gives the present-day abundances in the photosphere of the Sun, the layer from which its visible light escapes, for the five elements of RNA and for helium, silicon, sulfur and iron. These values are used in the next section as the reference against which the composition of the Earth and of living matter is compared.</p>
+<div id="tbl-solar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-solar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.2: Abundances in the solar photosphere <span class="citation" data-cites="asplund2009">(<a href="../references/references.html#ref-asplund2009" role="doc-biblioref">Asplund et al. 2009</a>)</span>. The helium value is not measured from photospheric lines but inferred from helioseismology, the study of oscillations of the Sun, and the iron value is the one obtained from lines of singly ionised iron. The last column is computed as <span class="math inline">\(10^{\log\varepsilon - 5.41}\)</span> and rounded to two significant figures.
+</figcaption>
+<div aria-describedby="tbl-solar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Z</th>
+<th>log <span class="math inline">\(\varepsilon\)</span></th>
+<th>Atoms per phosphorus atom</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>1</td>
+<td>12.00</td>
+<td>3.9 × 10<sup>6</sup></td>
+</tr>
+<tr class="even">
+<td>Helium</td>
+<td>2</td>
+<td>10.93 ± 0.01</td>
+<td>3.3 × 10<sup>5</sup></td>
+</tr>
+<tr class="odd">
+<td>Oxygen</td>
+<td>8</td>
+<td>8.69 ± 0.05</td>
+<td>1900</td>
+</tr>
+<tr class="even">
+<td>Carbon</td>
+<td>6</td>
+<td>8.43 ± 0.05</td>
+<td>1000</td>
+</tr>
+<tr class="odd">
+<td>Nitrogen</td>
+<td>7</td>
+<td>7.83 ± 0.05</td>
+<td>260</td>
+</tr>
+<tr class="even">
+<td>Silicon</td>
+<td>14</td>
+<td>7.51 ± 0.04</td>
+<td>130</td>
+</tr>
+<tr class="odd">
+<td>Iron</td>
+<td>26</td>
+<td>7.50 ± 0.04</td>
+<td>120</td>
+</tr>
+<tr class="even">
+<td>Sulfur</td>
+<td>16</td>
+<td>7.12 ± 0.03</td>
+<td>51</td>
+</tr>
+<tr class="odd">
+<td>Phosphorus</td>
+<td>15</td>
+<td>5.41 ± 0.03</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="how-scarce-phosphorus-is" class="level3">
+<h3 class="anchored" data-anchor-id="how-scarce-phosphorus-is">How scarce phosphorus is</h3>
+<p>The last column of <a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a> is obtained directly from the definition of log <span class="math inline">\(\varepsilon\)</span>. For carbon, for example,</p>
+<p><span class="math display">\[
+\frac{N_{\mathrm{C}}}{N_{\mathrm{P}}} = 10^{\,8.43 - 5.41} = 10^{3.02} \approx 1050 .
+\]</span></p>
+<p>In the Sun there are therefore about 1000 carbon atoms, 1900 oxygen atoms, 260 nitrogen atoms and nearly four million hydrogen atoms for every atom of phosphorus (<a href="#fig-solar-abundances" class="quarto-xref">Figure&nbsp;<span>1.11</span></a>). Of the five elements of RNA, phosphorus is by far the scarcest: about 260 times less common than nitrogen, the next scarcest.</p>
+<div id="fig-solar-abundances" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solar-abundances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-11_solar_abundances.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solar-abundances-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.11: Abundances of selected elements in the solar photosphere on the log <span class="math inline">\(\varepsilon\)</span> scale, in order of atomic number <span class="citation" data-cites="asplund2009">(<a href="../references/references.html#ref-asplund2009" role="doc-biblioref">Asplund et al. 2009</a>)</span>. The five elements of RNA are coloured. Each unit on the vertical axis is a factor of 10 in the number of atoms. Phosphorus lies about two units, a factor of about 100, below its neighbours silicon and sulfur.
+</figcaption>
+</figure>
+</div>
+<p>The comparison with its neighbours in the periodic table is equally striking. Silicon (Z = 14) is about 130 times and sulfur (Z = 16) about 50 times more abundant than phosphorus (Z = 15), which lies between them. One feature of nuclear structure distinguishes phosphorus from these neighbours. The dominant isotopes of silicon and sulfur are <sup>28</sup>Si (about 92 percent of natural silicon) and <sup>32</sup>S (about 95 percent of natural sulfur) <span class="citation" data-cites="ciaaw_si ciaaw_s">(<a href="../references/references.html#ref-ciaaw_si" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.h</a>, <a href="../references/references.html#ref-ciaaw_s" role="doc-biblioref">n.d.i</a>)</span>. Like <sup>12</sup>C and <sup>16</sup>O, they contain equal numbers of protons and neutrons, and their mass numbers are multiples of 4. A reaction between such a nucleus and a helium-4 nucleus conserves both the number of protons and the number of neutrons, so it can only produce another nucleus of the same kind. Phosphorus-31, with 15 protons and 16 neutrons, is not of this kind: no sequence of helium-4 captures starting from <sup>12</sup>C or <sup>16</sup>O can reach it. Its formation requires reactions in which single protons or neutrons are gained or lost. This structural difference is consistent with the low abundance of phosphorus, but a quantitative explanation requires detailed calculations of nuclear reaction networks, which are beyond the scope of this chapter.</p>
+</section>
+<section id="where-phosphorus-is-made" class="level3">
+<h3 class="anchored" data-anchor-id="where-phosphorus-is-made">Where phosphorus is made</h3>
+<p>Phosphorus is thought to be synthesised in massive stars and dispersed into interstellar space when these stars explode as supernovae <span class="citation" data-cites="koo2013">(<a href="../references/references.html#ref-koo2013" role="doc-biblioref">Koo et al. 2013</a>)</span>. Until 2013, this conclusion rested on stellar models. It was then tested by direct observation of the debris of a supernova.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: phosphorus in the remnant of a supernova
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>supernova remnant</strong> is the expanding cloud of gas ejected by a supernova explosion, together with the interstellar gas it sweeps up. Cassiopeia A is a young supernova remnant. In 2013, Koo, Lee, Moon, Yoon and Raymond reported near-infrared spectroscopic observations of Cassiopeia A, from which they determined the amounts of phosphorus and iron in the material ejected by the supernova. They found that the ratio of phosphorus to iron-56, the main product of the final burning stage, was up to 100 times the average ratio in the Milky Way <span class="citation" data-cites="koo2013">(<a href="../references/references.html#ref-koo2013" role="doc-biblioref">Koo et al. 2013</a>)</span>. This confirmed that phosphorus is produced in supernovae. The measured range of ratios agreed with predictions from supernova nucleosynthesis models, but not with a scenario in which the inner layers of the star are completely mixed during the explosion <span class="citation" data-cites="koo2013">(<a href="../references/references.html#ref-koo2013" role="doc-biblioref">Koo et al. 2013</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="consequence-for-this-book-3" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-3">Consequence for this book</h3>
+<p>All five elements of RNA have now been traced to their sources: hydrogen to the first minutes of the Universe, carbon and oxygen to helium burning, nitrogen to the CNO cycle, and phosphorus to massive stars and their supernovae. Phosphorus is made in the smallest amount, about one atom for every thousand carbon atoms in the Sun. Its scarcity, and the chemistry of the minerals in which it is locked on a planet, will return as a central problem in Chapter 4.</p>
+</section>
+</section>
+<section id="sec-abundances" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="sec-abundances"><span class="header-section-number">1.6</span> Cosmic abundances and the elements of life</h2>
+<section id="three-compositions" class="level3">
+<h3 class="anchored" data-anchor-id="three-compositions">Three compositions</h3>
+<p><a href="#sec-phosphorus" class="quarto-xref"><span>Section 1.5</span></a> described the composition of the Sun. This section compares it with two other compositions: the rocks at the surface of the Earth and living cells. The comparison shows which elements a planet makes easily available, and which elements living matter concentrates.</p>
+<p>Two different measures of composition are used, and they should not be confused. A <strong>mass fraction</strong> is the mass of an element divided by the total mass of the sample. An <strong>atom ratio</strong> is the number of atoms of one element divided by the number of atoms of another. To convert one into the other, each mass fraction is divided by the relative atomic mass of the element, the average mass of its atoms in atomic mass units (<a href="#sec-stars" class="quarto-xref"><span>Section 1.3</span></a>), as listed in the periodic table of the IUPAC <span class="citation" data-cites="iupac_ptable">(<a href="../references/references.html#ref-iupac_ptable" role="doc-biblioref">International Union of Pure and Applied Chemistry, n.d.</a>)</span>. For an element X,</p>
+<p><span class="math display">\[
+n_{\mathrm{X}} = \frac{w_{\mathrm{X}}}{A_{r}(\mathrm{X})}
+\]</span></p>
+<p>where <span class="math inline">\(w_{\mathrm{X}}\)</span> is the mass fraction of X, <span class="math inline">\(A_{r}(\mathrm{X})\)</span> its relative atomic mass, and <span class="math inline">\(n_{\mathrm{X}}\)</span> is proportional to the number of atoms of X in the sample. Because the atom ratio is independent of the units used, this section compares compositions by the number of atoms of each element per atom of phosphorus, as in <a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a>.</p>
+</section>
+<section id="the-earths-upper-crust" class="level3">
+<h3 class="anchored" data-anchor-id="the-earths-upper-crust">The Earth’s upper crust</h3>
+<p>The <strong>continental crust</strong> is the outer layer of rock that forms the continents. Its upper part is the most accessible region of the solid Earth, and its composition can be estimated by averaging chemical analyses of rocks sampled over large areas of the surface <span class="citation" data-cites="rudnick2003">(<a href="../references/references.html#ref-rudnick2003" role="doc-biblioref">Rudnick and Gao 2003</a>)</span>. Geochemists conventionally report the major elements as oxides, because in rock-forming minerals these elements are combined with oxygen. <a href="#tbl-crust" class="quarto-xref">Table&nbsp;<span>1.3</span></a> gives the recommended composition of the upper continental crust <span class="citation" data-cites="rudnick2003">(<a href="../references/references.html#ref-rudnick2003" role="doc-biblioref">Rudnick and Gao 2003</a>)</span>.</p>
+<div id="tbl-crust" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-crust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.3: Major-element composition of the Earth’s upper continental crust. The oxide values are the recommended values of <span class="citation" data-cites="rudnick2003">Rudnick and Gao (<a href="../references/references.html#ref-rudnick2003" role="doc-biblioref">2003</a>)</span>, recast to a water-free basis; all iron is reported as FeO. The element mass percentages and atom ratios are calculated from the oxide values in this book, using the atomic masses of the elements, and are rounded.
+</figcaption>
+<div aria-describedby="tbl-crust-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Oxide</th>
+<th>Mass percent</th>
+<th>Element</th>
+<th>Mass percent of element</th>
+<th>Atoms per phosphorus atom</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SiO<sub>2</sub></td>
+<td>66.6</td>
+<td>Si</td>
+<td>31.1</td>
+<td>520</td>
+</tr>
+<tr class="even">
+<td>Al<sub>2</sub>O<sub>3</sub></td>
+<td>15.4</td>
+<td>Al</td>
+<td>8.2</td>
+<td>140</td>
+</tr>
+<tr class="odd">
+<td>FeO (total Fe)</td>
+<td>5.04</td>
+<td>Fe</td>
+<td>3.9</td>
+<td>33</td>
+</tr>
+<tr class="even">
+<td>CaO</td>
+<td>3.59</td>
+<td>Ca</td>
+<td>2.6</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>Na<sub>2</sub>O</td>
+<td>3.27</td>
+<td>Na</td>
+<td>2.4</td>
+<td>50</td>
+</tr>
+<tr class="even">
+<td>K<sub>2</sub>O</td>
+<td>2.80</td>
+<td>K</td>
+<td>2.3</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td>MgO</td>
+<td>2.48</td>
+<td>Mg</td>
+<td>1.5</td>
+<td>29</td>
+</tr>
+<tr class="even">
+<td>TiO<sub>2</sub></td>
+<td>0.64</td>
+<td>Ti</td>
+<td>0.38</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>MnO</td>
+<td>0.10</td>
+<td>Mn</td>
+<td>0.08</td>
+<td>0.7</td>
+</tr>
+<tr class="even">
+<td>P<sub>2</sub>O<sub>5</sub></td>
+<td>0.15</td>
+<td>P</td>
+<td>0.065</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>(oxygen in all oxides)</td>
+<td></td>
+<td>O</td>
+<td>47.5</td>
+<td>1400</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>As an example of the calculation, P<sub>2</sub>O<sub>5</sub> has a molar mass of 2 × 30.974 + 5 × 15.999 = 141.94 g mol<sup>−1</sup>, of which phosphorus contributes 61.95 g mol<sup>−1</sup>. A mass fraction of 0.15 percent P<sub>2</sub>O<sub>5</sub> therefore contains 0.15 × 61.95 / 141.94 = 0.065 percent phosphorus.</p>
+<p>Three features of <a href="#tbl-crust" class="quarto-xref">Table&nbsp;<span>1.3</span></a> matter for this book. First, the upper crust is about half oxygen by mass, and silicon and oxygen together account for about four-fifths of it; rock is chiefly a framework of silicon and oxygen. Second, phosphorus is a minor element of the crust, at about 0.065 percent by mass, but it is present in every analysis. Third, carbon and nitrogen are absent from the list of major elements altogether. Nitrogen is a trace element, at 83 parts per million by mass in the upper crust <span class="citation" data-cites="rudnick2003">(<a href="../references/references.html#ref-rudnick2003" role="doc-biblioref">Rudnick and Gao 2003</a>)</span>. Converted to atoms, this is about 0.3 nitrogen atoms for every phosphorus atom. In the Sun there are about 260 nitrogen atoms per phosphorus atom (<a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a>).</p>
+<p>The ratio of nitrogen to phosphorus is therefore lower in the crust than in the Sun by a factor of nearly 1000. Relative to phosphorus, most of the nitrogen of the material from which the solar system formed is missing from the Earth’s crust. Where it went, and how much nitrogen and carbon the early Earth retained, are questions for <a href="#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a> and Chapter 3.</p>
+</section>
+<section id="living-matter" class="level3">
+<h3 class="anchored" data-anchor-id="living-matter">Living matter</h3>
+<p>The composition of a cell depends on the organism and on its growth conditions, so only representative values can be given. For the bacterium <em>Escherichia coli</em>, a standard laboratory organism, the dry mass is about 47 percent carbon <span class="citation" data-cites="heldal1985">(<a href="../references/references.html#ref-heldal1985" role="doc-biblioref">Heldal, Norland, and Tumyr 1985</a>)</span>, 20 percent oxygen, 14 percent nitrogen, 8 percent hydrogen and 3 percent phosphorus <span class="citation" data-cites="neidhardt_bn">(<a href="../references/references.html#ref-neidhardt_bn" role="doc-biblioref">Neidhardt, Ingraham, and Schaechter, n.d.</a>)</span>. (<strong>Dry mass</strong> is the mass remaining after all water has been removed.) Converted to atoms, these values give about 40 carbon atoms, 10 nitrogen atoms, 13 oxygen atoms and 80 hydrogen atoms for each phosphorus atom.</p>
+<p>A second, widely used reference is the composition of marine <strong>phytoplankton</strong>, the microscopic photosynthetic organisms of the surface ocean. Biologists use an atom ratio of carbon to nitrogen to phosphorus of C:N:P = 106:16:1, based on an analysis of the average elemental composition of marine organisms; it is known as the <strong>Redfield ratio</strong>, after A. C. Redfield <span class="citation" data-cites="geider2002">(<a href="../references/references.html#ref-geider2002" role="doc-biblioref">Geider and La Roche 2002</a>)</span>. The composition of marine particulate matter can deviate significantly from this ratio <span class="citation" data-cites="geider2002">(<a href="../references/references.html#ref-geider2002" role="doc-biblioref">Geider and La Roche 2002</a>)</span>, but it remains a useful reference value.</p>
+</section>
+<section id="comparing-the-three" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-the-three">Comparing the three</h3>
+<p><a href="#fig-cnp-ratios" class="quarto-xref">Figure&nbsp;<span>1.12</span></a> compares the number of carbon and nitrogen atoms per phosphorus atom in the Sun, the upper crust and living matter.</p>
+<div id="fig-cnp-ratios" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cnp-ratios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-12_cnp_ratios.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cnp-ratios-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.12: Number of carbon atoms (left bar of each pair) and nitrogen atoms (right bar) per phosphorus atom in the solar photosphere <span class="citation" data-cites="asplund2009">(<a href="../references/references.html#ref-asplund2009" role="doc-biblioref">Asplund et al. 2009</a>)</span>, the Earth’s upper continental crust <span class="citation" data-cites="rudnick2003">(<a href="../references/references.html#ref-rudnick2003" role="doc-biblioref">Rudnick and Gao 2003</a>)</span>, marine phytoplankton (Redfield ratio) <span class="citation" data-cites="geider2002">(<a href="../references/references.html#ref-geider2002" role="doc-biblioref">Geider and La Roche 2002</a>)</span> and the bacterium <em>E. coli</em> (from dry-mass composition) <span class="citation" data-cites="heldal1985 neidhardt_bn">(<a href="../references/references.html#ref-heldal1985" role="doc-biblioref">Heldal, Norland, and Tumyr 1985</a>; <a href="../references/references.html#ref-neidhardt_bn" role="doc-biblioref">Neidhardt, Ingraham, and Schaechter, n.d.</a>)</span>. The vertical axis is logarithmic. Carbon is not among the elements reported for the upper crust in the source used here, so no carbon bar is shown for it.
+</figcaption>
+</figure>
+</div>
+<p>The figure shows two contrasts. Compared with the crust, living matter is enormously enriched in nitrogen, and in carbon, which is not even a major element of rock. Compared with the Sun, living matter is enriched in phosphorus: there are about 1000 carbon atoms per phosphorus atom in the Sun but only about 100 in phytoplankton and 40 in <em>E. coli</em>. Relative to carbon, living cells therefore contain roughly 10 to 25 times more phosphorus than the Sun.</p>
+</section>
+<section id="consequence-for-this-book-4" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-4">Consequence for this book</h3>
+<p>The elements of RNA are not distributed as living matter requires. Carbon and nitrogen are abundant in the Universe but scarce in rock. Phosphorus is present in rock but scarce in the Universe, and in rock it is bound in minerals; how it can be brought into solution is taken up in Chapter 4. Any chemical route to RNA must therefore have drawn carbon and nitrogen from the atmosphere, the oceans or material delivered from space, and phosphorus from minerals. Where these supplies came from is the subject of <a href="#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a> and Chapter 3.</p>
+</section>
+</section>
+<section id="sec-nebula" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="sec-nebula"><span class="header-section-number">1.7</span> From stellar ejecta to the forming Earth</h2>
+<section id="recycling-between-stars-and-gas" class="level3">
+<h3 class="anchored" data-anchor-id="recycling-between-stars-and-gas">Recycling between stars and gas</h3>
+<p>The elements made in stars are not lost when the stars die. Supernovae (<a href="#sec-massive" class="quarto-xref"><span>Section 1.4</span></a>) and the winds of stars return newly made nuclei to the gas between the stars, where they mix with gas that has not yet been processed. Stars that form later can therefore contain elements made by earlier stars. The Sun is an example: its photosphere contains carbon, nitrogen, oxygen and phosphorus (<a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a>), none of which was made in the Big Bang (<a href="#sec-bbn" class="quarto-xref"><span>Section 1.2</span></a>).</p>
+<p>Stars form in <strong>molecular clouds</strong>: cold, dense clouds of interstellar gas in which hydrogen is present mainly as H<sub>2</sub> molecules, together with dust grains. The Sun, like most stars, is assumed to have been born in such a cloud, within a cluster of stars; from the size of the solar system and from the radioactive isotopes discussed below, it has been estimated that this birth cluster contained at least 2000 stars <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+</section>
+<section id="the-age-of-the-solar-system" class="level3">
+<h3 class="anchored" data-anchor-id="the-age-of-the-solar-system">The age of the solar system</h3>
+<p>The oldest solids known to have formed in the solar system are found in <strong>chondrites</strong>, meteorites that consist of unprocessed early solar-system material <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Chondrites are made of three kinds of component cemented by a fine-grained matrix: <strong>calcium-aluminium-rich inclusions</strong> (CAIs), which are rare; <strong>chondrules</strong>, which are abundant, rounded objects rich in magnesium and silicon; and grains of iron-nickel metal <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+<p>CAIs have been dated by the uranium-lead method, which uses the radioactive decay of uranium isotopes to lead isotopes (the method is explained in <a href="ch03-feedstock-early-earth.html#sec-dating" class="quarto-xref"><span>Section 3.1</span></a>), to 4.567 to 4.568 billion years <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. This is taken as the age of the solar system, and later events are dated as times after CAI formation. Chondrules formed up to about 4 million years later <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+</section>
+<section id="the-protoplanetary-disc" class="level3">
+<h3 class="anchored" data-anchor-id="the-protoplanetary-disc">The protoplanetary disc</h3>
+<p>A cloud core that collapses under its own gravity does not fall straight onto the forming star. Because the core rotates, much of its material settles into a flattened, rotating disc of gas and dust around the young star, a <strong>protoplanetary disc</strong>, from which planets form. Such discs are observed around young stars today. Their masses are typically between 0.2 and 20 percent of the mass of the central star <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Their lifetimes can be estimated from the fraction of young stars that still show the infrared emission of a disc: this fraction falls exponentially with an e-folding time of about 3 million years <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Most stars therefore lose their discs within a few million years, although longer lifetimes, of 5 to 10 million years, have also been argued <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+<p>The temperature of a disc falls with distance from the star, and this determines which substances can exist as solids. The <strong>snow line</strong> (or ice line) is the distance from the star beyond which ice grains can form <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. For water, the corresponding temperature is about 150 K; for carbon monoxide, about 20 K <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Inside the water snow line, only rock-forming and metallic materials, such as the oxides and silicates of <a href="#tbl-crust" class="quarto-xref">Table&nbsp;<span>1.3</span></a> and iron-nickel metal, are solid. Water, carbon monoxide and other volatile substances remain gases there.</p>
+</section>
+<section id="radioactive-clues-to-the-birth-environment" class="level3">
+<h3 class="anchored" data-anchor-id="radioactive-clues-to-the-birth-environment">Radioactive clues to the birth environment</h3>
+<p>Chondrites also contain the decay products of radioactive isotopes that no longer exist in the solar system. These <strong>short-lived radionuclides</strong> are radioactive isotopes with half-lives of less than 200 million years that were present in the early solar system <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Their presence shows that the material of the solar system was enriched in freshly made nuclei shortly before the solar system formed.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: extinct radioactivity in meteorites
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Analyses of the isotopes in meteorites show that they contain the decay products of aluminium-26 and iron-60, which have half-lives of 0.72 million and 2.6 million years respectively <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Neither isotope survives today, so they must have been incorporated into solids within a few half-lives of their production. Iron-60 is too rich in neutrons to be produced by irradiation, and it is absent from the winds of massive stars; its only possible source in the early solar system is at least one supernova <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Aluminium-26 cannot come from the same single supernova, because supernovae produce far more iron-60 than aluminium-26; its most likely origin is the wind of a single massive star nearby <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. The isotopes of meteorites therefore record that material from massive stars, the same stars that make carbon, oxygen and phosphorus (<a href="#sec-massive" class="quarto-xref"><span>Section 1.4</span></a>, <a href="#sec-phosphorus" class="quarto-xref"><span>Section 1.5</span></a>), was being added to the solar system’s raw material close to the time of its formation.</p>
+</div>
+</div>
+<p>The decay of aluminium-26 also released heat. Because its half-life is short, this heat source was confined to the first 5 million years of solar-system history <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+</section>
+<section id="building-the-earth" class="level3">
+<h3 class="anchored" data-anchor-id="building-the-earth">Building the Earth</h3>
+<p>Within the disc, dust grains stick together and grow into larger bodies, which collide and merge to form planets. The process took different lengths of time for different bodies. Some meteorites come from asteroids that melted and separated internally into a metallic core and a rocky mantle, a process called <strong>differentiation</strong>. The parent bodies of the magmatic iron meteorites, one group of iron meteorites, differentiated within 1 to 2 million years of CAI formation, and those of most other differentiated meteorites within 3 to 5 million years <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Mars probably formed within 2 to 10 million years <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. The Earth grew more slowly: measurements of the hafnium-tungsten system in terrestrial rocks and in chondrites show that its growth lasted at least 38 million years, and probably as long as 120 million years, after the formation of the solar system <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. The giant impact that formed the Moon is an important event for dating the late stages of the Earth’s growth <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+<p>There is growing evidence that much of the inventory of volatile elements in the inner solar system was added late, during the last stages of planetary growth <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. Volatile substances, including water and compounds of carbon and nitrogen, are the raw materials of the chemistry described in the rest of this book; how and when the Earth acquired them is discussed in Chapter 3. <a href="#fig-solar-timeline" class="quarto-xref">Figure&nbsp;<span>1.13</span></a> summarises the time scales.</p>
+<div id="fig-solar-timeline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solar-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch01/fig1-13_solar_timeline.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solar-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.13: Time scales of the formation of the solar system, measured from the formation of the first solids (CAIs), 4.567 to 4.568 billion years ago <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. The horizontal axis is logarithmic; because such an axis cannot show time zero, CAI formation and bars that begin at time zero are drawn from 0.1 million years. Bars show the ranges given in the text. Hatched portions mark the uncertain upper part of a range: for the disc, the longer lifetimes of 5 to 10 million years that have been argued; for the Earth, the span between the firm lower limit of 38 million years and the probable end near 120 million years.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="consequence-for-this-book-5" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-5">Consequence for this book</h3>
+<p>The five elements of RNA were made in the Big Bang and in stars, were dispersed by stellar winds and supernovae, mixed into a molecular cloud, and became part of the solid and gaseous material of the protoplanetary disc from which the Earth formed over several tens of millions of years. The Earth’s crust that resulted is rich in oxygen, silicon and metals but poor in carbon and nitrogen, and it holds its phosphorus in minerals (<a href="#sec-abundances" class="quarto-xref"><span>Section 1.6</span></a>). Chapter 2 turns from nuclei to the chemical bonds that join atoms into molecules; Chapter 3 returns to the young Earth and the materials it offered for chemistry.</p>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>An atom consists of a nucleus of protons and neutrons, surrounded by electrons. The nucleus holds almost all the mass but occupies a tiny fraction of the volume.</li>
+<li>The atomic number Z (number of protons) defines the element. The mass number A is the number of protons plus neutrons.</li>
+<li>Isotopes are atoms of the same element with different numbers of neutrons. They behave almost identically in chemistry but can differ in stability.</li>
+<li>RNA is built from only five elements: H, C, N, O and P. Each was produced by nuclear reactions, not by chemistry.</li>
+<li>The early Universe was too hot for nuclei to survive. Nuclei formed only after it cooled, in the first few minutes.</li>
+<li>The neutron-to-proton ratio (about 1 to 7 when nucleosynthesis began) fixed the helium mass fraction at about 0.25.</li>
+<li>Big Bang nucleosynthesis stopped at lithium because no stable nuclei exist with mass number 5 or 8. It produced hydrogen but none of C, N, O or P.</li>
+<li>Fusion of light nuclei releases energy because binding energy per nucleon rises from hydrogen up to the region of iron and nickel.</li>
+<li>Stars like the Sun convert hydrogen into helium through the proton-proton chain, releasing 26.7 MeV per helium-4 nucleus formed.</li>
+<li>In helium burning near 10<sup>8</sup> K, three helium-4 nuclei form carbon-12 through unstable beryllium-8 and the Hoyle state at 7.65 MeV; further helium capture turns part of the carbon into oxygen-16.</li>
+<li>In the CNO cycle, carbon, nitrogen and oxygen catalyse hydrogen burning; its slowest step converts most of the carbon in a stellar core into nitrogen-14, the main stellar source of nitrogen.</li>
+<li>Stars of more than about 8 solar masses burn successively heavier fuels up to iron, then their iron cores collapse and the stars explode as core-collapse supernovae, ejecting newly made elements into space.</li>
+<li>Phosphorus has a single stable isotope, <sup>31</sup>P. It is made in massive stars and released by supernovae, as confirmed by observations of the supernova remnant Cassiopeia A.</li>
+<li>On the log <span class="math inline">\(\varepsilon\)</span> scale, abundances are counted in atoms relative to 10<sup>12</sup> hydrogen atoms. In the Sun there are about 1000 carbon atoms for every phosphorus atom; phosphorus is the scarcest of the five elements of RNA.</li>
+<li>The Earth’s upper crust is mostly oxygen and silicon. Phosphorus is a minor element of rock, carbon is not a major element at all, and there are fewer nitrogen atoms than phosphorus atoms.</li>
+<li>Living matter is rich in carbon and nitrogen compared with rock, and rich in phosphorus compared with the Sun: about 106 carbon atoms per phosphorus atom in marine phytoplankton (the Redfield ratio), against about 1000 in the Sun.</li>
+<li>The solar system formed from a molecular cloud enriched by earlier stars. Its oldest solids, CAIs in chondritic meteorites, are 4.567 to 4.568 billion years old.</li>
+<li>Extinct aluminium-26 and iron-60 in meteorites show that material from massive stars, including at least one supernova, was added shortly before the solar system formed.</li>
+<li>Planets formed in a protoplanetary disc that lasted a few million years. The Earth grew over at least 38 and probably up to about 120 million years.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>A nucleus contains 7 protons and 8 neutrons. State its atomic number, mass number and element, and write its isotope symbol.</li>
+<li>Explain why <sup>12</sup>C and <sup>14</sup>C behave almost identically in chemical reactions but differently in a radiation detector.</li>
+<li>If the nucleus of an atom were enlarged to the size of a marble (1 cm across), estimate the diameter of the whole atom.</li>
+<li>Use the equation for Y to calculate the helium mass fraction if the neutron-to-proton ratio had been 1/5 when the deuterium bottleneck opened. Would a longer bottleneck produce more or less helium? Explain.</li>
+<li>Explain why the Big Bang produced almost no carbon, even though carbon-12 is a very stable nucleus.</li>
+<li>Using the atomic masses given in <a href="#sec-stars" class="quarto-xref"><span>Section 1.3</span></a>, calculate the fraction of mass converted into energy when four hydrogen atoms become one helium-4 atom.</li>
+<li>The Sun loses about 4.26 × 10<sup>9</sup> kg of mass per second through hydrogen burning. Assuming this rate has been constant, estimate the total mass the Sun has converted into energy over 4.6 billion years. (One year is about 3.16 × 10<sup>7</sup> s.)</li>
+<li>Explain why the existence of the Hoyle state was predicted from astronomical observations before it was found in the laboratory.</li>
+<li>Write out the main branch of the CNO cycle as six separate reactions, and show that its net effect is 4p <span class="math inline">\(\rightarrow\)</span> <sup>4</sup>He + 2e<sup>+</sup> + 2<span class="math inline">\(\nu_e\)</span>.</li>
+<li>Using <a href="#tbl-burning" class="quarto-xref">Table&nbsp;<span>1.1</span></a>, calculate the ratio of the durations of hydrogen burning and silicon burning in a 20-solar-mass star.</li>
+<li>Explain, with reference to <a href="#fig-binding-energy" class="quarto-xref">Figure&nbsp;<span>1.6</span></a>, why a star cannot obtain energy by fusing iron.</li>
+<li>Using <a href="#tbl-solar" class="quarto-xref">Table&nbsp;<span>1.2</span></a>, calculate how many oxygen atoms and how many nitrogen atoms there are in the Sun for every phosphorus atom, and check your answers against the last column of the table.</li>
+<li>Show that a nucleus with equal numbers of protons and neutrons that captures a helium-4 nucleus again has equal numbers of protons and neutrons. Use this result to explain why phosphorus-31 cannot be made from carbon-12 by helium-4 captures alone.</li>
+<li>Explain why the standard atomic weight of phosphorus is known far more precisely than that of sulfur.</li>
+<li>Using the oxide composition in <a href="#tbl-crust" class="quarto-xref">Table&nbsp;<span>1.3</span></a>, calculate the mass percent of silicon in the upper crust. (Relative atomic masses: Si 28.085, O 15.999.)</li>
+<li>A sample of dry biomass contains 50 percent carbon and 3 percent phosphorus by mass. Calculate the number of carbon atoms per phosphorus atom, and compare it with the Redfield ratio and with the Sun.</li>
+<li>Explain why comparisons of composition in this chapter are made with atom ratios rather than with mass fractions.</li>
+<li>Aluminium-26 has a half-life of 0.72 million years. What fraction of the aluminium-26 present when CAIs formed remained after 5 million years? Use this to explain why aluminium-26 heating was confined to the earliest solar system.</li>
+<li>Explain why the presence of iron-60 decay products in meteorites is taken as evidence that at least one supernova contributed material to the early solar system.</li>
+<li>Using <a href="#fig-solar-timeline" class="quarto-xref">Figure&nbsp;<span>1.13</span></a>, compare the lifetime of a typical protoplanetary disc with the time the Earth took to form. What does this imply about the amount of gas available during the late stages of the Earth’s growth?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-adelberger2011" class="csl-entry" role="listitem">
+Adelberger, E. G. et al. 2011. <span>“Solar Fusion Cross Sections II: The Pp Chain and CNO Cycles.”</span> Reviews of Modern Physics; arXiv:1004.2318. <a href="https://arxiv.org/abs/1004.2318">https://arxiv.org/abs/1004.2318</a>.
+</div>
+<div id="ref-asplund2009" class="csl-entry" role="listitem">
+Asplund, M., N. Grevesse, A. J. Sauval, and P. Scott. 2009. <span>“The Chemical Composition of the Sun.”</span> <em>Annual Review of Astronomy and Astrophysics</em> 47: 481–522. <a href="https://arxiv.org/abs/0909.0948">https://arxiv.org/abs/0909.0948</a>.
+</div>
+<div id="ref-dunbar1953" class="csl-entry" role="listitem">
+Dunbar, D. N. F., R. E. Pixley, W. A. Wenzel, and W. Whaling. 1953. <span>“The 7.68-Mev State in C12.”</span> <em>Physical Review</em> 92 (3): 649–50. <a href="https://doi.org/10.1103/PhysRev.92.649">https://doi.org/10.1103/PhysRev.92.649</a>.
+</div>
+<div id="ref-britannica_atom" class="csl-entry" role="listitem">
+Encyclopaedia Britannica. n.d. <span>“Atom.”</span> <a href="https://www.britannica.com/science/atom">https://www.britannica.com/science/atom</a>.
+</div>
+<div id="ref-esa_cmb" class="csl-entry" role="listitem">
+European Space Agency. n.d. <span>“Planck and the Cosmic Microwave Background.”</span> <a href="https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background">https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background</a>.
+</div>
+<div id="ref-pdg_bbn" class="csl-entry" role="listitem">
+Fields, B. D., P. Molaro, and S. Sarkar. 2024. <span>“Big-Bang Nucleosynthesis.”</span> In S. Navas et al. (Particle Data Group), Review of Particle Physics, Phys. Rev. D 110, 030001 (2024). <a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf">https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf</a>.
+</div>
+<div id="ref-fixsen2009" class="csl-entry" role="listitem">
+Fixsen, D. J. 2009. <span>“The Temperature of the Cosmic Microwave Background.”</span> <em>The Astrophysical Journal</em> 707: 916–20. <a href="https://arxiv.org/abs/0911.1955">https://arxiv.org/abs/0911.1955</a>.
+</div>
+<div id="ref-freer2014" class="csl-entry" role="listitem">
+Freer, M., and H. O. U. Fynbo. 2014. <span>“The Hoyle State in 12C.”</span> Progress in Particle and Nuclear Physics (author manuscript). <a href="https://research.birmingham.ac.uk/files/17850791/Freer_Hoyle_state_Progress_Particle_Nuclear_Physics_2014.pdf">https://research.birmingham.ac.uk/files/17850791/Freer_Hoyle_state_Progress_Particle_Nuclear_Physics_2014.pdf</a>.
+</div>
+<div id="ref-geider2002" class="csl-entry" role="listitem">
+Geider, R., and J. La Roche. 2002. <span>“Redfield Revisited: Variability of <span>C:N:P</span> in Marine Microalgae and Its Biochemical Basis.”</span> <em>European Journal of Phycology</em> 37 (1): 1–17. <a href="https://doi.org/10.1017/S0967026201003456">https://doi.org/10.1017/S0967026201003456</a>.
+</div>
+<div id="ref-heger2002" class="csl-entry" role="listitem">
+Heger, A., S. E. Woosley, C. L. Fryer, and N. Langer. 2002. <span>“Massive Star Evolution Through the Ages.”</span> arXiv:astro-ph/0211062. <a href="https://arxiv.org/abs/astro-ph/0211062">https://arxiv.org/abs/astro-ph/0211062</a>.
+</div>
+<div id="ref-heldal1985" class="csl-entry" role="listitem">
+Heldal, M., S. Norland, and O. Tumyr. 1985. <span>“X-Ray Microanalytic Method for Measurement of Dry Matter and Elemental Content of Individual Bacteria.”</span> <em>Applied and Environmental Microbiology</em> 50 (5): 1251–57.
+</div>
+<div id="ref-iau2015" class="csl-entry" role="listitem">
+International Astronomical Union. 2015. <span>“Resolution B3 on Recommended Nominal Conversion Constants for Selected Solar and Planetary Properties.”</span> <a href="https://www.iau.org/static/resolutions/IAU2015_English.pdf">https://www.iau.org/static/resolutions/IAU2015_English.pdf</a>.
+</div>
+<div id="ref-iupac_ptable" class="csl-entry" role="listitem">
+International Union of Pure and Applied Chemistry. n.d. <span>“Periodic Table of Elements.”</span> <a href="https://iupac.org/what-we-do/periodic-table-of-elements/">https://iupac.org/what-we-do/periodic-table-of-elements/</a>.
+</div>
+<div id="ref-ciaaw_c" class="csl-entry" role="listitem">
+IUPAC Commission on Isotopic Abundances and Atomic Weights. n.d.a. <span>“Atomic Weight of Carbon.”</span> <a href="https://www.ciaaw.org/carbon.htm">https://www.ciaaw.org/carbon.htm</a>.
+</div>
+<div id="ref-ciaaw_he" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Atomic Weight of Helium.”</span> <a href="https://www.ciaaw.org/helium.htm">https://www.ciaaw.org/helium.htm</a>.
+</div>
+<div id="ref-ciaaw_h" class="csl-entry" role="listitem">
+———. n.d.c. <span>“Atomic Weight of Hydrogen.”</span> <a href="https://www.ciaaw.org/hydrogen.htm">https://www.ciaaw.org/hydrogen.htm</a>.
+</div>
+<div id="ref-ciaaw_fe" class="csl-entry" role="listitem">
+———. n.d.d. <span>“Atomic Weight of Iron.”</span> <a href="https://www.ciaaw.org/iron.htm">https://www.ciaaw.org/iron.htm</a>.
+</div>
+<div id="ref-ciaaw_ni" class="csl-entry" role="listitem">
+———. n.d.e. <span>“Atomic Weight of Nickel.”</span> <a href="https://www.ciaaw.org/nickel.htm">https://www.ciaaw.org/nickel.htm</a>.
+</div>
+<div id="ref-ciaaw_o" class="csl-entry" role="listitem">
+———. n.d.f. <span>“Atomic Weight of Oxygen.”</span> <a href="https://www.ciaaw.org/oxygen.htm">https://www.ciaaw.org/oxygen.htm</a>.
+</div>
+<div id="ref-ciaaw_p" class="csl-entry" role="listitem">
+———. n.d.g. <span>“Atomic Weight of Phosphorus.”</span> <a href="https://www.ciaaw.org/phosphorus.htm">https://www.ciaaw.org/phosphorus.htm</a>.
+</div>
+<div id="ref-ciaaw_si" class="csl-entry" role="listitem">
+———. n.d.h. <span>“Atomic Weight of Silicon.”</span> <a href="https://www.ciaaw.org/silicon.htm">https://www.ciaaw.org/silicon.htm</a>.
+</div>
+<div id="ref-ciaaw_s" class="csl-entry" role="listitem">
+———. n.d.i. <span>“Atomic Weight of Sulfur.”</span> <a href="https://www.ciaaw.org/sulfur.htm">https://www.ciaaw.org/sulfur.htm</a>.
+</div>
+<div id="ref-ciaaw_u" class="csl-entry" role="listitem">
+———. n.d.j. <span>“Atomic Weight of Uranium.”</span> <a href="https://www.ciaaw.org/uranium.htm">https://www.ciaaw.org/uranium.htm</a>.
+</div>
+<div id="ref-johnson2022" class="csl-entry" role="listitem">
+Johnson, J. W., D. H. Weinberg, F. Vincenzo, J. C. Bird, and E. J. Griffith. 2022. <span>“Empirical Constraints on the Nucleosynthesis of Nitrogen.”</span> arXiv:2202.04666. <a href="https://arxiv.org/abs/2202.04666">https://arxiv.org/abs/2202.04666</a>.
+</div>
+<div id="ref-jose2011" class="csl-entry" role="listitem">
+José, J., and C. Iliadis. 2011. <span>“Nuclear Astrophysics: The Unfinished Quest for the Origin of the Elements.”</span> arXiv:1107.2234. <a href="https://arxiv.org/abs/1107.2234">https://arxiv.org/abs/1107.2234</a>.
+</div>
+<div id="ref-koo2013" class="csl-entry" role="listitem">
+Koo, B.-C., Y.-H. Lee, D.-S. Moon, S.-C. Yoon, and J. C. Raymond. 2013. <span>“Phosphorus in the Young Supernova Remnant Cassiopeia a.”</span> <em>Science</em> 342: 1346. <a href="https://doi.org/10.1126/science.1243823">https://doi.org/10.1126/science.1243823</a>.
+</div>
+<div id="ref-nasa_sun" class="csl-entry" role="listitem">
+NASA. n.d. <span>“Sun: Facts.”</span> <a href="https://science.nasa.gov/sun/facts/">https://science.nasa.gov/sun/facts/</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d. <span>“Fundamental Physical Constants: 2022 CODATA Adjustment.”</span> <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-neidhardt_bn" class="csl-entry" role="listitem">
+Neidhardt, F. C., J. L. Ingraham, and M. Schaechter. n.d. <span>“Physiology of the Bacterial Cell: A Molecular Approach.”</span> p. 3; values as compiled in BioNumbers, BNID 100650-100653. <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100653">https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100653</a>.
+</div>
+<div id="ref-pfalzner2015" class="csl-entry" role="listitem">
+Pfalzner, S., M. B. Davies, M. Gounelle, A. Johansen, C. Münker, P. Lacerda, S. Portegies Zwart, L. Testi, M. Trieloff, and D. Veras. 2015. <span>“The Formation of the Solar System.”</span> <em>Physica Scripta</em> 90 (6): 068001. <a href="https://doi.org/10.1088/0031-8949/90/6/068001">https://doi.org/10.1088/0031-8949/90/6/068001</a>.
+</div>
+<div id="ref-planck2018" class="csl-entry" role="listitem">
+Planck Collaboration, N. Aghanim, et al. 2020. <span>“Planck 2018 Results. VI. Cosmological Parameters.”</span> <em>Astronomy &amp; Astrophysics</em> 641: A6. <a href="https://doi.org/10.1051/0004-6361/201833910">https://doi.org/10.1051/0004-6361/201833910</a>.
+</div>
+<div id="ref-ray2009" class="csl-entry" role="listitem">
+Ray, A. 2009. <span>“Massive Stars as Thermonuclear Reactors and Their Explosions Following Core Collapse.”</span> Lecture notes, Kodai School on Synthesis of Elements in Stars (Springer); arXiv:0907.5407. <a href="https://arxiv.org/abs/0907.5407">https://arxiv.org/abs/0907.5407</a>.
+</div>
+<div id="ref-rudnick2003" class="csl-entry" role="listitem">
+Rudnick, R. L., and S. Gao. 2003. <span>“Composition of the Continental Crust.”</span> In <em>Treatise on Geochemistry, Volume 3: The Crust</em>, edited by R. L. Rudnick, H. D. Holland, and K. K. Turekian, 1–64. Oxford: Elsevier. <a href="https://www.geol.umd.edu/~rudnick/PDF/Rudnick_Gao_Treatise.pdf">https://www.geol.umd.edu/~rudnick/PDF/Rudnick_Gao_Treatise.pdf</a>.
+</div>
+<div id="ref-aguirre2017" class="csl-entry" role="listitem">
+Silva Aguirre, V. 2017. <span>“Stellar Evolution and Modelling Stars.”</span> arXiv:1711.04461. <a href="https://arxiv.org/abs/1711.04461">https://arxiv.org/abs/1711.04461</a>.
+</div>
+<div id="ref-smartt2009" class="csl-entry" role="listitem">
+Smartt, S. J. 2009. <span>“Progenitors of Core-Collapse Supernovae.”</span> Annual Review of Astronomy and Astrophysics; arXiv:0908.0700. <a href="https://arxiv.org/abs/0908.0700">https://arxiv.org/abs/0908.0700</a>.
+</div>
+<div id="ref-tilley2004" class="csl-entry" role="listitem">
+Tilley, D. R. et al. 2004. <span>“Energy Levels of Light Nuclei a = 8.”</span> Triangle Universities Nuclear Laboratory evaluation. <a href="https://nucldata.tunl.duke.edu/nucldata/ourpubs/08_2004.pdf">https://nucldata.tunl.duke.edu/nucldata/ourpubs/08_2004.pdf</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch02-how-atoms-join.html" class="pagination-link" aria-label="How Atoms Join into Molecules">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

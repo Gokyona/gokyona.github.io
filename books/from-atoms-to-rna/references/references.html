@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>References – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../glossary/glossary.html" rel="next">
+<link href="../chapters/epilogue-rna-to-cells.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../references/references.html">References</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">References</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-adamala2013" class="csl-entry" role="listitem">
+Adamala, K., and J. W. Szostak. 2013. <span>“Nonenzymatic
+Template-Directed <span>RNA</span> Synthesis Inside Model
+Protocells.”</span> <em>Science</em> 342: 1098–1100. <a href="https://doi.org/10.1126/science.1241888">https://doi.org/10.1126/science.1241888</a>.
+</div>
+<div id="ref-adelberger2011" class="csl-entry" role="listitem">
+Adelberger, E. G. et al. 2011. <span>“Solar Fusion Cross Sections II:
+The Pp Chain and CNO Cycles.”</span> Reviews of Modern Physics;
+arXiv:1004.2318. <a href="https://arxiv.org/abs/1004.2318">https://arxiv.org/abs/1004.2318</a>.
+</div>
+<div id="ref-allred1961" class="csl-entry" role="listitem">
+Allred, A. L. 1961. <span>“Electronegativity Values from Thermochemical
+Data.”</span> <em>Journal of Inorganic and Nuclear Chemistry</em> 17
+(3–4): 215–21. <a href="https://doi.org/10.1016/0022-1902(61)80142-5">https://doi.org/10.1016/0022-1902(61)80142-5</a>.
+</div>
+<div id="ref-anastasi2006" class="csl-entry" role="listitem">
+Anastasi, C., M. A. Crowe, M. W. Powner, and J. D. Sutherland. 2006.
+<span>“Direct Assembly of Nucleoside Precursors from Two- and
+Three-Carbon Units.”</span> <em>Angewandte Chemie International
+Edition</em> 45 (37): 6176–79. <a href="https://doi.org/10.1002/anie.200601267">https://doi.org/10.1002/anie.200601267</a>.
+</div>
+<div id="ref-arunan2011" class="csl-entry" role="listitem">
+Arunan, E., G. R. Desiraju, R. A. Klein, J. Sadlej, S. Scheiner, I.
+Alkorta, D. C. Clary, et al. 2011. <span>“Definition of the Hydrogen
+Bond (<span>IUPAC</span> Recommendations 2011).”</span> <em>Pure and
+Applied Chemistry</em> 83 (8): 1637–41. <a href="https://doi.org/10.1351/PAC-REC-10-01-02">https://doi.org/10.1351/PAC-REC-10-01-02</a>.
+</div>
+<div id="ref-asplund2009" class="csl-entry" role="listitem">
+Asplund, M., N. Grevesse, A. J. Sauval, and P. Scott. 2009. <span>“The
+Chemical Composition of the Sun.”</span> <em>Annual Review of Astronomy
+and Astrophysics</em> 47: 481–522. <a href="https://arxiv.org/abs/0909.0948">https://arxiv.org/abs/0909.0948</a>.
+</div>
+<div id="ref-attwater2018" class="csl-entry" role="listitem">
+Attwater, J., A. Raguram, A. S. Morgunov, E. Gianni, and P. Holliger.
+2018. <span>“Ribozyme-Catalysed <span>RNA</span> Synthesis Using Triplet
+Building Blocks.”</span> <em>eLife</em> 7: e35255. <a href="https://doi.org/10.7554/eLife.35255">https://doi.org/10.7554/eLife.35255</a>.
+</div>
+<div id="ref-attwater2013" class="csl-entry" role="listitem">
+Attwater, J., A. Wochner, and P. Holliger. 2013. <span>“In-Ice Evolution
+of <span>RNA</span> Polymerase Ribozyme Activity.”</span> <em>Nature
+Chemistry</em> 5: 1011–18. <a href="https://doi.org/10.1038/nchem.1781">https://doi.org/10.1038/nchem.1781</a>.
+</div>
+<div id="ref-bada2013" class="csl-entry" role="listitem">
+Bada, Jeffrey L. 2013. <span>“New Insights into Prebiotic Chemistry from
+<span class="nocase">Stanley Miller’s</span> Spark Discharge
+Experiments.”</span> <em>Chemical Society Reviews</em> 42 (5): 2186–96.
+<a href="https://doi.org/10.1039/c3cs35433d">https://doi.org/10.1039/c3cs35433d</a>.
+</div>
+<div id="ref-barboni2017" class="csl-entry" role="listitem">
+Barboni, M., P. Boehnke, B. Keller, I. E. Kohl, B. Schoene, E. D. Young,
+and K. D. McKeegan. 2017. <span>“Early Formation of the
+<span>Moon</span> 4.51 Billion Years Ago.”</span> <em>Science
+Advances</em> 3 (1): e1602365. <a href="https://doi.org/10.1126/sciadv.1602365">https://doi.org/10.1126/sciadv.1602365</a>.
+</div>
+<div id="ref-bartel1993" class="csl-entry" role="listitem">
+Bartel, D. P., and J. W. Szostak. 1993. <span>“Isolation of New
+Ribozymes from a Large Pool of Random Sequences.”</span>
+<em>Science</em> 261 (5127): 1411–18. <a href="https://doi.org/10.1126/science.7690155">https://doi.org/10.1126/science.7690155</a>.
+</div>
+<div id="ref-becker2019" class="csl-entry" role="listitem">
+Becker, S., J. Feldmann, S. Wiedemann, H. Okamura, C. Schneider, K.
+Iwan, A. Crisp, M. Rossa, T. Amatov, and T. Carell. 2019. <span>“Unified
+Prebiotically Plausible Synthesis of Pyrimidine and Purine
+<span>RNA</span> Ribonucleotides.”</span> <em>Science</em> 366: 76–82.
+<a href="https://doi.org/10.1126/science.aax2747">https://doi.org/10.1126/science.aax2747</a>.
+</div>
+<div id="ref-becker2016" class="csl-entry" role="listitem">
+Becker, S., I. Thoma, A. Deutsch, T. Gehrke, P. Mayer, H. Zipse, and T.
+Carell. 2016. <span>“A High-Yielding, Strictly Regioselective Prebiotic
+Purine Nucleoside Formation Pathway.”</span> <em>Science</em> 352:
+833–36. <a href="https://doi.org/10.1126/science.aad2808">https://doi.org/10.1126/science.aad2808</a>.
+</div>
+<div id="ref-bell2015" class="csl-entry" role="listitem">
+Bell, E. A., P. Boehnke, T. M. Harrison, and W. L. Mao. 2015.
+<span>“Potentially Biogenic Carbon Preserved in a 4.1 Billion-Year-Old
+Zircon.”</span> <em>Proceedings of the National Academy of Sciences of
+the USA</em> 112 (47): 14518–21. <a href="https://doi.org/10.1073/pnas.1517557112">https://doi.org/10.1073/pnas.1517557112</a>.
+</div>
+<div id="ref-borquez2005" class="csl-entry" role="listitem">
+Borquez, E., H. J. Cleaves, A. Lazcano, and S. L. Miller. 2005.
+<span>“An Investigation of Prebiotic Purine Synthesis from the
+Hydrolysis of <span>HCN</span> Polymers.”</span> <em>Origins of Life and
+Evolution of Biospheres</em> 35 (2): 79–90. <a href="https://doi.org/10.1007/s11084-005-5945-9">https://doi.org/10.1007/s11084-005-5945-9</a>.
+</div>
+<div id="ref-bottke2017" class="csl-entry" role="listitem">
+Bottke, W. F., and M. D. Norman. 2017. <span>“The <span>Late Heavy
+Bombardment</span>.”</span> <em>Annual Review of Earth and Planetary
+Sciences</em> 45: 619–47. <a href="https://doi.org/10.1146/annurev-earth-063016-020131">https://doi.org/10.1146/annurev-earth-063016-020131</a>.
+</div>
+<div id="ref-butlerov1861" class="csl-entry" role="listitem">
+Boutlerow, A. 1861. <span>“Formation Synth<span>é</span>tique d’une
+Substance Sucr<span>é</span>e.”</span> <em>Comptes Rendus de
+l’Acad<span>é</span>mie Des Sciences</em> 53: 145–47.
+</div>
+<div id="ref-breslow1959" class="csl-entry" role="listitem">
+Breslow, R. 1959. <span>“On the Mechanism of the Formose
+Reaction.”</span> <em>Tetrahedron Letters</em> 1 (21): 22–26. <a href="https://doi.org/10.1016/S0040-4039(01)99487-0">https://doi.org/10.1016/S0040-4039(01)99487-0</a>.
+</div>
+<div id="ref-callahan2011" class="csl-entry" role="listitem">
+Callahan, M. P., K. E. Smith, H. J. Cleaves, J. Ruzicka, J. C. Stern, D.
+P. Glavin, C. H. House, and J. P. Dworkin. 2011. <span>“Carbonaceous
+Meteorites Contain a Wide Range of Extraterrestrial Nucleobases.”</span>
+<em>Proceedings of the National Academy of Sciences of the USA</em> 108
+(34): 13995–98. <a href="https://doi.org/10.1073/pnas.1106493108">https://doi.org/10.1073/pnas.1106493108</a>.
+</div>
+<div id="ref-chase1998" class="csl-entry" role="listitem">
+Chase, Jr., M. W. 1998. <span>“<span>NIST-JANAF</span> Thermochemical
+Tables, Fourth Edition.”</span> <em>Journal of Physical and Chemical
+Reference Data, Monograph 9</em>.
+</div>
+<div id="ref-chen2004" class="csl-entry" role="listitem">
+Chen, I. A., R. W. Roberts, and J. W. Szostak. 2004. <span>“The
+Emergence of Competition Between Model Protocells.”</span>
+<em>Science</em> 305 (5689): 1474–76. <a href="https://doi.org/10.1126/science.1100757">https://doi.org/10.1126/science.1100757</a>.
+</div>
+<div id="ref-chyba1992" class="csl-entry" role="listitem">
+Chyba, C., and C. Sagan. 1992. <span>“Endogenous Production, Exogenous
+Delivery and Impact-Shock Synthesis of Organic Molecules: An Inventory
+for the Origins of Life.”</span> <em>Nature</em> 355: 125–32. <a href="https://doi.org/10.1038/355125a0">https://doi.org/10.1038/355125a0</a>.
+</div>
+<div id="ref-ciaaw_abridged" class="csl-entry" role="listitem">
+CIAAW. n.d. <span>“Abridged Standard Atomic Weights 2024.”</span>
+Commission on Isotopic Abundances and Atomic Weights. <a href="https://www.ciaaw.org/abridged-atomic-weights.htm">https://www.ciaaw.org/abridged-atomic-weights.htm</a>.
+</div>
+<div id="ref-cleaves2008" class="csl-entry" role="listitem">
+Cleaves, H. J., J. H. Chalmers, A. Lazcano, S. L. Miller, and J. L.
+Bada. 2008. <span>“A Reassessment of Prebiotic Organic Synthesis in
+Neutral Planetary Atmospheres.”</span> <em>Origins of Life and Evolution
+of Biospheres</em> 38 (2): 105–15. <a href="https://doi.org/10.1007/s11084-007-9120-3">https://doi.org/10.1007/s11084-007-9120-3</a>.
+</div>
+<div id="ref-cohen2013" class="csl-entry" role="listitem">
+Cohen, K. M., S. C. Finney, P. L. Gibbard, and J.-X. Fan. 2024.
+<span>“The <span>ICS</span> International Chronostratigraphic Chart,
+Version 2024/12.”</span> International Commission on Stratigraphy, <a href="https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf" class="uri">https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf</a>.
+</div>
+<div id="ref-cox1984" class="csl-entry" role="listitem">
+Cox, J. D., D. D. Wagman, and V. A. Medvedev. 1984.
+<em><span>CODATA</span> Key Values for Thermodynamics</em>. New York:
+Hemisphere Publishing Corp.
+</div>
+<div id="ref-cronin1997" class="csl-entry" role="listitem">
+Cronin, J. R., and S. Pizzarello. 1997. <span>“Enantiomeric Excesses in
+Meteoritic Amino Acids.”</span> <em>Science</em> 275 (5302): 951–55. <a href="https://doi.org/10.1126/science.275.5302.951">https://doi.org/10.1126/science.275.5302.951</a>.
+</div>
+<div id="ref-damer2020" class="csl-entry" role="listitem">
+Damer, B., and D. Deamer. 2020. <span>“The Hot Spring Hypothesis for an
+Origin of Life.”</span> <em>Astrobiology</em> 20 (4): 429–52. <a href="https://doi.org/10.1089/ast.2019.2045">https://doi.org/10.1089/ast.2019.2045</a>.
+</div>
+<div id="ref-dunbar1953" class="csl-entry" role="listitem">
+Dunbar, D. N. F., R. E. Pixley, W. A. Wenzel, and W. Whaling. 1953.
+<span>“The 7.68-Mev State in C12.”</span> <em>Physical Review</em> 92
+(3): 649–50. <a href="https://doi.org/10.1103/PhysRev.92.649">https://doi.org/10.1103/PhysRev.92.649</a>.
+</div>
+<div id="ref-eigen1971" class="csl-entry" role="listitem">
+Eigen, M. 1971. <span>“Selforganization of Matter and the Evolution of
+Biological Macromolecules.”</span> <em>Naturwissenschaften</em> 58 (10):
+465–523. <a href="https://doi.org/10.1007/BF00623322">https://doi.org/10.1007/BF00623322</a>.
+</div>
+<div id="ref-ellington1990" class="csl-entry" role="listitem">
+Ellington, A. D., and J. W. Szostak. 1990. <span>“In Vitro Selection of
+<span>RNA</span> Molecules That Bind Specific Ligands.”</span>
+<em>Nature</em> 346 (6287): 818–22. <a href="https://doi.org/10.1038/346818a0">https://doi.org/10.1038/346818a0</a>.
+</div>
+<div id="ref-britannica_atom" class="csl-entry" role="listitem">
+Encyclopaedia Britannica. n.d. <span>“Atom.”</span> <a href="https://www.britannica.com/science/atom">https://www.britannica.com/science/atom</a>.
+</div>
+<div id="ref-esa_cmb" class="csl-entry" role="listitem">
+European Space Agency. n.d. <span>“Planck and the Cosmic Microwave
+Background.”</span> <a href="https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background">https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background</a>.
+</div>
+<div id="ref-ferris2006" class="csl-entry" role="listitem">
+Ferris, J. P. 2006. <span>“Montmorillonite-Catalysed Formation of
+<span>RNA</span> Oligomers: The Possible Role of Catalysis in the
+Origins of Life.”</span> <em>Philosophical Transactions of the Royal
+Society B</em> 361: 1777–86. <a href="https://doi.org/10.1098/rstb.2006.1903">https://doi.org/10.1098/rstb.2006.1903</a>.
+</div>
+<div id="ref-ferris1996" class="csl-entry" role="listitem">
+Ferris, J. P., A. R. Hill, R. Liu, and L. E. Orgel. 1996.
+<span>“Synthesis of Long Prebiotic Oligomers on Mineral
+Surfaces.”</span> <em>Nature</em> 381 (6577): 59–61. <a href="https://doi.org/10.1038/381059a0">https://doi.org/10.1038/381059a0</a>.
+</div>
+<div id="ref-ferus2015" class="csl-entry" role="listitem">
+Ferus, M., D. Nesvorný, J. Šponer, P. Kubelík, R. Michálčíková, V.
+Shestivská, J. E. Šponer, and S. Civiš. 2015. <span>“High-Energy
+Chemistry of Formamide: A Unified Mechanism of Nucleobase
+Formation.”</span> <em>Proceedings of the National Academy of Sciences
+of the USA</em> 112 (3): 657–62. <a href="https://doi.org/10.1073/pnas.1412072111">https://doi.org/10.1073/pnas.1412072111</a>.
+</div>
+<div id="ref-feulner2012" class="csl-entry" role="listitem">
+Feulner, G. 2012. <span>“The Faint Young <span>Sun</span>
+Problem.”</span> <em>Reviews of Geophysics</em>. <a href="https://doi.org/10.1029/2011RG000375">https://doi.org/10.1029/2011RG000375</a>.
+</div>
+<div id="ref-pdg_bbn" class="csl-entry" role="listitem">
+Fields, B. D., P. Molaro, and S. Sarkar. 2024. <span>“Big-Bang
+Nucleosynthesis.”</span> In S. Navas et al. (Particle Data Group),
+Review of Particle Physics, Phys. Rev. D 110, 030001 (2024). <a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf">https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf</a>.
+</div>
+<div id="ref-fixsen2009" class="csl-entry" role="listitem">
+Fixsen, D. J. 2009. <span>“The Temperature of the Cosmic Microwave
+Background.”</span> <em>The Astrophysical Journal</em> 707: 916–20. <a href="https://arxiv.org/abs/0911.1955">https://arxiv.org/abs/0911.1955</a>.
+</div>
+<div id="ref-frank1953" class="csl-entry" role="listitem">
+Frank, F. C. 1953. <span>“On Spontaneous Asymmetric Synthesis.”</span>
+<em>Biochimica Et Biophysica Acta</em> 11 (4): 459–63. <a href="https://doi.org/10.1016/0006-3002(53)90082-1">https://doi.org/10.1016/0006-3002(53)90082-1</a>.
+</div>
+<div id="ref-freer2014" class="csl-entry" role="listitem">
+Freer, M., and H. O. U. Fynbo. 2014. <span>“The Hoyle State in
+12C.”</span> Progress in Particle and Nuclear Physics (author
+manuscript). <a href="https://research.birmingham.ac.uk/files/17850791/Freer_Hoyle_state_Progress_Particle_Nuclear_Physics_2014.pdf">https://research.birmingham.ac.uk/files/17850791/Freer_Hoyle_state_Progress_Particle_Nuclear_Physics_2014.pdf</a>.
+</div>
+<div id="ref-fuller1972" class="csl-entry" role="listitem">
+Fuller, W. D., R. A. Sanchez, and L. E. Orgel. 1972. <span>“Studies in
+Prebiotic Synthesis. <span>VI</span>. <span>Synthesis</span> of Purine
+Nucleosides.”</span> <em>Journal of Molecular Biology</em> 67 (1):
+25–33. <a href="https://doi.org/10.1016/0022-2836(72)90383-X">https://doi.org/10.1016/0022-2836(72)90383-X</a>.
+</div>
+<div id="ref-geider2002" class="csl-entry" role="listitem">
+Geider, R., and J. La Roche. 2002. <span>“Redfield Revisited:
+Variability of <span>C:N:P</span> in Marine Microalgae and Its
+Biochemical Basis.”</span> <em>European Journal of Phycology</em> 37
+(1): 1–17. <a href="https://doi.org/10.1017/S0967026201003456">https://doi.org/10.1017/S0967026201003456</a>.
+</div>
+<div id="ref-gibard2018" class="csl-entry" role="listitem">
+Gibard, C., S. Bhowmik, M. Karki, E.-K. Kim, and R. Krishnamurthy. 2018.
+<span>“Phosphorylation, Oligomerization and Self-Assembly in Water Under
+Potential Prebiotic Conditions.”</span> <em>Nature Chemistry</em> 10:
+212–17. <a href="https://doi.org/10.1038/nchem.2878">https://doi.org/10.1038/nchem.2878</a>.
+</div>
+<div id="ref-gilbert1986" class="csl-entry" role="listitem">
+Gilbert, W. 1986. <span>“Origin of Life: The <span>RNA</span>
+World.”</span> <em>Nature</em> 319 (6055): 618. <a href="https://doi.org/10.1038/319618a0">https://doi.org/10.1038/319618a0</a>.
+</div>
+<div id="ref-guerriertakada1983" class="csl-entry" role="listitem">
+Guerrier-Takada, C., K. Gardiner, T. Marsh, N. Pace, and S. Altman.
+1983. <span>“The <span>RNA</span> Moiety of Ribonuclease <span>P</span>
+Is the Catalytic Subunit of the Enzyme.”</span> <em>Cell</em> 35 (3 Pt
+2): 849–57. <a href="https://doi.org/10.1016/0092-8674(83)90117-4">https://doi.org/10.1016/0092-8674(83)90117-4</a>.
+</div>
+<div id="ref-gull2015" class="csl-entry" role="listitem">
+Gull, M., M. A. Mojica, F. M. Fernández, D. A. Gaul, T. M. Orlando, C.
+L. Liotta, and M. A. Pasek. 2015. <span>“Nucleoside Phosphorylation by
+the Mineral Schreibersite.”</span> <em>Scientific Reports</em> 5: 17198.
+<a href="https://doi.org/10.1038/srep17198">https://doi.org/10.1038/srep17198</a>.
+</div>
+<div id="ref-hanczyc2003" class="csl-entry" role="listitem">
+Hanczyc, M. M., S. M. Fujikawa, and J. W. Szostak. 2003.
+<span>“Experimental Models of Primitive Cellular Compartments:
+Encapsulation, Growth, and Division.”</span> <em>Science</em> 302
+(5645): 618–22. <a href="https://doi.org/10.1126/science.1089904">https://doi.org/10.1126/science.1089904</a>.
+</div>
+<div id="ref-harrison2009" class="csl-entry" role="listitem">
+Harrison, T. M. 2009. <span>“The <span>Hadean</span> Crust: Evidence
+from <span class="math inline">&gt;</span>4 <span>Ga</span>
+Zircons.”</span> <em>Annual Review of Earth and Planetary Sciences</em>
+37: 479–505. <a href="https://doi.org/10.1146/annurev.earth.031208.100151">https://doi.org/10.1146/annurev.earth.031208.100151</a>.
+</div>
+<div id="ref-heger2002" class="csl-entry" role="listitem">
+Heger, A., S. E. Woosley, C. L. Fryer, and N. Langer. 2002.
+<span>“Massive Star Evolution Through the Ages.”</span>
+arXiv:astro-ph/0211062. <a href="https://arxiv.org/abs/astro-ph/0211062">https://arxiv.org/abs/astro-ph/0211062</a>.
+</div>
+<div id="ref-heldal1985" class="csl-entry" role="listitem">
+Heldal, M., S. Norland, and O. Tumyr. 1985. <span>“X-Ray Microanalytic
+Method for Measurement of Dry Matter and Elemental Content of Individual
+Bacteria.”</span> <em>Applied and Environmental Microbiology</em> 50
+(5): 1251–57.
+</div>
+<div id="ref-horning2016" class="csl-entry" role="listitem">
+Horning, D. P., and G. F. Joyce. 2016. <span>“Amplification of
+<span>RNA</span> by an <span>RNA</span> Polymerase Ribozyme.”</span>
+<em>Proceedings of the National Academy of Sciences of the USA</em> 113
+(35): 9786–91. <a href="https://doi.org/10.1073/pnas.1610103113">https://doi.org/10.1073/pnas.1610103113</a>.
+</div>
+<div id="ref-inoue1983" class="csl-entry" role="listitem">
+Inoue, T., and L. E. Orgel. 1983. <span>“A Nonenzymatic <span>RNA</span>
+Polymerase Model.”</span> <em>Science</em> 219 (4586): 859–62. <a href="https://doi.org/10.1126/science.6186026">https://doi.org/10.1126/science.6186026</a>.
+</div>
+<div id="ref-iapws_liquid" class="csl-entry" role="listitem">
+International Association for the Properties of Water and Steam. 2011.
+<span>“Revised Supplementary Release on Properties of Liquid Water at
+0.1 <span>MPa</span>, <span>IAPWS</span>
+<span>SR6-08(2011)</span>.”</span> <a href="https://iapws.org/technical-guidance/release/LiquidWater">https://iapws.org/technical-guidance/release/LiquidWater</a>.
+</div>
+<div id="ref-iapws_ionization" class="csl-entry" role="listitem">
+———. 2024. <span>“Revised Release on the Ionization Constant of
+<span>H<span class="math inline"><sub>2</sub></span>O</span>,
+<span>IAPWS</span> <span>R11-24</span>.”</span> <a href="https://iapws.org/technical-guidance/release/Ionization">https://iapws.org/technical-guidance/release/Ionization</a>.
+</div>
+<div id="ref-iau2015" class="csl-entry" role="listitem">
+International Astronomical Union. 2015. <span>“Resolution B3 on
+Recommended Nominal Conversion Constants for Selected Solar and
+Planetary Properties.”</span> <a href="https://www.iau.org/static/resolutions/IAU2015_English.pdf">https://www.iau.org/static/resolutions/IAU2015_English.pdf</a>.
+</div>
+<div id="ref-iupac_ptable" class="csl-entry" role="listitem">
+International Union of Pure and Applied Chemistry. n.d. <span>“Periodic
+Table of Elements.”</span> <a href="https://iupac.org/what-we-do/periodic-table-of-elements/">https://iupac.org/what-we-do/periodic-table-of-elements/</a>.
+</div>
+<div id="ref-iupac_alcohols" class="csl-entry" role="listitem">
+IUPAC. n.d.a. <span>“Alcohols. In: Glossary of Class Names of Organic
+Compounds and Reactivity Intermediates Based on Structure (IUPAC
+Recommendations 1995), Pure Appl. Chem. 67, 1307 (1995), p.
+1312.”</span> IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00204">https://goldbook.iupac.org/terms/view/A00204</a>.
+</div>
+<div id="ref-iupac_aldehydes" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Aldehydes. In: Glossary of Class Names of Organic
+Compounds and Reactivity Intermediates Based on Structure (IUPAC
+Recommendations 1995), Pure Appl. Chem. 67, 1307 (1995), p.
+1312.”</span> IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00208">https://goldbook.iupac.org/terms/view/A00208</a>.
+</div>
+<div id="ref-iupac_amides" class="csl-entry" role="listitem">
+———. n.d.c. <span>“Amides.”</span> IUPAC Compendium of Chemical
+Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00266">https://goldbook.iupac.org/terms/view/A00266</a>.
+</div>
+<div id="ref-iupac_arrhenius" class="csl-entry" role="listitem">
+———. n.d.d. <span>“Arrhenius Equation. In: Compendium of Chemical
+Terminology (the Gold Book); Sources Include a Glossary of Terms Used in
+Chemical Kinetics, Including Reaction Dynamics (<span>IUPAC</span>
+Recommendations 1996), Pure Appl. Chem. 68, 149 (1996).”</span> <a href="https://goldbook.iupac.org/terms/view/A00446">https://goldbook.iupac.org/terms/view/A00446</a>.
+</div>
+<div id="ref-iupac_catalyst" class="csl-entry" role="listitem">
+———. n.d.e. <span>“Catalyst. In: Compendium of Chemical Terminology (the
+Gold Book); Source: A Glossary of Terms Used in Chemical Kinetics,
+Including Reaction Dynamics (<span>IUPAC</span> Recommendations 1996),
+Pure Appl. Chem. 68, 149 (1996).”</span> <a href="https://goldbook.iupac.org/terms/view/C00876">https://goldbook.iupac.org/terms/view/C00876</a>.
+</div>
+<div id="ref-iupac_chirality" class="csl-entry" role="listitem">
+———. n.d.f. <span>“Chirality. In: Basic Terminology of Stereochemistry
+(IUPAC Recommendations 1996), Pure Appl. Chem. 68, 2193 (1996), p.
+2203.”</span> IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/C01058">https://goldbook.iupac.org/terms/view/C01058</a>.
+</div>
+<div id="ref-iupac_condensation" class="csl-entry" role="listitem">
+———. n.d.g. <span>“Condensation Reaction. In: Glossary of Terms Used in
+Physical Organic Chemistry (IUPAC Recommendations 1994), Pure Appl.
+Chem. 66, 1077 (1994), p. 1099.”</span> IUPAC Compendium of Chemical
+Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/C01238">https://goldbook.iupac.org/terms/view/C01238</a>.
+</div>
+<div id="ref-iupac_electrophile" class="csl-entry" role="listitem">
+———. n.d.h. <span>“Electrophile, Electrophilic. In: Glossary of Terms
+Used in Physical Organic Chemistry (IUPAC Recommendations 1994), Pure
+Appl. Chem. 66, 1077 (1994), p. 1111.”</span> IUPAC Compendium of
+Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/E02020">https://goldbook.iupac.org/terms/view/E02020</a>.
+</div>
+<div id="ref-iupac_ea" class="csl-entry" role="listitem">
+———. n.d.i. <span>“Energy of Activation. In: Compendium of Chemical
+Terminology (the Gold Book); Source: Green Book, 2nd Ed., p. 55.”</span>
+<a href="https://goldbook.iupac.org/terms/view/A00102">https://goldbook.iupac.org/terms/view/A00102</a>.
+</div>
+<div id="ref-iupac_esters" class="csl-entry" role="listitem">
+———. n.d.j. <span>“Esters.”</span> IUPAC Compendium of Chemical
+Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/E02219">https://goldbook.iupac.org/terms/view/E02219</a>.
+</div>
+<div id="ref-iupac_functional_group" class="csl-entry" role="listitem">
+———. n.d.k. <span>“Functional Group.”</span> IUPAC Compendium of
+Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/F02555">https://goldbook.iupac.org/terms/view/F02555</a>.
+</div>
+<div id="ref-iupac1994" class="csl-entry" role="listitem">
+———. n.d.l. <span>“Hydrogen Bond. In: Glossary of Terms Used in Physical
+Organic Chemistry (<span>IUPAC</span> Recommendations 1994), Pure Appl.
+Chem. 66, 1077 (1994), p. 1123.”</span> IUPAC Compendium of Chemical
+Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/H02899">https://goldbook.iupac.org/terms/view/H02899</a>.
+</div>
+<div id="ref-iupac_isomer" class="csl-entry" role="listitem">
+———. n.d.m. <span>“Isomer. In: Glossary of Terms Used in Physical
+Organic Chemistry (IUPAC Recommendations 1994), Pure Appl. Chem. 66,
+1077 (1994), p. 1129.”</span> IUPAC Compendium of Chemical Terminology
+(Gold Book). <a href="https://goldbook.iupac.org/terms/view/I03289">https://goldbook.iupac.org/terms/view/I03289</a>.
+</div>
+<div id="ref-iupac_nucleophilicity" class="csl-entry" role="listitem">
+———. n.d.n. <span>“Nucleophile, Nucleophilicity. In: Glossary of Terms
+Used in Physical Organic Chemistry (IUPAC Recommendations 1994), Pure
+Appl. Chem. 66, 1077 (1994), p. 1146.”</span> IUPAC Compendium of
+Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/N04251">https://goldbook.iupac.org/terms/view/N04251</a>.
+</div>
+<div id="ref-iupac_rate" class="csl-entry" role="listitem">
+———. n.d.o. <span>“Rate of Reaction. In: Compendium of Chemical
+Terminology (the Gold Book).”</span> <a href="https://goldbook.iupac.org/terms/view/R05156">https://goldbook.iupac.org/terms/view/R05156</a>.
+</div>
+<div id="ref-ciaaw_c" class="csl-entry" role="listitem">
+IUPAC Commission on Isotopic Abundances and Atomic Weights. n.d.a.
+<span>“Atomic Weight of Carbon.”</span> <a href="https://www.ciaaw.org/carbon.htm">https://www.ciaaw.org/carbon.htm</a>.
+</div>
+<div id="ref-ciaaw_he" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Atomic Weight of Helium.”</span> <a href="https://www.ciaaw.org/helium.htm">https://www.ciaaw.org/helium.htm</a>.
+</div>
+<div id="ref-ciaaw_h" class="csl-entry" role="listitem">
+———. n.d.c. <span>“Atomic Weight of Hydrogen.”</span> <a href="https://www.ciaaw.org/hydrogen.htm">https://www.ciaaw.org/hydrogen.htm</a>.
+</div>
+<div id="ref-ciaaw_fe" class="csl-entry" role="listitem">
+———. n.d.d. <span>“Atomic Weight of Iron.”</span> <a href="https://www.ciaaw.org/iron.htm">https://www.ciaaw.org/iron.htm</a>.
+</div>
+<div id="ref-ciaaw_ni" class="csl-entry" role="listitem">
+———. n.d.e. <span>“Atomic Weight of Nickel.”</span> <a href="https://www.ciaaw.org/nickel.htm">https://www.ciaaw.org/nickel.htm</a>.
+</div>
+<div id="ref-ciaaw_o" class="csl-entry" role="listitem">
+———. n.d.f. <span>“Atomic Weight of Oxygen.”</span> <a href="https://www.ciaaw.org/oxygen.htm">https://www.ciaaw.org/oxygen.htm</a>.
+</div>
+<div id="ref-ciaaw_p" class="csl-entry" role="listitem">
+———. n.d.g. <span>“Atomic Weight of Phosphorus.”</span> <a href="https://www.ciaaw.org/phosphorus.htm">https://www.ciaaw.org/phosphorus.htm</a>.
+</div>
+<div id="ref-ciaaw_si" class="csl-entry" role="listitem">
+———. n.d.h. <span>“Atomic Weight of Silicon.”</span> <a href="https://www.ciaaw.org/silicon.htm">https://www.ciaaw.org/silicon.htm</a>.
+</div>
+<div id="ref-ciaaw_s" class="csl-entry" role="listitem">
+———. n.d.i. <span>“Atomic Weight of Sulfur.”</span> <a href="https://www.ciaaw.org/sulfur.htm">https://www.ciaaw.org/sulfur.htm</a>.
+</div>
+<div id="ref-ciaaw_u" class="csl-entry" role="listitem">
+———. n.d.j. <span>“Atomic Weight of Uranium.”</span> <a href="https://www.ciaaw.org/uranium.htm">https://www.ciaaw.org/uranium.htm</a>.
+</div>
+<div id="ref-johnson2008" class="csl-entry" role="listitem">
+Johnson, Adam P., H. James Cleaves, Jason P. Dworkin, Daniel P. Glavin,
+Antonio Lazcano, and Jeffrey L. Bada. 2008. <span>“The
+<span>Miller</span> Volcanic Spark Discharge Experiment.”</span>
+<em>Science</em> 322 (5900): 404. <a href="https://doi.org/10.1126/science.1161527">https://doi.org/10.1126/science.1161527</a>.
+</div>
+<div id="ref-johnson2022" class="csl-entry" role="listitem">
+Johnson, J. W., D. H. Weinberg, F. Vincenzo, J. C. Bird, and E. J.
+Griffith. 2022. <span>“Empirical Constraints on the Nucleosynthesis of
+Nitrogen.”</span> arXiv:2202.04666. <a href="https://arxiv.org/abs/2202.04666">https://arxiv.org/abs/2202.04666</a>.
+</div>
+<div id="ref-johnston2001" class="csl-entry" role="listitem">
+Johnston, W. K., P. J. Unrau, M. S. Lawrence, M. E. Glasner, and D. P.
+Bartel. 2001. <span>“<span>RNA</span>-Catalyzed <span>RNA</span>
+Polymerization: Accurate and General <span>RNA</span>-Templated Primer
+Extension.”</span> <em>Science</em> 292 (5520): 1319–25. <a href="https://doi.org/10.1126/science.1060786">https://doi.org/10.1126/science.1060786</a>.
+</div>
+<div id="ref-jose2011" class="csl-entry" role="listitem">
+José, J., and C. Iliadis. 2011. <span>“Nuclear Astrophysics: The
+Unfinished Quest for the Origin of the Elements.”</span>
+arXiv:1107.2234. <a href="https://arxiv.org/abs/1107.2234">https://arxiv.org/abs/1107.2234</a>.
+</div>
+<div id="ref-joyce2002" class="csl-entry" role="listitem">
+Joyce, G. F. 2002. <span>“The Antiquity of <span>RNA</span>-Based
+Evolution.”</span> <em>Nature</em> 418 (6894): 214–21. <a href="https://doi.org/10.1038/418214a">https://doi.org/10.1038/418214a</a>.
+</div>
+<div id="ref-joyce1984" class="csl-entry" role="listitem">
+Joyce, G. F., G. M. Visser, C. A. A. van Boeckel, J. H. van Boom, L. E.
+Orgel, and J. van Westrenen. 1984. <span>“Chiral Selection in
+Poly(<span>C</span>)-Directed Synthesis of
+Oligo(<span>G</span>).”</span> <em>Nature</em> 310: 602–4. <a href="https://doi.org/10.1038/310602a0">https://doi.org/10.1038/310602a0</a>.
+</div>
+<div id="ref-kelley2005" class="csl-entry" role="listitem">
+Kelley, D. S., J. A. Karson, G. L. Früh-Green, et al. 2005. <span>“A
+Serpentinite-Hosted Ecosystem: The <span>Lost City</span> Hydrothermal
+Field.”</span> <em>Science</em> 307 (5714): 1428–34. <a href="https://doi.org/10.1126/science.1102556">https://doi.org/10.1126/science.1102556</a>.
+</div>
+<div id="ref-kiedrowski1986" class="csl-entry" role="listitem">
+Kiedrowski, G. von. 1986. <span>“A Self-Replicating
+Hexadeoxynucleotide.”</span> <em>Angewandte Chemie International Edition
+in English</em> 25: 932–35. <a href="https://doi.org/10.1002/anie.198609322">https://doi.org/10.1002/anie.198609322</a>.
+</div>
+<div id="ref-kim2011" class="csl-entry" role="listitem">
+Kim, Hyo-Joong, Alonso Ricardo, Heshan I. Illangkoon, Myong Jung Kim,
+Matthew A. Carrigan, Fabianne Frye, and Steven A. Benner. 2011.
+<span>“Synthesis of Carbohydrates in Mineral-Guided Prebiotic
+Cycles.”</span> <em>Journal of the American Chemical Society</em> 133
+(24): 9457–68. <a href="https://doi.org/10.1021/ja201769f">https://doi.org/10.1021/ja201769f</a>.
+</div>
+<div id="ref-koo2013" class="csl-entry" role="listitem">
+Koo, B.-C., Y.-H. Lee, D.-S. Moon, S.-C. Yoon, and J. C. Raymond. 2013.
+<span>“Phosphorus in the Young Supernova Remnant Cassiopeia a.”</span>
+<em>Science</em> 342: 1346. <a href="https://doi.org/10.1126/science.1243823">https://doi.org/10.1126/science.1243823</a>.
+</div>
+<div id="ref-nist_asd" class="csl-entry" role="listitem">
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2024.
+<span>“<span>NIST</span> Atomic Spectra Database (Ver. 5.12): Ionization
+Energies.”</span> National Institute of Standards; Technology,
+Gaithersburg, MD. <a href="https://doi.org/10.18434/T4W30F">https://doi.org/10.18434/T4W30F</a>.
+</div>
+<div id="ref-kruger1982" class="csl-entry" role="listitem">
+Kruger, K., P. J. Grabowski, A. J. Zaug, J. Sands, D. E. Gottschling,
+and T. R. Cech. 1982. <span>“Self-Splicing <span>RNA</span>:
+Autoexcision and Autocyclization of the Ribosomal <span>RNA</span>
+Intervening Sequence of <span>Tetrahymena</span>.”</span> <em>Cell</em>
+31 (1): 147–57. <a href="https://doi.org/10.1016/0092-8674(82)90414-7">https://doi.org/10.1016/0092-8674(82)90414-7</a>.
+</div>
+<div id="ref-kvenvolden1970" class="csl-entry" role="listitem">
+Kvenvolden, K., J. Lawless, K. Pering, E. Peterson, J. Flores, C.
+Ponnamperuma, I. R. Kaplan, and C. Moore. 1970. <span>“Evidence for
+Extraterrestrial Amino-Acids and Hydrocarbons in the
+<span>Murchison</span> Meteorite.”</span> <em>Nature</em> 228 (5275):
+923–26. <a href="https://doi.org/10.1038/228923a0">https://doi.org/10.1038/228923a0</a>.
+</div>
+<div id="ref-larralde1995" class="csl-entry" role="listitem">
+Larralde, Rosa, Michael P. Robertson, and Stanley L. Miller. 1995.
+<span>“Rates of Decomposition of Ribose and Other Sugars: Implications
+for Chemical Evolution.”</span> <em>Proceedings of the National Academy
+of Sciences of the USA</em> 92 (18): 8158–60. <a href="https://doi.org/10.1073/pnas.92.18.8158">https://doi.org/10.1073/pnas.92.18.8158</a>.
+</div>
+<div id="ref-levy2000" class="csl-entry" role="listitem">
+Levy, M., S. L. Miller, K. Brinton, and J. L. Bada. 2000.
+<span>“Prebiotic Synthesis of Adenine and Amino Acids Under
+<span>Europa</span>-Like Conditions.”</span> <em>Icarus</em> 145 (2):
+609–13. <a href="https://doi.org/10.1006/icar.2000.6365">https://doi.org/10.1006/icar.2000.6365</a>.
+</div>
+<div id="ref-li2017" class="csl-entry" role="listitem">
+Li, L., N. Prywes, C. P. Tam, D. K. O’Flaherty, V. S. Lelyveld, E. C.
+Izgu, A. Pal, and J. W. Szostak. 2017. <span>“Enhanced Nonenzymatic
+<span>RNA</span> Copying with 2-Aminoimidazole Activated
+Nucleotides.”</span> <em>Journal of the American Chemical Society</em>
+139 (5): 1810–13. <a href="https://doi.org/10.1021/jacs.6b13148">https://doi.org/10.1021/jacs.6b13148</a>.
+</div>
+<div id="ref-li1999" class="csl-entry" role="listitem">
+Li, Y., and R. R. Breaker. 1999. <span>“Kinetics of <span>RNA</span>
+Degradation by Specific Base Catalysis of Transesterification Involving
+the 2<span class="math inline">′</span>-Hydroxyl Group.”</span>
+<em>Journal of the American Chemical Society</em> 121: 5364–72. <a href="https://doi.org/10.1021/ja990592p">https://doi.org/10.1021/ja990592p</a>.
+</div>
+<div id="ref-lincoln2009" class="csl-entry" role="listitem">
+Lincoln, T. A., and G. F. Joyce. 2009. <span>“Self-Sustained Replication
+of an <span>RNA</span> Enzyme.”</span> <em>Science</em> 323 (5918):
+1229–32. <a href="https://doi.org/10.1126/science.1167856">https://doi.org/10.1126/science.1167856</a>.
+</div>
+<div id="ref-lohrmann1971" class="csl-entry" role="listitem">
+Lohrmann, R., and L. E. Orgel. 1971. <span>“Urea-Inorganic Phosphate
+Mixtures as Prebiotic Phosphorylating Agents.”</span> <em>Science</em>
+171 (3970): 490–94. <a href="https://doi.org/10.1126/science.171.3970.490">https://doi.org/10.1126/science.171.3970.490</a>.
+</div>
+<div id="ref-lorenz2011" class="csl-entry" role="listitem">
+Lorenz, R., S. H. Bernhart, C. Höner zu Siederdissen, H. Tafer, C.
+Flamm, P. F. Stadler, and I. L. Hofacker. 2011.
+<span>“<span>ViennaRNA</span> Package 2.0.”</span> <em>Algorithms for
+Molecular Biology</em> 6: 26. <a href="https://doi.org/10.1186/1748-7188-6-26">https://doi.org/10.1186/1748-7188-6-26</a>.
+</div>
+<div id="ref-mansy2008" class="csl-entry" role="listitem">
+Mansy, S. S., J. P. Schrum, M. Krishnamurthy, S. Tobé, D. A. Treco, and
+J. W. Szostak. 2008. <span>“Template-Directed Synthesis of a Genetic
+Polymer in a Model Protocell.”</span> <em>Nature</em> 454: 122–25. <a href="https://doi.org/10.1038/nature07018">https://doi.org/10.1038/nature07018</a>.
+</div>
+<div id="ref-martin2008" class="csl-entry" role="listitem">
+Martin, W., J. Baross, D. Kelley, and M. J. Russell. 2008.
+<span>“Hydrothermal Vents and the Origin of Life.”</span> <em>Nature
+Reviews Microbiology</em> 6 (11): 805–14. <a href="https://doi.org/10.1038/nrmicro1991">https://doi.org/10.1038/nrmicro1991</a>.
+</div>
+<div id="ref-mathews2004" class="csl-entry" role="listitem">
+Mathews, D. H., M. D. Disney, J. L. Childs, S. J. Schroeder, M. Zuker,
+and D. H. Turner. 2004. <span>“Incorporating Chemical Modification
+Constraints into a Dynamic Programming Algorithm for Prediction of
+<span>RNA</span> Secondary Structure.”</span> <em>Proceedings of the
+National Academy of Sciences of the USA</em> 101 (19): 7287–92. <a href="https://doi.org/10.1073/pnas.0401799101">https://doi.org/10.1073/pnas.0401799101</a>.
+</div>
+<div id="ref-metbull_murchison" class="csl-entry" role="listitem">
+Meteoritical Society. 2026. <span>“Meteoritical Bulletin Database:
+<span>Murchison</span>.”</span> <a href="https://www.lpi.usra.edu/meteor/metbull.php?code=16875" class="uri">https://www.lpi.usra.edu/meteor/metbull.php?code=16875</a>.
+</div>
+<div id="ref-miller1953" class="csl-entry" role="listitem">
+Miller, Stanley L. 1953. <span>“A Production of Amino Acids Under
+Possible Primitive Earth Conditions.”</span> <em>Science</em> 117
+(3046): 528–29. <a href="https://doi.org/10.1126/science.117.3046.528">https://doi.org/10.1126/science.117.3046.528</a>.
+</div>
+<div id="ref-monnard2003" class="csl-entry" role="listitem">
+Monnard, P.-A., A. Kanavarioti, and D. W. Deamer. 2003. <span>“Eutectic
+Phase Polymerization of Activated Ribonucleotide Mixtures Yields
+Quasi-Equimolar Incorporation of Purine and Pyrimidine
+Nucleobases.”</span> <em>Journal of the American Chemical Society</em>
+125 (45): 13734–40. <a href="https://doi.org/10.1021/ja036465h">https://doi.org/10.1021/ja036465h</a>.
+</div>
+<div id="ref-nasa_sun" class="csl-entry" role="listitem">
+NASA. n.d. <span>“Sun: Facts.”</span> <a href="https://science.nasa.gov/sun/facts/">https://science.nasa.gov/sun/facts/</a>.
+</div>
+<div id="ref-nasa_earth" class="csl-entry" role="listitem">
+NASA Space Science Data Coordinated Archive. 2024a. <span>“Earth Fact
+Sheet.”</span> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" class="uri">https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html</a>.
+</div>
+<div id="ref-nasa_moon" class="csl-entry" role="listitem">
+———. 2024b. <span>“Moon Fact Sheet.”</span> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" class="uri">https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html</a>.
+</div>
+<div id="ref-cccbdb" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. 2022.
+<span>“<span>NIST</span> Computational Chemistry Comparison and
+Benchmark Database (<span>CCCBDB</span>), Release 22, Experimental
+Geometry Data.”</span> <a href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+———. n.d.a. <span>“Fundamental Physical Constants: 2022 CODATA
+Adjustment.”</span> <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+———. n.d.b. <span>“<span>NIST</span> Chemistry <span>WebBook</span>:
+Phase Change Data.”</span> <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-neidhardt_bn" class="csl-entry" role="listitem">
+Neidhardt, F. C., J. L. Ingraham, and M. Schaechter. n.d.
+<span>“Physiology of the Bacterial Cell: A Molecular Approach.”</span>
+p. 3; values as compiled in BioNumbers, BNID 100650-100653. <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100653">https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100653</a>.
+</div>
+<div id="ref-nissen2000" class="csl-entry" role="listitem">
+Nissen, P., J. Hansen, N. Ban, P. B. Moore, and T. A. Steitz. 2000.
+<span>“The Structural Basis of Ribosome Activity in Peptide Bond
+Synthesis.”</span> <em>Science</em> 289 (5481): 920–30. <a href="https://doi.org/10.1126/science.289.5481.920">https://doi.org/10.1126/science.289.5481.920</a>.
+</div>
+<div id="ref-nobel1989" class="csl-entry" role="listitem">
+Nobel Prize Outreach. n.d. <span>“The Nobel Prize in Chemistry
+1989.”</span> <a href="https://www.nobelprize.org/prizes/chemistry/1989/summary/">https://www.nobelprize.org/prizes/chemistry/1989/summary/</a>.
+</div>
+<div id="ref-orgel2004" class="csl-entry" role="listitem">
+Orgel, L. E. 2004. <span>“Prebiotic Chemistry and the Origin of the
+<span>RNA</span> World.”</span> <em>Critical Reviews in Biochemistry and
+Molecular Biology</em> 39 (2): 99–123. <a href="https://doi.org/10.1080/10409230490460765">https://doi.org/10.1080/10409230490460765</a>.
+</div>
+<div id="ref-oro1961b" class="csl-entry" role="listitem">
+Oró, J. 1961. <span>“Mechanism of Synthesis of Adenine from Hydrogen
+Cyanide Under Possible Primitive Earth Conditions.”</span>
+<em>Nature</em> 191: 1193–94. <a href="https://doi.org/10.1038/1911193a0">https://doi.org/10.1038/1911193a0</a>.
+</div>
+<div id="ref-oro1961a" class="csl-entry" role="listitem">
+Oró, J., and A. P. Kimball. 1961. <span>“Synthesis of Purines Under
+Possible Primitive Earth Conditions. <span>I</span>.
+<span>Adenine</span> from Hydrogen Cyanide.”</span> <em>Archives of
+Biochemistry and Biophysics</em> 94: 217–27. <a href="https://doi.org/10.1016/0003-9861(61)90033-9">https://doi.org/10.1016/0003-9861(61)90033-9</a>.
+</div>
+<div id="ref-osinski2020" class="csl-entry" role="listitem">
+Osinski, G. R., C. S. Cockell, A. Pontefract, and H. M. Sapers. 2020.
+<span>“The Role of Meteorite Impacts in the Origin of Life.”</span>
+<em>Astrobiology</em> 20 (9): 1121–49. <a href="https://doi.org/10.1089/ast.2019.2203">https://doi.org/10.1089/ast.2019.2203</a>.
+</div>
+<div id="ref-parker2011" class="csl-entry" role="listitem">
+Parker, Eric T., H. James Cleaves, Jason P. Dworkin, Daniel P. Glavin,
+Michael Callahan, Andrew Aubrey, Antonio Lazcano, and Jeffrey L. Bada.
+2011. <span>“Primordial Synthesis of Amines and Amino Acids in a 1958
+<span>Miller</span> <span>H<span class="math inline"><sub>2</sub></span>S</span>-Rich Spark Discharge
+Experiment.”</span> <em>Proceedings of the National Academy of Sciences
+of the USA</em> 108 (14): 5526–31. <a href="https://doi.org/10.1073/pnas.1019191108">https://doi.org/10.1073/pnas.1019191108</a>.
+</div>
+<div id="ref-pasek2005" class="csl-entry" role="listitem">
+Pasek, M. A., and D. S. Lauretta. 2005. <span>“Aqueous Corrosion of
+Phosphide Minerals from Iron Meteorites: A Highly Reactive Source of
+Prebiotic Phosphorus on the Surface of the Early
+<span>Earth</span>.”</span> <em>Astrobiology</em> 5 (4): 515–35. <a href="https://doi.org/10.1089/ast.2005.5.515">https://doi.org/10.1089/ast.2005.5.515</a>.
+</div>
+<div id="ref-patel2015" class="csl-entry" role="listitem">
+Patel, B. H., C. Percivalle, D. J. Ritson, C. D. Duffy, and J. D.
+Sutherland. 2015. <span>“Common Origins of <span>RNA</span>, Protein and
+Lipid Precursors in a Cyanosulfidic Protometabolism.”</span> <em>Nature
+Chemistry</em> 7 (4): 301–7. <a href="https://doi.org/10.1038/nchem.2202">https://doi.org/10.1038/nchem.2202</a>.
+</div>
+<div id="ref-patterson1956" class="csl-entry" role="listitem">
+Patterson, C. 1956. <span>“Age of Meteorites and the Earth.”</span>
+<em>Geochimica Et Cosmochimica Acta</em> 10 (4): 230–37. <a href="https://doi.org/10.1016/0016-7037(56)90036-9">https://doi.org/10.1016/0016-7037(56)90036-9</a>.
+</div>
+<div id="ref-pauling1932" class="csl-entry" role="listitem">
+Pauling, L. 1932. <span>“The Nature of the Chemical Bond.
+<span>IV</span>. The Energy of Single Bonds and the Relative
+Electronegativity of Atoms.”</span> <em>Journal of the American Chemical
+Society</em> 54 (9): 3570–82. <a href="https://doi.org/10.1021/ja01348a011">https://doi.org/10.1021/ja01348a011</a>.
+</div>
+<div id="ref-pearce2017" class="csl-entry" role="listitem">
+Pearce, B. K. D., R. E. Pudritz, D. A. Semenov, and T. K. Henning. 2017.
+<span>“Origin of the <span>RNA</span> World: The Fate of Nucleobases in
+Warm Little Ponds.”</span> <em>Proceedings of the National Academy of
+Sciences of the USA</em> 114 (43): 11327–32. <a href="https://doi.org/10.1073/pnas.1710339114">https://doi.org/10.1073/pnas.1710339114</a>.
+</div>
+<div id="ref-pfalzner2015" class="csl-entry" role="listitem">
+Pfalzner, S., M. B. Davies, M. Gounelle, A. Johansen, C. Münker, P.
+Lacerda, S. Portegies Zwart, L. Testi, M. Trieloff, and D. Veras. 2015.
+<span>“The Formation of the Solar System.”</span> <em>Physica
+Scripta</em> 90 (6): 068001. <a href="https://doi.org/10.1088/0031-8949/90/6/068001">https://doi.org/10.1088/0031-8949/90/6/068001</a>.
+</div>
+<div id="ref-planck2018" class="csl-entry" role="listitem">
+Planck Collaboration, N. Aghanim, et al. 2020. <span>“Planck 2018
+Results. VI. Cosmological Parameters.”</span> <em>Astronomy &amp;
+Astrophysics</em> 641: A6. <a href="https://doi.org/10.1051/0004-6361/201833910">https://doi.org/10.1051/0004-6361/201833910</a>.
+</div>
+<div id="ref-powner2009" class="csl-entry" role="listitem">
+Powner, M. W., B. Gerland, and J. D. Sutherland. 2009. <span>“Synthesis
+of Activated Pyrimidine Ribonucleotides in Prebiotically Plausible
+Conditions.”</span> <em>Nature</em> 459 (7244): 239–42. <a href="https://doi.org/10.1038/nature08013">https://doi.org/10.1038/nature08013</a>.
+</div>
+<div id="ref-prywes2016" class="csl-entry" role="listitem">
+Prywes, N., J. C. Blain, F. Del Frate, and J. W. Szostak. 2016.
+<span>“Nonenzymatic Copying of <span>RNA</span> Templates Containing All
+Four Letters Is Catalyzed by Activated Oligonucleotides.”</span>
+<em>eLife</em> 5: e17756. <a href="https://doi.org/10.7554/eLife.17756">https://doi.org/10.7554/eLife.17756</a>.
+</div>
+<div id="ref-rajamani2010" class="csl-entry" role="listitem">
+Rajamani, S., J. K. Ichida, T. Antal, D. A. Treco, K. Leu, M. A. Nowak,
+J. W. Szostak, and I. A. Chen. 2010. <span>“Effect of Stalling After
+Mismatches on the Error Catastrophe in Nonenzymatic Nucleic Acid
+Replication.”</span> <em>Journal of the American Chemical Society</em>
+132 (16): 5880–85. <a href="https://doi.org/10.1021/ja100780p">https://doi.org/10.1021/ja100780p</a>.
+</div>
+<div id="ref-ray2009" class="csl-entry" role="listitem">
+Ray, A. 2009. <span>“Massive Stars as Thermonuclear Reactors and Their
+Explosions Following Core Collapse.”</span> Lecture notes, Kodai School
+on Synthesis of Elements in Stars (Springer); arXiv:0907.5407. <a href="https://arxiv.org/abs/0907.5407">https://arxiv.org/abs/0907.5407</a>.
+</div>
+<div id="ref-reader2002" class="csl-entry" role="listitem">
+Reader, J. S., and G. F. Joyce. 2002. <span>“A Ribozyme Composed of Only
+Two Different Nucleotides.”</span> <em>Nature</em> 420 (6917): 841–44.
+<a href="https://doi.org/10.1038/nature01185">https://doi.org/10.1038/nature01185</a>.
+</div>
+<div id="ref-ricardo2004" class="csl-entry" role="listitem">
+Ricardo, A., M. A. Carrigan, A. N. Olcott, and S. A. Benner. 2004.
+<span>“Borate Minerals Stabilize Ribose.”</span> <em>Science</em> 303
+(5655): 196. <a href="https://doi.org/10.1126/science.1092464">https://doi.org/10.1126/science.1092464</a>.
+</div>
+<div id="ref-robertson1995" class="csl-entry" role="listitem">
+Robertson, M. P., and S. L. Miller. 1995. <span>“An Efficient Prebiotic
+Synthesis of Cytosine and Uracil.”</span> <em>Nature</em> 375 (6534):
+772–74. <a href="https://doi.org/10.1038/375772a0">https://doi.org/10.1038/375772a0</a>.
+</div>
+<div id="ref-roy2007" class="csl-entry" role="listitem">
+Roy, D., K. Najafian, and P. von Ragué Schleyer. 2007. <span>“Chemical
+Evolution: The Mechanism of the Formation of Adenine Under Prebiotic
+Conditions.”</span> <em>Proceedings of the National Academy of Sciences
+of the USA</em> 104 (44): 17272–77. <a href="https://doi.org/10.1073/pnas.0708434104">https://doi.org/10.1073/pnas.0708434104</a>.
+</div>
+<div id="ref-rudnick2003" class="csl-entry" role="listitem">
+Rudnick, R. L., and S. Gao. 2003. <span>“Composition of the Continental
+Crust.”</span> In <em>Treatise on Geochemistry, Volume 3: The
+Crust</em>, edited by R. L. Rudnick, H. D. Holland, and K. K. Turekian,
+1–64. Oxford: Elsevier. <a href="https://www.geol.umd.edu/~rudnick/PDF/Rudnick_Gao_Treatise.pdf">https://www.geol.umd.edu/~rudnick/PDF/Rudnick_Gao_Treatise.pdf</a>.
+</div>
+<div id="ref-ruedas2017" class="csl-entry" role="listitem">
+Ruedas, T. 2017. <span>“Radioactive Heat Production of Six Geologically
+Important Nuclides.”</span> <em>Geochemistry, Geophysics,
+Geosystems</em> 18 (9): 3530–41. <a href="https://doi.org/10.1002/2017GC006997">https://doi.org/10.1002/2017GC006997</a>.
+</div>
+<div id="ref-saladino2001" class="csl-entry" role="listitem">
+Saladino, R., C. Crestini, G. Costanzo, R. Negri, and E. Di Mauro. 2001.
+<span>“A Possible Prebiotic Synthesis of Purine, Adenine, Cytosine, and
+4(3<span>H</span>)-Pyrimidinone from Formamide: Implications for the
+Origin of Life.”</span> <em>Bioorganic &amp; Medicinal Chemistry</em> 9
+(5): 1249–53. <a href="https://doi.org/10.1016/S0968-0896(00)00340-0">https://doi.org/10.1016/S0968-0896(00)00340-0</a>.
+</div>
+<div id="ref-saladino2012" class="csl-entry" role="listitem">
+Saladino, R., C. Crestini, S. Pino, G. Costanzo, and E. Di Mauro. 2012.
+<span>“Formamide and the Origin of Life.”</span> <em>Physics of Life
+Reviews</em> 9 (1): 84–104. <a href="https://doi.org/10.1016/j.plrev.2011.12.002">https://doi.org/10.1016/j.plrev.2011.12.002</a>.
+</div>
+<div id="ref-schmittkopplin2010" class="csl-entry" role="listitem">
+Schmitt-Kopplin, P., Z. Gabelica, R. D. Gougeon, A. Fekete, B. Kanawati,
+M. Harir, I. Gebefuegi, G. Eckel, and N. Hertkorn. 2010. <span>“High
+Molecular Diversity of Extraterrestrial Organic Matter in
+<span>Murchison</span> Meteorite Revealed 40 Years After Its
+Fall.”</span> <em>Proceedings of the National Academy of Sciences of the
+USA</em> 107 (7): 2763–68. <a href="https://doi.org/10.1073/pnas.0912157107">https://doi.org/10.1073/pnas.0912157107</a>.
+</div>
+<div id="ref-aguirre2017" class="csl-entry" role="listitem">
+Silva Aguirre, V. 2017. <span>“Stellar Evolution and Modelling
+Stars.”</span> arXiv:1711.04461. <a href="https://arxiv.org/abs/1711.04461">https://arxiv.org/abs/1711.04461</a>.
+</div>
+<div id="ref-smartt2009" class="csl-entry" role="listitem">
+Smartt, S. J. 2009. <span>“Progenitors of Core-Collapse
+Supernovae.”</span> Annual Review of Astronomy and Astrophysics;
+arXiv:0908.0700. <a href="https://arxiv.org/abs/0908.0700">https://arxiv.org/abs/0908.0700</a>.
+</div>
+<div id="ref-soai1995" class="csl-entry" role="listitem">
+Soai, K., T. Shibata, H. Morioka, and K. Choji. 1995. <span>“Asymmetric
+Autocatalysis and Amplification of Enantiomeric Excess of a Chiral
+Molecule.”</span> <em>Nature</em> 378: 767–68. <a href="https://doi.org/10.1038/378767a0">https://doi.org/10.1038/378767a0</a>.
+</div>
+<div id="ref-springsteen2004" class="csl-entry" role="listitem">
+Springsteen, G., and G. F. Joyce. 2004. <span>“Selective Derivatization
+and Sequestration of Ribose from a Prebiotic Mix.”</span> <em>Journal of
+the American Chemical Society</em> 126 (31): 9578–83. <a href="https://doi.org/10.1021/ja0483692">https://doi.org/10.1021/ja0483692</a>.
+</div>
+<div id="ref-tilley2004" class="csl-entry" role="listitem">
+Tilley, D. R. et al. 2004. <span>“Energy Levels of Light Nuclei a =
+8.”</span> Triangle Universities Nuclear Laboratory evaluation. <a href="https://nucldata.tunl.duke.edu/nucldata/ourpubs/08_2004.pdf">https://nucldata.tunl.duke.edu/nucldata/ourpubs/08_2004.pdf</a>.
+</div>
+<div id="ref-toner2020" class="csl-entry" role="listitem">
+Toner, J. D., and D. C. Catling. 2020. <span>“A Carbonate-Rich Lake
+Solution to the Phosphate Problem of the Origin of Life.”</span>
+<em>Proceedings of the National Academy of Sciences of the USA</em> 117
+(2): 883–88. <a href="https://doi.org/10.1073/pnas.1916109117">https://doi.org/10.1073/pnas.1916109117</a>.
+</div>
+<div id="ref-trail2011" class="csl-entry" role="listitem">
+Trail, D., E. B. Watson, and N. D. Tailby. 2011. <span>“The Oxidation
+State of <span>Hadean</span> Magmas and Implications for Early
+<span>Earth</span>’s Atmosphere.”</span> <em>Nature</em> 480 (7375):
+79–82. <a href="https://doi.org/10.1038/nature10655">https://doi.org/10.1038/nature10655</a>.
+</div>
+<div id="ref-tuerk1990" class="csl-entry" role="listitem">
+Tuerk, C., and L. Gold. 1990. <span>“Systematic Evolution of Ligands by
+Exponential Enrichment: <span>RNA</span> Ligands to Bacteriophage
+<span>T4</span> <span>DNA</span> Polymerase.”</span> <em>Science</em>
+249 (4968): 505–10. <a href="https://doi.org/10.1126/science.2200121">https://doi.org/10.1126/science.2200121</a>.
+</div>
+<div id="ref-turner2010" class="csl-entry" role="listitem">
+Turner, D. H., and D. H. Mathews. 2010. <span>“<span>NNDB</span>: The
+Nearest Neighbor Parameter Database for Predicting Stability of Nucleic
+Acid Secondary Structure.”</span> <em>Nucleic Acids Research</em> 38
+(Database issue): D280–82. <a href="https://doi.org/10.1093/nar/gkp892">https://doi.org/10.1093/nar/gkp892</a>.
+</div>
+<div id="ref-viedma2005" class="csl-entry" role="listitem">
+Viedma, C. 2005. <span>“Chiral Symmetry Breaking During Crystallization:
+Complete Chiral Purity Induced by Nonlinear Autocatalysis and
+Recycling.”</span> <em>Physical Review Letters</em> 94 (6): 065504. <a href="https://doi.org/10.1103/PhysRevLett.94.065504">https://doi.org/10.1103/PhysRevLett.94.065504</a>.
+</div>
+<div id="ref-villa2015" class="csl-entry" role="listitem">
+Villa, I. M., P. De Bièvre, N. E. Holden, and P. R. Renne. 2015.
+<span>“<span>IUPAC-IUGS</span> Recommendation on the Half Life of <span class="math inline"><sup>87</sup></span>Rb.”</span> <em>Geochimica Et
+Cosmochimica Acta</em> 164: 382–85. <a href="https://doi.org/10.1016/j.gca.2015.05.025">https://doi.org/10.1016/j.gca.2015.05.025</a>.
+</div>
+<div id="ref-villa2022" class="csl-entry" role="listitem">
+Villa, I. M., N. E. Holden, A. Possolo, R. B. Ickert, D. B. Hibbert, P.
+R. Renne, M. L. Bonardi, and P. De Bièvre. 2022.
+<span>“<span>IUGS-IUPAC</span> Recommendations and Status Reports on the
+Half-Lives of <span class="math inline"><sup>87</sup></span>Rb, <span class="math inline"><sup>146</sup></span>Sm, <span class="math inline"><sup>147</sup></span>Sm, <span class="math inline"><sup>234</sup></span>u, <span class="math inline"><sup>235</sup></span>u, and <span class="math inline"><sup>238</sup></span>u (<span>IUPAC</span> Technical
+Report).”</span> <em>Pure and Applied Chemistry</em> 94 (9): 1085–92. <a href="https://doi.org/10.1515/pac-2021-1202">https://doi.org/10.1515/pac-2021-1202</a>.
+</div>
+<div id="ref-wahiro2026stage4" class="csl-entry" role="listitem">
+Wahiro, Gokyona. 2026. <span>“How Far up the Ladder of Life Can
+Environments Carry a Bottom-up Chemistry? An Ordered Search over 13
+Environmental Variables.”</span> Preprint, Zenodo. <a href="https://doi.org/10.5281/zenodo.23825838">https://doi.org/10.5281/zenodo.23825838</a>.
+</div>
+<div id="ref-watson1953" class="csl-entry" role="listitem">
+Watson, J. D., and F. H. C. Crick. 1953. <span>“Molecular Structure of
+Nucleic Acids: A Structure for Deoxyribose Nucleic Acid.”</span>
+<em>Nature</em> 171 (4356): 737–38. <a href="https://doi.org/10.1038/171737a0">https://doi.org/10.1038/171737a0</a>.
+</div>
+<div id="ref-webb1955" class="csl-entry" role="listitem">
+Webb, R. L., S. Frank, and W. C. Schneider. 1955. <span>“The Structure
+of <span>HCN</span> Tetramer.”</span> <em>Journal of the American
+Chemical Society</em> 77: 3491–93. <a href="https://doi.org/10.1021/ja01618a021">https://doi.org/10.1021/ja01618a021</a>.
+</div>
+<div id="ref-westheimer1987" class="csl-entry" role="listitem">
+Westheimer, F. H. 1987. <span>“Why Nature Chose Phosphates.”</span>
+<em>Science</em> 235 (4793): 1173–78. <a href="https://doi.org/10.1126/science.2434996">https://doi.org/10.1126/science.2434996</a>.
+</div>
+<div id="ref-wilde2001" class="csl-entry" role="listitem">
+Wilde, S. A., J. W. Valley, W. H. Peck, and C. M. Graham. 2001.
+<span>“Evidence from Detrital Zircons for the Existence of Continental
+Crust and Oceans on the <span>Earth</span> 4.4 <span>Gyr</span>
+Ago.”</span> <em>Nature</em> 409 (6817): 175–78. <a href="https://doi.org/10.1038/35051550">https://doi.org/10.1038/35051550</a>.
+</div>
+<div id="ref-wochner2011" class="csl-entry" role="listitem">
+Wochner, A., J. Attwater, A. Coulson, and P. Holliger. 2011.
+<span>“Ribozyme-Catalyzed Transcription of an Active Ribozyme.”</span>
+<em>Science</em> 332 (6026): 209–12. <a href="https://doi.org/10.1126/science.1200752">https://doi.org/10.1126/science.1200752</a>.
+</div>
+<div id="ref-yamagata1991" class="csl-entry" role="listitem">
+Yamagata, Y., H. Watanabe, M. Saitoh, and T. Namba. 1991.
+<span>“Volcanic Production of Polyphosphates and Its Relevance to
+Prebiotic Evolution.”</span> <em>Nature</em> 352: 516–19. <a href="https://doi.org/10.1038/352516a0">https://doi.org/10.1038/352516a0</a>.
+</div>
+<div id="ref-young2016" class="csl-entry" role="listitem">
+Young, E. D., I. E. Kohl, P. H. Warren, D. C. Rubie, S. A. Jacobson, and
+A. Morbidelli. 2016. <span>“Oxygen Isotopic Evidence for Vigorous Mixing
+During the <span>Moon</span>-Forming Giant Impact.”</span>
+<em>Science</em>. <a href="https://doi.org/10.1126/science.aad0525">https://doi.org/10.1126/science.aad0525</a>.
+</div>
+<div id="ref-zahnle2020" class="csl-entry" role="listitem">
+Zahnle, K. J., R. Lupu, D. C. Catling, and N. Wogan. 2020.
+<span>“Creation and Evolution of Impact-Generated Reduced Atmospheres of
+Early <span>Earth</span>.”</span> arXiv:2001.00095. <a href="https://arxiv.org/abs/2001.00095">https://arxiv.org/abs/2001.00095</a>.
+</div>
+<div id="ref-zahnle2007" class="csl-entry" role="listitem">
+Zahnle, K., N. Arndt, C. Cockell, A. Halliday, E. Nisbet, F. Selsis, and
+N. H. Sleep. 2007. <span>“Emergence of a Habitable Planet.”</span>
+<em>Space Science Reviews</em> 129: 35–78. <a href="https://doi.org/10.1007/s11214-007-9225-z">https://doi.org/10.1007/s11214-007-9225-z</a>.
+</div>
+<div id="ref-zhu2009" class="csl-entry" role="listitem">
+Zhu, T. F., and J. W. Szostak. 2009. <span>“Coupled Growth and Division
+of Model Protocell Membranes.”</span> <em>Journal of the American
+Chemical Society</em> 131: 5705–13. <a href="https://doi.org/10.1021/ja900919c">https://doi.org/10.1021/ja900919c</a>.
+</div>
+<div id="ref-zuker1981" class="csl-entry" role="listitem">
+Zuker, M., and P. Stiegler. 1981. <span>“Optimal Computer Folding of
+Large <span>RNA</span> Sequences Using Thermodynamics and Auxiliary
+Information.”</span> <em>Nucleic Acids Research</em> 9 (1): 133–48. <a href="https://doi.org/10.1093/nar/9.1.133">https://doi.org/10.1093/nar/9.1.133</a>.
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/epilogue-rna-to-cells.html" class="pagination-link" aria-label="Epilogue: From RNA to Cells">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Epilogue: From RNA to Cells</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../glossary/glossary.html" class="pagination-link" aria-label="Glossary">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

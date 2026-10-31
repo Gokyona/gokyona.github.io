@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; RNA Copying Itself – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/epilogue-rna-to-cells.html" rel="next">
+<link href="../chapters/ch07-folding-into-shapes.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch08-rna-copying-itself.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-templating" id="toc-sec-templating" class="nav-link" data-scroll-target="#sec-templating"><span class="header-section-number">8.1</span> Templating</a>
+  <ul class="collapse">
+  <li><a href="#the-rna-world" id="toc-the-rna-world" class="nav-link" data-scroll-target="#the-rna-world">The RNA world</a></li>
+  <li><a href="#copying-by-complementarity" id="toc-copying-by-complementarity" class="nav-link" data-scroll-target="#copying-by-complementarity">Copying by complementarity</a></li>
+  </ul></li>
+  <li><a href="#sec-nonenzymatic" id="toc-sec-nonenzymatic" class="nav-link" data-scroll-target="#sec-nonenzymatic"><span class="header-section-number">8.2</span> Non-enzymatic primer extension</a>
+  <ul class="collapse">
+  <li><a href="#what-has-been-achieved" id="toc-what-has-been-achieved" class="nav-link" data-scroll-target="#what-has-been-achieved">What has been achieved</a></li>
+  <li><a href="#present-limits" id="toc-present-limits" class="nav-link" data-scroll-target="#present-limits">Present limits</a></li>
+  </ul></li>
+  <li><a href="#sec-strand-separation" id="toc-sec-strand-separation" class="nav-link" data-scroll-target="#sec-strand-separation"><span class="header-section-number">8.3</span> The strand-separation problem</a>
+  <ul class="collapse">
+  <li><a href="#duplexes-are-too-stable-primers-too-weak" id="toc-duplexes-are-too-stable-primers-too-weak" class="nav-link" data-scroll-target="#duplexes-are-too-stable-primers-too-weak">Duplexes are too stable, primers too weak</a></li>
+  <li><a href="#possible-solutions" id="toc-possible-solutions" class="nav-link" data-scroll-target="#possible-solutions">Possible solutions</a></li>
+  </ul></li>
+  <li><a href="#sec-error-threshold" id="toc-sec-error-threshold" class="nav-link" data-scroll-target="#sec-error-threshold"><span class="header-section-number">8.4</span> Errors and the error threshold</a>
+  <ul class="collapse">
+  <li><a href="#fidelity" id="toc-fidelity" class="nav-link" data-scroll-target="#fidelity">Fidelity</a></li>
+  <li><a href="#the-error-threshold" id="toc-the-error-threshold" class="nav-link" data-scroll-target="#the-error-threshold">The error threshold</a></li>
+  </ul></li>
+  <li><a href="#sec-polymerase-ribozymes" id="toc-sec-polymerase-ribozymes" class="nav-link" data-scroll-target="#sec-polymerase-ribozymes"><span class="header-section-number">8.5</span> Ribozyme polymerases</a>
+  <ul class="collapse">
+  <li><a href="#laboratory-evolution-of-rna-polymerases" id="toc-laboratory-evolution-of-rna-polymerases" class="nav-link" data-scroll-target="#laboratory-evolution-of-rna-polymerases">Laboratory evolution of RNA polymerases</a></li>
+  <li><a href="#what-remains-to-be-done" id="toc-what-remains-to-be-done" class="nav-link" data-scroll-target="#what-remains-to-be-done">What remains to be done</a></li>
+  </ul></li>
+  <li><a href="#sec-selection" id="toc-sec-selection" class="nav-link" data-scroll-target="#sec-selection"><span class="header-section-number">8.6</span> Selection</a>
+  <ul class="collapse">
+  <li><a href="#replication-and-competition" id="toc-replication-and-competition" class="nav-link" data-scroll-target="#replication-and-competition">Replication and competition</a></li>
+  </ul></li>
+  <li><a href="#sec-how-fast" id="toc-sec-how-fast" class="nav-link" data-scroll-target="#sec-how-fast"><span class="header-section-number">8.7</span> How fast is fast enough?</a>
+  <ul class="collapse">
+  <li><a href="#a-race-against-loss" id="toc-a-race-against-loss" class="nav-link" data-scroll-target="#a-race-against-loss">A race against loss</a></li>
+  <li><a href="#measured-rates-against-required-rates" id="toc-measured-rates-against-required-rates" class="nav-link" data-scroll-target="#measured-rates-against-required-rates">Measured rates against required rates</a></li>
+  </ul></li>
+  <li><a href="#sec-unknown" id="toc-sec-unknown" class="nav-link" data-scroll-target="#sec-unknown"><span class="header-section-number">8.8</span> What remains unknown</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch08" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>State the RNA world hypothesis and explain why template-directed copying is central to it.</li>
+<li>Describe non-enzymatic template-directed primer extension, the improvements made to it, and its present limits.</li>
+<li>Explain the strand-separation problem, and use the melting temperature of a duplex to show how it depends on length and concentration.</li>
+<li>Derive the error threshold of a replicating sequence and calculate the longest sequence that a given copying accuracy can maintain.</li>
+<li>Describe the main ribozyme polymerases made by in vitro evolution and what they can and cannot yet do.</li>
+<li>Explain how selection arises among replicating molecules, with reference to self-sustained replication of RNA enzymes.</li>
+<li>Compare measured copying rates with the rates that heredity requires, and list the main open questions.</li>
+</ol>
+</section>
+<section id="sec-templating" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-templating"><span class="header-section-number">8.1</span> Templating</h2>
+<section id="the-rna-world" class="level3">
+<h3 class="anchored" data-anchor-id="the-rna-world">The RNA world</h3>
+<p>In all known organisms, genetic information is stored in DNA, and most catalysis is carried out by proteins. Each of these two kinds of molecule is made with the help of the other. The discovery of ribozymes (<a href="ch07-folding-into-shapes.html#sec-ribozymes" class="quarto-xref"><span>Section 7.5</span></a>) suggested a way out of this circularity. In Joyce’s words, “there are strong reasons to conclude that DNA- and protein-based life was preceded by a simpler life form based primarily on RNA. This earlier era is referred to as the ‘RNA world’, during which the genetic information resided in the sequence of RNA molecules and the phenotype derived from the catalytic properties of RNA” <span class="citation" data-cites="joyce2002">(<a href="../references/references.html#ref-joyce2002" role="doc-biblioref">Joyce 2002</a>)</span>. The term was introduced by Gilbert in 1986 <span class="citation" data-cites="gilbert1986">(<a href="../references/references.html#ref-gilbert1986" role="doc-biblioref">Gilbert 1986</a>)</span>. Orgel regarded the evidence as strong: “The demonstration that ribosomal peptide synthesis is a ribozyme-catalyzed reaction makes it almost certain that there was once an RNA World. The central problem for origin-of-life studies, therefore, is to understand how a protein-free RNA World became established on the primitive Earth” <span class="citation" data-cites="orgel2004">(<a href="../references/references.html#ref-orgel2004" role="doc-biblioref">Orgel 2004</a>)</span>.</p>
+<p>The <strong>RNA world hypothesis</strong> is the hypothesis that, at an early stage of life, RNA served both as the genetic material and as the main catalyst. That such a stage existed is a hypothesis with substantial support; how it arose from the chemistry of Chapters 4 to 7 is an open question. Its central requirement is that RNA sequences can be copied.</p>
+</section>
+<section id="copying-by-complementarity" class="level3">
+<h3 class="anchored" data-anchor-id="copying-by-complementarity">Copying by complementarity</h3>
+<p>The rules of base pairing (<a href="ch07-folding-into-shapes.html#sec-base-pairing" class="quarto-xref"><span>Section 7.1</span></a>) provide a copying mechanism. A <strong>template</strong> is a strand whose sequence directs the order in which nucleotides are joined (<a href="ch05-assembling-nucleotides.html#sec-chirality-copying" class="quarto-xref"><span>Section 5.5</span></a>). A short strand bound to the template, the <strong>primer</strong>, is extended at its 3<span class="math inline">\('\)</span> end: a nucleotide that pairs with the next template base is held in position and joined to the primer (<a href="#fig-copying" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> a). The product is the complement of the template, not an identical copy. A second round of copying, with the complement as template, restores the original sequence. <strong>Replication</strong> of a sequence therefore requires two rounds of template-directed synthesis, and between the rounds the product must be separated from its template (<a href="#fig-copying" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> b).</p>
+<div id="fig-copying" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-copying-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-1_copying.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-copying-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: (a) Template-directed primer extension. The primer (blue) is paired with the 3<span class="math inline">\('\)</span> end of the template (teal); an activated nucleotide that pairs with the next template base is joined to the 3<span class="math inline">\('\)</span> end of the primer. (b) The copying cycle. Copying produces a duplex of template and complement; only after the two strands are separated can each serve as a template again.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-nonenzymatic" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-nonenzymatic"><span class="header-section-number">8.2</span> Non-enzymatic primer extension</h2>
+<section id="what-has-been-achieved" class="level3">
+<h3 class="anchored" data-anchor-id="what-has-been-achieved">What has been achieved</h3>
+<p>Template-directed synthesis without enzymes was introduced in <a href="ch06-joining-nucleotides.html#sec-activation" class="quarto-xref"><span>Section 6.2</span></a>: activated nucleotides, such as phosphorimidazolides, join on a template in the order specified by base pairing.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Inoue and Orgel 1983
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Inoue and Orgel showed that templates containing mainly cytidine direct the synthesis of oligonucleotides from mixtures of activated mononucleotides. A nucleotide was incorporated into the products if and only if its complement was present in the template, the reaction had high fidelity, and the products had mean chain lengths of six to ten nucleotides <span class="citation" data-cites="inoue1983">(<a href="../references/references.html#ref-inoue1983" role="doc-biblioref">Inoue and Orgel 1983</a>)</span>. The experiment established that sequence information can be transferred by base pairing alone, without enzymes, and that the transfer is selective.</p>
+</div>
+</div>
+<p>The successful early experiments used templates rich in C, which direct the incorporation of G <span class="citation" data-cites="inoue1983">(<a href="../references/references.html#ref-inoue1983" role="doc-biblioref">Inoue and Orgel 1983</a>)</span>. Templates containing A and U are copied far more slowly, by a factor of at least 1000 without helper oligonucleotides <span class="citation" data-cites="prywes2016 wahiro2026stage4">(<a href="../references/references.html#ref-prywes2016" role="doc-biblioref">Prywes et al. 2016</a>; <a href="../references/references.html#ref-wahiro2026stage4" role="doc-biblioref">Wahiro 2026</a>)</span>. Several improvements have been made since.</p>
+<ul>
+<li><strong>Better leaving groups.</strong> Li and co-workers showed that “activating nucleotides with 2-aminoimidazole results in superior reaction kinetics and improved yields of primer extension reaction products”; among the leaving groups they compared, the rates differed by up to 200 times, with 2-aminoimidazole giving the fastest <span class="citation" data-cites="li2017">(<a href="../references/references.html#ref-li2017" role="doc-biblioref">Li et al. 2017</a>)</span>.</li>
+<li><strong>Activated helper oligonucleotides.</strong> Prywes and co-workers found that “short 5<span class="math inline">\('\)</span>-activated oligonucleotides act as catalysts that accelerate primer extension, and allow for the one-pot copying of mixed sequence RNA templates”; with this method they synthesised a significant part of an active hammerhead ribozyme <span class="citation" data-cites="prywes2016">(<a href="../references/references.html#ref-prywes2016" role="doc-biblioref">Prywes et al. 2016</a>)</span>.</li>
+</ul>
+<p>Chemical self-replication has also been demonstrated with short synthetic templates: in 1986, von Kiedrowski reported a self-replicating hexadeoxynucleotide, a DNA chain of six nucleotides <span class="citation" data-cites="kiedrowski1986">(<a href="../references/references.html#ref-kiedrowski1986" role="doc-biblioref">Kiedrowski 1986</a>)</span>.</p>
+</section>
+<section id="present-limits" class="level3">
+<h3 class="anchored" data-anchor-id="present-limits">Present limits</h3>
+<p>Three limits remain. First, copying is slow: under the most favourable conditions reported, adding one nucleotide takes from tens of minutes to about a day (<a href="#sec-how-fast" class="quarto-xref"><span>Section 8.7</span></a>). Second, an incorrect nucleotide slows further extension. Rajamani and co-workers found “that most mismatches decrease the rate of primer extension by more than 2 orders of magnitude relative to a matched (Watson-Crick) control” <span class="citation" data-cites="rajamani2010">(<a href="../references/references.html#ref-rajamani2010" role="doc-biblioref">Rajamani et al. 2010</a>)</span>. This <strong>stalling</strong> reduces the number of complete copies that carry errors, but it also wastes time and template. Third, no non-enzymatic system has yet copied a sequence of useful length through repeated cycles of replication. The second round of copying requires the product to be separated from its template, which is the subject of the next section.</p>
+</section>
+</section>
+<section id="sec-strand-separation" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-strand-separation"><span class="header-section-number">8.3</span> The strand-separation problem</h2>
+<section id="duplexes-are-too-stable-primers-too-weak" class="level3">
+<h3 class="anchored" data-anchor-id="duplexes-are-too-stable-primers-too-weak">Duplexes are too stable, primers too weak</h3>
+<p>For a duplex formed from two different strands, each present at total strand concentration C<sub>T</sub>/2, the melting temperature is the temperature at which half of the strands are paired. It depends on concentration:</p>
+<p><span id="eq-tm-conc"><span class="math display">\[
+T_\mathrm{m} = \frac{\Delta H^\circ}{\Delta S^\circ + R \ln (C_\mathrm{T}/4)}
+\tag{8.1}\]</span></span></p>
+<p>where ΔH° and ΔS° are the standard enthalpy and entropy of duplex formation (<a href="ch07-folding-into-shapes.html#sec-duplex-stability" class="quarto-xref"><span>Section 7.2</span></a>) and R is the molar gas constant. Because ΔS° is negative and ln(C<sub>T</sub>/4) is negative for concentrations below 4 mol L<sup>−1</sup>, lowering the concentration lowers T<sub>m</sub>.</p>
+<p><a href="#fig-tm-length" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> shows T<sub>m</sub> calculated in this way for random RNA duplexes of 4 to 30 base pairs, at total strand concentrations of 1 <span class="math inline">\(\mu\)</span>M and 1 mM (author’s calculation, with ΔH° and ΔS° from the Turner 2004 parameters in ViennaRNA <span class="citation" data-cites="mathews2004 lorenz2011">(<a href="../references/references.html#ref-mathews2004" role="doc-biblioref">Mathews et al. 2004</a>; <a href="../references/references.html#ref-lorenz2011" role="doc-biblioref">Lorenz et al. 2011</a>)</span>). At 1 <span class="math inline">\(\mu\)</span>M, the median melting temperature is −33 °C for 4 base pairs, 17 °C for 6, 41 °C for 8, 56 °C for 10, 85 °C for 20 and 95 °C for 30. At 1 mM, it is 3 °C for 4 base pairs and 44 °C for 6.</p>
+<div id="fig-tm-length" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tm-length-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-2_tm_length.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tm-length-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Melting temperature of random RNA duplexes as a function of length, from <a href="#eq-tm-conc" class="quarto-xref">Equation&nbsp;<span>8.1</span></a> with nearest-neighbour parameters (Turner 2004, ViennaRNA 2.7.2; author’s calculation, 300 random sequences per length). Lines: median; shaded bands: 10th to 90th percentile; blue, total strand concentration 1 <span class="math inline">\(\mu\)</span>M; red, 1 mM. Values above 100 °C are extrapolations of the parameter set.
+</figcaption>
+</figure>
+</div>
+<p>These numbers define the <strong>strand-separation problem</strong>. Short primers and single nucleotides bind weakly: a primer of 4 to 6 nucleotides stays on its template at ordinary temperatures only at high concentration. The finished product, however, is bound too strongly: a duplex of 20 base pairs or more melts only above about 85 °C at micromolar concentration. A system that copies at low temperature must therefore be heated almost to boiling to release the copy, and at such temperatures RNA is cleaved much faster (<a href="ch06-joining-nucleotides.html#sec-competition" class="quarto-xref"><span>Section 6.3</span></a>). After the strands have separated, they can pair with each other again on cooling, in competition with the primers and monomers that would copy them.</p>
+</section>
+<section id="possible-solutions" class="level3">
+<h3 class="anchored" data-anchor-id="possible-solutions">Possible solutions</h3>
+<p>Several ways around this problem have been proposed; all are hypotheses.</p>
+<ul>
+<li><strong>Temperature cycles</strong> of short duration, such as those in thermal gradients, could separate strands briefly without prolonged exposure to high temperature.</li>
+<li><strong>Lower duplex stability</strong>, through changes in salt or pH, or through modified nucleotides that pair more weakly, would lower T<sub>m</sub>, at the cost of also weakening primer binding.</li>
+<li><strong>Copying with short oligonucleotides</strong> rather than single nucleotides joins pieces that bind more strongly, so that copying can take place at higher temperatures, closer to T<sub>m</sub> of the product.</li>
+</ul>
+<p>None of these has yet produced repeated cycles of non-enzymatic replication of a long sequence.</p>
+</section>
+</section>
+<section id="sec-error-threshold" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="sec-error-threshold"><span class="header-section-number">8.4</span> Errors and the error threshold</h2>
+<section id="fidelity" class="level3">
+<h3 class="anchored" data-anchor-id="fidelity">Fidelity</h3>
+<p>Every copying process makes errors. Let u be the probability that a nucleotide is copied incorrectly, the <strong>error rate per nucleotide</strong>; q = 1 − u is the <strong>fidelity</strong>. If errors at different positions are independent, the probability that a sequence of length L is copied without any error is</p>
+<p><span id="eq-error-free"><span class="math display">\[
+Q = q^L = (1-u)^L \approx e^{-uL}
+\tag{8.2}\]</span></span></p>
+<p>The approximation holds for small u. The mean number of errors per copy is uL. For example, at u = 0.01, a copy of 100 nucleotides contains on average one error, and only e<sup>−1</sup> <span class="math inline">\(\approx\)</span> 37 percent of copies are error-free.</p>
+</section>
+<section id="the-error-threshold" class="level3">
+<h3 class="anchored" data-anchor-id="the-error-threshold">The error threshold</h3>
+<p>Consider a population in which one sequence, the <strong>master sequence</strong>, is replicated <span class="math inline">\(\sigma\)</span> times faster than all its mutants, and in which mutants rarely mutate back to the master. Only the error-free copies of the master are masters, so the master population grows at a relative rate proportional to <span class="math inline">\(\sigma\)</span>Q, and all mutants at a rate proportional to 1. The master can persist only if</p>
+<p><span id="eq-threshold"><span class="math display">\[
+\sigma Q &gt; 1, \quad \text{that is,} \quad L &lt; \frac{\ln \sigma}{-\ln q} \approx \frac{\ln \sigma}{u}
+\tag{8.3}\]</span></span></p>
+<p>In the steady state its fraction in the population is</p>
+<p><span id="eq-master-fraction"><span class="math display">\[
+x_0 = \frac{\sigma Q - 1}{\sigma - 1}
+\tag{8.4}\]</span></span></p>
+<p>which falls to zero at <span class="math inline">\(\sigma\)</span>Q = 1. The quantity <span class="math inline">\(\sigma\)</span> is called the <strong>selective superiority</strong> of the master. The maximum length L<sub>max</sub> <span class="math inline">\(\approx\)</span> ln <span class="math inline">\(\sigma\)</span>/u is the <strong>error threshold</strong>. Above it, the information of the master sequence is lost in a cloud of mutants, an outcome called the <strong>error catastrophe</strong>. The concept was introduced by Eigen in his theory of the self-organisation of biological macromolecules <span class="citation" data-cites="eigen1971">(<a href="../references/references.html#ref-eigen1971" role="doc-biblioref">Eigen 1971</a>)</span>; the population of a master sequence and its mutants is called a <strong>quasispecies</strong>.</p>
+<p><a href="#fig-error-threshold" class="quarto-xref">Figure&nbsp;<span>8.3</span></a> a shows the fraction of the master in a population of sequences of length 50 with <span class="math inline">\(\sigma\)</span> = 10 (author’s calculation). The full calculation, which includes back-mutation for a four-letter alphabet, agrees with <a href="#eq-master-fraction" class="quarto-xref">Equation&nbsp;<span>8.4</span></a> to within the width of the line. The master fraction falls to zero at u<sub>c</sub> = 1 − 10<sup>−1/50</sup> = 0.045.</p>
+<div id="fig-error-threshold" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-error-threshold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-3_error_threshold.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-error-threshold-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: The error threshold. (a) Fraction of the master sequence in the steady state for L = 50 and <span class="math inline">\(\sigma\)</span> = 10, as a function of the error rate per nucleotide; solid line, full calculation with back-mutation (four-letter alphabet); dashed line, <a href="#eq-master-fraction" class="quarto-xref">Equation&nbsp;<span>8.4</span></a>. (b) Maximum length that can be maintained, L<sub>max</sub> = ln <span class="math inline">\(\sigma\)</span>/u, for <span class="math inline">\(\sigma\)</span> = 2, 10 and 100; the point marks the error rate of the ribozyme polymerase of <span class="citation" data-cites="johnston2001">Johnston et al. (<a href="../references/references.html#ref-johnston2001" role="doc-biblioref">2001</a>)</span> (author’s calculation).
+</figcaption>
+</figure>
+</div>
+<p>Because <span class="math inline">\(\sigma\)</span> enters only through its logarithm, the error threshold depends mainly on the error rate. For <span class="math inline">\(\sigma\)</span> = 10, an error rate of 0.01 allows sequences of about 230 nucleotides, and an error rate of 0.1 only about 23. A system that maintains a ribozyme of 200 nucleotides with <span class="math inline">\(\sigma\)</span> = 10 must have u below ln 10/200 <span class="math inline">\(\approx\)</span> 0.012, that is, fewer than about one error in 90 nucleotides. This is a quantitative statement of the requirement that copying be accurate as well as fast.</p>
+</section>
+</section>
+<section id="sec-polymerase-ribozymes" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sec-polymerase-ribozymes"><span class="header-section-number">8.5</span> Ribozyme polymerases</h2>
+<section id="laboratory-evolution-of-rna-polymerases" class="level3">
+<h3 class="anchored" data-anchor-id="laboratory-evolution-of-rna-polymerases">Laboratory evolution of RNA polymerases</h3>
+<p>If RNA was once copied by RNA, an RNA molecule must have catalysed the polymerisation of RNA on an RNA template. No such ribozyme is known in nature. Laboratory evolution, starting from the ligase ribozymes of <span class="citation" data-cites="bartel1993">Bartel and Szostak (<a href="../references/references.html#ref-bartel1993" role="doc-biblioref">1993</a>)</span>, has produced ribozymes with this activity.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Johnston, Unrau, Lawrence, Glasner and Bartel 2001
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Johnston and co-workers engineered a ribozyme that “uses nucleoside triphosphates and the coding information of an RNA template to extend an RNA primer by the successive addition of up to 14 nucleotides—more than a complete turn of an RNA helix”. Its polymerisation was accurate: “when primers extended by 11 nucleotides were cloned and sequenced, 1088 of 1100 sequenced nucleotides matched the template” <span class="citation" data-cites="johnston2001">(<a href="../references/references.html#ref-johnston2001" role="doc-biblioref">Johnston et al. 2001</a>)</span>. This corresponds to an error rate of 12/1100 <span class="math inline">\(\approx\)</span> 0.011 per nucleotide. With <span class="math inline">\(\sigma\)</span> = 10, <a href="#eq-threshold" class="quarto-xref">Equation&nbsp;<span>8.3</span></a> gives L<sub>max</sub> <span class="math inline">\(\approx\)</span> 2.30/0.0109 <span class="math inline">\(\approx\)</span> 211 nucleotides, which exceeds the length of the ribozyme (<a href="#fig-error-threshold" class="quarto-xref">Figure&nbsp;<span>8.3</span></a> b). The obstacle was not accuracy but the length of the product, far shorter than a ribozyme.</p>
+</div>
+</div>
+<p>Later work extended the length of the products:</p>
+<ul>
+<li>Wochner and co-workers evolved and engineered “an RNA polymerase ribozyme capable of synthesizing RNAs of up to 95 nucleotides in length”, and used it to synthesise an active ribozyme from an RNA template <span class="citation" data-cites="wochner2011">(<a href="../references/references.html#ref-wochner2011" role="doc-biblioref">Wochner et al. 2011</a>)</span>.</li>
+<li>Attwater, Wochner and Holliger evolved polymerase ribozymes in water-ice. These were “able to synthesise RNA in ices at temperatures as low as −19°C”, and led to “a first polymerase ribozyme capable of catalysing the accurate synthesis of an RNA sequence longer than itself (adding up to 206 nucleotides)” <span class="citation" data-cites="attwater2013">(<a href="../references/references.html#ref-attwater2013" role="doc-biblioref">Attwater, Wochner, and Holliger 2013</a>)</span>.</li>
+<li>Horning and Joyce obtained a polymerase ribozyme able “to synthesize a variety of complex structured RNAs, including aptamers, ribozymes, and, in low yield, even tRNA”. It amplified “short RNA templates by more than 10,000-fold in an RNA-catalyzed form of the PCR” <span class="citation" data-cites="horning2016">(<a href="../references/references.html#ref-horning2016" role="doc-biblioref">Horning and Joyce 2016</a>)</span>.</li>
+<li>Attwater and co-workers reported RNA-catalysed RNA synthesis on structured templates using trinucleotide triphosphates as substrates <span class="citation" data-cites="attwater2018">(<a href="../references/references.html#ref-attwater2018" role="doc-biblioref">Attwater et al. 2018</a>)</span>. Building blocks of three nucleotides bind more strongly than single nucleotides and can copy templates that are folded.</li>
+</ul>
+<p>Horning and Joyce concluded: “the two prerequisites of Darwinian life—the replication of genetic information and its conversion into functional molecules—can now be accomplished with RNA in the complete absence of proteins” <span class="citation" data-cites="horning2016">(<a href="../references/references.html#ref-horning2016" role="doc-biblioref">Horning and Joyce 2016</a>)</span>.</p>
+</section>
+<section id="what-remains-to-be-done" class="level3">
+<h3 class="anchored" data-anchor-id="what-remains-to-be-done">What remains to be done</h3>
+<p>A ribozyme that copies itself, and its complement, through repeated cycles without human intervention has not yet been made. The polymerase ribozymes are large folded molecules, the products of extensive laboratory evolution and engineering, and they use nucleoside triphosphates or trinucleotide triphosphates as substrates, whose prebiotic availability is uncertain. A folded RNA is also a difficult template, because its own base pairs must be opened before it can be copied; the use of triplet building blocks was one response to this difficulty <span class="citation" data-cites="attwater2018">(<a href="../references/references.html#ref-attwater2018" role="doc-biblioref">Attwater et al. 2018</a>)</span>. The gap between these molecules and the short chains of Chapter 6 (<a href="ch06-joining-nucleotides.html#sec-lengths" class="quarto-xref"><span>Section 6.7</span></a>) is large.</p>
+</section>
+</section>
+<section id="sec-selection" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="sec-selection"><span class="header-section-number">8.6</span> Selection</h2>
+<section id="replication-and-competition" class="level3">
+<h3 class="anchored" data-anchor-id="replication-and-competition">Replication and competition</h3>
+<p>Replicators grow exponentially when their substrates are not limiting. If a population doubles every t<sub>d</sub>, its size at time t is</p>
+<p><span id="eq-exponential"><span class="math display">\[
+N(t) = N_0 \, 2^{t/t_\mathrm{d}}
+\tag{8.5}\]</span></span></p>
+<p>Substrates are always limited eventually. Then different replicators compete for the same substrates, and those that replicate faster, more accurately or for longer increase in frequency at the expense of others. This is <strong>natural selection</strong> at the molecular level. It requires only three things: replication, variation (introduced by copying errors or recombination) and differences in replication among the variants.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Lincoln and Joyce 2009
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Lincoln and Joyce converted an RNA ligase ribozyme into a pair of enzymes that “catalyze each other’s synthesis from a total of four oligonucleotide substrates”. These cross-replicating enzymes underwent “self-sustained exponential amplification in the absence of proteins or other biological materials”, with “a doubling time of about 1 hour”, and amplification “can be continued indefinitely”. When populations of different cross-replicating enzymes competed for a common pool of substrates, “recombinant replicators arose and grew to dominate the population” <span class="citation" data-cites="lincoln2009">(<a href="../references/references.html#ref-lincoln2009" role="doc-biblioref">Lincoln and Joyce 2009</a>)</span>.</p>
+</div>
+</div>
+<p>Each cross-replicating enzyme catalyses the formation of its partner, and so, over two steps, of copies of itself: the system is autocatalytic in the sense of <a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>. With a doubling time of 1 hour, <a href="#eq-exponential" class="quarto-xref">Equation&nbsp;<span>8.5</span></a> gives a 2<sup>24</sup> <span class="math inline">\(\approx\)</span> 1.7 × 10<sup>7</sup>-fold increase in a day, as long as substrates last. The experiment demonstrates exponential replication and selection among RNA enzymes. In this system, however, the replicators are assembled from four supplied oligonucleotides, so new variants arise by recombination of the supplied pieces, not by copying sequences one nucleotide at a time.</p>
+</section>
+</section>
+<section id="sec-how-fast" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="sec-how-fast"><span class="header-section-number">8.7</span> How fast is fast enough?</h2>
+<section id="a-race-against-loss" class="level3">
+<h3 class="anchored" data-anchor-id="a-race-against-loss">A race against loss</h3>
+<p>A template is useful only if it is copied before it is destroyed. If a template of L nucleotides is copied at r nucleotides per unit time, one copy takes L/r. If the template survives for a mean time <span class="math inline">\(\tau\)</span>, set by hydrolysis (<a href="ch06-joining-nucleotides.html#sec-competition" class="quarto-xref"><span>Section 6.3</span></a>), outflow or adsorption, the mean number of complete copies it can make is about r<span class="math inline">\(\tau\)</span>/L, and a lineage can persist only if</p>
+<p><span id="eq-copy-race"><span class="math display">\[
+\frac{r \tau}{L} &gt; 1
+\tag{8.6}\]</span></span></p>
+<p>This inequality is necessary but not sufficient: each copy must also be separated from its template (<a href="#sec-strand-separation" class="quarto-xref"><span>Section 8.3</span></a>) and be accurate enough (<a href="#sec-error-threshold" class="quarto-xref"><span>Section 8.4</span></a>), and the copies must in turn be copied.</p>
+</section>
+<section id="measured-rates-against-required-rates" class="level3">
+<h3 class="anchored" data-anchor-id="measured-rates-against-required-rates">Measured rates against required rates</h3>
+<p>The author’s own simulations illustrate how strongly the outcome depends on r <span class="citation" data-cites="wahiro2026stage4">(<a href="../references/references.html#ref-wahiro2026stage4" role="doc-biblioref">Wahiro 2026</a>)</span>. That study built a bottom-up model chemistry, from feedstock through activated monomers, chains, catalysts and template copying to vesicles, and searched 13 environmental variables, with ranges taken from the literature, for environments in which heredity arises. Heredity, defined as a sequence lineage that outlives its molecules because it is copied, appeared in a narrow class of cool environments with slow flushing and temperature cycles across the melting temperature of short duplexes.</p>
+<p>A later check showed that this result depends on the copying rate. In the model, template-directed extension was about 10<sup>9</sup> to 10<sup>11</sup> times faster than measured non-enzymatic copying, which, with activated nucleotides at 20 to 50 mM and 100 to 200 mM Mg<sup>2+</sup>, takes from 30 minutes to about a day per added nucleotide even with activated helper oligonucleotides <span class="citation" data-cites="prywes2016 wahiro2026stage4">(<a href="../references/references.html#ref-prywes2016" role="doc-biblioref">Prywes et al. 2016</a>; <a href="../references/references.html#ref-wahiro2026stage4" role="doc-biblioref">Wahiro 2026</a>)</span>. When the extension rate was set to a value anchored in that literature, about one nucleotide per hour, template copying stopped entirely: short duplexes dissociated about 10<sup>6</sup> times faster than a nucleotide was added. Two other routes, templated ligation of chance oligomers and chance long primers, also failed to start heredity from scratch within the ranges studied. A second, independent limit appeared when the model’s constants were translated into real base pairs with nearest-neighbour parameters: the environments where heredity arose combined the weak pairing of A–U with the accuracy and copying speed found experimentally only for G–C-rich templates, and no measured base pair has both <span class="citation" data-cites="wahiro2026stage4">(<a href="../references/references.html#ref-wahiro2026stage4" role="doc-biblioref">Wahiro 2026</a>)</span>. A supplementary study found, in addition, that heredity at the confirmed points depended in part on a numerical rule of the simulation for sharing out scarce chain slots <span class="citation" data-cites="wahiro2026stage4">(<a href="../references/references.html#ref-wahiro2026stage4" role="doc-biblioref">Wahiro 2026</a>)</span>.</p>
+<p>These results are not a proof that heredity cannot arise by non-enzymatic chemistry. They are a quantitative statement of the gap: with measured rates and measured base-pair stabilities, a short template is released from its partner long before it is copied, and nothing in the environments studied closes this gap. A path to heredity therefore needs either copying chemistry many orders of magnitude faster than any yet measured, a mechanism that holds templates and building blocks together for much longer (for example in ice, on surfaces or in compartments), or a first replicator that was not a template copied one nucleotide at a time.</p>
+</section>
+</section>
+<section id="sec-unknown" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="sec-unknown"><span class="header-section-number">8.8</span> What remains unknown</h2>
+<p>The path described in this book, from atoms to self-copying RNA, has been established in parts, not as a whole. The following are open questions, in the order of the chapters.</p>
+<ol type="1">
+<li><strong>Feedstock and building blocks.</strong> Which environments supplied the nucleotides of Chapters 4 and 5, in sufficient purity and concentration, together with a means of activating them repeatedly?</li>
+<li><strong>Homochirality.</strong> How did a single handedness of ribose arise and persist (<a href="ch05-assembling-nucleotides.html#sec-chirality-copying" class="quarto-xref"><span>Section 5.5</span></a>)?</li>
+<li><strong>Chains.</strong> How were chains of 30 or more nucleotides made in useful amounts, given the competition between polymerisation and hydrolysis (<a href="ch06-joining-nucleotides.html#sec-lengths" class="quarto-xref"><span>Section 6.7</span></a>)?</li>
+<li><strong>Function.</strong> How common are sequences with copying activity among short random sequences (<a href="ch07-folding-into-shapes.html#sec-sequence-space" class="quarto-xref"><span>Section 7.6</span></a>)?</li>
+<li><strong>Copying.</strong> Can any chemistry, with or without a ribozyme, copy RNA fast and accurately enough, and separate the strands, to sustain repeated cycles of replication (<a href="#sec-strand-separation" class="quarto-xref"><span>Section 8.3</span></a>, <a href="#sec-how-fast" class="quarto-xref"><span>Section 8.7</span></a>)?</li>
+<li><strong>Selection and compartments.</strong> How did replicating sequences become linked to the functions they encode, so that selection could act on them? This question leads to protocells, the subject of the Epilogue.</li>
+</ol>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>The RNA world hypothesis holds that RNA once served as both genetic material and catalyst. It requires that RNA can be copied. Copying by base pairing produces the complement; replication requires two rounds and strand separation.</li>
+<li>Non-enzymatic primer extension with activated nucleotides copies sequences selectively. Better leaving groups (2-aminoimidazole) and activated helper oligonucleotides have extended it to mixed sequences, but it remains slow, and mismatches stall extension by more than two orders of magnitude.</li>
+<li>Short primers bind weakly and long products bind too strongly: the median T<sub>m</sub> of a random 6-base-pair duplex at 1 <span class="math inline">\(\mu\)</span>M is 17 °C, that of a 20-base-pair duplex 85 °C. This is the strand-separation problem.</li>
+<li>A master sequence of length L with selective superiority <span class="math inline">\(\sigma\)</span> is maintained only if <span class="math inline">\(\sigma\)</span>(1 − u)<sup>L</sup> &gt; 1, so that L<sub>max</sub> <span class="math inline">\(\approx\)</span> ln <span class="math inline">\(\sigma\)</span>/u. An error rate of 0.01 per nucleotide allows a few hundred nucleotides.</li>
+<li>Ribozyme polymerases made in the laboratory extend primers by up to 206 nucleotides, synthesise functional RNAs and amplify RNA exponentially, but none yet replicates itself. Cross-replicating ligases replicate exponentially with a doubling time of about 1 hour and show selection.</li>
+<li>Measured non-enzymatic copying is far slower than heredity from scratch requires; in the author’s simulations, heredity appeared only with copying about 10<sup>9</sup> to 10<sup>11</sup> times faster than measured.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>Write the product of copying the template 5<span class="math inline">\('\)</span>-GGCAU-3<span class="math inline">\('\)</span>, and the product of copying that product. Why does replication require two rounds of copying?</li>
+<li>Explain why non-enzymatic copying of templates rich in C is easier than copying of templates rich in A and U, using the stack free energies of <a href="ch07-folding-into-shapes.html#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>.</li>
+<li>A duplex has ΔH° = −250 kJ mol<sup>−1</sup> and ΔS° = −0.70 kJ K<sup>−1</sup> mol<sup>−1</sup>. Using <a href="#eq-tm-conc" class="quarto-xref">Equation&nbsp;<span>8.1</span></a>, calculate T<sub>m</sub> at C<sub>T</sub> = 1 <span class="math inline">\(\mu\)</span>M and at 1 mM.</li>
+<li>Using <a href="#fig-tm-length" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>, estimate the shortest primer that remains bound at 20 °C at a total strand concentration of 1 mM.</li>
+<li>Explain why heating a solution to separate a 30-base-pair duplex is harmful to the RNA, with reference to <a href="ch06-joining-nucleotides.html#sec-competition" class="quarto-xref"><span>Section 6.3</span></a>.</li>
+<li>Using <a href="#eq-error-free" class="quarto-xref">Equation&nbsp;<span>8.2</span></a>, calculate the fraction of error-free copies of a 50-nucleotide sequence at u = 0.001, 0.01 and 0.05.</li>
+<li>Using <a href="#eq-threshold" class="quarto-xref">Equation&nbsp;<span>8.3</span></a>, calculate L<sub>max</sub> for <span class="math inline">\(\sigma\)</span> = 2, 10 and 100 at u = 0.01. By what factor must u fall to double L<sub>max</sub> at fixed <span class="math inline">\(\sigma\)</span>?</li>
+<li>Show that <a href="#eq-master-fraction" class="quarto-xref">Equation&nbsp;<span>8.4</span></a> gives x<sub>0</sub> = 1 when u = 0 and x<sub>0</sub> = 0 when <span class="math inline">\(\sigma\)</span>Q = 1.</li>
+<li>The ribozyme of <span class="citation" data-cites="johnston2001">Johnston et al. (<a href="../references/references.html#ref-johnston2001" role="doc-biblioref">2001</a>)</span> copied 1088 of 1100 nucleotides correctly. Calculate its error rate, and the fraction of error-free copies it would make of a sequence of 200 nucleotides.</li>
+<li>Using <a href="#eq-exponential" class="quarto-xref">Equation&nbsp;<span>8.5</span></a>, calculate the time needed for a population with a doubling time of 1 hour to increase 10<sup>6</sup>-fold.</li>
+<li>A template of 30 nucleotides is copied at one nucleotide per hour and has a mean lifetime of 10 hours. Using <a href="#eq-copy-race" class="quarto-xref">Equation&nbsp;<span>8.6</span></a>, can the lineage persist? What lifetime would be needed?</li>
+<li>List the three conditions for natural selection among molecules and explain how each is met in the experiment of <span class="citation" data-cites="lincoln2009">Lincoln and Joyce (<a href="../references/references.html#ref-lincoln2009" role="doc-biblioref">2009</a>)</span>.</li>
+<li>Choose one of the open questions in <a href="#sec-unknown" class="quarto-xref"><span>Section 8.8</span></a> and describe an experiment or a calculation that would help to answer it.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-attwater2018" class="csl-entry" role="listitem">
+Attwater, J., A. Raguram, A. S. Morgunov, E. Gianni, and P. Holliger. 2018. <span>“Ribozyme-Catalysed <span>RNA</span> Synthesis Using Triplet Building Blocks.”</span> <em>eLife</em> 7: e35255. <a href="https://doi.org/10.7554/eLife.35255">https://doi.org/10.7554/eLife.35255</a>.
+</div>
+<div id="ref-attwater2013" class="csl-entry" role="listitem">
+Attwater, J., A. Wochner, and P. Holliger. 2013. <span>“In-Ice Evolution of <span>RNA</span> Polymerase Ribozyme Activity.”</span> <em>Nature Chemistry</em> 5: 1011–18. <a href="https://doi.org/10.1038/nchem.1781">https://doi.org/10.1038/nchem.1781</a>.
+</div>
+<div id="ref-bartel1993" class="csl-entry" role="listitem">
+Bartel, D. P., and J. W. Szostak. 1993. <span>“Isolation of New Ribozymes from a Large Pool of Random Sequences.”</span> <em>Science</em> 261 (5127): 1411–18. <a href="https://doi.org/10.1126/science.7690155">https://doi.org/10.1126/science.7690155</a>.
+</div>
+<div id="ref-eigen1971" class="csl-entry" role="listitem">
+Eigen, M. 1971. <span>“Selforganization of Matter and the Evolution of Biological Macromolecules.”</span> <em>Naturwissenschaften</em> 58 (10): 465–523. <a href="https://doi.org/10.1007/BF00623322">https://doi.org/10.1007/BF00623322</a>.
+</div>
+<div id="ref-gilbert1986" class="csl-entry" role="listitem">
+Gilbert, W. 1986. <span>“Origin of Life: The <span>RNA</span> World.”</span> <em>Nature</em> 319 (6055): 618. <a href="https://doi.org/10.1038/319618a0">https://doi.org/10.1038/319618a0</a>.
+</div>
+<div id="ref-horning2016" class="csl-entry" role="listitem">
+Horning, D. P., and G. F. Joyce. 2016. <span>“Amplification of <span>RNA</span> by an <span>RNA</span> Polymerase Ribozyme.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 113 (35): 9786–91. <a href="https://doi.org/10.1073/pnas.1610103113">https://doi.org/10.1073/pnas.1610103113</a>.
+</div>
+<div id="ref-inoue1983" class="csl-entry" role="listitem">
+Inoue, T., and L. E. Orgel. 1983. <span>“A Nonenzymatic <span>RNA</span> Polymerase Model.”</span> <em>Science</em> 219 (4586): 859–62. <a href="https://doi.org/10.1126/science.6186026">https://doi.org/10.1126/science.6186026</a>.
+</div>
+<div id="ref-johnston2001" class="csl-entry" role="listitem">
+Johnston, W. K., P. J. Unrau, M. S. Lawrence, M. E. Glasner, and D. P. Bartel. 2001. <span>“<span>RNA</span>-Catalyzed <span>RNA</span> Polymerization: Accurate and General <span>RNA</span>-Templated Primer Extension.”</span> <em>Science</em> 292 (5520): 1319–25. <a href="https://doi.org/10.1126/science.1060786">https://doi.org/10.1126/science.1060786</a>.
+</div>
+<div id="ref-joyce2002" class="csl-entry" role="listitem">
+Joyce, G. F. 2002. <span>“The Antiquity of <span>RNA</span>-Based Evolution.”</span> <em>Nature</em> 418 (6894): 214–21. <a href="https://doi.org/10.1038/418214a">https://doi.org/10.1038/418214a</a>.
+</div>
+<div id="ref-kiedrowski1986" class="csl-entry" role="listitem">
+Kiedrowski, G. von. 1986. <span>“A Self-Replicating Hexadeoxynucleotide.”</span> <em>Angewandte Chemie International Edition in English</em> 25: 932–35. <a href="https://doi.org/10.1002/anie.198609322">https://doi.org/10.1002/anie.198609322</a>.
+</div>
+<div id="ref-li2017" class="csl-entry" role="listitem">
+Li, L., N. Prywes, C. P. Tam, D. K. O’Flaherty, V. S. Lelyveld, E. C. Izgu, A. Pal, and J. W. Szostak. 2017. <span>“Enhanced Nonenzymatic <span>RNA</span> Copying with 2-Aminoimidazole Activated Nucleotides.”</span> <em>Journal of the American Chemical Society</em> 139 (5): 1810–13. <a href="https://doi.org/10.1021/jacs.6b13148">https://doi.org/10.1021/jacs.6b13148</a>.
+</div>
+<div id="ref-lincoln2009" class="csl-entry" role="listitem">
+Lincoln, T. A., and G. F. Joyce. 2009. <span>“Self-Sustained Replication of an <span>RNA</span> Enzyme.”</span> <em>Science</em> 323 (5918): 1229–32. <a href="https://doi.org/10.1126/science.1167856">https://doi.org/10.1126/science.1167856</a>.
+</div>
+<div id="ref-lorenz2011" class="csl-entry" role="listitem">
+Lorenz, R., S. H. Bernhart, C. Höner zu Siederdissen, H. Tafer, C. Flamm, P. F. Stadler, and I. L. Hofacker. 2011. <span>“<span>ViennaRNA</span> Package 2.0.”</span> <em>Algorithms for Molecular Biology</em> 6: 26. <a href="https://doi.org/10.1186/1748-7188-6-26">https://doi.org/10.1186/1748-7188-6-26</a>.
+</div>
+<div id="ref-mathews2004" class="csl-entry" role="listitem">
+Mathews, D. H., M. D. Disney, J. L. Childs, S. J. Schroeder, M. Zuker, and D. H. Turner. 2004. <span>“Incorporating Chemical Modification Constraints into a Dynamic Programming Algorithm for Prediction of <span>RNA</span> Secondary Structure.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 101 (19): 7287–92. <a href="https://doi.org/10.1073/pnas.0401799101">https://doi.org/10.1073/pnas.0401799101</a>.
+</div>
+<div id="ref-orgel2004" class="csl-entry" role="listitem">
+Orgel, L. E. 2004. <span>“Prebiotic Chemistry and the Origin of the <span>RNA</span> World.”</span> <em>Critical Reviews in Biochemistry and Molecular Biology</em> 39 (2): 99–123. <a href="https://doi.org/10.1080/10409230490460765">https://doi.org/10.1080/10409230490460765</a>.
+</div>
+<div id="ref-prywes2016" class="csl-entry" role="listitem">
+Prywes, N., J. C. Blain, F. Del Frate, and J. W. Szostak. 2016. <span>“Nonenzymatic Copying of <span>RNA</span> Templates Containing All Four Letters Is Catalyzed by Activated Oligonucleotides.”</span> <em>eLife</em> 5: e17756. <a href="https://doi.org/10.7554/eLife.17756">https://doi.org/10.7554/eLife.17756</a>.
+</div>
+<div id="ref-rajamani2010" class="csl-entry" role="listitem">
+Rajamani, S., J. K. Ichida, T. Antal, D. A. Treco, K. Leu, M. A. Nowak, J. W. Szostak, and I. A. Chen. 2010. <span>“Effect of Stalling After Mismatches on the Error Catastrophe in Nonenzymatic Nucleic Acid Replication.”</span> <em>Journal of the American Chemical Society</em> 132 (16): 5880–85. <a href="https://doi.org/10.1021/ja100780p">https://doi.org/10.1021/ja100780p</a>.
+</div>
+<div id="ref-wahiro2026stage4" class="csl-entry" role="listitem">
+Wahiro, Gokyona. 2026. <span>“How Far up the Ladder of Life Can Environments Carry a Bottom-up Chemistry? An Ordered Search over 13 Environmental Variables.”</span> Preprint, Zenodo. <a href="https://doi.org/10.5281/zenodo.23825838">https://doi.org/10.5281/zenodo.23825838</a>.
+</div>
+<div id="ref-wochner2011" class="csl-entry" role="listitem">
+Wochner, A., J. Attwater, A. Coulson, and P. Holliger. 2011. <span>“Ribozyme-Catalyzed Transcription of an Active Ribozyme.”</span> <em>Science</em> 332 (6026): 209–12. <a href="https://doi.org/10.1126/science.1200752">https://doi.org/10.1126/science.1200752</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch07-folding-into-shapes.html" class="pagination-link" aria-label="Folding into Shapes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/epilogue-rna-to-cells.html" class="pagination-link" aria-label="Epilogue: From RNA to Cells">
+        <span class="nav-page-text">Epilogue: From RNA to Cells</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

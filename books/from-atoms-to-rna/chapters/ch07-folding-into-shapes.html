@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Folding into Shapes – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch08-rna-copying-itself.html" rel="next">
+<link href="../chapters/ch06-joining-nucleotides.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch07-folding-into-shapes.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-base-pairing" id="toc-sec-base-pairing" class="nav-link" data-scroll-target="#sec-base-pairing"><span class="header-section-number">7.1</span> Base pairing</a>
+  <ul class="collapse">
+  <li><a href="#complementary-bases" id="toc-complementary-bases" class="nav-link" data-scroll-target="#complementary-bases">Complementary bases</a></li>
+  <li><a href="#antiparallel-strands" id="toc-antiparallel-strands" class="nav-link" data-scroll-target="#antiparallel-strands">Antiparallel strands</a></li>
+  </ul></li>
+  <li><a href="#sec-duplex-stability" id="toc-sec-duplex-stability" class="nav-link" data-scroll-target="#sec-duplex-stability"><span class="header-section-number">7.2</span> Duplex stability</a>
+  <ul class="collapse">
+  <li><a href="#stacking-and-pairing" id="toc-stacking-and-pairing" class="nav-link" data-scroll-target="#stacking-and-pairing">Stacking and pairing</a></li>
+  <li><a href="#the-nearest-neighbour-model" id="toc-the-nearest-neighbour-model" class="nav-link" data-scroll-target="#the-nearest-neighbour-model">The nearest-neighbour model</a></li>
+  <li><a href="#from-free-energy-to-populations" id="toc-from-free-energy-to-populations" class="nav-link" data-scroll-target="#from-free-energy-to-populations">From free energy to populations</a></li>
+  <li><a href="#melting-temperature" id="toc-melting-temperature" class="nav-link" data-scroll-target="#melting-temperature">Melting temperature</a></li>
+  </ul></li>
+  <li><a href="#sec-secondary" id="toc-sec-secondary" class="nav-link" data-scroll-target="#sec-secondary"><span class="header-section-number">7.3</span> Secondary structure</a>
+  <ul class="collapse">
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#structural-elements" id="toc-structural-elements" class="nav-link" data-scroll-target="#structural-elements">Structural elements</a></li>
+  </ul></li>
+  <li><a href="#sec-mfe" id="toc-sec-mfe" class="nav-link" data-scroll-target="#sec-mfe"><span class="header-section-number">7.4</span> Predicting structure</a>
+  <ul class="collapse">
+  <li><a href="#the-number-of-possible-structures" id="toc-the-number-of-possible-structures" class="nav-link" data-scroll-target="#the-number-of-possible-structures">The number of possible structures</a></li>
+  <li><a href="#minimum-free-energy-folding" id="toc-minimum-free-energy-folding" class="nav-link" data-scroll-target="#minimum-free-energy-folding">Minimum free energy folding</a></li>
+  </ul></li>
+  <li><a href="#sec-ribozymes" id="toc-sec-ribozymes" class="nav-link" data-scroll-target="#sec-ribozymes"><span class="header-section-number">7.5</span> From shape to function: ribozymes</a>
+  <ul class="collapse">
+  <li><a href="#enzymes-made-of-rna" id="toc-enzymes-made-of-rna" class="nav-link" data-scroll-target="#enzymes-made-of-rna">Enzymes made of RNA</a></li>
+  <li><a href="#in-vitro-selection" id="toc-in-vitro-selection" class="nav-link" data-scroll-target="#in-vitro-selection">In vitro selection</a></li>
+  </ul></li>
+  <li><a href="#sec-sequence-space" id="toc-sec-sequence-space" class="nav-link" data-scroll-target="#sec-sequence-space"><span class="header-section-number">7.6</span> How common is function?</a>
+  <ul class="collapse">
+  <li><a href="#sequence-space" id="toc-sequence-space" class="nav-link" data-scroll-target="#sequence-space">Sequence space</a></li>
+  <li><a href="#most-random-sequences-fold" id="toc-most-random-sequences-fold" class="nav-link" data-scroll-target="#most-random-sequences-fold">Most random sequences fold</a></li>
+  <li><a href="#a-ribozyme-with-two-letters" id="toc-a-ribozyme-with-two-letters" class="nav-link" data-scroll-target="#a-ribozyme-with-two-letters">A ribozyme with two letters</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch07" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Describe the Watson-Crick base pairs and the G·U wobble pair, and explain why paired strands are antiparallel.</li>
+<li>Explain how base stacking and base pairing together stabilise a double helix, and calculate the free energy of a short helix with the nearest-neighbour model.</li>
+<li>Relate the free energy of a structure to the fraction of molecules that adopt it, and define the melting temperature.</li>
+<li>Name and recognise the elements of RNA secondary structure, and write a structure in dot-bracket notation.</li>
+<li>Explain the principle of minimum free energy structure prediction.</li>
+<li>Define a ribozyme, describe the discovery of catalytic RNA, and explain how in vitro selection isolates functional molecules from random sequences.</li>
+<li>Estimate the size of sequence space, and discuss what is known about how common folded and functional sequences are within it.</li>
+</ol>
+</section>
+<section id="sec-base-pairing" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="sec-base-pairing"><span class="header-section-number">7.1</span> Base pairing</h2>
+<section id="complementary-bases" class="level3">
+<h3 class="anchored" data-anchor-id="complementary-bases">Complementary bases</h3>
+<p>A single RNA chain (<a href="ch06-joining-nucleotides.html#sec-phosphodiester" class="quarto-xref"><span>Section 6.1</span></a>) is flexible. What gives it a defined shape is the ability of its nucleobases (<a href="ch04-simple-molecules-to-building-blocks.html#sec-nucleobases" class="quarto-xref"><span>Section 4.5</span></a>) to form specific hydrogen-bonded pairs (<a href="ch02-how-atoms-join.html#sec-intermolecular" class="quarto-xref"><span>Section 2.5</span></a>). Two nucleobases joined in this way form a <strong>base pair</strong>.</p>
+<p>The pairs found in double helices of nucleic acids were proposed by Watson and Crick in their model of DNA <span class="citation" data-cites="watson1953">(<a href="../references/references.html#ref-watson1953" role="doc-biblioref">Watson and Crick 1953</a>)</span>: adenine pairs with thymine, and guanine with cytosine. In RNA, uracil takes the place of thymine. The <strong>Watson-Crick base pairs</strong> of RNA are therefore A–U, held by two hydrogen bonds, and G–C, held by three (<a href="#fig-pairs" class="quarto-xref">Figure&nbsp;<span>7.1</span></a> a). In each pair a purine faces a pyrimidine, so that both pairs have nearly the same width, and a helix built from any sequence of them has a regular shape. Two sequences that can form Watson-Crick pairs along their whole length are called <strong>complementary</strong>.</p>
+<p>RNA also forms a third pair, between guanine and uracil, held by two hydrogen bonds. In this pair the two bases are shifted relative to each other compared with a Watson-Crick pair; it is called the <strong>G·U wobble pair</strong> (<a href="#fig-pairs" class="quarto-xref">Figure&nbsp;<span>7.1</span></a> a). G·U pairs occur frequently within RNA helices and are included in the energy parameters used below <span class="citation" data-cites="turner2010">(<a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>. In the notation of this book, a dash (A–U) marks a Watson-Crick pair and a centred dot (G·U) a wobble pair.</p>
+<div id="fig-pairs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-1_pairs.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: (a) The three base pairs of RNA helices and the number of hydrogen bonds in each: the Watson-Crick pairs A–U and G–C, and the G·U wobble pair. (b) A duplex of 5<span class="math inline">\('\)</span>-GGACUC-3<span class="math inline">\('\)</span> with its complementary strand. The two strands run in opposite directions.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="antiparallel-strands" class="level3">
+<h3 class="anchored" data-anchor-id="antiparallel-strands">Antiparallel strands</h3>
+<p>Base pairs form only when the two strands are <strong>antiparallel</strong>: one runs from 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> in one direction, the other from 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> in the opposite direction (<a href="#fig-pairs" class="quarto-xref">Figure&nbsp;<span>7.1</span></a> b). Thus 5<span class="math inline">\('\)</span>-GGACUC-3<span class="math inline">\('\)</span> pairs with 5<span class="math inline">\('\)</span>-GAGUCC-3<span class="math inline">\('\)</span>, which is its complement read in the 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction. When a single chain folds back on itself, its two paired segments are antiparallel for the same reason. The paired region winds into a right-handed <strong>double helix</strong>. A molecule made of two separate strands held together by base pairs is called a <strong>duplex</strong>.</p>
+</section>
+</section>
+<section id="sec-duplex-stability" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="sec-duplex-stability"><span class="header-section-number">7.2</span> Duplex stability</h2>
+<section id="stacking-and-pairing" class="level3">
+<h3 class="anchored" data-anchor-id="stacking-and-pairing">Stacking and pairing</h3>
+<p>Hydrogen bonds alone do not explain why a double helix is stable. When a helix forms, the hydrogen bonds that each base made with water before pairing are replaced by hydrogen bonds to its partner, so the net gain in hydrogen bonding is small. A large part of the stability of a helix comes from <strong>base stacking</strong>: the flat aromatic rings of neighbouring base pairs lie on top of each other, face to face, along the axis of the helix. Stacking is favoured by dispersion forces between the rings and by the hydrophobic effect (<a href="ch02-how-atoms-join.html#sec-intermolecular" class="quarto-xref"><span>Section 2.5</span></a>), which drives the non-polar faces of the bases out of contact with water. The contribution of a base pair therefore depends on its neighbours, not only on its own identity.</p>
+</section>
+<section id="the-nearest-neighbour-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-nearest-neighbour-model">The nearest-neighbour model</h3>
+<p>The <strong>nearest-neighbour model</strong> expresses this dependence quantitatively. The standard Gibbs energy change (<a href="ch02-how-atoms-join.html#sec-energy" class="quarto-xref"><span>Section 2.7</span></a>) for forming a helix is written as a sum of terms, one for each pair of adjacent base pairs, called a <strong>stack</strong>, plus a term for starting the helix:</p>
+<p><span id="eq-nn"><span class="math display">\[
+\Delta G^\circ_{\text{helix}} = \Delta G^\circ_{\text{init}} + \sum_{\text{stacks}} \Delta G^\circ_{\text{stack}}
+\tag{7.1}\]</span></span></p>
+<p>The stack terms have been measured by optical melting experiments on many short duplexes and are collected in the Nearest Neighbor Database <span class="citation" data-cites="turner2010">(<a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>. The current set of RNA parameters is the 2004 set of Turner and co-workers <span class="citation" data-cites="mathews2004">(<a href="../references/references.html#ref-mathews2004" role="doc-biblioref">Mathews et al. 2004</a>)</span>. <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a> lists the values for the ten distinct Watson-Crick stacks at 37 °C. The parameters are given in the literature in kcal mol<sup>−1</sup>; they are converted here to kJ mol<sup>−1</sup> (1 kcal = 4.184 kJ).</p>
+<div id="tbl-stacks" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-stacks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7.1: Free energies of the ten Watson-Crick stacks of RNA at 37 °C, Turner 2004 parameters <span class="citation" data-cites="mathews2004 turner2010">(<a href="../references/references.html#ref-mathews2004" role="doc-biblioref">Mathews et al. 2004</a>; <a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>, as distributed with the ViennaRNA package <span class="citation" data-cites="lorenz2011">(<a href="../references/references.html#ref-lorenz2011" role="doc-biblioref">Lorenz et al. 2011</a>)</span>. Each stack is written as the top strand 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> over the bottom strand 3<span class="math inline">\('\)</span> to 5<span class="math inline">\('\)</span>; a stack read from the other strand is identical (for example 5<span class="math inline">\('\)</span>-GG-3<span class="math inline">\('\)</span>/3<span class="math inline">\('\)</span>-CC-5<span class="math inline">\('\)</span> is the same as 5<span class="math inline">\('\)</span>-CC-3<span class="math inline">\('\)</span>/3<span class="math inline">\('\)</span>-GG-5<span class="math inline">\('\)</span>).
+</figcaption>
+<div aria-describedby="tbl-stacks-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Stack</th>
+<th>ΔG°<sub>37</sub> (kcal mol<sup>−1</sup>)</th>
+<th>ΔG°<sub>37</sub> (kJ mol<sup>−1</sup>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5<span class="math inline">\('\)</span>-GC-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-CG-5<span class="math inline">\('\)</span></td>
+<td>−3.4</td>
+<td>−14.2</td>
+</tr>
+<tr class="even">
+<td>5<span class="math inline">\('\)</span>-CC-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-GG-5<span class="math inline">\('\)</span></td>
+<td>−3.3</td>
+<td>−13.8</td>
+</tr>
+<tr class="odd">
+<td>5<span class="math inline">\('\)</span>-CG-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-GC-5<span class="math inline">\('\)</span></td>
+<td>−2.4</td>
+<td>−10.0</td>
+</tr>
+<tr class="even">
+<td>5<span class="math inline">\('\)</span>-GA-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-CU-5<span class="math inline">\('\)</span></td>
+<td>−2.4</td>
+<td>−10.0</td>
+</tr>
+<tr class="odd">
+<td>5<span class="math inline">\('\)</span>-AC-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-UG-5<span class="math inline">\('\)</span></td>
+<td>−2.2</td>
+<td>−9.2</td>
+</tr>
+<tr class="even">
+<td>5<span class="math inline">\('\)</span>-AG-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-UC-5<span class="math inline">\('\)</span></td>
+<td>−2.1</td>
+<td>−8.8</td>
+</tr>
+<tr class="odd">
+<td>5<span class="math inline">\('\)</span>-CA-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-GU-5<span class="math inline">\('\)</span></td>
+<td>−2.1</td>
+<td>−8.8</td>
+</tr>
+<tr class="even">
+<td>5<span class="math inline">\('\)</span>-UA-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-AU-5<span class="math inline">\('\)</span></td>
+<td>−1.3</td>
+<td>−5.4</td>
+</tr>
+<tr class="odd">
+<td>5<span class="math inline">\('\)</span>-AU-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-UA-5<span class="math inline">\('\)</span></td>
+<td>−1.1</td>
+<td>−4.6</td>
+</tr>
+<tr class="even">
+<td>5<span class="math inline">\('\)</span>-AA-3<span class="math inline">\('\)</span> / 3<span class="math inline">\('\)</span>-UU-5<span class="math inline">\('\)</span></td>
+<td>−0.9</td>
+<td>−3.8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Three features of the table are important for what follows. All stacks have negative ΔG°, so every additional base pair stabilises a helix. Stacks containing two G–C pairs are the most stable, and stacks of two A–U pairs the least; the difference is up to a factor of about four. And the order of the bases matters: 5<span class="math inline">\('\)</span>-GC-3<span class="math inline">\('\)</span>/3<span class="math inline">\('\)</span>-CG-5<span class="math inline">\('\)</span> (−14.2 kJ mol<sup>−1</sup>) is more stable than 5<span class="math inline">\('\)</span>-CG-3<span class="math inline">\('\)</span>/3<span class="math inline">\('\)</span>-GC-5<span class="math inline">\('\)</span> (−10.0 kJ mol<sup>−1</sup>), although both contain the same two pairs.</p>
+<p>For two separate strands, the initiation term is positive. It reflects the cost of bringing two independent molecules together into one complex. In the Turner 2004 set it is +4.09 kcal mol<sup>−1</sup> (+17.1 kJ mol<sup>−1</sup>) <span class="citation" data-cites="turner2010">(<a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>. As an example, the duplex of <a href="#fig-pairs" class="quarto-xref">Figure&nbsp;<span>7.1</span></a> b contains five stacks, whose values from <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a> sum to −12.4 kcal mol<sup>−1</sup> (−51.9 kJ mol<sup>−1</sup>). With the initiation term, <a href="#eq-nn" class="quarto-xref">Equation&nbsp;<span>7.1</span></a> gives ΔG°<sub>37</sub> <span class="math inline">\(\approx\)</span> −8.3 kcal mol<sup>−1</sup>, or −34.8 kJ mol<sup>−1</sup>. The same value is obtained with the duplex routine of ViennaRNA.</p>
+</section>
+<section id="from-free-energy-to-populations" class="level3">
+<h3 class="anchored" data-anchor-id="from-free-energy-to-populations">From free energy to populations</h3>
+<p>A free energy determines what fraction of molecules adopt a structure. For a molecule that is either folded (F) or unfolded (U), with ΔG = G<sub>F</sub> − G<sub>U</sub>, the ratio of the two populations at equilibrium is [F]/[U] = exp(−ΔG/RT), where R is the molar gas constant and T the absolute temperature (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>). The fraction folded, <span class="math inline">\(\theta\)</span>, is therefore</p>
+<p><span id="eq-two-state"><span class="math display">\[
+\theta = \frac{1}{1 + \exp(\Delta G / RT)}
+\tag{7.2}\]</span></span></p>
+<p>At 37 °C, RT = 8.314 × 310.15 J mol<sup>−1</sup> = 2.58 kJ mol<sup>−1</sup>. A structure that is 10 kJ mol<sup>−1</sup> more stable than the unfolded state is present in about 98 percent of molecules; one that is 20 kJ mol<sup>−1</sup> more stable, in more than 99.9 percent.</p>
+</section>
+<section id="melting-temperature" class="level3">
+<h3 class="anchored" data-anchor-id="melting-temperature">Melting temperature</h3>
+<p>ΔG depends on temperature through ΔG = ΔH − TΔS (<a href="ch02-how-atoms-join.html#sec-energy" class="quarto-xref"><span>Section 2.7</span></a>). Forming a helix releases enthalpy (ΔH &lt; 0, from stacking and pairing) and lowers the entropy (ΔS &lt; 0, because the chain becomes ordered). At low temperature the enthalpy term dominates and the helix is stable; at high temperature the entropy term dominates and it falls apart. The temperature at which ΔG = 0, so that half of the molecules are folded in the two-state model, is the <strong>melting temperature</strong>, T<sub>m</sub> = ΔH/ΔS.</p>
+<p><a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> shows this behaviour for the 12-nucleotide chain 5<span class="math inline">\('\)</span>-GGACUUCGGUCC-3<span class="math inline">\('\)</span>, which folds back on itself into a stem of four base pairs closed by the four-nucleotide loop UUCG. The stem contributes three stacks (−13.8, −10.0 and −9.2 kJ mol<sup>−1</sup> from <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>, total −33.1 kJ mol<sup>−1</sup>) and the loop a destabilising +15.5 kJ mol<sup>−1</sup>, giving ΔG°<sub>37</sub> = −17.6 kJ mol<sup>−1</sup>. Because the two halves belong to one molecule, there is no intermolecular initiation term. From the computed values at 25 °C (−25.4 kJ mol<sup>−1</sup>) and 60 °C (−2.6 kJ mol<sup>−1</sup>), the line of <a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> a gives ΔS <span class="math inline">\(\approx\)</span> −0.65 kJ K<sup>−1</sup> mol<sup>−1</sup> and ΔH <span class="math inline">\(\approx\)</span> −220 kJ mol<sup>−1</sup>, so that T<sub>m</sub> = ΔH/ΔS <span class="math inline">\(\approx\)</span> 337 K, or 64 °C. The full calculation, which also includes partly paired alternative structures, gives the melting curve of <a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> b, in which half of the molecules are completely unpaired at 65 °C.</p>
+<div id="fig-melting" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-melting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-2_melting.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-melting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Melting of the hairpin 5<span class="math inline">\('\)</span>-GGACUUCGGUCC-3<span class="math inline">\('\)</span>, calculated with the ViennaRNA package 2.7.2 <span class="citation" data-cites="lorenz2011">(<a href="../references/references.html#ref-lorenz2011" role="doc-biblioref">Lorenz et al. 2011</a>)</span> and the Turner 2004 parameters <span class="citation" data-cites="mathews2004">(<a href="../references/references.html#ref-mathews2004" role="doc-biblioref">Mathews et al. 2004</a>)</span>. (a) Gibbs energy of the hairpin structure relative to the unfolded chain. (b) Fraction of molecules with at least one base pair, from the partition function (<a href="#sec-mfe" class="quarto-xref"><span>Section 7.4</span></a>); the dotted line marks one half.
+</figcaption>
+</figure>
+</div>
+<p>Two consequences matter for the origin of life. First, short helices are only marginally stable: a stem of four base pairs melts at about 64 °C, and one of two or three base pairs does not form at all at ordinary temperatures. Second, the melting temperature rises with the length and G–C content of a helix. A hot environment therefore favours single strands, and a cool one favours folded structures and duplexes; this trade-off returns in <a href="ch08-rna-copying-itself.html#sec-strand-separation" class="quarto-xref"><span>Section 8.3</span></a>, where two strands must be separated in order to be copied.</p>
+</section>
+</section>
+<section id="sec-secondary" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sec-secondary"><span class="header-section-number">7.3</span> Secondary structure</h2>
+<section id="definitions" class="level3">
+<h3 class="anchored" data-anchor-id="definitions">Definitions</h3>
+<p>The set of base pairs formed by an RNA molecule is its <strong>secondary structure</strong>. The three-dimensional arrangement of its atoms is its <strong>tertiary structure</strong>. The secondary structure is usually restricted to pairs that are <strong>nested</strong>: if nucleotide i pairs with j, and k pairs with l, with i &lt; k, then either i &lt; k &lt; l &lt; j (one pair lies inside the other) or i &lt; j &lt; k &lt; l (the pairs lie side by side). Pairs that cross, with i &lt; k &lt; j &lt; l, form a <strong>pseudoknot</strong>; pseudoknots occur in natural RNAs but are excluded from the standard prediction methods described below. A hairpin loop must contain at least three unpaired nucleotides, because a shorter loop cannot span the distance between the two strands of a helix <span class="citation" data-cites="turner2010">(<a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>.</p>
+<p>A nested secondary structure can be written in <strong>dot-bracket notation</strong>: a string of the same length as the sequence, in which each paired nucleotide is shown by a bracket, opening for the 5<span class="math inline">\('\)</span> partner and closing for the 3<span class="math inline">\('\)</span> partner, and each unpaired nucleotide by a dot. The hairpin of <a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> is written</p>
+<pre><code>GGACUUCGGUCC
+((((....))))</code></pre>
+</section>
+<section id="structural-elements" class="level3">
+<h3 class="anchored" data-anchor-id="structural-elements">Structural elements</h3>
+<p>A nested secondary structure can be decomposed uniquely into a small set of elements (<a href="#fig-elements" class="quarto-xref">Figure&nbsp;<span>7.3</span></a>):</p>
+<ul>
+<li>A <strong>helix</strong>, or <strong>stem</strong>, is a run of consecutive stacked base pairs.</li>
+<li>A <strong>hairpin loop</strong> is a loop of unpaired nucleotides closed by a single base pair at the end of a helix.</li>
+<li>A <strong>bulge</strong> is a loop between two helices with unpaired nucleotides on one strand only.</li>
+<li>An <strong>internal loop</strong> is a loop between two helices with unpaired nucleotides on both strands.</li>
+<li>A <strong>multibranch loop</strong>, or junction, is a loop from which three or more helices radiate.</li>
+<li>The <strong>exterior loop</strong> contains the unpaired nucleotides that are not enclosed by any base pair, including the two ends of the chain.</li>
+</ul>
+<p>In the energy model, every stack contributes the negative free energy of <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>, and every loop contributes a positive free energy, which accounts for the entropy lost when the unpaired nucleotides are held in a closed ring. The loop terms depend on the size and type of the loop and, for some small loops, on their sequence <span class="citation" data-cites="turner2010">(<a href="../references/references.html#ref-turner2010" role="doc-biblioref">Turner and Mathews 2010</a>)</span>. The stability of a structure is the sum of all these terms.</p>
+<div id="fig-elements" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-elements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-3_elements.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-elements-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Elements of RNA secondary structure in a 74-nucleotide example structure, drawn with the coordinate layout of the ViennaRNA package <span class="citation" data-cites="lorenz2011">(<a href="../references/references.html#ref-lorenz2011" role="doc-biblioref">Lorenz et al. 2011</a>)</span>. Paired nucleotides are connected by short lines across each helix.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-mfe" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="sec-mfe"><span class="header-section-number">7.4</span> Predicting structure</h2>
+<section id="the-number-of-possible-structures" class="level3">
+<h3 class="anchored" data-anchor-id="the-number-of-possible-structures">The number of possible structures</h3>
+<p>How many secondary structures can a chain form? If any two nucleotides could pair, subject only to nesting and the minimum hairpin loop of three, a simple recursion gives 65 possible structures for a chain of 10 nucleotides, about 1.1 × 10<sup>5</sup> for 20, 6.3 × 10<sup>11</sup> for 40 and 5.6 × 10<sup>25</sup> for 80 (author’s calculation). The number grows roughly by a constant factor with each added nucleotide, that is, exponentially. Base-pairing rules exclude most of these structures for a given sequence, but far too many remain to be examined one by one.</p>
+</section>
+<section id="minimum-free-energy-folding" class="level3">
+<h3 class="anchored" data-anchor-id="minimum-free-energy-folding">Minimum free energy folding</h3>
+<p>Under the conditions of a folding experiment, a molecule is expected to spend most of its time in the structure of lowest Gibbs energy, the <strong>minimum free energy (MFE) structure</strong>, if that structure is clearly more stable than all others (<a href="#eq-two-state" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>). Zuker and Stiegler showed in 1981 that the MFE structure can be found without listing all structures, by <strong>dynamic programming</strong> <span class="citation" data-cites="zuker1981">(<a href="../references/references.html#ref-zuker1981" role="doc-biblioref">Zuker and Stiegler 1981</a>)</span>. The method exploits nesting: the best structure of a segment from nucleotide i to nucleotide j can be built from the best structures of shorter segments, which are computed first and stored. The computing time grows only as the cube of the length of the chain, so that molecules of hundreds of nucleotides can be folded routinely on an ordinary computer.</p>
+<p>The same recursions can be used to calculate the sum of exp(−ΔG/RT) over all structures, the <strong>partition function</strong> Z. The probability of any single structure s is then</p>
+<p><span id="eq-boltzmann"><span class="math display">\[
+p(s) = \frac{\exp(-\Delta G_s / RT)}{Z}
+\tag{7.3}\]</span></span></p>
+<p>where ΔG<sub>s</sub> is its free energy relative to the unfolded chain. <a href="#eq-two-state" class="quarto-xref">Equation&nbsp;<span>7.2</span></a> is the special case of <a href="#eq-boltzmann" class="quarto-xref">Equation&nbsp;<span>7.3</span></a> with two states. These calculations are implemented in the ViennaRNA package <span class="citation" data-cites="lorenz2011">(<a href="../references/references.html#ref-lorenz2011" role="doc-biblioref">Lorenz et al. 2011</a>)</span>, used for all folding calculations in this chapter, which applies the Turner 2004 parameters <span class="citation" data-cites="mathews2004">(<a href="../references/references.html#ref-mathews2004" role="doc-biblioref">Mathews et al. 2004</a>)</span>.</p>
+<p>Predicted structures are models. The energy parameters were measured for short model duplexes and loops, in solutions of defined salt content; tertiary interactions, pseudoknots and bound metal ions are not included. Predictions are most reliable for short molecules with stable helices, and less reliable for long molecules whose function depends on tertiary structure.</p>
+</section>
+</section>
+<section id="sec-ribozymes" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="sec-ribozymes"><span class="header-section-number">7.5</span> From shape to function: ribozymes</h2>
+<section id="enzymes-made-of-rna" class="level3">
+<h3 class="anchored" data-anchor-id="enzymes-made-of-rna">Enzymes made of RNA</h3>
+<p>An <strong>enzyme</strong> is a biological catalyst (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>). Until the early 1980s, all known enzymes were proteins. A <strong>ribozyme</strong> is an RNA molecule that acts as a catalyst. The existence of ribozymes was demonstrated by two independent discoveries.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Kruger et al.&nbsp;1982; Guerrier-Takada et al.&nbsp;1983
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the ciliate <em>Tetrahymena</em>, the precursor of a ribosomal RNA contains an intervening sequence that must be removed, and the flanking pieces joined, in a process called <strong>splicing</strong>. The group of Thomas Cech found that the purified precursor RNA, incubated with monovalent and divalent cations and a guanosine factor, spliced itself: the intervening sequence was cut out, with guanosine attached to its 5<span class="math inline">\('\)</span> end, and the flanking RNA was joined. The authors concluded that “splicing activity is intrinsic to the structure of the RNA, and that enzymes, small nuclear RNAs and folding of the pre-rRNA into an RNP are unnecessary for these reactions” <span class="citation" data-cites="kruger1982">(<a href="../references/references.html#ref-kruger1982" role="doc-biblioref">Kruger et al. 1982</a>)</span>.</p>
+<p>Ribonuclease P is an enzyme of RNA and protein that cuts the precursors of transfer RNAs. The groups of Sidney Altman and Norman Pace showed that the RNA components of the enzyme from two bacteria, <em>Escherichia coli</em> and <em>Bacillus subtilis</em>, cleave the precursors on their own in solutions containing 60 mM Mg<sup>2+</sup>, or 10 mM Mg<sup>2+</sup> with 1 mM spermidine. Under these conditions, “the RNA acts as a true catalyst … whereas the protein moieties of the enzymes alone show no catalytic activity”; at lower Mg<sup>2+</sup> concentrations without spermidine both subunits were required <span class="citation" data-cites="guerriertakada1983">(<a href="../references/references.html#ref-guerriertakada1983" role="doc-biblioref">Guerrier-Takada et al. 1983</a>)</span>.</p>
+<p>Altman and Cech received the Nobel Prize in Chemistry 1989 “for their discovery of catalytic properties of RNA” <span class="citation" data-cites="nobel1989">(<a href="../references/references.html#ref-nobel1989" role="doc-biblioref">Nobel Prize Outreach, n.d.</a>)</span>.</p>
+</div>
+</div>
+<p>Catalysis by RNA depends on folding. A ribozyme positions the reacting groups of its substrate next to each other, and next to bound metal ions or to functional groups of its own nucleotides, so that the transition state (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>) is stabilised. Only a molecule with a defined three-dimensional structure can do this. A ribozyme is therefore both a sequence, which can in principle be copied, and a folded catalyst. This dual role is the basis of the RNA world hypothesis, introduced in <a href="ch08-rna-copying-itself.html#sec-templating" class="quarto-xref"><span>Section 8.1</span></a>.</p>
+</section>
+<section id="in-vitro-selection" class="level3">
+<h3 class="anchored" data-anchor-id="in-vitro-selection">In vitro selection</h3>
+<p>The natural ribozymes were discovered in living cells. In 1990, two groups showed that RNA molecules with a desired property can also be isolated from a large collection of synthetic sequences, by <strong>in vitro selection</strong>. The procedure has three steps, repeated in cycles:</p>
+<ol type="1">
+<li>A <strong>pool</strong> of RNA molecules is prepared in which part of the sequence is random, so that the pool contains a very large number of different sequences.</li>
+<li>The molecules that have the desired property, for example binding to a target molecule fixed on a solid support, are separated from those that do not.</li>
+<li>The selected molecules are copied and amplified with enzymes to form the pool for the next cycle.</li>
+</ol>
+<p>Because each cycle enriches the pool in active molecules, a few cycles can isolate sequences that were initially extremely rare. RNA molecules selected to bind a specific target are called <strong>aptamers</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Ellington and Szostak 1990; Tuerk and Gold 1990
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ellington and Szostak isolated, from a population of random-sequence RNA molecules, subpopulations that bind specifically to a variety of organic dyes. They estimated that “roughly one in 10<sup>10</sup> random sequence RNA molecules folds in such a way as to create a specific binding site for small ligands” <span class="citation" data-cites="ellington1990">(<a href="../references/references.html#ref-ellington1990" role="doc-biblioref">Ellington and Szostak 1990</a>)</span>.</p>
+<p>Tuerk and Gold randomised an eight-nucleotide region of an RNA that binds the DNA polymerase of bacteriophage T4, giving a pool of 4<sup>8</sup> = 65 536 sequences. Cycles of selection for binding and amplification yielded two sequences: the natural sequence, and a variant differing from it at four positions, with equivalent binding constants. The title of their paper names the method: systematic evolution of ligands by exponential enrichment, abbreviated SELEX <span class="citation" data-cites="tuerk1990">(<a href="../references/references.html#ref-tuerk1990" role="doc-biblioref">Tuerk and Gold 1990</a>)</span>.</p>
+</div>
+</div>
+<p>In vitro selection was soon applied to catalysis. Bartel and Szostak isolated new ribozymes from a large pool of random-sequence RNA. The ribozymes ligate two RNA molecules aligned on a template, by catalysing the attack of a 3<span class="math inline">\('\)</span>-hydroxy group on an adjacent 5<span class="math inline">\('\)</span>-triphosphate. This forms a 3<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span>-phosphodiester bond, the reaction used by the protein enzymes that synthesise RNA in cells. After further cycles of selection, ribozymes emerged whose reaction rates were 7 million times faster than the uncatalysed reaction <span class="citation" data-cites="bartel1993">(<a href="../references/references.html#ref-bartel1993" role="doc-biblioref">Bartel and Szostak 1993</a>)</span>. Ribozymes that join RNA strands are the starting point for the ribozyme polymerases discussed in <a href="ch08-rna-copying-itself.html#sec-polymerase-ribozymes" class="quarto-xref"><span>Section 8.5</span></a>.</p>
+</section>
+</section>
+<section id="sec-sequence-space" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="sec-sequence-space"><span class="header-section-number">7.6</span> How common is function?</h2>
+<section id="sequence-space" class="level3">
+<h3 class="anchored" data-anchor-id="sequence-space">Sequence space</h3>
+<p>The set of all sequences of a given length is called <strong>sequence space</strong>. With four nucleotides, there are 4<sup>n</sup> sequences of length n.&nbsp;For n = 40 this is 4<sup>40</sup> <span class="math inline">\(\approx\)</span> 1.2 × 10<sup>24</sup>, or 2.0 mol of molecules. The mean mass of an RNA residue is about 321 g mol<sup>−1</sup> (the mean molar mass of the four nucleoside monophosphates in <a href="ch05-assembling-nucleotides.html#tbl-nucleosides" class="quarto-xref">Table&nbsp;<span>5.1</span></a>, 339.5 g mol<sup>−1</sup>, minus one water molecule, 18.0 g mol<sup>−1</sup>), so a single copy of every 40-mer would have a mass of about 26 kg. For n = 100, 4<sup>100</sup> <span class="math inline">\(\approx\)</span> 1.6 × 10<sup>60</sup>. This is far more than the number of atoms in the Earth, which is less than 4 × 10<sup>51</sup>: that is the number the Earth would contain if its whole mass, 5.9722 × 10<sup>24</sup> kg (<a href="ch03-feedstock-early-earth.html#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>), were made of hydrogen, the lightest atom, with a mass of 1.67 × 10<sup>−27</sup> kg (<a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a>). Any real population of RNA molecules, whether in a laboratory or on the early Earth, contains only a vanishingly small fraction of sequence space for chains of this length.</p>
+<p>The question for the origin of life is therefore not whether a given functional sequence was present, but how many functional sequences there are, and whether a random sample can be expected to contain any of them. A pool of 10<sup>15</sup> molecules, for example, corresponds to 1.7 nmol, about 21 <span class="math inline">\(\mu\)</span>g of 40-mers. If one sequence in 10<sup>10</sup> binds a given small molecule, as estimated by <span class="citation" data-cites="ellington1990">Ellington and Szostak (<a href="../references/references.html#ref-ellington1990" role="doc-biblioref">1990</a>)</span>, such a pool would contain about 10<sup>5</sup> binders.</p>
+</section>
+<section id="most-random-sequences-fold" class="level3">
+<h3 class="anchored" data-anchor-id="most-random-sequences-fold">Most random sequences fold</h3>
+<p>A necessary condition for function is folding. <a href="#fig-random" class="quarto-xref">Figure&nbsp;<span>7.4</span></a> shows the MFE structures of random RNA sequences, computed with ViennaRNA at 37 °C (author’s calculation; 4000 sequences each of length 20 and 40, and 2000 of length 80, for each alphabet). With all four nucleotides, 35 percent of random 20-mers have no stable structure, but only 0.9 percent of random 40-mers and none of the 80-mers; the mean MFE is −5.9, −26.4 and −72.5 kJ mol<sup>−1</sup> for the three lengths, and about half of the nucleotides of an 80-mer are paired. The structures are also diverse: the 4000 random 40-mers gave 3882 different MFE structures, and the 4000 random 20-mers gave 682.</p>
+<div id="fig-random" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-random-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-4_random.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-random-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: Folding of random RNA sequences at 37 °C, calculated with ViennaRNA and the Turner 2004 parameters (author’s calculation). (a) Distribution of the minimum free energy of 4000 random 40-mers made of four nucleotides, or of only A and U, or of only G and C. (b) Mean fraction of nucleotides paired in the MFE structure as a function of length.
+</figcaption>
+</figure>
+</div>
+<p>Folding depends strongly on the alphabet. Sequences made only of A and U fold weakly, because A–U stacks are the least stable in <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>: 84 percent of random 20-mers of A and U have no stable structure, and the mean MFE of the 40-mers is only −9.4 kJ mol<sup>−1</sup>. Sequences made only of G and C fold very strongly (mean MFE of the 40-mers −115.3 kJ mol<sup>−1</sup>), but they can form many alternative structures of similar stability, and their helices are hard to melt. The four-letter alphabet lies between these extremes.</p>
+</section>
+<section id="a-ribozyme-with-two-letters" class="level3">
+<h3 class="anchored" data-anchor-id="a-ribozyme-with-two-letters">A ribozyme with two letters</h3>
+<p>Must a functional RNA contain all four nucleotides? Reader and Joyce used in vitro evolution to obtain ligase ribozymes composed of only two nucleotides, 2,6-diaminopurine and uracil. 2,6-Diaminopurine is an adenine analogue with an additional amino group, which allows it to form three hydrogen bonds with uracil instead of the two of an A–U pair. These ribozymes catalyse the template-directed joining of two RNA molecules, one bearing a 5<span class="math inline">\('\)</span>-triphosphate and the other a 3<span class="math inline">\('\)</span>-hydroxy group, and form specifically 3<span class="math inline">\('\)</span>,5<span class="math inline">\('\)</span>-phosphodiester bonds. The fastest had a catalytic rate about 36 000 times the uncatalysed rate <span class="citation" data-cites="reader2002">(<a href="../references/references.html#ref-reader2002" role="doc-biblioref">Reader and Joyce 2002</a>)</span>. This is far below the rate enhancement of the four-letter ligases of <span class="citation" data-cites="bartel1993">Bartel and Szostak (<a href="../references/references.html#ref-bartel1993" role="doc-biblioref">1993</a>)</span>, but it shows that a binary alphabet can encode catalysis.</p>
+<p>These results establish two facts and leave one open question. Established: most random RNA sequences longer than a few tens of nucleotides fold into some structure, and functional sequences, such as binders and ligases, can be isolated from random-sequence pools in the laboratory. Open question: how frequent functional sequences are for the activities that matter most for the origin of life, above all the copying of RNA, and whether the short chains that prebiotic chemistry can make (<a href="ch06-joining-nucleotides.html#sec-lengths" class="quarto-xref"><span>Section 6.7</span></a>) are long enough to contain them. <a href="ch08-rna-copying-itself.html" class="quarto-xref"><span>Chapter 8</span></a> takes up this question.</p>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>RNA forms Watson-Crick pairs, A–U (two hydrogen bonds) and G–C (three), and G·U wobble pairs. Paired strands are antiparallel and wind into a right-handed double helix.</li>
+<li>Helix stability comes from base stacking as well as pairing. In the nearest-neighbour model the free energy of a helix is the sum of stack terms plus an initiation term; G–C stacks are the most stable (down to −14.2 kJ mol<sup>−1</sup> at 37 °C), A–U stacks the least.</li>
+<li>The fraction of folded molecules is 1/(1 + exp(ΔG/RT)). Because both ΔH and ΔS of helix formation are negative, helices melt on heating; a four-base-pair hairpin with a UUCG loop melts at about 64 °C.</li>
+<li>Secondary structure is the set of nested base pairs, written in dot-bracket notation and composed of helices, hairpin loops, bulges, internal loops, multibranch loops and the exterior loop. The minimum free energy structure is found by dynamic programming.</li>
+<li>Ribozymes are catalytic RNA molecules, discovered in self-splicing and in ribonuclease P (Nobel Prize 1989). In vitro selection isolates binders and ribozymes, including RNA ligases, from random-sequence pools.</li>
+<li>Sequence space is vast (4<sup>40</sup> <span class="math inline">\(\approx\)</span> 1.2 × 10<sup>24</sup> sequences of length 40). Most random sequences of 40 or more nucleotides fold; about one in 10<sup>10</sup> binds a given small molecule; a ribozyme can be built from only two nucleotides. How common copying activity is remains an open question.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>Write the sequence complementary to 5<span class="math inline">\('\)</span>-GCAUUG-3<span class="math inline">\('\)</span> in the 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction. Which base pairs does the duplex contain, and how many hydrogen bonds hold it together?</li>
+<li>Explain why a G·U pair can occur within a helix, whereas an A·C or a G·A pair usually cannot form there in the same way.</li>
+<li>Using <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>, calculate the sum of the stack free energies of the duplex 5<span class="math inline">\('\)</span>-GGACUC-3<span class="math inline">\('\)</span>/3<span class="math inline">\('\)</span>-CCUGAG-5<span class="math inline">\('\)</span> and check the value given in <a href="#sec-duplex-stability" class="quarto-xref"><span>Section 7.2</span></a>.</li>
+<li>Using <a href="#tbl-stacks" class="quarto-xref">Table&nbsp;<span>7.1</span></a>, compare the stack free energies of 5<span class="math inline">\('\)</span>-GCGC-3<span class="math inline">\('\)</span> and 5<span class="math inline">\('\)</span>-CGCG-3<span class="math inline">\('\)</span>, each paired with its complement. Which helix is more stable?</li>
+<li>Using <a href="#eq-two-state" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>, calculate the fraction folded at 37 °C for structures with ΔG = −5, −10 and −20 kJ mol<sup>−1</sup>.</li>
+<li>The hairpin of <a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a> has ΔG = −9.1 kJ mol<sup>−1</sup> at 50 °C. Calculate the fraction folded at this temperature with <a href="#eq-two-state" class="quarto-xref">Equation&nbsp;<span>7.2</span></a>.</li>
+<li>Using ΔH <span class="math inline">\(\approx\)</span> −220 kJ mol<sup>−1</sup> and ΔS <span class="math inline">\(\approx\)</span> −0.65 kJ K<sup>−1</sup> mol<sup>−1</sup>, calculate ΔG at 37 °C and T<sub>m</sub> for the hairpin of <a href="#fig-melting" class="quarto-xref">Figure&nbsp;<span>7.2</span></a>.</li>
+<li>Explain, in terms of enthalpy and entropy, why a helix of two base pairs closed by a hairpin loop does not form at 37 °C.</li>
+<li>Write the dot-bracket notation for a 20-nucleotide chain in which nucleotides 1 to 5 pair with 16 to 20 and nucleotides 6 to 15 are unpaired. Which structural element do nucleotides 6 to 15 form?</li>
+<li>Which of the following pairs of base pairs are nested and which form a pseudoknot: (2, 10) and (4, 8); (2, 10) and (12, 18); (2, 10) and (6, 15)?</li>
+<li>Calculate the number of different RNA sequences of length 30, and the mass of one copy of each, using a residue mass of 321 g mol<sup>−1</sup>.</li>
+<li>In the experiment of <span class="citation" data-cites="tuerk1990">Tuerk and Gold (<a href="../references/references.html#ref-tuerk1990" role="doc-biblioref">1990</a>)</span>, how many cycles of 10-fold enrichment would be needed to raise a sequence from a frequency of 1 in 65 536 to more than half of the pool, assuming the other sequences are not enriched?</li>
+<li>Explain why random sequences made only of A and U fold more weakly than sequences of all four nucleotides, and why the two-letter ribozyme of <span class="citation" data-cites="reader2002">Reader and Joyce (<a href="../references/references.html#ref-reader2002" role="doc-biblioref">2002</a>)</span> used 2,6-diaminopurine instead of adenine.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-bartel1993" class="csl-entry" role="listitem">
+Bartel, D. P., and J. W. Szostak. 1993. <span>“Isolation of New Ribozymes from a Large Pool of Random Sequences.”</span> <em>Science</em> 261 (5127): 1411–18. <a href="https://doi.org/10.1126/science.7690155">https://doi.org/10.1126/science.7690155</a>.
+</div>
+<div id="ref-ellington1990" class="csl-entry" role="listitem">
+Ellington, A. D., and J. W. Szostak. 1990. <span>“In Vitro Selection of <span>RNA</span> Molecules That Bind Specific Ligands.”</span> <em>Nature</em> 346 (6287): 818–22. <a href="https://doi.org/10.1038/346818a0">https://doi.org/10.1038/346818a0</a>.
+</div>
+<div id="ref-guerriertakada1983" class="csl-entry" role="listitem">
+Guerrier-Takada, C., K. Gardiner, T. Marsh, N. Pace, and S. Altman. 1983. <span>“The <span>RNA</span> Moiety of Ribonuclease <span>P</span> Is the Catalytic Subunit of the Enzyme.”</span> <em>Cell</em> 35 (3 Pt 2): 849–57. <a href="https://doi.org/10.1016/0092-8674(83)90117-4">https://doi.org/10.1016/0092-8674(83)90117-4</a>.
+</div>
+<div id="ref-kruger1982" class="csl-entry" role="listitem">
+Kruger, K., P. J. Grabowski, A. J. Zaug, J. Sands, D. E. Gottschling, and T. R. Cech. 1982. <span>“Self-Splicing <span>RNA</span>: Autoexcision and Autocyclization of the Ribosomal <span>RNA</span> Intervening Sequence of <span>Tetrahymena</span>.”</span> <em>Cell</em> 31 (1): 147–57. <a href="https://doi.org/10.1016/0092-8674(82)90414-7">https://doi.org/10.1016/0092-8674(82)90414-7</a>.
+</div>
+<div id="ref-lorenz2011" class="csl-entry" role="listitem">
+Lorenz, R., S. H. Bernhart, C. Höner zu Siederdissen, H. Tafer, C. Flamm, P. F. Stadler, and I. L. Hofacker. 2011. <span>“<span>ViennaRNA</span> Package 2.0.”</span> <em>Algorithms for Molecular Biology</em> 6: 26. <a href="https://doi.org/10.1186/1748-7188-6-26">https://doi.org/10.1186/1748-7188-6-26</a>.
+</div>
+<div id="ref-mathews2004" class="csl-entry" role="listitem">
+Mathews, D. H., M. D. Disney, J. L. Childs, S. J. Schroeder, M. Zuker, and D. H. Turner. 2004. <span>“Incorporating Chemical Modification Constraints into a Dynamic Programming Algorithm for Prediction of <span>RNA</span> Secondary Structure.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 101 (19): 7287–92. <a href="https://doi.org/10.1073/pnas.0401799101">https://doi.org/10.1073/pnas.0401799101</a>.
+</div>
+<div id="ref-nobel1989" class="csl-entry" role="listitem">
+Nobel Prize Outreach. n.d. <span>“The Nobel Prize in Chemistry 1989.”</span> <a href="https://www.nobelprize.org/prizes/chemistry/1989/summary/">https://www.nobelprize.org/prizes/chemistry/1989/summary/</a>.
+</div>
+<div id="ref-reader2002" class="csl-entry" role="listitem">
+Reader, J. S., and G. F. Joyce. 2002. <span>“A Ribozyme Composed of Only Two Different Nucleotides.”</span> <em>Nature</em> 420 (6917): 841–44. <a href="https://doi.org/10.1038/nature01185">https://doi.org/10.1038/nature01185</a>.
+</div>
+<div id="ref-tuerk1990" class="csl-entry" role="listitem">
+Tuerk, C., and L. Gold. 1990. <span>“Systematic Evolution of Ligands by Exponential Enrichment: <span>RNA</span> Ligands to Bacteriophage <span>T4</span> <span>DNA</span> Polymerase.”</span> <em>Science</em> 249 (4968): 505–10. <a href="https://doi.org/10.1126/science.2200121">https://doi.org/10.1126/science.2200121</a>.
+</div>
+<div id="ref-turner2010" class="csl-entry" role="listitem">
+Turner, D. H., and D. H. Mathews. 2010. <span>“<span>NNDB</span>: The Nearest Neighbor Parameter Database for Predicting Stability of Nucleic Acid Secondary Structure.”</span> <em>Nucleic Acids Research</em> 38 (Database issue): D280–82. <a href="https://doi.org/10.1093/nar/gkp892">https://doi.org/10.1093/nar/gkp892</a>.
+</div>
+<div id="ref-watson1953" class="csl-entry" role="listitem">
+Watson, J. D., and F. H. C. Crick. 1953. <span>“Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid.”</span> <em>Nature</em> 171 (4356): 737–38. <a href="https://doi.org/10.1038/171737a0">https://doi.org/10.1038/171737a0</a>.
+</div>
+<div id="ref-zuker1981" class="csl-entry" role="listitem">
+Zuker, M., and P. Stiegler. 1981. <span>“Optimal Computer Folding of Large <span>RNA</span> Sequences Using Thermodynamics and Auxiliary Information.”</span> <em>Nucleic Acids Research</em> 9 (1): 133–48. <a href="https://doi.org/10.1093/nar/9.1.133">https://doi.org/10.1093/nar/9.1.133</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch06-joining-nucleotides.html" class="pagination-link" aria-label="Joining Nucleotides into Chains">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch08-rna-copying-itself.html" class="pagination-link" aria-label="RNA Copying Itself">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
