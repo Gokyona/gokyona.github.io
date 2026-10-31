@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; How Atoms Join into Molecules – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch03-feedstock-early-earth.html" rel="next">
+<link href="../chapters/ch01-where-atoms-come-from.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch02-how-atoms-join.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-orbitals" id="toc-sec-orbitals" class="nav-link" data-scroll-target="#sec-orbitals"><span class="header-section-number">2.1</span> Electrons and orbitals</a>
+  <ul class="collapse">
+  <li><a href="#from-nuclei-to-chemistry" id="toc-from-nuclei-to-chemistry" class="nav-link" data-scroll-target="#from-nuclei-to-chemistry">From nuclei to chemistry</a></li>
+  <li><a href="#energy-levels-and-the-electronvolt" id="toc-energy-levels-and-the-electronvolt" class="nav-link" data-scroll-target="#energy-levels-and-the-electronvolt">Energy levels and the electronvolt</a></li>
+  <li><a href="#orbitals-shells-and-subshells" id="toc-orbitals-shells-and-subshells" class="nav-link" data-scroll-target="#orbitals-shells-and-subshells">Orbitals, shells and subshells</a></li>
+  <li><a href="#the-pauli-exclusion-principle" id="toc-the-pauli-exclusion-principle" class="nav-link" data-scroll-target="#the-pauli-exclusion-principle">The Pauli exclusion principle</a></li>
+  <li><a href="#electron-configurations" id="toc-electron-configurations" class="nav-link" data-scroll-target="#electron-configurations">Electron configurations</a></li>
+  <li><a href="#valence-electrons" id="toc-valence-electrons" class="nav-link" data-scroll-target="#valence-electrons">Valence electrons</a></li>
+  <li><a href="#ionisation-energy-a-measure-of-how-tightly-electrons-are-held" id="toc-ionisation-energy-a-measure-of-how-tightly-electrons-are-held" class="nav-link" data-scroll-target="#ionisation-energy-a-measure-of-how-tightly-electrons-are-held">Ionisation energy: a measure of how tightly electrons are held</a></li>
+  <li><a href="#consequence-for-this-book" id="toc-consequence-for-this-book" class="nav-link" data-scroll-target="#consequence-for-this-book">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-covalent" id="toc-sec-covalent" class="nav-link" data-scroll-target="#sec-covalent"><span class="header-section-number">2.2</span> The covalent bond</a>
+  <ul class="collapse">
+  <li><a href="#sharing-a-pair-of-electrons" id="toc-sharing-a-pair-of-electrons" class="nav-link" data-scroll-target="#sharing-a-pair-of-electrons">Sharing a pair of electrons</a></li>
+  <li><a href="#completing-a-shell" id="toc-completing-a-shell" class="nav-link" data-scroll-target="#completing-a-shell">Completing a shell</a></li>
+  <li><a href="#lewis-structures" id="toc-lewis-structures" class="nav-link" data-scroll-target="#lewis-structures">Lewis structures</a></li>
+  <li><a href="#double-and-triple-bonds" id="toc-double-and-triple-bonds" class="nav-link" data-scroll-target="#double-and-triple-bonds">Double and triple bonds</a></li>
+  <li><a href="#consequence-for-this-book-1" id="toc-consequence-for-this-book-1" class="nav-link" data-scroll-target="#consequence-for-this-book-1">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-geometry" id="toc-sec-geometry" class="nav-link" data-scroll-target="#sec-geometry"><span class="header-section-number">2.3</span> Molecular shape and why carbon forms four bonds</a>
+  <ul class="collapse">
+  <li><a href="#molecules-have-shapes" id="toc-molecules-have-shapes" class="nav-link" data-scroll-target="#molecules-have-shapes">Molecules have shapes</a></li>
+  <li><a href="#electron-pairs-repel-each-other" id="toc-electron-pairs-repel-each-other" class="nav-link" data-scroll-target="#electron-pairs-repel-each-other">Electron pairs repel each other</a></li>
+  <li><a href="#hybrid-orbitals" id="toc-hybrid-orbitals" class="nav-link" data-scroll-target="#hybrid-orbitals">Hybrid orbitals</a></li>
+  <li><a href="#consequence-for-this-book-2" id="toc-consequence-for-this-book-2" class="nav-link" data-scroll-target="#consequence-for-this-book-2">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-polar" id="toc-sec-polar" class="nav-link" data-scroll-target="#sec-polar"><span class="header-section-number">2.4</span> Electronegativity and polar bonds</a>
+  <ul class="collapse">
+  <li><a href="#unequal-sharing" id="toc-unequal-sharing" class="nav-link" data-scroll-target="#unequal-sharing">Unequal sharing</a></li>
+  <li><a href="#electronegativities-of-the-rna-elements" id="toc-electronegativities-of-the-rna-elements" class="nav-link" data-scroll-target="#electronegativities-of-the-rna-elements">Electronegativities of the RNA elements</a></li>
+  <li><a href="#polar-bonds" id="toc-polar-bonds" class="nav-link" data-scroll-target="#polar-bonds">Polar bonds</a></li>
+  <li><a href="#dipole-moments" id="toc-dipole-moments" class="nav-link" data-scroll-target="#dipole-moments">Dipole moments</a></li>
+  <li><a href="#consequence-for-this-book-3" id="toc-consequence-for-this-book-3" class="nav-link" data-scroll-target="#consequence-for-this-book-3">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-intermolecular" id="toc-sec-intermolecular" class="nav-link" data-scroll-target="#sec-intermolecular"><span class="header-section-number">2.5</span> Forces between molecules</a>
+  <ul class="collapse">
+  <li><a href="#bonds-within-molecules-and-forces-between-them" id="toc-bonds-within-molecules-and-forces-between-them" class="nav-link" data-scroll-target="#bonds-within-molecules-and-forces-between-them">Bonds within molecules and forces between them</a></li>
+  <li><a href="#dipole-dipole-and-dispersion-forces" id="toc-dipole-dipole-and-dispersion-forces" class="nav-link" data-scroll-target="#dipole-dipole-and-dispersion-forces">Dipole-dipole and dispersion forces</a></li>
+  <li><a href="#the-hydrogen-bond" id="toc-the-hydrogen-bond" class="nav-link" data-scroll-target="#the-hydrogen-bond">The hydrogen bond</a></li>
+  <li><a href="#evidence-from-boiling-points" id="toc-evidence-from-boiling-points" class="nav-link" data-scroll-target="#evidence-from-boiling-points">Evidence from boiling points</a></li>
+  <li><a href="#the-hydrophobic-effect" id="toc-the-hydrophobic-effect" class="nav-link" data-scroll-target="#the-hydrophobic-effect">The hydrophobic effect</a></li>
+  <li><a href="#consequence-for-this-book-4" id="toc-consequence-for-this-book-4" class="nav-link" data-scroll-target="#consequence-for-this-book-4">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-water" id="toc-sec-water" class="nav-link" data-scroll-target="#sec-water"><span class="header-section-number">2.6</span> Water as a solvent</a>
+  <ul class="collapse">
+  <li><a href="#why-water-matters-here" id="toc-why-water-matters-here" class="nav-link" data-scroll-target="#why-water-matters-here">Why water matters here</a></li>
+  <li><a href="#a-small-polar-molecule-with-four-hydrogen-bonding-sites" id="toc-a-small-polar-molecule-with-four-hydrogen-bonding-sites" class="nav-link" data-scroll-target="#a-small-polar-molecule-with-four-hydrogen-bonding-sites">A small, polar molecule with four hydrogen-bonding sites</a></li>
+  <li><a href="#dissolving-ions" id="toc-dissolving-ions" class="nav-link" data-scroll-target="#dissolving-ions">Dissolving ions</a></li>
+  <li><a href="#self-ionisation-of-water" id="toc-self-ionisation-of-water" class="nav-link" data-scroll-target="#self-ionisation-of-water">Self-ionisation of water</a></li>
+  <li><a href="#acids-bases-and-ph" id="toc-acids-bases-and-ph" class="nav-link" data-scroll-target="#acids-bases-and-ph">Acids, bases and pH</a></li>
+  <li><a href="#consequence-for-this-book-5" id="toc-consequence-for-this-book-5" class="nav-link" data-scroll-target="#consequence-for-this-book-5">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-energy" id="toc-sec-energy" class="nav-link" data-scroll-target="#sec-energy"><span class="header-section-number">2.7</span> Energy in chemistry</a>
+  <ul class="collapse">
+  <li><a href="#bonds-store-energy" id="toc-bonds-store-energy" class="nav-link" data-scroll-target="#bonds-store-energy">Bonds store energy</a></li>
+  <li><a href="#enthalpy" id="toc-enthalpy" class="nav-link" data-scroll-target="#enthalpy">Enthalpy</a></li>
+  <li><a href="#entropy" id="toc-entropy" class="nav-link" data-scroll-target="#entropy">Entropy</a></li>
+  <li><a href="#gibbs-energy" id="toc-gibbs-energy" class="nav-link" data-scroll-target="#gibbs-energy">Gibbs energy</a></li>
+  <li><a href="#thermodynamically-favourable-is-not-the-same-as-fast" id="toc-thermodynamically-favourable-is-not-the-same-as-fast" class="nav-link" data-scroll-target="#thermodynamically-favourable-is-not-the-same-as-fast">Thermodynamically favourable is not the same as fast</a></li>
+  <li><a href="#consequence-for-this-book-6" id="toc-consequence-for-this-book-6" class="nav-link" data-scroll-target="#consequence-for-this-book-6">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#sec-rates" id="toc-sec-rates" class="nav-link" data-scroll-target="#sec-rates"><span class="header-section-number">2.8</span> Reaction rates</a>
+  <ul class="collapse">
+  <li><a href="#rate-and-rate-constant" id="toc-rate-and-rate-constant" class="nav-link" data-scroll-target="#rate-and-rate-constant">Rate and rate constant</a></li>
+  <li><a href="#activation-energy" id="toc-activation-energy" class="nav-link" data-scroll-target="#activation-energy">Activation energy</a></li>
+  <li><a href="#the-arrhenius-equation" id="toc-the-arrhenius-equation" class="nav-link" data-scroll-target="#the-arrhenius-equation">The Arrhenius equation</a></li>
+  <li><a href="#catalysts" id="toc-catalysts" class="nav-link" data-scroll-target="#catalysts">Catalysts</a></li>
+  <li><a href="#consequence-for-this-book-7" id="toc-consequence-for-this-book-7" class="nav-link" data-scroll-target="#consequence-for-this-book-7">Consequence for this book</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch02" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Describe how the electrons of an atom are arranged in shells, subshells and orbitals, and write the electron configurations of hydrogen, carbon, nitrogen, oxygen and phosphorus.</li>
+<li>Explain how atoms form covalent bonds by sharing electrons, and predict the number of bonds formed by each of the five elements of RNA.</li>
+<li>Explain the geometry of simple molecules, the polarity of bonds, and the forces that act between molecules, with water as the central example.</li>
+<li>Use the concepts of enthalpy, entropy and Gibbs free energy to decide whether a reaction can occur, and explain how temperature and catalysts affect its rate.</li>
+</ol>
+</section>
+<section id="sec-orbitals" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-orbitals"><span class="header-section-number">2.1</span> Electrons and orbitals</h2>
+<section id="from-nuclei-to-chemistry" class="level3">
+<h3 class="anchored" data-anchor-id="from-nuclei-to-chemistry">From nuclei to chemistry</h3>
+<p>Chapter 1 followed the nuclei of hydrogen, carbon, nitrogen, oxygen and phosphorus from their origin in the Big Bang and in stars. Nuclei, however, do not take part in chemical reactions. In every process described from here onwards, nuclei remain unchanged, and only the arrangement of electrons changes. Chemistry is the study of these rearrangements. To understand why atoms combine as they do, it is first necessary to know how the electrons of an isolated atom are arranged.</p>
+</section>
+<section id="energy-levels-and-the-electronvolt" class="level3">
+<h3 class="anchored" data-anchor-id="energy-levels-and-the-electronvolt">Energy levels and the electronvolt</h3>
+<p>The electrons of an atom cannot have any energy whatever. They occupy a set of discrete <strong>energy levels</strong>, determined by the attraction of the positive nucleus and the repulsion between electrons. This is a consequence of quantum mechanics, the physical theory that describes particles on the scale of atoms; its mathematical form is beyond the scope of this book, but its results can be stated precisely.</p>
+<p>Energies on the atomic scale are conveniently measured in <strong>electronvolts</strong> (eV). One electronvolt is the energy gained by a particle with one elementary charge when it moves through an electric potential difference of one volt. Because the elementary charge is exact (<a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a>), so is the electronvolt: 1 eV = 1.602 176 634 × 10<sup>−19</sup> J <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>.</p>
+</section>
+<section id="orbitals-shells-and-subshells" class="level3">
+<h3 class="anchored" data-anchor-id="orbitals-shells-and-subshells">Orbitals, shells and subshells</h3>
+<p>The state of an electron in an atom is described by an <strong>orbital</strong>: a region around the nucleus, described by a mathematical function called a wavefunction, in which an electron of a given energy is likely to be found. An electron in an atom does not move along a fixed path; the orbital gives only the probability of finding it at each point in space.</p>
+<p>Orbitals are grouped as follows.</p>
+<ul>
+<li>A <strong>shell</strong> is a set of orbitals with the same <strong>principal quantum number</strong> n, which takes the values 1, 2, 3, … Electrons in shells with larger n are, on average, farther from the nucleus and less tightly bound.</li>
+<li>Within a shell, orbitals are divided into <strong>subshells</strong>, labelled s, p, d and f.&nbsp;The shell with n = 1 contains only an s subshell; n = 2 contains s and p; n = 3 contains s, p and d.</li>
+<li>An s subshell contains one orbital, a p subshell three, a d subshell five and an f subshell seven.</li>
+</ul>
+<p>A subshell is written with its shell number followed by its letter: 1s, 2s, 2p, 3s, 3p, 3d and so on. An s orbital is spherically symmetric about the nucleus. The three p orbitals of a subshell each have two lobes on opposite sides of the nucleus and are directed along three mutually perpendicular axes, conventionally labelled x, y and z (<a href="#fig-orbitals" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>).</p>
+<div id="fig-orbitals" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-orbitals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-1_orbitals.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-orbitals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Schematic shapes of s and p orbitals, drawn as two-dimensional outlines. Each outline marks the region in which an electron in that orbital is most likely to be found. An s orbital is spherical; the three p orbitals of a subshell are directed along perpendicular axes. The two lobes of a p orbital have opposite signs of the wavefunction, indicated by the two colours.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-pauli-exclusion-principle" class="level3">
+<h3 class="anchored" data-anchor-id="the-pauli-exclusion-principle">The Pauli exclusion principle</h3>
+<p>The number of electrons that each orbital can hold is fixed by the <strong>Pauli exclusion principle</strong>: no two electrons in an atom can be in exactly the same quantum state. Electrons possess an intrinsic property called <strong>spin</strong>, which can take one of two values, conventionally written as “up” and “down”. An orbital can therefore hold at most two electrons, and only if their spins are opposite.</p>
+<p>It follows that an s subshell holds at most 2 electrons, a p subshell 6, a d subshell 10 and an f subshell 14. Shell n contains n<sup>2</sup> orbitals and can therefore hold at most 2n<sup>2</sup> electrons: 2 in the first shell, 8 in the second and 18 in the third.</p>
+</section>
+<section id="electron-configurations" class="level3">
+<h3 class="anchored" data-anchor-id="electron-configurations">Electron configurations</h3>
+<p>The <strong>electron configuration</strong> of an atom lists how many electrons occupy each subshell. It is written as the subshell labels with the number of electrons as a superscript. In the lowest-energy state of an atom, its ground state (<a href="ch01-where-atoms-come-from.html#sec-stars" class="quarto-xref"><span>Section 1.3</span></a>), the subshells are filled approximately in order of increasing energy: 1s, 2s, 2p, 3s, 3p, then 4s and 3d. <a href="#tbl-configurations" class="quarto-xref">Table&nbsp;<span>2.1</span></a> gives the measured ground-state configurations of the five elements of RNA, together with some of their neighbours in the periodic table <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>.</p>
+<div id="tbl-configurations" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Ground-state electron configurations and first ionisation energies of selected atoms <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>. [Ne] stands for the configuration of neon, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>. Ionisation energies are rounded to three decimal places.
+</figcaption>
+<div aria-describedby="tbl-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Z</th>
+<th>Electron configuration</th>
+<th>Valence electrons</th>
+<th>First ionisation energy (eV)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>1</td>
+<td>1s<sup>1</sup></td>
+<td>1</td>
+<td>13.598</td>
+</tr>
+<tr class="even">
+<td>Helium</td>
+<td>2</td>
+<td>1s<sup>2</sup></td>
+<td>(2, full shell)</td>
+<td>24.587</td>
+</tr>
+<tr class="odd">
+<td>Carbon</td>
+<td>6</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></td>
+<td>4</td>
+<td>11.260</td>
+</tr>
+<tr class="even">
+<td>Nitrogen</td>
+<td>7</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup></td>
+<td>5</td>
+<td>14.534</td>
+</tr>
+<tr class="odd">
+<td>Oxygen</td>
+<td>8</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup></td>
+<td>6</td>
+<td>13.618</td>
+</tr>
+<tr class="even">
+<td>Neon</td>
+<td>10</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup></td>
+<td>(8, full shell)</td>
+<td>21.565</td>
+</tr>
+<tr class="odd">
+<td>Sodium</td>
+<td>11</td>
+<td>[Ne] 3s<sup>1</sup></td>
+<td>1</td>
+<td>5.139</td>
+</tr>
+<tr class="even">
+<td>Phosphorus</td>
+<td>15</td>
+<td>[Ne] 3s<sup>2</sup> 3p<sup>3</sup></td>
+<td>5</td>
+<td>10.487</td>
+</tr>
+<tr class="odd">
+<td>Sulfur</td>
+<td>16</td>
+<td>[Ne] 3s<sup>2</sup> 3p<sup>4</sup></td>
+<td>6</td>
+<td>10.360</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The notation [Ne] 3s<sup>2</sup> 3p<sup>3</sup> for phosphorus means that phosphorus has the ten electrons of a neon atom in its first two shells, plus two electrons in the 3s subshell and three in the 3p subshell: 15 electrons in all, equal to its atomic number.</p>
+<p><a href="#fig-configurations" class="quarto-xref">Figure&nbsp;<span>2.2</span></a> shows the configurations of the RNA elements as an energy-level diagram. Each box is one orbital, and each arrow is one electron, pointing up or down according to its spin. Where electrons occupy a p subshell that is less than half full, they spread over separate orbitals with parallel spins before any orbital receives a second electron; this is known as <strong>Hund’s rule</strong>. Nitrogen and phosphorus, with three p electrons each, have one electron in each of their three p orbitals.</p>
+<div id="fig-configurations" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-2_configurations.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Ground-state electron configurations of hydrogen, carbon, nitrogen, oxygen and phosphorus. Each box represents an orbital and each arrow an electron; the direction of the arrow indicates the spin. The outermost shell, which contains the valence electrons, is highlighted. Energies are schematic and not to scale.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="valence-electrons" class="level3">
+<h3 class="anchored" data-anchor-id="valence-electrons">Valence electrons</h3>
+<p>The electrons in the outermost occupied shell are the <strong>valence electrons</strong>. They are the least tightly bound and the ones that take part in chemical bonding. Electrons in inner shells, called core electrons, are held more tightly and do not take part in bonding. Carbon has four valence electrons (2s<sup>2</sup> 2p<sup>2</sup>), nitrogen five (2s<sup>2</sup> 2p<sup>3</sup>), oxygen six (2s<sup>2</sup> 2p<sup>4</sup>) and phosphorus five (3s<sup>2</sup> 3p<sup>3</sup>). Hydrogen has a single electron, which is its valence electron.</p>
+<p>Nitrogen and phosphorus lie in the same column, or group, of the periodic table, and both have five valence electrons in the configuration s<sup>2</sup> p<sup>3</sup>. They differ in that the valence electrons of phosphorus are in the third shell rather than the second. This shared configuration is the reason for many chemical similarities between the two elements, and the difference in shell is the reason for some of the differences that will appear in later chapters.</p>
+</section>
+<section id="ionisation-energy-a-measure-of-how-tightly-electrons-are-held" class="level3">
+<h3 class="anchored" data-anchor-id="ionisation-energy-a-measure-of-how-tightly-electrons-are-held">Ionisation energy: a measure of how tightly electrons are held</h3>
+<p>The arrangement of electrons into shells is not merely a bookkeeping convention; it can be measured. The <strong>first ionisation energy</strong> of an atom is the minimum energy required to remove one electron from the neutral atom in its ground state, leaving a positive ion. <a href="#fig-ionisation" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> shows the measured values for the first eighteen elements <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>.</p>
+<div id="fig-ionisation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ionisation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-3_ionisation.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ionisation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: First ionisation energies of the elements from hydrogen (Z = 1) to argon (Z = 18), from the NIST Atomic Spectra Database <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>. The elements of RNA are coloured. The maxima at helium, neon and argon correspond to completed shells; the sharp drops at lithium and sodium mark the start of a new shell.
+</figcaption>
+</figure>
+</div>
+<p>Two features of the figure confirm the shell structure. First, the noble gases helium (24.59 eV), neon (21.56 eV) and argon (15.76 eV) have the highest ionisation energies in their rows: their outermost shells or subshells are full, and their electrons are held most tightly. Second, the next elements, lithium (5.39 eV) and sodium (5.14 eV), have the lowest values: each has a single electron that begins a new shell, farther from the nucleus and shielded from it by the inner electrons <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>. Within a row, the ionisation energy tends to rise from left to right, because the nuclear charge increases while the electrons being removed remain in the same shell.</p>
+<p>The ionisation energies of the RNA elements lie between about 10 and 15 eV. These values are large compared with the energy of thermal motion at the temperatures relevant to the origin of life, which is of the order of a few hundredths of an electronvolt per particle (the product of the Boltzmann constant, k<sub>B</sub> = 8.617 333 262 × 10<sup>−5</sup> eV K<sup>−1</sup>, and the absolute temperature: about 0.026 eV at 25 °C, or 298.15 K) <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>. Isolated atoms of these elements therefore keep their electrons. They do, however, react with each other, by sharing electrons rather than losing them. This sharing, the covalent bond, is the subject of the next section.</p>
+</section>
+<section id="consequence-for-this-book" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book">Consequence for this book</h3>
+<p>The chemistry of RNA is determined by the valence electrons of five elements: one for hydrogen, four for carbon, five for nitrogen, six for oxygen and five for phosphorus. Every bond in the molecules described in the rest of this book is formed from these electrons.</p>
+</section>
+</section>
+<section id="sec-covalent" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-covalent"><span class="header-section-number">2.2</span> The covalent bond</h2>
+<section id="sharing-a-pair-of-electrons" class="level3">
+<h3 class="anchored" data-anchor-id="sharing-a-pair-of-electrons">Sharing a pair of electrons</h3>
+<p>A <strong>covalent bond</strong> is a chemical bond formed by a pair of electrons shared between two atoms. The simplest example is the hydrogen molecule, H<sub>2</sub>. Each hydrogen atom brings one electron in a 1s orbital. When the two atoms approach, the two electrons, with opposite spins, come to occupy a region between and around both nuclei, where each electron is attracted by both nuclei at once. The resulting molecule has lower energy than two separate atoms, and so it is stable.</p>
+<p>The distance between the nuclei of two bonded atoms is the <strong>bond length</strong>. In H<sub>2</sub> it is 0.741 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, where the ångström (Å) is a unit of length equal to 10<sup>−10</sup> m. Bond lengths between the atoms of the RNA elements are all of the order of 1 Å. This is the scale of molecules, tens of thousands of times the diameter of a nucleus (<a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a>).</p>
+</section>
+<section id="completing-a-shell" class="level3">
+<h3 class="anchored" data-anchor-id="completing-a-shell">Completing a shell</h3>
+<p><a href="#sec-orbitals" class="quarto-xref"><span>Section 2.1</span></a> showed that atoms with completely filled shells, the noble gases, hold their electrons most tightly. Bonding between the elements of RNA can be described by a simple counting rule that follows from this. By sharing electrons, each atom tends to acquire the electron configuration of the nearest noble gas:</p>
+<ul>
+<li>Hydrogen shares electrons until it has two electrons around it, the configuration of helium.</li>
+<li>Carbon, nitrogen and oxygen share electrons until they have eight valence electrons, the configuration of neon. This is the <strong>octet rule</strong>.</li>
+</ul>
+<p>Electrons shared in a bond count towards the shells of both atoms. An atom with v valence electrons therefore needs 8 − v shared electrons from its partners, and so forms 8 − v covalent bonds. This number is the <strong>valence</strong> of the atom (<a href="#tbl-valence" class="quarto-xref">Table&nbsp;<span>2.2</span></a>).</p>
+<div id="tbl-valence" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-valence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: The usual number of covalent bonds formed by hydrogen, carbon, nitrogen and oxygen, from the octet rule (duet rule for hydrogen).
+</figcaption>
+<div aria-describedby="tbl-valence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Valence electrons</th>
+<th>Electrons needed</th>
+<th>Usual number of covalent bonds</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>1</td>
+<td>1 (to reach 2)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Carbon</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>Nitrogen</td>
+<td>5</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Oxygen</td>
+<td>6</td>
+<td>2</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The octet rule is a counting rule, not a law of nature, but it predicts correctly the bonding of carbon, nitrogen and oxygen in almost all the molecules in this book. Phosphorus, whose valence electrons are in the third shell, is an important exception: in phosphate, the form in which phosphorus occurs in RNA, each phosphorus atom is bonded to four oxygen atoms. How these bonds are best described is taken up when phosphate is introduced in Chapter 4.</p>
+</section>
+<section id="lewis-structures" class="level3">
+<h3 class="anchored" data-anchor-id="lewis-structures">Lewis structures</h3>
+<p>A <strong>Lewis structure</strong> represents the valence electrons of a molecule. Each line between two atom symbols stands for one shared pair of electrons, that is, one covalent bond. Pairs of valence electrons that belong to one atom only and are not shared are called <strong>lone pairs</strong>, and are drawn as pairs of dots. <a href="#fig-lewis" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> shows Lewis structures of some molecules that will appear repeatedly in this book.</p>
+<div id="fig-lewis" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lewis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-4_lewis.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lewis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Lewis structures of hydrogen (H<sub>2</sub>), methane (CH<sub>4</sub>), ammonia (NH<sub>3</sub>), water (H<sub>2</sub>O), nitrogen (N<sub>2</sub>) and hydrogen cyanide (HCN). Each line is a shared pair of electrons; each pair of dots is a lone pair. In every structure, hydrogen has two electrons around it and carbon, nitrogen and oxygen have eight. The drawings show which atoms are bonded, not the shapes of the molecules, which are the subject of <a href="#sec-geometry" class="quarto-xref"><span>Section 2.3</span></a>.
+</figcaption>
+</figure>
+</div>
+<p>In methane, CH<sub>4</sub>, carbon shares one pair with each of four hydrogen atoms; its four valence electrons and the four from hydrogen give carbon an octet. In ammonia, NH<sub>3</sub>, nitrogen forms three bonds and keeps one lone pair. In water, H<sub>2</sub>O, oxygen forms two bonds and keeps two lone pairs. The measured lengths of these bonds are 1.087 Å for C–H in methane, 1.012 Å for N–H in ammonia and 0.958 Å for O–H in water <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. The lone pairs of nitrogen and oxygen are not inert: they are responsible for much of the chemistry of ammonia and water, including the hydrogen bonds discussed in <a href="#sec-intermolecular" class="quarto-xref"><span>Section 2.5</span></a>.</p>
+</section>
+<section id="double-and-triple-bonds" class="level3">
+<h3 class="anchored" data-anchor-id="double-and-triple-bonds">Double and triple bonds</h3>
+<p>Two atoms can share more than one pair of electrons. Two shared pairs form a <strong>double bond</strong>, written with two lines, and three shared pairs form a <strong>triple bond</strong>, written with three. The number of shared pairs is called the <strong>bond order</strong>. In the nitrogen molecule, N<sub>2</sub>, the two nitrogen atoms share three pairs, so each nitrogen has three bonds and one lone pair, and an octet. In hydrogen cyanide, HCN, carbon forms one bond to hydrogen and a triple bond to nitrogen: four bonds in all, as the octet rule requires. Hydrogen cyanide appears again in Chapters 3 and 4, as a starting material in experiments on the synthesis of the building blocks of RNA.</p>
+<p>The bond order has a measurable effect on the bond length. The three simplest compounds of carbon and hydrogen with two carbon atoms show this directly (<a href="#fig-bond-order" class="quarto-xref">Figure&nbsp;<span>2.5</span></a>). In ethane, C<sub>2</sub>H<sub>6</sub>, the carbon atoms are joined by a single bond of length 1.536 Å; in ethylene, C<sub>2</sub>H<sub>4</sub>, by a double bond of 1.339 Å; and in acetylene, C<sub>2</sub>H<sub>2</sub>, by a triple bond of 1.203 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. Each additional shared pair draws the two nuclei closer together. The same trend holds for nitrogen: the triple bond in N<sub>2</sub> is 1.098 Å long <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, and the carbon-nitrogen triple bond in HCN 1.156 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.</p>
+<div id="fig-bond-order" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bond-order-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-5_bond_order.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bond-order-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Length of the carbon-carbon bond in ethane (single bond), ethylene (double bond) and acetylene (triple bond), from experimental data compiled in the NIST CCCBDB <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. The bond becomes shorter as the number of shared electron pairs increases.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="consequence-for-this-book-1" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-1">Consequence for this book</h3>
+<p>Every molecule on the path to RNA is held together by covalent bonds between hydrogen, carbon, nitrogen, oxygen and phosphorus. The octet rule predicts how many bonds each atom forms: four for carbon, three for nitrogen, two for oxygen and one for hydrogen. These numbers determine which molecules can exist, and therefore which structures are possible for the sugars, bases and phosphates that make up a nucleotide.</p>
+</section>
+</section>
+<section id="sec-geometry" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-geometry"><span class="header-section-number">2.3</span> Molecular shape and why carbon forms four bonds</h2>
+<section id="molecules-have-shapes" class="level3">
+<h3 class="anchored" data-anchor-id="molecules-have-shapes">Molecules have shapes</h3>
+<p>A Lewis structure shows which atoms are bonded, but not how the atoms are arranged in space. Molecules have definite three-dimensional shapes, which can be measured by spectroscopy and diffraction methods. Shape matters for everything that follows in this book: whether two molecules fit together, whether a chain can fold, and whether a base pair can form all depend on the angles between bonds.</p>
+<p>The shape of a molecule is described by its bond lengths (<a href="#sec-covalent" class="quarto-xref"><span>Section 2.2</span></a>) and its <strong>bond angles</strong>, the angles between two bonds that share an atom. For the three simplest hydrides of the second-row elements, the measured angles are 109.47° for H–C–H in methane, 106.67° for H–N–H in ammonia and 104.48° for H–O–H in water <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.</p>
+</section>
+<section id="electron-pairs-repel-each-other" class="level3">
+<h3 class="anchored" data-anchor-id="electron-pairs-repel-each-other">Electron pairs repel each other</h3>
+<p>These angles can be understood with a simple model, <strong>valence-shell electron-pair repulsion</strong> (VSEPR). Its premise is that the electron pairs in the valence shell of a central atom, both bonding pairs and lone pairs, repel each other, and therefore arrange themselves around the atom as far apart as possible.</p>
+<p>For four electron pairs, the arrangement that keeps them farthest apart points them towards the four corners of a regular <strong>tetrahedron</strong>, a solid with four triangular faces, with the central atom at its centre. The angle between any two of the four directions is</p>
+<p><span class="math display">\[
+\theta = \arccos\!\left(-\tfrac{1}{3}\right) \approx 109.47^{\circ}
+\]</span></p>
+<p>where arccos is the inverse cosine function. The value follows from geometry alone. Methane, with four identical C–H bonds and no lone pairs, is a regular tetrahedron, and its measured angle, 109.471° <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, agrees with the geometric value.</p>
+<p>Ammonia and water also have four electron pairs around the central atom, but some of them are lone pairs: one in ammonia and two in water (<a href="#fig-lewis" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>). The four pairs still point roughly towards the corners of a tetrahedron, but the shape of the molecule is described by the positions of the atoms only. Ammonia is therefore a <strong>trigonal pyramid</strong>, with nitrogen at the apex and the three hydrogen atoms forming the base, and water is <strong>bent</strong> (<a href="#fig-shapes" class="quarto-xref">Figure&nbsp;<span>2.6</span></a>). The angles in both molecules are smaller than the tetrahedral angle, and smaller in water than in ammonia. VSEPR attributes this to the lone pairs, which are held by only one nucleus, spread more widely around it and push the bonding pairs closer together: the more lone pairs, the smaller the angle.</p>
+<div id="fig-shapes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-6_shapes.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Shapes of methane, ammonia and water, with the measured bond angles <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. In all three, four electron pairs around the central atom point approximately towards the corners of a tetrahedron. Lone pairs (shaded lobes) are not counted in the shape of the molecule, which is tetrahedral for methane, a trigonal pyramid for ammonia and bent for water. Wedge-shaped bonds point towards the viewer and dashed bonds away.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="hybrid-orbitals" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-orbitals">Hybrid orbitals</h3>
+<p>The ground-state configuration of carbon, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>, has only two unpaired electrons (<a href="#fig-configurations" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>), yet carbon forms four bonds, and in methane all four are identical. Neither the spherical 2s orbital nor the three perpendicular 2p orbitals point towards the corners of a tetrahedron. These facts are reconciled by the concept of <strong>hybridisation</strong>: mathematical combinations of an atom’s s and p orbitals that produce a new set of equivalent orbitals, called <strong>hybrid orbitals</strong>, pointing in the directions of the bonds.</p>
+<ul>
+<li>Combining the 2s orbital with all three 2p orbitals gives four equivalent <strong>sp<sup>3</sup> hybrid orbitals</strong>, pointing to the corners of a tetrahedron, 109.47° apart. One valence electron is placed in each, and each forms a bond. This describes carbon in methane and ethane, and the carbon atoms of the sugar ribose, as Chapter 4 will show.</li>
+<li>Combining the 2s orbital with two 2p orbitals gives three <strong>sp<sup>2</sup> hybrid orbitals</strong>, lying in a plane at 120° to each other. The remaining 2p orbital stands perpendicular to that plane. This describes carbon in ethylene: each carbon forms three bonds in the plane, and the side-by-side overlap of the two remaining p orbitals forms the second bond of the double bond. The measured angles in ethylene, 117.6° for H–C–H and 121.2° for H–C–C <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, are close to 120°, and the molecule is flat.</li>
+<li>Combining the 2s orbital with one 2p orbital gives two <strong>sp hybrid orbitals</strong>, pointing in opposite directions, 180° apart. The two remaining p orbitals form the second and third bonds of a triple bond. This describes carbon in acetylene and in hydrogen cyanide, both of which are linear: the measured H–C–C angle in acetylene and H–C–N angle in HCN are both 180° <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.</li>
+</ul>
+<p>A bond formed by direct, head-on overlap of orbitals along the line between two nuclei is called a <strong>sigma (<span class="math inline">\(\sigma\)</span>) bond</strong>. A bond formed by side-by-side overlap of two parallel p orbitals, above and below that line, is called a <strong>pi (<span class="math inline">\(\pi\)</span>) bond</strong>. A single bond is a <span class="math inline">\(\sigma\)</span> bond; a double bond consists of one <span class="math inline">\(\sigma\)</span> and one <span class="math inline">\(\pi\)</span> bond; a triple bond of one <span class="math inline">\(\sigma\)</span> and two <span class="math inline">\(\pi\)</span> bonds (<a href="#fig-hybrid" class="quarto-xref">Figure&nbsp;<span>2.7</span></a>).</p>
+<div id="fig-hybrid" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hybrid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-7_hybrid.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hybrid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.7: Hybridisation of carbon. Left: four sp<sup>3</sup> orbitals pointing to the corners of a tetrahedron (109.5°). The pale lobe points behind the page. Centre: three sp<sup>2</sup> orbitals in the plane of the page (120°); the remaining p orbital is perpendicular to the page, drawn as a dashed circle. Right: two sp orbitals on a line (180°), with two remaining p orbitals perpendicular to the line and to each other, one in the page and one perpendicular to it. Schematic, not to scale.
+</figcaption>
+</figure>
+</div>
+<p>Hybridisation is a model, not a separate physical process: an atom does not first rearrange its orbitals and then bond. It is a way of describing the electron distribution of a bonded atom with orbitals that match the observed geometry. Within this book, its value is practical. From the number of bonds and lone pairs on an atom, it predicts the local shape of a molecule.</p>
+<div id="tbl-hybrid" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-hybrid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.3: Hybridisation and geometry. For counting electron pairs, a double or triple bond counts as one pair, because all of its shared electrons lie between the same two atoms.
+</figcaption>
+<div aria-describedby="tbl-hybrid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Electron pairs around atom (bonds + lone pairs)</th>
+<th>Hybridisation</th>
+<th>Arrangement of pairs</th>
+<th>Ideal angle</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>4</td>
+<td>sp<sup>3</sup></td>
+<td>tetrahedral</td>
+<td>109.5°</td>
+<td>CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>sp<sup>2</sup></td>
+<td>trigonal planar</td>
+<td>120°</td>
+<td>C<sub>2</sub>H<sub>4</sub></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>sp</td>
+<td>linear</td>
+<td>180°</td>
+<td>C<sub>2</sub>H<sub>2</sub>, HCN</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="consequence-for-this-book-2" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-2">Consequence for this book</h3>
+<p>Carbon can form four single bonds in a tetrahedral arrangement, or combine single bonds with double or triple bonds in flat or linear arrangements. This versatility allows carbon atoms to form chains, rings and branched skeletons of almost unlimited variety. In RNA, both forms occur side by side: the carbon atoms of the sugar ribose are sp<sup>3</sup> and tetrahedral, whereas the atoms of the bases are sp<sup>2</sup> and form flat rings. The flatness of the bases is what allows them to stack on top of each other and to pair with each other, as Chapter 7 will show.</p>
+</section>
+</section>
+<section id="sec-polar" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-polar"><span class="header-section-number">2.4</span> Electronegativity and polar bonds</h2>
+<section id="unequal-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="unequal-sharing">Unequal sharing</h3>
+<p>In the hydrogen molecule, the two atoms are identical and share their electron pair equally. When two different atoms are bonded, this is generally not so: one atom attracts the shared electrons more strongly than the other, and the electron density of the bond is shifted towards it. The tendency of an atom in a bond to attract the shared electrons towards itself is called its <strong>electronegativity</strong>, usually written <span class="math inline">\(\chi\)</span> (the Greek letter chi).</p>
+<p>Electronegativity is not measured directly, like a mass or an ionisation energy. It is a derived quantity, defined through a chosen procedure, and several scales exist. The most widely used is the one introduced by Linus Pauling.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: Pauling’s electronegativity scale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In 1932, Pauling observed that a bond between two different atoms A and B is usually stronger than the average of the A–A and B–B bonds <span class="citation" data-cites="pauling1932">(<a href="../references/references.html#ref-pauling1932" role="doc-biblioref">Pauling 1932</a>)</span>. He attributed the extra strength to the unequal sharing of electrons, which adds an electrostatic attraction between the partly charged atoms, and used it to define a difference in electronegativity:</p>
+<p><span class="math display">\[
+|\chi_{\mathrm{A}} - \chi_{\mathrm{B}}| = (\mathrm{eV})^{-1/2}\sqrt{E_{\mathrm{d}}(\mathrm{AB}) - \tfrac{1}{2}\left[E_{\mathrm{d}}(\mathrm{AA}) + E_{\mathrm{d}}(\mathrm{BB})\right]}
+\]</span></p>
+<p>Here <span class="math inline">\(E_{\mathrm{d}}\)</span> is the dissociation energy of the bond indicated, the energy needed to break it, in electronvolts; the factor (eV)<sup>−1/2</sup> makes the result a pure number. The formula gives only differences, so one element must be assigned a reference value. Using this method, electronegativity values for many elements were later recalculated from improved thermochemical data by Allred <span class="citation" data-cites="allred1961">(<a href="../references/references.html#ref-allred1961" role="doc-biblioref">Allred 1961</a>)</span>. These are the values used in this book.</p>
+</div>
+</div>
+</section>
+<section id="electronegativities-of-the-rna-elements" class="level3">
+<h3 class="anchored" data-anchor-id="electronegativities-of-the-rna-elements">Electronegativities of the RNA elements</h3>
+<p><a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>2.4</span></a> and <a href="#fig-electroneg" class="quarto-xref">Figure&nbsp;<span>2.8</span></a> give the Pauling electronegativities of the five elements of RNA and some others for comparison <span class="citation" data-cites="allred1961">(<a href="../references/references.html#ref-allred1961" role="doc-biblioref">Allred 1961</a>)</span>.</p>
+<div id="tbl-electroneg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.4: Pauling electronegativities from thermochemical data <span class="citation" data-cites="allred1961">(<a href="../references/references.html#ref-allred1961" role="doc-biblioref">Allred 1961</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th><span class="math inline">\(\chi\)</span> (Pauling scale)</th>
+<th></th>
+<th>Element</th>
+<th><span class="math inline">\(\chi\)</span> (Pauling scale)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>2.20</td>
+<td></td>
+<td>Fluorine</td>
+<td>3.98</td>
+</tr>
+<tr class="even">
+<td>Carbon</td>
+<td>2.55</td>
+<td></td>
+<td>Sodium</td>
+<td>0.93</td>
+</tr>
+<tr class="odd">
+<td>Nitrogen</td>
+<td>3.04</td>
+<td></td>
+<td>Magnesium</td>
+<td>1.31</td>
+</tr>
+<tr class="even">
+<td>Oxygen</td>
+<td>3.44</td>
+<td></td>
+<td>Sulfur</td>
+<td>2.58</td>
+</tr>
+<tr class="odd">
+<td>Phosphorus</td>
+<td>2.19</td>
+<td></td>
+<td>Chlorine</td>
+<td>3.16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-electroneg" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="H">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-8_electronegativity.png" class="img-fluid figure-img" style="width:85.0%" data-fig-pos="H">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.8: Pauling electronegativities of selected elements <span class="citation" data-cites="allred1961">(<a href="../references/references.html#ref-allred1961" role="doc-biblioref">Allred 1961</a>)</span>, arranged by position in the periodic table. The elements of RNA are coloured. Electronegativity increases from left to right across a row and decreases down a column.
+</figcaption>
+</figure>
+</div>
+<p>Two trends are visible. Across a row of the periodic table, electronegativity increases from left to right, as the nuclear charge increases while the valence electrons remain in the same shell; this parallels the trend in ionisation energy (<a href="#fig-ionisation" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>). Down a column, electronegativity decreases, because the valence electrons lie in a shell farther from the nucleus: phosphorus (2.19) is much less electronegative than nitrogen (3.04), although both have five valence electrons. Oxygen and nitrogen are the most electronegative of the RNA elements; carbon, hydrogen and phosphorus lie close together, between 2.19 and 2.55.</p>
+</section>
+<section id="polar-bonds" class="level3">
+<h3 class="anchored" data-anchor-id="polar-bonds">Polar bonds</h3>
+<p>A covalent bond in which the electrons are shared unequally is a <strong>polar bond</strong>. Its more electronegative end carries a small excess of negative charge and the other end a small deficit. These are written <span class="math inline">\(\delta-\)</span> and <span class="math inline">\(\delta+\)</span> (<span class="math inline">\(\delta\)</span>, delta, meaning “a fraction of”), to distinguish them from the full charges of ions. The larger the difference in electronegativity, the more polar the bond. From <a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>2.4</span></a>, the differences for some bonds that occur in RNA and its precursors are:</p>
+<div id="tbl-delta-chi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-delta-chi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.5: Electronegativity differences <span class="math inline">\(\Delta\chi\)</span> for bonds between the RNA elements, calculated from <a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>2.4</span></a>.
+</figcaption>
+<div aria-describedby="tbl-delta-chi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Bond</th>
+<th><span class="math inline">\(\Delta\chi\)</span></th>
+<th>Negative end</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C–H</td>
+<td>0.35</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>C–N</td>
+<td>0.49</td>
+<td>N</td>
+</tr>
+<tr class="odd">
+<td>N–H</td>
+<td>0.84</td>
+<td>N</td>
+</tr>
+<tr class="even">
+<td>C–O</td>
+<td>0.89</td>
+<td>O</td>
+</tr>
+<tr class="odd">
+<td>O–H</td>
+<td>1.24</td>
+<td>O</td>
+</tr>
+<tr class="even">
+<td>P–O</td>
+<td>1.25</td>
+<td>O</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>C–H bonds are nearly non-polar. O–H and P–O bonds are strongly polar, with the negative charge on oxygen. When the difference becomes very large, as between sodium (0.93) and chlorine (3.16), the electron is not shared but effectively transferred, and the result is a pair of ions held together by electrostatic attraction, an <strong>ionic bond</strong>. Covalent and ionic bonding are the two ends of a continuous range, and most bonds in biological molecules lie between them, at the covalent end.</p>
+</section>
+<section id="dipole-moments" class="level3">
+<h3 class="anchored" data-anchor-id="dipole-moments">Dipole moments</h3>
+<p>Separated charges <span class="math inline">\(+q\)</span> and <span class="math inline">\(-q\)</span> at a distance <span class="math inline">\(d\)</span> form an electric <strong>dipole</strong>, whose strength is measured by the <strong>dipole moment</strong></p>
+<p><span class="math display">\[
+\mu = q\,d
+\]</span></p>
+<p>in units of coulomb-metres (C m). For molecules the customary unit is the <strong>debye</strong> (D): 1 D = 3.335 64 × 10<sup>−30</sup> C m, the dipole moment of charges of ±10<sup>−10</sup> statcoulomb (the unit of charge of the older centimetre-gram-second system) separated by 1 Å.</p>
+<p>A molecule as a whole has a dipole moment if the dipoles of its polar bonds do not cancel. Water, with two polar O–H bonds at an angle of 104.48°, has a dipole moment of 1.857 D; ammonia has 1.476 D; and hydrogen cyanide 2.980 D <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. Methane has four slightly polar C–H bonds, but they point to the corners of a regular tetrahedron and cancel exactly: its dipole moment is zero <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. A molecule with a dipole moment is called a <strong>polar molecule</strong>. The shape of a molecule (<a href="#sec-geometry" class="quarto-xref"><span>Section 2.3</span></a>) and the polarity of its bonds therefore together determine whether it is polar (<a href="#fig-water-dipole" class="quarto-xref">Figure&nbsp;<span>2.9</span></a>).</p>
+<div id="fig-water-dipole" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-water-dipole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-9_water_dipole.png" class="img-fluid figure-img" style="width:55.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-water-dipole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.9: Polarity of the water molecule. Each O–H bond is polar, with partial negative charge (<span class="math inline">\(\delta-\)</span>) on oxygen and partial positive charge (<span class="math inline">\(\delta+\)</span>) on hydrogen. Because the molecule is bent, the two bond dipoles add to a net dipole moment of 1.857 D <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, directed along the bisector of the H–O–H angle. The arrow is drawn from the negative towards the positive end, the convention used in physics; some chemistry texts draw it the opposite way.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="consequence-for-this-book-3" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-3">Consequence for this book</h3>
+<p>Oxygen and nitrogen, the most electronegative elements of RNA, make every O–H, N–H, C–O and P–O bond polar. Polar bonds are the sites at which most chemical reactions in this book take place, and polar molecules attract each other and dissolve in water. The polarity of water itself, the subject of <a href="#sec-water" class="quarto-xref"><span>Section 2.6</span></a>, underlies the hydrogen bonds that hold the two strands of a nucleic acid together.</p>
+</section>
+</section>
+<section id="sec-intermolecular" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-intermolecular"><span class="header-section-number">2.5</span> Forces between molecules</h2>
+<section id="bonds-within-molecules-and-forces-between-them" class="level3">
+<h3 class="anchored" data-anchor-id="bonds-within-molecules-and-forces-between-them">Bonds within molecules and forces between them</h3>
+<p>Covalent bonds hold the atoms of a molecule together. Molecules also attract one another, by much weaker <strong>intermolecular forces</strong>. These forces do not join atoms into new molecules, and they are broken and re-formed continually at ordinary temperatures. They nevertheless determine whether a substance is a gas, a liquid or a solid, whether it dissolves in water, and, in RNA, whether two strands pair and how a single strand folds. All intermolecular forces are electrostatic in origin: they arise from the attraction between regions of positive and negative charge on neighbouring molecules.</p>
+</section>
+<section id="dipole-dipole-and-dispersion-forces" class="level3">
+<h3 class="anchored" data-anchor-id="dipole-dipole-and-dispersion-forces">Dipole-dipole and dispersion forces</h3>
+<p>Polar molecules (<a href="#sec-polar" class="quarto-xref"><span>Section 2.4</span></a>) attract each other because the positive end of one is drawn towards the negative end of another. This is a <strong>dipole-dipole interaction</strong>.</p>
+<p>Non-polar molecules attract each other too, more weakly. The electron cloud of any atom or molecule fluctuates, so that at any instant it may have a small, temporary dipole. That dipole distorts the electron cloud of a neighbouring molecule, inducing a dipole in it, and the two temporary dipoles attract. This is the <strong>dispersion force</strong> (also called the London force). It acts between all atoms and molecules, and it is larger for larger molecules, whose electron clouds contain more electrons and are more easily distorted. Dipole-dipole and dispersion interactions, together with related interactions between permanent and induced dipoles, are collectively called <strong>van der Waals forces</strong>.</p>
+</section>
+<section id="the-hydrogen-bond" class="level3">
+<h3 class="anchored" data-anchor-id="the-hydrogen-bond">The hydrogen bond</h3>
+<p>One intermolecular interaction is of particular importance for water and for nucleic acids. The International Union of Pure and Applied Chemistry (IUPAC) defines it as follows: “The hydrogen bond is an attractive interaction between a hydrogen atom from a molecule or a molecular fragment X–H in which X is more electronegative than H, and an atom or a group of atoms in the same or a different molecule, in which there is evidence of bond formation” <span class="citation" data-cites="arunan2011">(<a href="../references/references.html#ref-arunan2011" role="doc-biblioref">Arunan et al. 2011</a>)</span>.</p>
+<p>A hydrogen bond is written X–H···Y, where the dotted line marks the hydrogen bond and the solid line the covalent bond. X is the <strong>hydrogen-bond donor</strong> (the atom to which hydrogen is covalently bonded) and Y is the <strong>hydrogen-bond acceptor</strong>. In the molecules of this book, X and Y are usually oxygen or nitrogen, the most electronegative of the RNA elements (<a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>2.4</span></a>), and Y carries a lone pair. According to the IUPAC recommendations, the forces involved include electrostatic attraction, together with contributions from charge transfer and dispersion; the X–H bond is polarised; and the X–H···Y angle is usually close to 180°, and should preferably be above 110°, the bond being stronger the closer the angle is to 180° <span class="citation" data-cites="arunan2011">(<a href="../references/references.html#ref-arunan2011" role="doc-biblioref">Arunan et al. 2011</a>)</span>. Hydrogen bonds are therefore directional, unlike dispersion forces. The earlier IUPAC glossary of 1994 gave the associated energies as usually less than 20 to 25 kJ mol<sup>−1</sup>, with a few exceptions involving fluorine <span class="citation" data-cites="iupac1994">(<a href="../references/references.html#ref-iupac1994" role="doc-biblioref">IUPAC, n.d.d</a>)</span> — weaker than covalent bonds, but strong enough to dominate the behaviour of water.</p>
+<div id="fig-hbond" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hbond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-10_hbond.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hbond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.10: A hydrogen bond between two water molecules. The O–H group of the left-hand molecule (donor) points towards a lone pair on the oxygen of the right-hand molecule (acceptor). The covalent O–H bonds are drawn as solid lines and the hydrogen bond as a dotted line. Schematic; distances not to scale.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="evidence-from-boiling-points" class="level3">
+<h3 class="anchored" data-anchor-id="evidence-from-boiling-points">Evidence from boiling points</h3>
+<p>Intermolecular forces must be overcome when a liquid boils, so a higher boiling point indicates stronger forces between the molecules. <a href="#tbl-boiling" class="quarto-xref">Table&nbsp;<span>2.6</span></a> compares the normal boiling points (at a pressure of one standard atmosphere) of four small molecules containing hydrogen <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>.</p>
+<div id="tbl-boiling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.6: Normal boiling points from the NIST Chemistry WebBook <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>. Molar masses are calculated from standard atomic weights; Celsius values are obtained by subtracting 273.15.
+</figcaption>
+<div aria-describedby="tbl-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substance</th>
+<th>Formula</th>
+<th>Molar mass (g mol<sup>−1</sup>)</th>
+<th>Normal boiling point (K)</th>
+<th>(°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Methane</td>
+<td>CH<sub>4</sub></td>
+<td>16.04</td>
+<td>111 ± 2</td>
+<td>−162</td>
+</tr>
+<tr class="even">
+<td>Water</td>
+<td>H<sub>2</sub>O</td>
+<td>18.02</td>
+<td>373.17 ± 0.04</td>
+<td>100.02</td>
+</tr>
+<tr class="odd">
+<td>Hydrogen fluoride</td>
+<td>HF</td>
+<td>20.01</td>
+<td>292.7</td>
+<td>19.6</td>
+</tr>
+<tr class="even">
+<td>Hydrogen sulfide</td>
+<td>H<sub>2</sub>S</td>
+<td>34.08</td>
+<td>212.87</td>
+<td>−60.28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Methane and water have almost the same molar mass, and therefore similar dispersion forces, yet water boils 262 K higher. Methane is non-polar and forms no hydrogen bonds; water forms extensive hydrogen bonds through its two O–H groups and two lone pairs. The comparison with hydrogen sulfide is equally instructive. Sulfur lies directly below oxygen in the periodic table, and H<sub>2</sub>S is nearly twice as heavy as H<sub>2</sub>O, so its dispersion forces are stronger; yet it boils 160 K lower. Sulfur (electronegativity 2.58) is much less electronegative than oxygen (3.44), and the hydrogen bonds formed by H<sub>2</sub>S are much weaker than those of water. Hydrogen fluoride, with the most electronegative element of all, also has an anomalously high boiling point for its size. <a href="#fig-boiling" class="quarto-xref">Figure&nbsp;<span>2.11</span></a> summarises the comparison.</p>
+<div id="fig-boiling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-11_boiling.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.11: Normal boiling points of methane, hydrogen sulfide, hydrogen fluoride and water <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>. The dashed line marks 273.15 K (0 °C). Water and hydrogen fluoride, whose molecules form strong hydrogen bonds, boil far higher than methane and hydrogen sulfide.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-hydrophobic-effect" class="level3">
+<h3 class="anchored" data-anchor-id="the-hydrophobic-effect">The hydrophobic effect</h3>
+<p>Non-polar molecules, such as hydrocarbons, dissolve poorly in water and tend to cluster together when placed in it; oil and water separate. This is the <strong>hydrophobic effect</strong> (from the Greek for “water-fearing”). It is not caused by a special attraction between the non-polar molecules. Rather, a non-polar molecule cannot form hydrogen bonds, and the water molecules around it are restricted in the hydrogen bonds they can form with each other. Clustering the non-polar molecules together reduces the area of contact with water and so the number of water molecules affected. Molecules or parts of molecules that interact favourably with water, such as polar and charged groups, are called <strong>hydrophilic</strong> (“water-loving”); non-polar ones are <strong>hydrophobic</strong>.</p>
+</section>
+<section id="consequence-for-this-book-4" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-4">Consequence for this book</h3>
+<p>Two strands of RNA are held together by hydrogen bonds between their bases, and the stacking of the flat bases on each other, discussed in Chapter 7, also depends on interactions with the surrounding water. Hydrogen bonds and the hydrophobic effect will therefore return in Chapter 7, where they determine how RNA pairs and folds. They are equally central to the next section, because they give water its unusual properties as a solvent.</p>
+</section>
+</section>
+<section id="sec-water" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-water"><span class="header-section-number">2.6</span> Water as a solvent</h2>
+<section id="why-water-matters-here" class="level3">
+<h3 class="anchored" data-anchor-id="why-water-matters-here">Why water matters here</h3>
+<p>Most of the chemical steps described in the rest of this book are thought to have taken place in water or at its surface: in ponds, oceans, hydrothermal fluids or thin films on minerals. Water is not an inert background. It dissolves the reactants, it carries electric charges between them, and it takes part in reactions as a reactant and a product. This section collects the properties of water that later chapters will rely on.</p>
+</section>
+<section id="a-small-polar-molecule-with-four-hydrogen-bonding-sites" class="level3">
+<h3 class="anchored" data-anchor-id="a-small-polar-molecule-with-four-hydrogen-bonding-sites">A small, polar molecule with four hydrogen-bonding sites</h3>
+<p>A water molecule is bent (H–O–H angle 104.48°) and polar (dipole moment 1.857 D) <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. Its oxygen atom carries two lone pairs and is bonded to two hydrogen atoms (<a href="#fig-lewis" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>). Each molecule can therefore donate two hydrogen bonds, through its two O–H groups, and accept two, through its two lone pairs. In liquid water, each molecule is linked to its neighbours by a network of hydrogen bonds that are constantly broken and re-formed. This network is responsible for the high boiling point of water (<a href="#tbl-boiling" class="quarto-xref">Table&nbsp;<span>2.6</span></a>), and also for its ability to dissolve other polar molecules: a molecule that can form hydrogen bonds with water, such as an alcohol, a sugar or a nucleobase, can take a place in the network.</p>
+</section>
+<section id="dissolving-ions" class="level3">
+<h3 class="anchored" data-anchor-id="dissolving-ions">Dissolving ions</h3>
+<p>Water also dissolves ionic compounds, such as sodium chloride, which do not dissolve in non-polar liquids. Two properties of water are responsible.</p>
+<p>First, water strongly weakens the electrostatic force between charges. In a vacuum, two charges <span class="math inline">\(q_1\)</span> and <span class="math inline">\(q_2\)</span> at a distance <span class="math inline">\(r\)</span> exert on each other the force given by Coulomb’s law,</p>
+<p><span class="math display">\[
+F = \frac{q_1 q_2}{4\pi\varepsilon_0 r^2}
+\]</span></p>
+<p>where <span class="math inline">\(\varepsilon_0\)</span> is the electric constant (the permittivity of vacuum). In a medium, the force is reduced by a factor <span class="math inline">\(\varepsilon_{\mathrm{r}}\)</span>, the <strong>relative permittivity</strong> (also called the dielectric constant) of the medium:</p>
+<p><span class="math display">\[
+F = \frac{q_1 q_2}{4\pi\varepsilon_0 \varepsilon_{\mathrm{r}} r^2}
+\]</span></p>
+<p>For liquid water at 25 °C and 0.1 MPa, <span class="math inline">\(\varepsilon_{\mathrm{r}}\)</span> = 78.375 <span class="citation" data-cites="iapws_liquid">(<a href="../references/references.html#ref-iapws_liquid" role="doc-biblioref">International Association for the Properties of Water and Steam 2011</a>)</span>. The attraction between a sodium ion and a chloride ion in water is therefore almost eighty times weaker than at the same distance in a vacuum, and the ions can separate.</p>
+<p>Second, water molecules arrange themselves around each dissolved ion, forming a <strong>hydration shell</strong>. Around a positive ion, such as Na<sup>+</sup>, the water molecules turn their negative oxygen ends towards the ion; around a negative ion, such as Cl<sup>−</sup>, they turn their positive hydrogen atoms towards it (<a href="#fig-hydration" class="quarto-xref">Figure&nbsp;<span>2.12</span></a>). The attraction between the ion and the oriented water dipoles stabilises the ion in solution.</p>
+<div id="fig-hydration" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hydration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-12_hydration.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hydration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.12: Hydration of ions (schematic). Water molecules around a sodium ion (left) point their partially negative oxygen atoms towards the positive ion; those around a chloride ion (right) point their partially positive hydrogen atoms towards the negative ion. Only one layer of water molecules is shown, in two dimensions.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="self-ionisation-of-water" class="level3">
+<h3 class="anchored" data-anchor-id="self-ionisation-of-water">Self-ionisation of water</h3>
+<p>Water itself ionises to a small extent. A proton (a hydrogen nucleus, H<sup>+</sup>) passes from one water molecule to another:</p>
+<p><span class="math display">\[
+2\,\mathrm{H_2O} \rightleftharpoons \mathrm{H_3O^+} + \mathrm{OH^-}
+\]</span></p>
+<p>The products are the <strong>hydronium ion</strong>, H<sub>3</sub>O<sup>+</sup>, and the <strong>hydroxide ion</strong>, OH<sup>−</sup>. The double arrow indicates that the reaction runs in both directions and reaches an equilibrium, in which forward and reverse reactions occur at equal rates. At equilibrium, the product of the concentrations of the two ions (strictly, of their activities, which are effective concentrations corrected for interactions between ions) is constant at a given temperature. This constant is the <strong>ion product of water</strong>, K<sub>w</sub>:</p>
+<p><span class="math display">\[
+K_{\mathrm{w}} = a(\mathrm{H_3O^+})\,a(\mathrm{OH^-})
+\]</span></p>
+<p>where <span class="math inline">\(a\)</span> denotes activity, expressed relative to a standard concentration of 1 mol per litre. Because K<sub>w</sub> is very small, it is usually given as p<em>K</em><sub>w</sub> = −log<sub>10</sub> K<sub>w</sub>. At 25 °C, p<em>K</em><sub>w</sub> = 13.99 <span class="citation" data-cites="iapws_ionization">(<a href="../references/references.html#ref-iapws_ionization" role="doc-biblioref">International Association for the Properties of Water and Steam 2024</a>)</span>: in pure water at that temperature, the concentrations of hydronium and hydroxide ions are each about 10<sup>−7</sup> mol per litre, and, since liquid water at 25 °C contains about 55 mol of water molecules per litre (its density is 997.05 kg m<sup>−3</sup> <span class="citation" data-cites="iapws_liquid">(<a href="../references/references.html#ref-iapws_liquid" role="doc-biblioref">International Association for the Properties of Water and Steam 2011</a>)</span>), only about two water molecules in a thousand million are ionised at any moment.</p>
+</section>
+<section id="acids-bases-and-ph" class="level3">
+<h3 class="anchored" data-anchor-id="acids-bases-and-ph">Acids, bases and pH</h3>
+<p>An <strong>acid</strong> is a substance that donates a proton (H<sup>+</sup>) to another molecule, and a <strong>base</strong> is a substance that accepts one. In water, an acid raises the concentration of H<sub>3</sub>O<sup>+</sup> and a base raises that of OH<sup>−</sup>. The acidity of a solution is expressed by its <strong>pH</strong>:</p>
+<p><span class="math display">\[
+\mathrm{pH} = -\log_{10} a(\mathrm{H_3O^+})
+\]</span></p>
+<p>Since the two activities multiply to K<sub>w</sub>, a solution is neutral, with equal amounts of H<sub>3</sub>O<sup>+</sup> and OH<sup>−</sup>, when pH = p<em>K</em><sub>w</sub>/2. A solution with a lower pH is acidic, and one with a higher pH is basic (or alkaline). Each unit of pH corresponds to a factor of ten in the hydronium-ion activity.</p>
+<p>The familiar statement that neutral water has pH 7 is true only near 25 °C. The ion product of water depends strongly on temperature (<a href="#tbl-pkw" class="quarto-xref">Table&nbsp;<span>2.7</span></a>). Neutral water has pH 7.48 at 0 °C and 6.13 at 100 °C. This matters for the origin of life, because the settings considered in Chapter 3 range from cold pools to hot springs and hydrothermal vents: a pH measured at one temperature cannot be compared with one at another without taking this into account.</p>
+<div id="tbl-pkw" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pkw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.7: Ion product of water at saturation pressure (0.1 MPa for liquid water below 100 °C), from the IAPWS release on the ionisation constant of water <span class="citation" data-cites="iapws_ionization">(<a href="../references/references.html#ref-iapws_ionization" role="doc-biblioref">International Association for the Properties of Water and Steam 2024</a>)</span>. Neutral pH values are calculated as p<em>K</em><sub>w</sub>/2 and rounded.
+</figcaption>
+<div aria-describedby="tbl-pkw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Temperature (°C)</th>
+<th>p<em>K</em><sub>w</sub></th>
+<th>pH of neutral water (p<em>K</em><sub>w</sub>/2)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>14.95</td>
+<td>7.48</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>13.99</td>
+<td>7.00</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>12.25</td>
+<td>6.13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="consequence-for-this-book-5" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-5">Consequence for this book</h3>
+<p>Water dissolves polar molecules and ions, weakens the forces between charges by a factor of nearly eighty, and supplies and removes protons. Many of the molecules on the way to RNA, including the phosphate groups of nucleotides, carry charges whose state depends on pH, and many of the reactions that join them are reversible reactions with water itself. Chapter 5 will show that joining building blocks by removing water is one of the central difficulties of making RNA in water.</p>
+</section>
+</section>
+<section id="sec-energy" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="sec-energy"><span class="header-section-number">2.7</span> Energy in chemistry</h2>
+<section id="bonds-store-energy" class="level3">
+<h3 class="anchored" data-anchor-id="bonds-store-energy">Bonds store energy</h3>
+<p>Breaking a covalent bond always requires energy, and forming one always releases energy. The <strong>bond enthalpy</strong> of a bond is the energy needed to break it in a molecule in the gas phase, at constant pressure, per mole of bonds. (One <strong>mole</strong> is 6.022 140 76 × 10<sup>23</sup> particles, the Avogadro number <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>; chemical energies are usually given in kilojoules per mole, kJ mol<sup>−1</sup>.)</p>
+<p>Bond enthalpies can be calculated from measured enthalpies of formation, defined below. The values for a few bonds, calculated in this way from CODATA reference data compiled in the NIST Chemistry WebBook <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span>, are:</p>
+<div id="tbl-bond-enthalpy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bond-enthalpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.8: Bond enthalpies at 298.15 K, calculated in this book from standard enthalpies of formation of the gaseous atoms and molecules <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span>. The C–H value uses the enthalpy of formation of methane from the NIST-JANAF tables <span class="citation" data-cites="chase1998">(<a href="../references/references.html#ref-chase1998" role="doc-biblioref">Chase 1998</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-bond-enthalpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Bond</th>
+<th>Molecule</th>
+<th>Bond enthalpy (kJ mol<sup>−1</sup>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>H–H</td>
+<td>H<sub>2</sub></td>
+<td>436.0</td>
+</tr>
+<tr class="even">
+<td>C–H</td>
+<td>CH<sub>4</sub> (average of four)</td>
+<td>415.9</td>
+</tr>
+<tr class="odd">
+<td>O–H</td>
+<td>H<sub>2</sub>O (average of two)</td>
+<td>463.5</td>
+</tr>
+<tr class="even">
+<td>N<span class="math inline">\(\equiv\)</span>N</td>
+<td>N<sub>2</sub></td>
+<td>945.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The triple bond of N<sub>2</sub> is more than twice as strong as any of the single bonds in the table. This is why nitrogen gas, which makes up most of the Earth’s atmosphere today, is chemically so unreactive, and why converting it into compounds that can enter the chemistry of RNA is difficult, a problem that returns in Chapter 3.</p>
+</section>
+<section id="enthalpy" class="level3">
+<h3 class="anchored" data-anchor-id="enthalpy">Enthalpy</h3>
+<p>The heat exchanged by a chemical reaction carried out at constant pressure equals the change in a quantity called <strong>enthalpy</strong>, H. A reaction that releases heat to its surroundings has a negative enthalpy change, ΔH &lt; 0, and is called <strong>exothermic</strong>; one that absorbs heat has ΔH &gt; 0 and is <strong>endothermic</strong>.</p>
+<p>Enthalpy changes are tabulated as <strong>standard enthalpies of formation</strong>, Δ<sub>f</sub>H°: the enthalpy change when one mole of a compound is formed from its elements in their most stable forms, with all substances in their standard states (here, a pressure of 1 bar and a temperature of 298.15 K). For liquid water, Δ<sub>f</sub>H° = −285.830 kJ mol<sup>−1</sup>; for water vapour, −241.826 kJ mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span>. Because enthalpy depends only on the state of a system and not on how it got there, the enthalpy change of any reaction can be calculated as the sum of the enthalpies of formation of the products minus that of the reactants. This is <strong>Hess’s law</strong>. For example, the bond enthalpy of O–H in <a href="#tbl-bond-enthalpy" class="quarto-xref">Table&nbsp;<span>2.8</span></a> was obtained by calculating the enthalpy needed to break a mole of water vapour into isolated atoms:</p>
+<p><span class="math display">\[
+\Delta H = 2\Delta_{\mathrm{f}}H^\circ(\mathrm{H}) + \Delta_{\mathrm{f}}H^\circ(\mathrm{O}) - \Delta_{\mathrm{f}}H^\circ(\mathrm{H_2O,\,g}) = 2(217.998) + 249.18 - (-241.826) = 927.0\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>and dividing by the two O–H bonds.</p>
+</section>
+<section id="entropy" class="level3">
+<h3 class="anchored" data-anchor-id="entropy">Entropy</h3>
+<p>Whether a process occurs does not depend on energy alone. Water evaporates from an open dish at room temperature although evaporation absorbs heat (its ΔH is positive, as calculated below). The second quantity that decides the direction of change is <strong>entropy</strong>, S. Entropy measures the number of microscopic arrangements of a system’s particles and energy that are consistent with its macroscopic state. A gas, whose molecules move freely through a large volume, has a higher entropy than the liquid from which it formed: the standard molar entropy of water vapour is 188.835 J K<sup>−1</sup> mol<sup>−1</sup>, and that of liquid water 69.95 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span>. The <strong>second law of thermodynamics</strong> states that in any spontaneous process, the total entropy of a system and its surroundings increases.</p>
+</section>
+<section id="gibbs-energy" class="level3">
+<h3 class="anchored" data-anchor-id="gibbs-energy">Gibbs energy</h3>
+<p>For a process at constant temperature and pressure, both criteria can be combined into a single quantity, the <strong>Gibbs energy</strong> (also called the Gibbs free energy):</p>
+<p><span class="math display">\[
+G = H - TS, \qquad \Delta G = \Delta H - T\Delta S
+\]</span></p>
+<p>where T is the absolute temperature. A process at constant temperature and pressure can occur spontaneously only if it lowers the Gibbs energy of the system, ΔG &lt; 0. If ΔG &gt; 0, the reverse process is the spontaneous one. If ΔG = 0, the system is at equilibrium.</p>
+<p>The boiling of water illustrates the balance between the two terms. For the evaporation of one mole of water at 298.15 K, using the values above,</p>
+<p><span class="math display">\[
+\Delta H = -241.826 - (-285.830) = +44.004\ \mathrm{kJ\,mol^{-1}}, \qquad \Delta S = 188.835 - 69.95 = +118.89\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\Delta G = 44.004 - 298.15 \times 0.11889 = +8.56\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>ΔG is positive: at 25 °C and 1 bar, liquid water does not turn spontaneously into vapour at 1 bar. The enthalpy term favours the liquid, the entropy term favours the gas, and the entropy term grows with temperature. The two balance (ΔG = 0) when T = ΔH/ΔS = 44 004 / 118.89 <span class="math inline">\(\approx\)</span> 370 K. <a href="#fig-dg-vap" class="quarto-xref">Figure&nbsp;<span>2.13</span></a> shows ΔG as a function of temperature. This simple estimate, which assumes that ΔH and ΔS do not change with temperature, comes within 3 K of the measured normal boiling point of water, 373.17 K (<a href="#tbl-boiling" class="quarto-xref">Table&nbsp;<span>2.6</span></a>). (The pressures differ slightly: the standard state is 1 bar, the normal boiling point refers to 1 atmosphere, 1.013 25 bar.)</p>
+<div id="fig-dg-vap" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dg-vap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-13_dg_vap.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dg-vap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.13: Gibbs energy change for the evaporation of water as a function of temperature, ΔG = ΔH − TΔS, calculated with the standard values at 298.15 K (ΔH = 44.004 kJ mol<sup>−1</sup>, ΔS = 118.89 J K<sup>−1</sup> mol<sup>−1</sup>) <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span> and assuming both are constant. ΔG crosses zero near 370 K; the measured normal boiling point, 373.17 K, is marked.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="thermodynamically-favourable-is-not-the-same-as-fast" class="level3">
+<h3 class="anchored" data-anchor-id="thermodynamically-favourable-is-not-the-same-as-fast">Thermodynamically favourable is not the same as fast</h3>
+<p>The formation of liquid water from hydrogen and oxygen,</p>
+<p><span class="math display">\[
+\mathrm{H_2(g)} + \tfrac{1}{2}\,\mathrm{O_2(g)} \rightarrow \mathrm{H_2O(l)}
+\]</span></p>
+<p>has ΔH = −285.830 kJ mol<sup>−1</sup> and ΔS = 69.95 − 130.680 − ½(205.152) = −163.31 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox, Wagman, and Medvedev 1984</a>)</span>, so that at 298.15 K ΔG = −285.830 + 298.15 × 0.16331 = −237.14 kJ mol<sup>−1</sup>. The reaction is strongly favourable. Yet a mixture of hydrogen and oxygen can be kept at room temperature without reacting appreciably until it is ignited. Thermodynamics states whether a reaction <em>can</em> occur; it says nothing about how fast it occurs. That is the subject of the next section, and the distinction is central to the origin of life: many reactions needed to build RNA are favourable but slow, and some that would destroy it, such as its reaction with water, are favourable as well.</p>
+</section>
+<section id="consequence-for-this-book-6" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-6">Consequence for this book</h3>
+<p>Every step on the path to RNA must satisfy ΔG &lt; 0 under the conditions where it takes place, or must be coupled to another process that supplies Gibbs energy. Joining building blocks into a chain while releasing water is generally unfavourable in water, as Chapter 5 will discuss; how this obstacle may have been overcome is one of the central questions of the book.</p>
+</section>
+</section>
+<section id="sec-rates" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="sec-rates"><span class="header-section-number">2.8</span> Reaction rates</h2>
+<section id="rate-and-rate-constant" class="level3">
+<h3 class="anchored" data-anchor-id="rate-and-rate-constant">Rate and rate constant</h3>
+<p><a href="#sec-energy" class="quarto-xref"><span>Section 2.7</span></a> ended with a mixture of hydrogen and oxygen that does not react although the reaction is strongly favourable. The speed of a reaction is described by its <strong>rate of reaction</strong>: for a reaction a A + b B → p P + q Q, the rate is the rate of change of the concentration of any reactant or product, divided by its coefficient in the equation <span class="citation" data-cites="iupac_rate">(<a href="../references/references.html#ref-iupac_rate" role="doc-biblioref">IUPAC, n.d.e</a>)</span>:</p>
+<p><span class="math display">\[
+v = -\frac{1}{a}\frac{\mathrm{d}[\mathrm{A}]}{\mathrm{d}t} = -\frac{1}{b}\frac{\mathrm{d}[\mathrm{B}]}{\mathrm{d}t} = \frac{1}{p}\frac{\mathrm{d}[\mathrm{P}]}{\mathrm{d}t} = \frac{1}{q}\frac{\mathrm{d}[\mathrm{Q}]}{\mathrm{d}t}
+\]</span></p>
+<p>where square brackets denote concentration and d/dt denotes the rate of change with time. The rate usually depends on the concentrations of the reactants. For many reactions it is proportional to a product of concentrations, for example <span class="math inline">\(v = k[\mathrm{A}][\mathrm{B}]\)</span>, where the proportionality factor k is the <strong>rate constant</strong>. The rate constant does not depend on concentration, but it depends strongly on temperature.</p>
+</section>
+<section id="activation-energy" class="level3">
+<h3 class="anchored" data-anchor-id="activation-energy">Activation energy</h3>
+<p>For two molecules to react, existing bonds must be stretched and partly broken before new ones can form. The arrangement of atoms at the point of highest energy along this path is called the <strong>transition state</strong>. The energy that the reactants must acquire to reach it is the <strong>activation energy</strong>, E<sub>a</sub> (<a href="#fig-energy-profile" class="quarto-xref">Figure&nbsp;<span>2.14</span></a>). Molecules gain this energy through collisions, and at any temperature only a fraction of them have enough. The activation energy is a barrier: it does not affect the overall Gibbs energy change of the reaction, but it determines how fast the reaction proceeds.</p>
+<div id="fig-energy-profile" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-energy-profile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-14_energy_profile.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-profile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.14: Energy profile of a reaction (schematic). The reactants must pass over an energy barrier, the activation energy E<sub>a</sub>, at the transition state before forming the products. A catalyst (dashed curve) provides an alternative path with a lower barrier. The difference in energy between reactants and products, and therefore the position of the equilibrium, is the same with and without the catalyst.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-arrhenius-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-arrhenius-equation">The Arrhenius equation</h3>
+<p>The dependence of a rate constant on temperature is described by the <strong>Arrhenius equation</strong> <span class="citation" data-cites="iupac_arrhenius">(<a href="../references/references.html#ref-iupac_arrhenius" role="doc-biblioref">IUPAC, n.d.a</a>)</span>:</p>
+<p><span class="math display">\[
+k = A\,\mathrm{e}^{-E_{\mathrm{a}}/RT}
+\]</span></p>
+<p>Here A is the pre-exponential factor, which has the same units as k; E<sub>a</sub> is the activation energy in J mol<sup>−1</sup>; T is the absolute temperature; and R is the molar gas constant, 8.314 462 618 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>. In its original form, A and E<sub>a</sub> are taken as independent of temperature <span class="citation" data-cites="iupac_arrhenius">(<a href="../references/references.html#ref-iupac_arrhenius" role="doc-biblioref">IUPAC, n.d.a</a>)</span>. More generally, IUPAC defines the activation energy through the temperature dependence of the rate constant itself, <span class="math inline">\(E_{\mathrm{a}} = RT^2\,\mathrm{d}(\ln k)/\mathrm{d}T\)</span> <span class="citation" data-cites="iupac_ea">(<a href="../references/references.html#ref-iupac_ea" role="doc-biblioref">IUPAC, n.d.c</a>)</span>.</p>
+<p>The exponential makes rates extremely sensitive to temperature and to the size of the barrier. Taking the ratio of the rate constants at two temperatures, A cancels:</p>
+<p><span class="math display">\[
+\frac{k(T_2)}{k(T_1)} = \exp\!\left[\frac{E_{\mathrm{a}}}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\right]
+\]</span></p>
+<p>For a reaction with E<sub>a</sub> = 50 kJ mol<sup>−1</sup>, warming from 25 °C (298.15 K) to 35 °C (308.15 K) increases the rate constant by a factor of 1.92, and warming to 100 °C by a factor of about 58. For E<sub>a</sub> = 100 kJ mol<sup>−1</sup>, the corresponding factors are 3.70 and about 3300 (<a href="#fig-arrhenius" class="quarto-xref">Figure&nbsp;<span>2.15</span></a>). The same equation shows that a reaction at 0 °C is slower than at 25 °C by a factor of 6.3 (for 50 kJ mol<sup>−1</sup>) or 40 (for 100 kJ mol<sup>−1</sup>). Temperature is therefore one of the most powerful controls on prebiotic chemistry: it speeds up the reactions that build molecules, and equally those that destroy them.</p>
+<div id="fig-arrhenius" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arrhenius-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch02/fig2-15_arrhenius.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arrhenius-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.15: Relative rate constant k(T)/k(298.15 K) calculated from the Arrhenius equation for activation energies of 50 and 100 kJ mol<sup>−1</sup>, from 0 °C to 100 °C. The vertical axis is logarithmic. The higher the activation energy, the more strongly the rate depends on temperature.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="catalysts" class="level3">
+<h3 class="anchored" data-anchor-id="catalysts">Catalysts</h3>
+<p>A <strong>catalyst</strong> is a substance that increases the rate of a reaction without modifying the overall standard Gibbs energy change of the reaction <span class="citation" data-cites="iupac_catalyst">(<a href="../references/references.html#ref-iupac_catalyst" role="doc-biblioref">IUPAC, n.d.b</a>)</span>. It does so by providing an alternative reaction path with a lower activation energy (<a href="#fig-energy-profile" class="quarto-xref">Figure&nbsp;<span>2.14</span></a>), and it is regenerated at the end of each cycle, so that a small amount can convert a large amount of reactant. Because a catalyst does not change ΔG, it speeds up the forward and reverse reactions alike and does not change the position of equilibrium; it only allows equilibrium to be reached sooner. The effect of lowering the barrier is large: by the Arrhenius equation, lowering E<sub>a</sub> by 20 kJ mol<sup>−1</sup> at 25 °C, with A unchanged, increases the rate constant by a factor of about 3200.</p>
+<p>Catalysis by one of the products of a reaction is called <strong>autocatalysis</strong> <span class="citation" data-cites="iupac_catalyst">(<a href="../references/references.html#ref-iupac_catalyst" role="doc-biblioref">IUPAC, n.d.b</a>)</span>. In an autocatalytic reaction, the more product there is, the faster more of it is made. A molecule that catalyses the formation of copies of itself is the chemical core of replication, and autocatalysis will return in <a href="ch08-rna-copying-itself.html#sec-selection" class="quarto-xref"><span>Section 8.6</span></a>.</p>
+<p>The catalysts of living cells are mostly proteins, called enzymes, but some are RNA molecules, called ribozymes. The discovery that RNA can act as a catalyst, as well as carry genetic information, is one of the foundations of the hypothesis that RNA preceded proteins; it is described in Chapter 7.</p>
+</section>
+<section id="consequence-for-this-book-7" class="level3">
+<h3 class="anchored" data-anchor-id="consequence-for-this-book-7">Consequence for this book</h3>
+<p>Whether a molecule accumulates on the early Earth depends on a competition between rates: the rate at which it is formed, and the rates at which it is destroyed, for example by reaction with water. Thermodynamics (<a href="#sec-energy" class="quarto-xref"><span>Section 2.7</span></a>) determines which direction is downhill; kinetics determines which processes are fast enough to matter. Both will be used throughout the remaining chapters.</p>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>Chemical reactions rearrange electrons; nuclei are unchanged.</li>
+<li>Electrons in atoms occupy orbitals, grouped into shells (n = 1, 2, 3, …) and subshells (s, p, d, f). An s subshell has one orbital, p three, d five.</li>
+<li>By the Pauli exclusion principle, each orbital holds at most two electrons of opposite spin; shell n holds at most 2n<sup>2</sup> electrons.</li>
+<li>The ground-state configurations of the RNA elements are H 1s<sup>1</sup>, C 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>, N 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>, O 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup> and P [Ne] 3s<sup>2</sup> 3p<sup>3</sup>.</li>
+<li>Valence electrons, in the outermost shell, take part in bonding: H 1, C 4, N 5, O 6, P 5.</li>
+<li>Measured ionisation energies confirm the shell structure: they peak at the noble gases and drop sharply at the start of each new shell.</li>
+<li>A covalent bond is a shared pair of electrons. By sharing, H reaches two electrons and C, N and O reach eight (the octet rule), so they usually form 1, 4, 3 and 2 bonds respectively.</li>
+<li>Lewis structures show bonds as lines and lone pairs as dots. Two or three shared pairs form double or triple bonds; higher bond order gives shorter bonds (C–C 1.536 Å, C=C 1.339 Å, C<span class="math inline">\(\equiv\)</span>C 1.203 Å).</li>
+<li>Electron pairs around an atom repel each other (VSEPR). Four pairs point to the corners of a tetrahedron (109.47°): methane is tetrahedral, ammonia pyramidal (106.67°) and water bent (104.48°).</li>
+<li>Hybrid orbitals describe bonding geometry: sp<sup>3</sup> (tetrahedral), sp<sup>2</sup> (planar, 120°) and sp (linear, 180°). Double and triple bonds contain one <span class="math inline">\(\sigma\)</span> bond plus one or two <span class="math inline">\(\pi\)</span> bonds.</li>
+<li>Electronegativity measures how strongly an atom attracts shared electrons (Pauling scale: H 2.20, C 2.55, N 3.04, O 3.44, P 2.19). Unequal sharing makes bonds polar; O–H and P–O bonds are strongly polar, C–H bonds nearly non-polar.</li>
+<li>A molecule is polar if its bond dipoles do not cancel: water (1.857 D) and ammonia (1.476 D) are polar; methane, by symmetry, is not.</li>
+<li>Molecules attract each other through dipole-dipole and dispersion (van der Waals) forces, and, when an X–H group with electronegative X meets an electronegative acceptor, through hydrogen bonds X–H···Y, which are directional.</li>
+<li>Hydrogen bonds explain why water (373.17 K) boils far above methane (111 K) and hydrogen sulfide (212.87 K). Non-polar molecules cluster in water: the hydrophobic effect.</li>
+<li>Water dissolves polar molecules through hydrogen bonds and ions through its high relative permittivity (78.4 at 25 °C) and hydration shells.</li>
+<li>Water self-ionises: 2 H<sub>2</sub>O <span class="math inline">\(\rightleftharpoons\)</span> H<sub>3</sub>O<sup>+</sup> + OH<sup>−</sup>, with p<em>K</em><sub>w</sub> = 13.99 at 25 °C. pH = −log<sub>10</sub> a(H<sub>3</sub>O<sup>+</sup>); neutral pH is p<em>K</em><sub>w</sub>/2, which is 7.00 at 25 °C but 7.48 at 0 °C and 6.13 at 100 °C.</li>
+<li>Bond enthalpies measure bond strength: H–H 436.0, C–H 415.9, O–H 463.5 and N<span class="math inline">\(\equiv\)</span>N 945.4 kJ mol<sup>−1</sup>. The very strong N<span class="math inline">\(\equiv\)</span>N bond makes N<sub>2</sub> unreactive.</li>
+<li>A process at constant T and p is spontaneous only if ΔG = ΔH − TΔS &lt; 0. ΔG predicts whether a reaction can occur, not how fast: H<sub>2</sub> + ½O<sub>2</sub> → H<sub>2</sub>O has ΔG = −237.14 kJ mol<sup>−1</sup> but does not proceed without ignition.</li>
+<li>Reaction rates depend on an activation energy barrier. The Arrhenius equation, k = A e<sup>−E<sub>a</sub>/RT</sup>, makes rates very sensitive to temperature: for E<sub>a</sub> = 100 kJ mol<sup>−1</sup>, warming from 25 °C to 100 °C speeds a reaction about 3300-fold.</li>
+<li>A catalyst lowers the activation energy without changing ΔG or the equilibrium. Autocatalysis, in which a product catalyses its own formation, is the chemical core of replication.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>How many electrons can the n = 4 shell hold? List its subshells and the number of electrons each can hold.</li>
+<li>Write the full electron configuration (without the [Ne] abbreviation) of phosphorus and of sulfur, and state the number of valence electrons of each.</li>
+<li>Draw box-and-arrow diagrams for the 2p electrons of carbon, nitrogen and oxygen, following Hund’s rule.</li>
+<li>Convert the first ionisation energy of hydrogen (13.598 eV) into joules, and into kilojoules per mole of atoms (Avogadro constant 6.022 140 76 × 10<sup>23</sup> mol<sup>−1</sup>, exact <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>).</li>
+<li>Explain why the first ionisation energy of sodium is much lower than that of neon, although sodium has one more proton.</li>
+<li>Nitrogen and phosphorus have the same number of valence electrons. Using <a href="#tbl-configurations" class="quarto-xref">Table&nbsp;<span>2.1</span></a>, explain why the first ionisation energy of phosphorus is lower than that of nitrogen.</li>
+<li>Draw Lewis structures for formaldehyde (CH<sub>2</sub>O, with carbon as the central atom) and for carbon dioxide (CO<sub>2</sub>). State the bond order of each carbon-oxygen bond.</li>
+<li>Using the octet rule, predict the formula of the simplest compound of nitrogen with hydrogen and of oxygen with hydrogen, and check your answers against <a href="#fig-lewis" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>.</li>
+<li>By what percentage is the carbon-carbon bond in acetylene shorter than that in ethane?</li>
+<li>Predict the shape of each molecule and the hybridisation of its central atom: formaldehyde (CH<sub>2</sub>O), carbon dioxide (CO<sub>2</sub>), and the ammonium ion (NH<sub>4</sub><sup>+</sup>).</li>
+<li>Explain why the H–O–H angle in water (104.48°) is smaller than the H–C–H angle in methane (109.47°), although both central atoms are surrounded by four electron pairs.</li>
+<li>How many <span class="math inline">\(\sigma\)</span> bonds and how many <span class="math inline">\(\pi\)</span> bonds are there in a molecule of hydrogen cyanide?</li>
+<li>Using <a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>2.4</span></a>, rank the bonds C–H, N–H, O–H, P–O and C–N in order of increasing polarity, and mark the <span class="math inline">\(\delta-\)</span> end of each.</li>
+<li>Carbon dioxide (CO<sub>2</sub>) is linear and contains two polar C=O bonds. Predict whether it has a dipole moment, and explain.</li>
+<li>Express the dipole moment of water in C m. If the charges were ±e (the elementary charge), how far apart would they have to be to give this dipole moment? Compare your answer with the O–H bond length.</li>
+<li>Identify the hydrogen-bond donors and acceptors in a molecule of ammonia, and draw a hydrogen bond between an ammonia molecule and a water molecule.</li>
+<li>Using <a href="#tbl-boiling" class="quarto-xref">Table&nbsp;<span>2.6</span></a>, explain why H<sub>2</sub>S boils at a lower temperature than H<sub>2</sub>O although its molar mass is almost twice as large.</li>
+<li>Explain why methane dissolves poorly in water, using the idea of the hydrophobic effect.</li>
+<li>By what factor is the electrostatic force between two ions at a fixed distance reduced when they are moved from a vacuum into water at 25 °C?</li>
+<li>A solution at 25 °C has pH 5. Calculate the activity of H<sub>3</sub>O<sup>+</sup> and of OH<sup>−</sup>. Is the solution acidic or basic?</li>
+<li>A hot spring at 100 °C has pH 6.5. Is it acidic, neutral or basic? Use <a href="#tbl-pkw" class="quarto-xref">Table&nbsp;<span>2.7</span></a>.</li>
+<li>Using the standard enthalpies of formation of the gaseous atoms in this section, calculate the bond enthalpy of N<span class="math inline">\(\equiv\)</span>N, and compare it with that of H–H.</li>
+<li>Using the data for water in this section, calculate ΔG for the evaporation of water at 350 K and at 390 K, assuming ΔH and ΔS are constant. At which temperature is evaporation spontaneous at 1 bar?</li>
+<li>A reaction has ΔH = −20 kJ mol<sup>−1</sup> and ΔS = −100 J K<sup>−1</sup> mol<sup>−1</sup>. Above what temperature does it stop being spontaneous?</li>
+<li>A reaction has E<sub>a</sub> = 75 kJ mol<sup>−1</sup>. By what factor does its rate constant change between 25 °C and 50 °C?</li>
+<li>Explain why a catalyst cannot make a reaction with ΔG &gt; 0 proceed spontaneously.</li>
+<li>RNA is both formed and destroyed by reactions that are faster at higher temperature. Explain, using the Arrhenius equation, why the net effect of heating on the amount of RNA depends on the activation energies of the two processes.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-allred1961" class="csl-entry" role="listitem">
+Allred, A. L. 1961. <span>“Electronegativity Values from Thermochemical Data.”</span> <em>Journal of Inorganic and Nuclear Chemistry</em> 17 (3–4): 215–21. <a href="https://doi.org/10.1016/0022-1902(61)80142-5">https://doi.org/10.1016/0022-1902(61)80142-5</a>.
+</div>
+<div id="ref-arunan2011" class="csl-entry" role="listitem">
+Arunan, E., G. R. Desiraju, R. A. Klein, J. Sadlej, S. Scheiner, I. Alkorta, D. C. Clary, et al. 2011. <span>“Definition of the Hydrogen Bond (<span>IUPAC</span> Recommendations 2011).”</span> <em>Pure and Applied Chemistry</em> 83 (8): 1637–41. <a href="https://doi.org/10.1351/PAC-REC-10-01-02">https://doi.org/10.1351/PAC-REC-10-01-02</a>.
+</div>
+<div id="ref-chase1998" class="csl-entry" role="listitem">
+Chase, Jr., M. W. 1998. <span>“<span>NIST-JANAF</span> Thermochemical Tables, Fourth Edition.”</span> <em>Journal of Physical and Chemical Reference Data, Monograph 9</em>.
+</div>
+<div id="ref-cox1984" class="csl-entry" role="listitem">
+Cox, J. D., D. D. Wagman, and V. A. Medvedev. 1984. <em><span>CODATA</span> Key Values for Thermodynamics</em>. New York: Hemisphere Publishing Corp.
+</div>
+<div id="ref-iapws_liquid" class="csl-entry" role="listitem">
+International Association for the Properties of Water and Steam. 2011. <span>“Revised Supplementary Release on Properties of Liquid Water at 0.1 <span>MPa</span>, <span>IAPWS</span> <span>SR6-08(2011)</span>.”</span> <a href="https://iapws.org/technical-guidance/release/LiquidWater">https://iapws.org/technical-guidance/release/LiquidWater</a>.
+</div>
+<div id="ref-iapws_ionization" class="csl-entry" role="listitem">
+———. 2024. <span>“Revised Release on the Ionization Constant of <span>H<span class="math inline">\(_2\)</span>O</span>, <span>IAPWS</span> <span>R11-24</span>.”</span> <a href="https://iapws.org/technical-guidance/release/Ionization">https://iapws.org/technical-guidance/release/Ionization</a>.
+</div>
+<div id="ref-iupac_arrhenius" class="csl-entry" role="listitem">
+IUPAC. n.d.a. <span>“Arrhenius Equation. In: Compendium of Chemical Terminology (the Gold Book); Sources Include a Glossary of Terms Used in Chemical Kinetics, Including Reaction Dynamics (<span>IUPAC</span> Recommendations 1996), Pure Appl. Chem. 68, 149 (1996).”</span> <a href="https://goldbook.iupac.org/terms/view/A00446">https://goldbook.iupac.org/terms/view/A00446</a>.
+</div>
+<div id="ref-iupac_catalyst" class="csl-entry" role="listitem">
+———. n.d.b. <span>“Catalyst. In: Compendium of Chemical Terminology (the Gold Book); Source: A Glossary of Terms Used in Chemical Kinetics, Including Reaction Dynamics (<span>IUPAC</span> Recommendations 1996), Pure Appl. Chem. 68, 149 (1996).”</span> <a href="https://goldbook.iupac.org/terms/view/C00876">https://goldbook.iupac.org/terms/view/C00876</a>.
+</div>
+<div id="ref-iupac_ea" class="csl-entry" role="listitem">
+———. n.d.c. <span>“Energy of Activation. In: Compendium of Chemical Terminology (the Gold Book); Source: Green Book, 2nd Ed., p. 55.”</span> <a href="https://goldbook.iupac.org/terms/view/A00102">https://goldbook.iupac.org/terms/view/A00102</a>.
+</div>
+<div id="ref-iupac1994" class="csl-entry" role="listitem">
+———. n.d.d. <span>“Hydrogen Bond. In: Glossary of Terms Used in Physical Organic Chemistry (<span>IUPAC</span> Recommendations 1994), Pure Appl. Chem. 66, 1077 (1994), p. 1123.”</span> IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/H02899">https://goldbook.iupac.org/terms/view/H02899</a>.
+</div>
+<div id="ref-iupac_rate" class="csl-entry" role="listitem">
+———. n.d.e. <span>“Rate of Reaction. In: Compendium of Chemical Terminology (the Gold Book).”</span> <a href="https://goldbook.iupac.org/terms/view/R05156">https://goldbook.iupac.org/terms/view/R05156</a>.
+</div>
+<div id="ref-nist_asd" class="csl-entry" role="listitem">
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2024. <span>“<span>NIST</span> Atomic Spectra Database (Ver. 5.12): Ionization Energies.”</span> National Institute of Standards; Technology, Gaithersburg, MD. <a href="https://doi.org/10.18434/T4W30F">https://doi.org/10.18434/T4W30F</a>.
+</div>
+<div id="ref-cccbdb" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. 2022. <span>“<span>NIST</span> Computational Chemistry Comparison and Benchmark Database (<span>CCCBDB</span>), Release 22, Experimental Geometry Data.”</span> <a href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+———. n.d.a. <span>“Fundamental Physical Constants: 2022 CODATA Adjustment.”</span> <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+———. n.d.b. <span>“<span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data.”</span> <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-pauling1932" class="csl-entry" role="listitem">
+Pauling, L. 1932. <span>“The Nature of the Chemical Bond. <span>IV</span>. The Energy of Single Bonds and the Relative Electronegativity of Atoms.”</span> <em>Journal of the American Chemical Society</em> 54 (9): 3570–82. <a href="https://doi.org/10.1021/ja01348a011">https://doi.org/10.1021/ja01348a011</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch01-where-atoms-come-from.html" class="pagination-link" aria-label="Where Atoms Come From">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch03-feedstock-early-earth.html" class="pagination-link" aria-label="Feedstock on the Early Earth">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

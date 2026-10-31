@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Feedstock on the Early Earth – From Atoms to RNA</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch04-simple-molecules-to-building-blocks.html" rel="next">
+<link href="../chapters/ch02-how-atoms-join.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-50350f0ef67c465fd9d66d9ebf741958.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch03-feedstock-early-earth.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">From Atoms to RNA</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-where-atoms-come-from.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Where Atoms Come From</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-how-atoms-join.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-feedstock-early-earth.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-assembling-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Assembling Nucleotides</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-joining-nucleotides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Joining Nucleotides into Chains</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-folding-into-shapes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Folding into Shapes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-rna-copying-itself.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">RNA Copying Itself</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/epilogue-rna-to-cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Epilogue: From RNA to Cells</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units, Constants and Orders of Magnitude</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-reading-papers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">How to Read a Scientific Paper</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sec-dating" id="toc-sec-dating" class="nav-link" data-scroll-target="#sec-dating"><span class="header-section-number">3.1</span> Geological time and radiometric dating</a>
+  <ul class="collapse">
+  <li><a href="#the-problem-of-measuring-deep-time" id="toc-the-problem-of-measuring-deep-time" class="nav-link" data-scroll-target="#the-problem-of-measuring-deep-time">The problem of measuring deep time</a></li>
+  <li><a href="#the-law-of-radioactive-decay" id="toc-the-law-of-radioactive-decay" class="nav-link" data-scroll-target="#the-law-of-radioactive-decay">The law of radioactive decay</a></li>
+  <li><a href="#parent-daughter-and-age" id="toc-parent-daughter-and-age" class="nav-link" data-scroll-target="#parent-daughter-and-age">Parent, daughter and age</a></li>
+  <li><a href="#radioactive-systems-used-for-dating" id="toc-radioactive-systems-used-for-dating" class="nav-link" data-scroll-target="#radioactive-systems-used-for-dating">Radioactive systems used for dating</a></li>
+  <li><a href="#two-clocks-in-one-mineral" id="toc-two-clocks-in-one-mineral" class="nav-link" data-scroll-target="#two-clocks-in-one-mineral">Two clocks in one mineral</a></li>
+  <li><a href="#the-geological-time-scale" id="toc-the-geological-time-scale" class="nav-link" data-scroll-target="#the-geological-time-scale">The geological time scale</a></li>
+  </ul></li>
+  <li><a href="#sec-hadean" id="toc-sec-hadean" class="nav-link" data-scroll-target="#sec-hadean"><span class="header-section-number">3.2</span> The formation of the Earth and Moon; the Hadean eon</a>
+  <ul class="collapse">
+  <li><a href="#the-earth-and-its-moon" id="toc-the-earth-and-its-moon" class="nav-link" data-scroll-target="#the-earth-and-its-moon">The Earth and its Moon</a></li>
+  <li><a href="#the-giant-impact" id="toc-the-giant-impact" class="nav-link" data-scroll-target="#the-giant-impact">The giant impact</a></li>
+  <li><a href="#after-the-impact-from-magma-ocean-to-water-ocean" id="toc-after-the-impact-from-magma-ocean-to-water-ocean" class="nav-link" data-scroll-target="#after-the-impact-from-magma-ocean-to-water-ocean">After the impact: from magma ocean to water ocean</a></li>
+  <li><a href="#the-faint-young-sun" id="toc-the-faint-young-sun" class="nav-link" data-scroll-target="#the-faint-young-sun">The faint young Sun</a></li>
+  <li><a href="#impacts-after-the-moon" id="toc-impacts-after-the-moon" class="nav-link" data-scroll-target="#impacts-after-the-moon">Impacts after the Moon</a></li>
+  </ul></li>
+  <li><a href="#sec-zircons" id="toc-sec-zircons" class="nav-link" data-scroll-target="#sec-zircons"><span class="header-section-number">3.3</span> The earliest oceans: evidence from zircons</a>
+  <ul class="collapse">
+  <li><a href="#a-record-without-rocks" id="toc-a-record-without-rocks" class="nav-link" data-scroll-target="#a-record-without-rocks">A record without rocks</a></li>
+  <li><a href="#oxygen-isotopes-and-the-delta-notation" id="toc-oxygen-isotopes-and-the-delta-notation" class="nav-link" data-scroll-target="#oxygen-isotopes-and-the-delta-notation">Oxygen isotopes and the delta notation</a></li>
+  <li><a href="#carbon-in-a-hadean-zircon" id="toc-carbon-in-a-hadean-zircon" class="nav-link" data-scroll-target="#carbon-in-a-hadean-zircon">Carbon in a Hadean zircon</a></li>
+  </ul></li>
+  <li><a href="#sec-atmosphere" id="toc-sec-atmosphere" class="nav-link" data-scroll-target="#sec-atmosphere"><span class="header-section-number">3.4</span> The early atmosphere: reducing or neutral?</a>
+  <ul class="collapse">
+  <li><a href="#why-the-atmosphere-matters" id="toc-why-the-atmosphere-matters" class="nav-link" data-scroll-target="#why-the-atmosphere-matters">Why the atmosphere matters</a></li>
+  <li><a href="#oxidation-and-reduction" id="toc-oxidation-and-reduction" class="nav-link" data-scroll-target="#oxidation-and-reduction">Oxidation and reduction</a></li>
+  <li><a href="#gases-from-the-interior" id="toc-gases-from-the-interior" class="nav-link" data-scroll-target="#gases-from-the-interior">Gases from the interior</a></li>
+  <li><a href="#transient-reducing-atmospheres-after-impacts" id="toc-transient-reducing-atmospheres-after-impacts" class="nav-link" data-scroll-target="#transient-reducing-atmospheres-after-impacts">Transient reducing atmospheres after impacts</a></li>
+  <li><a href="#neutral-atmospheres-reconsidered" id="toc-neutral-atmospheres-reconsidered" class="nav-link" data-scroll-target="#neutral-atmospheres-reconsidered">Neutral atmospheres reconsidered</a></li>
+  </ul></li>
+  <li><a href="#sec-sources" id="toc-sec-sources" class="nav-link" data-scroll-target="#sec-sources"><span class="header-section-number">3.5</span> Sources of small molecules</a>
+  <ul class="collapse">
+  <li><a href="#three-categories-of-source" id="toc-three-categories-of-source" class="nav-link" data-scroll-target="#three-categories-of-source">Three categories of source</a></li>
+  <li><a href="#energy-for-atmospheric-synthesis" id="toc-energy-for-atmospheric-synthesis" class="nav-link" data-scroll-target="#energy-for-atmospheric-synthesis">Energy for atmospheric synthesis</a></li>
+  <li><a href="#delivery-from-space" id="toc-delivery-from-space" class="nav-link" data-scroll-target="#delivery-from-space">Delivery from space</a></li>
+  <li><a href="#impacts-as-sources-of-reducing-power" id="toc-impacts-as-sources-of-reducing-power" class="nav-link" data-scroll-target="#impacts-as-sources-of-reducing-power">Impacts as sources of reducing power</a></li>
+  <li><a href="#hydrothermal-systems" id="toc-hydrothermal-systems" class="nav-link" data-scroll-target="#hydrothermal-systems">Hydrothermal systems</a></li>
+  <li><a href="#feedstock-and-energy-in-one-system" id="toc-feedstock-and-energy-in-one-system" class="nav-link" data-scroll-target="#feedstock-and-energy-in-one-system">Feedstock and energy in one system</a></li>
+  </ul></li>
+  <li><a href="#sec-feedstock" id="toc-sec-feedstock" class="nav-link" data-scroll-target="#sec-feedstock"><span class="header-section-number">3.6</span> Key feedstock molecules</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-feedstock-molecule" id="toc-what-is-a-feedstock-molecule" class="nav-link" data-scroll-target="#what-is-a-feedstock-molecule">What is a feedstock molecule?</a></li>
+  <li><a href="#hydrogen-cyanide" id="toc-hydrogen-cyanide" class="nav-link" data-scroll-target="#hydrogen-cyanide">Hydrogen cyanide</a></li>
+  <li><a href="#formaldehyde" id="toc-formaldehyde" class="nav-link" data-scroll-target="#formaldehyde">Formaldehyde</a></li>
+  <li><a href="#cyanamide" id="toc-cyanamide" class="nav-link" data-scroll-target="#cyanamide">Cyanamide</a></li>
+  <li><a href="#phosphate-and-the-phosphate-problem" id="toc-phosphate-and-the-phosphate-problem" class="nav-link" data-scroll-target="#phosphate-and-the-phosphate-problem">Phosphate and the phosphate problem</a></li>
+  </ul></li>
+  <li><a href="#sec-settings" id="toc-sec-settings" class="nav-link" data-scroll-target="#sec-settings"><span class="header-section-number">3.7</span> Candidate settings</a>
+  <ul class="collapse">
+  <li><a href="#requirements-of-a-setting" id="toc-requirements-of-a-setting" class="nav-link" data-scroll-target="#requirements-of-a-setting">Requirements of a setting</a></li>
+  <li><a href="#ponds-and-hot-springs-on-land" id="toc-ponds-and-hot-springs-on-land" class="nav-link" data-scroll-target="#ponds-and-hot-springs-on-land">Ponds and hot springs on land</a></li>
+  <li><a href="#hydrothermal-vents" id="toc-hydrothermal-vents" class="nav-link" data-scroll-target="#hydrothermal-vents">Hydrothermal vents</a></li>
+  <li><a href="#impact-craters" id="toc-impact-craters" class="nav-link" data-scroll-target="#impact-craters">Impact craters</a></li>
+  <li><a href="#ice" id="toc-ice" class="nav-link" data-scroll-target="#ice">Ice</a></li>
+  <li><a href="#comparison" id="toc-comparison" class="nav-link" data-scroll-target="#comparison">Comparison</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch03" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Feedstock on the Early Earth</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After reading this chapter you should be able to:</p>
+<ol type="1">
+<li>Explain how radioactive decay is used to measure the ages of rocks and meteorites, and calculate an age from a measured ratio of daughter to parent atoms.</li>
+<li>Describe the formation of the Earth and the Moon and the evidence for liquid water on the Earth during the Hadean eon.</li>
+<li>Compare the models proposed for the early atmosphere, and explain why its composition matters for the synthesis of organic molecules.</li>
+<li>Identify the main sources of small organic molecules on the early Earth, the key feedstock molecules of prebiotic chemistry, and the settings in which they may have accumulated.</li>
+</ol>
+</section>
+<section id="sec-dating" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-dating"><span class="header-section-number">3.1</span> Geological time and radiometric dating</h2>
+<section id="the-problem-of-measuring-deep-time" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem-of-measuring-deep-time">The problem of measuring deep time</h3>
+<p>Chapter 1 gave the age of the oldest solids in the solar system as 4.567 to 4.568 billion years (<a href="ch01-where-atoms-come-from.html#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a>). No observer was present to record this, and no physical record of a calendar survives. Ages of this kind are obtained from the decay of radioactive isotopes, which acts as a clock built into the minerals themselves. This section explains how such a clock works, which isotopes are used, and how the age of the Earth was determined.</p>
+<p>Geological ages are expressed in years before the present. The year used in science is the <strong>annum</strong> (symbol a), and multiples are written with the usual SI prefixes: 1 ka = 10<sup>3</sup> a, 1 Ma = 10<sup>6</sup> a (a million years) and 1 Ga = 10<sup>9</sup> a (a billion years). These are the units used, for example, in the joint recommendations of IUPAC and IUGS on half-lives <span class="citation" data-cites="villa2022">(<a href="../references/references.html#ref-villa2022" role="doc-biblioref">Villa et al. 2022</a>)</span>. Thus 4.567 Ga means 4.567 billion years ago.</p>
+</section>
+<section id="the-law-of-radioactive-decay" class="level3">
+<h3 class="anchored" data-anchor-id="the-law-of-radioactive-decay">The law of radioactive decay</h3>
+<p>Radioactive decay was introduced in <a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a> as the spontaneous transformation of an unstable nucleus. The decay of an individual nucleus is a random event: it is impossible to predict when a given nucleus will decay. For a large number of identical nuclei, however, the number that decay in a short time interval is proportional to the number present. This is expressed by the equation</p>
+<p><span id="eq-decay-rate"><span class="math display">\[
+\frac{\mathrm{d}N}{\mathrm{d}t} = -\lambda N ,
+\tag{3.1}\]</span></span></p>
+<p>where N is the number of radioactive nuclei at time t, dN/dt is the rate at which this number changes, and <span class="math inline">\(\lambda\)</span> is the <strong>decay constant</strong>, the probability per unit time that a nucleus decays. The decay constant is a property of the nuclide; it is not measurably affected by temperature, pressure or chemical bonding under geological conditions, which is why radioactive decay can serve as a clock. The minus sign indicates that N decreases.</p>
+<p>The solution of <a href="#eq-decay-rate" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> is</p>
+<p><span id="eq-decay"><span class="math display">\[
+N = N_0\, \mathrm{e}^{-\lambda t} ,
+\tag{3.2}\]</span></span></p>
+<p>where N<sub>0</sub> is the number of radioactive nuclei at t = 0 and e = 2.718… is the base of natural logarithms. The <strong>half-life</strong>, t<sub>1/2</sub>, is the time after which half of the original nuclei remain. Setting N = N<sub>0</sub>/2 in <a href="#eq-decay" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> gives</p>
+<p><span id="eq-half-life"><span class="math display">\[
+t_{1/2} = \frac{\ln 2}{\lambda} \approx \frac{0.693}{\lambda} .
+\tag{3.3}\]</span></span></p>
+<p>After one half-life a fraction 1/2 of the original nuclei remains, after two half-lives 1/4, and after n half-lives (1/2)<sup>n</sup>. The decay curve has the same shape for every radioactive nuclide; only the time scale differs (<a href="#fig-decay" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>).</p>
+</section>
+<section id="parent-daughter-and-age" class="level3">
+<h3 class="anchored" data-anchor-id="parent-daughter-and-age">Parent, daughter and age</h3>
+<p>The decaying nuclide is called the <strong>parent</strong> and the nuclide it decays into the <strong>daughter</strong>. If a mineral contained N<sub>0</sub> parent atoms and no daughter atoms when it formed, and if no atoms of either have entered or left it since, the number of daughter atoms produced by decay, D*, equals the number of parent atoms that have decayed:</p>
+<p><span id="eq-daughter"><span class="math display">\[
+D^{*} = N_0 - N = N\left(\mathrm{e}^{\lambda t} - 1\right) ,
+\tag{3.4}\]</span></span></p>
+<p>where the second form follows from <a href="#eq-decay" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> by writing N<sub>0</sub> = N e<sup><span class="math inline">\(\lambda t\)</span></sup>. Solving for t gives the <strong>radiometric age</strong>:</p>
+<p><span id="eq-age"><span class="math display">\[
+t = \frac{1}{\lambda} \ln\left(1 + \frac{D^{*}}{N}\right) .
+\tag{3.5}\]</span></span></p>
+<p>The advantage of <a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> is that it requires only the present ratio of daughter to parent atoms, D*/N, which can be measured with a mass spectrometer, and the decay constant. The original number of parent atoms need not be known. For example, when D*/N = 1, half of the parent has decayed, and t = ln 2/<span class="math inline">\(\lambda\)</span> = t<sub>1/2</sub>.</p>
+<p><a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> rests on two assumptions, and much of the practice of geochronology consists of testing them.</p>
+<ul>
+<li><strong>Closed system.</strong> No parent or daughter atoms have been added to or removed from the sample since the time being dated. Heating, chemical alteration or the action of water can break this condition.</li>
+<li><strong>Known initial daughter.</strong> The daughter atoms measured must be corrected for any that were present when the mineral formed. D* in <a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> is the radiogenic part only, that is, the part produced by decay within the sample.</li>
+</ul>
+<p>The event that a radiometric age records is the moment at which the clock was set: usually the crystallisation of a mineral, after which parent and daughter atoms could no longer move freely in or out of it.</p>
+</section>
+<section id="radioactive-systems-used-for-dating" class="level3">
+<h3 class="anchored" data-anchor-id="radioactive-systems-used-for-dating">Radioactive systems used for dating</h3>
+<p>To measure an age with good precision, a parent must be chosen whose half-life is not much shorter than the age to be measured; otherwise too little parent would remain. Carbon-14, with a half-life of 5,730 years <span class="citation" data-cites="ciaaw_c">(<a href="../references/references.html#ref-ciaaw_c" role="doc-biblioref">IUPAC Commission on Isotopic Abundances and Atomic Weights, n.d.</a>)</span>, is useful for archaeological samples but not for the early Earth: 4 billion years correspond to about 700 000 half-lives, after which no carbon-14 atom of the original material would remain. The systems used for ancient rocks and meteorites have half-lives of hundreds of millions to tens of billions of years (<a href="#tbl-dating" class="quarto-xref">Table&nbsp;<span>3.1</span></a>).</p>
+<div id="tbl-dating" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Radioactive systems used to date ancient rocks and meteorites. The uncertainties of the uranium, rubidium and samarium half-lives are given with a coverage factor of 2, that is, as approximately 95 percent confidence intervals <span class="citation" data-cites="villa2022">(<a href="../references/references.html#ref-villa2022" role="doc-biblioref">Villa et al. 2022</a>)</span>. For potassium-40, the percentages give the fractions of decays leading to each daughter <span class="citation" data-cites="ruedas2017">(<a href="../references/references.html#ref-ruedas2017" role="doc-biblioref">Ruedas 2017</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-dating-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parent</th>
+<th>Daughter</th>
+<th>Half-life</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><sup>238</sup>U</td>
+<td><sup>206</sup>Pb</td>
+<td>(4.4683 ± 0.0096) Ga</td>
+<td><span class="citation" data-cites="villa2022">Villa et al. (<a href="../references/references.html#ref-villa2022" role="doc-biblioref">2022</a>)</span></td>
+</tr>
+<tr class="even">
+<td><sup>235</sup>U</td>
+<td><sup>207</sup>Pb</td>
+<td>(703.81 ± 1.92) Ma</td>
+<td>measurement of 1971, as reported by <span class="citation" data-cites="villa2022">Villa et al. (<a href="../references/references.html#ref-villa2022" role="doc-biblioref">2022</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><sup>40</sup>K</td>
+<td><sup>40</sup>Ar (10.72 %), <sup>40</sup>Ca (89.28 %)</td>
+<td>1.248 Ga</td>
+<td><span class="citation" data-cites="ruedas2017">Ruedas (<a href="../references/references.html#ref-ruedas2017" role="doc-biblioref">2017</a>)</span></td>
+</tr>
+<tr class="even">
+<td><sup>87</sup>Rb</td>
+<td><sup>87</sup>Sr</td>
+<td>(49.61 ± 0.16) Ga</td>
+<td><span class="citation" data-cites="villa2015">Villa et al. (<a href="../references/references.html#ref-villa2015" role="doc-biblioref">2015</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><sup>147</sup>Sm</td>
+<td><sup>143</sup>Nd</td>
+<td>(106.25 ± 0.38) Ga</td>
+<td><span class="citation" data-cites="villa2022">Villa et al. (<a href="../references/references.html#ref-villa2022" role="doc-biblioref">2022</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The decay constants follow from <a href="#eq-half-life" class="quarto-xref">Equation&nbsp;<span>3.3</span></a>. For uranium-238, <span class="math inline">\(\lambda\)</span> = ln 2/(4.4683 × 10<sup>9</sup> a) = 1.551 25 × 10<sup>−10</sup> a<sup>−1</sup>, the value recommended by the International Union of Pure and Applied Chemistry (IUPAC) and the International Union of Geological Sciences (IUGS) <span class="citation" data-cites="villa2022">(<a href="../references/references.html#ref-villa2022" role="doc-biblioref">Villa et al. 2022</a>)</span>. For uranium-235, <span class="math inline">\(\lambda\)</span> = 9.8485 × 10<sup>−10</sup> a<sup>−1</sup>.</p>
+<p>Uranium-238 and uranium-235 do not decay directly to lead. Each starts a chain of alpha and beta decays through a series of shorter-lived intermediate nuclides; the chains end at the stable isotopes lead-206 and lead-207 respectively. Because the intermediate nuclides have half-lives very much shorter than those of the parents, each chain behaves, on time scales of millions of years and longer, as a single decay from uranium to lead with the half-life of the parent.</p>
+</section>
+<section id="two-clocks-in-one-mineral" class="level3">
+<h3 class="anchored" data-anchor-id="two-clocks-in-one-mineral">Two clocks in one mineral</h3>
+<p>The uranium-lead system is the most widely used for the oldest materials because a uranium-bearing mineral contains two independent clocks. Applying <a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> separately to the pairs <sup>238</sup>U-<sup>206</sup>Pb and <sup>235</sup>U-<sup>207</sup>Pb gives two ages. If the mineral has remained a closed system, the two ages agree, and such an age is called <strong>concordant</strong>. If lead has been lost, the two ages disagree, and the disagreement itself reveals that the closed-system assumption has failed.</p>
+<p>The two parents decay at very different rates. Over the age of the solar system, 4.567 Ga, <a href="#eq-decay" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> shows that 49 percent of the original uranium-238 survives, but only 1.1 percent of the uranium-235 (<a href="#fig-decay" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>). The ratio of radiogenic lead-207 to radiogenic lead-206 therefore changes with time in a known way. It depends only on the age and on the present ratio of the two uranium isotopes, which is nearly the same in all natural materials, and not on the amount of uranium in the sample. The age obtained from this ratio is called a <strong>lead-lead age</strong>. This is the method by which the CAIs of Chapter 1 were dated to 4.567 to 4.568 Ga <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+<div id="fig-decay" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-decay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-1_decay_curves.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-decay-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Fraction of the original parent nuclei that remain as a function of time, from <a href="#eq-decay" class="quarto-xref">Equation&nbsp;<span>3.2</span></a> with the half-lives of <a href="#tbl-dating" class="quarto-xref">Table&nbsp;<span>3.1</span></a>. The vertical line marks the age of the solar system, 4.567 Ga. Rubidium-87 and samarium-147 decay so slowly that most of the original amount is still present; nearly all of the uranium-235 present at the formation of the solar system has decayed.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: the age of the Earth from meteorite lead
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In 1956 Clair Patterson published an age of 4.55 ± 0.07 billion years for the Earth and for meteorites, obtained from the isotopic composition of lead <span class="citation" data-cites="patterson1956">(<a href="../references/references.html#ref-patterson1956" role="doc-biblioref">Patterson 1956</a>)</span>. The rocks of the Earth’s surface have been melted and reworked many times, so no rock survives from the time of the Earth’s formation. Patterson’s approach was to assume that the Earth and meteorites formed at the same time from material with the same initial isotopic composition of lead, so that an age measured on meteorites would also be the age of the Earth.</p>
+<p>The key sample was lead from the iron meteorite Canyon Diablo, which contains the iron sulfide mineral troilite (FeS) as well as iron-nickel metal and silicate minerals <span class="citation" data-cites="patterson1956">(<a href="../references/references.html#ref-patterson1956" role="doc-biblioref">Patterson 1956</a>)</span>. Lead is concentrated in sulfide minerals, whereas uranium is not, so the lead in troilite has received very little radiogenic lead since the meteorite formed; it records the isotopic composition of lead at the beginning of the solar system. Meteorites with more uranium contain lead enriched in the radiogenic isotopes <sup>206</sup>Pb and <sup>207</sup>Pb. Comparing the two kinds of lead with the decay of uranium-238 and uranium-235 gives the time elapsed since they shared a common composition.</p>
+<p>The value obtained, 4.55 billion years, is close to the lead-lead ages of CAIs, 4.567 to 4.568 Ga <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. As described in <a href="ch01-where-atoms-come-from.html#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a>, the Earth itself grew over the first tens of millions of years after CAI formation, so its age is a few tens of millions of years less than that of the solar system.</p>
+</div>
+</div>
+</section>
+<section id="the-geological-time-scale" class="level3">
+<h3 class="anchored" data-anchor-id="the-geological-time-scale">The geological time scale</h3>
+<p>The history of the Earth is divided into units of time. The largest are <strong>eons</strong>, which are subdivided into eras, periods and smaller units. The boundaries of these units are defined by the International Commission on Stratigraphy (ICS), which assigns them numerical ages in the International Chronostratigraphic Chart <span class="citation" data-cites="cohen2013">(<a href="../references/references.html#ref-cohen2013" role="doc-biblioref">Cohen et al. 2024</a>)</span>. The four eons are listed in <a href="#tbl-eons" class="quarto-xref">Table&nbsp;<span>3.2</span></a> and shown in <a href="#fig-timescale" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>.</p>
+<div id="tbl-eons" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-eons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: The eons of Earth history in the International Chronostratigraphic Chart, version 2024/12 <span class="citation" data-cites="cohen2013">(<a href="../references/references.html#ref-cohen2013" role="doc-biblioref">Cohen et al. 2024</a>)</span>. The beginning of the Hadean is placed at the formation of the solar system.
+</figcaption>
+<div aria-describedby="tbl-eons-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Eon</th>
+<th>Begins (Ma)</th>
+<th>Ends (Ma)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hadean</td>
+<td>about 4567</td>
+<td>4031 ± 3</td>
+</tr>
+<tr class="even">
+<td>Archean</td>
+<td>4031 ± 3</td>
+<td>2500</td>
+</tr>
+<tr class="odd">
+<td>Proterozoic</td>
+<td>2500</td>
+<td>538.8 ± 0.6</td>
+</tr>
+<tr class="even">
+<td>Phanerozoic</td>
+<td>538.8 ± 0.6</td>
+<td>present</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The <strong>Hadean</strong> eon is the first part of Earth history, from the formation of the solar system to 4031 ± 3 Ma <span class="citation" data-cites="cohen2013">(<a href="../references/references.html#ref-cohen2013" role="doc-biblioref">Cohen et al. 2024</a>)</span>. It is followed by the <strong>Archean</strong> eon, which lasted until 2500 Ma. The events of interest to this book, the formation of the oceans and atmosphere and the chemistry that preceded life, belong to the Hadean and the early Archean. These eons are also those for which the geological record is least complete, which is why the evidence considered in the rest of this chapter comes largely from single mineral grains, from meteorites, and from models.</p>
+<div id="fig-timescale" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timescale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-2_timescale.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timescale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: The four eons of Earth history, with boundary ages from the International Chronostratigraphic Chart, version 2024/12 <span class="citation" data-cites="cohen2013">(<a href="../references/references.html#ref-cohen2013" role="doc-biblioref">Cohen et al. 2024</a>)</span>. The Hadean and Archean together make up nearly half of the age of the Earth. The time axis runs from the formation of the solar system on the left to the present on the right.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-hadean" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-hadean"><span class="header-section-number">3.2</span> The formation of the Earth and Moon; the Hadean eon</h2>
+<section id="the-earth-and-its-moon" class="level3">
+<h3 class="anchored" data-anchor-id="the-earth-and-its-moon">The Earth and its Moon</h3>
+<p>The Earth is the largest of the four rocky planets of the solar system. Its mass is 5.9722 × 10<sup>24</sup> kg, its mean radius 6371 km and its mean density 5513 kg m<sup>−3</sup> <span class="citation" data-cites="nasa_earth">(<a href="../references/references.html#ref-nasa_earth" role="doc-biblioref">NASA Space Science Data Coordinated Archive 2024a</a>)</span>. As described in <a href="ch01-where-atoms-come-from.html#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a>, it grew by the collision and merging of smaller bodies over at least 38 million years, and probably as long as 120 million years, after the formation of the first solids <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>.</p>
+<p>The Moon is unusually large in relation to its planet. Its mass is 7.346 × 10<sup>22</sup> kg, 1.23 percent of the mass of the Earth, and its mean radius is 1737.4 km, 27 percent of the Earth’s <span class="citation" data-cites="nasa_moon">(<a href="../references/references.html#ref-nasa_moon" role="doc-biblioref">NASA Space Science Data Coordinated Archive 2024b</a>)</span>. Its mean density, 3344 kg m<sup>−3</sup>, is much lower than that of the Earth <span class="citation" data-cites="nasa_moon">(<a href="../references/references.html#ref-nasa_moon" role="doc-biblioref">NASA Space Science Data Coordinated Archive 2024b</a>)</span>. Because iron is much denser than rock, this low density shows that the Moon contains proportionally far less metallic iron than the Earth. The mean distance between the two bodies is 384 400 km <span class="citation" data-cites="nasa_moon">(<a href="../references/references.html#ref-nasa_moon" role="doc-biblioref">NASA Space Science Data Coordinated Archive 2024b</a>)</span>.</p>
+</section>
+<section id="the-giant-impact" class="level3">
+<h3 class="anchored" data-anchor-id="the-giant-impact">The giant impact</h3>
+<p>The origin of the Moon is explained by the <strong>giant impact hypothesis</strong>. In its most widely held form, a planet about the size of Mars collided with the proto-Earth when the latter had grown to approximately 90 percent of its present mass <span class="citation" data-cites="zahnle2007">(<a href="../references/references.html#ref-zahnle2007" role="doc-biblioref">K. Zahnle et al. 2007</a>)</span>. The impact threw debris into orbit around the Earth. This debris rapidly accreted to form the Moon, which was almost completely molten when it formed <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>.</p>
+<p>Two lines of evidence support this model.</p>
+<ul>
+<li><strong>Isotopic similarity.</strong> Different bodies of the solar system have slightly different proportions of the three stable isotopes of oxygen, <sup>16</sup>O, <sup>17</sup>O and <sup>18</sup>O, so that the oxygen isotope composition of a rock identifies the reservoir from which it came. Measurements on lunar and terrestrial rocks show that the Earth and Moon are indistinguishable in this respect: the difference in a measure of the <sup>17</sup>O excess is −1 ± 5 parts per million (two standard errors) <span class="citation" data-cites="young2016">(<a href="../references/references.html#ref-young2016" role="doc-biblioref">Young et al. 2016</a>)</span>. This indicates that the material of the impactor and of the proto-Earth was thoroughly mixed during the impact <span class="citation" data-cites="young2016">(<a href="../references/references.html#ref-young2016" role="doc-biblioref">Young et al. 2016</a>)</span>.</li>
+<li><strong>Melting.</strong> The formation of the Moon from hot debris implies that it began as a body covered by a global ocean of molten rock, the lunar magma ocean. As this ocean crystallised, dense minerals sank and a buoyant crust rich in the mineral plagioclase floated to the top; this crust forms the pale highlands of the Moon <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>.</li>
+</ul>
+<p>The time of the impact has been debated: some estimates placed it within about 100 million years of the formation of the solar system (4.47 to 4.45 Ga), and others between 4.42 and 4.35 Ga, 150 to 200 million years after it <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: dating the Moon with zircons from Apollo 14
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Barboni and co-workers dated small fragments of the mineral zircon (ZrSiO<sub>4</sub>) from rock samples collected by the Apollo 14 mission <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>. Zircon contains uranium and is widely used for uranium-lead dating; it is discussed further in <a href="#sec-zircons" class="quarto-xref"><span>Section 3.3</span></a>. The fragments gave precise, concordant uranium-lead ages.</p>
+<p>The researchers also measured the isotopes of hafnium in the same fragments. Hafnium-176 is produced by the radioactive decay of lutetium-176, so the ratio <sup>176</sup>Hf/<sup>177</sup>Hf in the solar system has increased with time; a low initial ratio recorded in a zircon indicates that its source material was separated early from the lutetium that would have raised it. The ratios were very low, near the initial value of the solar system <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>. Together, the two isotope systems showed that the Moon had differentiated, that is, its magma ocean had largely solidified and separated into layers, by 4.51 billion years ago <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>. The four oldest model ages average 4.51 ± 0.01 billion years (one standard deviation) <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>.</p>
+<p>Because the Moon must have formed before it solidified, this is a minimum age. The authors concluded that the giant impact, and hence the formation of the Earth-Moon system, took place within the first approximately 60 million years of solar-system history, with an uncertainty of about 10 million years <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>.</p>
+</div>
+</div>
+</section>
+<section id="after-the-impact-from-magma-ocean-to-water-ocean" class="level3">
+<h3 class="anchored" data-anchor-id="after-the-impact-from-magma-ocean-to-water-ocean">After the impact: from magma ocean to water ocean</h3>
+<p>The energy released by the giant impact was sufficient to raise the temperature of the Earth by thousands of degrees <span class="citation" data-cites="zahnle2007">(<a href="../references/references.html#ref-zahnle2007" role="doc-biblioref">K. Zahnle et al. 2007</a>)</span>. Zahnle and co-workers reconstructed the sequence of events that followed <span class="citation" data-cites="zahnle2007">(<a href="../references/references.html#ref-zahnle2007" role="doc-biblioref">K. Zahnle et al. 2007</a>)</span>:</p>
+<ol type="1">
+<li>The Earth was surrounded by a hot atmosphere of vaporised silicate rock, which cooled and condensed over about 1000 years.</li>
+<li>As it cooled, the Earth released volatile substances, including water and carbon dioxide, from its interior into the atmosphere. Its surface remained a <strong>magma ocean</strong>, a global layer of molten rock, for about another 2 million years. Tidal heating by the newly formed Moon was a major source of energy for this magma ocean.</li>
+<li>Once the surface had solidified, heat flowing from the interior no longer had a significant effect on the climate. Water vapour in the atmosphere could then condense to form oceans. What remained above them was an atmosphere of about 100 bar of carbon dioxide, at a surface temperature of about 500 K.</li>
+<li>The further cooling of the surface was controlled by how quickly carbon dioxide was removed from the atmosphere, by reaction with rocks to form carbonate minerals and the transport of these carbonates into the interior. If this removal was efficient, it could have taken as little as 10 million years; if it was inefficient, the surface could have remained near 500 K for many tens of millions of years.</li>
+</ol>
+<p>Here the <strong>bar</strong> is a unit of pressure equal to 10<sup>5</sup> Pa, close to the average atmospheric pressure at sea level today. The conclusion of this reconstruction is that the Earth could have had liquid water oceans and conditions suitable for life as early as 10 to 20 million years after the Moon-forming impact, if carbon dioxide was removed efficiently <span class="citation" data-cites="zahnle2007">(<a href="../references/references.html#ref-zahnle2007" role="doc-biblioref">K. Zahnle et al. 2007</a>)</span>. The evidence that liquid water was indeed present early in the Hadean is the subject of <a href="#sec-zircons" class="quarto-xref"><span>Section 3.3</span></a>.</p>
+</section>
+<section id="the-faint-young-sun" class="level3">
+<h3 class="anchored" data-anchor-id="the-faint-young-sun">The faint young Sun</h3>
+<p>The Sun has not always been as bright as it is now. The gradual brightening of a star while it burns hydrogen in its core is a consequence of basic physics and of the way thermonuclear reaction rates depend on density, temperature and composition <span class="citation" data-cites="feulner2012">(<a href="../references/references.html#ref-feulner2012" role="doc-biblioref">Feulner 2012</a>)</span>. According to standard solar models, the total power output of the Sun, its <strong>luminosity</strong>, was about 30 percent lower 4.57 billion years ago than at present <span class="citation" data-cites="feulner2012">(<a href="../references/references.html#ref-feulner2012" role="doc-biblioref">Feulner 2012</a>)</span>. Its evolution can be approximated by</p>
+<p><span id="eq-sun"><span class="math display">\[
+\frac{L(t)}{L_\odot} = \frac{1}{1 + \frac{2}{5}\left(1 - \dfrac{t}{t_\odot}\right)} ,
+\tag{3.6}\]</span></span></p>
+<p>where L(t) is the luminosity at time t after the Sun began to burn hydrogen, L<sub><span class="math inline">\(\odot\)</span></sub> = 3.85 × 10<sup>26</sup> W is the present luminosity and t<sub><span class="math inline">\(\odot\)</span></sub> = 4.57 Ga is the age of the Sun <span class="citation" data-cites="feulner2012">(<a href="../references/references.html#ref-feulner2012" role="doc-biblioref">Feulner 2012</a>)</span>. At t = 0, <a href="#eq-sun" class="quarto-xref">Equation&nbsp;<span>3.6</span></a> gives 1/1.4 = 0.714. At the end of the Hadean, about 4.0 Ga (t = 0.57 Ga), the Sun emitted 74 percent of its present luminosity (<a href="#fig-sun" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>).</p>
+<div id="fig-sun" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sun-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-3_faint_sun.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sun-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Luminosity of the Sun relative to its present value, from <a href="#eq-sun" class="quarto-xref">Equation&nbsp;<span>3.6</span></a>, as a function of time before the present. The shaded band marks the Hadean eon.
+</figcaption>
+</figure>
+</div>
+<p>Less sunlight implies a colder surface. Without the addition of potent greenhouse gases, such as carbon dioxide, the early Earth should have been frozen over at most times and places <span class="citation" data-cites="zahnle2007">(<a href="../references/references.html#ref-zahnle2007" role="doc-biblioref">K. Zahnle et al. 2007</a>)</span>. The difficulty of reconciling a fainter Sun with evidence for liquid water on the early Earth is known as the <strong>faint young Sun problem</strong> <span class="citation" data-cites="feulner2012">(<a href="../references/references.html#ref-feulner2012" role="doc-biblioref">Feulner 2012</a>)</span>. The composition of the early atmosphere is discussed in <a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>.</p>
+</section>
+<section id="impacts-after-the-moon" class="level3">
+<h3 class="anchored" data-anchor-id="impacts-after-the-moon">Impacts after the Moon</h3>
+<p>The giant impact was the last of the major collisions that built the Earth, but smaller bodies continued to strike the Earth and Moon. The surfaces of the Moon, Mars and Mercury are heavily cratered, which shows that the rocky planets were struck by an intense bombardment during their first billion years or more <span class="citation" data-cites="bottke2017">(<a href="../references/references.html#ref-bottke2017" role="doc-biblioref">Bottke and Norman 2017</a>)</span>. On the Earth, whose surface has been continually reworked, this record has been largely erased, so the history of the bombardment is read mainly from the Moon and from meteorites.</p>
+<p>The <strong>Late Heavy Bombardment</strong> refers to impacts that occurred after the outer layers of the planets had become rigid enough to preserve craters and basins <span class="citation" data-cites="bottke2017">(<a href="../references/references.html#ref-bottke2017" role="doc-biblioref">Bottke and Norman 2017</a>)</span>. Its timing has been controversial. Ages of rocks melted by impacts on the Moon, and of shock events recorded in meteorites, point to a distinct episode of elevated impact rate between about 4.2 to 4.0 Ga and 3.5 Ga, preceded by a relatively quiet interval between about 4.4 Ga and 4.2 to 4.0 Ga <span class="citation" data-cites="bottke2017">(<a href="../references/references.html#ref-bottke2017" role="doc-biblioref">Bottke and Norman 2017</a>)</span>. Layers of impact debris in ancient terrestrial rocks show that a long tail of impacts on the Earth continued until about 2.5 to 2.0 Ga <span class="citation" data-cites="bottke2017">(<a href="../references/references.html#ref-bottke2017" role="doc-biblioref">Bottke and Norman 2017</a>)</span>. Impacts are relevant to the origin of life in two opposite ways: large impacts could heat and sterilise the surface, whereas impacts also delivered material and energy that may have driven prebiotic chemistry (<a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>).</p>
+<p><a href="#fig-hadean" class="quarto-xref">Figure&nbsp;<span>3.4</span></a> summarises the events of the first few hundred million years.</p>
+<div id="fig-hadean" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hadean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-4_hadean_events.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hadean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Events of the Hadean eon and the early Archean. The bar for the growth of the Earth is solid up to the firm lower limit of 38 million years after CAI formation and hatched up to the probable end near 120 million years <span class="citation" data-cites="pfalzner2015">(<a href="../references/references.html#ref-pfalzner2015" role="doc-biblioref">Pfalzner et al. 2015</a>)</span>. The triangle marks the time by which the Moon had solidified, 4.51 Ga <span class="citation" data-cites="barboni2017">(<a href="../references/references.html#ref-barboni2017" role="doc-biblioref">Barboni et al. 2017</a>)</span>; the giant impact occurred before this. The relatively quiet interval and the episode of elevated impact rate follow <span class="citation" data-cites="bottke2017">Bottke and Norman (<a href="../references/references.html#ref-bottke2017" role="doc-biblioref">2017</a>)</span>; where the source gives a range for a boundary (4.2 to 4.0 Ga), the bars meet at its midpoint. The end of the Hadean is at 4031 ± 3 Ma <span class="citation" data-cites="cohen2013">(<a href="../references/references.html#ref-cohen2013" role="doc-biblioref">Cohen et al. 2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-zircons" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-zircons"><span class="header-section-number">3.3</span> The earliest oceans: evidence from zircons</h2>
+<section id="a-record-without-rocks" class="level3">
+<h3 class="anchored" data-anchor-id="a-record-without-rocks">A record without rocks</h3>
+<p>No rock is known to have survived from the first 500 million years of Earth history. The oldest known components of a rock body are those of the Acasta Gneiss of northwestern Canada, with an age of 4030 million years <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>, close to the end of the Hadean eon (<a href="#tbl-eons" class="quarto-xref">Table&nbsp;<span>3.2</span></a>). Information about the Hadean Earth itself therefore comes from individual mineral grains that are older than any surviving rock. Nearly all of these grains are crystals of zircon.</p>
+<p><strong>Zircon</strong> is a mineral of composition ZrSiO<sub>4</sub> (zirconium silicate). It crystallises from silicate melts, including the melts that solidify to form granite <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>. Three properties make it the principal witness to the Hadean.</p>
+<ul>
+<li>It contains trace amounts of uranium, so each crystal can be dated individually by the uranium-lead method (<a href="#sec-dating" class="quarto-xref"><span>Section 3.1</span></a>).</li>
+<li>It is hard and chemically resistant. When the rock in which it grew is weathered and eroded, zircon crystals survive as grains of sediment, and they can survive later burial, heating and deformation.</li>
+<li>It preserves inside its crystal structure, and in small inclusions of other minerals, chemical information about the melt from which it crystallised <span class="citation" data-cites="harrison2009">(<a href="../references/references.html#ref-harrison2009" role="doc-biblioref">Harrison 2009</a>)</span>.</li>
+</ul>
+<p>A grain that has been eroded from its original rock and incorporated into a sediment is called <strong>detrital</strong>. A detrital zircon may therefore be much older than the sedimentary rock in which it is found: its age records the crystallisation of its parent rock, which may have been destroyed long ago.</p>
+</section>
+<section id="oxygen-isotopes-and-the-delta-notation" class="level3">
+<h3 class="anchored" data-anchor-id="oxygen-isotopes-and-the-delta-notation">Oxygen isotopes and the delta notation</h3>
+<p>The oxygen in a mineral consists of the stable isotopes <sup>16</sup>O, <sup>17</sup>O and <sup>18</sup>O. Their proportions vary slightly from one material to another, because physical and chemical processes separate isotopes of different mass to a small degree. This separation is called <strong>isotope fractionation</strong>. Because the variations are small, they are expressed relative to a standard, using the <strong>delta notation</strong>:</p>
+<p><span id="eq-delta"><span class="math display">\[
+\delta^{18}\mathrm{O} = \left( \frac{R_\mathrm{sample}}{R_\mathrm{standard}} - 1 \right) \times 1000 ,
+\tag{3.7}\]</span></span></p>
+<p>where R is the atom ratio <sup>18</sup>O/<sup>16</sup>O in the sample and in the standard. The factor 1000 expresses the result in parts per thousand, or <strong>per mil</strong> (symbol ‰). For oxygen the standard is Vienna Standard Mean Ocean Water (VSMOW), the same international reference for ocean water that was used for the isotopes of hydrogen in <a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a>. A sample with <span class="math inline">\(\delta\)</span><sup>18</sup>O = +5 ‰ contains 0.5 percent more <sup>18</sup>O, relative to <sup>16</sup>O, than the standard.</p>
+<p>Fractionation of oxygen isotopes between minerals and water is larger at low temperatures than at high temperatures. Rocks that have reacted with liquid water near the Earth’s surface, for example in weathering, therefore become enriched in <sup>18</sup>O. If such rocks are later buried and melted, the melt inherits their high <span class="math inline">\(\delta\)</span><sup>18</sup>O value, and so do zircons that crystallise from it.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: the Jack Hills zircons
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The Jack Hills lie in the Narryer Gneiss Terrane of the Yilgarn Craton, Western Australia. Metamorphosed sedimentary rocks there contain detrital zircons that had previously been dated to as old as about 4276 million years <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>.</p>
+<p>In 2001, Wilde, Valley, Peck and Graham reported a detailed micro-analytical study of Jack Hills zircons, measuring uranium-lead ages, rare earth elements and oxygen isotope ratios within single crystals <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>. One grain gave an age of 4404 ± 8 million years, about 130 million years older than any previously identified on Earth <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>. It was formed some 160 million years after the first solids of the solar system (<a href="ch01-where-atoms-come-from.html#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a>), and about 100 million years after the Moon had solidified (<a href="#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>).</p>
+<p>The grain was zoned: its composition varied from core to rim, with <span class="math inline">\(\delta\)</span><sup>18</sup>O values from 7.4 to 5.0 ‰, indicating that it grew from a melt whose composition was changing <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>. Its chemistry, its high <span class="math inline">\(\delta\)</span><sup>18</sup>O values and tiny inclusions of quartz (SiO<sub>2</sub>) are consistent with growth from a granitic melt with <span class="math inline">\(\delta\)</span><sup>18</sup>O between 8.5 and 9.5 ‰ <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>. Values this high indicate that the melt incorporated material from the Earth’s surface that had interacted with liquid water at low temperature <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>.</p>
+<p>The authors concluded that this zircon is the earliest evidence for continental crust and oceans on the Earth <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>: by 4.4 Ga, less than 200 million years after the formation of the solar system, liquid water existed at the surface.</p>
+</div>
+</div>
+<p>The single grain of 2001 has since been placed in a wider context. Studies of many Jack Hills zircons older than 4 Ga show that they crystallised at relatively low temperatures, that some are enriched in <sup>18</sup>O, and that they contain mineral inclusions similar to those formed by modern crustal processes <span class="citation" data-cites="harrison2009">(<a href="../references/references.html#ref-harrison2009" role="doc-biblioref">Harrison 2009</a>)</span>. These observations have been interpreted as evidence of an early hydrosphere, and of early crust rich in silica that was produced and then weathered in the presence of abundant water <span class="citation" data-cites="harrison2009">(<a href="../references/references.html#ref-harrison2009" role="doc-biblioref">Harrison 2009</a>)</span>. Together with the reconstruction in <a href="#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>, they support the view that the Hadean Earth, after its first few tens of millions of years, had liquid water oceans for much of its history.</p>
+</section>
+<section id="carbon-in-a-hadean-zircon" class="level3">
+<h3 class="anchored" data-anchor-id="carbon-in-a-hadean-zircon">Carbon in a Hadean zircon</h3>
+<p>Zircons can also preserve other minerals as inclusions. Bell and co-workers examined more than 10 000 Jack Hills zircons and found one, older than 3.8 Ga, that contains inclusions of graphite, a crystalline form of carbon <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>. The zircon gave a concordant uranium-lead age of 4.10 ± 0.01 Ga <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>. Images made by transmission X-ray microscopy showed that the host crystal was free of cracks, so the graphite was interpreted as having been enclosed when the zircon grew, not introduced later <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>.</p>
+<p>Carbon has two stable isotopes, <sup>12</sup>C and <sup>13</sup>C (<a href="ch01-where-atoms-come-from.html#sec-matter" class="quarto-xref"><span>Section 1.1</span></a>). Their ratio is expressed as <span class="math inline">\(\delta\)</span><sup>13</sup>C, defined as in <a href="#eq-delta" class="quarto-xref">Equation&nbsp;<span>3.7</span></a> with the ratio <sup>13</sup>C/<sup>12</sup>C and a carbonate reference standard (PDB). Living organisms take up <sup>12</sup>C slightly more readily than <sup>13</sup>C, so carbon that has passed through organisms tends to have negative <span class="math inline">\(\delta\)</span><sup>13</sup>C values. The graphite inclusions have <span class="math inline">\(\delta\)</span><sup>13</sup>C = −24 ± 5 ‰, a value consistent with a biological origin <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>. If this interpretation is correct, a biosphere existed on the Earth by 4.1 Ga, about 300 million years earlier than had been proposed <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>.</p>
+<p>This result must be weighed with care. It rests on inclusions in a single grain, and a value of <span class="math inline">\(\delta\)</span><sup>13</sup>C consistent with biology does not by itself exclude a non-biological origin; the authors themselves describe the carbon as potentially biogenic <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>. For comparison, the oldest microscopic fossils are about 3.5 billion years old, and chemical traces of life in rocks are argued to extend to about 3.8 Ga <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>. <a href="#fig-early-record" class="quarto-xref">Figure&nbsp;<span>3.5</span></a> shows these dates together.</p>
+<div id="fig-early-record" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-early-record-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-5_early_record.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-early-record-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: The earliest record of the Earth and of possible life. Shown are the oldest detrital zircon <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>; the zircon containing graphite with <span class="math inline">\(\delta\)</span><sup>13</sup>C = −24 ± 5 ‰ <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>; the oldest components of the Acasta Gneiss, the oldest known rock <span class="citation" data-cites="wilde2001">(<a href="../references/references.html#ref-wilde2001" role="doc-biblioref">Wilde et al. 2001</a>)</span>; and the approximate ages to which the chemical record of life (chemofossils) and the fossil record of microscopic organisms extend <span class="citation" data-cites="bell2015">(<a href="../references/references.html#ref-bell2015" role="doc-biblioref">Bell et al. 2015</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-atmosphere" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-atmosphere"><span class="header-section-number">3.4</span> The early atmosphere: reducing or neutral?</h2>
+<section id="why-the-atmosphere-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-atmosphere-matters">Why the atmosphere matters</h3>
+<p>The composition of the early atmosphere determines which small organic molecules could be made in it. Experiments have shown that an electric discharge, acting on a mixture of water, methane and ammonia (or nitrogen), produces several biologically important organic compounds, including amino acids <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>. Such experiments are discussed in Chapter 4. Their success depends strongly on the composition of the gas mixture, and this composition is the subject of this section.</p>
+</section>
+<section id="oxidation-and-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="oxidation-and-reduction">Oxidation and reduction</h3>
+<p>The relevant property of the atmosphere is its oxidation state. <strong>Oxidation</strong> is the loss of electrons by an atom, ion or molecule; <strong>reduction</strong> is the gain of electrons. The two always occur together, in a <strong>redox reaction</strong>, because the electrons lost by one species are gained by another. For atoms in molecules, the bookkeeping is done with <strong>oxidation numbers</strong>: in a covalent bond, the shared electrons are assigned formally to the more electronegative atom (<a href="ch02-how-atoms-join.html#sec-polar" class="quarto-xref"><span>Section 2.4</span></a>), and the oxidation number is the charge that each atom would carry if this assignment were real. Hydrogen is normally assigned +1 and oxygen −2.</p>
+<p>With these rules, the carbon atom in methane (CH<sub>4</sub>) has oxidation number −4, in carbon monoxide (CO) and hydrogen cyanide (HCN) +2, and in carbon dioxide (CO<sub>2</sub>) +4. Nitrogen has −3 in ammonia (NH<sub>3</sub>) and 0 in N<sub>2</sub> (<a href="#fig-redox" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>). An atmosphere is called <strong>reducing</strong> when carbon and nitrogen are present mainly in their low oxidation states, as CH<sub>4</sub> and NH<sub>3</sub>, together with H<sub>2</sub>. It is called <strong>neutral</strong> (or weakly reducing) when they are present mainly as CO<sub>2</sub> and N<sub>2</sub>, with water but without much H<sub>2</sub> or free oxygen. The present atmosphere, which contains free O<sub>2</sub>, is <strong>oxidising</strong>.</p>
+<div id="fig-redox" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-redox-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-6_redox.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-redox-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.6: Oxidation numbers of carbon and nitrogen in the gases discussed in this section. Moving to the right corresponds to oxidation (loss of electrons); moving to the left, to reduction. A reducing atmosphere contains the species on the left, a neutral atmosphere those on the right.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="gases-from-the-interior" class="level3">
+<h3 class="anchored" data-anchor-id="gases-from-the-interior">Gases from the interior</h3>
+<p>The earliest atmosphere was produced largely by the release of gases from the Earth’s interior. The elements available were hydrogen, carbon, nitrogen, oxygen and sulfur, and the molecules they form in volcanic gases depend on how oxidising the source magma is <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>. This is measured by the <strong>oxygen fugacity</strong> of the magma: the effective pressure of O<sub>2</sub> in equilibrium with it, which is extremely small. Geologists describe it relative to reference <strong>buffers</strong>, assemblages of minerals that fix the oxygen fugacity at a known value at each temperature. Two buffers bracket the relevant range <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>:</p>
+<ul>
+<li>the <strong>iron-wüstite buffer</strong>, defined by the coexistence of metallic iron and wüstite (FeO), which is strongly reducing;</li>
+<li>the <strong>fayalite-magnetite-quartz buffer</strong>, defined by the coexistence of fayalite (Fe<sub>2</sub>SiO<sub>4</sub>), magnetite (Fe<sub>3</sub>O<sub>4</sub>) and quartz (SiO<sub>2</sub>), which corresponds to the oxidation state of present-day magmas.</li>
+</ul>
+<p>The gases released under the two conditions are compared in <a href="#tbl-outgassing" class="quarto-xref">Table&nbsp;<span>3.3</span></a>.</p>
+<div id="tbl-outgassing" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-outgassing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.3: Volcanic gases expected from magmas of different oxidation state <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-outgassing-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Oxidation state of magma</th>
+<th>Main volcanic gases</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Near the iron-wüstite buffer (reducing)</td>
+<td>CH<sub>4</sub>, H<sub>2</sub>, H<sub>2</sub>S, NH<sub>3</sub>, CO</td>
+</tr>
+<tr class="even">
+<td>Near the fayalite-magnetite-quartz buffer (present-day)</td>
+<td>H<sub>2</sub>O, CO<sub>2</sub>, SO<sub>2</sub>, N<sub>2</sub></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Because the Hadean rock record is sparse or absent, the oxidation state of Hadean magmas has been estimated from zircons. Trail, Watson and Tailby used the amount of cerium incorporated into zircon crystals, which depends on the oxidation state of the melt, to estimate the oxygen fugacity of the melts from which Hadean zircons grew <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>. They found average values consistent with the fayalite-magnetite-quartz buffer, similar to present-day conditions, and values similar to those of present-day lavas from the mantle as early as about 4350 million years ago <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>. They concluded that gases released from the Earth’s interior later than about 200 million years after the formation of the solar system would not have produced a reducing atmosphere <span class="citation" data-cites="trail2011">(<a href="../references/references.html#ref-trail2011" role="doc-biblioref">Trail, Watson, and Tailby 2011</a>)</span>.</p>
+<p>This result agrees with the widely held view that the early atmosphere was not reducing but was dominated by N<sub>2</sub> and CO<sub>2</sub> <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>. It is also consistent with the dense carbon dioxide atmosphere that followed the condensation of the oceans (<a href="#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>).</p>
+</section>
+<section id="transient-reducing-atmospheres-after-impacts" class="level3">
+<h3 class="anchored" data-anchor-id="transient-reducing-atmospheres-after-impacts">Transient reducing atmospheres after impacts</h3>
+<p>A neutral atmosphere is less favourable for the synthesis of organic molecules than a reducing one. The action of electric discharges on neutral gas mixtures has been found to be much less efficient in producing organic compounds <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>. This creates a problem: the origin of life has been argued to demand a highly reduced early atmosphere, rich in CH<sub>4</sub>, H<sub>2</sub> and NH<sub>3</sub>, whereas the geological evidence suggests that the mantle has always been relatively oxidised and its gases dominated by CO<sub>2</sub>, H<sub>2</sub>O and N<sub>2</sub> <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>.</p>
+<p>One proposed resolution involves the material that struck the Earth after the Moon-forming impact, called the <strong>late veneer</strong> <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>. Isotopic evidence indicates that this material was extremely dry and highly reduced, and that it contained metallic iron <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>. Zahnle and co-workers modelled what happens when such material reacts with the water of the oceans <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>:</p>
+<ol type="1">
+<li>The main product of reaction between the iron of the impactor and the Earth’s water is H<sub>2</sub>.</li>
+<li>The largest impacts, which vaporise the oceans, produce high pressures and long cooling times that favour the formation of CH<sub>4</sub> and NH<sub>3</sub>. Smaller impacts are much less productive, unless catalysts were available or additional reducing power came from the Earth’s crust or mantle.</li>
+<li>The resulting atmospheres rich in H<sub>2</sub> and CH<sub>4</sub> are transient. Through photochemistry, reactions driven by sunlight, they generate organic compounds containing nitrogen over periods of up to tens of millions of years, in total amounts that could form a layer up to half a kilometre thick, while hydrogen escapes to space.</li>
+<li>When the methane has gone, the atmosphere is typically rich in H<sub>2</sub> and CO, and is eventually oxidised to CO<sub>2</sub>.</li>
+</ol>
+<p>In this picture the long-term state of the Hadean atmosphere was neutral, but it was interrupted by episodes, each lasting up to tens of millions of years, during which a reducing atmosphere could exist and organic molecules were produced efficiently.</p>
+</section>
+<section id="neutral-atmospheres-reconsidered" class="level3">
+<h3 class="anchored" data-anchor-id="neutral-atmospheres-reconsidered">Neutral atmospheres reconsidered</h3>
+<p>The yields of organic compounds from neutral atmospheres may also have been underestimated. Cleaves and co-workers repeated electric-discharge experiments with neutral gas mixtures and found that significant amounts of amino acids are produced <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>. The low yields previously reported appear to have been caused by the destruction of the organic compounds, during the chemical treatment of the products, by nitrite and nitrate formed in the discharge. When an inhibitor of this oxidation, such as dissolved ferrous iron (Fe<sup>2+</sup>), was added, the yield of amino acids increased greatly <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>. The authors concluded that synthesis in a neutral atmosphere may have depended on the availability of such oxidation inhibitors in the oceans, and may have been more important than previously thought <span class="citation" data-cites="cleaves2008">(<a href="../references/references.html#ref-cleaves2008" role="doc-biblioref">Cleaves et al. 2008</a>)</span>.</p>
+<p>The question of the composition of the early atmosphere is therefore not settled in a single answer. The evidence favours a long-term atmosphere of N<sub>2</sub> and CO<sub>2</sub>, but leaves open the possibility of reducing conditions for limited times, or in limited places, which may have been enough for prebiotic chemistry.</p>
+</section>
+</section>
+<section id="sec-sources" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-sources"><span class="header-section-number">3.5</span> Sources of small molecules</h2>
+<section id="three-categories-of-source" class="level3">
+<h3 class="anchored" data-anchor-id="three-categories-of-source">Three categories of source</h3>
+<p>The small organic molecules from which the building blocks of RNA could be made had to come from somewhere. Chyba and Sagan divided the possible sources on the early Earth into three categories <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>:</p>
+<ol type="1">
+<li><strong>Exogenous delivery</strong>: organic molecules already present in extraterrestrial objects, such as meteorites and interplanetary dust, and delivered intact to the Earth.</li>
+<li><strong>Impact-shock synthesis</strong>: organic molecules formed from simpler gases by the shock waves and heating produced when objects enter the atmosphere or strike the surface.</li>
+<li><strong>Endogenous synthesis by other energy sources</strong>: organic molecules formed on the Earth itself, using energy from ultraviolet light, electrical discharges such as lightning, or other sources.</li>
+</ol>
+<p>To these may be added the chemistry of <strong>hydrothermal systems</strong>, in which water heated by contact with hot rock reacts with the rock and with dissolved gases.</p>
+<p>Each category requires two things: a supply of carbon, nitrogen and other elements in a suitable chemical form, and a source of energy to drive reactions that would not otherwise proceed (<a href="ch02-how-atoms-join.html#sec-energy" class="quarto-xref"><span>Section 2.7</span></a>). The relative importance of the categories therefore depends on the composition of the atmosphere discussed in <a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>.</p>
+</section>
+<section id="energy-for-atmospheric-synthesis" class="level3">
+<h3 class="anchored" data-anchor-id="energy-for-atmospheric-synthesis">Energy for atmospheric synthesis</h3>
+<p>Three energy sources can drive organic synthesis in the atmosphere.</p>
+<ul>
+<li><strong>Ultraviolet light</strong> is electromagnetic radiation with wavelengths shorter than those of visible light, that is, below about 400 nm. A photon of ultraviolet light carries enough energy to break chemical bonds; the energy of a photon is E = hc/<span class="math inline">\(\lambda\)</span>, where h = 6.626 070 15 × 10<sup>−34</sup> J s is the Planck constant, c = 299 792 458 m s<sup>−1</sup> the speed of light and <span class="math inline">\(\lambda\)</span> the wavelength <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.a</a>)</span>, so a photon of wavelength 200 nm has an energy of 6.2 eV, comparable to the bond enthalpies of <a href="ch02-how-atoms-join.html#tbl-bond-enthalpy" class="quarto-xref">Table&nbsp;<span>2.8</span></a> (a C–H bond enthalpy of 415.9 kJ mol<sup>−1</sup> corresponds to 4.31 eV per bond). The fragments produced can then recombine to form new molecules. This is photochemistry (<a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>).</li>
+<li><strong>Electrical discharges</strong>, such as lightning, heat a narrow channel of gas to high temperatures and break molecules into atoms, ions and fragments, which recombine as the gas cools.</li>
+<li><strong>Shocks</strong> from objects entering the atmosphere at high speed heat and compress gas in a similar way.</li>
+</ul>
+<p>Chyba and Sagan estimated the amount of organic material produced by each source for different compositions of the early atmosphere <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>. Their main conclusions were:</p>
+<ul>
+<li>In a strongly reducing atmosphere, production by atmospheric shocks seems to have exceeded that by electrical discharges. Production by ultraviolet light may have exceeded both, but only if a gas such as H<sub>2</sub>S, which absorbs ultraviolet light of long wavelength, was supplied fast enough <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>.</li>
+<li>In an atmosphere of intermediate oxidation state, which they considered more likely, shocks were probably of little importance. For a ratio of H<sub>2</sub> to CO<sub>2</sub> of about 0.1, the net production of organic molecules was some three orders of magnitude (a factor of about 1000) lower than for reducing atmospheres; the most important sources were ultraviolet light and the delivery of intact organic molecules in interplanetary dust particles <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>.</li>
+<li>At still lower ratios of H<sub>2</sub> to CO<sub>2</sub>, interplanetary dust particles may have been the dominant source <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>.</li>
+</ul>
+<p>The general conclusion is that the more oxidised the atmosphere, the less organic material it produces, and the more important delivery from space becomes. Endogenous, exogenous and impact-shock sources could each have contributed significantly to the origin of life <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>.</p>
+</section>
+<section id="delivery-from-space" class="level3">
+<h3 class="anchored" data-anchor-id="delivery-from-space">Delivery from space</h3>
+<p><strong>Interplanetary dust particles</strong> (IDPs) are small particles of extraterrestrial dust that fall on the Earth from space; Chyba and Sagan considered them the most likely carrier of intact organic molecules from space <span class="citation" data-cites="chyba1992">(<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">Chyba and Sagan 1992</a>)</span>. <strong>Meteorites</strong> are larger bodies that survive passage through the atmosphere and reach the ground. Some meteorites contain a remarkable variety of organic compounds. An analysis of the organic fraction of the Murchison meteorite (<a href="#sec-settings" class="quarto-xref"><span>Section 3.7</span></a>) found tens of thousands of different molecular compositions, corresponding to probably millions of different structures <span class="citation" data-cites="schmittkopplin2010">(<a href="../references/references.html#ref-schmittkopplin2010" role="doc-biblioref">Schmitt-Kopplin et al. 2010</a>)</span>.</p>
+<p>Meteorites and interplanetary dust also delivered molecules of biological interest, including nucleobases <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>, the components of nucleotides that carry genetic information (Chapter 5). Pearce and co-workers modelled the fate of meteoritic nucleobases delivered into small ponds that were repeatedly filled with water and dried <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>. In their model the nucleobases came mainly from meteorites rather than from interplanetary dust particles, and were quickly lost, by seepage of water out of the ponds during wet periods and by destruction by ultraviolet light during dry periods <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>. Any chemistry that used them must therefore have been fast. The model is discussed further in <a href="#sec-settings" class="quarto-xref"><span>Section 3.7</span></a>.</p>
+</section>
+<section id="impacts-as-sources-of-reducing-power" class="level3">
+<h3 class="anchored" data-anchor-id="impacts-as-sources-of-reducing-power">Impacts as sources of reducing power</h3>
+<p>Impacts can also change the chemistry of the atmosphere as a whole. As described in <a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>, the impact of large bodies containing metallic iron on an ocean-covered Earth may have produced transient atmospheres rich in H<sub>2</sub> and CH<sub>4</sub>, in which nitrogen-containing organic compounds were generated photochemically over periods of up to tens of millions of years <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>. In this picture impacts do not merely deliver or synthesise organic molecules directly; they also supply the reducing conditions that make atmospheric synthesis efficient.</p>
+</section>
+<section id="hydrothermal-systems" class="level3">
+<h3 class="anchored" data-anchor-id="hydrothermal-systems">Hydrothermal systems</h3>
+<p><strong>Hydrothermal vents</strong> are sites on the sea floor where water heated within the crust flows out into the ocean. They are geochemically reactive environments, and today they support rich communities of microorganisms <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>. Hydrothermal fluids contain hydrogen (H<sub>2</sub>) and carbon dioxide (CO<sub>2</sub>) <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>, which form a <strong>redox couple</strong>: a reducing and an oxidising substance that can react with each other by the transfer of electrons. There are striking parallels between the chemistry of this couple and the central energy-yielding reactions of some modern microorganisms that make their organic matter from CO<sub>2</sub> (autotrophs) <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>. This has led to the proposal that the chemistry of life began in such settings <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>.</p>
+<p>Hydrothermal systems therefore offer an endogenous source of reduced carbon that does not depend on the composition of the atmosphere. Their limitations for the synthesis of RNA, in particular the instability of RNA and its components in hot water, are discussed in later chapters.</p>
+</section>
+<section id="feedstock-and-energy-in-one-system" class="level3">
+<h3 class="anchored" data-anchor-id="feedstock-and-energy-in-one-system">Feedstock and energy in one system</h3>
+<p>The categories above are not exclusive. One influential set of experiments by Patel and co-workers showed that precursors of ribonucleotides (the units of RNA), amino acids and lipids can all be made from hydrogen cyanide (HCN) and some of its derivatives, by a sequence of reactions in which ultraviolet light provides energy and hydrogen sulfide (H<sub>2</sub>S) acts as the reducing agent <span class="citation" data-cites="patel2015">(<a href="../references/references.html#ref-patel2015" role="doc-biblioref">Patel et al. 2015</a>)</span>. Such chemistry combines an atmospheric or exogenous source of carbon and nitrogen (HCN), a geochemical source of reducing power (H<sub>2</sub>S), and sunlight. The key molecules of this and other routes are introduced in <a href="#sec-feedstock" class="quarto-xref"><span>Section 3.6</span></a>.</p>
+<p><a href="#fig-sources" class="quarto-xref">Figure&nbsp;<span>3.7</span></a> summarises the sources described in this section.</p>
+<div id="fig-sources" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-7_sources.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sources-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.7: Sources of small organic molecules on the early Earth, following the three categories of <span class="citation" data-cites="chyba1992">Chyba and Sagan (<a href="../references/references.html#ref-chyba1992" role="doc-biblioref">1992</a>)</span>, with hydrothermal systems added <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>. Arrows show the flow of material to the surface environment in which prebiotic chemistry may have taken place. The relative importance of the sources depends on the oxidation state of the atmosphere.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-feedstock" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-feedstock"><span class="header-section-number">3.6</span> Key feedstock molecules</h2>
+<section id="what-is-a-feedstock-molecule" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-feedstock-molecule">What is a feedstock molecule?</h3>
+<p>A <strong>feedstock molecule</strong> is a small, simple molecule from which more complex molecules can be built in a sequence of reactions. In prebiotic chemistry the term refers to molecules that could plausibly have formed or accumulated on the early Earth by the processes of <a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>, and that react, under suitable conditions, to give the building blocks of biological molecules. This section introduces four of them: hydrogen cyanide, formaldehyde, cyanamide and phosphate, together with the phosphorus mineral schreibersite. How they are converted into the building blocks of RNA is the subject of Chapters 4 and 5.</p>
+<p>The first three are compounds of hydrogen, carbon, nitrogen and oxygen. Their structures and some of their properties are given in <a href="#fig-feedstock" class="quarto-xref">Figure&nbsp;<span>3.8</span></a> and <a href="#tbl-feedstock" class="quarto-xref">Table&nbsp;<span>3.4</span></a>.</p>
+<div id="tbl-feedstock" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-feedstock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.4: Three carbon-containing feedstock molecules. Boiling points and the triple-point temperature of cyanamide are from the NIST Chemistry WebBook <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>; molar masses are calculated from standard atomic weights.
+</figcaption>
+<div aria-describedby="tbl-feedstock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Molecule</th>
+<th>Formula</th>
+<th>Molar mass (g mol<sup>−1</sup>)</th>
+<th>Normal boiling point (K)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen cyanide</td>
+<td>HCN</td>
+<td>27.03</td>
+<td>299.0 ± 0.5</td>
+</tr>
+<tr class="even">
+<td>Formaldehyde</td>
+<td>H<sub>2</sub>CO</td>
+<td>30.03</td>
+<td>253.85</td>
+</tr>
+<tr class="odd">
+<td>Cyanamide</td>
+<td>H<sub>2</sub>NCN</td>
+<td>54.05</td>
+<td>not tabulated; solid below 318.71 K</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-feedstock" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-feedstock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-8_feedstock.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-feedstock-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.8: Structures of the feedstock molecules discussed in this section. Lines represent covalent bonds (<a href="ch02-how-atoms-join.html#sec-covalent" class="quarto-xref"><span>Section 2.2</span></a>); double and triple bonds are drawn as two and three lines. Hydrogen cyanide is linear and contains a carbon-nitrogen triple bond; formaldehyde is planar and contains a carbon-oxygen double bond; cyanamide contains an amino group (NH<sub>2</sub>) bonded to a nitrile group (C<span class="math inline">\(\equiv\)</span>N). The phosphate ion is tetrahedral (drawn here in projection); its charge of −3 is spread over the four oxygen atoms.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="hydrogen-cyanide" class="level3">
+<h3 class="anchored" data-anchor-id="hydrogen-cyanide">Hydrogen cyanide</h3>
+<p><strong>Hydrogen cyanide</strong> (HCN) is a linear molecule in which the carbon atom forms a single bond to hydrogen and a triple bond to nitrogen (<a href="ch02-how-atoms-join.html#sec-geometry" class="quarto-xref"><span>Section 2.3</span></a>). It boils at 299.0 K (25.9 °C) <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>, so on a warm early Earth it could exist as a gas in the atmosphere and dissolve in water. In the classification of <a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>, its carbon atom has oxidation number +2, intermediate between that of methane and that of carbon dioxide. In the transient reducing atmospheres that may have followed large impacts, nitrogen-containing organic compounds are generated photochemically <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>; HCN is the simplest compound of this kind.</p>
+<p>HCN is of central importance because it contains carbon and nitrogen bonded together, as they are in the nucleobases of RNA. Concentrated solutions of ammonium cyanide (NH<sub>4</sub>CN), the salt formed from HCN and ammonia, polymerise. The products include the nucleobases adenine and guanine; this chemistry goes back to original studies by Oró and Kimball in 1961 and has been examined in later work <span class="citation" data-cites="borquez2005">(<a href="../references/references.html#ref-borquez2005" role="doc-biblioref">Borquez et al. 2005</a>)</span>. The yields are low: about 0.1 percent of adenine after hydrolysis of the soluble products at pH 8, and about 0.05 percent from the insoluble black polymer that also forms <span class="citation" data-cites="borquez2005">(<a href="../references/references.html#ref-borquez2005" role="doc-biblioref">Borquez et al. 2005</a>)</span>. Adenine has the molecular formula C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>, which is exactly five times that of HCN; the chemistry of this and related reactions is described in Chapter 5.</p>
+<p>HCN is also the starting point of the reaction network of Patel and co-workers described in <a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>, from which precursors of ribonucleotides, amino acids and lipids can all be derived <span class="citation" data-cites="patel2015">(<a href="../references/references.html#ref-patel2015" role="doc-biblioref">Patel et al. 2015</a>)</span>.</p>
+</section>
+<section id="formaldehyde" class="level3">
+<h3 class="anchored" data-anchor-id="formaldehyde">Formaldehyde</h3>
+<p><strong>Formaldehyde</strong> (H<sub>2</sub>CO) is the simplest <strong>aldehyde</strong>, a compound containing the group –CHO, in which a carbon atom is double-bonded to oxygen and bonded to hydrogen. It is planar, with an sp<sup>2</sup>-hybridised carbon atom (<a href="ch02-how-atoms-join.html#sec-geometry" class="quarto-xref"><span>Section 2.3</span></a>), and boils at 253.85 K (−19.3 °C) <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>.</p>
+<p>Formaldehyde is the feedstock for sugars. In 1861 Butlerov discovered that formaldehyde, treated with a base, is converted into a sugary substance <span class="citation" data-cites="butlerov1861">(<a href="../references/references.html#ref-butlerov1861" role="doc-biblioref">Boutlerow 1861</a>)</span>; the process is now called the <strong>formose reaction</strong>. In 1959 Breslow proposed a mechanism in which glycolaldehyde, the simplest molecule formed from two formaldehyde units, catalyses its own formation, so that the reaction is autocatalytic (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>) <span class="citation" data-cites="breslow1959">(<a href="../references/references.html#ref-breslow1959" role="doc-biblioref">Breslow 1959</a>)</span>. The sugar of RNA, ribose, contains five carbon atoms and can in principle be formed from five formaldehyde units. In practice, however, ribose is difficult to form selectively <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>, and the formose reaction gives a complex mixture. This problem is examined in <a href="ch04-simple-molecules-to-building-blocks.html#sec-sugars" class="quarto-xref"><span>Section 4.4</span></a>.</p>
+</section>
+<section id="cyanamide" class="level3">
+<h3 class="anchored" data-anchor-id="cyanamide">Cyanamide</h3>
+<p><strong>Cyanamide</strong> (H<sub>2</sub>NCN) consists of an amino group, –NH<sub>2</sub>, bonded to a nitrile group, –C<span class="math inline">\(\equiv\)</span>N. In the solid state it melts near its triple-point temperature of 318.71 K (45.56 °C) <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.b</a>)</span>.</p>
+<p>Its importance in prebiotic chemistry was shown in 2009 by Powner, Gerland and Sutherland <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>. They synthesised activated pyrimidine ribonucleotides, two of the four units from which RNA is built, by a short sequence of reactions that does not pass through free ribose or free nucleobases <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>. The starting materials were cyanamide, cyanoacetylene (HC<span class="math inline">\(\equiv\)</span>C–C<span class="math inline">\(\equiv\)</span>N), glycolaldehyde, glyceraldehyde and inorganic phosphate, all regarded as plausible prebiotic feedstock molecules <span class="citation" data-cites="powner2009">(<a href="../references/references.html#ref-powner2009" role="doc-biblioref">Powner, Gerland, and Sutherland 2009</a>)</span>. This synthesis is described in detail in Chapter 5.</p>
+</section>
+<section id="phosphate-and-the-phosphate-problem" class="level3">
+<h3 class="anchored" data-anchor-id="phosphate-and-the-phosphate-problem">Phosphate and the phosphate problem</h3>
+<p>Every nucleotide of RNA contains a phosphate group, so a source of phosphorus in a reactive form is essential. At the Earth’s surface phosphorus occurs mainly as <strong>phosphate</strong>, PO<sub>4</sub><sup>3−</sup>, an ion in which a phosphorus atom (oxidation number +5) is bonded tetrahedrally to four oxygen atoms. Phosphate is also a component of cell membranes and of energy-transfer molecules such as adenosine triphosphate (ATP) <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>.</p>
+<p>Two obstacles make phosphate difficult to use in prebiotic chemistry. First, phosphorus is scarce in the crust: phosphorus pentoxide (P<sub>2</sub>O<sub>5</sub>) makes up only 0.15 percent of the upper continental crust by mass (<a href="ch01-where-atoms-come-from.html#tbl-crust" class="quarto-xref">Table&nbsp;<span>1.3</span></a>). Second, phosphate combines with calcium to form minerals of the <strong>apatite</strong> group, which have low solubility. As a result, dissolved phosphate is generally limited to micromolar concentrations in natural waters, whereas laboratory experiments that attach phosphate to organic molecules commonly use molar concentrations, about a million times higher <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>. This mismatch between laboratory conditions and environmental constraints is known as the <strong>phosphate problem</strong> <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>.</p>
+<p>Concentrations here are expressed in moles of solute per litre of solution (<strong>molar</strong>, symbol M) or per kilogram of solvent (<strong>molal</strong>, symbol mol kg<sup>−1</sup>); for dilute aqueous solutions the two are nearly equal.</p>
+<p>Two proposed solutions illustrate the kinds of setting that may have overcome the phosphate problem.</p>
+<ul>
+<li><strong>Carbonate-rich lakes.</strong> In lakes rich in dissolved carbonate, calcium is removed from solution as carbonate minerals, so phosphate does not precipitate as apatite. Toner and Catling calculated that such lakes could accumulate up to about 0.1 molal phosphate under steady evaporation and inflow, and more than 1 molal during evaporation without inflow, at moderate pH (6.5 to 9) buffered by the CO<sub>2</sub>-rich atmosphere <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>. Before the origin of life there were no microorganisms to consume phosphate, which would have made such lakes even richer in it <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>.</li>
+<li><strong>Reduced phosphorus from meteorites.</strong> Iron meteorites contain <strong>schreibersite</strong>, (Fe,Ni)<sub>3</sub>P, a mineral in which phosphorus is bonded to iron and nickel rather than to oxygen. When schreibersite corrodes in water, it releases a mixture of phosphorus-bearing ions, including pyrophosphate and triphosphate (chains of two and three phosphate units) and phosphonate, in which phosphorus is less oxidised than in phosphate <span class="citation" data-cites="pasek2005">(<a href="../references/references.html#ref-pasek2005" role="doc-biblioref">Pasek and Lauretta 2005</a>)</span>. Iron meteorites were therefore probably an important source of reactive phosphorus <span class="citation" data-cites="pasek2005">(<a href="../references/references.html#ref-pasek2005" role="doc-biblioref">Pasek and Lauretta 2005</a>)</span>. Gull and co-workers showed that synthetic schreibersite, simply mixed with aqueous solutions of the nucleosides adenosine or uridine and mildly heated under slightly basic conditions (pH about 9), attaches phosphate groups to them <span class="citation" data-cites="gull2015">(<a href="../references/references.html#ref-gull2015" role="doc-biblioref">Gull et al. 2015</a>)</span>. (A <strong>nucleoside</strong> is a nucleobase joined to ribose; adding a phosphate gives a nucleotide; see Chapter 5.)</li>
+</ul>
+<p>Neither solution is established. Both show, however, that the availability of phosphate depended on local conditions, a point taken up in <a href="#sec-settings" class="quarto-xref"><span>Section 3.7</span></a>.</p>
+</section>
+</section>
+<section id="sec-settings" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-settings"><span class="header-section-number">3.7</span> Candidate settings</h2>
+<section id="requirements-of-a-setting" class="level3">
+<h3 class="anchored" data-anchor-id="requirements-of-a-setting">Requirements of a setting</h3>
+<p>The preceding sections described where small molecules could come from. Prebiotic chemistry, however, also requires a place where these molecules could accumulate and react. A useful setting must bring feedstock molecules together at concentrations high enough for reactions between them to proceed, supply energy, and protect the products long enough for further steps to occur. Different settings meet these requirements in different ways. Four kinds of setting have been proposed: ponds and hot springs on land, hydrothermal vents on the sea floor, impact craters, and ice. Each is described below, and their main features are compared in <a href="#tbl-settings" class="quarto-xref">Table&nbsp;<span>3.5</span></a>.</p>
+<p>Before turning to the settings, it is worth recalling the evidence for the earliest delivery of organic matter from space, since it bears on all of them.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key experiment: organic molecules in the Murchison meteorite
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On 28 September 1969, a meteorite fell near the town of Murchison, Victoria, Australia <span class="citation" data-cites="metbull_murchison">(<a href="../references/references.html#ref-metbull_murchison" role="doc-biblioref">Meteoritical Society 2026</a>)</span>. It is a <strong>carbonaceous chondrite</strong>, a chondrite (<a href="ch01-where-atoms-come-from.html#sec-nebula" class="quarto-xref"><span>Section 1.7</span></a>) rich in carbon, of the group designated CM2, and about 100 kg of material was recovered <span class="citation" data-cites="metbull_murchison">(<a href="../references/references.html#ref-metbull_murchison" role="doc-biblioref">Meteoritical Society 2026</a>)</span>.</p>
+<p>In 1970 Kvenvolden and co-workers reported evidence for extraterrestrial amino acids and hydrocarbons in the Murchison meteorite <span class="citation" data-cites="kvenvolden1970">(<a href="../references/references.html#ref-kvenvolden1970" role="doc-biblioref">Kvenvolden et al. 1970</a>)</span>. Later work extended the list to many other classes of compound. Callahan and co-workers analysed 12 meteorites and found that Murchison and one other meteorite contained a diverse suite of nucleobases, including three nucleobase analogues that are rare on Earth: purine, 2,6-diaminopurine and 6,8-diaminopurine <span class="citation" data-cites="callahan2011">(<a href="../references/references.html#ref-callahan2011" role="doc-biblioref">Callahan et al. 2011</a>)</span>. These compounds were not detected in control samples, including a terrestrial soil and Antarctic ice, which supports their extraterrestrial origin <span class="citation" data-cites="callahan2011">(<a href="../references/references.html#ref-callahan2011" role="doc-biblioref">Callahan et al. 2011</a>)</span>. The same suite of nucleobases was produced in laboratory reactions of ammonium cyanide, suggesting that the meteoritic purines formed by cyanide chemistry on the meteorite’s parent asteroid <span class="citation" data-cites="callahan2011">(<a href="../references/references.html#ref-callahan2011" role="doc-biblioref">Callahan et al. 2011</a>)</span> (<a href="#sec-feedstock" class="quarto-xref"><span>Section 3.6</span></a>).</p>
+<p>A non-targeted analysis of the material that can be extracted from Murchison with solvents found tens of thousands of different molecular compositions, corresponding to probably millions of distinct structures <span class="citation" data-cites="schmittkopplin2010">(<a href="../references/references.html#ref-schmittkopplin2010" role="doc-biblioref">Schmitt-Kopplin et al. 2010</a>)</span>. The Murchison meteorite thus shows that chemistry producing some of the molecules of interest to the origin of life took place on small bodies of the early solar system, independently of the Earth, and that its products reached the Earth’s surface.</p>
+</div>
+</div>
+</section>
+<section id="ponds-and-hot-springs-on-land" class="level3">
+<h3 class="anchored" data-anchor-id="ponds-and-hot-springs-on-land">Ponds and hot springs on land</h3>
+<p>Small bodies of water on land, from shallow ponds to the pools of volcanic hot springs, can dry out and refill repeatedly. These <strong>wet-dry cycles</strong> are their most important feature: they have been found to promote the joining of building blocks into chains <span class="citation" data-cites="pearce2017 damer2020">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>; <a href="../references/references.html#ref-damer2020" role="doc-biblioref">Damer and Deamer 2020</a>)</span>. During the dry phase dissolved molecules are concentrated, and during the wet phase products are redistributed and new material is supplied. Damer and Deamer have developed a hypothesis in which fluctuating volcanic hot-spring pools play a central role, based on experimental evidence that polymers enclosed in lipid membranes can be synthesised by cycles of hydration and dehydration <span class="citation" data-cites="damer2020">(<a href="../references/references.html#ref-damer2020" role="doc-biblioref">Damer and Deamer 2020</a>)</span>.</p>
+<p>The model of Pearce and co-workers, introduced in <a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>, placed meteoritic nucleobases in such ponds <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>. Ponds could exist only once land had risen above the early global ocean, but the growing area of land was offset by a declining rate of meteorite delivery <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>. Because nucleobases were lost rapidly by seepage and by ultraviolet light, the authors concluded that the formation of nucleotides and their joining into RNA must have occurred within one to a few wet-dry cycles, and that, under these conditions, RNA polymers probably appeared before 4.17 billion years ago <span class="citation" data-cites="pearce2017">(<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">Pearce et al. 2017</a>)</span>.</p>
+<p>The carbonate-rich lakes of <a href="#sec-feedstock" class="quarto-xref"><span>Section 3.6</span></a> are a related setting: closed basins in which evaporation concentrates phosphate and other reagents to levels used in laboratory syntheses <span class="citation" data-cites="toner2020">(<a href="../references/references.html#ref-toner2020" role="doc-biblioref">Toner and Catling 2020</a>)</span>. Surface settings are exposed to ultraviolet light, which can drive reactions such as those of <span class="citation" data-cites="patel2015">Patel et al. (<a href="../references/references.html#ref-patel2015" role="doc-biblioref">2015</a>)</span> but can also destroy their products.</p>
+</section>
+<section id="hydrothermal-vents" class="level3">
+<h3 class="anchored" data-anchor-id="hydrothermal-vents">Hydrothermal vents</h3>
+<p>Hydrothermal vents (<a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>) place chemistry in the deep ocean, protected from ultraviolet light and from the effects of all but the largest impacts. Many vents, such as the black smokers of mid-ocean ridges, are driven by volcanic heat <span class="citation" data-cites="kelley2005">(<a href="../references/references.html#ref-kelley2005" role="doc-biblioref">Kelley et al. 2005</a>)</span>. A different type is represented by the Lost City hydrothermal field, which is not volcanically driven <span class="citation" data-cites="kelley2005">(<a href="../references/references.html#ref-kelley2005" role="doc-biblioref">Kelley et al. 2005</a>)</span>. There, reactions between seawater and rocks of the upper mantle produce fluids rich in methane and hydrogen, at temperatures from below 40 °C to 90 °C and at pH 9 to 11, and the fluids build carbonate chimneys 30 to 60 metres tall <span class="citation" data-cites="kelley2005">(<a href="../references/references.html#ref-kelley2005" role="doc-biblioref">Kelley et al. 2005</a>)</span>.</p>
+<p>Alkaline vents of this kind provide H<sub>2</sub>, a strong reducing agent, in contact with seawater that contained CO<sub>2</sub>. The parallels between this H<sub>2</sub>-CO<sub>2</sub> chemistry and the core energy metabolism of some microorganisms (<a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>) underlie the proposal that life began in such vents <span class="citation" data-cites="martin2008">(<a href="../references/references.html#ref-martin2008" role="doc-biblioref">Martin et al. 2008</a>)</span>. A difficulty for the synthesis of RNA in the open ocean is dilution: molecules that are formed disperse into a very large volume of water unless they are retained, for example within the porous interiors of chimneys.</p>
+</section>
+<section id="impact-craters" class="level3">
+<h3 class="anchored" data-anchor-id="impact-craters">Impact craters</h3>
+<p>Impacts were not only destructive. Osinski and co-workers reviewed the ways in which impacts may have assisted the origin of life <span class="citation" data-cites="osinski2020">(<a href="../references/references.html#ref-osinski2020" role="doc-biblioref">Osinski et al. 2020</a>)</span>. The heat deposited by a large impact can drive hydrothermal systems within the crater, on land or beneath the sea, which may persist long after the impact; impacts also create sediment-filled basins and pools, and they can deliver or generate chemical ingredients for life and mineral surfaces such as clays that can act as catalysts <span class="citation" data-cites="osinski2020">(<a href="../references/references.html#ref-osinski2020" role="doc-biblioref">Osinski et al. 2020</a>)</span>. An impact crater can thus combine several of the features of the other settings in one place. As noted in <a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>, large impacts of iron-rich bodies may in addition have produced transient reducing atmospheres <span class="citation" data-cites="zahnle2020">(<a href="../references/references.html#ref-zahnle2020" role="doc-biblioref">K. J. Zahnle et al. 2020</a>)</span>.</p>
+</section>
+<section id="ice" class="level3">
+<h3 class="anchored" data-anchor-id="ice">Ice</h3>
+<p>Low temperatures slow down reactions (<a href="ch02-how-atoms-join.html#sec-rates" class="quarto-xref"><span>Section 2.8</span></a>), but they also slow down the decomposition of products, and freezing can concentrate solutes: as water freezes, dissolved substances are largely excluded from the growing ice crystals and accumulate in the remaining liquid. Levy and co-workers kept dilute solutions of ammonium cyanide frozen for 25 years at −20 °C and −78 °C <span class="citation" data-cites="levy2000">(<a href="../references/references.html#ref-levy2000" role="doc-biblioref">Levy et al. 2000</a>)</span>. Adenine and guanine, together with a simple set of amino acids dominated by glycine, were formed in substantial yields <span class="citation" data-cites="levy2000">(<a href="../references/references.html#ref-levy2000" role="doc-biblioref">Levy et al. 2000</a>)</span>. Cold settings may therefore have been suitable for some prebiotic syntheses, and may have been common if the faint young Sun (<a href="#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>) left parts of the early Earth frozen.</p>
+</section>
+<section id="comparison" class="level3">
+<h3 class="anchored" data-anchor-id="comparison">Comparison</h3>
+<div id="tbl-settings" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.5: Candidate settings for prebiotic chemistry on the early Earth.
+</figcaption>
+<div aria-describedby="tbl-settings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Setting</th>
+<th>Main advantages</th>
+<th>Main difficulties</th>
+<th>Key evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ponds and hot springs on land</td>
+<td>Wet-dry cycles concentrate molecules and favour joining of building blocks; access to ultraviolet light</td>
+<td>Require exposed land; ultraviolet light also destroys products</td>
+<td><span class="citation" data-cites="damer2020">Damer and Deamer (<a href="../references/references.html#ref-damer2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="pearce2017">Pearce et al. (<a href="../references/references.html#ref-pearce2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="toner2020">Toner and Catling (<a href="../references/references.html#ref-toner2020" role="doc-biblioref">2020</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Hydrothermal vents</td>
+<td>Continuous supply of H<sub>2</sub> and chemical energy; protection from ultraviolet light and most impacts</td>
+<td>Dilution in the ocean; high temperatures in some vents</td>
+<td><span class="citation" data-cites="martin2008">Martin et al. (<a href="../references/references.html#ref-martin2008" role="doc-biblioref">2008</a>)</span>, <span class="citation" data-cites="kelley2005">Kelley et al. (<a href="../references/references.html#ref-kelley2005" role="doc-biblioref">2005</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>Impact craters</td>
+<td>Combine heat, hydrothermal circulation, pools and delivered material</td>
+<td>Each event is local and its hydrothermal activity eventually ceases</td>
+<td><span class="citation" data-cites="osinski2020">Osinski et al. (<a href="../references/references.html#ref-osinski2020" role="doc-biblioref">2020</a>)</span></td>
+</tr>
+<tr class="even">
+<td>Ice</td>
+<td>Slow decomposition; concentration of solutes on freezing</td>
+<td>Slow reactions</td>
+<td><span class="citation" data-cites="levy2000">Levy et al. (<a href="../references/references.html#ref-levy2000" role="doc-biblioref">2000</a>)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>No single setting has been shown to be the one in which life began, and several may have contributed different steps. What the evidence of this chapter establishes is that, by about 4.4 Ga, the Earth had liquid water (<a href="#sec-zircons" class="quarto-xref"><span>Section 3.3</span></a>), that its atmosphere was probably neutral for most of the time but may have been reducing for periods after large impacts (<a href="#sec-atmosphere" class="quarto-xref"><span>Section 3.4</span></a>), and that organic molecules, including nucleobases, were supplied from both terrestrial and extraterrestrial sources (<a href="#sec-sources" class="quarto-xref"><span>Section 3.5</span></a>). The next chapter follows the chemistry by which feedstock molecules such as those of <a href="#sec-feedstock" class="quarto-xref"><span>Section 3.6</span></a> are transformed into the building blocks of life.</p>
+</section>
+</section>
+<section id="summary" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>Radioactive decay follows N = N<sub>0</sub> e<sup>−<span class="math inline">\(\lambda t\)</span></sup>, with half-life t<sub>1/2</sub> = ln 2/<span class="math inline">\(\lambda\)</span>. The ratio of radiogenic daughter to remaining parent in a closed system gives the time since the system closed.</li>
+<li>The uranium-lead system provides two independent clocks with half-lives of 4.4683 Ga and 703.81 Ma; their agreement tests whether a sample has remained closed. Lead-lead ages date the oldest solids of the solar system to 4.567 to 4.568 Ga.</li>
+<li>Patterson’s meteorite lead measurements of 1956 gave an age of 4.55 ± 0.07 Ga for the Earth and meteorites, close to the modern age of the oldest solar-system solids.</li>
+<li>Earth history is divided into four eons; the Hadean ends at 4031 ± 3 Ma and the Archean at 2500 Ma.</li>
+<li>The Moon formed when a Mars-sized body struck the proto-Earth. Zircons from Apollo 14 show that the Moon had solidified by 4.51 Ga, so the impact occurred within about 60 million years of the formation of the solar system.</li>
+<li>After the impact the Earth passed through a silicate-vapour atmosphere and a magma ocean lasting about 2 million years; water then condensed into oceans beneath a dense carbon dioxide atmosphere. Habitable conditions may have been reached 10 to 20 million years after the impact.</li>
+<li>The young Sun was about 30 percent fainter than today, so the early Earth needed more greenhouse gases to keep liquid water. Impacts continued throughout the Hadean, with an episode of elevated impact rate between about 4.2 to 4.0 and 3.5 Ga.</li>
+<li>Detrital zircons from the Jack Hills, Western Australia, are up to 4404 ± 8 million years old. Their high <span class="math inline">\(\delta\)</span><sup>18</sup>O values show that by 4.4 Ga surface rocks had interacted with liquid water: the Earth had oceans early in the Hadean.</li>
+<li>Graphite inclusions in a 4.10 Ga zircon have <span class="math inline">\(\delta\)</span><sup>13</sup>C = −24 ± 5 ‰, consistent with, but not proof of, a biological origin.</li>
+<li>In a reducing atmosphere carbon and nitrogen are present mainly as CH<sub>4</sub> and NH<sub>3</sub>; in a neutral one, as CO<sub>2</sub> and N<sub>2</sub>. Cerium in Hadean zircons indicates that magmas were as oxidised as today’s, so gases from the interior would have formed a neutral atmosphere.</li>
+<li>Transient reducing atmospheres, lasting up to tens of millions of years, may have followed large impacts of iron-bearing material, and organic synthesis in neutral atmospheres may be more efficient than once thought.</li>
+<li>Organic molecules could be delivered from space, made by impact shocks, or made on the Earth by ultraviolet light and electrical discharges; hydrothermal systems provide a further source. The more oxidised the atmosphere, the smaller the atmospheric production and the more important delivery from space.</li>
+<li>Key feedstock molecules include hydrogen cyanide (a source of nucleobases), formaldehyde (a source of sugars through the formose reaction) and cyanamide. Phosphate is scarce and poorly soluble in the presence of calcium (the phosphate problem); carbonate-rich lakes and the meteoritic mineral schreibersite are two proposed sources of usable phosphorus.</li>
+<li>The Murchison meteorite, which fell in 1969, contains amino acids, a diverse suite of nucleobases and tens of thousands of other organic compounds of extraterrestrial origin.</li>
+<li>Proposed settings for prebiotic chemistry include ponds and hot springs on land (wet-dry cycles), hydrothermal vents, impact craters and ice. Each offers advantages and difficulties, and none has been established as the site of the origin of life.</li>
+</ul>
+</section>
+<section id="exercises" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="exercises">Exercises</h2>
+<ol type="1">
+<li>Show, starting from <a href="#eq-decay" class="quarto-xref">Equation&nbsp;<span>3.2</span></a>, that the half-life equals ln 2/<span class="math inline">\(\lambda\)</span>. Calculate the decay constant of potassium-40 from its half-life in <a href="#tbl-dating" class="quarto-xref">Table&nbsp;<span>3.1</span></a>.</li>
+<li>A zircon crystal has a radiogenic <sup>206</sup>Pb/<sup>238</sup>U atom ratio of 0.70. Using <a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a>, calculate its <sup>238</sup>U-<sup>206</sup>Pb age.</li>
+<li>What fraction of the potassium-40 present when the solar system formed remains today? Of the potassium-40 that has decayed, what fraction has become argon-40?</li>
+<li>Explain why carbon-14 cannot be used to date rocks from the Hadean eon.</li>
+<li>A uranium-bearing mineral gives a <sup>238</sup>U-<sup>206</sup>Pb age of 3.9 Ga and a <sup>235</sup>U-<sup>207</sup>Pb age of 4.1 Ga. Is it concordant? Which assumption of <a href="#eq-age" class="quarto-xref">Equation&nbsp;<span>3.5</span></a> has probably failed?</li>
+<li>Explain why lead from the troilite of the Canyon Diablo meteorite was important for Patterson’s determination of the age of the Earth.</li>
+<li>Using the data in <a href="#sec-hadean" class="quarto-xref"><span>Section 3.2</span></a>, calculate the mean density of the Moon from its mass and radius, and compare your result with the tabulated value.</li>
+<li>What does the similarity of the oxygen isotope compositions of the Earth and Moon imply about the giant impact?</li>
+<li>Why is the age of 4.51 Ga obtained from lunar zircons a minimum age for the Moon-forming impact?</li>
+<li>Using <a href="#eq-sun" class="quarto-xref">Equation&nbsp;<span>3.6</span></a>, calculate the luminosity of the Sun, relative to its present value, at 3.8 Ga.</li>
+<li>List the stages through which the surface of the Earth passed between the giant impact and the first oceans, with the approximate duration of each.</li>
+<li>A zircon has an <sup>18</sup>O/<sup>16</sup>O ratio 0.74 percent higher than that of VSMOW. What is its <span class="math inline">\(\delta\)</span><sup>18</sup>O value?</li>
+<li>Explain why a detrital zircon can be much older than the sedimentary rock in which it is found.</li>
+<li>Explain the reasoning by which a high <span class="math inline">\(\delta\)</span><sup>18</sup>O value in a zircon is taken as evidence for liquid water at the Earth’s surface.</li>
+<li>Why should the graphite in the 4.10 Ga Jack Hills zircon be regarded as potentially, rather than certainly, biological in origin?</li>
+<li>Assign oxidation numbers to each atom in H<sub>2</sub>O, NH<sub>3</sub>, HCN and CO<sub>2</sub>.</li>
+<li>Write a balanced equation for the reaction of metallic iron with water to give wüstite (FeO) and hydrogen. Which element is oxidised and which is reduced?</li>
+<li>Explain why the oxidation state of Hadean magmas determines the composition of the gases they release.</li>
+<li>Why are the reducing atmospheres proposed by Zahnle and co-workers described as transient?</li>
+<li>Calculate the energy, in eV, of a photon of wavelength 250 nm. Is it sufficient to break an O–H bond (<a href="ch02-how-atoms-join.html#tbl-bond-enthalpy" class="quarto-xref">Table&nbsp;<span>2.8</span></a>)?</li>
+<li>According to Chyba and Sagan, which sources of organic molecules were most important in an atmosphere with [H<sub>2</sub>]/[CO<sub>2</sub>] of about 0.1? Explain why the answer differs for a strongly reducing atmosphere.</li>
+<li>Explain why the nucleobases delivered to a pond by a meteorite could have been used only in chemistry that was completed within a short time.</li>
+<li>What is a redox couple? Identify the oxidising and the reducing member of the couple H<sub>2</sub>-CO<sub>2</sub>.</li>
+<li>Assign oxidation numbers to every atom in formaldehyde and in cyanamide.</li>
+<li>Show that the molecular formula of adenine, C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>, corresponds to five molecules of HCN. Do the same for ribose, C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>, and formaldehyde.</li>
+<li>A laboratory experiment uses 1 M phosphate, and a natural water contains 2 <span class="math inline">\(\mu\)</span>M phosphate. By what factor do the concentrations differ?</li>
+<li>Explain why carbonate-rich lakes can contain much more dissolved phosphate than ordinary natural waters.</li>
+<li>What evidence indicates that the nucleobases found in the Murchison meteorite are extraterrestrial rather than terrestrial contamination?</li>
+<li>Explain how wet-dry cycles can help to overcome the problem of low concentrations of feedstock molecules.</li>
+<li>Compare a land-based hot-spring pool with an alkaline hydrothermal vent as a setting for prebiotic chemistry, considering energy sources, concentration of molecules and exposure to ultraviolet light.</li>
+<li>Why might freezing promote some prebiotic reactions even though low temperature reduces rate constants?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-barboni2017" class="csl-entry" role="listitem">
+Barboni, M., P. Boehnke, B. Keller, I. E. Kohl, B. Schoene, E. D. Young, and K. D. McKeegan. 2017. <span>“Early Formation of the <span>Moon</span> 4.51 Billion Years Ago.”</span> <em>Science Advances</em> 3 (1): e1602365. <a href="https://doi.org/10.1126/sciadv.1602365">https://doi.org/10.1126/sciadv.1602365</a>.
+</div>
+<div id="ref-bell2015" class="csl-entry" role="listitem">
+Bell, E. A., P. Boehnke, T. M. Harrison, and W. L. Mao. 2015. <span>“Potentially Biogenic Carbon Preserved in a 4.1 Billion-Year-Old Zircon.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 112 (47): 14518–21. <a href="https://doi.org/10.1073/pnas.1517557112">https://doi.org/10.1073/pnas.1517557112</a>.
+</div>
+<div id="ref-borquez2005" class="csl-entry" role="listitem">
+Borquez, E., H. J. Cleaves, A. Lazcano, and S. L. Miller. 2005. <span>“An Investigation of Prebiotic Purine Synthesis from the Hydrolysis of <span>HCN</span> Polymers.”</span> <em>Origins of Life and Evolution of Biospheres</em> 35 (2): 79–90. <a href="https://doi.org/10.1007/s11084-005-5945-9">https://doi.org/10.1007/s11084-005-5945-9</a>.
+</div>
+<div id="ref-bottke2017" class="csl-entry" role="listitem">
+Bottke, W. F., and M. D. Norman. 2017. <span>“The <span>Late Heavy Bombardment</span>.”</span> <em>Annual Review of Earth and Planetary Sciences</em> 45: 619–47. <a href="https://doi.org/10.1146/annurev-earth-063016-020131">https://doi.org/10.1146/annurev-earth-063016-020131</a>.
+</div>
+<div id="ref-butlerov1861" class="csl-entry" role="listitem">
+Boutlerow, A. 1861. <span>“Formation Synth<span>é</span>tique d’une Substance Sucr<span>é</span>e.”</span> <em>Comptes Rendus de l’Acad<span>é</span>mie Des Sciences</em> 53: 145–47.
+</div>
+<div id="ref-breslow1959" class="csl-entry" role="listitem">
+Breslow, R. 1959. <span>“On the Mechanism of the Formose Reaction.”</span> <em>Tetrahedron Letters</em> 1 (21): 22–26. <a href="https://doi.org/10.1016/S0040-4039(01)99487-0">https://doi.org/10.1016/S0040-4039(01)99487-0</a>.
+</div>
+<div id="ref-callahan2011" class="csl-entry" role="listitem">
+Callahan, M. P., K. E. Smith, H. J. Cleaves, J. Ruzicka, J. C. Stern, D. P. Glavin, C. H. House, and J. P. Dworkin. 2011. <span>“Carbonaceous Meteorites Contain a Wide Range of Extraterrestrial Nucleobases.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 108 (34): 13995–98. <a href="https://doi.org/10.1073/pnas.1106493108">https://doi.org/10.1073/pnas.1106493108</a>.
+</div>
+<div id="ref-chyba1992" class="csl-entry" role="listitem">
+Chyba, C., and C. Sagan. 1992. <span>“Endogenous Production, Exogenous Delivery and Impact-Shock Synthesis of Organic Molecules: An Inventory for the Origins of Life.”</span> <em>Nature</em> 355: 125–32. <a href="https://doi.org/10.1038/355125a0">https://doi.org/10.1038/355125a0</a>.
+</div>
+<div id="ref-cleaves2008" class="csl-entry" role="listitem">
+Cleaves, H. J., J. H. Chalmers, A. Lazcano, S. L. Miller, and J. L. Bada. 2008. <span>“A Reassessment of Prebiotic Organic Synthesis in Neutral Planetary Atmospheres.”</span> <em>Origins of Life and Evolution of Biospheres</em> 38 (2): 105–15. <a href="https://doi.org/10.1007/s11084-007-9120-3">https://doi.org/10.1007/s11084-007-9120-3</a>.
+</div>
+<div id="ref-cohen2013" class="csl-entry" role="listitem">
+Cohen, K. M., S. C. Finney, P. L. Gibbard, and J.-X. Fan. 2024. <span>“The <span>ICS</span> International Chronostratigraphic Chart, Version 2024/12.”</span> International Commission on Stratigraphy, <a href="https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf" class="uri">https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf</a>.
+</div>
+<div id="ref-damer2020" class="csl-entry" role="listitem">
+Damer, B., and D. Deamer. 2020. <span>“The Hot Spring Hypothesis for an Origin of Life.”</span> <em>Astrobiology</em> 20 (4): 429–52. <a href="https://doi.org/10.1089/ast.2019.2045">https://doi.org/10.1089/ast.2019.2045</a>.
+</div>
+<div id="ref-feulner2012" class="csl-entry" role="listitem">
+Feulner, G. 2012. <span>“The Faint Young <span>Sun</span> Problem.”</span> <em>Reviews of Geophysics</em>. <a href="https://doi.org/10.1029/2011RG000375">https://doi.org/10.1029/2011RG000375</a>.
+</div>
+<div id="ref-gull2015" class="csl-entry" role="listitem">
+Gull, M., M. A. Mojica, F. M. Fernández, D. A. Gaul, T. M. Orlando, C. L. Liotta, and M. A. Pasek. 2015. <span>“Nucleoside Phosphorylation by the Mineral Schreibersite.”</span> <em>Scientific Reports</em> 5: 17198. <a href="https://doi.org/10.1038/srep17198">https://doi.org/10.1038/srep17198</a>.
+</div>
+<div id="ref-harrison2009" class="csl-entry" role="listitem">
+Harrison, T. M. 2009. <span>“The <span>Hadean</span> Crust: Evidence from <span class="math inline">\(&gt;\)</span>4 <span>Ga</span> Zircons.”</span> <em>Annual Review of Earth and Planetary Sciences</em> 37: 479–505. <a href="https://doi.org/10.1146/annurev.earth.031208.100151">https://doi.org/10.1146/annurev.earth.031208.100151</a>.
+</div>
+<div id="ref-ciaaw_c" class="csl-entry" role="listitem">
+IUPAC Commission on Isotopic Abundances and Atomic Weights. n.d. <span>“Atomic Weight of Carbon.”</span> <a href="https://www.ciaaw.org/carbon.htm">https://www.ciaaw.org/carbon.htm</a>.
+</div>
+<div id="ref-kelley2005" class="csl-entry" role="listitem">
+Kelley, D. S., J. A. Karson, G. L. Früh-Green, et al. 2005. <span>“A Serpentinite-Hosted Ecosystem: The <span>Lost City</span> Hydrothermal Field.”</span> <em>Science</em> 307 (5714): 1428–34. <a href="https://doi.org/10.1126/science.1102556">https://doi.org/10.1126/science.1102556</a>.
+</div>
+<div id="ref-kvenvolden1970" class="csl-entry" role="listitem">
+Kvenvolden, K., J. Lawless, K. Pering, E. Peterson, J. Flores, C. Ponnamperuma, I. R. Kaplan, and C. Moore. 1970. <span>“Evidence for Extraterrestrial Amino-Acids and Hydrocarbons in the <span>Murchison</span> Meteorite.”</span> <em>Nature</em> 228 (5275): 923–26. <a href="https://doi.org/10.1038/228923a0">https://doi.org/10.1038/228923a0</a>.
+</div>
+<div id="ref-levy2000" class="csl-entry" role="listitem">
+Levy, M., S. L. Miller, K. Brinton, and J. L. Bada. 2000. <span>“Prebiotic Synthesis of Adenine and Amino Acids Under <span>Europa</span>-Like Conditions.”</span> <em>Icarus</em> 145 (2): 609–13. <a href="https://doi.org/10.1006/icar.2000.6365">https://doi.org/10.1006/icar.2000.6365</a>.
+</div>
+<div id="ref-martin2008" class="csl-entry" role="listitem">
+Martin, W., J. Baross, D. Kelley, and M. J. Russell. 2008. <span>“Hydrothermal Vents and the Origin of Life.”</span> <em>Nature Reviews Microbiology</em> 6 (11): 805–14. <a href="https://doi.org/10.1038/nrmicro1991">https://doi.org/10.1038/nrmicro1991</a>.
+</div>
+<div id="ref-metbull_murchison" class="csl-entry" role="listitem">
+Meteoritical Society. 2026. <span>“Meteoritical Bulletin Database: <span>Murchison</span>.”</span> <a href="https://www.lpi.usra.edu/meteor/metbull.php?code=16875" class="uri">https://www.lpi.usra.edu/meteor/metbull.php?code=16875</a>.
+</div>
+<div id="ref-nasa_earth" class="csl-entry" role="listitem">
+NASA Space Science Data Coordinated Archive. 2024a. <span>“Earth Fact Sheet.”</span> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html" class="uri">https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html</a>.
+</div>
+<div id="ref-nasa_moon" class="csl-entry" role="listitem">
+———. 2024b. <span>“Moon Fact Sheet.”</span> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" class="uri">https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d.a. <span>“Fundamental Physical Constants: 2022 CODATA Adjustment.”</span> <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+———. n.d.b. <span>“<span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data.”</span> <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-osinski2020" class="csl-entry" role="listitem">
+Osinski, G. R., C. S. Cockell, A. Pontefract, and H. M. Sapers. 2020. <span>“The Role of Meteorite Impacts in the Origin of Life.”</span> <em>Astrobiology</em> 20 (9): 1121–49. <a href="https://doi.org/10.1089/ast.2019.2203">https://doi.org/10.1089/ast.2019.2203</a>.
+</div>
+<div id="ref-pasek2005" class="csl-entry" role="listitem">
+Pasek, M. A., and D. S. Lauretta. 2005. <span>“Aqueous Corrosion of Phosphide Minerals from Iron Meteorites: A Highly Reactive Source of Prebiotic Phosphorus on the Surface of the Early <span>Earth</span>.”</span> <em>Astrobiology</em> 5 (4): 515–35. <a href="https://doi.org/10.1089/ast.2005.5.515">https://doi.org/10.1089/ast.2005.5.515</a>.
+</div>
+<div id="ref-patel2015" class="csl-entry" role="listitem">
+Patel, B. H., C. Percivalle, D. J. Ritson, C. D. Duffy, and J. D. Sutherland. 2015. <span>“Common Origins of <span>RNA</span>, Protein and Lipid Precursors in a Cyanosulfidic Protometabolism.”</span> <em>Nature Chemistry</em> 7 (4): 301–7. <a href="https://doi.org/10.1038/nchem.2202">https://doi.org/10.1038/nchem.2202</a>.
+</div>
+<div id="ref-patterson1956" class="csl-entry" role="listitem">
+Patterson, C. 1956. <span>“Age of Meteorites and the Earth.”</span> <em>Geochimica Et Cosmochimica Acta</em> 10 (4): 230–37. <a href="https://doi.org/10.1016/0016-7037(56)90036-9">https://doi.org/10.1016/0016-7037(56)90036-9</a>.
+</div>
+<div id="ref-pearce2017" class="csl-entry" role="listitem">
+Pearce, B. K. D., R. E. Pudritz, D. A. Semenov, and T. K. Henning. 2017. <span>“Origin of the <span>RNA</span> World: The Fate of Nucleobases in Warm Little Ponds.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 114 (43): 11327–32. <a href="https://doi.org/10.1073/pnas.1710339114">https://doi.org/10.1073/pnas.1710339114</a>.
+</div>
+<div id="ref-pfalzner2015" class="csl-entry" role="listitem">
+Pfalzner, S., M. B. Davies, M. Gounelle, A. Johansen, C. Münker, P. Lacerda, S. Portegies Zwart, L. Testi, M. Trieloff, and D. Veras. 2015. <span>“The Formation of the Solar System.”</span> <em>Physica Scripta</em> 90 (6): 068001. <a href="https://doi.org/10.1088/0031-8949/90/6/068001">https://doi.org/10.1088/0031-8949/90/6/068001</a>.
+</div>
+<div id="ref-powner2009" class="csl-entry" role="listitem">
+Powner, M. W., B. Gerland, and J. D. Sutherland. 2009. <span>“Synthesis of Activated Pyrimidine Ribonucleotides in Prebiotically Plausible Conditions.”</span> <em>Nature</em> 459 (7244): 239–42. <a href="https://doi.org/10.1038/nature08013">https://doi.org/10.1038/nature08013</a>.
+</div>
+<div id="ref-ruedas2017" class="csl-entry" role="listitem">
+Ruedas, T. 2017. <span>“Radioactive Heat Production of Six Geologically Important Nuclides.”</span> <em>Geochemistry, Geophysics, Geosystems</em> 18 (9): 3530–41. <a href="https://doi.org/10.1002/2017GC006997">https://doi.org/10.1002/2017GC006997</a>.
+</div>
+<div id="ref-schmittkopplin2010" class="csl-entry" role="listitem">
+Schmitt-Kopplin, P., Z. Gabelica, R. D. Gougeon, A. Fekete, B. Kanawati, M. Harir, I. Gebefuegi, G. Eckel, and N. Hertkorn. 2010. <span>“High Molecular Diversity of Extraterrestrial Organic Matter in <span>Murchison</span> Meteorite Revealed 40 Years After Its Fall.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 107 (7): 2763–68. <a href="https://doi.org/10.1073/pnas.0912157107">https://doi.org/10.1073/pnas.0912157107</a>.
+</div>
+<div id="ref-toner2020" class="csl-entry" role="listitem">
+Toner, J. D., and D. C. Catling. 2020. <span>“A Carbonate-Rich Lake Solution to the Phosphate Problem of the Origin of Life.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 117 (2): 883–88. <a href="https://doi.org/10.1073/pnas.1916109117">https://doi.org/10.1073/pnas.1916109117</a>.
+</div>
+<div id="ref-trail2011" class="csl-entry" role="listitem">
+Trail, D., E. B. Watson, and N. D. Tailby. 2011. <span>“The Oxidation State of <span>Hadean</span> Magmas and Implications for Early <span>Earth</span>’s Atmosphere.”</span> <em>Nature</em> 480 (7375): 79–82. <a href="https://doi.org/10.1038/nature10655">https://doi.org/10.1038/nature10655</a>.
+</div>
+<div id="ref-villa2015" class="csl-entry" role="listitem">
+Villa, I. M., P. De Bièvre, N. E. Holden, and P. R. Renne. 2015. <span>“<span>IUPAC-IUGS</span> Recommendation on the Half Life of <span class="math inline">\(^{87}\)</span>Rb.”</span> <em>Geochimica Et Cosmochimica Acta</em> 164: 382–85. <a href="https://doi.org/10.1016/j.gca.2015.05.025">https://doi.org/10.1016/j.gca.2015.05.025</a>.
+</div>
+<div id="ref-villa2022" class="csl-entry" role="listitem">
+Villa, I. M., N. E. Holden, A. Possolo, R. B. Ickert, D. B. Hibbert, P. R. Renne, M. L. Bonardi, and P. De Bièvre. 2022. <span>“<span>IUGS-IUPAC</span> Recommendations and Status Reports on the Half-Lives of <span class="math inline">\(^{87}\)</span>Rb, <span class="math inline">\(^{146}\)</span>Sm, <span class="math inline">\(^{147}\)</span>Sm, <span class="math inline">\(^{234}\)</span>u, <span class="math inline">\(^{235}\)</span>u, and <span class="math inline">\(^{238}\)</span>u (<span>IUPAC</span> Technical Report).”</span> <em>Pure and Applied Chemistry</em> 94 (9): 1085–92. <a href="https://doi.org/10.1515/pac-2021-1202">https://doi.org/10.1515/pac-2021-1202</a>.
+</div>
+<div id="ref-wilde2001" class="csl-entry" role="listitem">
+Wilde, S. A., J. W. Valley, W. H. Peck, and C. M. Graham. 2001. <span>“Evidence from Detrital Zircons for the Existence of Continental Crust and Oceans on the <span>Earth</span> 4.4 <span>Gyr</span> Ago.”</span> <em>Nature</em> 409 (6817): 175–78. <a href="https://doi.org/10.1038/35051550">https://doi.org/10.1038/35051550</a>.
+</div>
+<div id="ref-young2016" class="csl-entry" role="listitem">
+Young, E. D., I. E. Kohl, P. H. Warren, D. C. Rubie, S. A. Jacobson, and A. Morbidelli. 2016. <span>“Oxygen Isotopic Evidence for Vigorous Mixing During the <span>Moon</span>-Forming Giant Impact.”</span> <em>Science</em>. <a href="https://doi.org/10.1126/science.aad0525">https://doi.org/10.1126/science.aad0525</a>.
+</div>
+<div id="ref-zahnle2020" class="csl-entry" role="listitem">
+Zahnle, K. J., R. Lupu, D. C. Catling, and N. Wogan. 2020. <span>“Creation and Evolution of Impact-Generated Reduced Atmospheres of Early <span>Earth</span>.”</span> arXiv:2001.00095. <a href="https://arxiv.org/abs/2001.00095">https://arxiv.org/abs/2001.00095</a>.
+</div>
+<div id="ref-zahnle2007" class="csl-entry" role="listitem">
+Zahnle, K., N. Arndt, C. Cockell, A. Halliday, E. Nisbet, F. Selsis, and N. H. Sleep. 2007. <span>“Emergence of a Habitable Planet.”</span> <em>Space Science Reviews</em> 129: 35–78. <a href="https://doi.org/10.1007/s11214-007-9225-z">https://doi.org/10.1007/s11214-007-9225-z</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch02-how-atoms-join.html" class="pagination-link" aria-label="How Atoms Join into Molecules">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">How Atoms Join into Molecules</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch04-simple-molecules-to-building-blocks.html" class="pagination-link" aria-label="From Simple Molecules to Building Blocks">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">From Simple Molecules to Building Blocks</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI <a href="https://doi.org/10.5281/zenodo.23846016">10.5281/zenodo.23846016</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
