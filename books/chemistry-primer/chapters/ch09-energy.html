@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>9&nbsp; Energy and the Direction of Change – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch10-rates.html" rel="next">
+<link href="../chapters/ch08-equilibrium-ph.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch09-energy.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-energy-heat" id="toc-sec-energy-heat" class="nav-link" data-scroll-target="#sec-energy-heat"><span class="header-section-number">9.1</span> Energy, heat and temperature</a>
+  <ul class="collapse">
+  <li><a href="#energy-and-its-units" id="toc-energy-and-its-units" class="nav-link" data-scroll-target="#energy-and-its-units">Energy and its units</a></li>
+  <li><a href="#heat-and-temperature-are-not-the-same" id="toc-heat-and-temperature-are-not-the-same" class="nav-link" data-scroll-target="#heat-and-temperature-are-not-the-same">Heat and temperature are not the same</a></li>
+  </ul></li>
+  <li><a href="#sec-enthalpy" id="toc-sec-enthalpy" class="nav-link" data-scroll-target="#sec-enthalpy"><span class="header-section-number">9.2</span> Enthalpy: the heat of a reaction</a>
+  <ul class="collapse">
+  <li><a href="#exothermic-and-endothermic" id="toc-exothermic-and-endothermic" class="nav-link" data-scroll-target="#exothermic-and-endothermic">Exothermic and endothermic</a></li>
+  <li><a href="#bonds-and-enthalpy" id="toc-bonds-and-enthalpy" class="nav-link" data-scroll-target="#bonds-and-enthalpy">Bonds and enthalpy</a></li>
+  <li><a href="#enthalpies-of-formation-and-hesss-law" id="toc-enthalpies-of-formation-and-hesss-law" class="nav-link" data-scroll-target="#enthalpies-of-formation-and-hesss-law">Enthalpies of formation and Hess’s law</a></li>
+  </ul></li>
+  <li><a href="#sec-entropy" id="toc-sec-entropy" class="nav-link" data-scroll-target="#sec-entropy"><span class="header-section-number">9.3</span> Entropy: the number of arrangements</a>
+  <ul class="collapse">
+  <li><a href="#heat-alone-does-not-decide" id="toc-heat-alone-does-not-decide" class="nav-link" data-scroll-target="#heat-alone-does-not-decide">Heat alone does not decide</a></li>
+  <li><a href="#what-entropy-measures" id="toc-what-entropy-measures" class="nav-link" data-scroll-target="#what-entropy-measures">What entropy measures</a></li>
+  <li><a href="#the-second-law" id="toc-the-second-law" class="nav-link" data-scroll-target="#the-second-law">The second law</a></li>
+  </ul></li>
+  <li><a href="#sec-gibbs" id="toc-sec-gibbs" class="nav-link" data-scroll-target="#sec-gibbs"><span class="header-section-number">9.4</span> Gibbs energy: one quantity for both</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#four-combinations" id="toc-four-combinations" class="nav-link" data-scroll-target="#four-combinations">Four combinations</a></li>
+  <li><a href="#two-worked-examples-water-changing-state" id="toc-two-worked-examples-water-changing-state" class="nav-link" data-scroll-target="#two-worked-examples-water-changing-state">Two worked examples: water changing state</a></li>
+  </ul></li>
+  <li><a href="#sec-dG-K" id="toc-sec-dG-K" class="nav-link" data-scroll-target="#sec-dG-K"><span class="header-section-number">9.5</span> Gibbs energy and equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#the-standard-gibbs-energy-and-k" id="toc-the-standard-gibbs-energy-and-k" class="nav-link" data-scroll-target="#the-standard-gibbs-energy-and-k">The standard Gibbs energy and K</a></li>
+  <li><a href="#away-from-equilibrium-the-reaction-quotient" id="toc-away-from-equilibrium-the-reaction-quotient" class="nav-link" data-scroll-target="#away-from-equilibrium-the-reaction-quotient">Away from equilibrium: the reaction quotient</a></li>
+  <li><a href="#why-water-favours-hydrolysis" id="toc-why-water-favours-hydrolysis" class="nav-link" data-scroll-target="#why-water-favours-hydrolysis">Why water favours hydrolysis</a></li>
+  <li><a href="#how-temperature-changes-k" id="toc-how-temperature-changes-k" class="nav-link" data-scroll-target="#how-temperature-changes-k">How temperature changes K</a></li>
+  </ul></li>
+  <li><a href="#sec-coupling" id="toc-sec-coupling" class="nav-link" data-scroll-target="#sec-coupling"><span class="header-section-number">9.6</span> Driving unfavourable reactions</a>
+  <ul class="collapse">
+  <li><a href="#coupling" id="toc-coupling" class="nav-link" data-scroll-target="#coupling">Coupling</a></li>
+  <li><a href="#activated-building-blocks" id="toc-activated-building-blocks" class="nav-link" data-scroll-target="#activated-building-blocks">Activated building blocks</a></li>
+  </ul></li>
+  <li><a href="#sec-not-fast" id="toc-sec-not-fast" class="nav-link" data-scroll-target="#sec-not-fast"><span class="header-section-number">9.7</span> Favourable is not the same as fast</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch09" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Some changes happen of their own accord and others never do. Water left in an open dish evaporates; a mixture of hydrogen and oxygen, once ignited, turns into water; but water never separates by itself into hydrogen and oxygen, and the evaporated water does not return to the dish. This chapter asks: <em>what decides the direction in which a change can go?</em> The answer involves two quantities, enthalpy and entropy, which combine into a third, the Gibbs energy. The Gibbs energy also explains the size of the equilibrium constant met in Chapter 8, and why joining building blocks into chains in water needs a source of energy.</p>
+</section>
+<section id="sec-energy-heat" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="sec-energy-heat"><span class="header-section-number">9.1</span> Energy, heat and temperature</h2>
+<section id="energy-and-its-units" class="level3">
+<h3 class="anchored" data-anchor-id="energy-and-its-units">Energy and its units</h3>
+<p><strong>Energy</strong> is the capacity to do work or to supply heat. It takes several forms. <strong>Kinetic energy</strong> is the energy of motion. <strong>Potential energy</strong> is energy stored in the positions of objects that attract or repel each other, such as a raised weight in the field of the Earth, or electrons and nuclei in the electric field of their charges. The <strong>chemical energy</strong> of a substance is the potential and kinetic energy of its electrons and nuclei, and it changes when bonds are broken and formed.</p>
+<p>The SI unit of energy is the <strong>joule</strong> (J), equal to 1 kg m<sup>2</sup> s<sup>−2</sup> <span class="citation" data-cites="bipm_si">(<a href="../references/references.html#ref-bipm_si" role="doc-biblioref">Bureau International des Poids et Mesures 2019</a>)</span>. Chemical energies are usually given per mole of reaction, in kilojoules per mole (kJ mol<sup>−1</sup>). Older literature and food labels use the <strong>calorie</strong>; the thermochemical calorie is defined as exactly 4.184 J <span class="citation" data-cites="nist_sp811">(<a href="../references/references.html#ref-nist_sp811" role="doc-biblioref">Thompson and Taylor 2008</a>)</span>, and the “Calorie” of nutrition labels is a kilocalorie.</p>
+<p>The <strong>first law of thermodynamics</strong> states that energy is conserved: it can be transferred from one body to another and converted from one form into another, but it is neither created nor destroyed. When a reaction releases energy, that energy is not new; it was stored in the reactants and is passed to the surroundings, usually as heat.</p>
+</section>
+<section id="heat-and-temperature-are-not-the-same" class="level3">
+<h3 class="anchored" data-anchor-id="heat-and-temperature-are-not-the-same">Heat and temperature are not the same</h3>
+<p><strong>Heat</strong> is energy transferred from one body to another because of a difference in temperature. <strong>Temperature</strong> is a measure of how vigorously the particles of a body move. In a gas, the average kinetic energy of the molecules moving from place to place is proportional to the absolute temperature. A bathtub of warm water and a cup of water at the same temperature have the same temperature but very different amounts of thermal energy, because the bathtub contains far more molecules.</p>
+<p>The energy of thermal motion per particle is of the order of k<sub>B</sub>T, where k<sub>B</sub> is the <strong>Boltzmann constant</strong>, exactly 1.380 649 × 10<sup>−23</sup> J K<sup>−1</sup> <span class="citation" data-cites="bipm_si">(<a href="../references/references.html#ref-bipm_si" role="doc-biblioref">Bureau International des Poids et Mesures 2019</a>)</span>. Per mole of particles the corresponding quantity is RT, where R is the molar gas constant, 8.314 462 618 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.-a</a>)</span>. At 25 °C (298.15 K), RT = 2.479 kJ mol<sup>−1</sup>. This number is a useful yardstick. Energies of a few kJ mol<sup>−1</sup> are comparable with thermal motion and are easily supplied or overcome by collisions; energies of hundreds of kJ mol<sup>−1</sup>, typical of covalent bonds, are not.</p>
+</section>
+</section>
+<section id="sec-enthalpy" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sec-enthalpy"><span class="header-section-number">9.2</span> Enthalpy: the heat of a reaction</h2>
+<section id="exothermic-and-endothermic" class="level3">
+<h3 class="anchored" data-anchor-id="exothermic-and-endothermic">Exothermic and endothermic</h3>
+<p>Most chemical reactions are carried out at constant pressure, open to the atmosphere. The heat exchanged with the surroundings under these conditions is equal to the change in a quantity called <strong>enthalpy</strong>, H. Only changes in enthalpy, ΔH, can be measured, not absolute values. A reaction that releases heat to its surroundings has ΔH &lt; 0 and is called <strong>exothermic</strong>; one that absorbs heat has ΔH &gt; 0 and is called <strong>endothermic</strong> (<a href="#fig-enthalpy-levels" class="quarto-xref">Figure&nbsp;<span>9.1</span></a>).</p>
+<div id="fig-enthalpy-levels" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-enthalpy-levels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch09/fig9-1_enthalpy_levels.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-enthalpy-levels-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: Enthalpy changes drawn as levels. (a) The formation of liquid water from hydrogen and oxygen releases 285.83 kJ per mole of water: the products lie lower than the reactants. (b) The evaporation of water absorbs 44.0 kJ per mole: the vapour lies higher than the liquid. Values for 25 °C and 1 bar <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="bonds-and-enthalpy" class="level3">
+<h3 class="anchored" data-anchor-id="bonds-and-enthalpy">Bonds and enthalpy</h3>
+<p>Breaking a chemical bond always requires energy, and forming one always releases energy. The energy needed to break one mole of a given bond in the gas phase is its bond enthalpy (Chapter 3, <a href="ch03-electrons-bonds.html#tbl-bond-enthalpy" class="quarto-xref">Table&nbsp;<span>3.2</span></a>). A reaction is exothermic when the bonds formed in the products are, in total, stronger than the bonds broken in the reactants, and endothermic when they are weaker. The very strong triple bond of N<sub>2</sub>, 945.4 kJ mol<sup>−1</sup>, explains why nitrogen gas, which makes up most of the air, reacts so reluctantly: any reaction of N<sub>2</sub> must begin by breaking it.</p>
+</section>
+<section id="enthalpies-of-formation-and-hesss-law" class="level3">
+<h3 class="anchored" data-anchor-id="enthalpies-of-formation-and-hesss-law">Enthalpies of formation and Hess’s law</h3>
+<p>Enthalpy changes are tabulated as <strong>standard enthalpies of formation</strong>, Δ<sub>f</sub>H°: the enthalpy change when one mole of a compound is formed from its elements in their most stable forms, with all substances in their <strong>standard states</strong>. The degree sign ° marks a standard value. For gases, the standard state is a pressure of 1 bar; for dissolved substances, a concentration of 1 mol L<sup>−1</sup>; tables usually refer to 298.15 K. By definition, Δ<sub>f</sub>H° of an element in its most stable form, such as H<sub>2</sub>(g) or O<sub>2</sub>(g), is zero.</p>
+<p>Enthalpy is a <strong>state function</strong>: its value depends only on the present state of a system, not on how that state was reached. It follows that the enthalpy change of a reaction is the same whether the reaction occurs in one step or in several, and that it can be calculated from enthalpies of formation:</p>
+<p><span class="math display">\[
+\Delta H^\circ = \sum \Delta_{\mathrm{f}}H^\circ(\text{products}) - \sum \Delta_{\mathrm{f}}H^\circ(\text{reactants})
+\]</span></p>
+<p>each multiplied by its coefficient in the equation. This rule is <strong>Hess’s law</strong>. As an example, consider the burning of methane, the main component of natural gas:</p>
+<p><span class="math display">\[
+\mathrm{CH_4(g)} + 2\,\mathrm{O_2(g)} \rightarrow \mathrm{CO_2(g)} + 2\,\mathrm{H_2O(l)}
+\]</span></p>
+<p>With Δ<sub>f</sub>H° = −74.87 kJ mol<sup>−1</sup> for methane <span class="citation" data-cites="chase1998">(<a href="../references/references.html#ref-chase1998" role="doc-biblioref">Chase 1998</a>)</span>, −393.51 kJ mol<sup>−1</sup> for carbon dioxide and −285.830 kJ mol<sup>−1</sup> for liquid water <span class="citation" data-cites="cox1984">(<a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>,</p>
+<p><span class="math display">\[
+\Delta H^\circ = [-393.51 + 2(-285.830)] - [-74.87 + 0] = -890.30\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>The reaction releases about 890 kJ of heat for each mole (16 g) of methane burned.</p>
+</section>
+</section>
+<section id="sec-entropy" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="sec-entropy"><span class="header-section-number">9.3</span> Entropy: the number of arrangements</h2>
+<section id="heat-alone-does-not-decide" class="level3">
+<h3 class="anchored" data-anchor-id="heat-alone-does-not-decide">Heat alone does not decide</h3>
+<p>If the release of heat were the only thing that mattered, endothermic changes would never happen of their own accord. Yet they do. Water evaporates from a dish at room temperature, absorbing heat from its surroundings; ice melts in a warm room, absorbing heat. A second quantity is needed to explain the direction of change.</p>
+</section>
+<section id="what-entropy-measures" class="level3">
+<h3 class="anchored" data-anchor-id="what-entropy-measures">What entropy measures</h3>
+<p><strong>Entropy</strong>, S, is a measure of the number of microscopic arrangements of a system’s particles and energy that are consistent with what is observed on the large scale. A state that can be realised in many ways has a high entropy; one that can be realised in few ways has a low entropy. Some general trends follow:</p>
+<ul>
+<li>A gas has a much higher entropy than the liquid from which it forms, because its molecules move freely through a much larger volume. The standard molar entropy of water vapour is 188.835 J K<sup>−1</sup> mol<sup>−1</sup>, and that of liquid water 69.95 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>.</li>
+<li>A liquid has a higher entropy than its solid, in which the particles are held in fixed positions.</li>
+<li>Entropy increases with temperature, because the particles can share a larger amount of energy in more ways.</li>
+<li>A reaction that increases the number of independent particles, especially of gas molecules, usually increases entropy; one that joins particles together, such as the joining of two building blocks into one, usually decreases it.</li>
+</ul>
+<p>Entropy has units of energy divided by temperature, J K<sup>−1</sup>, or J K<sup>−1</sup> mol<sup>−1</sup> for one mole.</p>
+</section>
+<section id="the-second-law" class="level3">
+<h3 class="anchored" data-anchor-id="the-second-law">The second law</h3>
+<p>The <strong>second law of thermodynamics</strong> states that in any spontaneous change, the total entropy of a system and its surroundings increases. The word <strong>spontaneous</strong> here has a technical meaning: a spontaneous change is one that can happen without being driven from outside. It says nothing about speed. A spontaneous change may be fast, like the neutralisation of an acid by a base, or so slow that it is never observed, as <a href="#sec-not-fast" class="quarto-xref"><span>Section 9.7</span></a> shows.</p>
+<p>The second law refers to the <em>total</em> entropy. The entropy of a system can decrease, as when water freezes into ordered ice, provided that the entropy of the surroundings increases by more. Freezing releases heat, and heat flowing into the surroundings increases their entropy. When an amount of heat q flows into surroundings at absolute temperature T, their entropy increases by q/T. The same amount of heat therefore increases entropy more when the surroundings are cold than when they are hot, and this is why water freezes below 0 °C but not above.</p>
+</section>
+</section>
+<section id="sec-gibbs" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-gibbs"><span class="header-section-number">9.4</span> Gibbs energy: one quantity for both</h2>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>Keeping track of the entropy of the surroundings is inconvenient. For a change at constant temperature and pressure, it can be replaced by a quantity that refers only to the system: the <strong>Gibbs energy</strong> (also called the Gibbs free energy), G, named after the American physicist Josiah Willard Gibbs. Its change is</p>
+<p><span class="math display">\[
+\Delta G = \Delta H - T\Delta S
+\]</span></p>
+<p>where T is the absolute temperature. The link to the second law is as follows. At constant pressure, the heat released into the surroundings is −ΔH, so their entropy changes by −ΔH/T, while the entropy of the system changes by ΔS. The total entropy change is therefore ΔS − ΔH/T, and multiplying by −T gives exactly ΔH − TΔS = ΔG. A decrease in the Gibbs energy of the system thus corresponds to an increase in the total entropy, and the second law takes a simple form:</p>
+<ul>
+<li>If ΔG &lt; 0, the change is spontaneous: it can occur of its own accord.</li>
+<li>If ΔG &gt; 0, the change is not spontaneous; the reverse change is.</li>
+<li>If ΔG = 0, the system is at equilibrium.</li>
+</ul>
+<p>A change with ΔG &lt; 0 is also described as <strong>favourable</strong> or <strong>exergonic</strong>, and one with ΔG &gt; 0 as <strong>unfavourable</strong> or <strong>endergonic</strong>.</p>
+</section>
+<section id="four-combinations" class="level3">
+<h3 class="anchored" data-anchor-id="four-combinations">Four combinations</h3>
+<p>Since ΔH and ΔS can each be positive or negative, there are four cases (<a href="#tbl-four-cases" class="quarto-xref">Table&nbsp;<span>9.1</span></a>).</p>
+<div id="tbl-four-cases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-four-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9.1: The sign of ΔG for the four combinations of ΔH and ΔS.
+</figcaption>
+<div aria-describedby="tbl-four-cases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ΔH</th>
+<th>ΔS</th>
+<th>ΔG = ΔH − TΔS</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>− (releases heat)</td>
+<td>+ (more arrangements)</td>
+<td>negative at all temperatures</td>
+<td>decomposition of hydrogen peroxide into water and oxygen gas</td>
+</tr>
+<tr class="even">
+<td>+ (absorbs heat)</td>
+<td>− (fewer arrangements)</td>
+<td>positive at all temperatures</td>
+<td>the reverse: water and oxygen forming hydrogen peroxide</td>
+</tr>
+<tr class="odd">
+<td>−</td>
+<td>−</td>
+<td>negative at low temperature, positive at high</td>
+<td>freezing of water; many reactions that join two molecules into one</td>
+</tr>
+<tr class="even">
+<td>+</td>
+<td>+</td>
+<td>positive at low temperature, negative at high</td>
+<td>melting of ice; evaporation of water</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="two-worked-examples-water-changing-state" class="level3">
+<h3 class="anchored" data-anchor-id="two-worked-examples-water-changing-state">Two worked examples: water changing state</h3>
+<p>For the evaporation of one mole of liquid water at 298.15 K and 1 bar, the standard values give</p>
+<p><span class="math display">\[
+\Delta H = -241.826 - (-285.830) = +44.004\ \mathrm{kJ\,mol^{-1}}, \qquad \Delta S = 188.835 - 69.95 = +118.89\ \mathrm{J\,K^{-1}\,mol^{-1}}
+\]</span></p>
+<p>using Δ<sub>f</sub>H° = −241.826 kJ mol<sup>−1</sup> for water vapour <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>. Before the two terms are combined, ΔS must be converted to kJ K<sup>−1</sup> mol<sup>−1</sup> (118.89 J = 0.11889 kJ):</p>
+<p><span class="math display">\[
+\Delta G = 44.004 - 298.15 \times 0.11889 = +8.56\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>ΔG is positive: at 25 °C, liquid water does not turn into vapour at a pressure of 1 bar. (Water in an open dish evaporates nonetheless, because the pressure of water vapour in ordinary air is far below 1 bar; <a href="#sec-dG-K" class="quarto-xref"><span>Section 9.5</span></a> shows how ΔG depends on the amounts present.) The enthalpy term favours the liquid, the entropy term favours the vapour, and the entropy term grows with temperature. The two balance, ΔG = 0, when T = ΔH/ΔS = 44 004 / 118.89 <span class="math inline">\(\approx\)</span> 370 K (<a href="#fig-dg-temp" class="quarto-xref">Figure&nbsp;<span>9.2</span></a> a). This estimate assumes that ΔH and ΔS do not change with temperature, and it comes within 3 K of the boiling point of water at 1 atmosphere, 373.12 K (99.97 °C on the present international temperature scale, calculated from the international reference formulation for water <span class="citation" data-cites="wagner2002">(<a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>).</p>
+<p>The melting of ice follows the same pattern on a smaller scale. At 0 °C and 1 atmosphere, melting absorbs 6.01 kJ mol<sup>−1</sup> and increases the entropy by 22.0 J K<sup>−1</sup> mol<sup>−1</sup> (values calculated from the international reference formulations for ice and liquid water <span class="citation" data-cites="feistel2006 wagner2002">(<a href="../references/references.html#ref-feistel2006" role="doc-biblioref">Feistel and Wagner 2006</a>; <a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>). Below 273.15 K the enthalpy term wins and ice is stable; above it the entropy term wins and the ice melts (<a href="#fig-dg-temp" class="quarto-xref">Figure&nbsp;<span>9.2</span></a> b). At the melting point itself, ΔG = 0 and ice and water coexist at equilibrium.</p>
+<div id="fig-dg-temp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dg-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch09/fig9-2_dg_temperature.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dg-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.2: Gibbs energy change as a function of temperature, ΔG = ΔH − TΔS, assuming that ΔH and ΔS are constant. (a) Evaporation of water at 1 bar, with ΔH = 44.004 kJ mol<sup>−1</sup> and ΔS = 118.89 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>. ΔG crosses zero near 370 K; the dotted line marks the boiling point at 1 atm, 373.12 K <span class="citation" data-cites="wagner2002">(<a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>. (b) Melting of ice at 1 atm, with ΔH = 6.01 kJ mol<sup>−1</sup> <span class="citation" data-cites="feistel2006 wagner2002">(<a href="../references/references.html#ref-feistel2006" role="doc-biblioref">Feistel and Wagner 2006</a>; <a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>; ΔG crosses zero at the melting point.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-dG-K" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="sec-dG-K"><span class="header-section-number">9.5</span> Gibbs energy and equilibrium</h2>
+<section id="the-standard-gibbs-energy-and-k" class="level3">
+<h3 class="anchored" data-anchor-id="the-standard-gibbs-energy-and-k">The standard Gibbs energy and K</h3>
+<p>The Gibbs energy change of a reaction depends on the amounts of reactants and products present. The <strong>standard Gibbs energy change</strong>, ΔG°, refers to the reaction with every substance in its standard state, for example every dissolved substance at 1 mol L<sup>−1</sup>. It is a fixed number for each reaction at a given temperature, and it is related to the equilibrium constant of Chapter 8 by</p>
+<p><span id="eq-dG-K"><span class="math display">\[
+\Delta G^\circ = -RT \ln K
+\tag{9.1}\]</span></span></p>
+<p>where ln is the natural logarithm (Chapter 1). Rearranged, K = e<sup>−ΔG°/RT</sup>. A negative ΔG° gives K &gt; 1, so the products are favoured at equilibrium; a positive ΔG° gives K &lt; 1.</p>
+<p>Because K depends exponentially on ΔG°, modest differences in energy produce large differences in K. At 298.15 K, RT ln 10 = 5.71 kJ mol<sup>−1</sup>, so every 5.71 kJ mol<sup>−1</sup> of ΔG° changes K by a factor of ten (<a href="#fig-dg-K" class="quarto-xref">Figure&nbsp;<span>9.3</span></a>). <a href="#tbl-dG-K" class="quarto-xref">Table&nbsp;<span>9.2</span></a> gives some values.</p>
+<div id="tbl-dG-K" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-dG-K-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9.2: Equilibrium constants for some values of the standard Gibbs energy change, from <a href="#eq-dG-K" class="quarto-xref">Equation&nbsp;<span>9.1</span></a>.
+</figcaption>
+<div aria-describedby="tbl-dG-K-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ΔG° (kJ mol<sup>−1</sup>)</th>
+<th>K at 298.15 K</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>−40</td>
+<td>1.0 × 10<sup>7</sup></td>
+</tr>
+<tr class="even">
+<td>−20</td>
+<td>3.2 × 10<sup>3</sup></td>
+</tr>
+<tr class="odd">
+<td>−10</td>
+<td>56</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>+10</td>
+<td>0.018</td>
+</tr>
+<tr class="even">
+<td>+20</td>
+<td>3.1 × 10<sup>−4</sup></td>
+</tr>
+<tr class="odd">
+<td>+40</td>
+<td>9.8 × 10<sup>−8</sup></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-dg-K" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dg-K-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch09/fig9-3_dg_K.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dg-K-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.3: The relation between ΔG° and log<sub>10</sub> K at 298.15 K, from <a href="#eq-dG-K" class="quarto-xref">Equation&nbsp;<span>9.1</span></a>. The line falls by one unit of log<sub>10</sub> K for every 5.71 kJ mol<sup>−1</sup> increase in ΔG°.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="away-from-equilibrium-the-reaction-quotient" class="level3">
+<h3 class="anchored" data-anchor-id="away-from-equilibrium-the-reaction-quotient">Away from equilibrium: the reaction quotient</h3>
+<p>When a reaction mixture is not at equilibrium, the ratio of products to reactants, written in the same form as K but with the actual concentrations, is called the <strong>reaction quotient</strong>, Q. The Gibbs energy change under these actual conditions is</p>
+<p><span class="math display">\[
+\Delta G = \Delta G^\circ + RT \ln Q
+\]</span></p>
+<p>This equation states three things. If Q &lt; K, ΔG is negative and the reaction proceeds forwards, making more product. If Q &gt; K, ΔG is positive and the reaction proceeds backwards. If Q = K, ΔG = 0 and the mixture is at equilibrium. A reaction with a positive ΔG° can therefore still proceed, if the products are kept at low concentration or the reactants at high concentration, because a small Q makes RT ln Q large and negative. This is the quantitative form of Le Chatelier’s principle (Chapter 8): adding reactant or removing product lowers Q and drives the reaction forwards.</p>
+</section>
+<section id="why-water-favours-hydrolysis" class="level3">
+<h3 class="anchored" data-anchor-id="why-water-favours-hydrolysis">Why water favours hydrolysis</h3>
+<p>Chapters 7 and 8 showed that a condensation in water, A + B <span class="math inline">\(\rightleftharpoons\)</span> AB + H<sub>2</sub>O, is held back by the large excess of water. In the language of this chapter, the standard Gibbs energy change of such a condensation, with water as the solvent, is positive for many of the links found in living molecules; the reverse reaction, hydrolysis, is favourable. The equilibrium mixture therefore contains mostly separate building blocks, and dilution makes the situation worse, because the amount of joined product at equilibrium is proportional to the concentration of the partners ([AB]/[A] = K[B], Chapter 8). To make chains, either the water must be removed, so that the solvent no longer pushes the equilibrium back, or the joining must be paid for with Gibbs energy from another source, as described in <a href="#sec-coupling" class="quarto-xref"><span>Section 9.6</span></a>.</p>
+</section>
+<section id="how-temperature-changes-k" class="level3">
+<h3 class="anchored" data-anchor-id="how-temperature-changes-k">How temperature changes K</h3>
+<p>Combining <a href="#eq-dG-K" class="quarto-xref">Equation&nbsp;<span>9.1</span></a> with ΔG° = ΔH° − TΔS° and dividing by −RT gives</p>
+<p><span class="math display">\[
+\ln K = -\frac{\Delta H^\circ}{RT} + \frac{\Delta S^\circ}{R}
+\]</span></p>
+<p>If ΔH° and ΔS° change little with temperature, the second term is constant, and the effect of temperature is carried by the first term. For an exothermic reaction (ΔH° &lt; 0), the first term is positive and becomes smaller as T increases, so K decreases on heating: the equilibrium shifts towards the reactants. For an endothermic reaction (ΔH° &gt; 0), K increases on heating. This is the explanation promised in Chapter 8 for the rule that raising the temperature favours the direction that absorbs heat. The relation is known as the <strong>van ’t Hoff equation</strong>, after the Dutch chemist Jacobus Henricus van ’t Hoff.</p>
+</section>
+</section>
+<section id="sec-coupling" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="sec-coupling"><span class="header-section-number">9.6</span> Driving unfavourable reactions</h2>
+<section id="coupling" class="level3">
+<h3 class="anchored" data-anchor-id="coupling">Coupling</h3>
+<p>An unfavourable reaction can still take place if it is linked to a favourable one in such a way that the two occur together as a single overall process. Because Gibbs energy is a state function, the Gibbs energy changes of the two steps add. If a reaction A + B → AB has ΔG = +15 kJ mol<sup>−1</sup> and another reaction X → Y has ΔG = −30 kJ mol<sup>−1</sup>, a combined process A + B + X → AB + Y has ΔG = −15 kJ mol<sup>−1</sup> and is favourable (<a href="#fig-coupling" class="quarto-xref">Figure&nbsp;<span>9.4</span></a>). This is called <strong>coupling</strong>.</p>
+<p>Coupling is not achieved by simply mixing the two reactions in one vessel. The two must share a common step or intermediate. Typically, X reacts first with A to form a high-energy intermediate, and this intermediate then reacts with B to give AB, releasing Y. The favourable reaction pays for the unfavourable one only through this shared chemistry.</p>
+<div id="fig-coupling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coupling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch09/fig9-4_coupling.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coupling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.4: Coupling of reactions (illustrative values). A reaction with a positive ΔG (left) can be driven by a reaction with a larger negative ΔG (centre) if the two share an intermediate, because the Gibbs energy changes add (right).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="activated-building-blocks" class="level3">
+<h3 class="anchored" data-anchor-id="activated-building-blocks">Activated building blocks</h3>
+<p>A molecule that carries a built-in source of Gibbs energy, ready to be released in a coupled reaction, is called <strong>activated</strong>. In living cells, the most common example is adenosine triphosphate (ATP). Its chain of three phosphate groups is linked by P–O–P bonds, called phosphoanhydride bonds, whose hydrolysis is strongly favourable. Cells use the transfer of a phosphate group from ATP to drive many reactions that would otherwise be unfavourable, including the joining of building blocks into the chains of RNA and proteins. The building blocks that cells join into RNA are themselves activated in this way: each arrives carrying a chain of three phosphates, and the release of two of them pays for the new link.</p>
+<p>On the early Earth, before cells existed, any joining of building blocks in water needed a comparable source of Gibbs energy. Possible sources include chemically activated molecules formed in the environment, the removal of water by drying, and the input of energy from sunlight, heat or chemical gradients. Which of these could have operated is one of the central questions in research on the origin of life.</p>
+</section>
+</section>
+<section id="sec-not-fast" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="sec-not-fast"><span class="header-section-number">9.7</span> Favourable is not the same as fast</h2>
+<p>The formation of liquid water from its elements,</p>
+<p><span class="math display">\[
+\mathrm{H_2(g)} + \tfrac{1}{2}\,\mathrm{O_2(g)} \rightarrow \mathrm{H_2O(l)}
+\]</span></p>
+<p>has ΔH° = −285.830 kJ mol<sup>−1</sup> and ΔS° = 69.95 − 130.680 − ½(205.152) = −163.31 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="nist_webbook cox1984">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>)</span>. At 298.15 K,</p>
+<p><span class="math display">\[
+\Delta G^\circ = -285.830 + 298.15 \times 0.16331 = -237.14\ \mathrm{kJ\,mol^{-1}}
+\]</span></p>
+<p>The reaction is strongly favourable. Yet a mixture of hydrogen and oxygen can be kept at room temperature for a very long time without reacting appreciably, until a spark ignites it. Thermodynamics says whether a change <em>can</em> happen and how far it will go; it says nothing about how fast. The hydrolysis of RNA in water is another example: it is favourable, yet a chain of RNA survives in pure water for long enough to be studied, because the reaction is slow. Speed is the subject of the next chapter.</p>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>Energy is conserved (first law). Chemical energies are given in kJ mol<sup>−1</sup>; at 25 °C the thermal energy per mole, RT, is 2.479 kJ mol<sup>−1</sup>.</li>
+<li>Enthalpy change, ΔH, is the heat exchanged at constant pressure: negative for exothermic, positive for endothermic reactions. Hess’s law gives ΔH° of a reaction from enthalpies of formation.</li>
+<li>Entropy, S, measures the number of microscopic arrangements. The total entropy increases in every spontaneous change (second law).</li>
+<li>The Gibbs energy change, ΔG = ΔH − TΔS, decides direction at constant temperature and pressure: ΔG &lt; 0 spontaneous, ΔG &gt; 0 not, ΔG = 0 equilibrium.</li>
+<li>ΔG° = −RT ln K: at 25 °C, every 5.71 kJ mol<sup>−1</sup> changes K tenfold. Under actual conditions ΔG = ΔG° + RT ln Q.</li>
+<li>Heating lowers K of an exothermic reaction and raises K of an endothermic one.</li>
+<li>Unfavourable reactions can be driven by coupling to favourable ones through a shared intermediate; activated molecules such as ATP serve this purpose in cells.</li>
+<li>A favourable reaction can be extremely slow: thermodynamics gives direction, not speed.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Use the standard enthalpies of formation in this chapter to calculate ΔH° for H<sub>2</sub>O(g) → H<sub>2</sub>O(l). Is condensation of water vapour exothermic or endothermic?</li>
+<li>A reaction has ΔH = +20 kJ mol<sup>−1</sup> and ΔS = +100 J K<sup>−1</sup> mol<sup>−1</sup>. Is it spontaneous at 25 °C (298.15 K)? Above what temperature does it become spontaneous, assuming ΔH and ΔS are constant?</li>
+<li>A reaction has ΔG° = −11.4 kJ mol<sup>−1</sup> at 298.15 K. Without a calculator, estimate K. (Hint: use the 5.71 kJ mol<sup>−1</sup> rule.)</li>
+<li>A reaction has K = 10 and is started with Q = 1000. In which direction does it proceed? What is the sign of ΔG?</li>
+<li>Explain, using the four cases of <a href="#tbl-four-cases" class="quarto-xref">Table&nbsp;<span>9.1</span></a>, why joining two building blocks into one tends to become less favourable as the temperature rises, if the joining releases heat.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bipm_si" class="csl-entry" role="listitem">
+Bureau International des Poids et Mesures. 2019. <em>The International System of Units (SI)</em>. SI Brochure, 9th edition (2019), updated 2025; <a href="https://www.bipm.org/en/measurement-units/si-defining-constants" class="uri">https://www.bipm.org/en/measurement-units/si-defining-constants</a>.
+</div>
+<div id="ref-chase1998" class="csl-entry" role="listitem">
+Chase, Jr., M. W. 1998. <span>“<span>NIST-JANAF</span> Thermochemical Tables, Fourth Edition.”</span> <em>Journal of Physical and Chemical Reference Data, Monograph 9</em>.
+</div>
+<div id="ref-cox1984" class="csl-entry" role="listitem">
+Cox, J. D., D. D. Wagman, and V. A. Medvedev. 1984. <em><span>CODATA</span> Key Values for Thermodynamics</em>. Hemisphere Publishing Corp.
+</div>
+<div id="ref-feistel2006" class="csl-entry" role="listitem">
+Feistel, R., and W. Wagner. 2006. <span>“A New Equation of State for <span>H<span class="math inline">\(_2\)</span>O</span> Ice <span>Ih</span>.”</span> <em>Journal of Physical and Chemical Reference Data</em> 35: 1021–47.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d.-a. <em>Fundamental Physical Constants: 2022 CODATA Adjustment</em>. <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d.-b. <em><span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data</em>. <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-nist_sp811" class="csl-entry" role="listitem">
+Thompson, Ambler, and Barry N. Taylor. 2008. <em>Guide for the Use of the International System of Units (<span>SI</span>)</em>. NIST Special Publication 811. National Institute of Standards; Technology. <a href="https://www.nist.gov/pml/special-publication-811">https://www.nist.gov/pml/special-publication-811</a>.
+</div>
+<div id="ref-wagner2002" class="csl-entry" role="listitem">
+Wagner, W., and A. Pruß. 2002. <span>“The <span>IAPWS</span> Formulation 1995 for the Thermodynamic Properties of Ordinary Water Substance for General and Scientific Use.”</span> <em>Journal of Physical and Chemical Reference Data</em> 31: 387–535.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch08-equilibrium-ph.html" class="pagination-link" aria-label="Equilibrium, Acids and pH">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch10-rates.html" class="pagination-link" aria-label="How Fast: Reaction Rates">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

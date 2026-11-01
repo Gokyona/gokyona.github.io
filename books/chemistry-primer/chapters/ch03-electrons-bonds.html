@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Electrons and Bonds – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch04-molecular-drawings.html" rel="next">
+<link href="../chapters/ch02-matter.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch03-electrons-bonds.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-shells" id="toc-sec-shells" class="nav-link" data-scroll-target="#sec-shells"><span class="header-section-number">3.1</span> Electrons in shells</a>
+  <ul class="collapse">
+  <li><a href="#energy-levels" id="toc-energy-levels" class="nav-link" data-scroll-target="#energy-levels">Energy levels</a></li>
+  <li><a href="#shells-subshells-and-orbitals" id="toc-shells-subshells-and-orbitals" class="nav-link" data-scroll-target="#shells-subshells-and-orbitals">Shells, subshells and orbitals</a></li>
+  <li><a href="#how-many-electrons-fit" id="toc-how-many-electrons-fit" class="nav-link" data-scroll-target="#how-many-electrons-fit">How many electrons fit</a></li>
+  <li><a href="#electron-configurations" id="toc-electron-configurations" class="nav-link" data-scroll-target="#electron-configurations">Electron configurations</a></li>
+  <li><a href="#valence-electrons" id="toc-valence-electrons" class="nav-link" data-scroll-target="#valence-electrons">Valence electrons</a></li>
+  </ul></li>
+  <li><a href="#sec-why-bond" id="toc-sec-why-bond" class="nav-link" data-scroll-target="#sec-why-bond"><span class="header-section-number">3.2</span> Why atoms bond</a>
+  <ul class="collapse">
+  <li><a href="#measuring-how-tightly-electrons-are-held" id="toc-measuring-how-tightly-electrons-are-held" class="nav-link" data-scroll-target="#measuring-how-tightly-electrons-are-held">Measuring how tightly electrons are held</a></li>
+  <li><a href="#the-octet-rule" id="toc-the-octet-rule" class="nav-link" data-scroll-target="#the-octet-rule">The octet rule</a></li>
+  </ul></li>
+  <li><a href="#sec-ionic" id="toc-sec-ionic" class="nav-link" data-scroll-target="#sec-ionic"><span class="header-section-number">3.3</span> Ionic bonds</a></li>
+  <li><a href="#sec-covalent" id="toc-sec-covalent" class="nav-link" data-scroll-target="#sec-covalent"><span class="header-section-number">3.4</span> Covalent bonds</a>
+  <ul class="collapse">
+  <li><a href="#sharing-a-pair-of-electrons" id="toc-sharing-a-pair-of-electrons" class="nav-link" data-scroll-target="#sharing-a-pair-of-electrons">Sharing a pair of electrons</a></li>
+  <li><a href="#how-many-bonds-each-atom-forms" id="toc-how-many-bonds-each-atom-forms" class="nav-link" data-scroll-target="#how-many-bonds-each-atom-forms">How many bonds each atom forms</a></li>
+  <li><a href="#lewis-structures" id="toc-lewis-structures" class="nav-link" data-scroll-target="#lewis-structures">Lewis structures</a></li>
+  <li><a href="#phosphorus-an-exception-that-matters" id="toc-phosphorus-an-exception-that-matters" class="nav-link" data-scroll-target="#phosphorus-an-exception-that-matters">Phosphorus: an exception that matters</a></li>
+  </ul></li>
+  <li><a href="#sec-multiple" id="toc-sec-multiple" class="nav-link" data-scroll-target="#sec-multiple"><span class="header-section-number">3.5</span> Double and triple bonds</a>
+  <ul class="collapse">
+  <li><a href="#more-than-one-shared-pair" id="toc-more-than-one-shared-pair" class="nav-link" data-scroll-target="#more-than-one-shared-pair">More than one shared pair</a></li>
+  <li><a href="#shorter-and-stronger" id="toc-shorter-and-stronger" class="nav-link" data-scroll-target="#shorter-and-stronger">Shorter and stronger</a></li>
+  </ul></li>
+  <li><a href="#sec-shapes" id="toc-sec-shapes" class="nav-link" data-scroll-target="#sec-shapes"><span class="header-section-number">3.6</span> The shapes of molecules</a>
+  <ul class="collapse">
+  <li><a href="#electron-pairs-keep-apart" id="toc-electron-pairs-keep-apart" class="nav-link" data-scroll-target="#electron-pairs-keep-apart">Electron pairs keep apart</a></li>
+  <li><a href="#methane-ammonia-and-water" id="toc-methane-ammonia-and-water" class="nav-link" data-scroll-target="#methane-ammonia-and-water">Methane, ammonia and water</a></li>
+  <li><a href="#flat-and-straight-molecules" id="toc-flat-and-straight-molecules" class="nav-link" data-scroll-target="#flat-and-straight-molecules">Flat and straight molecules</a></li>
+  <li><a href="#hybrid-orbitals-briefly" id="toc-hybrid-orbitals-briefly" class="nav-link" data-scroll-target="#hybrid-orbitals-briefly">Hybrid orbitals, briefly</a></li>
+  </ul></li>
+  <li><a href="#sec-carbon" id="toc-sec-carbon" class="nav-link" data-scroll-target="#sec-carbon"><span class="header-section-number">3.7</span> Carbon, the element of chains and rings</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch03" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Two hydrogen atoms and one oxygen atom combine into a molecule of water, but helium atoms combine with nothing at all. Carbon forms four bonds, nitrogen three and oxygen two. This chapter asks: <em>why do atoms join together, and what decides how many bonds each one forms?</em> The answer lies in the arrangement of the electrons around the nucleus, and in particular in the electrons of the outermost shell.</p>
+</section>
+<section id="sec-shells" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-shells"><span class="header-section-number">3.1</span> Electrons in shells</h2>
+<section id="energy-levels" class="level3">
+<h3 class="anchored" data-anchor-id="energy-levels">Energy levels</h3>
+<p>The electrons of an atom cannot have any energy whatever. They occupy a set of separate, fixed <strong>energy levels</strong>, determined by their attraction to the positive nucleus and their repulsion from one another. This is a result of quantum mechanics, and it can be confirmed directly: atoms absorb and emit light only at particular wavelengths, which correspond to the energy differences between their levels.</p>
+<p>Energies on the scale of single atoms are conveniently measured in <strong>electronvolts</strong> (eV). One electronvolt is the energy gained by a particle carrying one elementary charge when it moves through an electric potential difference of one volt; it equals exactly 1.602 176 634 × 10<sup>−19</sup> J <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.-a</a>)</span>.</p>
+</section>
+<section id="shells-subshells-and-orbitals" class="level3">
+<h3 class="anchored" data-anchor-id="shells-subshells-and-orbitals">Shells, subshells and orbitals</h3>
+<p>The region around the nucleus in which an electron of a given energy is likely to be found is called an <strong>orbital</strong>. An orbital is not a path. An electron in an atom does not travel along a fixed track; the orbital describes only where it is likely to be.</p>
+<p>Orbitals are grouped into <strong>shells</strong>, numbered n = 1, 2, 3, and so on outwards from the nucleus. Electrons in higher shells are, on average, farther from the nucleus and less tightly held. Each shell is divided into <strong>subshells</strong>, labelled s, p, d and f: the first shell contains only an s subshell, the second contains s and p, and the third contains s, p and d.&nbsp;An s subshell has one orbital, which is spherical; a p subshell has three, each with two lobes on opposite sides of the nucleus, pointing along three perpendicular directions (<a href="#fig-orbitals" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>).</p>
+<div id="fig-orbitals" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-orbitals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-1_orbitals.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-orbitals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Schematic shapes of an s orbital and the three p orbitals of a subshell, drawn as outlines of the region in which an electron is most likely to be found. The s orbital is spherical; the p orbitals point along three perpendicular axes, x, y and z.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-many-electrons-fit" class="level3">
+<h3 class="anchored" data-anchor-id="how-many-electrons-fit">How many electrons fit</h3>
+<p>Each orbital can hold at most two electrons. This rule, the <strong>Pauli exclusion principle</strong>, follows from a property of electrons called <strong>spin</strong>, which can take one of two values, often written “up” and “down”; two electrons can share an orbital only if their spins are opposite. It follows that an s subshell holds up to 2 electrons and a p subshell up to 6. The first shell, with only an s subshell, is full with 2 electrons. The second shell, with one s and three p orbitals, is full with 8.</p>
+</section>
+<section id="electron-configurations" class="level3">
+<h3 class="anchored" data-anchor-id="electron-configurations">Electron configurations</h3>
+<p>The <strong>electron configuration</strong> of an atom lists how many electrons occupy each subshell, written as the subshell label with the number of electrons as a superscript. In the most stable state of an atom, its <strong>ground state</strong>, electrons fill the lowest available levels first: 1s, then 2s, 2p, 3s and 3p. <a href="#tbl-configurations" class="quarto-xref">Table&nbsp;<span>3.1</span></a> gives the configurations of the elements that matter most in this book.</p>
+<div id="tbl-configurations" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Ground-state electron configurations of selected atoms <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-configurations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Element</th>
+<th>Z</th>
+<th>Electron configuration</th>
+<th>Valence electrons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>1</td>
+<td>1s<sup>1</sup></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Helium</td>
+<td>2</td>
+<td>1s<sup>2</sup></td>
+<td>2 (full shell)</td>
+</tr>
+<tr class="odd">
+<td>Carbon</td>
+<td>6</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup></td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Nitrogen</td>
+<td>7</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup></td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Oxygen</td>
+<td>8</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup></td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Neon</td>
+<td>10</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup></td>
+<td>8 (full shell)</td>
+</tr>
+<tr class="odd">
+<td>Sodium</td>
+<td>11</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Phosphorus</td>
+<td>15</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>3</sup></td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Chlorine</td>
+<td>17</td>
+<td>1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup></td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="valence-electrons" class="level3">
+<h3 class="anchored" data-anchor-id="valence-electrons">Valence electrons</h3>
+<p>The electrons in the outermost occupied shell are called <strong>valence electrons</strong>. They are the electrons farthest from the nucleus and the least tightly held, and they are the ones that take part in chemical bonding. The inner electrons, held close to the nucleus, are hardly affected by chemical reactions.</p>
+<p>The periodic table (Chapter 2) is organised by valence electrons. Elements in the same group have the same number of valence electrons and therefore similar chemistry. Nitrogen and phosphorus both have five; oxygen and sulfur both have six. This is the explanation, in terms of atomic structure, of the regularity that nineteenth-century chemists observed.</p>
+</section>
+</section>
+<section id="sec-why-bond" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-why-bond"><span class="header-section-number">3.2</span> Why atoms bond</h2>
+<section id="measuring-how-tightly-electrons-are-held" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-how-tightly-electrons-are-held">Measuring how tightly electrons are held</h3>
+<p>The energy needed to remove one electron from a neutral atom in its ground state is called the <strong>first ionisation energy</strong>. It measures how tightly the atom holds its outermost electron, and it can be measured precisely from the light that atoms absorb. <a href="#fig-ionisation" class="quarto-xref">Figure&nbsp;<span>3.2</span></a> shows the values for the first eighteen elements.</p>
+<div id="fig-ionisation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ionisation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-2_ionisation.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ionisation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: First ionisation energies of the elements from hydrogen (Z = 1) to argon (Z = 18), from the NIST Atomic Spectra Database <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>. The elements of RNA are coloured. The peaks at helium, neon and argon correspond to full shells or subshells; the sharp drops at lithium and sodium mark the start of a new shell.
+</figcaption>
+</figure>
+</div>
+<p>Two features stand out. The noble gases helium (24.59 eV), neon (21.56 eV) and argon (15.76 eV) hold their electrons more tightly than any other element in their rows. The elements that follow them, lithium (5.39 eV) and sodium (5.14 eV), hold their single outer electron most weakly <span class="citation" data-cites="nist_asd">(<a href="../references/references.html#ref-nist_asd" role="doc-biblioref">Kramida et al. 2024</a>)</span>. An atom with a completely filled outer shell or subshell is unusually stable; an atom with one electron beyond a filled shell loses that electron easily.</p>
+</section>
+<section id="the-octet-rule" class="level3">
+<h3 class="anchored" data-anchor-id="the-octet-rule">The octet rule</h3>
+<p>This stability of filled shells explains much of chemistry. Atoms tend to react in ways that give each of them the electron arrangement of the nearest noble gas: two electrons in the first shell for hydrogen, and eight in the outermost shell for carbon, nitrogen, oxygen and their heavier relatives. The tendency to reach eight valence electrons is called the <strong>octet rule</strong>. It is a rule of thumb rather than a law, and it has exceptions, phosphorus among them, but it predicts correctly the bonding of most of the molecules in this book.</p>
+<p>An atom can reach a noble-gas arrangement in two ways: by transferring electrons to or from another atom, or by sharing electrons with it. The first gives ionic bonds, the second covalent bonds.</p>
+</section>
+</section>
+<section id="sec-ionic" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-ionic"><span class="header-section-number">3.3</span> Ionic bonds</h2>
+<p>A sodium atom has one valence electron, beyond the filled shells of neon. A chlorine atom has seven valence electrons, one short of the eight of argon. When sodium and chlorine react, each sodium atom transfers its outer electron to a chlorine atom:</p>
+<p><span class="math display">\[
+\text{Na} + \text{Cl} \rightarrow \text{Na}^{+} + \text{Cl}^{-}
+\]</span></p>
+<p>Both ions now have noble-gas arrangements: Na<sup>+</sup> that of neon and Cl<sup>−</sup> that of argon. The oppositely charged ions attract each other and pack together into a crystal. The attraction between oppositely charged ions is called an <strong>ionic bond</strong>. Ionic bonding is typical of compounds between a metal, which loses electrons easily, and a non-metal, which gains them readily.</p>
+<p>Ionic bonds are not directional: each ion attracts every neighbour of opposite charge, whatever its direction. Ionic compounds therefore form extended crystals rather than separate molecules, and many dissolve in water, where the ions separate, as Chapter 5 explains.</p>
+</section>
+<section id="sec-covalent" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-covalent"><span class="header-section-number">3.4</span> Covalent bonds</h2>
+<section id="sharing-a-pair-of-electrons" class="level3">
+<h3 class="anchored" data-anchor-id="sharing-a-pair-of-electrons">Sharing a pair of electrons</h3>
+<p>Two non-metal atoms both tend to gain electrons, so neither gives one up to the other. Instead, they share. A <strong>covalent bond</strong> is a pair of electrons shared between two atoms. The shared electrons are attracted to both nuclei at once, and this attraction holds the atoms together.</p>
+<p>The simplest example is the hydrogen molecule, H<sub>2</sub>. Each hydrogen atom brings one electron. In the molecule, the two electrons occupy the region between the nuclei and are counted by both atoms, so each atom has two electrons around it, the arrangement of helium. The distance between the two nuclei, the <strong>bond length</strong>, is 0.741 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, where the <strong>ångström</strong> (Å) equals 10<sup>−10</sup> m. The covalent bonds between the atoms of the molecules in this book are all between about 1 and 2 Å long.</p>
+</section>
+<section id="how-many-bonds-each-atom-forms" class="level3">
+<h3 class="anchored" data-anchor-id="how-many-bonds-each-atom-forms">How many bonds each atom forms</h3>
+<p>An atom forms as many covalent bonds as it needs electrons to complete its octet, or its pair in the case of hydrogen. This gives the characteristic number of bonds, or <strong>valence</strong>, of each element:</p>
+<ul>
+<li>hydrogen, with 1 valence electron, needs 1 more and forms <strong>1</strong> bond;</li>
+<li>oxygen, with 6, needs 2 more and forms <strong>2</strong> bonds;</li>
+<li>nitrogen, with 5, needs 3 more and forms <strong>3</strong> bonds;</li>
+<li>carbon, with 4, needs 4 more and forms <strong>4</strong> bonds.</li>
+</ul>
+<p>These four numbers, 1, 2, 3 and 4 for H, O, N and C, are worth memorising: they decide the structure of every organic molecule. Methane, CH<sub>4</sub>, has one carbon atom bonded to four hydrogen atoms; ammonia, NH<sub>3</sub>, one nitrogen bonded to three; and water, H<sub>2</sub>O, one oxygen bonded to two.</p>
+</section>
+<section id="lewis-structures" class="level3">
+<h3 class="anchored" data-anchor-id="lewis-structures">Lewis structures</h3>
+<p>A <strong>Lewis structure</strong> is a drawing that shows how the valence electrons of a molecule are arranged. Each shared pair of electrons is drawn as a line between two atoms, and each unshared pair as two dots on the atom that carries it (<a href="#fig-lewis" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>). An unshared pair of valence electrons, which belongs to one atom only, is called a <strong>lone pair</strong>. In water, the oxygen atom forms two bonds and carries two lone pairs; in ammonia, the nitrogen forms three bonds and carries one lone pair. Counting the electrons around oxygen in water, two shared pairs and two lone pairs, gives eight, an octet.</p>
+<div id="fig-lewis" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lewis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-3_lewis.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lewis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Lewis structures of hydrogen, methane, ammonia, water, nitrogen and hydrogen cyanide. Each line is a shared pair of electrons (a covalent bond); each pair of dots is a lone pair. Three parallel lines mark a triple bond. Every atom except hydrogen is surrounded by eight electrons; hydrogen by two.
+</figcaption>
+</figure>
+</div>
+<p>Lone pairs are not inert decoration. They give water and ammonia much of their chemical behaviour: a lone pair can accept a hydrogen ion, H<sup>+</sup>, as in the formation of the ammonium ion NH<sub>4</sub><sup>+</sup>, and it can take part in the weak attractions called hydrogen bonds, described in Chapter 5.</p>
+</section>
+<section id="phosphorus-an-exception-that-matters" class="level3">
+<h3 class="anchored" data-anchor-id="phosphorus-an-exception-that-matters">Phosphorus: an exception that matters</h3>
+<p>Phosphorus has five valence electrons, like nitrogen, and in some compounds it forms three bonds, as the octet rule predicts. In phosphate and its compounds, however, the phosphorus atom is bonded to four oxygen atoms, and the usual Lewis structure draws five bonds to it: one double bond to oxygen and three single bonds. Atoms of the third period, such as phosphorus and sulfur, are commonly drawn with more than eight electrons around them in such structures. Whatever the details of the description, the facts are clear: the phosphorus atom of a phosphate group is bonded to four oxygen atoms arranged at the corners of a tetrahedron, and the group as a whole carries negative charge in water.</p>
+</section>
+</section>
+<section id="sec-multiple" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-multiple"><span class="header-section-number">3.5</span> Double and triple bonds</h2>
+<section id="more-than-one-shared-pair" class="level3">
+<h3 class="anchored" data-anchor-id="more-than-one-shared-pair">More than one shared pair</h3>
+<p>Two atoms can share more than one pair of electrons. Two shared pairs form a <strong>double bond</strong>, drawn as two lines, and three shared pairs a <strong>triple bond</strong>, drawn as three lines. The number of shared pairs between two atoms is called the <strong>bond order</strong>.</p>
+<p>Multiple bonds allow atoms to complete their octets with fewer partners. In carbon dioxide, O=C=O, the carbon atom forms two double bonds, which count as four bonds, and each oxygen forms one double bond, which counts as two. In the nitrogen molecule, N<span class="math inline">\(\equiv\)</span>N, the two atoms share three pairs, and each also carries one lone pair. In formaldehyde, H<sub>2</sub>C=O, carbon forms two single bonds to hydrogen and one double bond to oxygen. In hydrogen cyanide, H–C<span class="math inline">\(\equiv\)</span>N, carbon forms a single bond to hydrogen and a triple bond to nitrogen. Formaldehyde and hydrogen cyanide are two of the simplest compounds of carbon, and both are considered important starting materials in many proposed routes to the building blocks of life.</p>
+</section>
+<section id="shorter-and-stronger" class="level3">
+<h3 class="anchored" data-anchor-id="shorter-and-stronger">Shorter and stronger</h3>
+<p>Each additional shared pair pulls the two atoms closer together. The three simplest compounds of carbon and hydrogen with two carbon atoms show this directly. In ethane, C<sub>2</sub>H<sub>6</sub>, the carbon atoms are joined by a single bond of length 1.536 Å; in ethylene, C<sub>2</sub>H<sub>4</sub>, by a double bond of 1.339 Å; and in acetylene, C<sub>2</sub>H<sub>2</sub>, by a triple bond of 1.203 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.</p>
+<p>Multiple bonds are also stronger. The strength of a bond is measured by the <strong>bond enthalpy</strong>, the energy needed to break the bond in the gas phase, given for one mole of such bonds (the mole is defined in Chapter 6). <a href="#tbl-bond-enthalpy" class="quarto-xref">Table&nbsp;<span>3.2</span></a> gives some values. The triple bond of N<sub>2</sub> is more than twice as strong as any of the single bonds in the table, which is why the nitrogen gas of the atmosphere is so unreactive.</p>
+<div id="tbl-bond-enthalpy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bond-enthalpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Bond enthalpies at 298.15 K, calculated from standard enthalpies of formation of the gaseous atoms and molecules <span class="citation" data-cites="nist_webbook cox1984 chase1998">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.-b</a>; <a href="../references/references.html#ref-cox1984" role="doc-biblioref">Cox et al. 1984</a>; <a href="../references/references.html#ref-chase1998" role="doc-biblioref">Chase 1998</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-bond-enthalpy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Bond</th>
+<th>Molecule</th>
+<th>Bond enthalpy (kJ mol<sup>−1</sup>)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>H–H</td>
+<td>H<sub>2</sub></td>
+<td>436.0</td>
+</tr>
+<tr class="even">
+<td>C–H</td>
+<td>CH<sub>4</sub> (average of four)</td>
+<td>415.9</td>
+</tr>
+<tr class="odd">
+<td>O–H</td>
+<td>H<sub>2</sub>O (average of two)</td>
+<td>463.5</td>
+</tr>
+<tr class="even">
+<td>N<span class="math inline">\(\equiv\)</span>N</td>
+<td>N<sub>2</sub></td>
+<td>945.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-shapes" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-shapes"><span class="header-section-number">3.6</span> The shapes of molecules</h2>
+<section id="electron-pairs-keep-apart" class="level3">
+<h3 class="anchored" data-anchor-id="electron-pairs-keep-apart">Electron pairs keep apart</h3>
+<p>Molecules have definite three-dimensional shapes, and shape matters: it decides which molecules can fit against which, and therefore how they react and how they recognise one another. The shape of a small molecule can be predicted from one principle. The electron pairs around a central atom, both bonding pairs and lone pairs, repel each other and arrange themselves as far apart as possible. This is the <strong>valence shell electron pair repulsion</strong> (VSEPR) model.</p>
+<ul>
+<li>Four electron pairs point towards the corners of a <strong>tetrahedron</strong>, a solid with four triangular faces. The angle between any two of them is 109.47°.</li>
+<li>Three groups of electrons lie in a plane, at 120° to each other (<strong>trigonal planar</strong>). A double bond counts as one group.</li>
+<li>Two groups lie on opposite sides of the central atom, at 180° (<strong>linear</strong>).</li>
+</ul>
+</section>
+<section id="methane-ammonia-and-water" class="level3">
+<h3 class="anchored" data-anchor-id="methane-ammonia-and-water">Methane, ammonia and water</h3>
+<p>Methane, ammonia and water each have four electron pairs around the central atom, so all three are based on the tetrahedron (<a href="#fig-shapes" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). In methane all four pairs are bonds, and the molecule is a regular tetrahedron with H–C–H angles of 109.47°. In ammonia one pair is a lone pair; the three hydrogen atoms form a low pyramid, with H–N–H angles of 106.67°. In water two pairs are lone pairs, and the molecule is bent, with an H–O–H angle of 104.48° <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. Lone pairs spread out more than bonding pairs and push the bonds slightly closer together, which is why the angle shrinks from methane to water.</p>
+<div id="fig-shapes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch03/fig3-4_shapes.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-shapes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Shapes of methane, ammonia and water, with measured bond angles <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. In all three, four electron pairs around the central atom point approximately to the corners of a tetrahedron; lone pairs are shown as shaded lobes. A wedge-shaped bond points towards the viewer and a dashed bond away from the viewer.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="flat-and-straight-molecules" class="level3">
+<h3 class="anchored" data-anchor-id="flat-and-straight-molecules">Flat and straight molecules</h3>
+<p>When the central atom has a double bond, the number of groups around it falls to three, and the molecule becomes flat. Formaldehyde, H<sub>2</sub>C=O, and ethylene, H<sub>2</sub>C=CH<sub>2</sub>, are planar, with angles close to 120°; in ethylene the measured angles are 117.6° for H–C–H and 121.2° for H–C–C <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>. With two groups, as in carbon dioxide (O=C=O) and hydrogen cyanide (H–C<span class="math inline">\(\equiv\)</span>N), the molecule is linear.</p>
+</section>
+<section id="hybrid-orbitals-briefly" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-orbitals-briefly">Hybrid orbitals, briefly</h3>
+<p>The tetrahedral shape of methane raises a puzzle: carbon’s valence electrons occupy one spherical 2s orbital and three 2p orbitals at right angles, none of which points to the corners of a tetrahedron. Chemists resolve this with the idea of <strong>hybrid orbitals</strong>, mathematical combinations of s and p orbitals that point in the directions of the bonds. A carbon atom forming four single bonds is described by four sp<sup>3</sup> hybrids (tetrahedral); one forming a double bond by three sp<sup>2</sup> hybrids (planar, 120°); and one forming a triple bond by two sp hybrids (linear, 180°). The labels sp<sup>3</sup>, sp<sup>2</sup> and sp are used widely in chemistry as a shorthand for these three geometries of carbon.</p>
+</section>
+</section>
+<section id="sec-carbon" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-carbon"><span class="header-section-number">3.7</span> Carbon, the element of chains and rings</h2>
+<p>The bonding rules of this chapter explain why carbon, rather than any other element, forms the backbone of the molecules of life. A carbon atom forms four bonds, more than any other light element, and it bonds strongly to other carbon atoms as well as to hydrogen, oxygen and nitrogen. Carbon atoms can therefore link into chains and rings of almost any length and shape, with other atoms attached at every position. The four bonds of each carbon point in different directions, so these chains and rings are three-dimensional.</p>
+<p>Compounds built on frameworks of carbon atoms are called <strong>organic compounds</strong>, and their chemistry is <strong>organic chemistry</strong>. The name dates from a time when such compounds were thought to be made only by living organisms; since the nineteenth century they have been made in the laboratory from inorganic materials, beginning with Friedrich Wöhler’s synthesis of urea in 1828 <span class="citation" data-cites="wohler1828">(<a href="../references/references.html#ref-wohler1828" role="doc-biblioref">Wöhler 1828</a>)</span>, and the name now refers only to their composition. The sugars, the nucleobases and RNA itself are all organic compounds. Chapter 4 shows how their structures are drawn, and Chapter 11 how their parts behave.</p>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>Electrons occupy fixed energy levels, grouped into shells (n = 1, 2, 3, …) and subshells (s, p, d). Each orbital holds at most two electrons; the first shell is full with 2 electrons and the second with 8.</li>
+<li>Valence electrons, in the outermost shell, take part in bonding: H 1, C 4, N 5, O 6, P 5. Elements in the same group have the same number.</li>
+<li>Filled shells are especially stable, as shown by the high ionisation energies of the noble gases. Atoms tend to reach a noble-gas arrangement (the octet rule).</li>
+<li>In an ionic bond, electrons are transferred, and oppositely charged ions attract each other. In a covalent bond, a pair of electrons is shared between two atoms.</li>
+<li>Hydrogen forms 1 covalent bond, oxygen 2, nitrogen 3 and carbon 4. Lewis structures show bonds as lines and lone pairs as dots.</li>
+<li>Double and triple bonds share two and three pairs; they are shorter and stronger than single bonds (C–C 1.536 Å, C=C 1.339 Å, C<span class="math inline">\(\equiv\)</span>C 1.203 Å). The N<span class="math inline">\(\equiv\)</span>N bond, 945.4 kJ mol<sup>−1</sup>, makes nitrogen gas unreactive.</li>
+<li>Electron pairs around an atom keep as far apart as possible (VSEPR). Four pairs give tetrahedral directions: methane is tetrahedral (109.47°), ammonia pyramidal (106.67°) and water bent (104.48°). Three groups give planar molecules, two give linear ones.</li>
+<li>Carbon’s four bonds and its strong bonds to itself allow chains and rings: the basis of organic chemistry.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Write the electron configuration of sulfur (Z = 16) and state how many valence electrons it has. Which element of <a href="#tbl-configurations" class="quarto-xref">Table&nbsp;<span>3.1</span></a> is in the same group?</li>
+<li>Explain, using <a href="#fig-ionisation" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>, why sodium readily forms the ion Na<sup>+</sup> but not Na<sup>2+</sup>.</li>
+<li>Draw the Lewis structure of hydrogen sulfide, H<sub>2</sub>S, and predict its shape.</li>
+<li>Draw the Lewis structures of formaldehyde (H<sub>2</sub>CO) and hydrogen cyanide (HCN). What is the bond order of the carbon-oxygen bond and of the carbon-nitrogen bond?</li>
+<li>Predict the number of bonds formed by each atom in methanol, CH<sub>3</sub>OH, and sketch its structure.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-chase1998" class="csl-entry" role="listitem">
+Chase, Jr., M. W. 1998. <span>“<span>NIST-JANAF</span> Thermochemical Tables, Fourth Edition.”</span> <em>Journal of Physical and Chemical Reference Data, Monograph 9</em>.
+</div>
+<div id="ref-cox1984" class="csl-entry" role="listitem">
+Cox, J. D., D. D. Wagman, and V. A. Medvedev. 1984. <em><span>CODATA</span> Key Values for Thermodynamics</em>. Hemisphere Publishing Corp.
+</div>
+<div id="ref-nist_asd" class="csl-entry" role="listitem">
+Kramida, A., Yu. Ralchenko, J. Reader, and NIST ASD Team. 2024. <em><span>NIST</span> Atomic Spectra Database (Ver. 5.12): Ionization Energies</em>. National Institute of Standards; Technology, Gaithersburg, MD. <a href="https://doi.org/10.18434/T4W30F">https://doi.org/10.18434/T4W30F</a>.
+</div>
+<div id="ref-cccbdb" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. 2022. <em><span>NIST</span> Computational Chemistry Comparison and Benchmark Database (<span>CCCBDB</span>), Release 22, Experimental Geometry Data</em>. <a href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d.-a. <em>Fundamental Physical Constants: 2022 CODATA Adjustment</em>. <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d.-b. <em><span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data</em>. <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-wohler1828" class="csl-entry" role="listitem">
+Wöhler, F. 1828. <span>“Ueber k<span>ü</span>nstliche Bildung Des Harnstoffs.”</span> <em>Annalen Der Physik Und Chemie</em> 88 (2): 253–56.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch02-matter.html" class="pagination-link" aria-label="What Matter Is Made Of">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch04-molecular-drawings.html" class="pagination-link" aria-label="Reading Molecular Drawings">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; The Carbon Toolkit – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch12-building-blocks.html" rel="next">
+<link href="../chapters/ch10-rates.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch11-carbon-toolkit.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-skeletons" id="toc-sec-skeletons" class="nav-link" data-scroll-target="#sec-skeletons"><span class="header-section-number">11.1</span> Skeletons and functional groups</a>
+  <ul class="collapse">
+  <li><a href="#carbon-frameworks" id="toc-carbon-frameworks" class="nav-link" data-scroll-target="#carbon-frameworks">Carbon frameworks</a></li>
+  <li><a href="#functional-groups" id="toc-functional-groups" class="nav-link" data-scroll-target="#functional-groups">Functional groups</a></li>
+  </ul></li>
+  <li><a href="#sec-groups" id="toc-sec-groups" class="nav-link" data-scroll-target="#sec-groups"><span class="header-section-number">11.2</span> The functional groups of life</a>
+  <ul class="collapse">
+  <li><a href="#groups-containing-oxygen" id="toc-groups-containing-oxygen" class="nav-link" data-scroll-target="#groups-containing-oxygen">Groups containing oxygen</a></li>
+  <li><a href="#groups-containing-nitrogen" id="toc-groups-containing-nitrogen" class="nav-link" data-scroll-target="#groups-containing-nitrogen">Groups containing nitrogen</a></li>
+  <li><a href="#the-phosphate-group" id="toc-the-phosphate-group" class="nav-link" data-scroll-target="#the-phosphate-group">The phosphate group</a></li>
+  <li><a href="#molecules-with-several-groups" id="toc-molecules-with-several-groups" class="nav-link" data-scroll-target="#molecules-with-several-groups">Molecules with several groups</a></li>
+  </ul></li>
+  <li><a href="#sec-sugar-rings" id="toc-sec-sugar-rings" class="nav-link" data-scroll-target="#sec-sugar-rings"><span class="header-section-number">11.3</span> Sugars: groups that react with each other</a>
+  <ul class="collapse">
+  <li><a href="#aldoses-and-ketoses" id="toc-aldoses-and-ketoses" class="nav-link" data-scroll-target="#aldoses-and-ketoses">Aldoses and ketoses</a></li>
+  <li><a href="#ring-formation" id="toc-ring-formation" class="nav-link" data-scroll-target="#ring-formation">Ring formation</a></li>
+  </ul></li>
+  <li><a href="#sec-isomers" id="toc-sec-isomers" class="nav-link" data-scroll-target="#sec-isomers"><span class="header-section-number">11.4</span> Isomers</a></li>
+  <li><a href="#sec-chirality" id="toc-sec-chirality" class="nav-link" data-scroll-target="#sec-chirality"><span class="header-section-number">11.5</span> Chirality</a>
+  <ul class="collapse">
+  <li><a href="#left-and-right-hands" id="toc-left-and-right-hands" class="nav-link" data-scroll-target="#left-and-right-hands">Left and right hands</a></li>
+  <li><a href="#enantiomers" id="toc-enantiomers" class="nav-link" data-scroll-target="#enantiomers">Enantiomers</a></li>
+  <li><a href="#d-and-l" id="toc-d-and-l" class="nav-link" data-scroll-target="#d-and-l">D and L</a></li>
+  <li><a href="#how-many-stereoisomers" id="toc-how-many-stereoisomers" class="nav-link" data-scroll-target="#how-many-stereoisomers">How many stereoisomers?</a></li>
+  <li><a href="#one-hand-in-life" id="toc-one-hand-in-life" class="nav-link" data-scroll-target="#one-hand-in-life">One hand in life</a></li>
+  </ul></li>
+  <li><a href="#sec-mechanisms" id="toc-sec-mechanisms" class="nav-link" data-scroll-target="#sec-mechanisms"><span class="header-section-number">11.6</span> How reactions begin: nucleophiles and electrophiles</a>
+  <ul class="collapse">
+  <li><a href="#electron-rich-and-electron-poor-sites" id="toc-electron-rich-and-electron-poor-sites" class="nav-link" data-scroll-target="#electron-rich-and-electron-poor-sites">Electron-rich and electron-poor sites</a></li>
+  <li><a href="#curved-arrows" id="toc-curved-arrows" class="nav-link" data-scroll-target="#curved-arrows">Curved arrows</a></li>
+  <li><a href="#substitution-and-leaving-groups" id="toc-substitution-and-leaving-groups" class="nav-link" data-scroll-target="#substitution-and-leaving-groups">Substitution and leaving groups</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch11" class="quarto-section-identifier"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Millions of carbon compounds are known, and no one could learn the properties of each. Fortunately, there is no need to. The behaviour of an organic molecule is decided largely by a few small groups of atoms attached to its carbon framework, and the same group behaves in much the same way in whatever molecule it occurs. This chapter asks: <em>how can a small set of patterns be used to read the chemistry of a large molecule?</em> It introduces the functional groups found in the molecules of life, the ways in which molecules with the same formula can differ, including the left- and right-handed forms called enantiomers, and the electron-rich and electron-poor sites at which reactions begin.</p>
+</section>
+<section id="sec-skeletons" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="sec-skeletons"><span class="header-section-number">11.1</span> Skeletons and functional groups</h2>
+<section id="carbon-frameworks" class="level3">
+<h3 class="anchored" data-anchor-id="carbon-frameworks">Carbon frameworks</h3>
+<p>The carbon atoms of an organic molecule form its <strong>skeleton</strong>: a chain, a branched chain, a ring, or a combination of these (Chapter 3). The simplest organic compounds contain only carbon and hydrogen and are called <strong>hydrocarbons</strong>. Three families of hydrocarbons are distinguished by their carbon-carbon bonds:</p>
+<ul>
+<li><strong>Alkanes</strong> contain only single bonds. Methane, CH<sub>4</sub>, ethane, C<sub>2</sub>H<sub>6</sub>, and propane, C<sub>3</sub>H<sub>8</sub>, are the first members.</li>
+<li><strong>Alkenes</strong> contain at least one carbon-carbon double bond, as in ethene, H<sub>2</sub>C=CH<sub>2</sub>.</li>
+<li><strong>Alkynes</strong> contain at least one carbon-carbon triple bond, as in ethyne (acetylene), HC<span class="math inline">\(\equiv\)</span>CH.</li>
+</ul>
+<p>A compound with only single bonds between its carbon atoms is called <strong>saturated</strong>, because each carbon carries as many hydrogen atoms as it can; a compound with double or triple bonds is <strong>unsaturated</strong>.</p>
+<p>Systematic names indicate the number of carbon atoms in the main chain by a stem: meth- (1), eth- (2), prop- (3), but- (4), pent- (5), hex- (6). The ending indicates the family: -ane for alkanes, -ene for alkenes, -ol for alcohols, -al for aldehydes, and so on. Thus ethanol is a two-carbon alcohol and pentanal a five-carbon aldehyde. Many familiar compounds also keep older names, such as acetic acid and acetone.</p>
+</section>
+<section id="functional-groups" class="level3">
+<h3 class="anchored" data-anchor-id="functional-groups">Functional groups</h3>
+<p>The C–C and C–H bonds of a hydrocarbon skeleton are strong and only slightly polar (Chapter 5), and they react with few reagents. Most of the chemistry of an organic molecule happens elsewhere, at atoms or groups of atoms that contain oxygen, nitrogen, phosphorus or other elements, or at multiple bonds. A <strong>functional group</strong> is a group of atoms that gives a molecule characteristic properties and reactions, which it shows more or less independently of the rest of the molecule <span class="citation" data-cites="iupac_functional_group">(<a href="../references/references.html#ref-iupac_functional_group" role="doc-biblioref">IUPAC, n.d.-g</a>)</span>. Organic compounds are therefore classified into families by their functional groups. In formulas, the rest of the molecule is often written as R (for “residue”), so that R–OH stands for any alcohol.</p>
+</section>
+</section>
+<section id="sec-groups" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="sec-groups"><span class="header-section-number">11.2</span> The functional groups of life</h2>
+<p><a href="#tbl-groups" class="quarto-xref">Table&nbsp;<span>11.1</span></a> lists the functional groups that occur most often in the molecules of life and in the small molecules from which they may have formed. Examples are drawn in <a href="#fig-groups" class="quarto-xref">Figure&nbsp;<span>11.1</span></a>.</p>
+<div id="tbl-groups" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;11.1: Common functional groups in the molecules of life and their precursors. R and R<span class="math inline">\('\)</span> stand for the rest of the molecule.
+</figcaption>
+<div aria-describedby="tbl-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Family</th>
+<th>Functional group</th>
+<th>General formula</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alcohol</td>
+<td>hydroxy group</td>
+<td>R–OH</td>
+<td>ethanol; the OH groups of sugars</td>
+</tr>
+<tr class="even">
+<td>Ether</td>
+<td>oxygen between two carbons</td>
+<td>R–O–R<span class="math inline">\('\)</span></td>
+<td>dimethyl ether; the ring oxygen of ribose</td>
+</tr>
+<tr class="odd">
+<td>Aldehyde</td>
+<td>carbonyl group with one H</td>
+<td>R–CHO</td>
+<td>formaldehyde, acetaldehyde</td>
+</tr>
+<tr class="even">
+<td>Ketone</td>
+<td>carbonyl group between two carbons</td>
+<td>R–CO–R<span class="math inline">\('\)</span></td>
+<td>acetone</td>
+</tr>
+<tr class="odd">
+<td>Carboxylic acid</td>
+<td>carboxy group</td>
+<td>R–COOH</td>
+<td>acetic acid; amino acids</td>
+</tr>
+<tr class="even">
+<td>Ester</td>
+<td>acid joined to an alcohol</td>
+<td>R–CO–O–R<span class="math inline">\('\)</span></td>
+<td>ethyl acetate; fats</td>
+</tr>
+<tr class="odd">
+<td>Amine</td>
+<td>amino group</td>
+<td>R–NH<sub>2</sub></td>
+<td>methylamine; amino acids; nucleobases</td>
+</tr>
+<tr class="even">
+<td>Amide</td>
+<td>carbonyl bonded to nitrogen</td>
+<td>R–CO–NH–R<span class="math inline">\('\)</span></td>
+<td>acetamide; the links of proteins</td>
+</tr>
+<tr class="odd">
+<td>Phosphate ester</td>
+<td>phosphate joined to an alcohol</td>
+<td>R–O–PO<sub>3</sub>H<sub>2</sub></td>
+<td>nucleotides; the backbone of RNA</td>
+</tr>
+<tr class="even">
+<td>Nitrile</td>
+<td>carbon triple-bonded to nitrogen</td>
+<td>R–C<span class="math inline">\(\equiv\)</span>N</td>
+<td>acetonitrile; hydrogen cyanide (R = H)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-groups" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch11/fig11-1_functional_groups.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-groups-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: Examples of the functional groups of <a href="#tbl-groups" class="quarto-xref">Table&nbsp;<span>11.1</span></a>, drawn as skeletal formulas (Chapter 4). The atoms of each functional group are highlighted.
+</figcaption>
+</figure>
+</div>
+<section id="groups-containing-oxygen" class="level3">
+<h3 class="anchored" data-anchor-id="groups-containing-oxygen">Groups containing oxygen</h3>
+<ul>
+<li><strong>Alcohols</strong> contain a hydroxy group, –OH, attached to a carbon atom that forms only single bonds <span class="citation" data-cites="iupac_alcohols">(<a href="../references/references.html#ref-iupac_alcohols" role="doc-biblioref">IUPAC, n.d.-a</a>)</span>. The polar O–H bond takes part in hydrogen bonds with water and with other hydroxy groups (Chapter 5). This is why small alcohols mix with water, and why sugars, which carry several hydroxy groups, dissolve readily in it.</li>
+<li><strong>Ethers</strong> contain an oxygen atom bonded to two carbon atoms, C–O–C. They cannot donate hydrogen bonds, because they have no O–H, and they are much less reactive than alcohols. The oxygen atom in the ring of ribose is an ether-like oxygen.</li>
+<li>The <strong>carbonyl group</strong> is a carbon atom double-bonded to an oxygen atom, C=O. Oxygen is more electronegative than carbon, so the carbon atom carries a partial positive charge and the oxygen a partial negative charge. This polarity makes the carbonyl carbon the reactive site of many molecules (<a href="#sec-mechanisms" class="quarto-xref"><span>Section 11.6</span></a>). In an <strong>aldehyde</strong>, the carbonyl carbon is bonded to at least one hydrogen atom, R–CHO <span class="citation" data-cites="iupac_aldehydes">(<a href="../references/references.html#ref-iupac_aldehydes" role="doc-biblioref">IUPAC, n.d.-b</a>)</span>; formaldehyde, H<sub>2</sub>CO, is the simplest. In a <strong>ketone</strong>, the carbonyl carbon is bonded to two carbon atoms.</li>
+<li>A <strong>carboxylic acid</strong> contains the carboxy group, –COOH, a carbonyl group and a hydroxy group on the same carbon atom. Its hydrogen can be donated as a proton (Chapter 7). Acetic acid, for example, has pK<sub>a</sub> = 4.76 <span class="citation" data-cites="goldberg2002">(<a href="../references/references.html#ref-goldberg2002" role="doc-biblioref">Goldberg et al. 2002</a>)</span>, so at pH 7 it, like other carboxylic acids, is present almost entirely as the carboxylate ion, –COO<sup>−</sup> (Chapter 8).</li>
+<li>An <strong>ester</strong> is formed from an acid and an alcohol with the loss of water (Chapter 7) <span class="citation" data-cites="iupac_esters">(<a href="../references/references.html#ref-iupac_esters" role="doc-biblioref">IUPAC, n.d.-f</a>)</span>. In a carboxylic ester, the carbonyl carbon is bonded to an oxygen that is in turn bonded to carbon, R–CO–O–R<span class="math inline">\('\)</span>.</li>
+</ul>
+</section>
+<section id="groups-containing-nitrogen" class="level3">
+<h3 class="anchored" data-anchor-id="groups-containing-nitrogen">Groups containing nitrogen</h3>
+<ul>
+<li>An <strong>amine</strong> contains a nitrogen atom bonded to one or more carbon atoms; the simplest form is the amino group, –NH<sub>2</sub>. The lone pair on nitrogen can accept a proton, so amines are bases, and many are present mostly in their protonated form, –NH<sub>3</sub><sup>+</sup>, at pH 7.</li>
+<li>An <strong>amide</strong> is derived from an acid by replacing its –OH with a nitrogen group <span class="citation" data-cites="iupac_amides">(<a href="../references/references.html#ref-iupac_amides" role="doc-biblioref">IUPAC, n.d.-c</a>)</span>. In a carboxylic amide the carbonyl carbon is bonded directly to nitrogen, –CO–N. Unlike an amine, the nitrogen of an amide is hardly basic, because its lone pair is drawn towards the neighbouring carbonyl group. Amide bonds link the amino acids of proteins (Chapter 12).</li>
+<li>A <strong>nitrile</strong> contains a carbon atom triple-bonded to a nitrogen atom, –C<span class="math inline">\(\equiv\)</span>N. Hydrogen cyanide, HCN, can be regarded as the simplest nitrile, and it is a starting material in many proposed routes to the building blocks of life.</li>
+</ul>
+</section>
+<section id="the-phosphate-group" class="level3">
+<h3 class="anchored" data-anchor-id="the-phosphate-group">The phosphate group</h3>
+<p>Phosphoric acid, H<sub>3</sub>PO<sub>4</sub> or (HO)<sub>3</sub>P=O, is an acid with three OH groups (Chapter 8). Like a carboxylic acid, it can form esters with alcohols. When one of its OH groups is joined to an alcohol, the product is a <strong>phosphate monoester</strong>; when two are joined to two alcohols, it is a <strong>phosphate diester</strong>. A phosphate diester bridges two alcohol groups through a single phosphorus atom, R–O–P–O–R<span class="math inline">\('\)</span>, and this is how the units of RNA and DNA are linked into chains (Chapter 12). The remaining OH group of a phosphate diester is strongly acidic, so in water the linkage carries a negative charge.</p>
+</section>
+<section id="molecules-with-several-groups" class="level3">
+<h3 class="anchored" data-anchor-id="molecules-with-several-groups">Molecules with several groups</h3>
+<p>Many molecules of life carry more than one functional group, and their behaviour combines the behaviour of each. An amino acid carries an amino group and a carboxy group on the same carbon atom. At pH 7, both are charged: the amino group is protonated and the carboxy group deprotonated, so the molecule carries a positive and a negative charge at once. A sugar such as ribose carries an aldehyde group and four hydroxy groups (<a href="#fig-ribose-ring" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>). Recognising the groups is the first step in reading any structure.</p>
+</section>
+</section>
+<section id="sec-sugar-rings" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="sec-sugar-rings"><span class="header-section-number">11.3</span> Sugars: groups that react with each other</h2>
+<section id="aldoses-and-ketoses" class="level3">
+<h3 class="anchored" data-anchor-id="aldoses-and-ketoses">Aldoses and ketoses</h3>
+<p>Simple sugars are compounds with the general formula C<sub>n</sub>(H<sub>2</sub>O)<sub>n</sub>, usually with n from 3 to 7, in which every carbon atom but one carries a hydroxy group and the remaining carbon is part of a carbonyl group. A sugar whose carbonyl group is an aldehyde, at the end of the chain, is an <strong>aldose</strong>; one whose carbonyl group is a ketone, within the chain, is a <strong>ketose</strong>. The name also indicates the number of carbon atoms: a triose has three, a pentose five, a hexose six. Ribose, C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>, is an aldopentose; glucose, C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>, is an aldohexose.</p>
+</section>
+<section id="ring-formation" class="level3">
+<h3 class="anchored" data-anchor-id="ring-formation">Ring formation</h3>
+<p>A hydroxy group can add to a carbonyl group (Chapter 7). In a sugar, both groups are in the same molecule, and if the chain can bend so that a hydroxy group reaches the carbonyl carbon, the addition closes a ring. In ribose, the hydroxy group on carbon 4 adds to the aldehyde carbon, carbon 1, to form a five-membered ring of four carbon atoms and one oxygen atom (<a href="#fig-ribose-ring" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>). The former carbonyl oxygen becomes a new hydroxy group on carbon 1. The reaction is reversible, and in water a sugar exists as an equilibrium mixture of ring forms, with only a small fraction in the open-chain form at any moment. Ribose can also form a six-membered ring, through the hydroxy group on carbon 5. In water, about three-quarters of ribose is present as six-membered rings, about one-quarter as five-membered rings, and only about 0.1 percent as the open chain <span class="citation" data-cites="drew1998">(<a href="../references/references.html#ref-drew1998" role="doc-biblioref">Drew et al. 1998</a>)</span>. In RNA, however, ribose is always present as the five-membered ring, called a <strong>furanose</strong>.</p>
+<p>Ring closure creates a new stereocentre (<a href="#sec-chirality" class="quarto-xref"><span>Section 11.5</span></a>) at carbon 1: the new hydroxy group can point to one side of the ring or the other. The two forms are called <strong>anomers</strong> and are labelled <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>. In RNA, the bond from carbon 1 to the nucleobase always has the <span class="math inline">\(\beta\)</span> arrangement, the one drawn in <a href="#fig-ribose-ring" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>.</p>
+<div id="fig-ribose-ring" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ribose-ring-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch11/fig11-2_ribose_ring.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ribose-ring-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.2: Ribose in its open-chain form (left), an aldehyde (highlighted) with four hydroxy groups, and in its five-membered ring form (right), produced when the hydroxy group on carbon 4 adds to carbon 1. Wedged bonds point towards the viewer and hashed bonds away. The two forms interconvert in water.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-isomers" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="sec-isomers"><span class="header-section-number">11.4</span> Isomers</h2>
+<p>Chapter 4 introduced <strong>isomers</strong>: compounds that have the same molecular formula but different structures, and hence different properties <span class="citation" data-cites="iupac_isomer">(<a href="../references/references.html#ref-iupac_isomer" role="doc-biblioref">IUPAC, n.d.-h</a>)</span>. Isomers are of two broad kinds.</p>
+<ul>
+<li>In <strong>constitutional isomers</strong> (also called structural isomers), the atoms are bonded in a different order. Ethanol and dimethyl ether (C<sub>2</sub>H<sub>6</sub>O) are one example (Chapter 4). Another is the pair glyceraldehyde and dihydroxyacetone, both C<sub>3</sub>H<sub>6</sub>O<sub>3</sub>: in glyceraldehyde the carbonyl group is at the end of the chain, making it an aldose, and in dihydroxyacetone it is in the middle, making it a ketose. Ribose has many constitutional isomers among the pentoses, which is one reason why making ribose selectively is difficult.</li>
+<li>In <strong>stereoisomers</strong>, the atoms are bonded in the same order but arranged differently in space. Stereoisomers include the mirror-image forms described next.</li>
+</ul>
+</section>
+<section id="sec-chirality" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="sec-chirality"><span class="header-section-number">11.5</span> Chirality</h2>
+<section id="left-and-right-hands" class="level3">
+<h3 class="anchored" data-anchor-id="left-and-right-hands">Left and right hands</h3>
+<p>An object is <strong>chiral</strong> if it cannot be superimposed on its mirror image <span class="citation" data-cites="iupac_chirality">(<a href="../references/references.html#ref-iupac_chirality" role="doc-biblioref">IUPAC, n.d.-d</a>)</span>. A left hand and a right hand are mirror images, and no rotation will make one fit exactly onto the other. A plain sphere, by contrast, is identical to its mirror image and is <strong>achiral</strong>.</p>
+<p>In molecules, chirality most often arises from a carbon atom bonded to four different groups. Because the four bonds point to the corners of a tetrahedron (Chapter 3), the four groups can be arranged in two ways that are mirror images of each other and cannot be interconverted without breaking bonds. Such a carbon atom is called a <strong>stereocentre</strong>. A carbon atom that carries two identical groups is not a stereocentre: its mirror image can always be turned to coincide with the original.</p>
+</section>
+<section id="enantiomers" class="level3">
+<h3 class="anchored" data-anchor-id="enantiomers">Enantiomers</h3>
+<p>Two molecules that are non-superimposable mirror images of each other are called <strong>enantiomers</strong>. Enantiomers have identical physical properties, such as melting point, boiling point and solubility, and identical chemical properties towards achiral reagents. They differ only in their interactions with other chiral things: they rotate the plane of polarised light in opposite directions, and they react at different rates with other chiral molecules. A mixture of equal amounts of two enantiomers is called a <strong>racemic mixture</strong> (or racemate). A chemical synthesis from achiral starting materials, without any chiral influence, always produces a racemic mixture.</p>
+</section>
+<section id="d-and-l" class="level3">
+<h3 class="anchored" data-anchor-id="d-and-l">D and L</h3>
+<p>Glyceraldehyde, the simplest aldose, has one stereocentre, its central carbon atom, which carries –CHO, –CH<sub>2</sub>OH, –OH and –H. It therefore exists as two enantiomers, labelled D and L (<a href="#fig-enantiomers" class="quarto-xref">Figure&nbsp;<span>11.3</span></a>). The labels refer to a drawing convention called the <strong>Fischer projection</strong>, in which the carbon chain is drawn vertically with the carbonyl group at the top; at each stereocentre, the vertical bonds point away from the viewer and the horizontal bonds towards the viewer. In D-glyceraldehyde the OH group on the stereocentre is on the right; in L-glyceraldehyde it is on the left.</p>
+<p>For longer sugars, the label D or L is determined by the stereocentre farthest from the carbonyl group: a sugar is D if the OH group on that carbon points to the right in the Fischer projection, as in D-glyceraldehyde. In ribose this is carbon 4.</p>
+<div id="fig-enantiomers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-enantiomers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch11/fig11-3_enantiomers.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-enantiomers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.3: The enantiomers of glyceraldehyde. Left: the two molecules drawn as mirror images, with horizontal bonds (wedges) pointing towards the viewer and vertical bonds (hashed) away from the viewer. Right: the same molecules in Fischer projection, in which this orientation is understood and the bonds are drawn as plain lines. In D-glyceraldehyde the OH group lies on the right.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-many-stereoisomers" class="level3">
+<h3 class="anchored" data-anchor-id="how-many-stereoisomers">How many stereoisomers?</h3>
+<p>A molecule with n stereocentres can have up to 2<sup>n</sup> stereoisomers. The open chain of an aldopentose has three stereocentres, carbons 2, 3 and 4, and therefore 2<sup>3</sup> = 8 stereoisomers: four pairs of enantiomers, named D- and L-ribose, arabinose, xylose and lyxose. Only one of the eight, D-ribose, occurs in RNA.</p>
+</section>
+<section id="one-hand-in-life" class="level3">
+<h3 class="anchored" data-anchor-id="one-hand-in-life">One hand in life</h3>
+<p>The molecules of living organisms are not racemic. The sugars of RNA and DNA are D-sugars, and the amino acids of proteins are, apart from glycine, which has no stereocentre, L-amino acids. This uniform handedness, called <strong>homochirality</strong>, is essential for the regular structures of RNA and proteins, and its origin is one of the open questions of the origin of life: a chemical synthesis from achiral starting materials gives equal amounts of both forms, so some process must have favoured one.</p>
+</section>
+</section>
+<section id="sec-mechanisms" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="sec-mechanisms"><span class="header-section-number">11.6</span> How reactions begin: nucleophiles and electrophiles</h2>
+<section id="electron-rich-and-electron-poor-sites" class="level3">
+<h3 class="anchored" data-anchor-id="electron-rich-and-electron-poor-sites">Electron-rich and electron-poor sites</h3>
+<p>When a new covalent bond forms in a reaction, both of its electrons often come from one of the two partners. The partner that supplies the electron pair is the <strong>nucleophile</strong> (“nucleus-loving”), and the partner that accepts it is the <strong>electrophile</strong> (“electron-loving”) <span class="citation" data-cites="iupac_electrophile">(<a href="../references/references.html#ref-iupac_electrophile" role="doc-biblioref">IUPAC, n.d.-e</a>)</span>.</p>
+<ul>
+<li><strong>Nucleophiles</strong> are electron-rich. They carry a lone pair or a negative charge: the oxygen of water, of a hydroxy group or of a hydroxide ion; the nitrogen of an amine or of ammonia; the carbon of a cyanide ion.</li>
+<li><strong>Electrophiles</strong> are electron-poor. They contain an atom with a partial or full positive charge: the carbon atom of a carbonyl group, the phosphorus atom of a phosphate group, or a proton.</li>
+</ul>
+<p>How readily a nucleophile reacts is called its <strong>nucleophilicity</strong>, and it is measured by comparing rate constants (Chapter 10) for reactions with a common partner <span class="citation" data-cites="iupac_nucleophilicity">(<a href="../references/references.html#ref-iupac_nucleophilicity" role="doc-biblioref">IUPAC, n.d.-i</a>)</span>. A negatively charged nucleophile, such as hydroxide, is generally more reactive than the corresponding neutral one, such as water.</p>
+</section>
+<section id="curved-arrows" class="level3">
+<h3 class="anchored" data-anchor-id="curved-arrows">Curved arrows</h3>
+<p>Chemists describe the movement of electrons in a reaction with <strong>curved arrows</strong> drawn on structures. Each full arrow represents the movement of one pair of electrons. It starts at the electrons that move, a lone pair or a bond, and ends where they go, at an atom (forming a new bond or lone pair) or between two atoms (forming a new bond). The step-by-step description of a reaction drawn in this way is called its <strong>mechanism</strong>.</p>
+<p><a href="#fig-curved-arrows" class="quarto-xref">Figure&nbsp;<span>11.4</span></a> shows the first step of the addition of a nucleophile to a carbonyl group. A lone pair of the nucleophile forms a new bond to the carbonyl carbon (first arrow). At the same time, one of the two bonds between carbon and oxygen breaks, and its electron pair moves onto the oxygen atom (second arrow), which becomes negatively charged. The carbon atom now carries four single bonds and has changed from a flat to a tetrahedral arrangement. In a final step, the negatively charged oxygen picks up a proton, usually from the solvent, to become a hydroxy group. The addition of water to formaldehyde, the addition of HCN to an aldehyde (Chapter 7) and the ring closure of a sugar (<a href="#sec-sugar-rings" class="quarto-xref"><span>Section 11.3</span></a>) all follow this pattern.</p>
+<div id="fig-curved-arrows" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-curved-arrows-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch11/fig11-4_curved_arrows.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-curved-arrows-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.4: Curved arrows for the addition of a nucleophile (Nu<sup>−</sup>) to the carbonyl group of an aldehyde. The first arrow shows a lone pair of the nucleophile forming a bond to the electron-poor carbonyl carbon; the second shows one of the C=O bonds breaking, its electrons moving onto oxygen. A proton later adds to the negatively charged oxygen.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="substitution-and-leaving-groups" class="level3">
+<h3 class="anchored" data-anchor-id="substitution-and-leaving-groups">Substitution and leaving groups</h3>
+<p>In a carboxylic ester or a phosphate ester, the electrophilic atom, carbon or phosphorus, is bonded to an oxygen that can depart with its bonding electrons. When a nucleophile attacks such an atom, the attack can be followed by the departure of this group, called the <strong>leaving group</strong>. The overall result is that one group has replaced another, a <strong>substitution</strong>. Hydrolysis of an ester is a substitution in which water, or hydroxide, is the nucleophile and the alcohol part of the ester is the leaving group; the formation of an ester is the same process in reverse. The same pattern, with phosphorus as the electrophile, governs the joining of nucleotides into RNA and the cutting of RNA by water. How good a leaving group is, and how electrophilic the attacked atom is, largely determine how fast such reactions go, and therefore which bonds survive in water and which are easily formed.</p>
+</section>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>Organic molecules consist of a carbon skeleton carrying functional groups. Each functional group reacts in much the same way in whatever molecule it occurs.</li>
+<li>The main groups of the molecules of life are alcohols (–OH), ethers, aldehydes and ketones (C=O), carboxylic acids (–COOH), esters, amines (–NH<sub>2</sub>), amides, phosphate esters and nitriles.</li>
+<li>At pH 7, carboxy groups are mostly negatively charged and amino groups mostly positively charged; a phosphate diester carries a negative charge.</li>
+<li>In a sugar, a hydroxy group can add to the carbonyl group of the same molecule to close a ring. In RNA, ribose is a five-membered ring (furanose) with the base in the <span class="math inline">\(\beta\)</span> position.</li>
+<li>Isomers have the same formula but different structures. Constitutional isomers differ in the order of bonding; stereoisomers differ in the arrangement in space.</li>
+<li>A carbon atom with four different groups is a stereocentre. Non-superimposable mirror-image molecules are enantiomers. Sugars of RNA are D; amino acids of proteins are L. A molecule with n stereocentres has up to 2<sup>n</sup> stereoisomers.</li>
+<li>Reactions often begin when an electron-rich nucleophile donates a pair of electrons to an electron-poor electrophile, such as a carbonyl carbon or a phosphorus atom. Curved arrows show the movement of electron pairs.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Name the functional groups in the following condensed formulas: (a) CH<sub>3</sub>CH<sub>2</sub>CHO; (b) CH<sub>3</sub>COCH<sub>3</sub>; (c) CH<sub>3</sub>CONH<sub>2</sub>; (d) CH<sub>3</sub>COOCH<sub>3</sub>; (e) H<sub>2</sub>NCH<sub>2</sub>COOH.</li>
+<li>Is the central carbon atom of propan-2-ol, CH<sub>3</sub>CH(OH)CH<sub>3</sub>, a stereocentre? Explain.</li>
+<li>Glucose in its open-chain form, an aldohexose, has four stereocentres. What is the maximum number of stereoisomers? How many of them are enantiomer pairs?</li>
+<li>In the reaction of hydroxide ion with the carbonyl group of formaldehyde, which species is the nucleophile and which atom is the electrophile? Describe the two curved arrows of the first step.</li>
+<li>A sample of glyceraldehyde made in the laboratory from formaldehyde does not rotate polarised light. Explain why.</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-drew1998" class="csl-entry" role="listitem">
+Drew, Kenneth N., Jaroslav Zajicek, Gail Bondo, Bidisha Bose, and Anthony S. Serianni. 1998. <span>“<span>13C</span>-Labeled Aldopentoses: Detection and Quantitation of Cyclic and Acyclic Forms by Heteronuclear <span>1D</span> and <span>2D</span> <span>NMR</span> Spectroscopy.”</span> <em>Carbohydrate Research</em> 307: 199–209. <a href="https://doi.org/10.1016/S0008-6215(98)00040-4">https://doi.org/10.1016/S0008-6215(98)00040-4</a>.
+</div>
+<div id="ref-goldberg2002" class="csl-entry" role="listitem">
+Goldberg, R. N., N. Kishore, and R. M. Lennen. 2002. <span>“Thermodynamic Quantities for the Ionization Reactions of Buffers.”</span> <em>Journal of Physical and Chemical Reference Data</em> 31: 231–370.
+</div>
+<div id="ref-iupac_alcohols" class="csl-entry" role="listitem">
+IUPAC. n.d.-a. <em>Alcohols. In: Glossary of Class Names of Organic Compounds and Reactivity Intermediates Based on Structure (IUPAC Recommendations 1995), Pure Appl. Chem. 67, 1307 (1995), p. 1312</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00204">https://goldbook.iupac.org/terms/view/A00204</a>.
+</div>
+<div id="ref-iupac_aldehydes" class="csl-entry" role="listitem">
+IUPAC. n.d.-b. <em>Aldehydes. In: Glossary of Class Names of Organic Compounds and Reactivity Intermediates Based on Structure (IUPAC Recommendations 1995), Pure Appl. Chem. 67, 1307 (1995), p. 1312</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00208">https://goldbook.iupac.org/terms/view/A00208</a>.
+</div>
+<div id="ref-iupac_amides" class="csl-entry" role="listitem">
+IUPAC. n.d.-c. <em>Amides</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/A00266">https://goldbook.iupac.org/terms/view/A00266</a>.
+</div>
+<div id="ref-iupac_chirality" class="csl-entry" role="listitem">
+IUPAC. n.d.-d. <em>Chirality. In: Basic Terminology of Stereochemistry (IUPAC Recommendations 1996), Pure Appl. Chem. 68, 2193 (1996), p. 2203</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/C01058">https://goldbook.iupac.org/terms/view/C01058</a>.
+</div>
+<div id="ref-iupac_electrophile" class="csl-entry" role="listitem">
+IUPAC. n.d.-e. <em>Electrophile, Electrophilic. In: Glossary of Terms Used in Physical Organic Chemistry (IUPAC Recommendations 1994), Pure Appl. Chem. 66, 1077 (1994), p. 1111</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/E02020">https://goldbook.iupac.org/terms/view/E02020</a>.
+</div>
+<div id="ref-iupac_esters" class="csl-entry" role="listitem">
+IUPAC. n.d.-f. <em>Esters</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/E02219">https://goldbook.iupac.org/terms/view/E02219</a>.
+</div>
+<div id="ref-iupac_functional_group" class="csl-entry" role="listitem">
+IUPAC. n.d.-g. <em>Functional Group</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/F02555">https://goldbook.iupac.org/terms/view/F02555</a>.
+</div>
+<div id="ref-iupac_isomer" class="csl-entry" role="listitem">
+IUPAC. n.d.-h. <em>Isomer. In: Glossary of Terms Used in Physical Organic Chemistry (IUPAC Recommendations 1994), Pure Appl. Chem. 66, 1077 (1994), p. 1129</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/I03289">https://goldbook.iupac.org/terms/view/I03289</a>.
+</div>
+<div id="ref-iupac_nucleophilicity" class="csl-entry" role="listitem">
+IUPAC. n.d.-i. <em>Nucleophile, Nucleophilicity. In: Glossary of Terms Used in Physical Organic Chemistry (IUPAC Recommendations 1994), Pure Appl. Chem. 66, 1077 (1994), p. 1146</em>. IUPAC Compendium of Chemical Terminology (Gold Book). <a href="https://goldbook.iupac.org/terms/view/N04251">https://goldbook.iupac.org/terms/view/N04251</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch10-rates.html" class="pagination-link" aria-label="How Fast: Reaction Rates">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch12-building-blocks.html" class="pagination-link" aria-label="The Building Blocks of Life in Miniature">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
