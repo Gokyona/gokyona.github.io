@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Polarity, Hydrogen Bonds and Water – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch06-moles-concentration.html" rel="next">
+<link href="../chapters/ch04-molecular-drawings.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch05-polarity-water.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-electronegativity" id="toc-sec-electronegativity" class="nav-link" data-scroll-target="#sec-electronegativity"><span class="header-section-number">5.1</span> Unequal sharing</a>
+  <ul class="collapse">
+  <li><a href="#electronegativity" id="toc-electronegativity" class="nav-link" data-scroll-target="#electronegativity">Electronegativity</a></li>
+  <li><a href="#polar-bonds" id="toc-polar-bonds" class="nav-link" data-scroll-target="#polar-bonds">Polar bonds</a></li>
+  <li><a href="#polar-molecules" id="toc-polar-molecules" class="nav-link" data-scroll-target="#polar-molecules">Polar molecules</a></li>
+  </ul></li>
+  <li><a href="#sec-intermolecular" id="toc-sec-intermolecular" class="nav-link" data-scroll-target="#sec-intermolecular"><span class="header-section-number">5.2</span> Forces between molecules</a>
+  <ul class="collapse">
+  <li><a href="#bonds-within-molecules-and-forces-between-them" id="toc-bonds-within-molecules-and-forces-between-them" class="nav-link" data-scroll-target="#bonds-within-molecules-and-forces-between-them">Bonds within molecules and forces between them</a></li>
+  <li><a href="#dipole-dipole-and-dispersion-forces" id="toc-dipole-dipole-and-dispersion-forces" class="nav-link" data-scroll-target="#dipole-dipole-and-dispersion-forces">Dipole-dipole and dispersion forces</a></li>
+  <li><a href="#the-hydrogen-bond" id="toc-the-hydrogen-bond" class="nav-link" data-scroll-target="#the-hydrogen-bond">The hydrogen bond</a></li>
+  <li><a href="#evidence-from-boiling-points" id="toc-evidence-from-boiling-points" class="nav-link" data-scroll-target="#evidence-from-boiling-points">Evidence from boiling points</a></li>
+  </ul></li>
+  <li><a href="#sec-water" id="toc-sec-water" class="nav-link" data-scroll-target="#sec-water"><span class="header-section-number">5.3</span> Water, the solvent of life</a>
+  <ul class="collapse">
+  <li><a href="#a-small-molecule-with-four-hydrogen-bonding-sites" id="toc-a-small-molecule-with-four-hydrogen-bonding-sites" class="nav-link" data-scroll-target="#a-small-molecule-with-four-hydrogen-bonding-sites">A small molecule with four hydrogen-bonding sites</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions">Solutions</a></li>
+  <li><a href="#dissolving-ions" id="toc-dissolving-ions" class="nav-link" data-scroll-target="#dissolving-ions">Dissolving ions</a></li>
+  <li><a href="#the-hydrophobic-effect" id="toc-the-hydrophobic-effect" class="nav-link" data-scroll-target="#the-hydrophobic-effect">The hydrophobic effect</a></li>
+  <li><a href="#some-unusual-properties-of-water" id="toc-some-unusual-properties-of-water" class="nav-link" data-scroll-target="#some-unusual-properties-of-water">Some unusual properties of water</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch05" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Water and methane are molecules of almost the same mass. At room temperature methane is a gas that boils at −162 °C, whereas water is a liquid that boils only at 100 °C. Salt and sugar dissolve in water but not in oil. Ice floats. This chapter asks: <em>what makes water so different, and what holds molecules together when no chemical bond joins them?</em> The answer starts with a single property of atoms, electronegativity, and leads to the hydrogen bond, the interaction that holds the two strands of DNA together and gives RNA its shapes.</p>
+</section>
+<section id="sec-electronegativity" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-electronegativity"><span class="header-section-number">5.1</span> Unequal sharing</h2>
+<section id="electronegativity" class="level3">
+<h3 class="anchored" data-anchor-id="electronegativity">Electronegativity</h3>
+<p>In the hydrogen molecule, H<sub>2</sub>, the two atoms are identical and share their electron pair equally. When two different atoms are bonded, this is generally not so: one atom attracts the shared electrons more strongly than the other, and the electrons spend more time near it. The tendency of an atom in a bond to attract the shared electrons towards itself is called its <strong>electronegativity</strong>, often written with the Greek letter <span class="math inline">\(\chi\)</span> (chi).</p>
+<p>Electronegativity is not measured directly, like a mass. It is derived from measured bond energies by a procedure introduced by Linus Pauling in 1932 <span class="citation" data-cites="pauling1932">(<a href="../references/references.html#ref-pauling1932" role="doc-biblioref">Pauling 1932</a>)</span>, and the values are pure numbers on what is called the Pauling scale. <a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>5.1</span></a> gives the values for the elements of this book.</p>
+<div id="tbl-electroneg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.1: Pauling electronegativities <span class="citation" data-cites="allred1961">(<a href="../references/references.html#ref-allred1961" role="doc-biblioref">Allred 1961</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-electroneg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Element</th>
+<th><span class="math inline">\(\chi\)</span> (Pauling scale)</th>
+<th></th>
+<th>Element</th>
+<th><span class="math inline">\(\chi\)</span> (Pauling scale)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hydrogen</td>
+<td>2.20</td>
+<td></td>
+<td>Fluorine</td>
+<td>3.98</td>
+</tr>
+<tr class="even">
+<td>Carbon</td>
+<td>2.55</td>
+<td></td>
+<td>Sodium</td>
+<td>0.93</td>
+</tr>
+<tr class="odd">
+<td>Nitrogen</td>
+<td>3.04</td>
+<td></td>
+<td>Magnesium</td>
+<td>1.31</td>
+</tr>
+<tr class="even">
+<td>Oxygen</td>
+<td>3.44</td>
+<td></td>
+<td>Sulfur</td>
+<td>2.58</td>
+</tr>
+<tr class="odd">
+<td>Phosphorus</td>
+<td>2.19</td>
+<td></td>
+<td>Chlorine</td>
+<td>3.16</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Two trends are visible. Across a row of the periodic table, electronegativity increases from left to right, as the nuclear charge increases while the valence electrons stay in the same shell. Down a column it decreases, because the valence electrons lie farther from the nucleus: phosphorus (2.19) is much less electronegative than nitrogen (3.04), although both have five valence electrons. Of the elements of life, oxygen and nitrogen are by far the most electronegative. Carbon, hydrogen and phosphorus lie close together, between 2.19 and 2.55.</p>
+</section>
+<section id="polar-bonds" class="level3">
+<h3 class="anchored" data-anchor-id="polar-bonds">Polar bonds</h3>
+<p>A covalent bond in which the electrons are shared unequally is a <strong>polar bond</strong>. Its more electronegative end carries a small excess of negative charge, and the other end a small deficit. These partial charges are written <span class="math inline">\(\delta\)</span>− and <span class="math inline">\(\delta\)</span>+ (<span class="math inline">\(\delta\)</span>, the Greek letter delta, is read “a fraction of”), to distinguish them from the whole-number charges of ions. The larger the difference in electronegativity, the more polar the bond. A C–H bond (difference 0.35) is nearly non-polar. An O–H bond (difference 1.24) is strongly polar, with the negative end on oxygen, and so are N–H, C=O and P–O bonds.</p>
+<p>When the difference becomes very large, as between sodium (0.93) and chlorine (3.16), the electron is not shared at all but effectively transferred, and the result is a pair of ions (Chapter 3). Covalent and ionic bonds are therefore two ends of a continuous range. Non-polar covalent bonds lie at one end, ionic bonds at the other, and polar covalent bonds in between.</p>
+</section>
+<section id="polar-molecules" class="level3">
+<h3 class="anchored" data-anchor-id="polar-molecules">Polar molecules</h3>
+<p>A molecule as a whole is <strong>polar</strong> if the partial charges of its bonds do not cancel, so that one side of the molecule is slightly negative and the other slightly positive. Whether this happens depends on the shape of the molecule as well as on its bonds. A molecule with separated positive and negative charge is said to have a <strong>dipole</strong>, and the size of the separation is measured by its <strong>dipole moment</strong>, given in a unit called the debye (D).</p>
+<p>Water is bent (Chapter 3), so the two O–H bond dipoles point partly in the same direction and add up: water has a dipole moment of 1.857 D, with its negative end at the oxygen atom (<a href="#fig-water-dipole" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>). Ammonia, also not symmetric, has 1.476 D. Carbon dioxide, O=C=O, has two strongly polar C=O bonds, but the molecule is straight, so they point in exactly opposite directions and cancel; carbon dioxide has no dipole moment. Methane is also non-polar, because its four slightly polar C–H bonds point to the corners of a regular tetrahedron and cancel exactly <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.</p>
+<div id="fig-water-dipole" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-water-dipole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-1_water_dipole.png" class="img-fluid figure-img" style="width:55.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-water-dipole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Polarity of the water molecule. Each O–H bond is polar, with partial negative charge (<span class="math inline">\(\delta\)</span>−) on oxygen and partial positive charge (<span class="math inline">\(\delta\)</span>+) on hydrogen. Because the molecule is bent, the two bond dipoles add to a net dipole moment of 1.857 D <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-intermolecular" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-intermolecular"><span class="header-section-number">5.2</span> Forces between molecules</h2>
+<section id="bonds-within-molecules-and-forces-between-them" class="level3">
+<h3 class="anchored" data-anchor-id="bonds-within-molecules-and-forces-between-them">Bonds within molecules and forces between them</h3>
+<p>Covalent bonds hold the atoms of a molecule together. Molecules also attract one another, but by much weaker <strong>intermolecular forces</strong>. These forces do not create new molecules, and at ordinary temperatures they are constantly broken and re-formed as the molecules move. They nevertheless decide whether a substance is a gas, a liquid or a solid at a given temperature, and whether it dissolves in water. All intermolecular forces are electrical in origin: they arise from the attraction between regions of positive and negative charge on neighbouring molecules.</p>
+</section>
+<section id="dipole-dipole-and-dispersion-forces" class="level3">
+<h3 class="anchored" data-anchor-id="dipole-dipole-and-dispersion-forces">Dipole-dipole and dispersion forces</h3>
+<p>Polar molecules attract each other because the positive end of one is drawn towards the negative end of another. This is a <strong>dipole-dipole interaction</strong>.</p>
+<p>Non-polar molecules attract each other too, more weakly. The electron cloud of any molecule fluctuates, so that at any instant it may have a small, temporary dipole. That dipole distorts the electron cloud of a neighbouring molecule, creating a dipole in it, and the two temporary dipoles attract. This is the <strong>dispersion force</strong>, also called the London force. It acts between all molecules, and it is larger for larger molecules, which have more electrons. Dipole-dipole and dispersion forces, with related interactions, are together called <strong>van der Waals forces</strong>.</p>
+</section>
+<section id="the-hydrogen-bond" class="level3">
+<h3 class="anchored" data-anchor-id="the-hydrogen-bond">The hydrogen bond</h3>
+<p>One intermolecular interaction is of special importance for water and for the molecules of life. IUPAC defines it as follows: “The hydrogen bond is an attractive interaction between a hydrogen atom from a molecule or a molecular fragment X–H in which X is more electronegative than H, and an atom or a group of atoms in the same or a different molecule, in which there is evidence of bond formation” <span class="citation" data-cites="arunan2011">(<a href="../references/references.html#ref-arunan2011" role="doc-biblioref">Arunan et al. 2011</a>)</span>.</p>
+<p>In practice, a <strong>hydrogen bond</strong> forms when a hydrogen atom bonded to oxygen or nitrogen, and so carrying a <span class="math inline">\(\delta\)</span>+ charge, points towards a lone pair on another oxygen or nitrogen atom (<a href="#fig-hbond" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>). It is written X–H···Y, with the dotted line for the hydrogen bond. The group X–H is the <strong>hydrogen-bond donor</strong>, and the atom Y with its lone pair is the <strong>hydrogen-bond acceptor</strong>. Hydrogen bonds are stronger than other intermolecular forces, but much weaker than covalent bonds, so they are made and broken easily at ordinary temperatures. They are also directional: they are strongest when X, H and Y lie on a straight line <span class="citation" data-cites="arunan2011">(<a href="../references/references.html#ref-arunan2011" role="doc-biblioref">Arunan et al. 2011</a>)</span>.</p>
+<div id="fig-hbond" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hbond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-2_hbond.png" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hbond-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: A hydrogen bond between two water molecules. The O–H group of the left-hand molecule (the donor) points towards a lone pair on the oxygen atom of the right-hand molecule (the acceptor). Covalent bonds are drawn as solid lines and the hydrogen bond as a dotted line. Schematic; distances not to scale.
+</figcaption>
+</figure>
+</div>
+<p>Hydrogen bonds are not limited to water. They form wherever O–H or N–H groups meet oxygen or nitrogen atoms with lone pairs: between molecules of alcohols, sugars and nucleobases, and between different parts of the same large molecule. The two strands of a DNA double helix are held together by hydrogen bonds between pairs of bases, and the same kind of pairing folds a single strand of RNA into a shape. Chapter 12 shows which atoms form these bonds.</p>
+</section>
+<section id="evidence-from-boiling-points" class="level3">
+<h3 class="anchored" data-anchor-id="evidence-from-boiling-points">Evidence from boiling points</h3>
+<p>When a liquid boils, its molecules separate from one another, so a higher boiling point indicates stronger intermolecular forces. <a href="#tbl-boiling" class="quarto-xref">Table&nbsp;<span>5.2</span></a> compares four small molecules containing hydrogen.</p>
+<div id="tbl-boiling" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5.2: Normal boiling points, at a pressure of one standard atmosphere, from the NIST Chemistry WebBook <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. Molar mass is introduced in Chapter 6.
+</figcaption>
+<div aria-describedby="tbl-boiling-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substance</th>
+<th>Formula</th>
+<th>Molar mass (g mol<sup>−1</sup>)</th>
+<th>Normal boiling point (°C)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Methane</td>
+<td>CH<sub>4</sub></td>
+<td>16.04</td>
+<td>−162</td>
+</tr>
+<tr class="even">
+<td>Water</td>
+<td>H<sub>2</sub>O</td>
+<td>18.02</td>
+<td>100.02</td>
+</tr>
+<tr class="odd">
+<td>Hydrogen fluoride</td>
+<td>HF</td>
+<td>20.01</td>
+<td>19.6</td>
+</tr>
+<tr class="even">
+<td>Hydrogen sulfide</td>
+<td>H<sub>2</sub>S</td>
+<td>34.08</td>
+<td>−60.28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Methane and water have almost the same mass, yet water boils 262 °C higher. Methane is non-polar and forms no hydrogen bonds; water forms many, through its two O–H groups and its two lone pairs. Hydrogen sulfide, H<sub>2</sub>S, is nearly twice as heavy as water, but sulfur (2.58) is much less electronegative than oxygen (3.44), and H<sub>2</sub>S forms only weak hydrogen bonds; it boils 160 °C lower than water. Hydrogen fluoride, which contains the most electronegative element of all, also boils unusually high for its size.</p>
+</section>
+</section>
+<section id="sec-water" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-water"><span class="header-section-number">5.3</span> Water, the solvent of life</h2>
+<section id="a-small-molecule-with-four-hydrogen-bonding-sites" class="level3">
+<h3 class="anchored" data-anchor-id="a-small-molecule-with-four-hydrogen-bonding-sites">A small molecule with four hydrogen-bonding sites</h3>
+<p>A water molecule is small, bent and polar. Its oxygen atom carries two lone pairs and is bonded to two hydrogen atoms, so each molecule can donate two hydrogen bonds and accept two. In liquid water, each molecule is linked to its neighbours by a network of hydrogen bonds that are constantly broken and re-formed. This network is responsible for the unusually high boiling point of water, and for most of its other unusual properties.</p>
+</section>
+<section id="solutions" class="level3">
+<h3 class="anchored" data-anchor-id="solutions">Solutions</h3>
+<p>A <strong>solution</strong> is a mixture in which one substance is spread evenly through another at the level of individual molecules or ions. The substance present in the larger amount, usually a liquid, is the <strong>solvent</strong>; the substance dissolved in it is the <strong>solute</strong>. A solution in which water is the solvent is an <strong>aqueous solution</strong>. The maximum amount of a solute that dissolves in a given amount of solvent at a given temperature is its <strong>solubility</strong>.</p>
+<p>A useful rule of thumb is “like dissolves like”. Polar solutes dissolve in polar solvents, such as water, and non-polar solutes dissolve in non-polar solvents, such as oils. A molecule that can form hydrogen bonds with water, such as an alcohol, a sugar or a nucleobase, can take a place in the hydrogen-bond network of water and dissolves well. Table sugar dissolves in water in large amounts for this reason: each of its molecules carries eight O–H groups.</p>
+</section>
+<section id="dissolving-ions" class="level3">
+<h3 class="anchored" data-anchor-id="dissolving-ions">Dissolving ions</h3>
+<p>Water also dissolves many ionic compounds, such as sodium chloride, which do not dissolve in oils. Two properties of water are responsible.</p>
+<p>First, water greatly weakens the electrical force between charges. The force between two charges in a medium is smaller than in a vacuum by a factor called the <strong>relative permittivity</strong> of the medium. For liquid water at 25 °C, the relative permittivity is 78.4 <span class="citation" data-cites="iapws_liquid">(<a href="../references/references.html#ref-iapws_liquid" role="doc-biblioref">International Association for the Properties of Water and Steam 2011</a>)</span>: the attraction between a sodium ion and a chloride ion in water is almost eighty times weaker than at the same distance in a vacuum, and the ions can drift apart.</p>
+<p>Second, water molecules arrange themselves around each dissolved ion, forming a <strong>hydration shell</strong> (<a href="#fig-hydration" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>). Around a positive ion, such as Na<sup>+</sup>, the water molecules turn their <span class="math inline">\(\delta\)</span>− oxygen atoms towards the ion; around a negative ion, such as Cl<sup>−</sup>, they turn their <span class="math inline">\(\delta\)</span>+ hydrogen atoms towards it. The attraction between the ion and these oriented water molecules holds the ion in solution.</p>
+<div id="fig-hydration" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hydration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch05/fig5-3_hydration.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hydration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: Hydration of ions (schematic). Water molecules around a sodium ion (left) point their partially negative oxygen atoms towards the positive ion; those around a chloride ion (right) point their partially positive hydrogen atoms towards the negative ion. Only one layer of water molecules is shown, in two dimensions.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-hydrophobic-effect" class="level3">
+<h3 class="anchored" data-anchor-id="the-hydrophobic-effect">The hydrophobic effect</h3>
+<p>Non-polar molecules, such as the hydrocarbons of oil, dissolve poorly in water and tend to cluster together when placed in it; oil and water separate. This is the <strong>hydrophobic effect</strong> (from the Greek for “water-fearing”). It is not caused by a special attraction between the non-polar molecules. A non-polar molecule cannot form hydrogen bonds, and the water molecules around it are restricted in the hydrogen bonds they can form with one another. When the non-polar molecules cluster together, less of their surface touches water, and fewer water molecules are restricted. Polar and charged groups, which interact favourably with water, are called <strong>hydrophilic</strong> (“water-loving”); non-polar groups are <strong>hydrophobic</strong>.</p>
+<p>Some molecules have a hydrophilic part and a hydrophobic part. Such molecules are called <strong>amphiphilic</strong>. Soap is an example: a long hydrocarbon tail attached to a charged head. In water, amphiphilic molecules arrange themselves with their tails together, away from the water, and their heads facing outwards. Depending on their shape, they form small spherical clusters or double layers that close into hollow spheres. The membranes that surround every living cell are such double layers, and similar structures formed from simple amphiphilic molecules are studied as possible compartments for the first cells.</p>
+</section>
+<section id="some-unusual-properties-of-water" class="level3">
+<h3 class="anchored" data-anchor-id="some-unusual-properties-of-water">Some unusual properties of water</h3>
+<p>The hydrogen-bond network gives water several properties that are unusual for so small a molecule.</p>
+<ul>
+<li><strong>Ice floats.</strong> In ice, every water molecule forms four hydrogen bonds in a regular, open, tetrahedral arrangement, which occupies more space than the disordered liquid. At 0 °C and atmospheric pressure, ice has a density of 916.7 kg m<sup>−3</sup> and liquid water 999.8 kg m<sup>−3</sup> <span class="citation" data-cites="feistel2006 wagner2002">(<a href="../references/references.html#ref-feistel2006" role="doc-biblioref">Feistel and Wagner 2006</a>; <a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>. Because ice is less dense, it floats, and bodies of water freeze from the top down, leaving liquid water beneath.</li>
+<li><strong>Liquid water is densest at about 4 °C.</strong> As it cools below this temperature, the liquid begins to form open, ice-like arrangements and expands slightly. The maximum density, 999.97 kg m<sup>−3</sup>, is reached at 3.98 °C <span class="citation" data-cites="wagner2002">(<a href="../references/references.html#ref-wagner2002" role="doc-biblioref">Wagner and Pruß 2002</a>)</span>.</li>
+<li><strong>Water stores a lot of heat.</strong> Heating water requires energy to break hydrogen bonds as well as to make the molecules move faster. The energy needed to raise the temperature of 1 g of liquid water by 1 °C at 25 °C is 4.18 J <span class="citation" data-cites="iapws_liquid">(<a href="../references/references.html#ref-iapws_liquid" role="doc-biblioref">International Association for the Properties of Water and Steam 2011</a>)</span>, several times more than for most common liquids and solids. Oceans and lakes therefore change temperature slowly.</li>
+</ul>
+</section>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>Electronegativity measures how strongly an atom in a bond attracts the shared electrons. On the Pauling scale: H 2.20, C 2.55, N 3.04, O 3.44, P 2.19. It increases across a period and decreases down a group.</li>
+<li>Unequal sharing makes a bond polar, with partial charges <span class="math inline">\(\delta\)</span>+ and <span class="math inline">\(\delta\)</span>−. O–H and N–H bonds are strongly polar; C–H bonds nearly non-polar.</li>
+<li>A molecule is polar if its bond dipoles do not cancel. Bent water (1.857 D) is polar; straight CO<sub>2</sub> and symmetric CH<sub>4</sub> are not.</li>
+<li>Intermolecular forces are much weaker than covalent bonds: dipole-dipole forces, dispersion forces and, strongest, hydrogen bonds.</li>
+<li>A hydrogen bond X–H···Y links a hydrogen on oxygen or nitrogen to a lone pair on another oxygen or nitrogen. It is directional and easily broken.</li>
+<li>Hydrogen bonding explains why water boils at 100 °C while methane, of similar mass, boils at −162 °C.</li>
+<li>Water dissolves polar molecules by hydrogen bonding and ions by weakening the force between them (relative permittivity 78.4) and forming hydration shells. Like dissolves like.</li>
+<li>Non-polar molecules cluster in water (the hydrophobic effect). Amphiphilic molecules form layers and membranes.</li>
+<li>Ice is less dense than liquid water and floats; liquid water is densest at 3.98 °C and has a high heat capacity.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Using <a href="#tbl-electroneg" class="quarto-xref">Table&nbsp;<span>5.1</span></a>, rank the bonds C–H, N–H, O–H and C–O from least to most polar, and mark the <span class="math inline">\(\delta\)</span>− end of each.</li>
+<li>Carbon dioxide contains two polar bonds but is non-polar. Explain why, and say whether sulfur dioxide, which is bent, should be polar.</li>
+<li>Identify the hydrogen-bond donors and acceptors in a molecule of ammonia, NH<sub>3</sub>. Can two ammonia molecules form a hydrogen bond with each other?</li>
+<li>Explain why ethanol (CH<sub>3</sub>CH<sub>2</sub>OH) mixes with water in all proportions, whereas hexane (C<sub>6</sub>H<sub>14</sub>) does not dissolve in water.</li>
+<li>What would happen to lakes in winter if ice were denser than liquid water?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-allred1961" class="csl-entry" role="listitem">
+Allred, A. L. 1961. <span>“Electronegativity Values from Thermochemical Data.”</span> <em>Journal of Inorganic and Nuclear Chemistry</em> 17 (3–4): 215–21. <a href="https://doi.org/10.1016/0022-1902(61)80142-5">https://doi.org/10.1016/0022-1902(61)80142-5</a>.
+</div>
+<div id="ref-arunan2011" class="csl-entry" role="listitem">
+Arunan, E., G. R. Desiraju, R. A. Klein, et al. 2011. <span>“Definition of the Hydrogen Bond (<span>IUPAC</span> Recommendations 2011).”</span> <em>Pure and Applied Chemistry</em> 83 (8): 1637–41. <a href="https://doi.org/10.1351/PAC-REC-10-01-02">https://doi.org/10.1351/PAC-REC-10-01-02</a>.
+</div>
+<div id="ref-feistel2006" class="csl-entry" role="listitem">
+Feistel, R., and W. Wagner. 2006. <span>“A New Equation of State for <span>H<span class="math inline">\(_2\)</span>O</span> Ice <span>Ih</span>.”</span> <em>Journal of Physical and Chemical Reference Data</em> 35: 1021–47.
+</div>
+<div id="ref-iapws_liquid" class="csl-entry" role="listitem">
+International Association for the Properties of Water and Steam. 2011. <em>Revised Supplementary Release on Properties of Liquid Water at 0.1 <span>MPa</span>, <span>IAPWS</span> <span>SR6-08(2011)</span></em>. <a href="https://iapws.org/technical-guidance/release/LiquidWater">https://iapws.org/technical-guidance/release/LiquidWater</a>.
+</div>
+<div id="ref-cccbdb" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. 2022. <em><span>NIST</span> Computational Chemistry Comparison and Benchmark Database (<span>CCCBDB</span>), Release 22, Experimental Geometry Data</em>. <a href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d. <em><span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data</em>. <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+<div id="ref-pauling1932" class="csl-entry" role="listitem">
+Pauling, L. 1932. <span>“The Nature of the Chemical Bond. <span>IV</span>. The Energy of Single Bonds and the Relative Electronegativity of Atoms.”</span> <em>Journal of the American Chemical Society</em> 54 (9): 3570–82. <a href="https://doi.org/10.1021/ja01348a011">https://doi.org/10.1021/ja01348a011</a>.
+</div>
+<div id="ref-wagner2002" class="csl-entry" role="listitem">
+Wagner, W., and A. Pruß. 2002. <span>“The <span>IAPWS</span> Formulation 1995 for the Thermodynamic Properties of Ordinary Water Substance for General and Scientific Use.”</span> <em>Journal of Physical and Chemical Reference Data</em> 31: 387–535.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch04-molecular-drawings.html" class="pagination-link" aria-label="Reading Molecular Drawings">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch06-moles-concentration.html" class="pagination-link" aria-label="Counting Molecules: Moles and Concentration">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

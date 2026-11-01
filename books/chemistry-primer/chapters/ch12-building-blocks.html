@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12&nbsp; The Building Blocks of Life in Miniature – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../references/references.html" rel="next">
+<link href="../chapters/ch11-carbon-toolkit.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch12-building-blocks.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-polymers" id="toc-sec-polymers" class="nav-link" data-scroll-target="#sec-polymers"><span class="header-section-number">12.1</span> Polymers and monomers</a></li>
+  <li><a href="#sec-bases" id="toc-sec-bases" class="nav-link" data-scroll-target="#sec-bases"><span class="header-section-number">12.2</span> Nucleobases</a></li>
+  <li><a href="#sec-nucleotides" id="toc-sec-nucleotides" class="nav-link" data-scroll-target="#sec-nucleotides"><span class="header-section-number">12.3</span> Nucleosides and nucleotides</a>
+  <ul class="collapse">
+  <li><a href="#base-plus-sugar" id="toc-base-plus-sugar" class="nav-link" data-scroll-target="#base-plus-sugar">Base plus sugar</a></li>
+  <li><a href="#adding-phosphate" id="toc-adding-phosphate" class="nav-link" data-scroll-target="#adding-phosphate">Adding phosphate</a></li>
+  </ul></li>
+  <li><a href="#sec-chains" id="toc-sec-chains" class="nav-link" data-scroll-target="#sec-chains"><span class="header-section-number">12.4</span> Chains of nucleotides</a>
+  <ul class="collapse">
+  <li><a href="#the-phosphodiester-backbone" id="toc-the-phosphodiester-backbone" class="nav-link" data-scroll-target="#the-phosphodiester-backbone">The phosphodiester backbone</a></li>
+  <li><a href="#direction" id="toc-direction" class="nav-link" data-scroll-target="#direction">Direction</a></li>
+  </ul></li>
+  <li><a href="#sec-pairing" id="toc-sec-pairing" class="nav-link" data-scroll-target="#sec-pairing"><span class="header-section-number">12.5</span> Base pairing</a>
+  <ul class="collapse">
+  <li><a href="#complementary-pairs" id="toc-complementary-pairs" class="nav-link" data-scroll-target="#complementary-pairs">Complementary pairs</a></li>
+  <li><a href="#complementary-and-antiparallel-strands" id="toc-complementary-and-antiparallel-strands" class="nav-link" data-scroll-target="#complementary-and-antiparallel-strands">Complementary and antiparallel strands</a></li>
+  </ul></li>
+  <li><a href="#sec-rna-dna" id="toc-sec-rna-dna" class="nav-link" data-scroll-target="#sec-rna-dna"><span class="header-section-number">12.6</span> RNA and DNA</a></li>
+  <li><a href="#sec-proteins" id="toc-sec-proteins" class="nav-link" data-scroll-target="#sec-proteins"><span class="header-section-number">12.7</span> Amino acids and proteins</a>
+  <ul class="collapse">
+  <li><a href="#amino-acids" id="toc-amino-acids" class="nav-link" data-scroll-target="#amino-acids">Amino acids</a></li>
+  <li><a href="#peptide-bonds-and-proteins" id="toc-peptide-bonds-and-proteins" class="nav-link" data-scroll-target="#peptide-bonds-and-proteins">Peptide bonds and proteins</a></li>
+  </ul></li>
+  <li><a href="#sec-outline" id="toc-sec-outline" class="nav-link" data-scroll-target="#sec-outline"><span class="header-section-number">12.8</span> The chemistry of the origin of life, in outline</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch12" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>The previous chapters introduced atoms and bonds, drawings, water, equilibrium, energy, rates and functional groups. This last chapter puts these tools to work on the molecules at the centre of research into the origins of life. It asks: <em>how are RNA, DNA and proteins built from small parts, and what does their chemistry demand?</em> The answers are short descriptions of the nucleobases, the sugar, the phosphate group and the amino acids, of the bonds that join them, and of the base pairs that allow one chain of RNA or DNA to specify another. At the end, the chapter gathers the chemical questions that any account of the origin of these molecules must answer.</p>
+</section>
+<section id="sec-polymers" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-polymers"><span class="header-section-number">12.1</span> Polymers and monomers</h2>
+<p>The large molecules of life are <strong>polymers</strong>: long chains built from many smaller units, called <strong>monomers</strong>, joined by covalent bonds. Each monomer, once it is part of the chain, is called a <strong>residue</strong>. Three families of biological polymers are central:</p>
+<ul>
+<li><strong>Nucleic acids</strong>, RNA and DNA, are chains of <strong>nucleotides</strong>.</li>
+<li><strong>Proteins</strong> are chains of <strong>amino acids</strong>.</li>
+<li><strong>Polysaccharides</strong>, such as starch and cellulose, are chains of sugars.</li>
+</ul>
+<p>In all three, each new link is formed by a condensation that releases a molecule of water, and broken by hydrolysis (Chapter 7). In water, hydrolysis is generally favoured at equilibrium (Chapters 8 and 9), so in living cells the links are made with the help of activated monomers and catalysts. A short chain of a few units is called an <strong>oligomer</strong>: an oligonucleotide or, for amino acids, a peptide.</p>
+<p>The order of the different kinds of monomer along a chain is its <strong>sequence</strong>. A polymer made from a few kinds of monomer can be arranged in an enormous number of sequences: with four kinds of nucleotide, a chain of length n can have 4<sup>n</sup> different sequences, already more than 10<sup>60</sup> for n = 100 (Chapter 1). The sequence is what makes a nucleic acid a carrier of information, and what gives each protein its particular shape and function.</p>
+</section>
+<section id="sec-bases" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="sec-bases"><span class="header-section-number">12.2</span> Nucleobases</h2>
+<p>The <strong>nucleobases</strong> (or simply bases) are flat, aromatic rings (Chapter 4) of carbon and nitrogen atoms, carrying amino groups and carbonyl groups (Chapter 11). Five are common in nucleic acids (<a href="#fig-bases" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>):</p>
+<ul>
+<li>The <strong>purines</strong>, <strong>adenine</strong> (A) and <strong>guanine</strong> (G), have two fused rings, one of six and one of five atoms.</li>
+<li>The <strong>pyrimidines</strong>, <strong>cytosine</strong> (C), <strong>uracil</strong> (U) and <strong>thymine</strong> (T), have a single six-membered ring.</li>
+</ul>
+<p>RNA contains A, G, C and U; DNA contains A, G, C and T. Thymine differs from uracil only by a methyl group (–CH<sub>3</sub>) on carbon 5 of the ring.</p>
+<p>The atoms of each ring are numbered by a fixed convention. Purines are attached to the sugar through their nitrogen atom N9, and pyrimidines through N1. The other N–H groups, the ring nitrogen atoms with lone pairs, and the C=O groups on the edges of the bases are the donors and acceptors of the hydrogen bonds (Chapter 5) that make base pairing possible (<a href="#sec-pairing" class="quarto-xref"><span>Section 12.5</span></a>).</p>
+<div id="fig-bases" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch12/fig12-1_bases.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: The five common nucleobases. Adenine and guanine are purines; cytosine, uracil and thymine are pyrimidines. The nitrogen atom that bonds to the sugar in a nucleotide (N9 in purines, N1 in pyrimidines) is highlighted. Thymine, found in DNA in place of uracil, carries an extra methyl group (pink).
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-nucleotides" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="sec-nucleotides"><span class="header-section-number">12.3</span> Nucleosides and nucleotides</h2>
+<section id="base-plus-sugar" class="level3">
+<h3 class="anchored" data-anchor-id="base-plus-sugar">Base plus sugar</h3>
+<p>A <strong>nucleoside</strong> consists of a nucleobase bonded to a sugar. In RNA the sugar is D-ribose in its five-membered ring form (Chapter 11). The bond joins carbon 1<span class="math inline">\('\)</span> of the sugar to N9 of a purine or N1 of a pyrimidine, and it is formed, at least formally, by a condensation between the base and the hydroxy group on carbon 1<span class="math inline">\('\)</span> of the sugar. As noted in Chapter 4, the carbon atoms of the sugar are numbered with primes (1<span class="math inline">\('\)</span> to 5<span class="math inline">\('\)</span>) to distinguish them from the atoms of the base. In all the nucleosides of RNA, the base is attached in the <span class="math inline">\(\beta\)</span> arrangement. The four nucleosides of RNA are adenosine, guanosine, cytidine and uridine.</p>
+</section>
+<section id="adding-phosphate" class="level3">
+<h3 class="anchored" data-anchor-id="adding-phosphate">Adding phosphate</h3>
+<p>A <strong>nucleotide</strong> is a nucleoside carrying one or more phosphate groups, usually on the hydroxy group of carbon 5<span class="math inline">\('\)</span>, attached as a phosphate ester (Chapter 11). Adenosine with one phosphate is <strong>adenosine monophosphate</strong> (AMP, <a href="#fig-amp" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>); with a chain of two or three phosphates linked by P–O–P bonds it is adenosine diphosphate (ADP) or adenosine triphosphate (ATP), the activated molecule of Chapter 9. Every nucleotide therefore has three parts: a nucleobase, a sugar and a phosphate group, joined by two bonds that are both formed by condensation.</p>
+<div id="fig-amp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-amp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch12/fig12-2_amp.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-amp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: Adenosine monophosphate (AMP), a nucleotide, with its three parts highlighted: the nucleobase adenine (blue), the sugar ribose (orange), with its carbon atoms numbered 1<span class="math inline">\('\)</span> to 5<span class="math inline">\('\)</span>, and a phosphate group (pink) on the 5<span class="math inline">\('\)</span> oxygen. The base is bonded to carbon 1<span class="math inline">\('\)</span> through N9. In water at pH 7, the phosphate group carries negative charge (Chapter 8); it is drawn here in its uncharged form.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-chains" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="sec-chains"><span class="header-section-number">12.4</span> Chains of nucleotides</h2>
+<section id="the-phosphodiester-backbone" class="level3">
+<h3 class="anchored" data-anchor-id="the-phosphodiester-backbone">The phosphodiester backbone</h3>
+<p>In RNA, nucleotides are joined by <strong>phosphodiester linkages</strong>: a single phosphate group forms an ester with the 3<span class="math inline">\('\)</span> hydroxy group of one nucleotide and another with the 5<span class="math inline">\('\)</span> hydroxy group of the next, giving the sequence of bonds 3<span class="math inline">\('\)</span>-O–P–O-5<span class="math inline">\('\)</span> (<a href="#fig-chain" class="quarto-xref">Figure&nbsp;<span>12.3</span></a>). Each new link is a condensation between the phosphate of one unit and a hydroxy group of the other. Repeated, these links form a <strong>backbone</strong> of alternating sugars and phosphates, from which the bases project to the side.</p>
+<p>Each phosphodiester linkage keeps one acidic O–H group, which at neutral pH has lost its proton (Chapter 8). The backbone therefore carries one negative charge per nucleotide. This charge keeps RNA dissolved in water, and it repels negatively charged nucleophiles such as the hydroxide ion, which helps to make the phosphodiester linkage resistant to hydrolysis <span class="citation" data-cites="westheimer1987">(<a href="../references/references.html#ref-westheimer1987" role="doc-biblioref">Westheimer 1987</a>)</span>.</p>
+</section>
+<section id="direction" class="level3">
+<h3 class="anchored" data-anchor-id="direction">Direction</h3>
+<p>A chain of nucleotides has two different ends. At one end, the 5<span class="math inline">\('\)</span> position of the first sugar carries a free phosphate or hydroxy group (the <strong>5<span class="math inline">\('\)</span> end</strong>); at the other, the 3<span class="math inline">\('\)</span> position of the last sugar carries a free hydroxy group (the <strong>3<span class="math inline">\('\)</span> end</strong>). By convention, sequences are written from the 5<span class="math inline">\('\)</span> end to the 3<span class="math inline">\('\)</span> end. The sequence 5<span class="math inline">\('\)</span>-ACG-3<span class="math inline">\('\)</span> and the sequence 5<span class="math inline">\('\)</span>-GCA-3<span class="math inline">\('\)</span> are therefore different molecules, even though they contain the same nucleotides.</p>
+<div id="fig-chain" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch12/fig12-3_chain.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.3: Schematic of a short RNA chain with the sequence 5<span class="math inline">\('\)</span>-ACG-3<span class="math inline">\('\)</span>. Each ribose (R, orange pentagon) carries a base (blue square) on carbon 1<span class="math inline">\('\)</span>. Phosphate groups (P, pink), each carrying a negative charge, link the 3<span class="math inline">\('\)</span> carbon of one sugar to the 5<span class="math inline">\('\)</span> carbon of the next. The chain has a 5<span class="math inline">\('\)</span> end and a 3<span class="math inline">\('\)</span> end.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-pairing" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="sec-pairing"><span class="header-section-number">12.5</span> Base pairing</h2>
+<section id="complementary-pairs" class="level3">
+<h3 class="anchored" data-anchor-id="complementary-pairs">Complementary pairs</h3>
+<p>The bases on two chains of nucleotides can face each other and form hydrogen bonds between their edges. In 1953, in their model of the structure of DNA, James Watson and Francis Crick proposed that adenine pairs with thymine and guanine with cytosine <span class="citation" data-cites="watson1953">(<a href="../references/references.html#ref-watson1953" role="doc-biblioref">Watson and Crick 1953</a>)</span>. In RNA, uracil takes the place of thymine. These <strong>Watson–Crick base pairs</strong> are:</p>
+<ul>
+<li><strong>A–U</strong> (or A–T in DNA), held by two hydrogen bonds;</li>
+<li><strong>G–C</strong>, held by three hydrogen bonds.</li>
+</ul>
+<p>In each pair, a purine faces a pyrimidine, so that both kinds of pair have nearly the same width, and a double helix built from any sequence of them has a regular shape. <a href="#fig-pairs" class="quarto-xref">Figure&nbsp;<span>12.4</span></a> shows which atoms form the hydrogen bonds.</p>
+<div id="fig-pairs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch12/fig12-4_pairs.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pairs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.4: Watson–Crick base pairs. Left: the hydrogen bonds (dashed) between adenine and uracil (two) and between guanine and cytosine (three), with the donor N–H groups and the acceptor N and O atoms labelled by their ring positions. Right: two complementary strands; every A faces a U and every G faces a C, and the two strands run in opposite directions.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="complementary-and-antiparallel-strands" class="level3">
+<h3 class="anchored" data-anchor-id="complementary-and-antiparallel-strands">Complementary and antiparallel strands</h3>
+<p>Two sequences that can form Watson–Crick pairs along their whole length are called <strong>complementary</strong>. Because of the geometry of the backbone, two paired strands run in opposite directions, one from 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> and the other from 3<span class="math inline">\('\)</span> to 5<span class="math inline">\('\)</span>; they are <strong>antiparallel</strong>. The complement of 5<span class="math inline">\('\)</span>-GACUUCG-3<span class="math inline">\('\)</span>, read in its own 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction, is therefore 5<span class="math inline">\('\)</span>-CGAAGUC-3<span class="math inline">\('\)</span>.</p>
+<p>Complementarity is the chemical basis of heredity. If the sequence of one strand is known, the sequence of its partner is fixed. A strand can therefore serve as a <strong>template</strong>: nucleotides line up along it according to the pairing rules and, once joined together, form a complementary copy. Copying the copy regenerates the original sequence. In cells, this process is carried out by enzymes; whether, and how fast, it can happen without enzymes is one of the central questions of research into the origin of life.</p>
+<p>The same pairing also occurs within a single strand. A chain of RNA folds back on itself wherever two of its segments are complementary, forming short double-stranded regions separated by loops. In this way a single strand of RNA can adopt a specific three-dimensional shape, determined by its sequence.</p>
+</section>
+</section>
+<section id="sec-rna-dna" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="sec-rna-dna"><span class="header-section-number">12.6</span> RNA and DNA</h2>
+<p>RNA and DNA are built on the same plan but differ in three respects:</p>
+<div id="tbl-rna-dna" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-rna-dna-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.1: The chemical differences between RNA and DNA.
+</figcaption>
+<div aria-describedby="tbl-rna-dna-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>RNA</th>
+<th>DNA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sugar</td>
+<td>ribose, with an OH group on carbon 2<span class="math inline">\('\)</span></td>
+<td>2<span class="math inline">\('\)</span>-deoxyribose, with H in place of the 2<span class="math inline">\('\)</span> OH</td>
+</tr>
+<tr class="even">
+<td>Bases</td>
+<td>A, G, C, U</td>
+<td>A, G, C, T</td>
+</tr>
+<tr class="odd">
+<td>Usual form in cells</td>
+<td>mostly single strands, often folded</td>
+<td>double helix of two complementary strands</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The 2<span class="math inline">\('\)</span> hydroxy group has important chemical consequences. It lies next to the phosphodiester linkage, and under basic conditions its oxygen can act as a nucleophile (Chapter 11) and attack the neighbouring phosphorus atom, cutting the chain <span class="citation" data-cites="li1999">(<a href="../references/references.html#ref-li1999" role="doc-biblioref">Li and Breaker 1999</a>)</span>. DNA, which lacks this group, is much more resistant to cleavage, which suits its role as a long-term store of genetic information. The 2<span class="math inline">\('\)</span> hydroxy group also gives RNA a greater variety of shapes and chemical abilities. Some RNA molecules act as catalysts, the ribozymes of Chapter 10 <span class="citation" data-cites="kruger1982 guerriertakada1983">(<a href="../references/references.html#ref-kruger1982" role="doc-biblioref">Kruger et al. 1982</a>; <a href="../references/references.html#ref-guerriertakada1983" role="doc-biblioref">Guerrier-Takada et al. 1983</a>)</span>. Because RNA can both store information in its sequence and catalyse reactions, many researchers consider that an “RNA world”, in which RNA performed both roles, preceded the present system of DNA and proteins <span class="citation" data-cites="gilbert1986">(<a href="../references/references.html#ref-gilbert1986" role="doc-biblioref">Gilbert 1986</a>)</span>.</p>
+</section>
+<section id="sec-proteins" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="sec-proteins"><span class="header-section-number">12.7</span> Amino acids and proteins</h2>
+<section id="amino-acids" class="level3">
+<h3 class="anchored" data-anchor-id="amino-acids">Amino acids</h3>
+<p>An <strong>amino acid</strong>, in the sense used in biology, is a molecule in which an amino group and a carboxy group are attached to the same carbon atom, called the <strong><span class="math inline">\(\alpha\)</span> carbon</strong>, which also carries a hydrogen atom and a variable group called the <strong>side chain</strong>. Twenty kinds of amino acid are commonly found in proteins. They differ only in their side chains, which range from a single hydrogen atom in glycine and a methyl group in alanine to larger groups that are polar, charged or hydrophobic (Chapter 5). As described in Chapter 11, at pH 7 the amino group of a free amino acid is protonated and the carboxy group deprotonated. Except for glycine, whose <span class="math inline">\(\alpha\)</span> carbon carries two hydrogen atoms, the <span class="math inline">\(\alpha\)</span> carbon is a stereocentre, and the amino acids of proteins are the L enantiomers (Chapter 11).</p>
+</section>
+<section id="peptide-bonds-and-proteins" class="level3">
+<h3 class="anchored" data-anchor-id="peptide-bonds-and-proteins">Peptide bonds and proteins</h3>
+<p>Two amino acids join by a condensation between the carboxy group of one and the amino group of the other, releasing water and forming an amide (Chapter 11). In this context the amide bond is called a <strong>peptide bond</strong> (<a href="#fig-peptide" class="quarto-xref">Figure&nbsp;<span>12.5</span></a>). A chain of amino acids joined in this way is a peptide; a long chain folded into a specific shape is a <strong>protein</strong>. There is no sharp boundary between the two, and chains of more than a few dozen residues are usually called proteins. Like nucleic acids, peptide chains have a direction, from the end with a free amino group (the N-terminus) to the end with a free carboxy group (the C-terminus).</p>
+<p>The function of a protein depends on its shape, and its shape on its sequence of side chains, which pack together, with hydrophobic side chains generally buried inside and polar ones on the surface. Enzymes, the catalysts of cells (Chapter 10), are proteins whose shapes bring reacting molecules together and stabilise their transition states.</p>
+<div id="fig-peptide" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-peptide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch12/fig12-5_peptide.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-peptide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.5: Formation of a peptide bond. The carboxy group of glycine and the amino group of L-alanine condense, releasing water, to give the dipeptide glycylalanine. The new amide (peptide) bond is highlighted.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-outline" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="sec-outline"><span class="header-section-number">12.8</span> The chemistry of the origin of life, in outline</h2>
+<p>The descriptions in this chapter allow the chemical problems of the origin of life to be stated precisely. Each draws on earlier chapters.</p>
+<ul>
+<li><strong>Making the building blocks.</strong> Nucleobases, ribose and amino acids must form from simple molecules such as hydrogen cyanide, formaldehyde, ammonia and water, through additions and other reactions (Chapters 7 and 11), with suitable sources of energy (Chapter 9).</li>
+<li><strong>Selectivity.</strong> Ribose is one of many sugars and one of eight stereoisomeric aldopentoses; only D-ribose, in the <span class="math inline">\(\beta\)</span>-furanose form, is found in RNA (Chapter 11). Reactions that make building blocks usually make many other products too, in amounts set by competing rates (Chapter 10).</li>
+<li><strong>Stability.</strong> Many building blocks decompose in water: ribose, for example, has a half-life of hours at 100 °C and of the order of a year near room temperature at neutral pH (Chapter 10). They must be used or protected before they are lost.</li>
+<li><strong>Joining in water.</strong> Linking nucleotides into chains, and amino acids into peptides, are condensations, opposed by the large excess of water and by dilution (Chapters 8 and 9). They require removal of water, activated monomers or another supply of Gibbs energy.</li>
+<li><strong>Copying.</strong> For sequences to be inherited, chains must serve as templates for complementary copies (<a href="#sec-pairing" class="quarto-xref"><span>Section 12.5</span></a>), fast and accurately enough to outrun hydrolysis and copying errors.</li>
+</ul>
+<p>These are the questions that research into the origins of life seeks to answer, with experiments in the laboratory and with models of the early Earth. Each of them is a question of chemistry, and each can be read with the tools introduced in this book.</p>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>Nucleic acids, proteins and polysaccharides are polymers formed by condensation of monomers and broken by hydrolysis. The order of monomers is the sequence.</li>
+<li>The nucleobases are the purines adenine and guanine and the pyrimidines cytosine, uracil (RNA) and thymine (DNA).</li>
+<li>A nucleoside is a base bonded through N9 (purines) or N1 (pyrimidines) to carbon 1<span class="math inline">\('\)</span> of a sugar; a nucleotide is a nucleoside with a phosphate group, usually on carbon 5<span class="math inline">\('\)</span>.</li>
+<li>In RNA, phosphodiester linkages join the 3<span class="math inline">\('\)</span> position of one nucleotide to the 5<span class="math inline">\('\)</span> position of the next. The backbone carries one negative charge per nucleotide. Sequences are written from 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span>.</li>
+<li>Watson–Crick pairs are A–U (A–T in DNA), with two hydrogen bonds, and G–C, with three. Complementary strands are antiparallel; one strand can act as a template for the other.</li>
+<li>RNA has ribose and uracil; DNA has 2<span class="math inline">\('\)</span>-deoxyribose and thymine. The 2<span class="math inline">\('\)</span> hydroxy group makes RNA more easily cleaved and chemically more versatile.</li>
+<li>Amino acids carry an amino group, a carboxy group and a side chain on one carbon; those of proteins are L. Peptide bonds are amides formed by condensation.</li>
+<li>The chemistry of the origin of life involves making the building blocks, selecting the right ones, keeping them intact, joining them in water and copying their sequences.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Name the three parts of a nucleotide and the two bonds that join them. Which of these bonds is formed by a condensation?</li>
+<li>Write the sequence of the strand complementary to 5<span class="math inline">\('\)</span>-AUGGCA-3<span class="math inline">\('\)</span>, in the 5<span class="math inline">\('\)</span> to 3<span class="math inline">\('\)</span> direction. How many hydrogen bonds hold the resulting double helix together (counting only Watson–Crick pairs)?</li>
+<li>How many different RNA sequences of length 10 are possible? Express the answer as a power of 4 and as a power of 10.</li>
+<li>Why is DNA chemically more resistant to cleavage of its backbone than RNA?</li>
+<li>A tripeptide is made from glycine, alanine and glycine. How many water molecules are released when it forms, and how many peptide bonds does it contain?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-gilbert1986" class="csl-entry" role="listitem">
+Gilbert, W. 1986. <span>“Origin of Life: The <span>RNA</span> World.”</span> <em>Nature</em> 319 (6055): 618. <a href="https://doi.org/10.1038/319618a0">https://doi.org/10.1038/319618a0</a>.
+</div>
+<div id="ref-guerriertakada1983" class="csl-entry" role="listitem">
+Guerrier-Takada, C., K. Gardiner, T. Marsh, N. Pace, and S. Altman. 1983. <span>“The <span>RNA</span> Moiety of Ribonuclease <span>P</span> Is the Catalytic Subunit of the Enzyme.”</span> <em>Cell</em> 35 (3 Pt 2): 849–57. <a href="https://doi.org/10.1016/0092-8674(83)90117-4">https://doi.org/10.1016/0092-8674(83)90117-4</a>.
+</div>
+<div id="ref-kruger1982" class="csl-entry" role="listitem">
+Kruger, K., P. J. Grabowski, A. J. Zaug, J. Sands, D. E. Gottschling, and T. R. Cech. 1982. <span>“Self-Splicing <span>RNA</span>: Autoexcision and Autocyclization of the Ribosomal <span>RNA</span> Intervening Sequence of <span>Tetrahymena</span>.”</span> <em>Cell</em> 31 (1): 147–57. <a href="https://doi.org/10.1016/0092-8674(82)90414-7">https://doi.org/10.1016/0092-8674(82)90414-7</a>.
+</div>
+<div id="ref-li1999" class="csl-entry" role="listitem">
+Li, Y., and R. R. Breaker. 1999. <span>“Kinetics of <span>RNA</span> Degradation by Specific Base Catalysis of Transesterification Involving the 2<span class="math inline">\('\)</span>-Hydroxyl Group.”</span> <em>Journal of the American Chemical Society</em> 121: 5364–72. <a href="https://doi.org/10.1021/ja990592p">https://doi.org/10.1021/ja990592p</a>.
+</div>
+<div id="ref-watson1953" class="csl-entry" role="listitem">
+Watson, J. D., and F. H. C. Crick. 1953. <span>“Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid.”</span> <em>Nature</em> 171 (4356): 737–38. <a href="https://doi.org/10.1038/171737a0">https://doi.org/10.1038/171737a0</a>.
+</div>
+<div id="ref-westheimer1987" class="csl-entry" role="listitem">
+Westheimer, F. H. 1987. <span>“Why Nature Chose Phosphates.”</span> <em>Science</em> 235 (4793): 1173–78. <a href="https://doi.org/10.1126/science.2434996">https://doi.org/10.1126/science.2434996</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch11-carbon-toolkit.html" class="pagination-link" aria-label="The Carbon Toolkit">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../references/references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

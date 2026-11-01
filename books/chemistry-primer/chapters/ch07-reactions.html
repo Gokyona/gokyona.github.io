@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Chemical Reactions and Equations – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch08-equilibrium-ph.html" rel="next">
+<link href="../chapters/ch06-moles-concentration.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch07-reactions.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-what-happens" id="toc-sec-what-happens" class="nav-link" data-scroll-target="#sec-what-happens"><span class="header-section-number">7.1</span> What happens in a reaction</a>
+  <ul class="collapse">
+  <li><a href="#reactants-and-products" id="toc-reactants-and-products" class="nav-link" data-scroll-target="#reactants-and-products">Reactants and products</a></li>
+  <li><a href="#conservation-of-mass" id="toc-conservation-of-mass" class="nav-link" data-scroll-target="#conservation-of-mass">Conservation of mass</a></li>
+  </ul></li>
+  <li><a href="#sec-equations" id="toc-sec-equations" class="nav-link" data-scroll-target="#sec-equations"><span class="header-section-number">7.2</span> Chemical equations</a>
+  <ul class="collapse">
+  <li><a href="#writing-an-equation" id="toc-writing-an-equation" class="nav-link" data-scroll-target="#writing-an-equation">Writing an equation</a></li>
+  <li><a href="#balancing-an-equation" id="toc-balancing-an-equation" class="nav-link" data-scroll-target="#balancing-an-equation">Balancing an equation</a></li>
+  <li><a href="#state-symbols" id="toc-state-symbols" class="nav-link" data-scroll-target="#state-symbols">State symbols</a></li>
+  <li><a href="#arrows" id="toc-arrows" class="nav-link" data-scroll-target="#arrows">Arrows</a></li>
+  </ul></li>
+  <li><a href="#sec-stoichiometry" id="toc-sec-stoichiometry" class="nav-link" data-scroll-target="#sec-stoichiometry"><span class="header-section-number">7.3</span> Amounts in reactions</a>
+  <ul class="collapse">
+  <li><a href="#coefficients-are-ratios-of-moles" id="toc-coefficients-are-ratios-of-moles" class="nav-link" data-scroll-target="#coefficients-are-ratios-of-moles">Coefficients are ratios of moles</a></li>
+  <li><a href="#a-worked-example" id="toc-a-worked-example" class="nav-link" data-scroll-target="#a-worked-example">A worked example</a></li>
+  <li><a href="#the-limiting-reactant" id="toc-the-limiting-reactant" class="nav-link" data-scroll-target="#the-limiting-reactant">The limiting reactant</a></li>
+  </ul></li>
+  <li><a href="#sec-acid-base" id="toc-sec-acid-base" class="nav-link" data-scroll-target="#sec-acid-base"><span class="header-section-number">7.4</span> Transferring protons: acids and bases</a></li>
+  <li><a href="#sec-redox" id="toc-sec-redox" class="nav-link" data-scroll-target="#sec-redox"><span class="header-section-number">7.5</span> Transferring electrons: oxidation and reduction</a>
+  <ul class="collapse">
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#oxidation-numbers" id="toc-oxidation-numbers" class="nav-link" data-scroll-target="#oxidation-numbers">Oxidation numbers</a></li>
+  <li><a href="#a-ladder-of-carbon-compounds" id="toc-a-ladder-of-carbon-compounds" class="nav-link" data-scroll-target="#a-ladder-of-carbon-compounds">A ladder of carbon compounds</a></li>
+  </ul></li>
+  <li><a href="#sec-condensation" id="toc-sec-condensation" class="nav-link" data-scroll-target="#sec-condensation"><span class="header-section-number">7.6</span> Joining and splitting with water</a>
+  <ul class="collapse">
+  <li><a href="#condensation" id="toc-condensation" class="nav-link" data-scroll-target="#condensation">Condensation</a></li>
+  <li><a href="#hydrolysis" id="toc-hydrolysis" class="nav-link" data-scroll-target="#hydrolysis">Hydrolysis</a></li>
+  <li><a href="#addition" id="toc-addition" class="nav-link" data-scroll-target="#addition">Addition</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch07" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>When methane burns, it disappears, and carbon dioxide and water appear in its place. When iron rusts, a grey metal becomes a red-brown powder. In every such change, atoms are neither created nor destroyed; they are only rearranged into new combinations. This chapter asks: <em>how is a chemical reaction described, and what kinds of reaction are there?</em> It shows how reactions are written as balanced equations, how the amounts of substances in a reaction are calculated, and how most reactions in the chemistry of life fall into a few types: transfers of protons, transfers of electrons, and the joining and splitting of molecules with water.</p>
+</section>
+<section id="sec-what-happens" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="sec-what-happens"><span class="header-section-number">7.1</span> What happens in a reaction</h2>
+<section id="reactants-and-products" class="level3">
+<h3 class="anchored" data-anchor-id="reactants-and-products">Reactants and products</h3>
+<p>A <strong>chemical reaction</strong> is a process in which substances are converted into different substances by the breaking and forming of chemical bonds. The substances present at the start are the <strong>reactants</strong>, and those formed are the <strong>products</strong>. In the burning of methane, the reactants are methane and oxygen and the products are carbon dioxide and water. The C–H bonds of methane and the O=O bonds of oxygen are broken, and new C=O and O–H bonds are formed.</p>
+<p>A chemical reaction changes only the arrangement of electrons and the way atoms are bonded together. The nuclei are untouched, so every atom present among the reactants is still present among the products, as an atom of the same element. This distinguishes chemical reactions from the nuclear reactions of stars and radioactive decay, which change one element into another.</p>
+</section>
+<section id="conservation-of-mass" class="level3">
+<h3 class="anchored" data-anchor-id="conservation-of-mass">Conservation of mass</h3>
+<p>Because atoms are only rearranged, the total mass of the products equals the total mass of the reactants. This <strong>law of conservation of mass</strong> was established by careful weighing in the late eighteenth century, most influentially by Antoine Lavoisier <span class="citation" data-cites="wiki_conservation_mass">(<a href="../references/references.html#ref-wiki_conservation_mass" role="doc-biblioref">Wikipedia contributors, n.d.</a>)</span>. It holds to the precision of any chemical balance. (According to relativity, the energy released in a reaction corresponds to a tiny loss of mass, but for chemical reactions it is far too small to measure by weighing.)</p>
+</section>
+</section>
+<section id="sec-equations" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="sec-equations"><span class="header-section-number">7.2</span> Chemical equations</h2>
+<section id="writing-an-equation" class="level3">
+<h3 class="anchored" data-anchor-id="writing-an-equation">Writing an equation</h3>
+<p>A reaction is written as a <strong>chemical equation</strong>, with the formulas of the reactants on the left, the formulas of the products on the right, and an arrow between them pointing from reactants to products. The formation of water from hydrogen and oxygen is written</p>
+<p><span class="math display">\[
+2\,\mathrm{H_2} + \mathrm{O_2} \rightarrow 2\,\mathrm{H_2O}
+\]</span></p>
+<p>The numbers in front of the formulas are called <strong>coefficients</strong>. They give the number of molecules (or moles) of each substance that take part. A coefficient of 1 is not written. The equation reads: two molecules of hydrogen react with one molecule of oxygen to give two molecules of water (<a href="#fig-balance" class="quarto-xref">Figure&nbsp;<span>7.1</span></a>).</p>
+<div id="fig-balance" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-balance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-1_balance.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-balance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: The reaction 2 H<sub>2</sub> + O<sub>2</sub> → 2 H<sub>2</sub>O drawn as molecules. Hydrogen atoms are grey and oxygen atoms red. The left side contains four hydrogen atoms and two oxygen atoms, and so does the right side: the equation is balanced.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="balancing-an-equation" class="level3">
+<h3 class="anchored" data-anchor-id="balancing-an-equation">Balancing an equation</h3>
+<p>An equation is <strong>balanced</strong> when each side contains the same number of atoms of every element, and the same total charge. To balance an equation, change only the coefficients, never the subscripts in the formulas: changing a subscript would describe a different substance. The usual procedure is to balance first the elements that appear in only one substance on each side, and to leave hydrogen and oxygen, which often appear in several, until last.</p>
+<p>As an example, consider the burning of methane. The unbalanced equation is</p>
+<p><span class="math display">\[
+\mathrm{CH_4} + \mathrm{O_2} \rightarrow \mathrm{CO_2} + \mathrm{H_2O}
+\]</span></p>
+<p>Carbon is already balanced, with one atom on each side. Methane supplies four hydrogen atoms, so two molecules of water are needed: CH<sub>4</sub> + O<sub>2</sub> → CO<sub>2</sub> + 2 H<sub>2</sub>O. The right side now contains 2 + 2 = 4 oxygen atoms, so two molecules of oxygen are needed on the left:</p>
+<p><span class="math display">\[
+\mathrm{CH_4} + 2\,\mathrm{O_2} \rightarrow \mathrm{CO_2} + 2\,\mathrm{H_2O}
+\]</span></p>
+<p>A final count confirms one carbon, four hydrogen and four oxygen atoms on each side.</p>
+<p>Equations involving ions must also balance charge. In the reaction of sodium with chlorine to give ions, Na + Cl → Na<sup>+</sup> + Cl<sup>−</sup>, the total charge is zero on both sides.</p>
+</section>
+<section id="state-symbols" class="level3">
+<h3 class="anchored" data-anchor-id="state-symbols">State symbols</h3>
+<p>The physical state of each substance is often added in parentheses after its formula: (s) for solid, (l) for liquid, (g) for gas and (aq) for a substance dissolved in water (from the Latin <em>aqua</em>). Dissolving table salt is written</p>
+<p><span class="math display">\[
+\mathrm{NaCl(s)} \rightarrow \mathrm{Na^+(aq)} + \mathrm{Cl^-(aq)}
+\]</span></p>
+</section>
+<section id="arrows" class="level3">
+<h3 class="anchored" data-anchor-id="arrows">Arrows</h3>
+<p>Different arrows have different meanings, and they must not be confused.</p>
+<ul>
+<li>A single arrow, →, shows the direction of a reaction from reactants to products.</li>
+<li>A pair of half-arrows, <span class="math inline">\(\rightleftharpoons\)</span>, shows a <strong>reversible reaction</strong>: one that proceeds in both directions at once, and in which reactants and products coexist. Such a reaction reaches a state of balance, called equilibrium, described in Chapter 8. Strictly, every reaction is reversible; the single arrow is used when the reverse reaction is negligible.</li>
+<li>A double-headed arrow, <span class="math inline">\(\leftrightarrow\)</span>, does not denote a reaction at all. It connects two resonance structures of the same molecule (Chapter 4).</li>
+<li>Curved arrows, drawn on structures, show the movement of pairs of electrons during a reaction. They are used to describe reaction mechanisms, the step-by-step paths by which reactions occur (Chapter 11).</li>
+</ul>
+</section>
+</section>
+<section id="sec-stoichiometry" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sec-stoichiometry"><span class="header-section-number">7.3</span> Amounts in reactions</h2>
+<section id="coefficients-are-ratios-of-moles" class="level3">
+<h3 class="anchored" data-anchor-id="coefficients-are-ratios-of-moles">Coefficients are ratios of moles</h3>
+<p>The coefficients of a balanced equation give the ratios in which molecules react. Since a mole is a fixed number of molecules (Chapter 6), they also give the ratios in moles. The equation CH<sub>4</sub> + 2 O<sub>2</sub> → CO<sub>2</sub> + 2 H<sub>2</sub>O states that one mole of methane reacts with two moles of oxygen to give one mole of carbon dioxide and two moles of water. The calculation of amounts of reactants and products from a balanced equation is called <strong>stoichiometry</strong> (from the Greek <em>stoicheion</em>, element, and <em>metron</em>, measure).</p>
+</section>
+<section id="a-worked-example" class="level3">
+<h3 class="anchored" data-anchor-id="a-worked-example">A worked example</h3>
+<p>How much carbon dioxide and water are produced when 16.0 g of methane burns completely? The molar mass of methane is 12.011 + 4 × 1.0080 = 16.04 g mol<sup>−1</sup>, so 16.0 g is 0.998 mol, very nearly one mole. By the equation, this gives 0.998 mol of CO<sub>2</sub> and 2 × 0.998 = 2.00 mol of H<sub>2</sub>O. With molar masses of 44.01 and 18.015 g mol<sup>−1</sup>, these are 43.9 g of carbon dioxide and 36.0 g of water.</p>
+<p>The masses confirm conservation of mass. The reactants are 16.0 g of methane and 2 × 0.998 mol × 32.00 g mol<sup>−1</sup> = 63.9 g of oxygen, a total of 79.9 g. The products are 43.9 g + 36.0 g = 79.9 g.</p>
+</section>
+<section id="the-limiting-reactant" class="level3">
+<h3 class="anchored" data-anchor-id="the-limiting-reactant">The limiting reactant</h3>
+<p>Reactants are rarely mixed in exactly the ratio of the equation. The reactant that runs out first is the <strong>limiting reactant</strong>; it determines how much product is formed, and the others are left over in excess. If 1 mol of methane is burned with only 1 mol of oxygen, oxygen is limiting: it can react with only 0.5 mol of methane, giving 0.5 mol of carbon dioxide and 1 mol of water, and 0.5 mol of methane remains. In the chemistry of the origin of life, the scarcest reactant, whether phosphate, a particular sugar or an energy-rich compound, often limits how much of a product can form, however abundant the others may be.</p>
+</section>
+</section>
+<section id="sec-acid-base" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="sec-acid-base"><span class="header-section-number">7.4</span> Transferring protons: acids and bases</h2>
+<p>Many reactions in water involve the transfer of a single <strong>proton</strong>, that is, a hydrogen ion H<sup>+</sup>, which is a hydrogen atom without its electron. An <strong>acid</strong> is a substance that donates a proton, and a <strong>base</strong> is a substance that accepts one. When hydrogen chloride dissolves in water, it donates its proton to a water molecule:</p>
+<p><span class="math display">\[
+\mathrm{HCl} + \mathrm{H_2O} \rightarrow \mathrm{H_3O^+} + \mathrm{Cl^-}
+\]</span></p>
+<p>Here HCl is the acid and water is the base. The ion H<sub>3</sub>O<sup>+</sup>, a water molecule carrying an extra proton, is the <strong>hydronium ion</strong>. When ammonia dissolves in water, water acts as the acid and ammonia as the base:</p>
+<p><span class="math display">\[
+\mathrm{NH_3} + \mathrm{H_2O} \rightleftharpoons \mathrm{NH_4^+} + \mathrm{OH^-}
+\]</span></p>
+<p>The products are the ammonium ion and the hydroxide ion. Water can act either as an acid or as a base, depending on its partner. Proton transfers are among the fastest of all reactions, and the balance between acids and bases in a solution is measured by its pH. Both are the subject of Chapter 8.</p>
+</section>
+<section id="sec-redox" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="sec-redox"><span class="header-section-number">7.5</span> Transferring electrons: oxidation and reduction</h2>
+<section id="definitions" class="level3">
+<h3 class="anchored" data-anchor-id="definitions">Definitions</h3>
+<p>A second large class of reactions involves the transfer of electrons. <strong>Oxidation</strong> is the loss of electrons by an atom, ion or molecule, and <strong>reduction</strong> is the gain of electrons. The two always occur together, because electrons lost by one substance must be gained by another, and the combined process is called a <strong>redox reaction</strong> (from <em>red</em>uction and <em>ox</em>idation). The substance that gains electrons, and so causes the oxidation of its partner, is the <strong>oxidising agent</strong>; the substance that loses electrons is the <strong>reducing agent</strong>.</p>
+<p>The reaction of sodium with chlorine is a redox reaction: each sodium atom loses an electron (it is oxidised) and each chlorine atom gains one (it is reduced). Another example, important in the geochemistry of the early Earth, is the oxidation of dissolved iron(II) ions, Fe<sup>2+</sup>, to iron(III), Fe<sup>3+</sup>, each by loss of one electron. Oxygen is a strong oxidising agent, and the word oxidation originally meant combination with oxygen; but many oxidations involve no oxygen at all.</p>
+</section>
+<section id="oxidation-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="oxidation-numbers">Oxidation numbers</h3>
+<p>In reactions between molecules, electrons are often not transferred completely but shifted partly from one atom towards another. To keep track of such shifts, each atom is assigned an <strong>oxidation number</strong> (or oxidation state): the charge it would have if all its bonds were fully ionic, with the shared electrons of each bond given to the more electronegative atom (Chapter 5). For most purposes a few rules are enough.</p>
+<ol type="1">
+<li>An atom in an element (H<sub>2</sub>, O<sub>2</sub>, N<sub>2</sub>, C as graphite) has oxidation number 0.</li>
+<li>Hydrogen bonded to a more electronegative atom, as in all compounds in this book, has +1. Oxygen usually has −2.</li>
+<li>The oxidation numbers of the atoms in a molecule add up to its charge: zero for a neutral molecule, and the charge of the ion for an ion.</li>
+</ol>
+<p>An increase in oxidation number is oxidation, and a decrease is reduction.</p>
+</section>
+<section id="a-ladder-of-carbon-compounds" class="level3">
+<h3 class="anchored" data-anchor-id="a-ladder-of-carbon-compounds">A ladder of carbon compounds</h3>
+<p>The rules show that carbon can exist at many levels of oxidation. In methane, CH<sub>4</sub>, each hydrogen is +1, so carbon is −4. In methanol, CH<sub>3</sub>OH, three hydrogens on carbon (+3 in total), one oxygen (−2) and one hydrogen on oxygen (+1) leave carbon at −2. Continuing in this way gives the ladder of <a href="#fig-carbon-ladder" class="quarto-xref">Figure&nbsp;<span>7.2</span></a>: methane (−4), methanol (−2), formaldehyde, H<sub>2</sub>CO (0), formic acid, HCOOH (+2), and carbon dioxide, CO<sub>2</sub> (+4). Each step up the ladder is an oxidation by two electrons, and each step down a reduction.</p>
+<div id="fig-carbon-ladder" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-carbon-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-2_carbon_ladder.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-carbon-ladder-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Oxidation numbers of carbon in five one-carbon compounds. Moving to the right, each step removes two electrons from carbon (oxidation); moving to the left adds two electrons (reduction). Carbon dioxide is the most oxidised form of carbon, methane the most reduced.
+</figcaption>
+</figure>
+</div>
+<p>This ladder matters for the origin of life. The carbon of living matter lies mostly in the middle of the ladder, at oxidation numbers between −2 and +2, as in sugars, whose carbon atoms average 0. On the early Earth, much of the carbon was present as carbon dioxide, at the top. Making the building blocks of life from carbon dioxide therefore requires reduction: a supply of electrons from a reducing agent, such as hydrogen gas, iron(II) or the energy of sunlight. Whether the early atmosphere and oceans were reducing (rich in electron donors) or more oxidised is one of the long-standing questions of the field.</p>
+</section>
+</section>
+<section id="sec-condensation" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="sec-condensation"><span class="header-section-number">7.6</span> Joining and splitting with water</h2>
+<section id="condensation" class="level3">
+<h3 class="anchored" data-anchor-id="condensation">Condensation</h3>
+<p>A third type of reaction is central to the chemistry of life. In a <strong>condensation</strong> reaction, two molecules join to form a larger molecule, and a small molecule, usually water, is released. The reaction of an acid with an alcohol to form a compound called an ester is an example (<a href="#fig-condensation" class="quarto-xref">Figure&nbsp;<span>7.3</span></a>):</p>
+<p><span class="math display">\[
+\mathrm{CH_3COOH} + \mathrm{CH_3CH_2OH} \rightleftharpoons \mathrm{CH_3COOCH_2CH_3} + \mathrm{H_2O}
+\]</span></p>
+<p>An OH group from the acid and an H atom from the alcohol leave together as water, and a new bond joins the remaining parts. The product, ethyl acetate, is an ester; Chapter 11 describes this and other groups formed by condensation.</p>
+<div id="fig-condensation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-condensation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch07/fig7-3_condensation.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-condensation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Condensation and hydrolysis. Acetic acid and ethanol combine to form the ester ethyl acetate, releasing a molecule of water (condensation, forward direction). Adding water splits the ester back into the acid and the alcohol (hydrolysis, reverse direction). The atoms that form the water are highlighted.
+</figcaption>
+</figure>
+</div>
+<p>The large molecules of life are all built by condensation. Proteins are chains of amino acids, each joined to the next by a condensation that releases water. RNA and DNA are chains of nucleotides, joined by condensations between phosphate groups and the hydroxy groups of sugars. Even the attachment of a nucleobase to a sugar is a condensation.</p>
+</section>
+<section id="hydrolysis" class="level3">
+<h3 class="anchored" data-anchor-id="hydrolysis">Hydrolysis</h3>
+<p>The reverse of condensation is <strong>hydrolysis</strong> (from the Greek for “splitting by water”): a reaction in which water breaks a bond, its H going to one fragment and its OH to the other. Ethyl acetate is hydrolysed back to acetic acid and ethanol; proteins are hydrolysed to amino acids, and RNA to its nucleotides.</p>
+<p>Condensation and hydrolysis are a reversible pair, and in water, where water molecules are present at about 55 mol L<sup>−1</sup> (Chapter 6), the balance usually lies on the side of hydrolysis. A chain of RNA dissolved in water is therefore always at risk of being cut by hydrolysis, and its building blocks do not join of their own accord. How chains could nevertheless have formed in water on the early Earth is one of the central problems of the origin of life. Chapters 8 and 9 explain why the large amount of water favours hydrolysis, and Chapter 12 returns to the question.</p>
+</section>
+<section id="addition" class="level3">
+<h3 class="anchored" data-anchor-id="addition">Addition</h3>
+<p>In an <strong>addition</strong> reaction, two molecules combine to form a single product, and no small molecule is released. Additions to double bonds are common. Water can add to the C=O double bond of formaldehyde, and hydrogen cyanide can add to it to form a larger molecule containing two carbon atoms:</p>
+<p><span class="math display">\[
+\mathrm{HCN} + \mathrm{H_2CO} \rightarrow \mathrm{HOCH_2CN}
+\]</span></p>
+<p>Additions of this kind, which build new carbon-carbon bonds from small molecules such as hydrogen cyanide and formaldehyde, are thought to be among the first steps by which more complex organic molecules formed on the early Earth.</p>
+</section>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>A chemical reaction rearranges atoms by breaking and forming bonds; atoms of each element are conserved, and so is mass.</li>
+<li>A chemical equation lists reactants, an arrow, and products, with coefficients giving the number of molecules or moles. A balanced equation has the same number of atoms of each element, and the same charge, on both sides.</li>
+<li>→ marks a reaction, <span class="math inline">\(\rightleftharpoons\)</span> a reversible reaction, <span class="math inline">\(\leftrightarrow\)</span> resonance (not a reaction). State symbols are (s), (l), (g), (aq).</li>
+<li>Coefficients are mole ratios. Stoichiometry converts between masses and amounts: 16 g of methane burns to 44 g of CO<sub>2</sub> and 36 g of water. The limiting reactant determines the yield.</li>
+<li>Acid-base reactions transfer protons (H<sup>+</sup>). An acid donates a proton and a base accepts one; water can act as either.</li>
+<li>Redox reactions transfer electrons: oxidation is loss, reduction gain. Oxidation numbers track the shifts; carbon ranges from −4 in CH<sub>4</sub> to +4 in CO<sub>2</sub>. Making biological molecules from CO<sub>2</sub> requires reduction.</li>
+<li>Condensation joins two molecules and releases water; hydrolysis is the reverse. Proteins, RNA and DNA are built by condensation and broken by hydrolysis, which water favours.</li>
+<li>In an addition reaction, two molecules combine without losing any atoms.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Balance the equation for the burning of ethanol: C<sub>2</sub>H<sub>5</sub>OH + O<sub>2</sub> → CO<sub>2</sub> + H<sub>2</sub>O.</li>
+<li>How many grams of water are formed when 4.0 g of hydrogen gas reacts completely with oxygen?</li>
+<li>In the reaction NH<sub>3</sub> + HCl → NH<sub>4</sub><sup>+</sup> + Cl<sup>−</sup>, which reactant is the acid and which the base?</li>
+<li>Find the oxidation number of carbon in carbon monoxide (CO) and of nitrogen in ammonia (NH<sub>3</sub>) and in nitrogen gas (N<sub>2</sub>).</li>
+<li>Glycine (H<sub>2</sub>NCH<sub>2</sub>COOH) and alanine (H<sub>2</sub>NCH(CH<sub>3</sub>)COOH) join by condensation, the amino group of one reacting with the carboxy group of the other. What small molecule is released, and what is the molecular formula of the product?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-wiki_conservation_mass" class="csl-entry" role="listitem">
+Wikipedia contributors. n.d. <em>Conservation of Mass</em>. Wikipedia, <a href="https://en.wikipedia.org/wiki/Conservation_of_mass" class="uri">https://en.wikipedia.org/wiki/Conservation_of_mass</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch06-moles-concentration.html" class="pagination-link" aria-label="Counting Molecules: Moles and Concentration">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch08-equilibrium-ph.html" class="pagination-link" aria-label="Equilibrium, Acids and pH">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>10&nbsp; How Fast: Reaction Rates – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch11-carbon-toolkit.html" rel="next">
+<link href="../chapters/ch09-energy.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch10-rates.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-rate" id="toc-sec-rate" class="nav-link" data-scroll-target="#sec-rate"><span class="header-section-number">10.1</span> The rate of a reaction</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#rate-laws-and-rate-constants" id="toc-rate-laws-and-rate-constants" class="nav-link" data-scroll-target="#rate-laws-and-rate-constants">Rate laws and rate constants</a></li>
+  </ul></li>
+  <li><a href="#sec-half-life" id="toc-sec-half-life" class="nav-link" data-scroll-target="#sec-half-life"><span class="header-section-number">10.2</span> First-order reactions and half-life</a>
+  <ul class="collapse">
+  <li><a href="#exponential-decay" id="toc-exponential-decay" class="nav-link" data-scroll-target="#exponential-decay">Exponential decay</a></li>
+  <li><a href="#half-life" id="toc-half-life" class="nav-link" data-scroll-target="#half-life">Half-life</a></li>
+  </ul></li>
+  <li><a href="#sec-barrier" id="toc-sec-barrier" class="nav-link" data-scroll-target="#sec-barrier"><span class="header-section-number">10.3</span> The energy barrier</a>
+  <ul class="collapse">
+  <li><a href="#collisions" id="toc-collisions" class="nav-link" data-scroll-target="#collisions">Collisions</a></li>
+  <li><a href="#activation-energy-and-the-transition-state" id="toc-activation-energy-and-the-transition-state" class="nav-link" data-scroll-target="#activation-energy-and-the-transition-state">Activation energy and the transition state</a></li>
+  <li><a href="#only-a-few-molecules-have-enough-energy" id="toc-only-a-few-molecules-have-enough-energy" class="nav-link" data-scroll-target="#only-a-few-molecules-have-enough-energy">Only a few molecules have enough energy</a></li>
+  </ul></li>
+  <li><a href="#sec-arrhenius" id="toc-sec-arrhenius" class="nav-link" data-scroll-target="#sec-arrhenius"><span class="header-section-number">10.4</span> Temperature and the Arrhenius equation</a>
+  <ul class="collapse">
+  <li><a href="#the-equation" id="toc-the-equation" class="nav-link" data-scroll-target="#the-equation">The equation</a></li>
+  <li><a href="#comparing-two-temperatures" id="toc-comparing-two-temperatures" class="nav-link" data-scroll-target="#comparing-two-temperatures">Comparing two temperatures</a></li>
+  <li><a href="#the-arrhenius-plot" id="toc-the-arrhenius-plot" class="nav-link" data-scroll-target="#the-arrhenius-plot">The Arrhenius plot</a></li>
+  <li><a href="#an-example-from-the-origin-of-life-the-decomposition-of-ribose" id="toc-an-example-from-the-origin-of-life-the-decomposition-of-ribose" class="nav-link" data-scroll-target="#an-example-from-the-origin-of-life-the-decomposition-of-ribose">An example from the origin of life: the decomposition of ribose</a></li>
+  </ul></li>
+  <li><a href="#sec-catalysts" id="toc-sec-catalysts" class="nav-link" data-scroll-target="#sec-catalysts"><span class="header-section-number">10.5</span> Catalysts</a>
+  <ul class="collapse">
+  <li><a href="#what-a-catalyst-does" id="toc-what-a-catalyst-does" class="nav-link" data-scroll-target="#what-a-catalyst-does">What a catalyst does</a></li>
+  <li><a href="#what-a-catalyst-does-not-do" id="toc-what-a-catalyst-does-not-do" class="nav-link" data-scroll-target="#what-a-catalyst-does-not-do">What a catalyst does not do</a></li>
+  <li><a href="#catalysts-in-chemistry-and-in-life" id="toc-catalysts-in-chemistry-and-in-life" class="nav-link" data-scroll-target="#catalysts-in-chemistry-and-in-life">Catalysts in chemistry and in life</a></li>
+  </ul></li>
+  <li><a href="#sec-competition" id="toc-sec-competition" class="nav-link" data-scroll-target="#sec-competition"><span class="header-section-number">10.6</span> Competition between rates</a>
+  <ul class="collapse">
+  <li><a href="#formation-against-destruction" id="toc-formation-against-destruction" class="nav-link" data-scroll-target="#formation-against-destruction">Formation against destruction</a></li>
+  <li><a href="#competing-reactions" id="toc-competing-reactions" class="nav-link" data-scroll-target="#competing-reactions">Competing reactions</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch10" class="quarto-section-identifier"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Chapter 9 ended with a puzzle. A mixture of hydrogen and oxygen can turn into water with a large release of Gibbs energy, yet it can be kept for a long time without reacting. Some favourable reactions are over in a fraction of a second; others take years, or millions of years. This chapter asks: <em>what determines how fast a reaction goes?</em> The answer involves the concentrations of the reactants, an energy barrier that every reaction must cross, the temperature, and catalysts that lower the barrier. Together they explain why a molecule can be thermodynamically doomed and still survive, and why the amount of a molecule that accumulates depends on a race between its formation and its destruction.</p>
+</section>
+<section id="sec-rate" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-rate"><span class="header-section-number">10.1</span> The rate of a reaction</h2>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>The <strong>rate of a reaction</strong> is the change in the concentration of a reactant or product per unit time. For a reaction A → B, the rate is the decrease in [A] per second, or equivalently the increase in [B] per second. Its usual unit is mol L<sup>−1</sup> s<sup>−1</sup>. When the coefficients in the balanced equation are not all 1, the change in each concentration is divided by its coefficient, so that the rate has the same value whichever substance is followed <span class="citation" data-cites="iupac_rate">(<a href="../references/references.html#ref-iupac_rate" role="doc-biblioref">IUPAC, n.d.-d</a>)</span>. For 2 H<sub>2</sub> + O<sub>2</sub> → 2 H<sub>2</sub>O, for example, hydrogen is used up twice as fast as oxygen, but the rate of the reaction is one value.</p>
+<p>The rate of most reactions changes as the reaction proceeds. It is usually greatest at the start, when the concentrations of the reactants are highest, and falls as they are used up.</p>
+</section>
+<section id="rate-laws-and-rate-constants" class="level3">
+<h3 class="anchored" data-anchor-id="rate-laws-and-rate-constants">Rate laws and rate constants</h3>
+<p>The dependence of the rate on concentration is described by a <strong>rate law</strong>, found by experiment. Two simple forms cover many reactions:</p>
+<ul>
+<li>In a <strong>first-order reaction</strong>, the rate is proportional to the concentration of one reactant: rate = k[A]. Doubling [A] doubles the rate. Reactions in which a single molecule falls apart or rearranges are often first order, and so are reactions with the solvent, such as hydrolysis in water, because the concentration of water hardly changes.</li>
+<li>In a <strong>second-order reaction</strong>, the rate is proportional to the product of two concentrations: rate = k[A][B], or k[A]<sup>2</sup> when two molecules of A react with each other. Doubling both [A] and [B] quadruples the rate. Reactions that require two molecules to meet are often second order.</li>
+</ul>
+<p>The proportionality factor k is the <strong>rate constant</strong>. It does not depend on concentration, but it depends strongly on temperature and is changed by catalysts. Its unit depends on the rate law: s<sup>−1</sup> for a first-order reaction, and L mol<sup>−1</sup> s<sup>−1</sup> for a second-order reaction, so that the rate always comes out in mol L<sup>−1</sup> s<sup>−1</sup>.</p>
+<p>The <strong>order</strong> of a reaction is the sum of the powers of the concentrations in its rate law. It cannot, in general, be read from the balanced equation, which shows only the overall change and not the steps by which it happens. For the same reason, a rate law is measured, not deduced.</p>
+<p>The rate law of a second-order joining reaction contains a consequence that matters for the origin of life. If [A] and [B] are both diluted tenfold, the rate of A + B → AB falls a hundredfold, while a first-order destruction of AB, such as its hydrolysis, is not slowed at all. Dilution therefore slows the joining of molecules far more than their breakdown, in addition to the effect on equilibrium described in Chapter 8.</p>
+</section>
+</section>
+<section id="sec-half-life" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="sec-half-life"><span class="header-section-number">10.2</span> First-order reactions and half-life</h2>
+<section id="exponential-decay" class="level3">
+<h3 class="anchored" data-anchor-id="exponential-decay">Exponential decay</h3>
+<p>For a first-order reaction A → products, the rate at which A disappears is proportional to how much A is left. A quantity that decreases in proportion to its own size decreases exponentially (Chapter 1):</p>
+<p><span class="math display">\[
+[\mathrm{A}] = [\mathrm{A}]_0\, \mathrm{e}^{-kt}
+\]</span></p>
+<p>where [A]<sub>0</sub> is the concentration at time t = 0 and e = 2.718… is the base of natural logarithms.</p>
+</section>
+<section id="half-life" class="level3">
+<h3 class="anchored" data-anchor-id="half-life">Half-life</h3>
+<p>The <strong>half-life</strong>, t<sub>1/2</sub>, is the time in which the concentration of a reactant falls to half its initial value. Setting [A] = [A]<sub>0</sub>/2 in the equation above and taking natural logarithms gives</p>
+<p><span class="math display">\[
+t_{1/2} = \frac{\ln 2}{k} = \frac{0.693}{k}
+\]</span></p>
+<p>For a first-order reaction, the half-life does not depend on the starting concentration: whatever amount is present, half of it is gone after one half-life, three-quarters after two, seven-eighths after three, and a fraction (1/2)<sup>n</sup> remains after n half-lives (<a href="#fig-first-order" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>). After ten half-lives, less than one part in a thousand remains, since (1/2)<sup>10</sup> = 1/1024.</p>
+<p>Radioactive decay follows the same law, which is why half-lives are used both for radioactive nuclei and for chemical reactions. Carbon-14, for example, has a half-life of 5700 years <span class="citation" data-cites="lnhb_c14">(<a href="../references/references.html#ref-lnhb_c14" role="doc-biblioref">Chechev and Bé 2012</a>)</span> (Chapter 1). The difference is that radioactive decay is a property of the nucleus and is practically unaffected by temperature or chemical environment, whereas the half-life of a chemical reaction can change by many orders of magnitude with temperature, pH or the presence of a catalyst.</p>
+<div id="fig-first-order" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-first-order-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch10/fig10-1_first_order.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-first-order-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: First-order decay. (a) The fraction of A remaining halves in each half-life. (b) On a logarithmic vertical axis, the same curve is a straight line, whose slope gives the rate constant (Chapter 1).
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-barrier" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="sec-barrier"><span class="header-section-number">10.3</span> The energy barrier</h2>
+<section id="collisions" class="level3">
+<h3 class="anchored" data-anchor-id="collisions">Collisions</h3>
+<p>For two molecules to react, they must meet. In a gas or a solution, molecules collide with one another billions of times per second, yet in a slow reaction only a tiny fraction of these collisions lead to products. Two conditions must be met. The molecules must meet in a suitable orientation, with the atoms that will form the new bond close to each other. And they must bring enough energy into the collision to begin breaking existing bonds.</p>
+</section>
+<section id="activation-energy-and-the-transition-state" class="level3">
+<h3 class="anchored" data-anchor-id="activation-energy-and-the-transition-state">Activation energy and the transition state</h3>
+<p>As two molecules react, their atoms pass through arrangements in which the old bonds are partly broken and the new ones partly formed. Such arrangements have a higher energy than either the reactants or the products. The arrangement of highest energy along the path is the <strong>transition state</strong>, and the energy that the reactants must acquire to reach it is the <strong>activation energy</strong>, E<sub>a</sub> (<a href="#fig-energy-profile" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>). The activation energy is a barrier between reactants and products. It is separate from the overall Gibbs energy change: a reaction may be strongly favourable (products far lower than reactants) and still have a high barrier, as the mixture of hydrogen and oxygen shows.</p>
+<div id="fig-energy-profile" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-energy-profile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch10/fig10-3_energy_profile.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-profile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Energy profile of a reaction (schematic). Reactants must pass over the barrier at the transition state, whose height above the reactants is the activation energy E<sub>a</sub>. A catalyst (dashed curve) provides a different path with a lower barrier. The energy difference between reactants and products, and therefore the position of equilibrium, is the same with or without the catalyst.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="only-a-few-molecules-have-enough-energy" class="level3">
+<h3 class="anchored" data-anchor-id="only-a-few-molecules-have-enough-energy">Only a few molecules have enough energy</h3>
+<p>At any temperature, the molecules of a substance do not all have the same energy. Collisions continually redistribute energy among them, so that most molecules have energies near the average, of the order of RT per mole (Chapter 9), while a few have much more (<a href="#fig-energy-distribution" class="quarto-xref">Figure&nbsp;<span>10.3</span></a>). Only those with at least the activation energy can react. The fraction of molecules with an energy of at least E<sub>a</sub> is, to a good approximation, proportional to the <strong>Boltzmann factor</strong></p>
+<p><span class="math display">\[
+\mathrm{e}^{-E_{\mathrm{a}}/RT}
+\]</span></p>
+<p>For an activation energy of 50 kJ mol<sup>−1</sup> at 25 °C (298.15 K), E<sub>a</sub>/RT = 20.2, and the Boltzmann factor is 1.7 × 10<sup>−9</sup>: fewer than two molecules in a billion have enough energy at any moment. At 35 °C the factor is 3.3 × 10<sup>−9</sup>, nearly twice as large. A small rise in temperature greatly increases the small number of molecules in the high-energy tail of the distribution, and this is why rates are so sensitive to temperature.</p>
+<div id="fig-energy-distribution" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-energy-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch10/fig10-2_energy_distribution.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-energy-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.3: Distribution of kinetic energies among the molecules of a gas at two temperatures (schematic). The shaded areas show the fraction of molecules with an energy greater than the activation energy E<sub>a</sub>. At the higher temperature, the distribution is broader and this fraction is much larger, although the average energy is only somewhat higher.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-arrhenius" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-arrhenius"><span class="header-section-number">10.4</span> Temperature and the Arrhenius equation</h2>
+<section id="the-equation" class="level3">
+<h3 class="anchored" data-anchor-id="the-equation">The equation</h3>
+<p>The dependence of a rate constant on temperature is described by the <strong>Arrhenius equation</strong>, proposed by the Swedish chemist Svante Arrhenius in 1889 <span class="citation" data-cites="iupac_arrhenius">(<a href="../references/references.html#ref-iupac_arrhenius" role="doc-biblioref">IUPAC, n.d.-a</a>)</span>:</p>
+<p><span id="eq-arrhenius"><span class="math display">\[
+k = A\,\mathrm{e}^{-E_{\mathrm{a}}/RT}
+\tag{10.1}\]</span></span></p>
+<p>Here A, the <strong>pre-exponential factor</strong>, has the same unit as k and reflects how often molecules collide in a suitable orientation; the exponential factor is the Boltzmann factor of the previous section; T is the absolute temperature; and R is the molar gas constant, 8.314 462 618 J K<sup>−1</sup> mol<sup>−1</sup> <span class="citation" data-cites="codata2022">(<a href="../references/references.html#ref-codata2022" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. E<sub>a</sub> must be expressed in J mol<sup>−1</sup>, so that E<sub>a</sub>/RT is a pure number.</p>
+</section>
+<section id="comparing-two-temperatures" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-two-temperatures">Comparing two temperatures</h3>
+<p>Taking the ratio of the rate constants at two temperatures T<sub>1</sub> and T<sub>2</sub>, the factor A cancels:</p>
+<p><span id="eq-arrhenius-ratio"><span class="math display">\[
+\frac{k(T_2)}{k(T_1)} = \exp\!\left[\frac{E_{\mathrm{a}}}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right)\right]
+\tag{10.2}\]</span></span></p>
+<p>where exp(x) means e<sup>x</sup>. For a reaction with E<sub>a</sub> = 50 kJ mol<sup>−1</sup>, warming from 25 °C to 35 °C increases the rate constant by a factor of 1.92, and warming to 100 °C by a factor of about 58. For E<sub>a</sub> = 100 kJ mol<sup>−1</sup>, the corresponding factors are 3.70 and about 3300 (<a href="#fig-arrhenius" class="quarto-xref">Figure&nbsp;<span>10.4</span></a>). The often-quoted rule that a rate doubles for every 10 °C rise is therefore true only for activation energies near 50 kJ mol<sup>−1</sup> close to room temperature; for higher barriers the effect of temperature is larger. In the other direction, a reaction at 0 °C is slower than at 25 °C by a factor of 6.3 (for 50 kJ mol<sup>−1</sup>) or 40 (for 100 kJ mol<sup>−1</sup>).</p>
+<div id="fig-arrhenius" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arrhenius-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch10/fig10-4_arrhenius.png" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arrhenius-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.4: Rate constant relative to its value at 25 °C, calculated from the Arrhenius equation for activation energies of 50 and 100 kJ mol<sup>−1</sup>. The vertical axis is logarithmic. The higher the activation energy, the more strongly the rate depends on temperature.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-arrhenius-plot" class="level3">
+<h3 class="anchored" data-anchor-id="the-arrhenius-plot">The Arrhenius plot</h3>
+<p>Taking the natural logarithm of <a href="#eq-arrhenius" class="quarto-xref">Equation&nbsp;<span>10.1</span></a> gives</p>
+<p><span class="math display">\[
+\ln k = \ln A - \frac{E_{\mathrm{a}}}{R}\cdot\frac{1}{T}
+\]</span></p>
+<p>A graph of ln k against 1/T is therefore a straight line with slope −E<sub>a</sub>/R. This graph, the <strong>Arrhenius plot</strong> mentioned in Chapter 1, is the standard way of measuring an activation energy: the rate constant is measured at several temperatures, the points are plotted, and E<sub>a</sub> is obtained from the slope. If A and E<sub>a</sub> themselves change with temperature, the plot is curved; IUPAC therefore defines the activation energy more generally through the slope at each temperature <span class="citation" data-cites="iupac_ea">(<a href="../references/references.html#ref-iupac_ea" role="doc-biblioref">IUPAC, n.d.-c</a>)</span>.</p>
+</section>
+<section id="an-example-from-the-origin-of-life-the-decomposition-of-ribose" class="level3">
+<h3 class="anchored" data-anchor-id="an-example-from-the-origin-of-life-the-decomposition-of-ribose">An example from the origin of life: the decomposition of ribose</h3>
+<p>Ribose, the sugar of RNA, is not stable in water. Larralde, Robertson and Miller measured how fast it decomposes in neutral solution (pH 7.0) at temperatures between 40 °C and 120 °C <span class="citation" data-cites="larralde1995">(<a href="../references/references.html#ref-larralde1995" role="doc-biblioref">Larralde et al. 1995</a>)</span>. The half-life was 73 minutes at 100 °C, and the value extrapolated to 0 °C was 44 years. The two half-lives differ by a factor of about 3.2 × 10<sup>5</sup>. Since the half-life of a first-order reaction is inversely proportional to its rate constant, <a href="#eq-arrhenius-ratio" class="quarto-xref">Equation&nbsp;<span>10.2</span></a> gives an activation energy of about 107 kJ mol<sup>−1</sup>, and, at 25 °C, a half-life of roughly 300 days. This estimate assumes that the reaction obeys the Arrhenius equation with constant E<sub>a</sub> over the whole range. Even at 0 °C, a few decades is a short time on the scale of the early Earth: ribose formed in warm water would have had to be used, or protected, soon after it was made.</p>
+</section>
+</section>
+<section id="sec-catalysts" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="sec-catalysts"><span class="header-section-number">10.5</span> Catalysts</h2>
+<section id="what-a-catalyst-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-a-catalyst-does">What a catalyst does</h3>
+<p>A <strong>catalyst</strong> is a substance that increases the rate of a reaction without changing the overall standard Gibbs energy change of the reaction <span class="citation" data-cites="iupac_catalyst">(<a href="../references/references.html#ref-iupac_catalyst" role="doc-biblioref">IUPAC, n.d.-b</a>)</span>. It provides an alternative path with a lower activation energy (<a href="#fig-energy-profile" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>) and is regenerated at the end of each cycle, so that a small amount of catalyst can convert a large amount of reactant.</p>
+<p>The effect of lowering the barrier follows from the exponential in <a href="#eq-arrhenius" class="quarto-xref">Equation&nbsp;<span>10.1</span></a>. Lowering E<sub>a</sub> by 20 kJ mol<sup>−1</sup> at 25 °C, with A unchanged, multiplies the rate constant by e^20 000/(8.314 × 298.15)^, a factor of about 3200. A reaction that would take nine years would then take about a day.</p>
+</section>
+<section id="what-a-catalyst-does-not-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-a-catalyst-does-not-do">What a catalyst does not do</h3>
+<p>Because a catalyst does not change ΔG°, it does not change the equilibrium constant (Chapter 9). It speeds up the forward and reverse reactions by the same factor and only allows equilibrium to be reached sooner. A catalyst cannot make an unfavourable reaction favourable; it can only make a favourable reaction fast. A catalyst for joining building blocks in water is therefore equally a catalyst for cutting them apart.</p>
+</section>
+<section id="catalysts-in-chemistry-and-in-life" class="level3">
+<h3 class="anchored" data-anchor-id="catalysts-in-chemistry-and-in-life">Catalysts in chemistry and in life</h3>
+<p>Catalysts take many forms: metal surfaces, minerals, dissolved ions, acids and bases. The catalysts of living cells are mainly proteins called <strong>enzymes</strong>. Their effects can be enormous: the enzyme orotidine 5<span class="math inline">\('\)</span>-phosphate decarboxylase, for example, makes its reaction about 10<sup>17</sup> times faster than the same reaction without a catalyst <span class="citation" data-cites="radzicka1995">(<a href="../references/references.html#ref-radzicka1995" role="doc-biblioref">Radzicka and Wolfenden 1995</a>)</span>. Some are RNA molecules, called <strong>ribozymes</strong>. The discovery, in the early 1980s, that RNA can act as a catalyst as well as carry genetic information <span class="citation" data-cites="kruger1982 guerriertakada1983">(<a href="../references/references.html#ref-kruger1982" role="doc-biblioref">Kruger et al. 1982</a>; <a href="../references/references.html#ref-guerriertakada1983" role="doc-biblioref">Guerrier-Takada et al. 1983</a>)</span> is one of the foundations of the idea that RNA preceded proteins in the history of life.</p>
+<p>A reaction catalysed by one of its own products is called <strong>autocatalytic</strong> <span class="citation" data-cites="iupac_catalyst">(<a href="../references/references.html#ref-iupac_catalyst" role="doc-biblioref">IUPAC, n.d.-b</a>)</span>. In an autocatalytic reaction, the more product there is, the faster more of it is made, and the product can increase exponentially for a while. A molecule that catalyses the formation of copies of itself is the chemical core of replication.</p>
+</section>
+</section>
+<section id="sec-competition" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="sec-competition"><span class="header-section-number">10.6</span> Competition between rates</h2>
+<section id="formation-against-destruction" class="level3">
+<h3 class="anchored" data-anchor-id="formation-against-destruction">Formation against destruction</h3>
+<p>On the early Earth, as in a laboratory flask, a molecule is usually being made and destroyed at the same time. Suppose that a molecule X is produced at a constant rate P (in mol L<sup>−1</sup> s<sup>−1</sup>) and destroyed by a first-order reaction with rate constant k, for example hydrolysis. The concentration of X then changes as</p>
+<p><span class="math display">\[
+\text{rate of change of [X]} = P - k[\mathrm{X}]
+\]</span></p>
+<p>At first, when little X is present, production wins and [X] rises. As [X] rises, so does its rate of destruction, until the two are equal. From then on [X] stays constant at</p>
+<p><span class="math display">\[
+[\mathrm{X}]_{\mathrm{ss}} = \frac{P}{k}
+\]</span></p>
+<p>This state is called a <strong>steady state</strong> (<a href="#fig-steady-state" class="quarto-xref">Figure&nbsp;<span>10.5</span></a>). It resembles an equilibrium in that nothing appears to change, but it is different: a steady state is maintained only as long as X is supplied, and it is not determined by ΔG° but by the ratio of two rates. If the supply stops, X disappears with the half-life of its destruction reaction. Doubling the rate constant of destruction halves the amount of X that can accumulate.</p>
+<div id="fig-steady-state" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-steady-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch10/fig10-5_steady_state.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-steady-state-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: Approach to a steady state for a molecule X produced at a constant rate P and destroyed by a first-order reaction with rate constant k (relative units). [X] levels off where production and destruction balance, at P/k. A faster destruction (red) gives a lower steady state, reached sooner.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="competing-reactions" class="level3">
+<h3 class="anchored" data-anchor-id="competing-reactions">Competing reactions</h3>
+<p>A molecule can often react in more than one way. If a reactant A can be converted into a product B with rate constant k<sub>1</sub> or into a different product C with rate constant k<sub>2</sub>, both by first-order reactions, the two products form in the ratio of the rate constants:</p>
+<p><span class="math display">\[
+\frac{\text{amount of B formed}}{\text{amount of C formed}} = \frac{k_1}{k_2}
+\]</span></p>
+<p>The product that forms fastest dominates, even if another product would be more stable. A reaction whose outcome is decided by the relative rates of competing paths is said to be under <strong>kinetic control</strong>; one whose outcome is decided by the relative stabilities of the products, because the reactions are reversible and equilibrium is reached, is under <strong>thermodynamic control</strong>. Much of the difficulty of prebiotic chemistry lies here: the reactions that produce useful building blocks usually compete with many others that produce useless or harmful products, and a useful product is obtained in quantity only if its path is faster than the alternatives.</p>
+</section>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>The rate of a reaction is the change in concentration per unit time. Rate laws, such as rate = k[A] (first order) or k[A][B] (second order), are found by experiment.</li>
+<li>For a first-order reaction, [A] = [A]<sub>0</sub>e<sup>−kt</sup> and the half-life, t<sub>1/2</sub> = 0.693/k, does not depend on concentration.</li>
+<li>Reactants must cross an energy barrier, the activation energy, at the transition state. Only a small fraction of molecules, given approximately by e<sup>−E<sub>a</sub>/RT</sup>, has enough energy.</li>
+<li>The Arrhenius equation, k = A e<sup>−E<sub>a</sub>/RT</sup>, describes the effect of temperature. For E<sub>a</sub> = 50 kJ mol<sup>−1</sup>, a 10 °C rise near room temperature nearly doubles k; higher barriers give larger effects.</li>
+<li>A catalyst lowers the activation energy, speeds up forward and reverse reactions equally, and does not change K. Enzymes and ribozymes are biological catalysts.</li>
+<li>The amount of a molecule that accumulates under continuous production and destruction is a steady state, P/k, set by rates rather than by equilibrium. Competing reactions give products in the ratio of their rate constants.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>A first-order reaction has a rate constant of 0.01 s<sup>−1</sup>. What is its half-life? What fraction of the reactant remains after 5 minutes?</li>
+<li>The rate of a reaction A + B → C is found to be proportional to [A][B]. By what factor does the rate change if [A] is doubled and [B] is halved? If both are reduced to one tenth?</li>
+<li>A reaction has E<sub>a</sub> = 100 kJ mol<sup>−1</sup>. Using <a href="#fig-arrhenius" class="quarto-xref">Figure&nbsp;<span>10.4</span></a> or <a href="#eq-arrhenius-ratio" class="quarto-xref">Equation&nbsp;<span>10.2</span></a>, by roughly what factor is it faster at 35 °C than at 25 °C? Compare with the “doubling per 10 °C” rule.</li>
+<li>A catalyst increases the rate of the forward reaction of A <span class="math inline">\(\rightleftharpoons\)</span> B by a factor of 1000. By what factor does it increase the rate of the reverse reaction? What happens to K?</li>
+<li>A molecule is produced at a constant rate and destroyed by hydrolysis with a half-life of 10 days. If warming the solution shortens the half-life to 1 day, without changing the rate of production, how does the steady-state concentration change?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-lnhb_c14" class="csl-entry" role="listitem">
+Chechev, V. P., and M.-M. Bé. 2012. <em>Carbon-14: Table of Radionuclide Data</em>. Laboratoire National Henri Becquerel (LNHB/CEA), <a href="http://www.lnhb.fr/nuclides/C-14_tables.pdf" class="uri">http://www.lnhb.fr/nuclides/C-14_tables.pdf</a>.
+</div>
+<div id="ref-guerriertakada1983" class="csl-entry" role="listitem">
+Guerrier-Takada, C., K. Gardiner, T. Marsh, N. Pace, and S. Altman. 1983. <span>“The <span>RNA</span> Moiety of Ribonuclease <span>P</span> Is the Catalytic Subunit of the Enzyme.”</span> <em>Cell</em> 35 (3 Pt 2): 849–57. <a href="https://doi.org/10.1016/0092-8674(83)90117-4">https://doi.org/10.1016/0092-8674(83)90117-4</a>.
+</div>
+<div id="ref-iupac_arrhenius" class="csl-entry" role="listitem">
+IUPAC. n.d.-a. <em>Arrhenius Equation. In: Compendium of Chemical Terminology (the Gold Book); Sources Include a Glossary of Terms Used in Chemical Kinetics, Including Reaction Dynamics (<span>IUPAC</span> Recommendations 1996), Pure Appl. Chem. 68, 149 (1996)</em>. <a href="https://goldbook.iupac.org/terms/view/A00446">https://goldbook.iupac.org/terms/view/A00446</a>.
+</div>
+<div id="ref-iupac_catalyst" class="csl-entry" role="listitem">
+IUPAC. n.d.-b. <em>Catalyst. In: Compendium of Chemical Terminology (the Gold Book); Source: A Glossary of Terms Used in Chemical Kinetics, Including Reaction Dynamics (<span>IUPAC</span> Recommendations 1996), Pure Appl. Chem. 68, 149 (1996)</em>. <a href="https://goldbook.iupac.org/terms/view/C00876">https://goldbook.iupac.org/terms/view/C00876</a>.
+</div>
+<div id="ref-iupac_ea" class="csl-entry" role="listitem">
+IUPAC. n.d.-c. <em>Energy of Activation. In: Compendium of Chemical Terminology (the Gold Book); Source: Green Book, 2nd Ed., p. 55</em>. <a href="https://goldbook.iupac.org/terms/view/A00102">https://goldbook.iupac.org/terms/view/A00102</a>.
+</div>
+<div id="ref-iupac_rate" class="csl-entry" role="listitem">
+IUPAC. n.d.-d. <em>Rate of Reaction. In: Compendium of Chemical Terminology (the Gold Book)</em>. <a href="https://goldbook.iupac.org/terms/view/R05156">https://goldbook.iupac.org/terms/view/R05156</a>.
+</div>
+<div id="ref-kruger1982" class="csl-entry" role="listitem">
+Kruger, K., P. J. Grabowski, A. J. Zaug, J. Sands, D. E. Gottschling, and T. R. Cech. 1982. <span>“Self-Splicing <span>RNA</span>: Autoexcision and Autocyclization of the Ribosomal <span>RNA</span> Intervening Sequence of <span>Tetrahymena</span>.”</span> <em>Cell</em> 31 (1): 147–57. <a href="https://doi.org/10.1016/0092-8674(82)90414-7">https://doi.org/10.1016/0092-8674(82)90414-7</a>.
+</div>
+<div id="ref-larralde1995" class="csl-entry" role="listitem">
+Larralde, Rosa, Michael P. Robertson, and Stanley L. Miller. 1995. <span>“Rates of Decomposition of Ribose and Other Sugars: Implications for Chemical Evolution.”</span> <em>Proceedings of the National Academy of Sciences of the USA</em> 92 (18): 8158–60. <a href="https://doi.org/10.1073/pnas.92.18.8158">https://doi.org/10.1073/pnas.92.18.8158</a>.
+</div>
+<div id="ref-codata2022" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d. <em>Fundamental Physical Constants: 2022 CODATA Adjustment</em>. <a href="https://physics.nist.gov/cuu/Constants/Table/allascii.txt">https://physics.nist.gov/cuu/Constants/Table/allascii.txt</a>.
+</div>
+<div id="ref-radzicka1995" class="csl-entry" role="listitem">
+Radzicka, Anna, and Richard Wolfenden. 1995. <span>“A Proficient Enzyme.”</span> <em>Science</em> 267: 90–93. <a href="https://doi.org/10.1126/science.7809611">https://doi.org/10.1126/science.7809611</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch09-energy.html" class="pagination-link" aria-label="Energy and the Direction of Change">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch11-carbon-toolkit.html" class="pagination-link" aria-label="The Carbon Toolkit">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

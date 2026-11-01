@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Equilibrium, Acids and pH – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch09-energy.html" rel="next">
+<link href="../chapters/ch07-reactions.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch08-equilibrium-ph.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-dynamic" id="toc-sec-dynamic" class="nav-link" data-scroll-target="#sec-dynamic"><span class="header-section-number">8.1</span> Dynamic equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#two-reactions-at-once" id="toc-two-reactions-at-once" class="nav-link" data-scroll-target="#two-reactions-at-once">Two reactions at once</a></li>
+  <li><a href="#equilibrium-is-not-equality" id="toc-equilibrium-is-not-equality" class="nav-link" data-scroll-target="#equilibrium-is-not-equality">Equilibrium is not equality</a></li>
+  </ul></li>
+  <li><a href="#sec-K" id="toc-sec-K" class="nav-link" data-scroll-target="#sec-K"><span class="header-section-number">8.2</span> The equilibrium constant</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition">Definition</a></li>
+  <li><a href="#what-the-size-of-k-means" id="toc-what-the-size-of-k-means" class="nav-link" data-scroll-target="#what-the-size-of-k-means">What the size of K means</a></li>
+  <li><a href="#an-important-consequence-dilution-and-joining" id="toc-an-important-consequence-dilution-and-joining" class="nav-link" data-scroll-target="#an-important-consequence-dilution-and-joining">An important consequence: dilution and joining</a></li>
+  </ul></li>
+  <li><a href="#sec-le-chatelier" id="toc-sec-le-chatelier" class="nav-link" data-scroll-target="#sec-le-chatelier"><span class="header-section-number">8.3</span> Shifting an equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#le-chateliers-principle" id="toc-le-chateliers-principle" class="nav-link" data-scroll-target="#le-chateliers-principle">Le Chatelier’s principle</a></li>
+  </ul></li>
+  <li><a href="#sec-water-ions" id="toc-sec-water-ions" class="nav-link" data-scroll-target="#sec-water-ions"><span class="header-section-number">8.4</span> Water, acids and bases</a>
+  <ul class="collapse">
+  <li><a href="#water-ionises-itself" id="toc-water-ionises-itself" class="nav-link" data-scroll-target="#water-ionises-itself">Water ionises itself</a></li>
+  <li><a href="#ph" id="toc-ph" class="nav-link" data-scroll-target="#ph">pH</a></li>
+  <li><a href="#neutral-is-not-always-ph-7" id="toc-neutral-is-not-always-ph-7" class="nav-link" data-scroll-target="#neutral-is-not-always-ph-7">Neutral is not always pH 7</a></li>
+  </ul></li>
+  <li><a href="#sec-weak-acids" id="toc-sec-weak-acids" class="nav-link" data-scroll-target="#sec-weak-acids"><span class="header-section-number">8.5</span> Strong and weak acids</a>
+  <ul class="collapse">
+  <li><a href="#strong-acids" id="toc-strong-acids" class="nav-link" data-scroll-target="#strong-acids">Strong acids</a></li>
+  <li><a href="#weak-acids-and-ka" id="toc-weak-acids-and-ka" class="nav-link" data-scroll-target="#weak-acids-and-ka">Weak acids and K<sub>a</sub></a></li>
+  <li><a href="#ph-and-pka-which-form-is-present" id="toc-ph-and-pka-which-form-is-present" class="nav-link" data-scroll-target="#ph-and-pka-which-form-is-present">pH and pK<sub>a</sub>: which form is present?</a></li>
+  <li><a href="#phosphoric-acid-and-phosphate" id="toc-phosphoric-acid-and-phosphate" class="nav-link" data-scroll-target="#phosphoric-acid-and-phosphate">Phosphoric acid and phosphate</a></li>
+  </ul></li>
+  <li><a href="#sec-buffers" id="toc-sec-buffers" class="nav-link" data-scroll-target="#sec-buffers"><span class="header-section-number">8.6</span> Buffers</a></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch08" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Many reactions do not go to completion. They stop partway, with reactants and products both present, and nothing further seems to happen however long one waits. This chapter asks: <em>where does a reaction stop, and why?</em> The answer is chemical equilibrium, a balance between a reaction and its reverse that can be described by a single number, the equilibrium constant. The same idea explains what acids and bases do in water, what pH measures, and why the joining of building blocks into chains is so difficult in dilute solution.</p>
+</section>
+<section id="sec-dynamic" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-dynamic"><span class="header-section-number">8.1</span> Dynamic equilibrium</h2>
+<section id="two-reactions-at-once" class="level3">
+<h3 class="anchored" data-anchor-id="two-reactions-at-once">Two reactions at once</h3>
+<p>Consider a reversible reaction, A <span class="math inline">\(\rightleftharpoons\)</span> B. When A is first dissolved, only the forward reaction, A → B, can occur, and B begins to accumulate. As soon as some B is present, the reverse reaction, B → A, also begins. As A is used up, the forward reaction slows; as B accumulates, the reverse reaction speeds up. Eventually the two rates become equal. From then on, A is converted into B exactly as fast as B is converted back into A, and the amounts of both stay constant (<a href="#fig-equilibrium" class="quarto-xref">Figure&nbsp;<span>8.1</span></a>).</p>
+<p>This state is called <strong>chemical equilibrium</strong>. It is a <strong>dynamic equilibrium</strong>: at the level of molecules, both reactions continue without pause, but their effects cancel, and nothing changes on the scale of the whole sample. The same final state is reached whether one starts with pure A, pure B, or any mixture of the two, provided that the temperature and the total amounts are the same.</p>
+<div id="fig-equilibrium" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-1_equilibrium.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Approach to equilibrium for a reaction A <span class="math inline">\(\rightleftharpoons\)</span> B, starting from pure A. Left: concentrations of A (teal) and B (orange) against time; both level off at their equilibrium values. Right: rates of the forward (A → B) and reverse (B → A) reactions, which become equal at equilibrium. The curves are calculated for a forward rate constant twice as large as the reverse one, so that at equilibrium [B] = 2[A].
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="equilibrium-is-not-equality" class="level3">
+<h3 class="anchored" data-anchor-id="equilibrium-is-not-equality">Equilibrium is not equality</h3>
+<p>Equilibrium does not mean that reactants and products are present in equal amounts. It means that their amounts no longer change. In some reactions, the equilibrium mixture contains almost nothing but products; in others, almost nothing but reactants; and in many, appreciable amounts of both. Which of these applies is expressed by the equilibrium constant.</p>
+</section>
+</section>
+<section id="sec-K" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-K"><span class="header-section-number">8.2</span> The equilibrium constant</h2>
+<section id="definition" class="level3">
+<h3 class="anchored" data-anchor-id="definition">Definition</h3>
+<p>For a reaction written in general form as</p>
+<p><span class="math display">\[
+a\,\mathrm{A} + b\,\mathrm{B} \rightleftharpoons c\,\mathrm{C} + d\,\mathrm{D}
+\]</span></p>
+<p>where the lower-case letters are the coefficients, the <strong>equilibrium constant</strong> K is</p>
+<p><span class="math display">\[
+K = \frac{[\mathrm{C}]^{c}\,[\mathrm{D}]^{d}}{[\mathrm{A}]^{a}\,[\mathrm{B}]^{b}}
+\]</span></p>
+<p>where the square brackets denote the concentrations at equilibrium. The products appear in the numerator and the reactants in the denominator, each raised to the power of its coefficient. At a given temperature, K has a fixed value for each reaction, whatever the starting amounts.</p>
+<p>Two conventions make K a pure number and keep it simple. First, each concentration is divided by a standard concentration of 1 mol L<sup>−1</sup>, so that [A] stands for the number of moles per litre without the unit. Strictly, K is defined with <strong>activities</strong>, effective concentrations that allow for the interactions between dissolved particles, but in dilute solutions activities are close to concentrations divided by 1 mol L<sup>−1</sup>. Second, pure solids and pure liquids, and the solvent of a dilute solution, have activities of 1 and are left out of the expression. In reactions in dilute aqueous solution, water therefore does not appear in K, even when it is a reactant or a product.</p>
+</section>
+<section id="what-the-size-of-k-means" class="level3">
+<h3 class="anchored" data-anchor-id="what-the-size-of-k-means">What the size of K means</h3>
+<ul>
+<li>If K is much larger than 1, the numerator dominates at equilibrium: the reaction lies far to the right, and the equilibrium mixture consists mostly of products.</li>
+<li>If K is much smaller than 1, the reaction lies far to the left, and little product forms.</li>
+<li>If K is close to 1, appreciable amounts of both reactants and products are present.</li>
+</ul>
+<p>Because equilibrium constants range over many orders of magnitude, from 10<sup>−30</sup> or less to 10<sup>30</sup> or more, they are often given as logarithms, in the form pK = −log<sub>10</sub> K, which turns the range into a manageable span of numbers. This is the origin of the “p” in pH and pK<sub>a</sub>, described below.</p>
+</section>
+<section id="an-important-consequence-dilution-and-joining" class="level3">
+<h3 class="anchored" data-anchor-id="an-important-consequence-dilution-and-joining">An important consequence: dilution and joining</h3>
+<p>The concentrations in K are raised to powers, and this has a consequence that runs through the whole chemistry of the origin of life. Consider a condensation in water, in which two building blocks A and B join to form AB and release water:</p>
+<p><span class="math display">\[
+\mathrm{A} + \mathrm{B} \rightleftharpoons \mathrm{AB} + \mathrm{H_2O}
+\]</span></p>
+<p>Since water is the solvent, it does not appear in K, and</p>
+<p><span class="math display">\[
+K = \frac{[\mathrm{AB}]}{[\mathrm{A}]\,[\mathrm{B}]}, \qquad \text{so} \qquad \frac{[\mathrm{AB}]}{[\mathrm{A}]} = K \times [\mathrm{B}]
+\]</span></p>
+<p>The fraction of A that is joined to B depends not only on K but also on the concentration of B. Suppose, for example, that K = 10. If B is present at 1 mol L<sup>−1</sup>, then [AB]/[A] = 10: most of A is joined. If B is present at 1 mM, then [AB]/[A] = 10 × 0.001 = 0.01: only about 1 % of A is joined. At 1 <span class="math inline">\(\mu\)</span>M, only about one A in 100 000. The more dilute the solution, the more the equilibrium favours the separate building blocks and the less it favours the joined product. Dilute solutions favour hydrolysis.</p>
+<p>This simple relation explains why the chains of life do not form spontaneously from dilute building blocks in water, and why so much attention is paid to ways of concentrating them, by evaporation, freezing or adsorption on mineral surfaces, and of removing water, by drying.</p>
+</section>
+</section>
+<section id="sec-le-chatelier" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-le-chatelier"><span class="header-section-number">8.3</span> Shifting an equilibrium</h2>
+<section id="le-chateliers-principle" class="level3">
+<h3 class="anchored" data-anchor-id="le-chateliers-principle">Le Chatelier’s principle</h3>
+<p>An equilibrium can be disturbed by changing the conditions: adding or removing a reactant or product, changing the temperature, or, for gases, changing the pressure. The response follows a general rule known as <strong>Le Chatelier’s principle</strong>: when a system at equilibrium is disturbed, the equilibrium shifts in the direction that partly counteracts the disturbance.</p>
+<ul>
+<li><strong>Adding a reactant</strong> shifts the equilibrium to the right, consuming some of the added reactant and forming more product. <strong>Removing a product</strong> has the same effect. A reaction whose product is continually removed, for example because it crystallises out of solution or escapes as a gas, can be driven almost to completion even if its K is small.</li>
+<li><strong>Removing water</strong> from a condensation, A + B <span class="math inline">\(\rightleftharpoons\)</span> AB + H<sub>2</sub>O, shifts it towards AB. In dilute solution the water is the solvent and cannot be removed without concentrating everything else; but when a solution is dried, water is no longer present in excess, its activity falls below 1, and condensation becomes more favourable. This is one reason why wet-dry cycles are thought to have helped build chains on the early Earth.</li>
+<li><strong>Changing the temperature</strong> changes the value of K itself. Raising the temperature favours the direction that absorbs heat. Chapter 9 explains why.</li>
+</ul>
+<p>Adding a catalyst, a substance that speeds up a reaction without being consumed (Chapter 10), does not shift an equilibrium at all. It speeds up the forward and reverse reactions by the same factor, so that equilibrium is reached sooner, but the equilibrium mixture is the same.</p>
+</section>
+</section>
+<section id="sec-water-ions" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="sec-water-ions"><span class="header-section-number">8.4</span> Water, acids and bases</h2>
+<section id="water-ionises-itself" class="level3">
+<h3 class="anchored" data-anchor-id="water-ionises-itself">Water ionises itself</h3>
+<p>Water itself takes part in an equilibrium. A small fraction of water molecules transfer a proton to a neighbouring water molecule:</p>
+<p><span class="math display">\[
+2\,\mathrm{H_2O} \rightleftharpoons \mathrm{H_3O^+} + \mathrm{OH^-}
+\]</span></p>
+<p>Because water is the solvent, its activity is 1, and the equilibrium constant reduces to the product of the activities of the two ions. This constant is the <strong>ion product of water</strong>, K<sub>w</sub>. At 25 °C, p<em>K</em><sub>w</sub> = −log<sub>10</sub> K<sub>w</sub> = 13.99 <span class="citation" data-cites="iapws_ionization">(<a href="../references/references.html#ref-iapws_ionization" role="doc-biblioref">International Association for the Properties of Water and Steam 2024</a>)</span>, so K<sub>w</sub> = 1.0 × 10<sup>−14</sup>. In pure water the two ions are present in equal amounts, each at a concentration of about 10<sup>−7</sup> mol L<sup>−1</sup>. Since pure water contains about 55 mol L<sup>−1</sup> of water molecules (Chapter 6), only about two molecules in a thousand million are ionised at any moment.</p>
+</section>
+<section id="ph" class="level3">
+<h3 class="anchored" data-anchor-id="ph">pH</h3>
+<p>The concentration of hydronium ions in a solution determines its acidity. Because this concentration varies over many orders of magnitude, it is expressed on a logarithmic scale (Chapter 1). The <strong>pH</strong> of a solution is defined as</p>
+<p><span class="math display">\[
+\mathrm{pH} = -\log_{10} a(\mathrm{H_3O^+})
+\]</span></p>
+<p>where a(H<sub>3</sub>O<sup>+</sup>) is the activity of the hydronium ion, which in dilute solution is close to its concentration in mol L<sup>−1</sup>. A solution with [H<sub>3</sub>O<sup>+</sup>] = 10<sup>−7</sup> M has pH 7; one with 10<sup>−3</sup> M has pH 3. Each unit of pH is a factor of ten, so a solution of pH 3 contains ten thousand times as many hydronium ions as a solution of pH 7.</p>
+<p>Since the activities of H<sub>3</sub>O<sup>+</sup> and OH<sup>−</sup> multiply to K<sub>w</sub>, an increase in one means a decrease in the other. A solution is <strong>neutral</strong> when the two are equal, which at 25 °C is at pH 7.00. A solution with a lower pH is <strong>acidic</strong>, and one with a higher pH is <strong>basic</strong> (or alkaline). <a href="#fig-ph-scale" class="quarto-xref">Figure&nbsp;<span>8.2</span></a> shows the scale.</p>
+<div id="fig-ph-scale" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ph-scale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-2_ph_scale.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ph-scale-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: The pH scale at 25 °C. Each step of one unit is a factor of ten in the concentration of hydronium ions (top) and, in the opposite direction, of hydroxide ions (bottom). Pure water is neutral at pH 7; the fluids of the Lost City hydrothermal field have pH 9 to 11 <span class="citation" data-cites="kelley2005">(<a href="../references/references.html#ref-kelley2005" role="doc-biblioref"><span class="nocase">Kelley et al.</span> 2005</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="neutral-is-not-always-ph-7" class="level3">
+<h3 class="anchored" data-anchor-id="neutral-is-not-always-ph-7">Neutral is not always pH 7</h3>
+<p>The value of K<sub>w</sub> depends strongly on temperature, and so does the pH of neutral water (<a href="#tbl-pkw" class="quarto-xref">Table&nbsp;<span>8.1</span></a>). At 0 °C neutral water has pH 7.48, and at 100 °C it has pH 6.13. A hot spring at 100 °C with pH 6.5 is therefore slightly basic, not acidic. This matters when comparing the waters of cold pools, hot springs and hydrothermal vents, all of which have been proposed as settings for the origin of life.</p>
+<div id="tbl-pkw" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pkw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8.1: Ion product of water and the pH of neutral water at three temperatures <span class="citation" data-cites="iapws_ionization">(<a href="../references/references.html#ref-iapws_ionization" role="doc-biblioref">International Association for the Properties of Water and Steam 2024</a>)</span>. Neutral pH is p<em>K</em><sub>w</sub>/2, rounded.
+</figcaption>
+<div aria-describedby="tbl-pkw-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Temperature (°C)</th>
+<th>p<em>K</em><sub>w</sub></th>
+<th>pH of neutral water</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>14.95</td>
+<td>7.48</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>13.99</td>
+<td>7.00</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>12.25</td>
+<td>6.13</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-weak-acids" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sec-weak-acids"><span class="header-section-number">8.5</span> Strong and weak acids</h2>
+<section id="strong-acids" class="level3">
+<h3 class="anchored" data-anchor-id="strong-acids">Strong acids</h3>
+<p>An acid is a proton donor (Chapter 7). A <strong>strong acid</strong>, such as hydrochloric acid, gives up its proton to water essentially completely; in its solution, no undissociated HCl molecules remain. A 0.01 M solution of hydrochloric acid therefore contains 0.01 M H<sub>3</sub>O<sup>+</sup> and has pH 2.</p>
+</section>
+<section id="weak-acids-and-ka" class="level3">
+<h3 class="anchored" data-anchor-id="weak-acids-and-ka">Weak acids and K<sub>a</sub></h3>
+<p>Most acids in the chemistry of life are <strong>weak acids</strong>: they donate their protons only partly, and an equilibrium is established between the acid and its deprotonated form. For a weak acid HA,</p>
+<p><span class="math display">\[
+\mathrm{HA} + \mathrm{H_2O} \rightleftharpoons \mathrm{H_3O^+} + \mathrm{A^-}
+\]</span></p>
+<p>The species A<sup>−</sup> that remains after HA has lost its proton is called the <strong>conjugate base</strong> of HA. The equilibrium constant of this reaction, with water omitted, is the <strong>acid dissociation constant</strong>:</p>
+<p><span class="math display">\[
+K_\mathrm{a} = \frac{[\mathrm{H_3O^+}]\,[\mathrm{A^-}]}{[\mathrm{HA}]}
+\]</span></p>
+<p>and it is usually given as p<em>K</em><sub>a</sub> = −log<sub>10</sub> K<sub>a</sub>. The smaller the p<em>K</em><sub>a</sub>, the stronger the acid. Acetic acid, the acid of vinegar, has p<em>K</em><sub>a</sub> = 4.76 <span class="citation" data-cites="goldberg2002">(<a href="../references/references.html#ref-goldberg2002" role="doc-biblioref">Goldberg et al. 2002</a>)</span>.</p>
+</section>
+<section id="ph-and-pka-which-form-is-present" class="level3">
+<h3 class="anchored" data-anchor-id="ph-and-pka-which-form-is-present">pH and pK<sub>a</sub>: which form is present?</h3>
+<p>Taking logarithms of the expression for K<sub>a</sub> gives a simple and very useful relation between the pH and the ratio of the two forms of an acid:</p>
+<p><span class="math display">\[
+\mathrm{pH} = \mathrm{p}K_\mathrm{a} + \log_{10}\frac{[\mathrm{A^-}]}{[\mathrm{HA}]}
+\]</span></p>
+<p>It is known as the Henderson-Hasselbalch equation, and its consequences can be read off directly.</p>
+<ul>
+<li>When pH = p<em>K</em><sub>a</sub>, the logarithm is zero, so [A<sup>−</sup>] = [HA]: the acid is half dissociated.</li>
+<li>For each unit of pH above the p<em>K</em><sub>a</sub>, the ratio [A<sup>−</sup>]/[HA] increases tenfold. Two units above the p<em>K</em><sub>a</sub>, the acid is 99 % in its deprotonated form, A<sup>−</sup>.</li>
+<li>For each unit below, the ratio decreases tenfold. Two units below, the acid is 99 % in its protonated form, HA.</li>
+</ul>
+<p>At pH 7, acetic acid, with p<em>K</em><sub>a</sub> = 4.76, is more than 99 % in the form of the acetate ion, CH<sub>3</sub>COO<sup>−</sup>. The carboxy groups of amino acids and other biological acids are likewise almost entirely deprotonated, and negatively charged, at neutral pH.</p>
+</section>
+<section id="phosphoric-acid-and-phosphate" class="level3">
+<h3 class="anchored" data-anchor-id="phosphoric-acid-and-phosphate">Phosphoric acid and phosphate</h3>
+<p>Phosphoric acid, H<sub>3</sub>PO<sub>4</sub>, has three O–H groups, each of which can lose a proton, with three successive p<em>K</em><sub>a</sub> values of about 2.1, 7.2 and 12.4 <span class="citation" data-cites="wiki_phosphoric">(<a href="../references/references.html#ref-wiki_phosphoric" role="doc-biblioref">Wikipedia contributors, n.d.</a>)</span>. Depending on the pH, it is present as H<sub>3</sub>PO<sub>4</sub>, H<sub>2</sub>PO<sub>4</sub><sup>−</sup>, HPO<sub>4</sub><sup>2−</sup> or PO<sub>4</sub><sup>3−</sup> (<a href="#fig-phosphate-species" class="quarto-xref">Figure&nbsp;<span>8.3</span></a>). Near pH 7, H<sub>2</sub>PO<sub>4</sub><sup>−</sup> and HPO<sub>4</sub><sup>2−</sup> are present in similar amounts. The general word <strong>phosphate</strong> covers all these forms.</p>
+<div id="fig-phosphate-species" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-phosphate-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch08/fig8-3_phosphate_species.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-phosphate-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: Fraction of phosphate present in each of its four forms as a function of pH, calculated from the three p<em>K</em><sub>a</sub> values 2.14, 7.20 and 12.37 <span class="citation" data-cites="wiki_phosphoric">(<a href="../references/references.html#ref-wiki_phosphoric" role="doc-biblioref">Wikipedia contributors, n.d.</a>)</span>. Each crossing point, where two forms are present in equal amounts, lies at a p<em>K</em><sub>a</sub>.
+</figcaption>
+</figure>
+</div>
+<p>In RNA, each phosphate group is joined to two sugars and keeps only one O–H group of its own. This remaining group is a strong acid, much stronger than the second O–H group of phosphoric acid, and at neutral pH it has lost its proton: each phosphate linkage of an RNA chain carries one negative charge <span class="citation" data-cites="westheimer1987">(<a href="../references/references.html#ref-westheimer1987" role="doc-biblioref">Westheimer 1987</a>)</span>. An RNA chain of 100 nucleotides carries about 100 negative charges along its backbone.</p>
+</section>
+</section>
+<section id="sec-buffers" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="sec-buffers"><span class="header-section-number">8.6</span> Buffers</h2>
+<p>A solution that contains a weak acid together with its conjugate base, in comparable amounts, resists changes in pH. Such a solution is called a <strong>buffer</strong>. If a strong acid is added, the added H<sub>3</sub>O<sup>+</sup> ions are largely taken up by A<sup>−</sup>, forming HA; if a strong base is added, the OH<sup>−</sup> ions are largely neutralised by HA, forming A<sup>−</sup> and water. In either case the ratio [A<sup>−</sup>]/[HA] changes only a little, and by the Henderson-Hasselbalch equation the pH changes only a little.</p>
+<p>A buffer works best when the pH is close to the p<em>K</em><sub>a</sub> of its acid, where the two forms are present in similar amounts. A mixture of H<sub>2</sub>PO<sub>4</sub><sup>−</sup> and HPO<sub>4</sub><sup>2−</sup>, with p<em>K</em><sub>a</sub> = 7.2, buffers near neutral pH, and phosphate buffers are among the most widely used in laboratories. Natural waters are also buffered, mainly by dissolved carbon dioxide and its ions, and by reactions with minerals. Laboratory experiments on the origin of life are usually run in buffered solutions, so that the pH stays where the experimenter has set it; on the early Earth, the pH of each setting would have been set by its own buffers.</p>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>A reversible reaction reaches dynamic equilibrium when its forward and reverse rates are equal; the amounts then stay constant, though both reactions continue.</li>
+<li>For aA + bB <span class="math inline">\(\rightleftharpoons\)</span> cC + dD, K = [C]<sup>c</sup>[D]<sup>d</sup> / ([A]<sup>a</sup>[B]<sup>b</sup>), with concentrations in mol L<sup>−1</sup> (strictly, activities). Pure solids, pure liquids and the solvent are left out. K <span class="math inline">\(\gg\)</span> 1 favours products; K <span class="math inline">\(\ll\)</span> 1 favours reactants.</li>
+<li>For a condensation A + B <span class="math inline">\(\rightleftharpoons\)</span> AB + H<sub>2</sub>O in water, [AB]/[A] = K[B]: dilution strongly favours the separate building blocks.</li>
+<li>Le Chatelier’s principle: a disturbed equilibrium shifts to counteract the disturbance. Removing a product or water drives a reaction forward. A catalyst does not shift an equilibrium.</li>
+<li>Water ionises: K<sub>w</sub> = 1.0 × 10<sup>−14</sup> at 25 °C. pH = −log<sub>10</sub> a(H<sub>3</sub>O<sup>+</sup>). Neutral water has pH 7.00 at 25 °C, 7.48 at 0 °C and 6.13 at 100 °C.</li>
+<li>Strong acids dissociate completely; weak acids partly, with K<sub>a</sub> and p<em>K</em><sub>a</sub>. pH = p<em>K</em><sub>a</sub> + log<sub>10</sub>([A<sup>−</sup>]/[HA]). At pH = p<em>K</em><sub>a</sub> the acid is half dissociated.</li>
+<li>Phosphoric acid has p<em>K</em><sub>a</sub> values of about 2.1, 7.2 and 12.4. Each phosphate linkage of RNA carries one negative charge at neutral pH.</li>
+<li>A buffer, a weak acid with its conjugate base, resists changes in pH, best near its p<em>K</em><sub>a</sub>.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Write the expression for K for the reaction N<sub>2</sub>(g) + 3 H<sub>2</sub>(g) <span class="math inline">\(\rightleftharpoons\)</span> 2 NH<sub>3</sub>(g), using concentrations.</li>
+<li>A condensation A + B <span class="math inline">\(\rightleftharpoons\)</span> AB + H<sub>2</sub>O has K = 100. What fraction of A is joined when [B] is held at 0.1 M, and when it is held at 10 <span class="math inline">\(\mu\)</span>M?</li>
+<li>What is the pH of a solution with [H<sub>3</sub>O<sup>+</sup>] = 2.0 × 10<sup>−5</sup> M? Is it acidic or basic at 25 °C?</li>
+<li>Formic acid has p<em>K</em><sub>a</sub> = 3.75. What is the ratio [HCOO<sup>−</sup>]/[HCOOH] at pH 5.75?</li>
+<li>Why does adding a little hydrochloric acid to a phosphate buffer at pH 7.2 change the pH much less than adding the same amount to pure water?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-goldberg2002" class="csl-entry" role="listitem">
+Goldberg, R. N., N. Kishore, and R. M. Lennen. 2002. <span>“Thermodynamic Quantities for the Ionization Reactions of Buffers.”</span> <em>Journal of Physical and Chemical Reference Data</em> 31: 231–370.
+</div>
+<div id="ref-iapws_ionization" class="csl-entry" role="listitem">
+International Association for the Properties of Water and Steam. 2024. <em>Revised Release on the Ionization Constant of <span>H<span class="math inline">\(_2\)</span>O</span>, <span>IAPWS</span> <span>R11-24</span></em>. <a href="https://iapws.org/technical-guidance/release/Ionization">https://iapws.org/technical-guidance/release/Ionization</a>.
+</div>
+<div id="ref-kelley2005" class="csl-entry" role="listitem">
+<span class="nocase">Kelley, D. S., J. A. Karson, G. L. Früh-Green, et al.</span> 2005. <span>“A Serpentinite-Hosted Ecosystem: The <span>Lost City</span> Hydrothermal Field.”</span> <em>Science</em> 307 (5714): 1428–34. <a href="https://doi.org/10.1126/science.1102556">https://doi.org/10.1126/science.1102556</a>.
+</div>
+<div id="ref-westheimer1987" class="csl-entry" role="listitem">
+Westheimer, F. H. 1987. <span>“Why Nature Chose Phosphates.”</span> <em>Science</em> 235 (4793): 1173–78. <a href="https://doi.org/10.1126/science.2434996">https://doi.org/10.1126/science.2434996</a>.
+</div>
+<div id="ref-wiki_phosphoric" class="csl-entry" role="listitem">
+Wikipedia contributors. n.d. <em>Phosphoric Acid</em>. Wikipedia, <a href="https://en.wikipedia.org/wiki/Phosphoric_acid" class="uri">https://en.wikipedia.org/wiki/Phosphoric_acid</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch07-reactions.html" class="pagination-link" aria-label="Chemical Reactions and Equations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch09-energy.html" class="pagination-link" aria-label="Energy and the Direction of Change">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

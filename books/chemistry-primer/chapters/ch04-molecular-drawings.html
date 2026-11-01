@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.20">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Reading Molecular Drawings – A Chemistry Primer for the Origins of Life</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../chapters/ch05-polarity-water.html" rel="next">
+<link href="../chapters/ch03-electrons-bonds.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d8e5dfa8330daa7b2a69354212dbf2ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../chapters/ch04-molecular-drawings.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">A Chemistry Primer for the Origins of Life</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch00-how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use This Book</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch01-numbers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Numbers for Chemistry</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch02-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What Matter Is Made Of</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch03-electrons-bonds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch04-molecular-drawings.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch05-polarity-water.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch06-moles-concentration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Counting Molecules: Moles and Concentration</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch07-reactions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chemical Reactions and Equations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch08-equilibrium-ph.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Equilibrium, Acids and pH</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch09-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Energy and the Direction of Change</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch10-rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">How Fast: Reaction Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch11-carbon-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The Carbon Toolkit</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../chapters/ch12-building-blocks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">The Building Blocks of Life in Miniature</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references/references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../glossary/glossary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Glossary</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-b-units.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Units and Constants</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../appendices/appendix-c-answers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Answers to the Self-Test Questions</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-question-of-this-chapter" id="toc-the-question-of-this-chapter" class="nav-link active" data-scroll-target="#the-question-of-this-chapter">The question of this chapter</a></li>
+  <li><a href="#sec-many-drawings" id="toc-sec-many-drawings" class="nav-link" data-scroll-target="#sec-many-drawings"><span class="header-section-number">4.1</span> One molecule, many drawings</a>
+  <ul class="collapse">
+  <li><a href="#why-the-molecular-formula-is-not-enough" id="toc-why-the-molecular-formula-is-not-enough" class="nav-link" data-scroll-target="#why-the-molecular-formula-is-not-enough">Why the molecular formula is not enough</a></li>
+  <li><a href="#four-ways-to-draw-ethanol" id="toc-four-ways-to-draw-ethanol" class="nav-link" data-scroll-target="#four-ways-to-draw-ethanol">Four ways to draw ethanol</a></li>
+  </ul></li>
+  <li><a href="#sec-structural" id="toc-sec-structural" class="nav-link" data-scroll-target="#sec-structural"><span class="header-section-number">4.2</span> Structural and condensed formulas</a>
+  <ul class="collapse">
+  <li><a href="#structural-formulas" id="toc-structural-formulas" class="nav-link" data-scroll-target="#structural-formulas">Structural formulas</a></li>
+  <li><a href="#condensed-formulas" id="toc-condensed-formulas" class="nav-link" data-scroll-target="#condensed-formulas">Condensed formulas</a></li>
+  </ul></li>
+  <li><a href="#sec-skeletal" id="toc-sec-skeletal" class="nav-link" data-scroll-target="#sec-skeletal"><span class="header-section-number">4.3</span> Skeletal formulas</a>
+  <ul class="collapse">
+  <li><a href="#the-four-rules" id="toc-the-four-rules" class="nav-link" data-scroll-target="#the-four-rules">The four rules</a></li>
+  <li><a href="#reading-a-skeletal-formula" id="toc-reading-a-skeletal-formula" class="nav-link" data-scroll-target="#reading-a-skeletal-formula">Reading a skeletal formula</a></li>
+  <li><a href="#rings" id="toc-rings" class="nav-link" data-scroll-target="#rings">Rings</a></li>
+  <li><a href="#a-worked-example-ribose" id="toc-a-worked-example-ribose" class="nav-link" data-scroll-target="#a-worked-example-ribose">A worked example: ribose</a></li>
+  </ul></li>
+  <li><a href="#sec-charges" id="toc-sec-charges" class="nav-link" data-scroll-target="#sec-charges"><span class="header-section-number">4.4</span> Charges and lone pairs in drawings</a></li>
+  <li><a href="#sec-3d" id="toc-sec-3d" class="nav-link" data-scroll-target="#sec-3d"><span class="header-section-number">4.5</span> Three dimensions on paper</a>
+  <ul class="collapse">
+  <li><a href="#wedges-and-dashes" id="toc-wedges-and-dashes" class="nav-link" data-scroll-target="#wedges-and-dashes">Wedges and dashes</a></li>
+  <li><a href="#drawing-sugar-rings-the-haworth-projection" id="toc-drawing-sugar-rings-the-haworth-projection" class="nav-link" data-scroll-target="#drawing-sugar-rings-the-haworth-projection">Drawing sugar rings: the Haworth projection</a></li>
+  <li><a href="#ball-and-stick-and-space-filling-models" id="toc-ball-and-stick-and-space-filling-models" class="nav-link" data-scroll-target="#ball-and-stick-and-space-filling-models">Ball-and-stick and space-filling models</a></li>
+  </ul></li>
+  <li><a href="#sec-aromatic" id="toc-sec-aromatic" class="nav-link" data-scroll-target="#sec-aromatic"><span class="header-section-number">4.6</span> Flat rings with alternating double bonds</a>
+  <ul class="collapse">
+  <li><a href="#benzene" id="toc-benzene" class="nav-link" data-scroll-target="#benzene">Benzene</a></li>
+  <li><a href="#aromatic-rings" id="toc-aromatic-rings" class="nav-link" data-scroll-target="#aromatic-rings">Aromatic rings</a></li>
+  </ul></li>
+  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#self-test" id="toc-self-test" class="nav-link" data-scroll-target="#self-test">Self-test</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ch04" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Reading Molecular Drawings</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-question-of-this-chapter" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-question-of-this-chapter">The question of this chapter</h2>
+<p>Open any book or paper on the chemistry of life and you will find pages covered with hexagons, zigzag lines and letters. These drawings are the language in which chemists describe molecules, and they carry more information than any amount of text. This chapter asks: <em>how is a molecule drawn, and how can a drawing be read?</em> It introduces the main types of chemical formula, explains the conventions of the skeletal formula used in almost all modern chemistry, and shows how three-dimensional shape is represented on a flat page. By the end of the chapter, you should be able to look at the drawing of a sugar or a nucleobase and count every atom in it.</p>
+</section>
+<section id="sec-many-drawings" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-many-drawings"><span class="header-section-number">4.1</span> One molecule, many drawings</h2>
+<section id="why-the-molecular-formula-is-not-enough" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-molecular-formula-is-not-enough">Why the molecular formula is not enough</h3>
+<p>Chapter 2 introduced the chemical formula, such as H<sub>2</sub>O for water. A formula that gives only the number of atoms of each element in a molecule is called a <strong>molecular formula</strong>. For small molecules it is often all that is needed: there is only one way to join two hydrogen atoms and one oxygen atom so that each forms its usual number of bonds.</p>
+<p>For larger molecules, the molecular formula is not enough. The formula C<sub>2</sub>H<sub>6</sub>O describes two different compounds. In <strong>ethanol</strong>, the alcohol of wine and beer, the two carbon atoms are bonded to each other and the oxygen is bonded to one of them and to a hydrogen atom. In <strong>dimethyl ether</strong>, the oxygen sits between the two carbon atoms. Both arrangements obey the bonding rules of Chapter 3 (carbon 4 bonds, oxygen 2, hydrogen 1), but they are different substances with different properties: at atmospheric pressure ethanol boils at 78 °C and is a liquid at room temperature, whereas dimethyl ether boils at −24 °C and is a gas <span class="citation" data-cites="nist_webbook">(<a href="../references/references.html#ref-nist_webbook" role="doc-biblioref">National Institute of Standards and Technology, n.d.</a>)</span>. Compounds that have the same molecular formula but different structures are called <strong>isomers</strong> (<a href="#fig-isomers" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>). They are the reason why chemistry needs drawings.</p>
+<div id="fig-isomers" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-isomers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-1_isomers.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-isomers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Ethanol and dimethyl ether, two isomers with the molecular formula C<sub>2</sub>H<sub>6</sub>O, drawn as full structural formulas. All atoms and all bonds are shown. The only difference is the position of the oxygen atom, but it gives two different compounds.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="four-ways-to-draw-ethanol" class="level3">
+<h3 class="anchored" data-anchor-id="four-ways-to-draw-ethanol">Four ways to draw ethanol</h3>
+<p>Chemists use several types of formula, which show the same molecule with different amounts of detail. <a href="#fig-ethanol" class="quarto-xref">Figure&nbsp;<span>4.2</span></a> shows ethanol in four of them.</p>
+<ol type="1">
+<li>The <strong>molecular formula</strong>, C<sub>2</sub>H<sub>6</sub>O, gives the composition only.</li>
+<li>A <strong>structural formula</strong> shows every atom and every bond as in a Lewis structure, usually omitting the lone pairs.</li>
+<li>A <strong>condensed formula</strong>, CH<sub>3</sub>CH<sub>2</sub>OH, writes the atoms in the order in which they are connected, grouping each carbon with the hydrogen atoms attached to it.</li>
+<li>A <strong>skeletal formula</strong> shows the carbon framework as a zigzag of lines and leaves out the carbon atoms and the hydrogen atoms bonded to them.</li>
+</ol>
+<div id="fig-ethanol" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ethanol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-2_ethanol_four_ways.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ethanol-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Ethanol in four representations: molecular formula, full structural formula, condensed formula and skeletal formula. All four describe the same molecule; each successive form leaves more to be understood by the reader.
+</figcaption>
+</figure>
+</div>
+<p>Each type has its uses. The molecular formula is used to calculate masses (Chapter 6). The structural formula is the clearest for small molecules and for showing exactly which bonds change in a reaction. The condensed formula fits into a line of text. The skeletal formula is the most compact for large molecules, and it is the form in which almost all molecules in modern chemistry and biochemistry are drawn.</p>
+</section>
+</section>
+<section id="sec-structural" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-structural"><span class="header-section-number">4.2</span> Structural and condensed formulas</h2>
+<section id="structural-formulas" class="level3">
+<h3 class="anchored" data-anchor-id="structural-formulas">Structural formulas</h3>
+<p>A full structural formula is a Lewis structure in which the lone pairs are usually left out. Every bond appears as a line: one line for a single bond, two for a double bond, three for a triple bond. To check a structural formula, count the lines at each atom. Every carbon must have four, every nitrogen three, every oxygen two and every hydrogen one, unless the atom carries a charge (<a href="#sec-charges" class="quarto-xref"><span>Section 4.4</span></a>).</p>
+<p>The angles in a structural formula are not the real bond angles. A carbon atom with four single bonds is drawn as a cross with 90° angles for convenience, although in the molecule its bonds point to the corners of a tetrahedron, 109.5° apart (Chapter 3). A structural formula shows which atoms are connected, not the shape of the molecule.</p>
+</section>
+<section id="condensed-formulas" class="level3">
+<h3 class="anchored" data-anchor-id="condensed-formulas">Condensed formulas</h3>
+<p>A condensed formula lists the atoms along the main chain from one end to the other, writing each carbon followed by the hydrogen atoms attached to it. CH<sub>3</sub>CH<sub>2</sub>OH is read as: a carbon carrying three hydrogens, bonded to a carbon carrying two hydrogens, bonded to an oxygen carrying one hydrogen. Dimethyl ether is CH<sub>3</sub>OCH<sub>3</sub>. Bonds within the chain are not drawn, although double and triple bonds are often shown: ethylene is CH<sub>2</sub>=CH<sub>2</sub> and hydrogen cyanide HC<span class="math inline">\(\equiv\)</span>N.</p>
+<p>Groups attached to the chain as branches are written in parentheses after the atom that carries them. Acetone, a common solvent, is CH<sub>3</sub>C(O)CH<sub>3</sub> or (CH<sub>3</sub>)<sub>2</sub>CO: a central carbon bonded to two CH<sub>3</sub> groups and double-bonded to an oxygen. A subscript after parentheses means that the group appears that many times.</p>
+<p>The condensed formula of a group that recurs in many molecules soon becomes familiar. CH<sub>3</sub>– is a <strong>methyl group</strong>, –OH a <strong>hydroxy group</strong>, and –COOH a <strong>carboxy group</strong> (a carbon double-bonded to one oxygen and single-bonded to an –OH). Chapter 11 describes these and other functional groups and the chemistry they bring.</p>
+</section>
+</section>
+<section id="sec-skeletal" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-skeletal"><span class="header-section-number">4.3</span> Skeletal formulas</h2>
+<section id="the-four-rules" class="level3">
+<h3 class="anchored" data-anchor-id="the-four-rules">The four rules</h3>
+<p>Large molecules contain dozens of carbon and hydrogen atoms, and drawing each one would bury the structure in letters. The <strong>skeletal formula</strong> avoids this. It is drawn according to four rules.</p>
+<ol type="1">
+<li><strong>Bonds are lines.</strong> Single bonds are drawn as single lines, double bonds as two parallel lines, triple bonds as three.</li>
+<li><strong>Every corner and every line end is a carbon atom, unless another atom is written there.</strong> Chains of carbon atoms are drawn as zigzags, so that each carbon atom appears as a corner.</li>
+<li><strong>Hydrogen atoms bonded to carbon are not drawn.</strong> Each carbon is understood to carry as many hydrogen atoms as it needs to make four bonds in total.</li>
+<li><strong>All other atoms are written with their symbols</strong>, together with any hydrogen atoms attached to them: O, OH, N, NH<sub>2</sub>, P and so on.</li>
+</ol>
+<p>The zigzag of rule 2 has a physical basis: in a chain of carbon atoms with tetrahedral bonds, the stretched-out shape of the chain really is a zigzag, with angles close to 109.5°. Skeletal formulas are drawn with 120° angles, which makes the zigzag regular on paper.</p>
+</section>
+<section id="reading-a-skeletal-formula" class="level3">
+<h3 class="anchored" data-anchor-id="reading-a-skeletal-formula">Reading a skeletal formula</h3>
+<p>To read a skeletal formula, find every carbon atom and work out its hydrogen atoms. For each corner or line end without a symbol, count the lines that meet there; the number of hydrogen atoms is four minus the number of bonds, counting a double bond as two and a triple bond as three. <a href="#fig-skeletal" class="quarto-xref">Figure&nbsp;<span>4.3</span></a> shows the procedure for several molecules, with the hidden hydrogen atoms written in grey.</p>
+<div id="fig-skeletal" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-skeletal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-3_skeletal_rules.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-skeletal-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Reading skeletal formulas. Top row: skeletal formulas of butane, propan-1-ol, but-2-ene and acetic acid. Bottom row: the same molecules with every carbon atom labelled and the hydrogen atoms that the skeletal formula leaves out written in grey. A line end is a CH<sub>3</sub> group, a corner with two lines is a CH<sub>2</sub> group, and a carbon with a double bond and one other bond is a CH group.
+</figcaption>
+</figure>
+</div>
+<p>Three patterns appear so often that they are worth recognising at a glance:</p>
+<ul>
+<li>a line end is a CH<sub>3</sub> group (one bond, so three hydrogen atoms);</li>
+<li>a corner where two single lines meet is a CH<sub>2</sub> group;</li>
+<li>a corner where three single lines meet is a CH group, and one where four meet is a carbon with no hydrogen.</li>
+</ul>
+<p>A carbon atom that forms a double bond and one single bond, as in but-2-ene, carries one hydrogen; a carbon atom double-bonded to oxygen and single-bonded to two other atoms, as in acetone or acetic acid, carries none.</p>
+</section>
+<section id="rings" class="level3">
+<h3 class="anchored" data-anchor-id="rings">Rings</h3>
+<p>Carbon chains can close into <strong>rings</strong>, and skeletal formulas show rings as polygons. A hexagon with no symbols at its corners is cyclohexane, C<sub>6</sub>H<sub>12</sub>: six carbon atoms, each a corner with two lines, and so each carrying two hydrogen atoms. Rings can contain atoms other than carbon, such as oxygen or nitrogen; these are written at the corner they occupy. A ring containing at least one atom other than carbon is called a <strong>heterocycle</strong>. The sugar of RNA and the four nucleobases are all heterocycles.</p>
+</section>
+<section id="a-worked-example-ribose" class="level3">
+<h3 class="anchored" data-anchor-id="a-worked-example-ribose">A worked example: ribose</h3>
+<p>The sugar in RNA is <strong>ribose</strong>, C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>. In RNA it is present as a five-membered ring of four carbon atoms and one oxygen atom. <a href="#fig-ribose" class="quarto-xref">Figure&nbsp;<span>4.4</span></a> shows its skeletal formula and the same drawing with every hidden atom made explicit.</p>
+<div id="fig-ribose" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ribose-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-4_ribose_count.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ribose-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: The sugar ribose (in its five-membered ring form), as a skeletal formula (left) and with every carbon and hydrogen atom shown (right). The carbon atoms are numbered 1 to 5 according to the standard convention for sugars. Counting gives 5 carbon atoms, 10 hydrogen atoms and 5 oxygen atoms: C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>.
+</figcaption>
+</figure>
+</div>
+<p>The count proceeds corner by corner. The ring has five corners: one is labelled O, so the other four are carbon atoms. A fifth carbon atom is the line end outside the ring, bonded to an OH group. Each of the five carbon atoms then receives hydrogen atoms to make up four bonds. The carbon atom numbered 1 is bonded to the ring oxygen, to carbon 2 and to an OH group, so it carries one hydrogen. Carbons 2, 3 and 4 are each bonded to two ring neighbours and to one other group, and also carry one hydrogen each. Carbon 5 is bonded to carbon 4 and to an OH group, and carries two hydrogens. Adding the hydrogen atoms of the four OH groups gives 1 + 1 + 1 + 1 + 2 + 4 = 10 hydrogen atoms, and the oxygen atoms number 4 in OH groups plus 1 in the ring, giving 5. The molecular formula is C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>.</p>
+<p>The numbering of the carbon atoms is part of the language of biochemistry. In a sugar, carbon 1 is the carbon that carries two bonds to oxygen atoms (here the ring oxygen and an OH group), and the numbering continues along the chain. When the sugar is part of a larger molecule such as RNA, its carbon numbers receive a prime, written 1<span class="math inline">\('\)</span>, 2<span class="math inline">\('\)</span>, 3<span class="math inline">\('\)</span> and so on, to distinguish them from the numbered atoms of the attached nucleobase. Chapter 12 uses this numbering to describe how the parts of RNA are joined.</p>
+</section>
+</section>
+<section id="sec-charges" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-charges"><span class="header-section-number">4.4</span> Charges and lone pairs in drawings</h2>
+<p>Atoms in a drawing occasionally carry a charge. An oxygen atom that forms only one bond and carries three lone pairs has one electron more than a neutral oxygen atom in a molecule, and is written O<sup>−</sup>. A nitrogen atom that forms four bonds, as in the ammonium ion, has given part of its lone pair to the fourth bond and is written N<sup>+</sup>. Such a charge, assigned to an individual atom in a structure, is called a <strong>formal charge</strong>. The rule for bond counts given in <a href="#sec-structural" class="quarto-xref"><span>Section 4.2</span></a> is therefore modified: an O<sup>−</sup> forms one bond and an N<sup>+</sup> forms four.</p>
+<p>The phosphate groups of RNA are usually drawn with one or two O<sup>−</sup> atoms, because at the acidity of most natural waters they have lost hydrogen ions, as Chapter 8 explains. When a phosphate is drawn as P bonded to four O atoms, one of them by a double line and one or more of them carrying a minus sign, this is the convention being used.</p>
+<p>Lone pairs are usually omitted from skeletal formulas, but every oxygen and nitrogen atom still has them. A neutral oxygen with two bonds has two lone pairs, and a neutral nitrogen with three bonds has one. These lone pairs take part in many reactions and in the hydrogen bonds of Chapter 5, so a reader should learn to imagine them even when they are not drawn.</p>
+</section>
+<section id="sec-3d" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-3d"><span class="header-section-number">4.5</span> Three dimensions on paper</h2>
+<section id="wedges-and-dashes" class="level3">
+<h3 class="anchored" data-anchor-id="wedges-and-dashes">Wedges and dashes</h3>
+<p>Molecules are three-dimensional, and some of their properties depend on the arrangement of atoms in space, not only on which atoms are connected. To show this arrangement, chemists use two kinds of special bond. A solid <strong>wedge</strong>, widening towards one atom, represents a bond pointing out of the page towards the viewer. A <strong>dashed</strong> (hashed) bond represents a bond pointing behind the page, away from the viewer. Ordinary lines lie in the plane of the page. With these three kinds of line, the tetrahedral arrangement around a carbon atom can be drawn as two ordinary bonds in the plane, one wedge and one dash, as in the shapes of methane, ammonia and water in Chapter 3.</p>
+<p>The arrangement in space matters most when a carbon atom carries four different groups. Such a carbon can exist in two arrangements that are mirror images of each other and cannot be superimposed, like a left and a right hand. Chapter 11 explains this property, called chirality, and why the sugar of RNA occurs in only one of its mirror-image forms.</p>
+</section>
+<section id="drawing-sugar-rings-the-haworth-projection" class="level3">
+<h3 class="anchored" data-anchor-id="drawing-sugar-rings-the-haworth-projection">Drawing sugar rings: the Haworth projection</h3>
+<p>Rings of sugars are often drawn in a special perspective called a <strong>Haworth projection</strong> (<a href="#fig-haworth" class="quarto-xref">Figure&nbsp;<span>4.5</span></a>). The ring is drawn flat, in a plane roughly perpendicular to the page, as if seen obliquely from above; the lower edge is often drawn thicker to indicate that it is nearer to the viewer. The ring oxygen is placed at the back, behind the plane of the page <span class="citation" data-cites="iupac_haworth">(<a href="../references/references.html#ref-iupac_haworth" role="doc-biblioref">International Union of Pure and Applied Chemistry, n.d.</a>)</span>. Each carbon atom in the ring has two remaining bonds, which are drawn as vertical lines, one pointing up and one pointing down. The groups on these lines, OH or H, are placed above or below the plane of the ring.</p>
+<div id="fig-haworth" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-haworth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-5_haworth.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-haworth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: Two representations of ribose in its five-membered ring form. Left: a skeletal formula with wedges (towards the viewer) and dashes (away from the viewer). Right: a Haworth projection, in which the ring is seen obliquely and the thick lower edge is nearest to the viewer; groups are placed above or below the plane of the ring. In both, the OH groups on carbons 2 and 3 lie on the same side of the ring, below it in the Haworth projection, and the CH<sub>2</sub>OH group (carbon 5) lies above it.
+</figcaption>
+</figure>
+</div>
+<p>The Haworth projection makes it easy to see which groups lie on the same side of the ring. In ribose, the hydroxy groups on carbons 2 and 3 point to the same side, and this arrangement is one of the features that distinguish ribose from other sugars with the same formula, C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>. The ring is not really flat; five-membered rings are slightly puckered. The Haworth projection is a convention for showing the relative positions of groups, not the exact shape.</p>
+</section>
+<section id="ball-and-stick-and-space-filling-models" class="level3">
+<h3 class="anchored" data-anchor-id="ball-and-stick-and-space-filling-models">Ball-and-stick and space-filling models</h3>
+<p>Computer graphics and physical models show molecules in other ways. In a <strong>ball-and-stick model</strong>, atoms are spheres and bonds are rods; the model shows bond angles correctly and makes the three-dimensional arrangement clear. In a <strong>space-filling model</strong>, each atom is drawn as a sphere of roughly its real size, and the spheres overlap; the model shows the overall shape and surface of the molecule, which decides how it fits against other molecules. Models of large biological molecules often use further simplifications, such as ribbons that trace the backbone of an RNA or protein chain.</p>
+</section>
+</section>
+<section id="sec-aromatic" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-aromatic"><span class="header-section-number">4.6</span> Flat rings with alternating double bonds</h2>
+<section id="benzene" class="level3">
+<h3 class="anchored" data-anchor-id="benzene">Benzene</h3>
+<p>A ring of six carbon atoms with alternating single and double bonds is <strong>benzene</strong>, C<sub>6</sub>H<sub>6</sub>. The ring structure was proposed by August Kekulé in 1865 <span class="citation" data-cites="kekule1865">(<a href="../references/references.html#ref-kekule1865" role="doc-biblioref">Kekulé 1865</a>)</span>, and it raised a puzzle: if the bonds alternated, the double bonds should be shorter than the single bonds, yet all six carbon-carbon bonds in benzene are found to have the same length, 1.397 Å <span class="citation" data-cites="cccbdb">(<a href="../references/references.html#ref-cccbdb" role="doc-biblioref">National Institute of Standards and Technology 2022</a>)</span>, between the lengths of a single and a double bond (Chapter 3).</p>
+<p>The explanation is that benzene cannot be described by a single Lewis structure. Two structures can be drawn, differing only in the positions of the double bonds, and the real molecule is a blend of the two, with the six electrons of the three double bonds spread evenly around the whole ring (<a href="#fig-benzene" class="quarto-xref">Figure&nbsp;<span>4.6</span></a>). This situation, in which a molecule is described by two or more Lewis structures that differ only in the placement of electrons, is called <strong>resonance</strong>. Benzene is sometimes drawn as a hexagon with a circle inside, to show the evenly spread electrons, but the form with alternating double bonds is more common, and it must be understood as one of two equivalent drawings.</p>
+<div id="fig-benzene" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-benzene-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-6_benzene.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-benzene-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.6: Benzene. Left: the two equivalent structures with alternating double bonds; the double-headed arrow indicates resonance, not a reaction. Right: the representation with a circle, showing the six electrons spread evenly around the ring. All six carbon-carbon bonds have the same length, 1.397 Å.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="aromatic-rings" class="level3">
+<h3 class="anchored" data-anchor-id="aromatic-rings">Aromatic rings</h3>
+<p>Benzene and other flat rings with electrons spread evenly around them in this way are called <strong>aromatic</strong>. (The name is historical: many early-known compounds of this kind had strong smells.) Aromatic rings are flat and unusually stable. Many contain nitrogen atoms in the ring. The four nucleobases of RNA, adenine, guanine, cytosine and uracil, all contain flat, aromatic heterocycles with nitrogen atoms (<a href="#fig-adenine" class="quarto-xref">Figure&nbsp;<span>4.7</span></a>). Their flatness allows them to stack on top of each other in a strand of RNA, and the nitrogen and oxygen atoms on their edges form the hydrogen bonds that pair bases with each other. Both properties are described in Chapters 5 and 12.</p>
+<div id="fig-adenine" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adenine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/ch04/fig4-7_adenine.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adenine-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.7: Adenine, one of the four nucleobases of RNA, as a skeletal formula (left) and with all atoms shown (right). It contains two fused aromatic rings, a six-membered and a five-membered ring, with nitrogen atoms at five ring positions. Counting gives C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="key-points" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-points">Key points</h2>
+<ul>
+<li>A molecular formula gives composition only. Isomers, such as ethanol and dimethyl ether (both C<sub>2</sub>H<sub>6</sub>O), have the same molecular formula but different structures and properties.</li>
+<li>A structural formula shows every atom and bond; a condensed formula such as CH<sub>3</sub>CH<sub>2</sub>OH lists atoms in order of connection; a skeletal formula shows the carbon framework only.</li>
+<li>In a skeletal formula, every corner and line end is a carbon atom, hydrogen atoms on carbon are omitted, and each carbon carries enough hydrogen atoms to make four bonds. All other atoms are written with their hydrogen atoms.</li>
+<li>A line end is CH<sub>3</sub>, a corner with two single lines is CH<sub>2</sub>, and one with three is CH.</li>
+<li>Rings are drawn as polygons; rings containing atoms other than carbon are heterocycles. Ribose, C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>, has a five-membered ring of four carbons and one oxygen; its carbons are numbered 1 to 5, and 1<span class="math inline">\('\)</span> to 5<span class="math inline">\('\)</span> when the sugar is part of a larger molecule.</li>
+<li>An O<sup>−</sup> forms one bond and an N<sup>+</sup> four; such formal charges appear on phosphate groups and ammonium groups.</li>
+<li>Wedges point towards the viewer and dashes away. Haworth projections show sugar rings obliquely, with groups above or below the ring.</li>
+<li>Benzene is a flat ring whose six electrons of the double bonds are spread around the ring (resonance). Such aromatic rings, often containing nitrogen, form the nucleobases of RNA.</li>
+</ul>
+</section>
+<section id="self-test" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="self-test">Self-test</h2>
+<ol type="1">
+<li>Write the condensed formula and draw the skeletal formula of propane, C<sub>3</sub>H<sub>8</sub>.</li>
+<li>In the skeletal formula of acetic acid in <a href="#fig-skeletal" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>, how many hydrogen atoms does each carbon atom carry? What is its molecular formula?</li>
+<li>Draw the full structural formula of the compound whose condensed formula is CH<sub>3</sub>CH(OH)CH<sub>3</sub>. Is it an isomer of propan-1-ol?</li>
+<li>How many hydrogen atoms are carried by the carbon atoms of cyclohexane, and of benzene? Write both molecular formulas.</li>
+<li>In the Haworth projection of ribose in <a href="#fig-haworth" class="quarto-xref">Figure&nbsp;<span>4.5</span></a>, which groups lie above the plane of the ring and which below?</li>
+</ol>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-iupac_haworth" class="csl-entry" role="listitem">
+International Union of Pure and Applied Chemistry. n.d. <em>Haworth Representation</em>. Compendium of Chemical Terminology (the Gold Book), <a href="https://goldbook.iupac.org/terms/view/H02749" class="uri">https://goldbook.iupac.org/terms/view/H02749</a>.
+</div>
+<div id="ref-kekule1865" class="csl-entry" role="listitem">
+Kekulé, A. 1865. <span>“Sur La Constitution Des Substances Aromatiques.”</span> <em>Bulletin de La Soci<span>é</span>t<span>é</span> Chimique de Paris</em> 3: 98–110.
+</div>
+<div id="ref-cccbdb" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. 2022. <em><span>NIST</span> Computational Chemistry Comparison and Benchmark Database (<span>CCCBDB</span>), Release 22, Experimental Geometry Data</em>. <a href="https://cccbdb.nist.gov/">https://cccbdb.nist.gov/</a>.
+</div>
+<div id="ref-nist_webbook" class="csl-entry" role="listitem">
+National Institute of Standards and Technology. n.d. <em><span>NIST</span> Chemistry <span>WebBook</span>: Phase Change Data</em>. <a href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../chapters/ch03-electrons-bonds.html" class="pagination-link" aria-label="Electrons and Bonds">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Electrons and Bonds</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../chapters/ch05-polarity-water.html" class="pagination-link" aria-label="Polarity, Hydrogen Bonds and Water">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Polarity, Hydrogen Bonds and Water</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Gokyona Wahiro · Version 1.0 · DOI: <a href="https://doi.org/10.5281/zenodo.23857281">10.5281/zenodo.23857281</a> · Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> · Contact: <a href="mailto:gokyona.wahiro@gmail.com">gokyona.wahiro@gmail.com</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
